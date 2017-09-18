@@ -14,10 +14,10 @@
 
 ## Média Prioridade
 * Operação cotidiana da impressora:
-** Colocação de filamento (com macete como cortar diagonal, limpador de filamento, etc.);
-** Remoção da peça finalizada (esperar esfriar pra tirar, podendo entortar o PLA ou até o ABS, etc.);
-** Operação do LCD;
-** Operação com Octoprint e Repetier Server.
+  * Colocação de filamento (com macete como cortar diagonal, limpador de filamento, etc.);
+  * Remoção da peça finalizada (esperar esfriar pra tirar, podendo entortar o PLA ou até o ABS, etc.);
+  * Operação do LCD;
+  * Operação com Octoprint e Repetier Server.
 
 
 ## Baixa Prioridade

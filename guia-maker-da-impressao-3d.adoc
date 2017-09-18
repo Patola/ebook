@@ -248,11 +248,15 @@ técnicos: o conhecido grupo do servidor de torrents _The Pirate Bay_ batizou os
 alimentados em uma máquina específica, geram objetos físicos de “physibles”², o que em português daria
 algo como “fisíveis” (não confundir com “fusíveis”!).
 
+[NOTE]
+====
+.Notas:
 1 – Existem outros termos envolvendo a prototipagem rápida como “computer-aided industrial design” e
-“computer-integrated manufacturing”, mas têm uso mais de nicho – podendo ser ignorados sem prejudicar a
+“computer-integrated manufacturaing”, mas têm uso mais de nicho – podendo ser ignorados sem prejudicar a
 compreensão geral do assunto.
 
 2 - https://thepiratebay.org/blog/203[_https://thepiratebay.org/blog/203_]
+====
 
 = Histórico
 
@@ -299,8 +303,11 @@ sistema de prototipagem rápida baseada em fotopolímeros com construção de ca
 transversais do modelo por três diferentes aparatos, dois deles sendo reconhecíveis no mercado hoje como as SLA
 “top-down” e “bottom-up” e o terceiro lembrando bastante a técnica conhecida como __polyjet__.¹
 
+[NOTE]
+====
 1 - _Automatic method for fabricating a three‐dimensional plastic model with photo‐hardening polymer_ -
 H Kodama - Review of Scientific Instruments, 1981 - scitation.aip.org
+====
 
 == 3D Systems, DTM e Stratasys
 
@@ -423,7 +430,10 @@ modificações eternamente e que as leis de patentes declaram uma patente nulifi
 O projeto RepRap também explica o que aconteceu com o mercado de massa após 2009. Foi quando as primeiras manchetes
 sobre “impressão 3D” começaram a aparecer, encantando o público com suas criações, e em como apareciam
 indivíduos “geniais” que construíam suas próprias impressoras 3D mas que na verdade apenas reutilizavam
-receitas do site do projeto.image:image11.jpeg[image,width=443,height=372]
+receitas do site do projeto.
+
+[[impressaocobreebronze]]
+image:image11.jpeg[image,width=443,height=372]
 
 Livre das amarras das patentes, o mercado de massa de impressão 3D irradiou-se para uma série de áreas antes
 inexploradas, desde simples reparos domésticos (quem usaria uma impressora de um milhão de dólares pra isso?) até
@@ -449,6 +459,7 @@ os filamentos dissolvíveis, como PVA e HiPS; os filamentos para fundição, com
 uma contabilidade de quantos materiais diferentes já estão disponíveis para impressoras FDM de baixo custo,
 mas esse número com certeza já ultrapassa uma centena.
 
+[[hotendcyclop1]]
 image:image12.png[image,width=193,height=289]
 
 Esse gigantesco desabrochar e democratização de uma tecnologia avançada está tendo impacto profundo em nossa
@@ -462,7 +473,10 @@ e *reprap.me,* e liberarem seus projetos sob licenças open-source para serem fa
 Talvez esse mercado incipiente explique o que a Stratasys fez em 2013. Para entender isso, vamos falar mais de
 uma empresa que já mencionamos.
 
-Notas:
+
+[NOTE]
+====
+.Notas:
 
 1 – Alguns detentores de registros de patentes utilizam-se de uma estratégia chamada “__Patent fencing__”,
 que se traduz em registrar uma extensão óbvia do processo da patente original quando a data de expiração desta
@@ -475,9 +489,11 @@ https://all3dp.com/history-of-the-reprap-project/[_https://all3dp.com/history-of
 
 4 – A história da impressora de açúcar pode ser vista em inglês aqui:
 http://www.3dprinterworld.com/article/aleph-objects-enjoys-809-percent-two-year-revenue-growth[_http://www.3dprinterworld.com/article/aleph-objects-enjoys-809-percent-two-year-revenue-growth_]
+====
 
-[[makerbot-2009]] = Makerbot (2009)
+== Makerbot (2009)
 
+[[fotomakerbot]]
 image:image13.jpeg[image,width=642,height=434]
 
 Empresa que começou junto ao movimento RepRap, com um de seus fundadores, Zach Smith, sendo também um dos
@@ -516,8 +532,13 @@ de qualidade após a aquisição pela Stratasys, e à elevada competição de ou
 a Makerbot começou a perder bastante mercado, e já passou por algumas levas de demissão em massa, sendo hoje
 uma companhia diminuta perto do que era.
 
+[NOTE]
+====
+.Notas:name: value
+
 1 -
 http://www.openbeamusa.com/blog/2014/5/22/stay-classy-makerbot[_http://www.openbeamusa.com/blog/2014/5/22/stay-classy-makerbot_]
+====
 
 [[a-alvorada-da-sla-formlabs-e-b9-tech]] = A Alvorada da SLA – Formlabs e B9 Tech
 

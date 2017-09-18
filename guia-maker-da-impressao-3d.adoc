@@ -730,7 +730,8 @@ artigo “Polyholes”¹ do usuário experimentalista _nophead_ (Chris Palmer).
 http://hydraraptor.blogspot.com.br/2011/02/polyholes.html[_http://hydraraptor.blogspot.com.br/2011/02/polyholes.html_]
 ====
 
-== E no Brasil?  1.  [[o-fork-comunitário-do-guiacnc-para-a-reprapbr]] == O Fork Comunitário:
+== E no Brasil?
+=== O Fork Comunitário:
 Do GuiaCNC para a RepRapBR
 
 O projeto RepRap foi – e continua sendo – o catalisador de oportunidades para que pessoas criativas, engenhosas
@@ -786,9 +787,10 @@ de peças particulares se tornaram empresas de produção de impressora 3D, como
 Pontes) e a _Sethi3D_ em Campinas (Marcelo Ribeiro e Sérgio Carminitti), os filamentos da _Filamentos3DBrasil_
 (Anderson Godoy), da _3DX_ (Cléber Rampazo), _PrintGreen3D_ (Willian Lima), _Faz3D_ (Roberto Polisel Samartin)
 e _3DLab_ (Brian Filipe e Sérgio Portela) e os produtos _CoreAB_ e _A.Bond_ (Alex Borro) e o hotend _R6P_ (Renato
-Parisotto). Felipe (“Juca”) Sanches da _Metamáquina_ também teve participação na lista. Usos intensos e
+Parisotto). Felipe (“Juca”) Sanches da _Metamáquina_ também teve participação na lista, ainda que breve. Usos intensos e
 criativos da Impressão 3D e tecnologias relacionadas também fizeram história: _Solution 3D_ com seus brindes
-e vasos (Roberto Varela), _3DToy_ com seus brinquedos (Rubens Medino). Muitos outros passaram por este fórum de
+e vasos (Roberto Varela), _3DToy_ com seus brinquedos, utensílios e quebra-cabeças (Rubens Medino). Muitos
+outros passaram por este fórum de
 discussão, que ainda hoje é ponto nevrálgico do desenvolvimento de impressão 3D no Brasil. Não é o único,
 claro, e outros lugares de comunidades e fóruns também constam com suas estrelas, como a _Faerkrag Props_
 com seus itens de cosplay (Eduardo Pimentel) ou Guilherme “Razgriz” com seus cursos e designs. Indivíduos
@@ -800,22 +802,25 @@ com seu projeto de controlador de impressão __Atelier__.
 Ainda merecem menção especial a empresa __Cliever__, que junto à Metamáquina foram as primeiras empresas
 de impressão 3D do Brasil; a __e-tech__, vendedores da linha de impressoras 3D 3DCloner; a Tato Indústria e
 Comércio, pioneira de impressão 3D no país; e a CNCBrasil, com suas iniciativas ousadas de propelir a impressão
-FFF a qualidades industriais.
+FFF a dimensões industriais.
 
 Durante a trajetória do Grupo de Estudos e a lista de discussão, no entanto, certos _eventos_ chamam especial
 atenção pela regularidade com que ocorreram. Dada a interseção de conhecimentos exigido, muitos integrantes
 eram do Fórum GuiaCNC, e encontros regulares aconteciam na Chácara de Rubens Medino. Em 2014, dia primeiro de
-maio, o primeiro encontro “oficial” RepRapBR aconteceu, com 89 participantes, e foi o começo de uma saga –
-ano seguinte o sucesso se repetiu no mesmo dia, com 101 inscritos (e 45 que perderam a lotação). Em 2016, já
-prevendo não haver espaço para o público, Rubens e outros inscritos no grupo se associaram para profissionalizar
+maio, o primeiro encontro “oficial” RepRapBR aconteceu, com 89 participantes, se configurando como o começo de
+uma saga – no ano seguinte o sucesso se repetiu no mesmo dia, com 101 inscritos (e 45 que perderam a lotação).
+Em 2016, já prevendo não haver espaço para o público, Rubens e outros inscritos no grupo se associaram para profissionalizar
 este encontro e criaram a Primeira Expo3DBR – Encontro Nacional de Impressoras 3D, também em primeiro de maio,
 com público registrado de _1240_ pessoas! Foi realizado em um ginásio de Hortolândia, com palestras e a presença
 de feira e demonstrações de fabricantes e profissionais de Impressão 3D.
 
+[[expo3dbr2016_1]]
 image:image21.jpeg[image,width=610,height=475]
 
+[[expo3dbr2016_2]]
 image:image22.jpeg[image,width=610,height=524]
 
+[[expo3dbr2016_3]]
 image:image23.jpeg[image,width=642,height=377]
 
 Além do movimento _diretamente_ relacionado à impressão 3D, tivemos em solo nacional – sempre com ligações
@@ -827,7 +832,7 @@ São eles o projeto __Mão3D__, de próteses impressas baratas; as várias inici
 _Cícero Moraes_ e __Paulo Miamoto Dias__; o instituto de pesquisa CTI Renato Archer; a empresa brasileira __Makers
 Brasil__, intimamente ligada à explosão do movimento Maker; e os grupos de pesquisa LAPAC da Unicamp e GPMA do ITA.
 
-[[makers-brasil]] == Makers Brasil
+=== Makers Brasil
 
 Empresa inovadora no mercado __Maker__, começou seu primeiro curso e workshop de impressão 3D já em 2013 (já
 tendo educado mais de mil alunos só em impressão 3D em 2016). Fundada em 2012 por Ricardo Cavallini, criador do
@@ -840,9 +845,10 @@ de todo o papel educacional de seus cursos, disponibiliza também editoriais, pa
 em sua página com explicações aprofundadas e estratégicas do Movimento Maker. O endereço da página é
 http://www.makers.net.br/[_http://www.makers.net.br_].
 
+[[fotomakersnet]]
 image:image24.png[image,width=642,height=571]
 
-[[lapac-universidade-estadual-de-campinas]] == LAPAC – Universidade Estadual de Campinas
+=== LAPAC – Universidade Estadual de Campinas
 
 A Universidade Estadual de Campinas, uma das mais proeminentes do país em pesquisa e extensão, não poderia
 deixar de participar desta tendência. Desde sua criação em 2006, o _Laboratório de Automação e Prototipagem
@@ -857,6 +863,7 @@ sobre o processo de fabricação aditiva, assim como o seu canal do youtube. Com
 pode-se esperar delas um rigor e conformidade muito maior do que comumente se encontra no meio __Maker__. Assim,
 o LAPAC presta um importante papel de embasamento científico e formal para o tão disperso conhecimento nessa área.
 
+[[fotolapac]]
 image:image25.jpeg[image,width=613,height=505]
 
 Site do LAPAC: http://lapac.fec.unicamp.br/[_http://lapac.fec.unicamp.br_]
@@ -868,7 +875,7 @@ http://www.fec.unicamp.br/~lapac/publicacoes.htm[_http://www.fec.unicamp.br/~lap
 adicionais podem ser encontrados no currículo _lattes_ da chefe do Laboratório, Gabriela Celani:
 http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4792067H6[_http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4792067H6_]
 
-[[o-projeto-mão3d]] == O Projeto Mão3D
+=== O Projeto Mão3D
 
 Gerido e criado pela Professora Doutora Maria Elizete Kunkel em janeiro de 2015, o projeto Mão3D, inspirado
 pelo iniciativa internacional de auxílio a desabilitados “Enabling the Future” e seu projeto comunitário de
@@ -881,6 +888,7 @@ delicada em relação a crianças, que além do problema de poderem não entende
 têm crescimento rápido levando à necessidade de substituição constante das próteses (e isso agrava a
 necessidade de serem baratas).
 
+[[colagemmao3d]]
 image:image26.png[image,width=619,height=116]
 
 O grupo da Dra. Elizete além de trabalhar com os modelos open-source do projeto e-NABLE busca desenvolver um
@@ -895,11 +903,13 @@ se encontra. Assim, se por um lado o programa tem projetos universitários avan�
 próteses mioelétricas, por outro comparece na _Campus Party_ e _The Developer Conference_ e até faz seu próprio
 _blog_ e tem página de facebook para comunicação com o público.
 
-Recursos do grupo Mão3D:
+.Recursos do grupo Mão3D:
 
 * página do projeto: https://www.biomecanicaeforense.com/mao3d[_https://www.biomecanicaeforense.com/mao3d_]
-* blog: https://mao3d.wordpress.com/[_https://mao3d.wordpress.com/_] * facebook:
-https://www.facebook.com/Mao3D/[_https://www.facebook.com/Mao3D/_] * Canal do youtube:
+* blog: https://mao3d.wordpress.com/[_https://mao3d.wordpress.com/_]
+* facebook:
+https://www.facebook.com/Mao3D/[_https://www.facebook.com/Mao3D/_]
+* Canal do youtube:
 https://www.youtube.com/channel/UCfMU_lReiz3F3mBMnONvYbg[_https://www.youtube.com/channel/UCfMU_lReiz3F3mBMnONvYbg_]
 * projeto e-NABLE: http://e-nable.org/[_http://e-nable.org/_]
 
@@ -910,13 +920,14 @@ com “iniciativas” geralmente comerciais que não dão assistência devida, n
 muitas vezes revindicam créditos sobre algo que não criaram, com os designs open-source do projeto _e-nable_
 sendo um alvo frequente.
 
+[[fotoeventomao3d]]
 image:image27.jpeg[image,width=642,height=534]
 
 Das colaborações do projeto Mão3D, uma que se destaca é a colaboração com outro grupo acadêmico, o Grupo de
 Pesquisa em Manufatura Aditiva do Instituto Tecnológico da Aeronáutica, GPMA/ITA. O desafio é tão grande que,
 como se diria no dialeto popular, os universitários tiveram que chamar os _outros_ universitários!
 
-[[o-gpmaita]] == O GPMA/ITA
+=== O GPMA/ITA
 
 O plástico das impressoras 3D de fabricação de filamento fundido é razoavelmente resistente e serve para
 próteses de mão que não passam por muitos estresses mecânicos. Mas a coisa muda de figura quando consideramos
@@ -947,7 +958,7 @@ para que qualquer usuário – maker, profissional, industrial ou doméstico –
 que pagar fortunas pela informação. O grupo centraliza sua interação com a comunidade e os links dos artigos
 em sua fanpage no facebook: https://www.facebook.com/GPMA.ITA/[_https://www.facebook.com/GPMA.ITA/_]
 
-[[a-fotogrametria-de-cícero-moraes-e-paulo-miamoto-dias]] == A Fotogrametria de Cícero Moraes e Paulo Miamoto Dias
+=== A Fotogrametria de Cícero Moraes e Paulo Miamoto Dias
 
 Como desdobramento dos trabalhos de Cícero e Paulo em colaboração com o médico veterinário Roberto Fecchio,
 as técnicas foram aplicadas para a digitalização de lesões em animais para sua reabilitação protética. Algum
@@ -965,6 +976,7 @@ Televisão. Seus vídeos educativos no youtube baseados nos trabalhos que faz co
 como seus artigos de blog e até participação em artigos científicos, com seu maior trabalho sendo o seu e-book
 em português, em c-oautoria com Miamoto, que ensina Reconstrução Facial Forense usando softwares livres e gratuitos.
 
+[[fotociceroepaulo]]
 image:image28.jpeg[image,width=642,height=435]
 
 Esta parceria iniciou-se com as ciências forenses como pano de fundo, e embora novas metodologias estivessem em
@@ -977,10 +989,12 @@ Antropologia Forense e Odontologia Legal (Ebrafol), em conjunto com profissionai
 o intuito de promover os direitos humanos por meio do aprimoramento dos métodos de produção da prova pericial,
 a Ebrafol passou a atuar em três eixos:
 
-1.  prestando serviços periciais em perícias de análises antropológicas de cadáveres desconhecidos, sendo
-a Faculdade de Odontologia de Ribeirão Preto sua maior parceira; 2.  capacitando recursos humanos, em diversos
+. prestando serviços periciais em perícias de análises antropológicas de cadáveres desconhecidos, sendo
+a Faculdade de Odontologia de Ribeirão Preto sua maior parceira;
+. capacitando recursos humanos, em diversos
 cursos e palestras que deram autonomia para peritos oficiais dominarem técnicas de digitalização aplicadas às
-suas respectivas áreas; e 3.  promovendo cultura em projetos que utilizam das mesmas técnicas, porém fora do
+suas respectivas áreas; e
+. promovendo cultura em projetos que utilizam das mesmas técnicas, porém fora do
 âmbito forense, como no caso da reconstrução facial dos santos peruanos São Martinho de Porres, São João
 Macias e Santa Rosa de Lima.
 
@@ -993,16 +1007,16 @@ cursos de pós-graduação em odontologia legal, além de embasar diversos traba
 segue em projetos de divulgação de ciência e tecnologia junto à mídia, Miamoto dedica-se à carreira acadêmica
 como docente de cursos de graduação e pós-graduação em odontologia e medicina e pesquisador.
 
-[[section-1]] == image:image29.png[image,width=632,height=544]
+[[colagemciceropaulo]]
+image:image29.png[image,width=632,height=544]
 
 É sempre saudável notar que muitas das conquistas de Paulo, Cícero e seus associados foram possíveis por causa
 de uma instituição governamental que é central ao desenvolvimento da impressão 3D industrial e comunitária
 no Brasil: muitos de seus trabalhos foram fabricados por impressoras 3D do CTI Renato Archer.
 
-[[cti-centro-de-tecnologia-da-informação-renato-archer]] == [[__RefHeading___Toc24939_2473674494]][[FEITO_CTI]]CTI
-– Centro de Tecnologia da Informação Renato Archer
+=== CTI – Centro de Tecnologia da Informação Renato Archer
 
-[[FEITO cti]]É impossível falar de impressão 3D no Brasil sem mencionar o trabalho do Centro de Tecnologia da
+É impossível falar de impressão 3D no Brasil sem mencionar o trabalho do Centro de Tecnologia da
 Informação Renato Archer, popularmente conhecido como “CTI”, em especial o seu Departamento de Tecnologias
 Tridimensionais (DT3D), hoje _Núcleo_ de Tecnologias Tridimensionais. O CTI é uma unidade de pesquisa do Ministério
 da Ciência, Tecnologia e Inovação. Foi inaugurado em 1982 e o DT3D em 1997, desde então contribuindo para
@@ -1017,22 +1031,29 @@ que pega imagens médicas em formato “DICOM” de tomografias computadorizadas
 a _Andreas Vesalius_ (1514-1564, considerado o “pai da anatomia moderna”) e ele é open-source, licenciado
 sob a GPL versão 2, disponível para Mac OS X, Linux e Windows.
 
-image:image30.jpeg[image,width=593,height=438]image:image31.png[image,width=586,height=520]
+[[screenshotinvesalius]]
+image:image30.jpeg[image,width=593,height=438]
+
+[[colagemcti]]
+image:image31.png[image,width=586,height=520]
 
 Faz-se mister dar crédito especial ao Dr. Jorge pelo envolvimento com a impressão 3D bem antes da sua explosão
 com a queda da patente, já em 2007 tendo colaborado com um livro organizado pelo pesquisador Neri Volpato:
 
-[[FEITO_CTI]]image:image32.jpeg[image,width=352,height=570]
+[[livromariovolpato]]
+image:image32.jpeg[image,width=352,height=570]
 
-[[outros-pioneiros-e-divulgadores]] == Outros pioneiros e divulgadores
+=== Outros pioneiros e divulgadores
 
 A tarefa de reconstrução histórica nunca é completa, ainda mais no Brasil onde a informação é desencontrada e
 esparsa. Certamente não citamos todas as pessoas que contribuíram para a divulgação e enriquecimento do espaço
-_Maker_ no Brasil – que, aliás, é uma história que ainda está sendo escrita - , e agradeceremos imensamente
-contribuições para edições posteriores deste livro. Se você julga que uma pessoa, grupo ou instituição
+_Maker_ no Brasil – que, aliás, é uma história que ainda está sendo escrita -, e agradeceremos imensamente
+contribuições para edições posteriores deste livro. Se você, caro leitor, julga que uma pessoa, grupo ou instituição
 proeminente foi esquecida, receberemos de braços abertos esta informação.
 
-[[a-exaptação]] = A Exaptação
+<<<
+== O Universo Maker
+=== A Exaptação
 
 Um conceito da biologia evolucionista que pode ser útil para entender a mentalidade “Maker” tão integral à
 impressão 3D atual é o de __exaptação__¹, um fenômeno que ocorre quando um determinado traço biológico que
@@ -1057,17 +1078,17 @@ idênticas às que vêm nos pregadores comuns de plástico – mas tais pregador
 mais a pena comprar um pacote deles e jogar a parte plástica fora do que ter que encomendar as molas específicas,
 que ainda são difíceis de achar.
 
+[[fotomolaspregador]]
 image:image33.png[image,width=642,height=591]
 
 Citações:
 
-1.  [[FEITO_c36]]Gould, S. J. (1991). Exaptation: A crucial tool for evolutionary psychology. __Journal of Social
+1.  Gould, S. J. (1991). Exaptation: A crucial tool for evolutionary psychology. __Journal of Social
 Issues, 47__, 43-65.  2.  Jester JV (2008). _https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2275913["Corneal crystallins
 and the development of cellular transparency"]._ Seminars in Cell & Developmental Biology. *19* (2): 82–93.  3.
 Innovation Through Exaptation - http://timkastelle.org/blog/2010/05/innovation-through-exaptation/
 
-1.  [[section-2]] = + [[o-complicado-mercado-maker-o-bom-o-mau-e-o-feio]] = O complicado mercado Maker: o Bom,
-o Mau e o Feio
+=== O Complicado Mercado Maker: o Bom, o Mau e o Feio
 
 Se há algo que pode ser dito sem equívocos sobre a época atual, é que a indústria obtusa e conservadora não
 entende o mercado Maker. Uma sugestão gritante disso é a dificuldade de achar peças de máquinas no varejo,
@@ -1121,8 +1142,7 @@ regras para informação ao cliente, expedientes de reciclagem e proteção do c
 sem site próprio, consistindo no momento de fórum e grupo de __whatsapp__. Torçamos para que uma iniciativa
 como essa cresça o suficiente para trazer soluções ao ecossistema!
 
-[[a-teoria-a-prática-o-ruído-e-o-sinal]] == [[__RefHeading___Toc24947_2473674494]][[FEITO teoria ruido]]A Teoria,
-a Prática, o Ruído e o Sinal
+=== A Teoria, a Prática, o Ruído e o Sinal
 
 Um outro aspecto negativo do movimento Maker é em relação à não-conformidade do conhecimento: o mesmo
 espírito de rebeldia, a mesma informalidade, o mesmo experimentalismo e a mesma abertura a pessoas de todos os
@@ -1179,14 +1199,16 @@ ao próprio meio__. O exemplo mais notável se expressa no design da impressora 
 reprap. Olhando-se a impressora ativa de perto e vendo a movimentação do carro no sentido vertical, se percebem
 características dignas de estranheza:
 
-* A movimentação do carro se assenta em _dois_ pares independentes de suportes, presos em paralelo. Um de barra
+* A movimentação do carro se assenta em _dois_ pares independentes de suportes, presos em paralelo. Um de barras
 roscadas, que se movimenta, e um de barras lisas, por onde o carro escorrega. Por que a redundância? Não seria mais
-palatável simplesmente apoiar em _um_ par de barras roscadas?  * A barra roscada __não é totalmente reta__. De
+palatável simplesmente apoiar em _um_ par de barras roscadas?
+* A barra roscada __não é totalmente reta__. De
 fato, o processo de fabricação desses componentes, ou até mesmo o transporte e distribuição, não raramente
-gera uma ligeira curvatura, visível a olho nu sob inspeção cuidadosa.  * Para piorar, a barra roscada _só é
+gera uma ligeira curvatura, visível a olho nu sob inspeção cuidadosa.
+* Para piorar, a barra roscada _só é
 presa por baixo_ e pela rosca ao quadro da impressora. O extremo superior da barra gira em falso, solto na parte
-de cima.  * As barras lisas, cuja retidão é maior, são consideravelmente mais grossas que as barras roscadas
-– 8mm contra 5mm de diâmetro.
+de cima.
+* As barras lisas, cuja retidão é maior, são consideravelmente mais grossas que as barras roscadas - 8mm contra 5mm de diâmetro.
 
 Esse quebra-cabeça leva muitos a concluir, sem pesquisar, que tais características são simplesmente erros de
 projeto, erros que precisam ser consertados, claro. As “soluções” para o problema são variadas, mas devido

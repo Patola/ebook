@@ -534,13 +534,13 @@ uma companhia diminuta perto do que era.
 
 [NOTE]
 ====
-.Notas:name: value
+.Notas:
 
 1 -
 http://www.openbeamusa.com/blog/2014/5/22/stay-classy-makerbot[_http://www.openbeamusa.com/blog/2014/5/22/stay-classy-makerbot_]
 ====
 
-[[a-alvorada-da-sla-formlabs-e-b9-tech]] = A Alvorada da SLA – Formlabs e B9 Tech
+== A Alvorada da SLA – Formlabs e B9 Tech
 
 Ainda que este curso tenha maior foco na tecnologia FFF, é importante notar uma outra técnica de impressão 3D
 que está tendo uma trajetória não muito diferente das de material fundido. A tecnologia é a estereolitografia
@@ -559,6 +559,7 @@ mas a esperança é que a empresa cuja patente esteja sendo violada não se dê 
 sua SLA e foi processada pela 3D Systems, mas acertaram os termos fora das cortes e a impressora 3D continuou
 sendo comercializada, hoje em dia sem precisar pagar royalties.
 
+[[fotodonoformlabs]]
 image:image14.jpeg[image,width=642,height=480]
 
 Já a B9 Creator sofreu menos este revés, pois ao invés de utilizar a tecnologia SLA “pura”, usou uma variante
@@ -566,6 +567,7 @@ dela que ao invés de um feixe de laser, usa um retroprojetor modificado. Essa t
 ou simplesmente DLP, por causa do projetor. Adicionalmente, a impressora deles foi financiada com apenas um ano de
 diferença e inicialmente o projeto era open-source, com um fatiador multiplataforma e aberto. Não foram processados.
 
+[[fotob9creatoreform1]]
 image:image15.png[image,width=596,height=368]
 
 Essas duas impressoras “iguais mas diferentes”, assim como as repraps, criaram o padrão de compatibilidade que
@@ -586,16 +588,17 @@ empresas e indivíduos foram pelo mesmo caminho e você encontra comunidades fer
 site “Build Your Own SLA” (http://buildyourownsla.com/[_http://buildyourownsla.com_]) ou do projeto OpenSLA
 (https://plus.google.com/communities/109609533907401814291[_https://plus.google.com/communities/109609533907401814291_]).
 
-[[a-alvorada-da-sls]] == A Alvorada da SLS?
+=== A Alvorada da SLS?
 
 A Formlabs não descansou em cima dos méritos. Além de continuar aprimorando e colocando sensores e controladores
 nos novos modelos e de liberar certos códigos de forma aberta e multiplataforma, recentemente lançou uma solução
 de impressão em lote automatizada (__Form Cell__) e agora uma impressora 3D SLS (Selective Laser Sintering), a **Fuse
 1**. Será um indício que antes mesmo de a SLA se estabelecer completamente, SLS chegará ao mercado de baixo custo?
 
+[[fotoformfuse1sls]]
 image:image19.png[image,width=642,height=409]
 
-[[a-academia-e-a-impressão-3d]] = A Academia e a Impressão 3D
+== A Academia e a Impressão 3D
 
 Internacionalmente, a impressão 3D e suas várias tecnologias não eram muito conhecidas ou popularizadas (por
 causa das patentes) até começar a tomar proporções industriais, no final da década de 90. Como consequência
@@ -633,7 +636,9 @@ impressão 3D de baixo custo. Entre eles temos o paper de Bowyer e seus colabora
 projeto reprap em 2009, “__RepRap: The Replicating Rapid Prototyper – maximizing customizability by breeding
 the means of production__”⁵ e novamente em 2011 com “RepRap – the replicating rapid prototyper”⁶.
 
-**Referências**:
+[[NOTE]]
+====
+.Referências:
 
 1 - Ahn, S. H., Montero, M., Odell, D., Roundy, S., & Wright, P. K. (2002). Anisotropic material properties of
 fused deposition modeling ABS. __Rapid prototyping journal__, __8__(4), 248-257.
@@ -653,8 +658,9 @@ maximizing customizability by breeding the means of production.
 
 6 - Jones, R., Haufe, P., Sells, E., Iravani, P., Olliver, V., Palmer, C., & Bowyer, A. (2011). RepRap–the
 replicating rapid prototyper. __Robotica__, __29__(01), 177-191.
+====
 
-[[academia.edu-e-joshua-m.-pearce]] == academia.edu e Joshua M. Pearce
+== academia.edu e Joshua M. Pearce
 
 No mundo de _facebook_ de hoje, é notório que as redes sociais de internet são um poder à parte, uma forma de
 organização com grande impacto sócio-econômico global, e com a capacidade efetiva de dirigir a mudança de
@@ -688,18 +694,22 @@ Dr. Pearce continua ativo e produzindo muita informação. Em especial, ele e se
 do que deixar os artigos publicamente acessíveis na __academia.edu__, detalhar os projetos no wiki de tecnologia
 sustentável http://appropedia.org/[_http://appropedia.org_], onde tem uma página detalhando suas informações.²
 
+[[opensourcelab]]
 image:image20.png[image,width=471,height=705]
 
-**Referências**:
+[NOTE]
+====
+.Referências:
 
-1 – Você pode ver todos os artigos do Dr. Pearce que estão no academia.edu neste endereço:
+1 – Você pode ver todos os artigos do Dr. Pearce que estão no _academia.edu_ neste endereço:
 https://mtu.academia.edu/JoshuaPearce[_https://mtu.academia.edu/JoshuaPearce_]
 
 2 - http://www.appropedia.org/User:J.M.Pearce[_http://www.appropedia.org/User:J.M.Pearce_]
+====
 
-[[mais-uma-nota-sobre-os-papers-não-acadêmicos]] == Mais uma nota sobre os “papers não-acadêmicos”
+== Ainda sobre os “papers não-acadêmicos”
 
-[[FEITO academiaedu]]Já no início desta obra fomos claros quanto às referências informais. Estamos num período
+Já no início desta obra fomos claros quanto às referências informais. Estamos num período
 de mudança de papéis sociais, não há dúvidas disso. E embora tenhamos ressaltado o papel da academia como uma
 fonte de conhecimento científico da humanidade, é importante que ela não é a única, e um fenômeno que surgiu
 com a internet foram os artigos escritos com metodologia científica ou próxima da científica por indivíduos
@@ -713,10 +723,14 @@ que merecem ser retirados da obscuridade até para embasar o escrutínio acadêm
 procura cumprir este papel. Alguns deles são referenciados no decorrer deste livro, um exemplo notável sendo o
 artigo “Polyholes”¹ do usuário experimentalista _nophead_ (Chris Palmer).
 
+[NOTE]
+====
+.Referência:
 1 -
 http://hydraraptor.blogspot.com.br/2011/02/polyholes.html[_http://hydraraptor.blogspot.com.br/2011/02/polyholes.html_]
+====
 
-1.  [[e-no-brasil]] = E no Brasil?  1.  [[o-fork-comunitário-do-guiacnc-para-a-reprapbr]] == O Fork Comunitário:
+== E no Brasil?  1.  [[o-fork-comunitário-do-guiacnc-para-a-reprapbr]] == O Fork Comunitário:
 Do GuiaCNC para a RepRapBR
 
 O projeto RepRap foi – e continua sendo – o catalisador de oportunidades para que pessoas criativas, engenhosas
@@ -730,9 +744,9 @@ dada a “partida”, começaram a realizar encontros de confraternização e tr
 empreitada. Este foi o primeiro e-mail do grupo que se intitulou “Grupo de Estudo RepRapBR” (o remetente foi
 __Alain Mouette__, que já acompanhava há anos o projeto RepRap):
 
-[cols="",]
-|==========================================================================================================================================================================================================================================================================================================================
-|Este é o convite oficial para participação do Grupo de Estudo para RepRap. +
+[IMPORTANT][icon=None]
+====
+`Este é o convite oficial para participação do Grupo de Estudo para RepRap. +
  +
 * O objetivo é comprar um kit derivado do RepRap <http://store.makerbot.com/featured-products/cupcake-cnc-basic.html>
 cujo custo é de US$750, se conseguirmos trazer sem impostos. Não é o RepRap original, mas usa as mesmas
@@ -745,8 +759,8 @@ que já existem. Estudo preliminar já mostrou que deve ser possível, mas parte
 para ser compatível com o software. +
  +
 * Este grupo é só para quem estiver presente, tudo que levantarmos será conhecimento aberto, mas não pretendemos
-ficar documentando de progresso do nosso estudo. Salvo é claro que alguém seja voluntário para esse fim específico
-|==========================================================================================================================================================================================================================================================================================================================
+ficar documentando de progresso do nosso estudo. Salvo é claro que alguém seja voluntário para esse fim específico.`
+====
 
 Isto está documentado no primeiro post do blog do grupo de estudo,
 http://reprapbr-ge.blogspot.com.br/2010/08/historico-do-grupo-de-estudo.html[_http://reprapbr-ge.blogspot.com.br/2010/08/historico-do-grupo-de-estudo.html_].

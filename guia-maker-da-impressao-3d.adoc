@@ -433,7 +433,7 @@ indivíduos “geniais” que construíam suas próprias impressoras 3D mas que 
 receitas do site do projeto.
 
 [[impressaocobreebronze]]
-image:image11.jpeg[image,width=443,height=372]
+image::image11.jpeg[image,width=443,height=372]
 
 Livre das amarras das patentes, o mercado de massa de impressão 3D irradiou-se para uma série de áreas antes
 inexploradas, desde simples reparos domésticos (quem usaria uma impressora de um milhão de dólares pra isso?) até
@@ -460,7 +460,7 @@ uma contabilidade de quantos materiais diferentes já estão disponíveis para i
 mas esse número com certeza já ultrapassa uma centena.
 
 [[hotendcyclop1]]
-image:image12.png[image,width=193,height=289]
+image::image12.png[hotendcyclop,width=193,height=289,float="right"]
 
 Esse gigantesco desabrochar e democratização de uma tecnologia avançada está tendo impacto profundo em nossa
 sociedade. Outras tecnologias não sofreram o mesmo processo. Você não teve as pessoas construindo televisões em
@@ -475,9 +475,8 @@ uma empresa que já mencionamos.
 
 
 [NOTE]
-====
 .Notas:
-
+====
 1 – Alguns detentores de registros de patentes utilizam-se de uma estratégia chamada “__Patent fencing__”,
 que se traduz em registrar uma extensão óbvia do processo da patente original quando a data de expiração desta
 patente estiver próxima, estendendo assim na prática a duração da patente.
@@ -494,7 +493,7 @@ http://www.3dprinterworld.com/article/aleph-objects-enjoys-809-percent-two-year-
 == Makerbot (2009)
 
 [[fotomakerbot]]
-image:image13.jpeg[image,width=642,height=434]
+image::image13.jpeg[image,width=642,height=434]
 
 Empresa que começou junto ao movimento RepRap, com um de seus fundadores, Zach Smith, sendo também um dos
 fundadores do projeto. Ganhou fundos de investimento do próprio Adrian Bowyer e sua esposa. Reconhecida também
@@ -533,9 +532,8 @@ a Makerbot começou a perder bastante mercado, e já passou por algumas levas de
 uma companhia diminuta perto do que era.
 
 [NOTE]
-====
 .Notas:
-
+====
 1 -
 http://www.openbeamusa.com/blog/2014/5/22/stay-classy-makerbot[_http://www.openbeamusa.com/blog/2014/5/22/stay-classy-makerbot_]
 ====
@@ -560,7 +558,7 @@ sua SLA e foi processada pela 3D Systems, mas acertaram os termos fora das corte
 sendo comercializada, hoje em dia sem precisar pagar royalties.
 
 [[fotodonoformlabs]]
-image:image14.jpeg[image,width=642,height=480]
+image::image14.jpeg[image,width=642,height=480]
 
 Já a B9 Creator sofreu menos este revés, pois ao invés de utilizar a tecnologia SLA “pura”, usou uma variante
 dela que ao invés de um feixe de laser, usa um retroprojetor modificado. Essa tecnologia é chamada de SLA/DLP
@@ -568,7 +566,7 @@ ou simplesmente DLP, por causa do projetor. Adicionalmente, a impressora deles f
 diferença e inicialmente o projeto era open-source, com um fatiador multiplataforma e aberto. Não foram processados.
 
 [[fotob9creatoreform1]]
-image:image15.png[image,width=596,height=368]
+image::image15.png[image,width=596,height=368]
 
 Essas duas impressoras “iguais mas diferentes”, assim como as repraps, criaram o padrão de compatibilidade que
 todas as novas impressoras 3D SLA / SLA/DLP estão adotando. Comprimento de onda do raio ultravioleta, resolução,
@@ -596,7 +594,7 @@ de impressão em lote automatizada (__Form Cell__) e agora uma impressora 3D SLS
 1**. Será um indício que antes mesmo de a SLA se estabelecer completamente, SLS chegará ao mercado de baixo custo?
 
 [[fotoformfuse1sls]]
-image:image19.png[image,width=642,height=409]
+image::image19.png[image,width=642,height=409]
 
 == A Academia e a Impressão 3D
 
@@ -636,10 +634,9 @@ impressão 3D de baixo custo. Entre eles temos o paper de Bowyer e seus colabora
 projeto reprap em 2009, “__RepRap: The Replicating Rapid Prototyper – maximizing customizability by breeding
 the means of production__”⁵ e novamente em 2011 com “RepRap – the replicating rapid prototyper”⁶.
 
-[[NOTE]]
-====
+[NOTE]
 .Referências:
-
+====
 1 - Ahn, S. H., Montero, M., Odell, D., Roundy, S., & Wright, P. K. (2002). Anisotropic material properties of
 fused deposition modeling ABS. __Rapid prototyping journal__, __8__(4), 248-257.
 
@@ -695,7 +692,7 @@ do que deixar os artigos publicamente acessíveis na __academia.edu__, detalhar 
 sustentável http://appropedia.org/[_http://appropedia.org_], onde tem uma página detalhando suas informações.²
 
 [[opensourcelab]]
-image:image20.png[image,width=471,height=705]
+image::image20.png[image,width=471,height=705]
 
 [NOTE]
 ====
@@ -747,7 +744,7 @@ __Alain Mouette__, que já acompanhava há anos o projeto RepRap):
 
 [IMPORTANT][icon=None]
 ====
-`Este é o convite oficial para participação do Grupo de Estudo para RepRap. +
+[small]`Este é o convite oficial para participação do Grupo de Estudo para RepRap. +
  +
 * O objetivo é comprar um kit derivado do RepRap <http://store.makerbot.com/featured-products/cupcake-cnc-basic.html>
 cujo custo é de US$750, se conseguirmos trazer sem impostos. Não é o RepRap original, mas usa as mesmas
@@ -815,13 +812,13 @@ com público registrado de _1240_ pessoas! Foi realizado em um ginásio de Horto
 de feira e demonstrações de fabricantes e profissionais de Impressão 3D.
 
 [[expo3dbr2016_1]]
-image:image21.jpeg[image,width=610,height=475]
+image::image21.jpeg[image,width=610,height=475]
 
 [[expo3dbr2016_2]]
-image:image22.jpeg[image,width=610,height=524]
+image::image22.jpeg[image,width=610,height=524]
 
 [[expo3dbr2016_3]]
-image:image23.jpeg[image,width=642,height=377]
+image::image23.jpeg[image,width=642,height=377]
 
 Além do movimento _diretamente_ relacionado à impressão 3D, tivemos em solo nacional – sempre com ligações
 internacionais pois o desenvolvimento aberto é por natureza inclusivo – vários grupos de pesquisa, fabricação e
@@ -846,7 +843,7 @@ em sua página com explicações aprofundadas e estratégicas do Movimento Maker
 http://www.makers.net.br/[_http://www.makers.net.br_].
 
 [[fotomakersnet]]
-image:image24.png[image,width=642,height=571]
+image::image24.png[image,width=642,height=571]
 
 === LAPAC – Universidade Estadual de Campinas
 
@@ -864,14 +861,15 @@ pode-se esperar delas um rigor e conformidade muito maior do que comumente se en
 o LAPAC presta um importante papel de embasamento científico e formal para o tão disperso conhecimento nessa área.
 
 [[fotolapac]]
-image:image25.jpeg[image,width=613,height=505]
+image::image25.jpeg[image,width=613,height=505]
 
+.Referências:
 Site do LAPAC: http://lapac.fec.unicamp.br/[_http://lapac.fec.unicamp.br_]
 
 Canal de youtube: https://www.youtube.com/user/lapacfec[_https://www.youtube.com/user/lapacfec_]
 
 Algumas publicações:
-http://www.fec.unicamp.br/~lapac/publicacoes.htm[_http://www.fec.unicamp.br/~lapac/publicacoes.htm_]. Artigos
+http://www.fec.unicamp.br/\~lapac/publicacoes.htm[_http://www.fec.unicamp.br/~lapac/publicacoes.htm_]. Artigos
 adicionais podem ser encontrados no currículo _lattes_ da chefe do Laboratório, Gabriela Celani:
 http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4792067H6[_http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4792067H6_]
 
@@ -889,7 +887,7 @@ têm crescimento rápido levando à necessidade de substituição constante das 
 necessidade de serem baratas).
 
 [[colagemmao3d]]
-image:image26.png[image,width=619,height=116]
+image::image26.png[image,width=619,height=116]
 
 O grupo da Dra. Elizete além de trabalhar com os modelos open-source do projeto e-NABLE busca desenvolver um
 protocolo de reabilitação adequado. Com seu caráter acadêmico como projeto de extensão universitária no
@@ -921,7 +919,7 @@ muitas vezes revindicam créditos sobre algo que não criaram, com os designs op
 sendo um alvo frequente.
 
 [[fotoeventomao3d]]
-image:image27.jpeg[image,width=642,height=534]
+image::image27.jpeg[image,width=642,height=534]
 
 Das colaborações do projeto Mão3D, uma que se destaca é a colaboração com outro grupo acadêmico, o Grupo de
 Pesquisa em Manufatura Aditiva do Instituto Tecnológico da Aeronáutica, GPMA/ITA. O desafio é tão grande que,
@@ -977,7 +975,7 @@ como seus artigos de blog e até participação em artigos científicos, com seu
 em português, em c-oautoria com Miamoto, que ensina Reconstrução Facial Forense usando softwares livres e gratuitos.
 
 [[fotociceroepaulo]]
-image:image28.jpeg[image,width=642,height=435]
+image::image28.jpeg[image,width=642,height=435]
 
 Esta parceria iniciou-se com as ciências forenses como pano de fundo, e embora novas metodologias estivessem em
 franco desenvolvimento (como o protocolo para reconstruções faciais totalmente realizado com software livre),
@@ -1008,7 +1006,7 @@ segue em projetos de divulgação de ciência e tecnologia junto à mídia, Miam
 como docente de cursos de graduação e pós-graduação em odontologia e medicina e pesquisador.
 
 [[colagemciceropaulo]]
-image:image29.png[image,width=632,height=544]
+image::image29.png[image,width=632,height=544]
 
 É sempre saudável notar que muitas das conquistas de Paulo, Cícero e seus associados foram possíveis por causa
 de uma instituição governamental que é central ao desenvolvimento da impressão 3D industrial e comunitária
@@ -1032,16 +1030,16 @@ a _Andreas Vesalius_ (1514-1564, considerado o “pai da anatomia moderna”) e 
 sob a GPL versão 2, disponível para Mac OS X, Linux e Windows.
 
 [[screenshotinvesalius]]
-image:image30.jpeg[image,width=593,height=438]
+image::mage30.jpeg[image,width=593,height=438]
 
 [[colagemcti]]
-image:image31.png[image,width=586,height=520]
+image::image31.png[image,width=586,height=520]
 
 Faz-se mister dar crédito especial ao Dr. Jorge pelo envolvimento com a impressão 3D bem antes da sua explosão
 com a queda da patente, já em 2007 tendo colaborado com um livro organizado pelo pesquisador Neri Volpato:
 
 [[livromariovolpato]]
-image:image32.jpeg[image,width=352,height=570]
+image::image32.jpeg[image,width=352,height=570]
 
 === Outros pioneiros e divulgadores
 
@@ -1079,7 +1077,7 @@ mais a pena comprar um pacote deles e jogar a parte plástica fora do que ter qu
 que ainda são difíceis de achar.
 
 [[fotomolaspregador]]
-image:image33.png[image,width=642,height=591]
+image::image33.png[image,width=642,height=591]
 
 Citações:
 
@@ -1231,7 +1229,8 @@ a faz ficar em tensão constante com as barras roscadas. Isso aumenta o desgaste
 “Z wobbling” (variações do Z) e, claro, leva a impressões piores. O contrário do efeito advogado pelos
 projetistas da “solução”.
 
-image:image34.png[image,width=642,height=483]
+[[reinvencaodarodaquadrada]]
+image::image34.png[image,width=642,height=483]
 
 Embora raramente, o teste desinformado pode suprir resultados e resultar em algo genuinamente inovador. É possível
 fazer uma analogia com o processo evolutivo: mutações são erros de cópias de genes, e quase sempre são
@@ -1246,14 +1245,17 @@ coluna “Fail of the Week” do sítio web __Hackaday³__. Algumas vezes, com s
 de modo a que outros possam repeti-la e a idéia se espalhe. A chance é baixa, mas a “reinvenção da roda”
 acontecendo em paralelo massivamente às vezes compensa estatisticamente as baixas chances e oferece algo de novo.
 
-1 - https://pt.wikipedia.org/wiki/Cauda_longa[_https://pt.wikipedia.org/wiki/Cauda_longa_]
+[NOTE]
+.Notas:
+====
+. https://pt.wikipedia.org/wiki/Cauda_longa[_https://pt.wikipedia.org/wiki/Cauda_longa_]
 
-2 - http://www.stratasys.com/recycle[_http://www.stratasys.com/recycle_]
+. http://www.stratasys.com/recycle[_http://www.stratasys.com/recycle_]
 
-3 -
-https://hackaday.com/category/hackaday-columns/fail-of-the-week-hackaday-columns/[_https://hackaday.com/category/hackaday-columns/fail-of-the-week-hackaday-columns/_]
+. https://hackaday.com/category/hackaday-columns/fail-of-the-week-hackaday-columns/[_https://hackaday.com/category/hackaday-columns/fail-of-the-week-hackaday-columns/_]
+====
 
-[[por-outro-lado...]]  == Por outro lado...
+=== Por outro lado...
 
 Há outros contextos do processo _maker_ mais propícios às inovações e descobertas. Um deles é a __frictionless
 innovation__, já mencionada na introdução. Nesse caso temos um produto (software, modelo tridimensional,
@@ -1273,7 +1275,8 @@ diferente do extrusor da Darwin em que foi baseado que usava um NEMA14.
 Um pouco como era de se esperar, o design é relativamente simples, cantos retos, poucas curvas. Estamos ainda no
 início do projeto reprap.
 
-image:image35.png[image,width=642,height=466]
+[[extrusorwade]]
+image::image35.png[image,width=642,height=466]
 
 É um design funcional e o fato de ter _redução_ no tracionamento (ou seja, engrenagens adicionais ligadas à
 rotação do motor até os dentes que empurram o filamento) era essencial para a época, em que se usavam motores
@@ -1287,7 +1290,8 @@ acesso a ferramentas melhores, quanto a caprichos maiores de projeto. Nomeou o e
 Wade’s Extruder”, pra não deixar de dar crédito ao Wade, mas o extrusor, que teve enorme adoção, acabou
 sendo conhecido como “Greg’s Wade Extruder” (‘extrusor do Wade do Greg’).
 
-image:image36.png[image,width=619,height=540]
+[[extrusorgreg]]
+image::image36.png[image,width=619,height=540]
 
 Apesar de o extrusor do Greg aparecer com menos derivações que o Wade (19 contra 22) no site thingiverse, ele
 teve _muito_ mais sucesso. Muitas delas foras do site, ou ainda no próprio thingiverse mas não contabilizada,
@@ -1315,14 +1319,16 @@ Uma dessas modificações veio em 2012, de Jonas Kuehling. Utilizando os mesmos 
 e fez o dele incorporando modificações pontuais de outros, e também se tornando enormemente popular e dando
 origem a nada menos de 88 derivações contabilizadas! E se tornando o __extrusor do Wade do Greg do Jonas__.
 
-image:image37.png[image,width=642,height=526]
+[[extrusorjonas]]
+image::image37.png[image,width=642,height=526]
 
 Lembra-se que falamos da trajetória do grupo ReprapBR? Aqui os caminhos se cruzam. O mesmo Alain Mouette que
 enviou o primeiro e-mail para o grupo aparece agregando mais um vagão ao agilíssimo trem da frictionless innovation:
 
-image:image38.png[image,width=642,height=419]
+[[extrusorajgw]]
+image::image38.png[image,width=642,height=419]
 
-[[quando-vem-a-fricção]] == Quando vem a fricção
+=== Quando vem a fricção
 
 Patentes, especialmente as consideradas “bem escritas”, são um estorvo incomensurável, um golpe de prejuízo
 incalculável contra o progresso da tecnologia, pois bloqueiam um design / projeto / invenção e às vezes todo um
@@ -1349,7 +1355,8 @@ O que aconteceria caso Greg não tivesse usado uma ferramenta acessível como o 
 difícil tratar “e se”, mas podemos ter uma evidência notável, ainda em 2014 , com um extrusor de excelência
 técnica que foi muito aclamado em fóruns e é usado em impressoras open-source brasileiras, o __Alex Extruder__.
 
-image:image39.png[image,width=642,height=491]
+[[extrusoralex]]
+image::image39.png[image,width=642,height=491]
 
 Sob todos os pontos de vista, a excelência técnica do extrusor é inegável. Tem mais plástico nos pontos
 de stress mecânico do extrusor. Tem encaixes finos permitindo a movimentação desimpedida da dobradiça e o
@@ -1360,7 +1367,8 @@ No entanto, tendo sido feito por um engenheiro mecânico com a poderosa ferramen
 Solidworks, ferramenta de modelagem sólida, a licença livre de pouco adiantou. O projeto tem apenas _duas_
 derivações, ambas sendo a reconstrução e extensão em ferramentas diferentes.
 
-image:image40.png[image,width=642,height=361]
+[[extrusorlucaseka]]
+image::image40.png[image,width=642,height=361]
 
 O *KA Extruder* foi uma tentativa de transposição do Alex Extruder para o OpenSCAD. Mas, como se pode notar pelos
 comentários na página do design, ele tinha várias “pontas soltas”, era feito para um padrão de filamento que
@@ -1382,7 +1390,8 @@ e, portanto, restritivo. Novamente, é revelador que um design assim tivesse ape
 versão seguinte do próprio autor e duas outras sendo leve modificações de malha a partir do STL final, e não
 do arquivo-fonte de Sketchup disponibilizado na página.
 
-image:image41.png[image,width=642,height=225]
+[[extrusorlucasv2ederivacoes]]
+image::image41.png[image,width=642,height=225]
 
 O fluxo e evolução dos designs do thingiverse e outros sítios web de compartilhamento serve como uma fábula com
 moral para os interessados no compartilhamento de projetos e participação do mercado Maker: acessibilidade é
@@ -1391,16 +1400,19 @@ inesperado contra o sucesso do seu empreendimento. Isto é algo a se observar po
 pelo mais bem-intencionados; o famoso chaveiro Marvin, peça usada para testar impressoras 3D, foi também feito
 em SolidWorks.
 
-1 - 2003 Lawrence R. Klein Lecture, The Case Against Intellectual Monopoly – M Boldrin, DK Levine – International
+[NOTE]
+.Referências:
+====
+. 2003 Lawrence R. Klein Lecture, The Case Against Intellectual Monopoly – M Boldrin, DK Levine – International
 Economic Review, 2004 – Wiley Online Library.
 
-2 – Leiva, Fernando, "Innovations as a Network of Ideas: Assessing Patent Values through Citations", Working Paper
+. Leiva, Fernando, "Innovations as a Network of Ideas: Assessing Patent Values through Citations", Working Paper
 (2007).
 
-3 -
-http://www.popsci.com/diy/article/2013-08/get-3-d-printer-designs-expired-patents[_http://www.popsci.com/diy/article/2013-08/get-3-d-printer-designs-expired-patents_]
+. http://www.popsci.com/diy/article/2013-08/get-3-d-printer-designs-expired-patents[_http://www.popsci.com/diy/article/2013-08/get-3-d-printer-designs-expired-patents_]
+====
 
-[[usando-sua-impressora-3d-pra-ganhar-dinheiro]] = Usando sua impressora 3D pra ganhar dinheiro
+=== Usando sua impressora 3D pra ganhar dinheiro
 
 Vimos na história da reprap e da impressão 3D no Brasil que a impressão de baixo custo vem acontecendo desde 2009
 e, no Brasil, os hobbyistas começaram por volta de 2012/2013. Quem começou a aprender impressão 3D e a cobrar por
@@ -1419,7 +1431,7 @@ desencorajá-lo. Afinal, uma impressora 3D é uma pequena fábrica pessoal, algo
 funcionais ou esteticamente desejáveis; transformar esta fábrica em uma fonte de sustento é uma inferência
 lógica óbvia.
 
-[[como-anunciar-e-onde]] == Como anunciar e onde
+==== Como anunciar e onde
 
 O primeiro dilema ao candidato à impressão sob demanda é __como encontrar e atrair os clientes__. O primeiro
 pensamento é, claro, montar uma _loja_ para vender suas impressões. Como um serviço ainda não estabelecido
@@ -1452,7 +1464,8 @@ para que haja o cálculo automático do preço de qualquer peça, de acordo com 
 quando o consumidor procura produtores em sua área e já tem o modelo da peça, pode simplesmente ver os diferentes
 preços já explicitados na busca do sistema.
 
-image:image42.png[image,width=601,height=573]
+[[screenshot3dhubs1]]
+image::image42.png[image,width=601,height=573]
 
 Quem entende da técnica já notará algo “fora da ordem” aí: o preço ser calculado _automaticamente_
 não parece certo. Uma peça pode ter muitas geometrias possíveis, das mais fáceis às mais difíceis. Veremos
@@ -1467,7 +1480,8 @@ não aceita por não compensar, ou aceita e faz um trabalho ruim, tendo sua nota
 O 3DHubs não é o único. Em franco crescimento e popularização existe o serviço brasileiro __Cammada__,
 que tem uma interface mais amistosa. A busca equivalente no Cammada permite até cálculo automático de frete:
 
-image:image43.png[image,width=636,height=473]
+[[screenshotcammada1]]
+image::image43.png[image,width=636,height=473]
 
 O cammada permite ao produtor uma certa flexibilidade no cálculo automático como descontos conforme o volume
 aumenta. Ainda assim, não há nada que avalie estruturas adicionais, dificuldade do modelo e demais atributos,
@@ -1477,7 +1491,7 @@ Isso nos leva ao próximo ponto: já que estamos tratando de um serviço feito a
 de modelos de computador, qual é a melhor maneira de cobrar por este serviço, de modo a que haja um balanço
 ótimo entre consumo e produção?
 
-[[como-cobrar-por-impressões]] == Como cobrar por impressões
+==== Como cobrar por impressões
 
 A citação do serviço brasileiro Cammada é providencial: além de fornecer o cômodo serviço de intermediador
 de fabricação digital, seus fundadores procuram também gerar informação e _mindshare_ para a tecnologia –
@@ -1485,14 +1499,15 @@ um cenário aliás ideal para a produção de conteúdo open-source -, e uma de 
 difundidas ao público é a __calculadora Cammada__, uma aplicação web elegante que sugere e calcula o modo e
 preço de cobranças de acordo com uma série de variáveis.
 
-image:image44.png[image,width=630,height=438]
+[[calculadoracammada1]]
+image::image44.png[image,width=630,height=438]
 
 A calculadora do Cammada tem ainda a (óbvia?) vantagem de ser perfeitamente integrada ao serviço que fazem,
 com detalhes como os descontos progressivos para volumes maiores. No entanto, isso não faz dele o único meio de
 cobrar, nem o universalmente aceito. Antes de explicar por quê, é necessária uma breve digressão: precisamos
 falar sobre economia!
 
-[[economia-valor-trabalho-versus-valor-subjetivo]] === Economia: Valor-Trabalho versus Valor Subjetivo
+==== Economia: Valor-Trabalho versus Valor Subjetivo
 
 Podemos chamar a esse antagonismo de _A_ __Guerra dos Carlos__, devido aos seus principais expoentes serem
 variações deste nome (Karl Marx e Carl Menger). Tratam de como atribuir _valor econômico_ a algo resultante
@@ -1534,7 +1549,7 @@ sustentação do negócio, tanto no pagamento de contas quanto nos investimentos
 valor subjetivo indica que é sensato manipular o botãozinho giratório do lucro esperado – para baixo ou para
 cima – de acordo com a expectativa do cliente.
 
-[[fechando-parênteses]] === Fechando parênteses
+==== Fechando parênteses
 
 Voltando aos problemas da cobrança da calculadora do Cammada, a primeira dificuldade consiste no fato de o serviço
 se basear em cobrança por _volume_ (cm³). O principal ingrediente das impressões 3D é o material da impressão
@@ -1577,7 +1592,7 @@ o preço. Não é o expediente mais simples do mundo, mas funciona. Num mercado 
 muito granulados e pouca fidelidade de cliente como o cammada, no entanto, o produtor perderá encomendas de itens
 mais simples e grosseiros pelo preço amortizado para cima.
 
-[[tempo-é-dinheiro]] === Tempo é dinheiro
+==== Tempo é dinheiro
 
 Pegando carona na crítica da subjetividade da cobrança dos serviços, existe outro equívoco feito com bastante
 frequência no ecossistema de impressão sob demanda, que é a classificação do _tempo de serviço_ como _custo
@@ -1590,7 +1605,7 @@ comoditizado dos serviços de impressão 3D no entanto pouco tolera essa literal
 com impressoras mais rápidas ou prazos que não passem a impressão subjetiva de penalidade acabam conquistando
 mais os clientes.
 
-[[agregando-valor-ao-camarote]] === Agregando valor ao camarote
+==== Agregando valor ao camarote
 
 Outro aspecto do serviço de impressão sob demanda é que ele está inextrincavelmente atrelado a todo um workflow
 de produção. Para imprimir um modelo, é preciso antes que ele seja criado digitalmente, seja por modelagem,
@@ -1611,7 +1626,7 @@ participar como um hub de serviços como o Cammada e 3DHubs. Além de não terem
 tais serviços como têm para a impressão, o fato de serem intermediários obrigatórios em cada parte do processo
 pode atrasar e prejudicar a interação e a viabilidade financeira da transação.
 
-[[aprenda-a-dizer-não]] === Aprenda a dizer não
+==== Aprenda a dizer não
 
 A tecnologia da impressão 3D é formidável – e o que se pode fazer com ela às vezes parece ilimitado, ainda
 mais comparando com outras tecnologias de fabricação, e o entusiasmo e a paixão pelo trabalho podem levar o
@@ -1639,32 +1654,35 @@ diferente do que os fatiadores aceitam, como SLDPRT (SolidWorks) ou SKP (Sketchu
 quando a tarefa for de impressão, mesmo tendo o software para manipular o arquivo. A razão é que a conversão
 para o formato de impressão, que é uma malha – STL, AMF, 3MF – pode inserir erros que tornam a impressão
 inviável, e isso se origina de uma modelagem de baixa qualidade. Tais erros basais de modelagem devem ser corrigidos
-na fonte, e o melhor jeito de assegurar isso é exigir o modelo já “transformado”.  * Para muitos casos, uma
+na fonte, e o melhor jeito de assegurar isso é exigir o modelo já “transformado”.
+* Para muitos casos, uma
 malha com erros simples enviada pelo cliente pode ser consertada por softwares de conserto de malha automático ou
 serviços de nuvem gratuitos (azure 3d print service, makeprintable, etc.) que realizam essa tarefa rapidamente e
 permitem que o serviço seja executado. Tenha sempre em mente que isso é acostumar mal o cliente e o tiro pode
 sair pela culatra, quando ele enviar um modelo com erros que não são consertáveis de forma automática e se
 recusar a contratar o conserto. Outro problema, pertinente aos serviços de nuvem, é que há problemas legais em
 disponibilizar modelos sob copyright para terceiros sem permissão expressa e sem contrato de confidencialidade
-com esses terceiros.  * Quando o produtor tiver o serviço agregado de retoque de uma modelagem já existente,
+com esses terceiros.
+* Quando o produtor tiver o serviço agregado de retoque de uma modelagem já existente,
 é praticamente obrigatório o uso da mesma ferramenta em que ela foi feita. Isso porque, especialmente nas peças
 mais complexas, os metadados do modelo como o histórico de modificações é essencial para que um retoque não
 prejudique ou destoe de outras partes do modelo. Em especial, ferramentas de modelagem sólida – como Solidworks,
 Inventor, AutoCAD, FreeCAD – são mais adequadas para retoques e reparos grandes e basais, enquanto ferramentas
 que trabalham diretamente com malhas, como Sketchup, Blender, Maya, ZBrush são eficazes apenas para modificações
-pequenas ou bem localizadas, com grande chance de introduzir erros na malha.  * Se a forma é muito complexa –
+pequenas ou bem localizadas, com grande chance de introduzir erros na malha.
+* Se a forma é muito complexa –
 apesar de ser em um material só - e você tem uma impressora FFF com apenas um extrusor, considere adquirir uma
 outra impressora com dois extrusores para essas ocasiões. A razão é que você poderá usar nela filamentos
 dissolvíveis que permitem imprimir suportes removíveis por imersão no acabamento. Tais filamentos, tanto por
 seu preço quanto por sua especificade, tornam o serviço consideravelmente mais custoso, mas muitos clientes
-privilegiam a qualidade e complexidade da forma e pagarão o necessário. É um diferencial valioso.  * Ferramentas:
-procure não se fiar nunca em apenas uma ferramenta. Existem diversas ferramentas “ajudantes” e analíticas
+privilegiam a qualidade e complexidade da forma e pagarão o necessário. É um diferencial valioso.
+* Ferramentas: procure não se fiar nunca em apenas uma ferramenta. Existem diversas ferramentas “ajudantes” e analíticas
 que aprimoram bastante o workflow de fabricação e não têm equivalentes, ou têm equivalentes inferiores mesmo
 nos softwares mais complexos e caros. Muitas dessas ferramentas são open-source (meshlab, blender, CloudCompare,
 FreeCAD, etc.) e outras ainda são proprietárias, mas gratuitas (meshmixer, netfabb trial, 3D Builder, etc.),
 representando apenas o custo do tempo de aprendizado. Aprender um pouco de cada pode parecer desperdício de tempo
-mas compensa a longo prazo… E se você deseja trabalhar com a impressão 3D, o longo prazo está implícito.  *
-Seja criativo e paciente. Aprenda habilidades extras no seu tempo para complementar o serviço de impressão 3D,
+mas compensa a longo prazo… E se você deseja trabalhar com a impressão 3D, o longo prazo está implícito.
+* Seja criativo e paciente. Aprenda habilidades extras no seu tempo para complementar o serviço de impressão 3D,
 desde arte de acabamento, pintura, reforço de partes, revestimento, modelagem, embelezamento, ou qualquer outra
 coisa que pode imaginar. Pode ser um passatempo cativante e uma hora se tornar o seu diferencial. As pessoas ainda
 estão se acostumando à tecnologia em suas vidas, e as extrapolações delas, e a busca por contratá-las, ainda
@@ -1672,8 +1690,9 @@ são incipientes. Esteja também preparado para os avanços da tecnologia: ela t
 e as exigências dos clientes e massificação do mercado progridem do mesmo jeito. Para continuar relevante, você
 tem que progredir no mínimo na mesma velocidade – como a corrida da Rainha Vermelha no livro _Alice no País
 dos Espelhos_ de Lewis Carrol, em que para permanecer no mesmo lugar era necessário correr o máximo que pudesse,
-e para ir a outros lugares só correndo duas vezes mais rápido.  1.  [[financiamento-coletivo-crowdfunding]] ==
-Financiamento coletivo (crowdfunding)
+e para ir a outros lugares só correndo duas vezes mais rápido.
+
+==== Financiamento coletivo (crowdfunding)
 
 __Crowdfunding__, ou financiamento coletivo, é a prática de conseguir fundos suficientes para iniciar um projeto
 angariando contribuições monetárias de um grande número de pessoas pela internet. Geralmente envolve categorias
@@ -1701,7 +1720,8 @@ surgiram de crowdfunding. Hoje já se tornou cômica a forma com que praticament
 novo de impressora 3D nos sítios web de crowdfunding, assim como a contrastante e cada vez mais popular máxima:
 “nunca compre impressora 3D de financiamento coletivo!”.
 
-image:image45.png[image,width=619,height=510]
+[[fotometamaquinacatarse]]
+image::image45.png[image,width=619,height=510]
 
 Mas como qualquer fenômeno de inovação econômica e social, o crowdsourcing em geral e o crowdfunding em
 particular não estão isentos de percalços, tanto para quem está do lado dos contribuidores quanto para quem
@@ -1711,23 +1731,29 @@ oferece seus projetos em uma plataforma dessas.
 
 * …, ou, melhor dizendo, __financiadores do projeto__. Esse é o primeiro problema e, apesar de abstrato, até
 filosófico, tem consequências práticas bem pungentes. Os usuários pagantes de um projeto de financiamento
-coletivo dificilmente se enxergam como _investidores_ ou __financiadores__, e os próprios portais envolvidos
+coletivo dificilmente se enxergam como _investidores_ ou __financiadores__ e os próprios portais envolvidos
 não ajudam nisso. Tudo fica parecendo uma simples compra de produto existente. Não é mencionado o _*risco*_
 inerente a esses negócios exceto bem no final, de forma obscura e em letrinhas miúdas. Se por um certo lado a
 linguagem publicitária é tida como necessária para envolver e convencer o usuário prospectivo, por outro lado
 seduz sem informar o necessário. Isso se reflete nos próprios termos dos usuários, pois raramente quem investe
 em tais projetos diz que financiou algo - a palavra usada é “comprar”, como se fosse só mais um brinquedo de
-aliexpress que demorasse alguns meses para chegar.  * Muitos projetos – a maioria, aliás – atrasam a data de
+aliexpress que demorasse alguns meses para chegar.
+
+* Muitos projetos – a maioria, aliás – atrasam a data de
 entrega dos prêmios. Em 2012 um levantamento do portal _kickstarter_ pela CNNMoney verificou que 84% dos projetos
 atrasaram¹. Atraso não é a mesma coisa que falha, certamente, com os projetos que realmente falham sendo menos de
-5%, mas se é algo com que se conta para produção, o despreparo para isso pode acarretar prejuízos.  * Como se
+5%, mas se é algo com que se conta para produção, o despreparo para isso pode acarretar prejuízos.
+
+* Como se
 fosse uma nova Corrida ao Ouro, muitos projetos se aproveitam da ingenuidade ou pouco conhecimento científico dos
 usuários e prometem façanhas irrealizáveis e tecnologias inexistentes, um novo __ouro de tolos__. Alguns exemplos
 são o “respirador artificial compacto” __Triton__² e o “extrator de água” __Waterseer__³. O logro do
 Waterseer é ainda mais complexo pois o investidor não ganha um prêmio, o resultado do projeto sendo entregue
 a “lugares na África” não especificados, isto é, ainda espolia ardilosamente sentimentos humanitários
 de quem dá o dinheiro! Tais projetos invariavelmente mostram renderizações computadorizadas da situação
-que dizem almejar ao invés de um protótipo funcional.  * No caso brasileiro, há a dificuldade adicional de
+que dizem almejar ao invés de um protótipo funcional.
+
+* No caso brasileiro, há a dificuldade adicional de
 frete e impostos. Na hora do financiamento o frete é apenas estimado, e pode ser diferente quando do envio para o
 Brasil. Algumas vezes o produtor não conhece bem as regras alfandegárias para o país e envia o produto por exemplo
 sem CPF, se arriscando a tê-lo barrado pela receita. Além disso, os impostos a incidir podem ser bem salgados,
@@ -1756,8 +1782,10 @@ inovadora pode falhar, e falha* – muito facilmente. Exemplos não faltam, um d
 delta Tiko⁴, e um exemplo nacional sendo a controladora de impressão 3D de escopo industrial “3DRoot”⁵. Em
 comum entre esses dois projetos, aliás, é confiar demais na parte do hardware e esquecer que o _software_ (ou no
 caso o firmware da controladora) é complexo e precisa de muito uso em campo pra ser devidamente depurado e afinado,
-ainda mais quando não são usados como base softwares maduros e testados como os do projeto reprap.  * Reforçando
-algo óbvio, o investidor ou cliente __*busca gratificação*__. Isso não pode ser perdido de vista e se temos
+ainda mais quando não são usados como base softwares maduros e testados como os do projeto reprap.
+
+* Reforçando
+uma obviedade, o investidor ou cliente __**busca gratificação**__. Isso não pode ser perdido de vista e se temos
 também os projetos de financiamento coletivo que buscam o máximo possível ter seus prêmios parecendo produtos
 finalizados de prateleira, temos o outro lado, especialmente para projetos de cunho beneficente, comunitário
 ou ecológico, de ser feita uma promessa ao investidor com prêmios pífios, intangíveis ou desmotivadores de
@@ -1769,18 +1797,25 @@ ele financia. O segundo caso terá muito mais sucesso pela gratificação que pr
 aberto, muitas soluções criativas podem ser inventadas para se ter sucesso na campanha. No caso específico de
 campanhas de cunho __político__, ideologias pesam bastante e o maior projeto de financiamento coletivo de cunho
 não-lucrativo foi do advogado Lawrence Lessig para reformar as regras de financiamento de campanhas políticas.⁶
+
 * Uma vantagem do financiamento coletivo é que um dos modos de o realizar – o mais frequente – é “tudo ou
 nada”: o financiado estipula uma quantia mínima a ser atingida para que o processo possa ter sucesso, um prazo é
 criado (digamos, dois meses) e durante este prazo, a campanha está aberta aos investidores. Passado o prazo, caso a
 quantia mínima não seja alcançada, todo o dinheiro é devolvido. Ninguém sai perdendo. Um produtor resoluto pode
 tentar obter o financiamento outras vezes, e isso realmente acontece – certas campanhas só pegam “tração” na
 segunda ou terceira vez que são tentadas, e daí migram para o sucesso, como o bico de tungstênio de impressora 3D
-da dddmaterial⁷.  * É educativo ao interessado no financiamento estudar os casos de falha de entrega, mais que
+da dddmaterial⁷.
+
+* É educativo ao interessado no financiamento estudar os casos de falha de entrega, mais que
 os casos de sucesso. Fiascos milionários com quebra de contrato e intrigas pessoais como a impressora de resina
 __Peachy Printer__⁸ podem acontecer com qualquer um, e mostram bem a tensão e pressão pública que acometem
 um projeto desses. É interessante ainda ver que mesmo com a fragorosa falha deste projeto, o fato de a terem
 criado em regime open-source, com repositório no github⁹, permitiu que o projeto fosse continuado na forma
-da YXE3D¹⁰, o que nos leva ao próximo ponto.  + image:image46.png[image,width=580,height=563]
+da YXE3D¹⁰, o que nos leva ao próximo ponto.
+
+[[yxe3dexpeachyprinter]]
+image::image46.png[image,width=580,height=563]
+
 * Se parte do objetivo do projeto é disseminar uma tecnologia, não só vendê-la, vale muito a pena considerar
 anunciá-la como open-source (e existem diversas licenças para escolher que permitem diferentes tipos de controle),
 pois assim, mesmo com o projeto falhando, os usuários pagantes terão uma “consolação” (que pode, no limite,
@@ -1799,35 +1834,33 @@ econômica que ainda tem muito a oferecer, e muito o que amadurecer na sociedade
 tem a intenção mais de apresentar um conceito do que realmente oferecer caminhos, já que tais caminhos, na
 verdade, ainda estão sendo traçados.
 
-1 -
-http://money.cnn.com/2012/12/18/technology/innovation/kickstarter-ship-delay/[_http://money.cnn.com/2012/12/18/technology/innovation/kickstarter-ship-delay/_]
+[NOTE]
+.Notas:
+====
+. http://money.cnn.com/2012/12/18/technology/innovation/kickstarter-ship-delay/[_http://money.cnn.com/2012/12/18/technology/innovation/kickstarter-ship-delay/_]
 
-2 -
-http://www.digitaltrends.com/cool-tech/triton-reboots-artificial-gill-campaign/[_http://www.digitaltrends.com/cool-tech/triton-reboots-artificial-gill-campaign/_]
+. http://www.digitaltrends.com/cool-tech/triton-reboots-artificial-gill-campaign/[_http://www.digitaltrends.com/cool-tech/triton-reboots-artificial-gill-campaign/_]
 
-3 - _https://www.indiegogo.com/projects/waterseer-water-women#/_
+. _https://www.indiegogo.com/projects/waterseer-water-women#/_
 
-4 -
-http://hackaday.com/2017/02/27/the-tiko-printer-what-happens-when-you-innovate-too-much/[_http://hackaday.com/2017/02/27/the-tiko-printer-what-happens-when-you-innovate-too-much/_]
+. http://hackaday.com/2017/02/27/the-tiko-printer-what-happens-when-you-innovate-too-much/[_http://hackaday.com/2017/02/27/the-tiko-printer-what-happens-when-you-innovate-too-much/_]
 
-5 - _https://www.indiegogo.com/projects/3droot-high-reliability-3d-print-controller/#/_
+. _https://www.indiegogo.com/projects/3droot-high-reliability-3d-print-controller/#/_
 
-6 - https://en.wikipedia.org/wiki/Mayday_PAC[_https://en.wikipedia.org/wiki/Mayday_PAC_]
+. https://en.wikipedia.org/wiki/Mayday_PAC[_https://en.wikipedia.org/wiki/Mayday_PAC_]
 
-7 -
-https://www.kickstarter.com/projects/dddmaterial/3d-printer-tungsten-premium-nozzle-reloaded[_https://www.kickstarter.com/projects/dddmaterial/3d-printer-tungsten-premium-nozzle-reloaded_]
+. https://www.kickstarter.com/projects/dddmaterial/3d-printer-tungsten-premium-nozzle-reloaded[_https://www.kickstarter.com/projects/dddmaterial/3d-printer-tungsten-premium-nozzle-reloaded_]
 
-8 -
-https://motherboard.vice.com/en_us/article/peachy-printer[_https://motherboard.vice.com/en_us/article/peachy-printer_]
+. https://motherboard.vice.com/en_us/article/peachy-printer[_https://motherboard.vice.com/en_us/article/peachy-printer_]
 
-9 - https://github.com/peachyprinter[_https://github.com/peachyprinter_]
+. https://github.com/peachyprinter[_https://github.com/peachyprinter_]
 
-10 - http://www.yxe3d.com/[_http://www.yxe3d.com/_]
+. http://www.yxe3d.com/[_http://www.yxe3d.com/_]
 
-11 -
-http://www.techdrivein.com/2012/12/top-5-kickstarter-crowdfunding-alternatives-opensource-software.html[_http://www.techdrivein.com/2012/12/top-5-kickstarter-crowdfunding-alternatives-opensource-software.html_]
+. http://www.techdrivein.com/2012/12/top-5-kickstarter-crowdfunding-alternatives-opensource-software.html[_http://www.techdrivein.com/2012/12/top-5-kickstarter-crowdfunding-alternatives-opensource-software.html_]
+====
 
-[[a-tecnologia-fff]] = A tecnologia FFF
+== A tecnologia FFF
 
 A tecnologia que chegou à popularização em nossos dias foi a patenteada por S. Scott Crump. Há vários motivos
 para isso: é razoavelmente fácil construir uma máquina (hoje em dia, ainda mais com as receitas do projeto reprap);
@@ -1835,132 +1868,192 @@ e o material é barato e relativamente fácil de encontrar – plástico está e
 forma de filamento enrolado em um carretel é questão apenas de o passar por uma máquina também barata chamada
 de filamentadora ou extrusora. O processo de derretimento do plástico pode ser entendido com o seguinte diagrama:
 
-image:image47.png[image,width=506,height=454]
+[[explicacaofff]]
+image::image47.png[image,width=506,height=454]
 
 Este é o núcleo comum da tecnologia; no entanto, após a queda da patente da Stratasys em 2009, o mercado
 mudou. As impressoras passaram disso:
 
-image:image48.png[image,width=316,height=292]
+[[fdmindustrialprereprap]]
+image::image48.png[image,width=316,height=292]
 
 para isso:
 
-image:image49.jpeg[image,width=662,height=358]
+[[ultimakerreprap]]
+image::image49.jpeg[image,width=662,height=358]
 
 O que mudou, neste caso? E se mudou tanto, o que as impressoras da segunda ilustração têm em comum? Para
 responder isso, vamos separar as impressoras 3D em suas partes componentes:
 
-1.  [[estrutura]] == Estrutura + É a parte mais visível, o que dá a forma a impressora. Ainda que possa haver
+=== Estrutura
+É a parte mais visível, o que dá a forma a impressora. Ainda que possa haver
 variações, de forma geral entram nas seguintes categorias principais:
 
-* Enclausuramento ** image:image61.png[image,width=141,height=189]aberta – é possível alcançar
-a peça impressa diretamente.  ** image:image62.png[image,width=158,height=158]fechada – a peça
-fica em uma câmara interna.  * Material ** MDF (Medium Density Fibreboard, ou Painel de Fibra de Média Densidade):
+.Enclausuramento
+[width="100%",cols="^s,^m,e",frame="topbot",options="header"]
+|====
+| Tipo | Exemplo | Descrição
+| Aberta | image:image61.png[image,width=141,height=189] | É possível alcançar
+a peça impressa diretamente.
+| Fechada | image:image62.png[image,width=158,height=158] | A peça
+fica em uma câmara interna.
+|====
+
+.Material
+* *MDF* (Medium Density Fibreboard, ou Painel de Fibra de Média Densidade):
 Popular nas variantes de _Graber i3_ vendidas no Brasil, o MDF é um compósito baseado em madeira que se assemelha
 a compensados, mas é menos resistente, mais liso e consistente e facilmente cortável em CNCs laser e mecânicas,
 além de empenar menos. Também é eficaz em dissipar pequenas vibrações das estruturas. Por outro lado, absorve
 umidade facilmente e não resiste muito a chamas (apesar de resistir a altas temperaturas). É fácil de usar para
 montagens e o mais barato dentre as alternativas listadas, sendo encontrado nas repraps na variedade de 6mm de
 espessura. Para se revestir ou pintar, deve-se antes usar um _primer_ baseado em óleo que não seja aerossol/spray.
-** Acrílico (PMMA): Disputando em popularidade com o MDF como o material de escolha dos cortes de __reprap__,
+
+* *Acrílico* (PMMA): Disputando em popularidade com o MDF como o material de escolha dos cortes de __reprap__,
 tem em comum o fato de ser facilmente cortável em CNCs, aparência brilhante com cores vivas e esteticamente
 agradável, rigidez considerável e limpeza fácil. O primeiro ponto negativo é que com a alta rigidez o material
 é relativamente quebradiço e é especialmente propenso a rachaduras com fixação de parafusos. O segundo é que,
 sendo um termoplástico, tem baixa resistência a altas temperaturas, tendo a temperatura de transição vítrea em
 torno de 105°C. É mais caro que o MDF, com o mesmo corte deste material e na mesma espessura saindo cerca de 3 vezes
-mais caro.  ** Alumínio: Material resistente, não-ferromagnético (não é atraído por ímãs) e com cortes que
+mais caro.
+
+* **Alumínio**: Material resistente, não-ferromagnético (não é atraído por ímãs) e com cortes que
 permanecem bastante retilíneos, é mais raramente encontrado em cortes de repraps e, quando encontrado, adaptado para
 espessura mais fina (como 3mm) para economia em material. É mais usado em elementos usinados como perfis e blocos
 aquecedores. Tem alto coeficiente de condução de calor, o que pode ser indesejável se tiver contato com altas
 temperaturas.  ** Aço: Usado em impressoras 3D de cunho mais industrial, geralmente de frame fechado e que precisam
 aguentar altíssimas temperaturas, é encontrado na variedade inoxidável e escovado para resistir também a oxidação
-e agentes do ambiente. Tem baixo coeficiente de condução de calor.  ** ACM (Aluminium Composite Material): também
+e agentes do ambiente. Tem baixo coeficiente de condução de calor.
+
+* *ACM* (Aluminium Composite Material): também
 conhecido pelo seu nome comercial DIBOND®, se trata do termoplástico polietileno ensanduichado entre duas placas de
 alumínio, juntando as propriedades desejáveis do metal com a do plástico. É um material bastante usado em placas
 de sinalização e a utilização em impressoras 3D é bem representada pelas máquinas Ultimaker 2 e Ultimaker 3.
-* Transformações de eixos (delta vs. cartesiana).  + Muitos sistemas de coordenadas / localização de coordenadas
-diferentes podem ser usados em impressoras 3D FFF, no entanto a esmagadora maioria cai em duas categorias maiores:
-deltas ou cartesianas.  ** image:image54.jpeg[image,width=138,height=149]cartesiana – eixos X,
-Y e Z correspondem ao plano cartesiano.  ** image:image57.png[image,width=122,height=255]**delta**
-– X, Y e Z são transformadas das posições dos pilares + *Deltas, cartesianas e arranjo mecânico: elaborando*
-+ Apesar de separarmos as impressoras 3D de mercado em duas categorias, a verdade é que existem tantos sistemas
-diferentes, e tantas propostas promissoras de desvio do padrão, que é impossível fazer justiça citando todos,
-menos ainda os explicando. Poder-se-ia mencionar o padrão *SCARA* (__**S**elective **C**ompliance **A**ssembly
-**R**obot **A**rm,__ bastante usado em máquinas industrais montadoras de automóveis); poder-se-ia falar sobre as
-impressoras 3D **Polares**, em que um ou mais dos eixos se move com rotações, ao invés de movimentos lineares;
-poder-se-ia falar das novas variedades surgindo da mente de inventores de garagem a cada dia, e nada disso seria
-realmente instrutivo, tornando-se uma distração. Ao invés disso, focalizaremos no que é mais usado hoje.
-* *Elaborando um pouco sobre _delta robots_* + As impressoras delta, um sistema já antigo e usado em máquinas
-pick-and-place de indústrias de equipamentos pesados e fabricantes de circuitos impressos, ganharam tração no
+
+.Arranjo Mecânico e Cinemática
+
+.Transformações de eixos.
+[width="100%",cols="^s,^m,e",frame="topbot",options="header"]
+|====
+| Tipo | Exemplo | Descrição
+| Cartesiana | image:image54.jpeg[image,width=138,height=149] | [small]#Eixos X, Y e Z correspondem ao plano cartesiano.#
+| Delta | image:image57.png[image,width=122,height=255] | [small]#X, Y e Z são transformadas trigonométricas das posições dos três pilares (colunas verticais).#
+| CoreXY | image:reprapxy-pequeno.jpg[reprapxypequeno,width=533,height=400] | [small]#X e Y são transformadas lineares de acordo com o padrão "CoreXY" de deslocamento. Por ser uma transformação relativamente simples de coordenadas, informalmente costuma ser tratada como cartesiana.#
+| SCARA | image:scara.png[scara,width=601,height=710] | [small]#**S**elective **C**ompliance **A**rticulated **R**obot **A**rm, ou Braço Robótico Articulado de Conformidade Seletiva, é o nome dessa transformação de eixos comumente usada em máquinas industriais "pick and place" e de linha de montagem de veículos.#
+| Polar | image:polartheta.png[polartheta,width=466,height=385] | [small]#Coordenadas polares, ou seja, baseadas em ângulos, são populares nos campos matemáticos, mas em impressoras 3D não são muito práticos, servindo mais como prova de conceito. Alguns modelos de impressora têm apenas um ou dois eixos polares, e os restantes cartesianos.#
+|====
+
+Apesar de separarmos as impressoras 3D de mercado nessas cinco categorias, a verdade é que existem tantos sistemas
+diferentes e tão promissores que é impossível fazer justiça citando todos,
+menos ainda os explicando. Ao invés disso, focalizaremos no que é mais usado hoje. O estilo __delta__, um sistema já antigo e usado em algumas máquinas
+pick-and-place de indústrias de equipamentos pesados e fabricantes de circuitos impressos, ganhou tração no
 ecossistema RepRap depois que Johan C. Rocholl, um funcionário alemão do Google, criou o design da impressora
 intitulada de _Rostock_ em 2012, utilizando peças convencionais já usadas em impressora anteriores, como
 rolamentos lineares LM8UU e barras lisas. Tendo um grande volume de impressão para a época (200 mm x 200 mm x
-400 mm), a impressora ganhou vários redesenhos e variações, um deles do próprio Johan mais tarde, chamado de
-__Kossel__. A Kossel abandonava as guias lineares e passava a usar extrusões de alumínio com _patins_ usinados,
+400 mm), a impressora ganhou vários redesenhos e variações, um deles do próprio Johan, chamado de
+__Kossel__.
+
+A Kossel abandonava as guias lineares e passava a usar extrusões de alumínio com _patins_ usinados,
 peças mais caras e industriais porém com muito maior precisão, e também abandonava os cortes de MDF para adotar
 apenas peças impressas. Ambos os designs guiaram o mercado de deltas, menos numeroso que o das cartesianas mas
 crescendo a cada dia. Nem toda impressora delta usa postes fixos para guiar a impressão, alguns designs como o da
-reprap _Gus Simpson_ usam de braços articulados.  + O design dessas impressoras não permite mapear diretamente
+reprap _Gus Simpson_ usam de braços articulados.
+
+O design dessas impressoras não permite mapear diretamente
 uma posição do mecanismo para uma coordenada do objeto a ser impresso, mas é possível calcular a posição
 do bico extrusor obtendo-se a coordenada de cada patim nas torres de sustentação – torres chamadas de “A,
 B e C” - e efetuar um cálculo matemático, baseado nas medidas da estrutura da impressora (como a altura das
 torres, a mediana entre elas e outros), que resulta em coordenadas X, Y e Z “virtuais”, por onde orienta-se o
 extrusor a seguir como em uma impressora cartesiana comum. Esses cálculos são efetuados no mesmo microcontrolador
 (ou microprocessador) que controla os motores da impressora, no momento da leitura do g-code que é sempre escrito
-em coordenadas X,Y e Z.  + Uma diferença notável das coordenadas virtuais X, Y e Z de uma impressora delta é que
+em coordenadas X,Y e Z.
+
+Uma diferença notável das coordenadas virtuais X, Y e Z de uma impressora delta é que
 o ponto (0,0,0) do volume está no centro da impressora, com possibilidade de coordenadas negativas; em contraste,
 nas cartesianas o ponto (0,0,0) situa-se no vértice abaixo, à esquerda e à frente, estando-se de frente para
-a impressora. + Algumas das vantagens de impressoras delta sobre as cartesianas são: ** **Maior velocidade,
-especialmente no eixo Z**. Como impressoras delta não utilizam barras roscadas ou fusos e todos os pilares têm
+a impressora.
+
+Algumas das vantagens de impressoras delta sobre as cartesianas são:
+
+* *Maior velocidade,
+especialmente no eixo Z* - Como impressoras delta não utilizam barras roscadas ou fusos e todos os pilares têm
 correias com pinhões que traduzem o movimento de cada motor para um movimento bastante rápido na posição. Isso
 resulta em velocidades de movimentação que podem chegar a 3 vezes o equivalente a impressoras 3D cartesianas de
 construção equivalente. A velocidade muito maior no eixo Z em especial permite que a impressora use o “Z hop”
-(ver capítulo de configurações de fatiamento) sem adicionar muito tempo à impressão.  ** *Mesa fixa* – como
+(ver capítulo de configurações de fatiamento) sem adicionar muito tempo à impressão.
+* *Mesa fixa* – como
 todo o movimento do extrusor está nos pilares, não é necessário movimento adicional da mesa na impressão. Isso
 dá às deltas uma boa vantagem em estabilidade de impressão especialmente para peças altas, finas e delicadas,
-que poderiam sofrer perturbações elásticas pelo movimento da mesa.  + Mas, claro, nem tudo são flores. Era
+que poderiam sofrer perturbações elásticas pelo movimento da mesa.
+
+Mas, claro, nem tudo são flores. Era
 de se esperar, como qualquer assunto em engenharia, que as vantagens também vêm acompanhadas de respectivas
-desvantagens: ** **Menos possibilidade de carga no effector**, até como consequências de os motores serem mais
+desvantagens:
+
+* **Menos possibilidade de carga no effector**, até como consequências de os motores serem mais
 rápidos, pois como em marchas de um carro, maior velocidade tem menos força. Isso implica em algumas restrições
 de projeto para remover o máximo possível de peso do effector, como utilizar filamento guiado ao invés de extrusor
-direto. Isso também minimiza a inércia da impressora, no entanto, dando-lhe boa precisão.  ** *Baixa resolução
+direto. Isso também minimiza a inércia da impressora, no entanto, dando-lhe boa precisão.
+* *Baixa resolução
 de posicionamento, especialmente nos extremos* – como as coordenadas X, Y e Z são calculadas, “virtuais”
 através das posições dos braços, o espaçamento entre elas não apresenta a regularidade de coordenadas
 reais, sendo muito menor (e portanto com maior resolução) perto da mediana das distâncias dos postes e maior
-(e portanto com menor resolução) perto das “quinas” onde estão os postes.  ** *Troca de volume horizontal
+(e portanto com menor resolução) perto das “quinas” onde estão os postes.
+* *Troca de volume horizontal
 por volume vertical* – o fato de uma impressora delta ter somente os pilares como estruturas laterais dá a essas
 impressoras a vantagem de ocuparem pequena área horizontal, cabendo facilmente em uma mesa ou móvel; entretanto,
 esta mesma vantagem faz com que haja um espaço vazio não utilizado na parte de cima da impressora, o que faz com
 que seja bastate alta. O espaço não é utilizado porque o volume útil da impressora não se traduz em um cubo,
 nem mesmo em um cilindro, mas em um cilindro que nas coordenadas mais altas transforma em um cone, que é onde os
 braços conseguirão alcançar. Alguns fabricantes utilizam este espaço para prender componentes, como a fonte,
-o tracionador ou até o filamento.  ** *Lentidão em algumas operações* – as impressoras reprap são, em sua
+o tracionador ou até o filamento.
+* *Lentidão em algumas operações* – as impressoras reprap são, em sua
 maioria, baseadas em um microcontrolador open-source __Arduino Mega__, que embora tenha em seus 16 MHz velocidade
 mais que suficiente para guiar os três eixos e temperaturas de uma impressão comum, não tem circuito dedicado
 para operações com ponto flutuante e portanto faz cada operação matemática de transformação de coordenadas
-de forma muito eficiente. Isso torna-se visível quando a delta tem um display LCD, que com o compartilhamento
+de forma não muito eficiente, por software. Isso torna-se visível quando a delta tem um display LCD, que com o compartilhamento
 de tempo entre os cálculos no momento em que a impressora imprime, fica com respostas visivelmente lentas para
 interação com o usuário. Isso é um problema que vem sendo resolvido naturalmente com a substituição do
-Arduino Mega por controladores mais potentes.  + image:image63.png[image,width=594,height=291] *
+Arduino Mega por controladores mais potentes.
+
+[[deltasesimpson]]
+image::image63.png[image,width=594,height=291]
+
 *XY (Dualwire Gantry)* + O jeito mais intuitivo de pensar em um mecanismo que, em um plano, possa posicionar um
 elemento em uma coordenada (X,Y) determinada é haver, assim com os dois eixos, dois mecanismos (motores) fixos,
 independentes e perpendiculares. Qualquer um deles, ao girar, move uma correia, que movimenta o elemento em seu
 eixo, guiado em torno de uma barra lisa; as correias e barras não se encontram e podem ser posicionadas uma
 acima da outra com o suporte do elemento ocupando onde se cruzem. O nome significa algo como “pórtico com
-dois cabos”.  + image:image64.png[image,width=594,height=351] * *CoreXY* + O sistema batizado
+dois cabos”.
+
+[[dualwiregantry]]
+image:image64.png[image,width=594,height=351]
+
+* *CoreXY*
+O sistema batizado
 de _CoreXY_ tornou-se popular por um sítio web³ que o explica em pormenores e ensina como construí-lo e
 controlá-lo. Basicamente é um sistema de eixos que permite controle fino dos eixos X e Y mas economizando em
 peças e evitando o cruzamento de eixos rígidos que acontece no __Dualwire Gantry__. É um sistema robusto,
 com cinemática paralela e motores fixos na estrutura, controle fácil e permitindo grandes velocidades de
-movimentação, tendo sido adotado em várias reprap e impressoras 3D comerciais de estrutura fechada.  +
-image:image65.jpeg[image,width=531,height=406] + Como no caso das deltas, as impressoras 3D com
+movimentação, tendo sido adotado em várias reprap e impressoras 3D comerciais de estrutura fechada.
+
+[[desenhocorexy]]
+image:image65.jpeg[image,width=531,height=406]
+
+Como no caso das deltas, as impressoras 3D com
 CoreXY exigem que o firmware tenha conhecimento do sistema de eixos pois transformações de deslocamentos são
 necessárias para o acionamento correto dos motores e a localização das coordenadas no espaço. O profissional
 André Ruiz colaborou com esta obra com um diagrama elucidativo e bastante útil para aqueles que desejam construir
-uma impressora deste tipo, a seguir: + image:image66.png[image,width=594,height=404] * *Outras XY e
+uma impressora deste tipo, a seguir:
+
+[[corexyandreruiz]]
+image:image66.png[image,width=594,height=404]
+
+* *Outras XY e
 variantes* + Mais do que popularizar a cinemática do CoreXY, o sítio web de mesmo nome levantou a consciência que
 sistemas de eixos e cinemáticas podem ser aperfeiçoados e otimizados para vários tipos de construções. Muitos
 outros surgiram ou vieram à tona, alguns sendo variações do próprio CoreXY (__H.Bot__, __cantilevered CoreXY__,
-__CoreXZ__, etc.). ⁴ * *Carro X estilo Mendel i2* + Se por um lado os sistemas de cinemática paralela como
+__CoreXZ__, etc.). ⁴
+* *Carro X estilo Mendel i2* + Se por um lado os sistemas de cinemática paralela como
 o _dualwire gantry_ e o _CoreXY_ representam a sofisticação de movimentação em impressoras 3D cartesianas,
 por outro lado exigem uma estrutura bastante rígida e com muitos pontos de fixação para funcionar adequadamente,
 tornando montagem e manutenção caras. A diretiva de economia do projeto reprap acabou levando a um arranjo mecânico

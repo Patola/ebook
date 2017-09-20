@@ -1848,25 +1848,15 @@ verdade, ainda estão sendo traçados.
 .Notas:
 ====
 . http://money.cnn.com/2012/12/18/technology/innovation/kickstarter-ship-delay/[_http://money.cnn.com/2012/12/18/technology/innovation/kickstarter-ship-delay/_]
-
 . http://www.digitaltrends.com/cool-tech/triton-reboots-artificial-gill-campaign/[_http://www.digitaltrends.com/cool-tech/triton-reboots-artificial-gill-campaign/_]
-
 . _https://www.indiegogo.com/projects/waterseer-water-women#/_
-
 . http://hackaday.com/2017/02/27/the-tiko-printer-what-happens-when-you-innovate-too-much/[_http://hackaday.com/2017/02/27/the-tiko-printer-what-happens-when-you-innovate-too-much/_]
-
 . _https://www.indiegogo.com/projects/3droot-high-reliability-3d-print-controller/#/_
-
 . https://en.wikipedia.org/wiki/Mayday_PAC[_https://en.wikipedia.org/wiki/Mayday_PAC_]
-
 . https://www.kickstarter.com/projects/dddmaterial/3d-printer-tungsten-premium-nozzle-reloaded[_https://www.kickstarter.com/projects/dddmaterial/3d-printer-tungsten-premium-nozzle-reloaded_]
-
 . https://motherboard.vice.com/en_us/article/peachy-printer[_https://motherboard.vice.com/en_us/article/peachy-printer_]
-
 . https://github.com/peachyprinter[_https://github.com/peachyprinter_]
-
 . http://www.yxe3d.com/[_http://www.yxe3d.com/_]
-
 . http://www.techdrivein.com/2012/12/top-5-kickstarter-crowdfunding-alternatives-opensource-software.html[_http://www.techdrivein.com/2012/12/top-5-kickstarter-crowdfunding-alternatives-opensource-software.html_]
 ====
 
@@ -1918,7 +1908,6 @@ além de empenar menos. Também é eficaz em dissipar pequenas vibrações das e
 umidade facilmente e não resiste muito a chamas (apesar de resistir a altas temperaturas). É fácil de usar para
 montagens e o mais barato dentre as alternativas listadas, sendo encontrado nas repraps na variedade de 6mm de
 espessura. Para se revestir ou pintar, deve-se antes usar um _primer_ baseado em óleo que não seja aerossol/spray.
-
 * *Acrílico* (PMMA): Disputando em popularidade com o MDF como o material de escolha dos cortes de __reprap__,
 tem em comum o fato de ser facilmente cortável em CNCs, aparência brilhante com cores vivas e esteticamente
 agradável, rigidez considerável e limpeza fácil. O primeiro ponto negativo é que com a alta rigidez o material
@@ -1926,7 +1915,6 @@ agradável, rigidez considerável e limpeza fácil. O primeiro ponto negativo é
 sendo um termoplástico, tem baixa resistência a altas temperaturas, tendo a temperatura de transição vítrea em
 torno de 105°C. É mais caro que o MDF, com o mesmo corte deste material e na mesma espessura saindo cerca de 3 vezes
 mais caro.
-
 * **Alumínio**: Material resistente, não-ferromagnético (não é atraído por ímãs) e com cortes que
 permanecem bastante retilíneos, é mais raramente encontrado em cortes de repraps e, quando encontrado, adaptado para
 espessura mais fina (como 3mm) para economia em material. É mais usado em elementos usinados como perfis e blocos
@@ -1934,7 +1922,6 @@ aquecedores. Tem alto coeficiente de condução de calor, o que pode ser indesej
 temperaturas.  ** Aço: Usado em impressoras 3D de cunho mais industrial, geralmente de frame fechado e que precisam
 aguentar altíssimas temperaturas, é encontrado na variedade inoxidável e escovado para resistir também a oxidação
 e agentes do ambiente. Tem baixo coeficiente de condução de calor.
-
 * *ACM* (Aluminium Composite Material): também
 conhecido pelo seu nome comercial DIBOND®, se trata do termoplástico polietileno ensanduichado entre duas placas de
 alumínio, juntando as propriedades desejáveis do metal com a do plástico. É um material bastante usado em placas
@@ -1985,8 +1972,7 @@ a impressora.
 
 Algumas das vantagens de impressoras delta sobre as cartesianas são:
 
-* *Maior velocidade,
-especialmente no eixo Z* - Como impressoras delta não utilizam barras roscadas ou fusos e todos os pilares têm
+* *Maior velocidade, especialmente no eixo Z* - Como impressoras delta não utilizam barras roscadas ou fusos e todos os pilares têm
 correias com pinhões que traduzem o movimento de cada motor para um movimento bastante rápido na posição. Isso
 resulta em velocidades de movimentação que podem chegar a 3 vezes o equivalente a impressoras 3D cartesianas de
 construção equivalente. A velocidade muito maior no eixo Z em especial permite que a impressora use o “Z hop”
@@ -2004,8 +1990,7 @@ desvantagens:
 rápidos, pois como em marchas de um carro, maior velocidade tem menos força. Isso implica em algumas restrições
 de projeto para remover o máximo possível de peso do effector, como utilizar filamento guiado ao invés de extrusor
 direto. Isso também minimiza a inércia da impressora, no entanto, dando-lhe boa precisão.
-* *Baixa resolução
-de posicionamento, especialmente nos extremos* – como as coordenadas X, Y e Z são calculadas, “virtuais”
+* *Baixa resolução de posicionamento, especialmente nos extremos* – como as coordenadas X, Y e Z são calculadas, “virtuais”
 através das posições dos braços, o espaçamento entre elas não apresenta a regularidade de coordenadas
 reais, sendo muito menor (e portanto com maior resolução) perto da mediana das distâncias dos postes e maior
 (e portanto com menor resolução) perto das “quinas” onde estão os postes.
@@ -2064,7 +2049,8 @@ variantes* + Mais do que popularizar a cinemática do CoreXY, o sítio web de me
 sistemas de eixos e cinemáticas podem ser aperfeiçoados e otimizados para vários tipos de construções. Muitos
 outros surgiram ou vieram à tona, alguns sendo variações do próprio CoreXY (__H.Bot__, __cantilevered CoreXY__,
 __CoreXZ__, etc.). ⁴
-* *Carro X estilo Mendel i2* + Se por um lado os sistemas de cinemática paralela como
+* *Carro X estilo Mendel i2* +
+Se por um lado os sistemas de cinemática paralela como
 o _dualwire gantry_ e o _CoreXY_ representam a sofisticação de movimentação em impressoras 3D cartesianas,
 por outro lado exigem uma estrutura bastante rígida e com muitos pontos de fixação para funcionar adequadamente,
 tornando montagem e manutenção caras. A diretiva de economia do projeto reprap acabou levando a um arranjo mecânico
@@ -2183,9 +2169,10 @@ destes 5 eixos para ter a forma mais suave e harmônica possível.
 
 image:image69.jpeg[image,width=508,height=627]
 
-[[vitaminas-comuns-da-estrutura-de-uma-impressora-3d]] === “Vitaminas” comuns da estrutura de uma impressora 3D
+=== “Vitaminas” comuns da estrutura de uma impressora 3D
 
-* *Parafusos e derivados* + *Parafuso* é uma peça que transforma um movimento de rotação em torno de seu eixo
+* *Parafusos e derivados* +
+*Parafuso* é uma peça que transforma um movimento de rotação em torno de seu eixo
 em um movimento de translação segundo esse eixo, servindo assim como um elemento de fixação. Uma *porca* é um
 elemento de auxílio à fixação do parafuso, se moldando perfeitamente a ele para realizar a fixação. *Arruela*
 ou *anilha* é um disco furado a ser usado em um parafuso como separador ou travamento. Sendo as estruturas
@@ -2232,7 +2219,8 @@ um chanfro do pino e impedir o movimento de rotação relativa. A ausência da c
 reste uma “saliência” na peça. Como são parafusos geralmente bem pequenos, quase sempre são feitos em aço
 reforçado preto.  + image:image71.png[image,width=618,height=622]
 
-* *Barras lisas* + São elementos estruturais em que se assentam os eixos (X, Y e/ou Z) da impressora 3D. Geralmente
+* *Barras lisas* +
+São elementos estruturais em que se assentam os eixos (X, Y e/ou Z) da impressora 3D. Geralmente
 são conjugadas com _rolamentos lineares_ ou mesmo buchas cujo diâmetro interno concide com o diâmetro da barra;
 deste modo, o rolamento linear ou a bucha se tornam um elemento livre para deslizar linearmente por todo o comprimento
 da barra. É necessário que a barra seja reta com bastante precisão e sofra o mínimo possível de deformação;
@@ -2254,7 +2242,8 @@ perpendicular a ele e os lados têm encaixe V-Slot (que é na verdade uma forma 
 caso esteja usando este livro para decidir qual T-Slot usar, é usar o perfil *2020* pois é robusto, muito popular
 e existem modificações das deltas que usam outros perfis para usá-lo no lugar. Além disso, é mais fácil
 achar parafusos especializados em seus encaixes.  + image:image72.jpeg[image,width=604,height=353]
-* *Barras roscadas (parafusos infinitos)* + São elementos estruturais por vezes usados como elementos imóveis
+* *Barras roscadas (parafusos infinitos)* +
+São elementos estruturais por vezes usados como elementos imóveis
 (como na estrutura da Prusa Mendel), por outras vezes usados como componentes giratórios que, através da
 rotação de seus sulcos, fazem outra peça (uma porca ou “castanha”) subir ou descer, transformando assim
 o movimento rotatório de um pinhão de motor em movimento linear em uma direção. Barras roscadas não são
@@ -2326,7 +2315,8 @@ image:image74.png[image,width=642,height=365]
 
 image:image75.png[image,width=642,height=362]
 
-* *Patins e trilhos* + Patins e trilhos são outro modo de se ter _guias lineares_ que não usam as barras lisas
+* *Patins e trilhos* +
+Patins e trilhos são outro modo de se ter _guias lineares_ que não usam as barras lisas
 com rolamentos. *Patim* ou *carro* é o nome que se dá à peça que desliza, equivalente ao *rolamento linear*
 que usamos nas barras lisas; e *trilhos* são extrusões de metal retas com um perfil de encaixe em que o patim
 pode deslizar livremente. Patins podem, como os rolamentos, ter corpos rolantes nas partes em que tocam o perfil e
@@ -2340,7 +2330,7 @@ são usadas em impressoras 3D estilo delta como conectores dos braços da delta 
 guia do poste. São peças também usadas por _hobbyistas_ de veículos de controle remoto, e são basicamente
 articulações de rotação para fixação de um braço a um eixo (geralmente a rosca de um parafuso). Existem
 alternativas a essas juntas feitas por esferas magnéticas deslizantes, mas ainda são pouco usadas.  1.
-[[malha-aberta-ou-fechada]] === Malha aberta ou fechada?
+=== Malha aberta ou fechada?
 
 A _Teoria de Controle_ dada a alunos de Engenharia Mecânica nos ensina que há dois tipos de sistemas de controle,
 *malha aberta* e **malha fechada**.
@@ -2404,7 +2394,8 @@ um endstop tem precisão de 0,01mm, significa que ele pode medir distâncias em 
 com os mesmos itens, em sequência. Uma repetibilidade de 0,04mm significa que a medida pode variar, digamos,
 de 0,08mm até 0,12mm para uma distância real de 0,1mm, mas não sairá deste intervalo.
 
-* *Tipos principais de endstops* + Os endstops podem ser circuitos _energizados_ ou __não-energizados__. Circuitos
+* *Tipos principais de endstops* +
+Os endstops podem ser circuitos _energizados_ ou __não-energizados__. Circuitos
 energizados são aqueles que requerem uma tensão positiva – geralmente 5V – e um dreno para ativar o
 componente, e devolvem em outro fio a resposta. Precisam de três fios. Os não-energizados somente precisam do
 sinal, deixando o circuito aberto ou fechado de acordo com o contato, devolvendo portanto dois estados possíveis
@@ -2564,7 +2555,7 @@ poliacetal e alguns nylons.
 
 image:image90.jpeg[image,width=642,height=526]
 
-[[revestimento-do-bloco-aquecedor]] === Revestimento do bloco aquecedor
+=== Revestimento do bloco aquecedor
 
 image:image91.jpeg[image,width=642,height=363]
 
@@ -2578,7 +2569,7 @@ http://www.thingiverse.com/thing:1432346[_http://www.thingiverse.com/thing:14323
 
 image:image92.png[image,width=642,height=367]
 
-[[dissipação]] === Dissipação
+=== Dissipação
 
 Uma outra característica importante dos hotends é se têm dissipação _passiva_ ou __ativa__. Dissipação
 passiva é o calor ser dissipado naturalmente pela geometria do hotend, sem necessidade de interferência externa
@@ -2595,7 +2586,7 @@ sólida deixando de empurrar a parte mais liquefeita. Hotends sem dissipação a
 mais frequentemente que os que a têm. Ela é, portanto, recomendada para todos os casos e estar sempre ligada,
 inclusive por a ligação ser fácil e gastar muito pouca energia.
 
-[[resfriamento-forçado-do-material]] === Resfriamento forçado do material
+=== Resfriamento forçado do material
 
 Do mesmo modo que o pescoço dissipador, o material extrudado² do bico pode necessitar de ajuda para sair do
 estado líquido para o sólido, o que também é importante para os mesmos materiais com alto calor específico
@@ -2631,7 +2622,7 @@ e à peça que derrete o filamento chamamos “hotend”.
 2 – Sim, apesar dos termos “extrusão” e “extrusor”, o verbo é “extrudar”. Idiossincrasias de
 nossa língua!
 
-[[extrusores-duplos-triplos-múltiplos]] === Extrusores duplos, triplos, múltiplos
+=== Extrusores duplos, triplos, múltiplos
 
 *Cores versus materiais* - Uma das críticas que mais se faz à impressão 3D em geral, e à FFF em geral, é a
 dificuldade ou falta de _cores_ _diferentes_ para se colocar em um objeto ao imprimi-lo. Ora, o próprio nome da
@@ -2753,7 +2744,7 @@ image:image98.png[image,width=582,height=510]
 Além dos extrusores independentes, existem duas outras modalidades que têm se mostrado bastante viáveis e
 ganhado suporte nos fatiadores e firmwares, que são os extrusores _combinadores_ e __misturadores__.
 
-[[extrusores-combinadores-e-misturadores]] === Extrusores combinadores e misturadores
+=== Extrusores combinadores e misturadores
 
 O uso de extrusores múltiplos em impressoras 3D FFF até há pouco tempo era de relativa raridade, restrito a
 máquinas bastante caras em relação à média. Foi uma área que demorou a amadurecer, e não só no __hardware__:
@@ -2797,7 +2788,7 @@ consta do thingiverse: http://www.thingiverse.com/thing:1664880[_http://www.thin
 
 image:image99.png[image,width=462,height=400]image:image100.png[image,width=290,height=339]image:image101.png[image,width=294,height=339]
 
-[[enfim-o-bico]] === *Enfim, o bico*
+=== *Enfim, o bico*
 
 Chegamos ao extremo do assunto – o bico. É onde termina o hotend e você deve estar se perguntando que material
 é esse, de tom amarelo, meio dourado, de que eles são feitos. É __latão__, uma liga não-ferromagnética de metal
@@ -2848,7 +2839,7 @@ https://immaginaecrea.wordpress.com/2014/04/17/il-flusso-canalizzatore-stampa-3d
 5 -
 https://www.kickstarter.com/projects/dddmaterial/3d-printer-tungsten-premium-nozzle-reloaded[_https://www.kickstarter.com/projects/dddmaterial/3d-printer-tungsten-premium-nozzle-reloaded_]
 
-[[ventoinhas-fans]] === Ventoinhas (fans)
+=== Ventoinhas (fans)
 
 As ventoinhas são componentes importantes de uma impressora 3D e não são usados somente no extrusor; podem servir
 também para resfriar a CPU da impressora, como exaustor dos vapores de plástico em impressoras 3D fechadas ou
@@ -2904,7 +2895,7 @@ Notas:
 1 -
 http://www.nmbtc.com/pdf/engineering/fans_ball_vs_sleeve.pdf[_http://www.nmbtc.com/pdf/engineering/fans_ball_vs_sleeve.pdf_]
 
-[[não-acabou-elementos-para-aferição-da-temperatura]] === Não acabou: elementos para aferição da temperatura!
+=== Não acabou: elementos para aferição da temperatura!
 
 Como foi citado quando os endstops foram descritos, é importante haver elementos de mensuração da resposta
 aos comandos enviados para a impressora e, assim como aferição do posicionamento é importante, aferição da
@@ -2952,7 +2943,7 @@ de metal, polímero ou outros materiais de acordo com as afinidades químicas. A
 de impressoras sem aquecimento, o default aqui analisado será a mesa _aquecida_ visto que se pode inferir o uso
 das mesas sem aquecimento a partir delas.
 
-[[mesa-aquecida]] === Mesa aquecida
+=== Mesa aquecida
 
 Vamos começar por algo que nem sempre é reconhecido: a mesa _aquecida_ é um artefato da estratégia de barateamento
 do projeto RepRap. Antes dele, as impressoras FDM não usavam mesas aquecidas; com construção industrial e peças
@@ -2975,14 +2966,15 @@ O mercado também começa a ver suas primeiras impressoras 3D de baixo custo com
 faça _patent fencing_ da técnica com a patente US-6722872-B1, a patente registrada nos EUA, válida até 2020,
 cobre apenas câmaras com motores externos a ela e com barreiras flexíveis.
 
-[[modelos-de-mesa-aquecida]] === Modelos de Mesa Aquecida
+=== Modelos de Mesa Aquecida
 
 Não há um só modelo de mesa aquecida. Há vários tipos e é bom entender essas diferenças, que podem inclusive
 afetar a qualidade das peças. Fatores de importância na construção de uma mesa são a condutividade térmica,
 a uniformidade da temperatura em toda sua área (especialmente para materiais propensos a __warp__, como ABS),
 facilidade de montagem, eficiência de operação. A lista a seguir não é exaustiva:
 
-* *Mesa com resistências* + Foram as primeiras a surgir. Resistências simples são elementos aquecedores fáceis de
+* *Mesa com resistências* +
+Foram as primeiras a surgir. Resistências simples são elementos aquecedores fáceis de
 construir; a construção consiste de uma mesa geralmente de metal com blocos de resistência igualmente espaçados
 colados abaixo. Os blocos fazem a mesa ser grossa na construção e o fato de serem “ilhas” de calor torna
 a temperatura da mesa não-uniforme. Dependendo do metal, a mesa pode apresentar empenamento.  * *Mesa de PCB
@@ -3063,7 +3055,7 @@ o acréscimo visto que um vidro comum corretamente manuseado não tende a quebra
 utilizam espelhos ao invés de vidros, a fina camada de prata reflexiva ajuda um pouco na condutividade térmica
 e tem apelo estético para fotografias, também ajudando a aferir visualmente a distância do hotend pra mesa.
 
-[[aderência-à-mesa]] === *Aderência à mesa*
+=== *Aderência à mesa*
 
 Durante o processo de impressão, é essencial que a peça impressa fique o mais imóvel possível na superfície
 plana da mesa. Qualquer balanço imperceptível para os olhos, qualquer deslocamento por mínimo que seja terá
@@ -3105,7 +3097,8 @@ como veremos na parte de fatiamento.
 
 Os métodos de aderência se enquadram em três categorias:
 
-* *Fitas* + São colocadas sobre a mesa ou o vidro usualmente por toda sua área, com as tiras em paralelo
+* *Fitas* +
+São colocadas sobre a mesa ou o vidro usualmente por toda sua área, com as tiras em paralelo
 sem que uma passe sobre a outra para não causar desnível na superfície. Costumam durar um número pequeno
 de impressões, começando a rasgar ou descolar da superfície com o uso. Geralmente os rolos de fita estarão
 disponíveis em variedades de 12, 24 e 48mm de largura, com as mais largas (48mm) sendo recomendadas.  ** *Fita
@@ -3193,7 +3186,8 @@ sem cometer injustiça com os outros, e o fato de todo serem usados com seus pro
 pelo menos alguns indivíduos encontraram o equilíbrio de uso neles. Mas como um ponto de partida, é possível
 citar quatro casos de uso distintos e uma sugestão particular para cada um deles:
 
-* *Somente PLA, sem mesa aquecida* + Neste caso de uso, o usuário da impressora 3D usa apenas o material PLA,
+* *Somente PLA, sem mesa aquecida* +
+Neste caso de uso, o usuário da impressora 3D usa apenas o material PLA,
 com ou sem mesa aquecida. Este caso inicial é o mais fácil de tratar porque o PLA tem propriedades quase ideais
 para fixação: alta aderência entre camadas, alta aderência com o vidro e baixo “warp” (deformação com
 resfriamento). Neste caso a *cola PVAc* resolve muito bem o problema: aplicação fácil, pouco resíduo e baixa
@@ -3262,7 +3256,7 @@ dissolvível em água.
 grandes de temperatura tendem a deformar a peça, portanto não é bom colocá-la ainda “morna” na água. O
 ideal é aguardar um tempo para esfriar.
 
-[[autonivelamento-de-mesa-bed-auto-leveling-ou-bal]] === *Autonivelamento de Mesa (Bed Auto Leveling ou BAL)*
+=== *Autonivelamento de Mesa (Bed Auto Leveling ou BAL)*
 
 Uma das maiores preocupações para se conseguir uma boa qualidade de impressão é começar com o pé direito. Em
 termos mais técnicos, é se preocupar com a primeira camada: é a etapa mais importante de toda a impressão,
@@ -3320,7 +3314,7 @@ um exemplo notável é a estratégia da impressora brasileira Sethi S3 que, uma 
 usa potenciômetros (eixos) debaixo dela para corrigir sua inclinação mudando o ângulo no sentido contrário,
 ao invés de corrigir as coordenadas pelo firmware.
 
-[[motores]] == Motores
+== Motores
 
 Mencionamos muitos elementos que envolvem motores: eixos, malhas abertas e fechadas, extrusores e até mesa,
 e só agora chegamos a eles. Há uma razão para isso. A parte da engenharia que trata desses dispositivos é,
@@ -3454,7 +3448,7 @@ http://www.thingiverse.com/thing:986260[_http://www.thingiverse.com/thing:986260
 
 image:image117.png[image,width=642,height=501]
 
-[[micropassos]] === Micropassos
+=== Micropassos
 
 Nosso motor imaginário tem um posicionamento bastante grosseiro – cada vez que andamos, é um quarto de
 círculo. Acontece que, pelo controle que temos dele, é possível dar um “jeitinho” de ganhar divisões novas
@@ -3484,7 +3478,7 @@ Outras proporções de correntes podem nos levar a divisões ainda menores: 1/8,
 menor do que com passo inteiro, menos carga poderá ser movida__. Os componentes que realizam esse controle são
 especializados e têm um nome próprio:
 
-[[drivers-de-motores-de-passos]] === Drivers de motores de passos
+=== Drivers de motores de passos
 
 O controle do motor de passo é uma tarefa tão específica que exige um componente específico. Apesar de a maioria
 dos microcontroladores terem capacidade para realizar esta tarefa, tê-la separada em um componente específico
@@ -3661,7 +3655,7 @@ http://www.electronicshub.org/modulation-and-different-types-of-modulation/[_htt
 5 – Podemos sugerir o excelente texto de Newton C. Braga, disponível no seu site no endereço
 http://www.newtoncbraga.com.br/index.php/robotica/5169-mec071a[_http://www.newtoncbraga.com.br/index.php/robotica/5169-mec071a_]
 
-[[motores-do-mundo-real]] === Motores do Mundo Real
+=== Motores do Mundo Real
 
 E como tudo que tem uma descrição teórica simplificada, os motores que utilizamos em nossas impressoras 3D são
 mais complicados, frutos de décadas de progresso no campo. Mas não _*muito*_ mais complicados: os princípios
@@ -3700,7 +3694,7 @@ Uma apresentação falando sobre relutância magnética, a
 relação com solenóides e força magnetomotriz pode ser achada em
 https://docente.ifrn.edu.br/odailsoncavalcante/disciplinas/maquinas-eletricas-e-acionamentos/revisao-de-eletromagnetismo[_https://docente.ifrn.edu.br/odailsoncavalcante/disciplinas/maquinas-eletricas-e-acionamentos/revisao-de-eletromagnetismo_].
 
-[[servo-motores]] === Servo Motores
+=== Servo Motores
 
 Quando aprendemos endstops, vimos que o posicionamento dos motores na impressora 3D é implementado como uma __*malha
 aberta*__, isto é, como um circuito cujo resultado nunca é medido e comparado com o esperado. Assim, quando enviamos
@@ -3783,7 +3777,7 @@ Uma leitura complementar em inglês sobre servos de rotação
 contínua, incluindo uma receita para implementá-los, está em
 https://www.pololu.com/blog/24/continuous-rotation-servos-and-multi-turn-servos[_https://www.pololu.com/blog/24/continuous-rotation-servos-and-multi-turn-servos_].
 
-[[servos-na-impressão-3d]] === Servos na impressão 3D
+=== Servos na impressão 3D
 
 **Antes, uma nota sobre os firmwares**: alguns firmwares de impressora 3D, como o __Marlin__, têm suporte a
 servos. Mas essa informação pode ser interpretada equivocadamente: o firmware não tem suporte a servos __no
@@ -3829,7 +3823,7 @@ publicação, o dispositivo custa, sem frete, 49 dólares e com motor, 65 dólar
 
 image:image129.png[image,width=642,height=464]
 
-[[microcontrolador]] == Microcontrolador
+== Microcontrolador
 
 Já foi falado que o projeto _reprap_ que deu início às impressoras 3D FFF modernas nasceu junto com o Arduino. Os
 primeiros rascunhos de impressoras 3D do projeto reprap em 2006 mostram projetos envolvendo microcontroladores PIC
@@ -3858,7 +3852,7 @@ interessados e hobbyistas, especialmente fora dos EUA, tal empreendimento era co
 lembrar que os sites chineses de eletrônicos em 2010-2011 ainda não tinham pegado a tração que têm hoje. Essa
 tração veio, inclusive, do outro projeto open-source de sucesso.
 
-[[o-arduino-salvou-a-impressão-3d-open-source]] === O Arduino Salvou a Impressão 3D Open-Source
+=== O Arduino Salvou a Impressão 3D Open-Source
 
 Em outubro de 2010, o projeto Arduino lançou o __Arduino Mega__. Com o mesmo poder computacional do Arduino Uno,
 mas mais memória e pinos (8 kiB de RAM ao invés de 2, 128 KiB de flash ao invés de 32, 54 pinos digitais ao
@@ -3901,7 +3895,7 @@ for 12V, ou se a corrente for sujeita a interferências, esse diodo deve ser rem
 
 image:image132.png[image,width=586,height=836]
 
-[[o-que-um-controlador-de-impressão-3d-deve-ter]] === O que um controlador de impressão 3D deve ter
+=== O que um controlador de impressão 3D deve ter
 
 Baseado no desenho esquemático das conexões da RAMPS, essa é uma informação que já podemos inferir. Basicamente,
 os seguintes componentes são necessários (a lista não é exaustiva):
@@ -3961,7 +3955,7 @@ gráfica elegante e até controles por toque.
 
 image:image133.png[image,width=642,height=375]
 
-[[um-pouco-mais-sobre-os-drivers-da-ramps]] === Um pouco mais sobre os drivers da RAMPS
+=== Um pouco mais sobre os drivers da RAMPS
 
 Passamos sobre o funcionamento dos _drivers_ ao explicarmos motores de passo, mas é necessário também aprender a
 lidar com eles na prática, inclusive torná-los prontos pra uso. Drivers que já são integrados na própria placa
@@ -4057,7 +4051,7 @@ que os usados em Arduinos de 8 bits conseguirão aproveitar tais vantagens. Uma 
 recurso frequentemente anunciado de ser “silencioso”; isso é algo que se obtém deixando as frequências de
 trabalho fora do espectro audível (maior que 20 kHz, embora acima de 17 KHz já seja normalmente suficiente).
 
-[[ajustando-manualmente-a-vref-dos-drivers]] === Ajustando manualmente a Vref dos drivers
+=== Ajustando manualmente a Vref dos drivers
 
 Uma vez que a RAMPS esteja montada, com os motores ligados, os drivers encaixados e o firmware carregado, deve-se
 ligá-la e pelo LCD ou por algum print host, tentar fazer os motores girarem. Os motores não precisam estar ligados
@@ -4083,7 +4077,7 @@ adquirir. Uma alternativa é imprimir em PLA uma substituta.
 
 image:image139.png[image,width=642,height=475]
 
-[[modo-de-decaimento-quando-e-como-ajustar]] === Modo de decaimento: quando e como ajustar
+=== Modo de decaimento: quando e como ajustar
 
 _*Modos de decaimento*_ de passos são os mesmos que vimos ao tratar de motores de passo: modo rápido (__fast
 decay mode__), modo lento (__slow decay mode__) e modo misto (__mixed decay mode__).
@@ -4138,7 +4132,7 @@ misto. Ligando-se o pino a Vcc, ele passa a atuar em modo de decaimento rápido.
 
 image:image140.jpeg[image,width=509,height=417]
 
-[[visão-retroativa-é-2020-os-defeitos-da-ramps]] === Visão retroativa é 20/20: os defeitos da RAMPS
+=== Visão retroativa é 20/20: os defeitos da RAMPS
 
 Não há dúvidas que para sua época a RAMPS solucionou um bocado de problemas de forma genial, de custo a formas
 de controle. No entanto, olhar para o passado de forma crítica sempre é mais fácil que, no presente, prever o
@@ -4184,7 +4178,7 @@ temos controladores muito mais sofisticados, com telas coloridas e capacidade at
 
 image:image141.png[image,width=642,height=448]
 
-[[outros-controladores-de-impressão-a-ascensão-dos-arm]] === Outros controladores de impressão: a ascensão dos ARM
+=== Outros controladores de impressão: a ascensão dos ARM
 
 Apesar de todos defeitos da RAMPS, sua popularidade continua alta e o preço de um conjunto completo com arduino,
 LCD e drivers é quase imbatível comparado a outras eletrônicas. E pra sedimentar ainda mais essa dominação
@@ -4340,7 +4334,7 @@ O __*Smoothieware*__, firmware mais utilizado em ARM, foi criado em 2012 a parti
 é mantido por uma empresa com desenvolvedores contratados, mas aceitando contribuição comunitária. Licenciado
 sob a versão 3 da GPL.
 
-[[configuração-do-firmware-o-legado-de-desenvolvedores]] === Configuração do firmware: o legado de desenvolvedores
+=== Configuração do firmware: o legado de desenvolvedores
 
 O firmware vai carregar consigo a informação de toda a parte mecânica da máquina, que peças funcionam e como,
 e quais recursos estão ativados. Por exemplo, é no firmware que se configura quantos extrusores a impressora tem,
@@ -4407,7 +4401,7 @@ __Teacup__, por exemplo, vem com um programa configurador gráfico em python; o 
 configuração seja toda feita colocando um arquivo-texto de nome config no cartão SD do microcontrolador com
 os ajustes.
 
-[[a-eeprom]] === A EEPROM
+=== A EEPROM
 
 Um dos recursos disponíveis nos controladores baseados em arduino e que também se pode ativar ou desativar pela
 configuração do firmware é a __*EEPROM*__. Este é um tipo de memória não-volátil (isto é, não é perdida
@@ -4441,7 +4435,7 @@ para
 Quando se quiser habilitá-la de novo, pode-se mudar o EEPROM_MODE para um número diferente de zero; colocando-se
 um número não usado anteriormente, o firmware na primeira execução re-popula a EEPROM com os valores internos.
 
-[[alimentação]] == Alimentação
+== Alimentação
 
 A impressora 3D, como todos os dispositivos eletrônicos microcontrolados, precisa ser alimentada com uma fonte
 de tensão constante para o seu funcionamento. As tomadas domésticas oferecem tensão alternada (127V AC ou 220V
@@ -4512,7 +4506,7 @@ https://github.com/foosel/OctoPrint/wiki/Control-your-printer's-ATX-PSU-through-
 consumo de energia das fontes chaveadas e tem recomendações para fontes industriais e de PC:
 https://3dprinterchat.com/2017/03/3d-printer-power-supply/[_https://3dprinterchat.com/2017/03/3d-printer-power-supply/_]
 
-[[fitas-de-led]] === Fitas de Led
+=== Fitas de Led
 
 O que pode parecer meramente um capricho ou ornamento à primeira vista, as cada vez mais populares _fitas de led_
 colocadas nas carcaças das impressoras 3D podem ser importantes, e até essenciais, não só para iluminar a
@@ -4650,7 +4644,7 @@ https://www.youtube.com/watch?v=fb3hrjEiE3s[_https://www.youtube.com/watch?v=fb3
 poderoso de mudar o comportamento do firmware sem ter que mexer em seu código-fonte:
 http://smoothieware.org/switch[_http://smoothieware.org/switch_]
 
-[[a-insaciável-mesa-aquecida]] === A insaciável mesa aquecida
+=== A insaciável mesa aquecida
 
 A RAMPS tem um trilho para 5A e um trilho para 11A exclusivo para a saída D8, usada pela mesa aquecida, e
 apesar de não ser o único controlador de impressão, esse é um padrão frequente das eletrônicas. E embora
@@ -4729,7 +4723,7 @@ image:image155.png[image,width=642,height=578]
 Outros problemas se acumulam nessa abordagem, como os efeitos indutivos do campo eletromagnético gerado, então
 não é uma boa idéia. Uma abordagem mais fina é preferida e vamos explicar como funciona.
 
-[[alimentação-no-firmware-pwm-e-pid]] === Alimentação no firmware – PWM e PID
+=== Alimentação no firmware – PWM e PID
 
 Tanto a mesa quanto qualquer outro elemento aquecedor da impressora 3D, nos firmwares, irá funcionar com modulação
 de pulso por largura ou PWM, que já vimos como funciona. Então teremos na verdade a opção de não só ligar
@@ -4836,7 +4830,7 @@ especialmente as que envolvem equilíbrio contínuo, e regulando grandezas como 
 nível e deslocamento. Os números K~p~, K~i~ e K~d~ são empíricos, isto é, obtidos por experimentação,
 e muito dependentes das características dos elementos aquecedores, da potência aplicada e outros fatores.
 
-[[pid-tuning]] === PID TUNING
+=== PID TUNING
 
 Os firmwares de mercado já vêm com valores default para K~p~, K~i~ e K~d~ que funcionam razoavelmente, mas não
 são ótimos. O ideal é que possamos descobrir os valores mais apropriados para o nosso hardware. Felizmente,
@@ -4904,7 +4898,7 @@ para aumentar a tolerância temporariamente para o processo completar. No Marlin
 PID_FUNCTIONAL_RANGE, por default em 10 graus, pode ser aumentada para o processo completar mesmo com overshoots
 grandes (o que costuma acontecer ao se usar SSR).
 
-[[prevenindo-acidentes-a-proteção-contra-descontrole-térmico]] === Prevenindo acidentes: a proteção contra
+=== Prevenindo acidentes: a proteção contra
 descontrole térmico
 
 O perigo de superaquecimento sempre existe nas impressoras 3D, então é útil pensar em todos os cenários que
@@ -4987,9 +4981,9 @@ ajuste de _histerese_ para o modo bang-bang que adiciona um atraso que pode torn
 da _Prusa Research_ tem dicas de o que fazer para evitar descontrole térmico por causas eletrônicas e mecânicas:
 http://help.prusa3d.com/mk2-electronics/thermal-runaway-and-temperature-drops[_http://help.prusa3d.com/mk2-electronics/thermal-runaway-and-temperature-drops_].
 
-[[section-4]] =  +
+=  +
 
-[[extensões-e-derivações-da-tecnologia-fff]] = Extensões e derivações da tecnologia FFF
+= Extensões e derivações da tecnologia FFF
 
 A este ponto o leitor já deve ter percebido que graças aos firmwares, eletrônicas e projetos disponibilizados
 pelo projeto reprap e seus voluntários, a tecnologia de impressão 3D é bem adaptável. Devido a seus componentes
@@ -5073,9 +5067,9 @@ sermão contra as patentes e outros bloqueios em geral.
 2 – https://www.cube3dfree.com/[_https://www.cube3dfree.com/_]. Parabéns aos empreendedores que trabalham para
 melhorar a vida das pessoas!
 
-[[section-5]] ==  +
+==  +
 
-[[a-bioimpressão-3d]] == A BioImpressão 3D
+== A BioImpressão 3D
 
 A impressora 3D FFF nada mais é que um braço robótico que movimenta um cursor em coordenadas arbitrárias de
 um volume tridimensional, este cursor tendo o extrusor que conhecemos, seja o extrusor de plástico, a seringa
@@ -5123,7 +5117,7 @@ aquecimento e trabalhando com água e açúcar constrói um arcabouço biodegrad
 pelos processos celulares da cultura com que é envolto para a formação e desenvolvimento de vasos e capilares,
 e só isso já representa um salto de possibilidades em relação ao que se tinha antes.
 
-[[biotinta]] === Biotinta
+=== Biotinta
 
 O material que se usa em uma bioimpressora 3D tem o nome em inglês de **BioInk**, ou *Biotinta* em português. Não
 somente por analogia com a tinta utilizada em impressoras 2D de escritório, mas pode-se dizer que o nome “pegou”
@@ -5180,10 +5174,10 @@ comuns, é gratuito se o aluno fizer no tempo reservado e não precisar de diplo
 só o diploma, mas que fique acessível a qualquer momento. É dado pelo famoso site educacional __FutureLearn__:
 https://www.futurelearn.com/courses/bioprinting/[_https://www.futurelearn.com/courses/bioprinting/_].
 
-[[section-6]] =  +
+=  +
 
 1.  [[os-materiais-de-impressão-3d-fff]] = Os Materiais de Impressão 3D FFF 1.
-[[introdução-polímeros-e-plásticos]] == Introdução: polímeros e plásticos
+== Introdução: polímeros e plásticos
 
 De todos os materiais que encontramos no dia-a-dia, os _polímeros_ são os que nos interessam. O que é um
 polímero? Muitos dos materiais que conhecemos, como a água (H₂O), o sal (NaCl) e acetona (C₃H₆O) são
@@ -5243,7 +5237,7 @@ Pra entender melhor os materiais, antes precisamos aprender sobre as propriedade
 conhecimento é necessário não só para saber critérios para escolher o material para dada aplicação, como
 também para resolver problemas relacionados a essas propriedades.
 
-[[propriedades-térmicas]] = *Propriedades* *Térmicas*
+= *Propriedades* *Térmicas*
 
 Os plásticos podem ser moldados em determinada forma e após a moldagem, permanecerem fixos nesta forma. Se dividem
 em dois tipos principais quanto ao comportamento térmico: termofixos (ou thermosets, em inglês) e termoplásticos.
@@ -5267,7 +5261,7 @@ termoplásticos têm uma “pseudo-transição de fase” suave e relacionada à
 do material fica em forma pastosa, “em transição” de sólida para líquida. A temperatura de transição
 vítrea é sempre menor que a temperatura de derretimento.
 
-[[o-warp]] == *O “Warp”*
+== *O “Warp”*
 
 O maior problema de todos na impressão 3D está relacionado à temperatura: __warping__. Como a grande maioria dos
 materiais, os plásticos têm coeficiente de expansão térmica positiva, isto é, à medida que sua temperatura
@@ -5307,7 +5301,7 @@ temperatura sofra __hidrólise__, o que faz com que seus filetes poliméricos se
 deixando o material mais fraco e com menor aderência. Além disso, bolhas de ar formadas pela rápida expansão
 em alta temperatura também criam poros que enfraquecem a estrutura.
 
-[[a-solução]] === A Solução?
+=== A Solução?
 
 Como dito, a mudança de volume com a temperatura é um fenômeno inevitável. E é mais grave com alguns
 materiais do que em outros; índices como o coeficiente de calor específico e a condutividade térmica farão
@@ -5337,7 +5331,7 @@ sua aderência bem alta, o que garante estabilidade na mesa. Assim, para o ABS, 
 contato direto com o plástico a 110°C, ou 120°C se o vidro for usado pra compensar o decréscimo de temperatura
 que ele causa.
 
-[[propriedades-químicas]] = *Propriedades Químicas*
+= *Propriedades Químicas*
 
 Uma característica dos plásticos em geral que os faz tão apropriados à civilização moderna é a estabilidade
 química, que ocorre quando um sistema está no seu nível mais baixo de energia. Comparados a outras classes de
@@ -5360,12 +5354,12 @@ dos plásticos. Essas têm especial significado para nós, seres vivos baseados 
 interação direta com eles. Na verdade, é mesmo difícil de separá-las das propriedades químicas: a estabilidade
 química não é também ambiental?
 
-[[propriedades-biológicas]] = Propriedades Biológicas
+= Propriedades Biológicas
 
 Para falar destas propriedades, optamos por dividi-las em 3 categorias. Uma de potenciais danos à saúde, de
 forma mais genérica; outra, de reciclagem e biodegradação. E por mim, vamos falar sobre seu uso alimentar e médico.
 
-[[potenciais-danos-à-saúde]] == Potenciais danos à saúde
+== Potenciais danos à saúde
 
 Todos os termoplásticos usados em impressão 3D são já conhecidos da indústria e usados na manufatura
 industrial há décadas – excetuando talvez o PLA que é mais recente e tem uso mais tímido, mas mesmo assim
@@ -5489,7 +5483,7 @@ http://www.bofaamericas.com/3D-printing-fume-extraction.asp[_http://www.bofaamer
 11 - apenas como referência, o site _3d printing industry_ mostra projetos para ligar um exaustor à impressora:
 https://3dprintingindustry.com/news/3d-printer-exhaust-redirect-noxious-fumes-21300/[_https://3dprintingindustry.com/news/3d-printer-exhaust-redirect-noxious-fumes-21300/_]
 
-[[reciclagem-e-biodegradação]] == Reciclagem e Biodegradação
+== Reciclagem e Biodegradação
 
 As palavras _reciclar_ e _biodegradável_ aparecem tanto na linguagem informal que podem parecer significar a mesma
 coisa, ou pelo menos algo muito próximo. Mas não são, e em um certo sentido podem ser vistas até como opostos, ou
@@ -5572,7 +5566,7 @@ permitiriam baratear os insumos e até a substituir outros processos de fabrica�
 se faça necessária (ainda mais considerando que o relativamente baixo desperdício de material já faz da FFF
 ecologicamente superior em relação a outros processos de fabricação⁶).
 
-[[extrusoras-filamentadoras-maker-são-práticas]] === Extrusoras / Filamentadoras Maker: são práticas?
+=== Extrusoras / Filamentadoras Maker: são práticas?
 
 Uma das surpresas de quem começa a comprar carretéis de impressão 3D é um preço: um quilo de plástico de
 impressão 3D que custa 120 reais, por exemplo, pode ser encontrado por 15 reais ou até menos em sua forma bruta de
@@ -5714,7 +5708,7 @@ a todas.
 de impressão 3D e sua relação com o Open-Source pode ser lido na __TechRepublic__:
 http://www.techrepublic.com/article/how-recycled-plastic-for-3d-printing-will-drive-sustainability-and-raise-the-social-conscious-of-business/[_http://www.techrepublic.com/article/how-recycled-plastic-for-3d-printing-will-drive-sustainability-and-raise-the-social-conscious-of-business/_].
 
-[[uso-alimentício-e-médico-de-impressões-3d]] == Uso alimentício e médico de impressões 3D
+== Uso alimentício e médico de impressões 3D
 
 A julgar pela quantidade de designs de copos, pratos, talheres, tampas de garrafas, espremedores, raladores,
 moldes de massas, cubas de gelo, dispensadores e funis de líquido, seaparadores de clara de ovos, fatiadores,
@@ -5750,7 +5744,7 @@ que ponto a impressão 3D FFF serve para esse fim.
 O assunto tem 9 aspectos a considerar: __Material__, __Composição__, __Temperatura__, __Interstícios__,
 __Maquinário__, __Grau e Tipo__, _Protocolos_ e __Lei__. Vamos analisar cada um desses separadamente.
 
-[[material]] === Material
+=== Material
 
 Comecemos pela parte fácil: já tivemos uma noção de que há tipos de plásticos diferentes classificados por
 número de reciclagem (são os mais usados industrialmente) e sabemos ainda que alguns desses tipos têm perigos
@@ -5792,7 +5786,7 @@ Essa lista tem virtualmente todas as iterações recentes de materiais de filame
 uso alimentício. No entanto, ela conta somente parte da história. Mesmo com a matéria-prima adequada, a venda
 em filamentos pode não ser.
 
-[[composição]] === Composição
+=== Composição
 
 E a razão disso é que, dadas as propriedades do material, para poder ser extrusado em impressora 3D sem falhas
 frequentes, com a consistência necessária e na temperatura correta suas propriedades têm que ser “afinadas”
@@ -5821,7 +5815,7 @@ para esse fim_ são adequados. É preciso que os próprios aditivos não interaj
 não gerem calor; um exemplo de uso proibido seria filamento com o corante bastante comum “negro-de-fumo”,
 usado para tonalidades negras e acinzentadas.⁴
 
-[[temperatura]] === Temperatura
+=== Temperatura
 
 À primeira vista, falar sobre a _temperatura_ que o plástico aguenta pode parecer uma restrição que se aplica
 somente àqueles que servirão para acondicionar comida ou bebida quentes, mas essa é uma impressão errada. O
@@ -5839,7 +5833,7 @@ esse e outros fatores como intervalo ótimo de crescimento e reprodução de mic
 e 60°C, a mínima temperatura de transição vítrea recomendada para um plástico de uso alimentício é *80°C*
 e quanto maior melhor.
 
-[[interstícios]] === Interstícios
+=== Interstícios
 
 Chegamos ao ponto mais crítica, na verdade o Calcanhar de Aquiles da impressão FFF e o fator mais difícil de
 mitigar. Os vãos entre os filamentos, ou seja, as seções recedidas da superfície do plástico onde os filetes
@@ -5861,7 +5855,7 @@ e só funciona com geometria mais grossas e menos rebuscadas de peças.
 
 image:image175.png[image,width=642,height=609]
 
-[[maquinário]] === Maquinário
+=== Maquinário
 
 E outro problema que pesa – embora tenha solução bem mais fácil – é que as impressoras e suas peças e
 insumos não são _projetadas_ para ter segurança alimentícia. Adesivos para mesa com substâncias tóxicas,
@@ -5879,7 +5873,7 @@ assepsia e sem contaminantes, o uso de outros filamentos no dia-a-dia além dos 
 certamente deixará contaminantes nas seções de derretimento e stress mecânico. Então é importante que a
 impressora seja dedicada somente ao uso com os plásticos adequados.
 
-[[grau-e-tipo]] === Grau e Tipo
+=== Grau e Tipo
 
 Nem todo contato com alimento é igual. Algumas peças impressas são feitas para ter contato com líquidos,
 outras com sólidos e outras com pastas. Algumas terão contato breve, outras mais longo e outras servirão para
@@ -5910,7 +5904,7 @@ O uso específico determina muito quanto de investimento, e que tipo de investim
 a segurança do plástico. O que nos leva ao próximo tópico, os _protocolos clínicos_ para os testes que você
 pode querer executar nas peças.
 
-[[protocolos]] === Protocolos
+=== Protocolos
 
 Dependendo do investimento que se queira fazer na impressão 3D de peças para uso alimentício, até mesmo para
 conseguir garantias e por boa vontade para com os clientes, pode ser importante conhecer os _protocolos clínicos_
@@ -5961,7 +5955,7 @@ sua temperatura de transição vítrea é baixa demais) nem em microondas, e ess
 lidar. Complicações que mostram a principal função desse protocolos: cumprir as regulações para comércio
 de produtos plásticos. Vamos falar da _lei_ envolvendo esses objetos agora.
 
-[[lei]] === Lei
+=== Lei
 
 Para se poder comercializar qualquer produto que tenha uso alimentício, é necessário seguir as regras da ANVISA
 – e portanto fazer os protocolos clínicos do produto de acordo com elas. E é aqui que o inchaço da legislação
@@ -6011,7 +6005,7 @@ http://www.fao.org/fao-who-codexalimentarius/standards/list-standards/en/[_http:
 É importante ressaltar que esta obra pretende oferece apenas um guia geral para o interessado nesta área sem o
 suficiente para ser aconselhamento legal. O leitor deve utilizar essas informações por sua conta e risco.
 
-[[a-incompatibilidade-com-o-mundo-maker]] === A incompatibilidade com o Mundo Maker
+=== A incompatibilidade com o Mundo Maker
 
 Ser brasileiro envolve muitos quinhões, um deles é ter que lidar com uma legislação inchada que decide até
 mesmo quanto de sal pode ser servido em bares – e isso vale para as nossas versões de legislação internacional,
@@ -6037,7 +6031,7 @@ produtores, e mesmo quando têm, são com preços estratosféricos.
 
 Algumas possibilidades de compensações ao problema podem ser contempladas.
 
-[[soluções-e-mitigações]] === Soluções e Mitigações
+=== Soluções e Mitigações
 
 É importante reiterar que o apresentado aqui são sugestões sem compromisso. Sendo um campo ainda em movimento,
 é possível até que algumas delas já tenham tido sucesso ou falhado.
@@ -6110,7 +6104,7 @@ um procedimento bem simples com quatro culturas de bactérias em ágar usando um
 em ABS suavizado com acetona e duas de controle, mas tem resultados totalmente inconsistentes. Pode ser visto em
 https://www.youtube.com/watch?v=kuyys1YpAVw[_https://www.youtube.com/watch?v=kuyys1YpAVw_].
 
-[[uso-médico-e-veterinário]] === Uso médico e veterinário
+=== Uso médico e veterinário
 
 A primeira observação pertinente a dizer da impressão 3D _de baixo custo_ é que seu uso em medicina é limitado
 – e isso não deveria ser uma surpresa, já que até para confecção de objetos para uso alimentício existe
@@ -6165,7 +6159,7 @@ colocando tal material público em seu canal de youtube⁷.
 
 image:image179.png[image,width=642,height=637]
 
-[[outros-usos-biológicos]] === Outros usos biológicos
+=== Outros usos biológicos
 
 Como máquina de uso genérico, é difícil descrever todos os usos de uma impressora 3D, mesmo de uma técnica
 com limitações como a FFF. Itens para laboratório como tubos de ensaio e centrífugas, para cultivo de plantas,
@@ -6204,7 +6198,7 @@ por Manufatura Aditiva__. São José dos Campos: Universidade Federal de São Pa
 regulação: “ANVISA – Regulação de dispositivos médicos produzidos por manufatura aditiva no Brasil”,
 https://www.youtube.com/watch?v=B6N_A1VEqy8[_https://www.youtube.com/watch?v=B6N_A1VEqy8_]
 
-[[propriedades-físicas]] = Propriedades Físicas
+= Propriedades Físicas
 
 A FDM/FFF esteve restrita ao ABS no início e embora a Stratasys, antes do fim de sua patente, oferecesse certa
 gama e “grades” (graduações de propriedades) de materiais, foi com a abertura do mercado de Impressão 3D
@@ -6235,7 +6229,7 @@ com os materiais mais fortes, para aplicações sérias com muita carga necessá
 a resistência à tração. Outras técnicas de impressão 3D, como a estereolitografia, não padecem do mesmo
 problema de fundição imperfeita de camadas, e são isotrópicas.
 
-[[higroscopia-e-hidrofilia]] == Higroscopia e Hidrofilia
+== Higroscopia e Hidrofilia
 
 A _água_ é bastante relevante na ciências dos plásticos visto que pode ajudar ou atrapalhar no processo, pode
 proibir ou autorizar o contato com outros compostos, pode adentrar e degradar o plástico, e determinar aderência ou
@@ -6243,7 +6237,7 @@ descolamento de tintas e vernizes. Há propriedades associadas a ela que costuma
 de __hidrofobia__, _hidrofilia_ e __higroscopia__. Para explicá-los, vamos tentar primeiro entender a polaridade
 da molécula de água (H₂O).
 
-[[a-natureza-polar-da-água]] === A natureza polar da água
+=== A natureza polar da água
 
 image:image180.png[image,width=642,height=529]
 
@@ -6272,7 +6266,7 @@ Os detergentes usados em sua cozinha utilizam uma propriedade chamada _anfipatia
 em ter uma extremidade polar (como a água) e uma extremidade apolar (como o óleo) e portanto conseguir mediar
 atração com ambos os tipos, permitindo à àgua deslocar os óleos.
 
-[[higroscopia]] === Higroscopia
+=== Higroscopia
 
 Muitas vezes um material _hidrofílico_ é também __higroscópico__, por isso os dois termos costumam ser confundidos,
 mas não são a mesma coisa. A higroscopia (também conhecida como __higroscopicidade__), que acontece somente
@@ -6303,7 +6297,7 @@ http://www.energyvanguard.com/blog/cool-videos-hydrophilic-hydrophobic-hygroscop
 inglês. Fala sobre hidrofilia, hidrofobia e hidroscopia também:
 http://www.energyvanguard.com/blog/78016/Introduction-to-the-Physics-of-Water-in-Porous-Materials[_http://www.energyvanguard.com/blog/78016/Introduction-to-the-Physics-of-Water-in-Porous-Materials_]
 
-[[filamentos-de-impressão-3d]] = Filamentos de impressão 3D
+= Filamentos de impressão 3D
 
 Apresenta-se aqui uma lista não-extensiva de materiais diferentes usados como filamentos de impressão 3D com
 suas principais características, procurando destacar vantagens e desvantagens no uso prático.
@@ -6330,7 +6324,7 @@ bastante e mesmo os dopantes e maneiras de se fabricar um material podem levar a
 se adquirir qualquer material para impressão 3D devem-se consultar as informações do fabricante, que incluem
 as temperaturas de extrusão e mesa adequadas.
 
-[[abs]] == ABS
+== ABS
 
 ABS é o primeiro e principal material usado em impressão 3D, e embora historicamente seu uso apresente uma tendência
 à diminuição pelo aumento da oferta de outros materiais com propriedades mais desejáveis, ele continua forte
@@ -6371,7 +6365,7 @@ O ABS “natural”, sem pigmentos, tem uma cor bege clara, quase branca, e é o
 queimado, liberando monóxido de carbono, cianeto de hidrogênio e em altas temperaturas (acima de 400°C) pode
 liberar butadieno e acrilonitrila (carcinogênicos) e estireno (tóxico).
 
-[[pla]] == PLA
+== PLA
 
 Ácido Polilático, PLA. Mais que uma alternativa ao ABS, o PLA é bastante comparado a ele por quatro razões:
 ele foi o primeiro plástico de mercado a aparecer como alternativa; tem o preço no varejo quais igual ao do
@@ -6414,7 +6408,7 @@ O sítio web _ecycle_ tem uma bela caracterização do PLA do
 ponto de vista de plásticos de engenharia, mercado e ecologia:
 http://www.ecycle.com.br/component/content/article/37/738-pla-o-plastico-compostavel.html[_http://www.ecycle.com.br/component/content/article/37/738-pla-o-plastico-compostavel.html_]
 
-[[petg]] == PETG
+== PETG
 
 Era de se esperar que um dos plásticos mais presentes na nossa civilização, o conhecido e barato plástico
 “PET” (polietileno tereftalato) das garrafas de refrigerantes, constasse imediatamente na lista de materiais
@@ -6432,7 +6426,7 @@ próximas do ABS (100-110°C de mesa, 240°C no extrusor).
 
 image:image186.jpeg[image,width=495,height=457]
 
-[[tritan]] == Tritan
+== Tritan
 
 _Tritan_ é um copoliéster de engenharia com alta clareza e transparência, resistência química e a impacto
 e com estabilidade hidrolítica que concorre nos mesmos mercados do PET e policarbonato, inicialmente extrudado
@@ -6443,7 +6437,7 @@ ditas sobre esse tema. É extrudado em temperaturas altas, a recomendada pela Ta
 e 90°C na mesa, mas temperaturas maiores dão melhor acabamento e aderência entre camadas. Assim como o PLA,
 dissolve em tetraidrofurano. Costuma estar disponível na maior parte das vezes na forma natural sem corantes.
 
-[[asa]] == ASA
+== ASA
 
 Abreviação de Acrilonitrila Estireno Acrilato (__**A**crilonitrile **S**tyrene **A**crylate__), é um plástico
 de composição e mercado semelhante ao ABS, tendo como principais diferenciais menor contração de molde (0,4
@@ -6455,7 +6449,7 @@ denso – 1,07 g/cm³ ao invés de 1,04 do ABS.
 Geralmente extrudado em temperaturas próximas ao ABS, com um mínimo de 240°C no extrusor e 120°C na mesa. Antes
 usado somente em impressoras industriais, já existem vendedores de filamentos do mercado de massa que o fabricam.
 
-[[nylon]] == Nylon
+== Nylon
 
 Nylons, ou poliamidas alifáticas ou semi-aromáticas, são um conjunto de termoplásticos tão presentes na vida
 moderna que seria inevitável sua utilização em impressora 3D. De fato, a utilização é tão universal que
@@ -6489,7 +6483,7 @@ procedimentos de segurança). Nylon é bem compatível com cola PVA, fita azul d
 mesa. Recentemente compósitos com nylon (por exemplo, com fibra de carbono) começaram a se tornar populares pela
 reunião das propriedades desejáveis que adquirem, especialmente em resistência mecânica.
 
-[[pmma-acrílico]] == PMMA (acrílico)
+== PMMA (acrílico)
 
 Em termos de propriedades mecânicas o PMMA – polymethyl metacrylate / polimetil-metacrilato - lembra o PLA por sua
 rigidez, mas é mais resistente a temperatura, sofre mais warp e apresenta geralmente transparência ou translucidez
@@ -6499,7 +6493,7 @@ contra ~1,24 deste último). Como o ABS, é solúvel em acetona. É extrudado em
 e por sofrer warp, necessita de mesa aquecida a pelo menos 100°C. É bastante difícil de encontrar no Brasil e
 tem a importação bem cara, o que é lamentável pois é um dos poucos filamentos realmente rígidos disponíveis.
 
-[[abs-mg94]] == ABS MG94
+== ABS MG94
 
 Ainda que o ABS “comum”, de mercado, seja extrudável em temperaturas compatíveis com os elementos aquecedores
 de impressoras 3D comuns, a variedade _MG94_ do polímero, sendo considerada de maior qualidade, é uma exceção
@@ -6522,7 +6516,7 @@ variantes mais coloridas e opacas. O policarbonato industrial tem grande varieda
 É conhecido como um dos plásticos que mais libera BPA, como descrito na seção sobre potenciais danos à saúde
 dos plásticos.
 
-[[hdpe-pead]] == HDPE / PEAD
+== HDPE / PEAD
 
 Polietileno de alta densidade, HDPE, é um plástico frequentemente usado para itens alimentícios como garrafas de
 leite e outros potes de líquido e é conhecido por ser bastante reciclável, podendo ser derretido e solidificável
@@ -6531,7 +6525,7 @@ tem coeficiente de expansão térmica alto e sofre warp excessivo, e além disso
 precisando de superfícies “diferentes” com celulose como papelão ou cortiça. É extrudado a 250°C, com
 mesa a no mínimo 100°C.
 
-[[pom-poliacetal]] == POM (Poliacetal)
+== POM (Poliacetal)
 
 O **P**oli**O**xi**M**etileno, também conhecido como poliacetal ou pela marca __Delrin__, é um plástico rígido,
 resistente ao desgaste e de baixo coeficiente de atrito, sendo bastante usado em peças de máquinas. Tem ótima
@@ -6543,7 +6537,7 @@ os filamentos de mercado têm alta variação de temperaturas de extrusão, e as
 com resíduos de formaldeído (formol). Por outro lado, a mesa deve ter a temperatura mais alta possível, acima
 de 120°C se a impressora chegar a isso, e com câmara fechada.
 
-[[ultem-9085-e-1010]] == Ultem 9085 e 1010
+== Ultem 9085 e 1010
 
 A marca _Ultem_ da Sabic, usada para designar filamentos de polieterimida (PEI) de altíssima temperatura de
 extrusão – entre 330° e 350°C – e câmara aquecida a 195°C -, e que têm temperatura de transição vítrea
@@ -6568,7 +6562,7 @@ fabricações. Isso é complicado pelo fato que por causa da alta temperatura, e
 de “recozimento” da peça para diminuir os interstícios e tensões remanescentes entre camadas e chegar à
 sua resistência final.
 
-[[flexíveis]] == Flexíveis
+== Flexíveis
 
 Um tipo especialmente “infame” de filamento que surgiu com o mercado de massa foram os filamentos
 __flexíveis__. _Infame_ porque são provavelmente o tipo mais difícil de filamento para se usar em uma impressora. O
@@ -6581,7 +6575,7 @@ de impressão para que funcione a contento. Por exemplo, um extrusor que use fil
 elástica gigantesca por causa da maior distância entre o tracionador e a área de derretimento, quase sempre a
 ponto de inviabilizar o uso do flexível.
 
-[[tpe]] === TPE
+=== TPE
 
 TPE, ou TermoPlástico Elastômero, é o nome dado para a classe de copolímeros ou mistura de polímeros
 (como um plástico e uma borracha) que consistem de materiais com propriedades tanto termoplásticas quanto
@@ -6597,7 +6591,7 @@ de elasticidade e flexibilidade que outros TPEs.
 A impressão de todos os TPEs, dados os efeitos de histerese elástica, como apresentar “fiapos” - o efeito
 denominado de “stringing” - durante a impressão, que são removidos no final.
 
-[[tpu]] === TPU
+=== TPU
 
 image:image188.png[image,width=642,height=607]
 
@@ -6608,7 +6602,7 @@ outros TPEs incluindo os PLAs flexíveis, apresentam grande resistência de queb
 solventes e a abrasão. Servem para peças como pneus de carro de controle remoto e peças de articulação. Outra
 diferença que torna os TPUs distinguíveis de outros TPEs é a aparência geralmente mais fosca e menos lisa.
 
-[[imitações-de-materiais]] == Imitações de materiais
+== Imitações de materiais
 
 Certamente é muito importante ter controle sobre a aparência dos objetos impressos especialmente quando têm
 finalidade decorativa. Fabricantes criativos, geralmente se utilizando da receita da mistura de um pó muito fino
@@ -6623,7 +6617,7 @@ para minimizar a abrasão. Se recomenda um bico de 0,6 a 0,8mm para o uso desses
 Note-se também que costumam ser ao mesmo tempo mais densas (ou seja, menos rendimento pelo mesmo peso) e mais
 caras que materiais convencionais.
 
-[[imitação-de-metal]] === Imitação de Metal
+=== Imitação de Metal
 
 Marca mais conhecida: Colorfabb (Copperfill, Bronzefill e outros). Além de pioneiros, estabeleceram o “padrão”
 para outros fabricantes que fazem os desse tipo. O filamento é PLA com partículas de metal (~30%), tornando-se assim
@@ -6632,7 +6626,7 @@ e para adquirir o tom metálico característico deve ser bastante polida, prefer
 
 image:image189.jpeg[image,width=516,height=397]
 
-[[de-metal-para-fundição-sinterização]] === De metal para fundição / sinterização
+=== De metal para fundição / sinterização
 
 São uma extrapolação dos filamentos de metal. Ao invés de ter uma porcentagem menor de metal, o filamento é
 quase todo metal (88%), com uma minoria de plástico. A empresa _Virtual Foundry_ tem os filamentos Filamet Copper™
@@ -6651,7 +6645,7 @@ processadas, equivalem a uma peça de impressão 3D industrial SLM, caríssima. 
 
 image:image190.jpeg[image,width=642,height=426]
 
-[[imitação-de-madeira]] === Imitação de madeira
+=== Imitação de madeira
 
 Também uma mistura de serragem (40%) bem fina em PLA com agentes ligantes, a imitação de madeira com sua mais
 famosa encarnação sendo a “Laywoo-D3” tem a curiosa propriedade de ter sua cor final variando de acordo
@@ -6660,7 +6654,7 @@ com a temperatura de impressão, que pode ir de 180°C até 240°C. Truques no f
 
 image:image191.jpeg[image,width=385,height=296]
 
-[[fibra-de-carbono]] === Fibra de Carbono
+=== Fibra de Carbono
 
 A Fibra de Carbono é uma estrutura super-resistente usada em carros e aviões. Pó de fibra de carbono é
 misturado a ABS (~20%, existem variedades com PLA) pra lhe conferir maior estabilidade dimensional e resistência
@@ -6672,7 +6666,7 @@ impresso tem uma superfície fosca e ligeiramente rugosa.
 
 image:image192.png[image,width=336,height=347]
 
-[[condutivos]] == Condutivos
+== Condutivos
 
 Os filamentos que por projeto conduzem eletricidade pertencem a duas categorias principais: filamentos que
 apresentam uma condutividade mínima para poder servirem para peças “anti-estáticas” que descarregam a carga
@@ -6702,14 +6696,14 @@ temperaturas recomendadas.
 
 image:image193.png[image,width=564,height=445]
 
-[[solúveis]] == Solúveis
+== Solúveis
 
 Filamentos de material _solúvel_ têm a finalidade específica de serem usados em extrusores duplos ou triplos. A
 idéia é o filamento servir para as estruturas de suporte que permitem formas complexas, e uma vez impresso,
 ao invés da remoção mecânica desses suportes, o simples banho no solvente adequado permite que ele saia de
 peça de modo limpo e sem stress mecânico.
 
-[[hips]] === HiPS
+=== HiPS
 
 A sigla significa “poliestireno de alto impacto” e é um filamento relativamente barato que funciona medianamente
 bem com ABS e muito bem com PLA. Imprime em temperaturas de 230 a 250°C. O solvente que remove o HiPS da peça,
@@ -6717,7 +6711,7 @@ no entanto, é um pouco difícil de achar no Brasil: D-Limoneno, ou Limoneno R+.
 limas e encontrado em produtos de limpeza. Para funcionar bem, a concentração precisa ser de 90% ou mais. O
 Limoneno L- vem de limões e não funciona tão bem.
 
-[[pva]] === PVA
+=== PVA
 
 A sigla “PVA” é dúbia e na verdade usada para duas substâncias diferentes, a base da cola branca (“acetato
 de polivinila”, às vezes colocada como “PVAc” para evitar a ambiguidade) e o usado no filamento solúvel
@@ -6730,7 +6724,7 @@ e propensão à histerese elástica que os TPEs.
 
 image:image194.png[image,width=642,height=435]
 
-[[infinity-rinse-away]] === Infinity Rinse-Away
+=== Infinity Rinse-Away
 
 É um filamento usado exclusivamente em cartuchos proprietários das impressoras da série Cube da 3D Systems. Como o
 PVA, é solúvel em água, mas diferente dele, é feito a partir de polímeros de milho e “compatível” apenas
@@ -6744,7 +6738,7 @@ https://plastics.ulprospector.com/generics/34/c/t/polylactic-acid-pla-properties
 * -
 https://pt.aliexpress.com/item/shibaura-U1-382-Y1-NTC-thermistor-temperature-sensor-up-to-500-Centigrade-made-in-Japan/32770571400.html?spm=2114.16010208.99999999.262.KOPnDJ[_https://pt.aliexpress.com/item/shibaura-U1-382-Y1-NTC-thermistor-temperature-sensor-up-to-500-Centigrade-made-in-Japan/32770571400.html?spm=2114.16010208.99999999.262.KOPnDJ_]
 
-[[acabamento]] = Acabamento
+= Acabamento
 
 Se as impressoras 3D fossem construtores perfeitos como os replicadores de __Jornada nas Estrelas__, não haveria nem
 sentido em mencionar __acabamento__: afinal, as peças teriam saído prontas, __acabadas__, da máquina. Praticamente
@@ -6753,7 +6747,7 @@ diferentes técnicas de impressão 3D também seguem essa regra. O problema se e
 consiste de tarefas manuais, laboriosas e não automatizáveis – o que acaba acontecendo, visto que o que é
 automatizável acaba entrando para o fluxo de trabalho da impressão 3D.
 
-[[acabamento-é-arte-no-pior-sentido-possível-da-palavra-arte]] == Acabamento é arte – no pior sentido possível
+== Acabamento é arte – no pior sentido possível
 da palavra “arte”
 
 Em suma, quando mencionamos _acabamento_ neste contexto, tratamos desta parte avessa à automatização. Seu
@@ -6780,14 +6774,14 @@ muitos dos quais, em seus campos especializados, exigem cursos de proteção e c
 (os vapores solventes são um exemplo). Fique portanto explícita a advertência que, por mais que esta obra dê
 direções gerais de precauções, o leitor deve consultar as referências externas para melhor segurança.
 
-[[ferramentas-básicas]] == Ferramentas básicas
+== Ferramentas básicas
 
 Cada técnica diferente de acabamento pode exigir ferramentas diferentes, mas existe um conjunto básico e comum
 a muitas delas que vale ser sugerido. É importante perceber que não é necessário ter todas as ferramentas
 descritas para conseguir um bom acabamento; no entanto, quanto maior a variedade, mais fácil se tratarão os
 casos difíceis. As mais importantes de todas são as que mitigam o risco dando maior segurança às operações:
 
-[[proteções]] === Proteções
+=== Proteções
 
 Na indústria, tais proteções são tratas como “EPI” (Equipamentos de Proteção Individual). Os mais
 importantes para nossos casos:
@@ -6868,7 +6862,7 @@ prenda a peça com firmeza para ser trabalhada.
 
 image:image195.png[image,width=642,height=726]
 
-[[de-lixamento-ou-desbastamento]] === De lixamento ou desbastamento
+=== De lixamento ou desbastamento
 
 O lixamento de peças é talvez o tipo de acabamento _de aparência_ mais básico e representativo da esfera de
 impressão 3D. Básico porque representa um mínimo que se espera de pós-processamento das peças para exposição,
@@ -6951,7 +6945,7 @@ para trabalhos pesados: https://www.thingiverse.com/thing:99091[_https://www.thi
 3 – O blog fazedores - de novo - tem ótimas dicas sobre como trabalhar com a microrretífica:
 http://blog.fazedores.com/dremel-uma-ferramenta-que-todo-fazedor-precisa-conhecer/[_http://blog.fazedores.com/dremel-uma-ferramenta-que-todo-fazedor-precisa-conhecer/_]
 
-[[térmicas]] === Térmicas
+=== Térmicas
 
 Não poderiam faltar as ferramentas térmicas, visto que como o próprio processo de impressão 3D usa temperaturas
 altas, o acabamento também as acaba exigindo.
@@ -7147,7 +7141,7 @@ Infelizmente o blog de Austin não existe mais, mas o _web archive_ guardou o mo
 tissue prostheses with the desktop 3D printer. __Scientific reports__,
 __4__. https://www.nature.com/articles/srep06973[_https://www.nature.com/articles/srep06973_]
 
-[[acetona]] === Acetona
+=== Acetona
 
 image:image202.png[image,width=642,height=444]
 
@@ -7213,7 +7207,7 @@ Notas:
 que a acetona pode ter é disponibilizado pelo departamento de saúde dos EUA no endereço:
 https://www.atsdr.cdc.gov/toxprofiles/tp21.pdf[_https://www.atsdr.cdc.gov/toxprofiles/tp21.pdf_]
 
-[[clorofórmio]] === Clorofórmio
+=== Clorofórmio
 
 image:image204.png[image,width=642,height=440]
 
@@ -7269,7 +7263,7 @@ Acesso em 15 de julho de 2017.
 <http://brasilescola.uol.com.br/quimica/compostos-organoclorados.htm[_http://brasilescola.uol.com.br/quimica/compostos-organoclorados.htm_]>.
 Acesso em 15 de julho de 2017.
 
-[[diclorometano]] === Diclorometano
+=== Diclorometano
 
 image:image205.png[image,width=642,height=352]
 
@@ -7331,7 +7325,7 @@ Notas:
 1 – Ficha de Informação:
 http://sistemasinter.cetesb.sp.gov.br/produtos/ficha_completa1.asp?consulta=TETRAHIDROFURANO[_http://sistemasinter.cetesb.sp.gov.br/produtos/ficha_completa1.asp?consulta=TETRAHIDROFURANO_]
 
-[[metil-etil-cetona-mek]] === Metil-Etil-Cetona (MEK)
+=== Metil-Etil-Cetona (MEK)
 
 image:image207.png[image,width=634,height=410]
 
@@ -7356,7 +7350,7 @@ maior controle.  * Ação mais forte e rápida
 
 * Preço maior que a acetona.  * Necesside de permissão da Polícia Federal e limite de 2l por mês.  * Ação mais
 forte e rápida pode degradar a peça.  * Baixa volatilidade fará com que os métodos a frio não funcionem bem.  1.
-[[solução-limpadora]] === Solução limpadora
+=== Solução limpadora
 
 Acetona e MEK são produtos extremamente necessários em alguns campos de trabalho – solventes que podem ser
 usados para todo tipo de preparado e limpeza - e a burocracia e taxas extras para obter tais produtos seriam
@@ -7396,7 +7390,7 @@ http://www.pulvitec.com.br/produto/solucao-limpadora-polytubes[_http://www.pulvi
 3 -
 _http://assets.production.amanco.com.br.s3.amazonaws.com/uploads/gallery_asset/file/54/FISPQhttp://assets.production.amanco.com.br.s3.amazonaws.com/uploads/gallery_asset/file/54/FISPQ_Solu__o_Limpadora.pdf[­_Solu__o_Limpadora.pdf]_
 
-[[compostos-não-recomendados-para-o-acabamento-químico]] === Compostos não recomendados para o acabamento químico
+=== Compostos não recomendados para o acabamento químico
 
 Assim como passamos uma lista de compostos que podem ser usados para o acabamento químico, há também aqueles
 compostos que, embora disponíveis no mercado e anedoticamente utilizados para esse fim, são inadequados ou até
@@ -7426,13 +7420,13 @@ Notas:
 1 - Kalia, S., & Avérous, L. (Eds.). (2011). _Biopolymers: biomedical and environmental applications_ (Vol. 70). John
 Wiley & Sons.
 
-[[acabamento-químico-métodos]] == Acabamento químico: métodos
+== Acabamento químico: métodos
 
 Listados os materiais de que podemos dispôr e suas particularidades, o passo seguinte é enumerar os métodos
 que usaremos com eles. Começamos pelo mais básico e aumentamos a sofisticação, além de dizer as vantagens e
 desvantagens de cada um.
 
-[[imersão]] === Imersão
+=== Imersão
 
 O método mais simples possível de tratar uma peça fabricada por uma impressora 3D FFF é submergi-la no solvente,
 e as desvantagens são óbvias para qualquer um que já mergulhou um cubo de açúcar ou um cristal de sal em água,
@@ -7560,7 +7554,7 @@ o tratamento, e o método não permite boa averiguação do progresso. Levantame
 da peça faz o vapor frio escapar, prejudicando o tratamento.  * O tempo de tratamento demorado pode ser um revés.
 * O vapor frio, especialmente para os solventes de PLA, normalmente não é tão efetivo quanto o aquecido.  * Como
 há certo contato com o líquido e ainda o vapor no ambiente, é necessário o uso das proteções adequadas.  1.
-[[banho-de-vapor-aquecido]] === Banho de Vapor Aquecido
+=== Banho de Vapor Aquecido
 
 Como dito no histórico de tratamento de peças, esse foi o método que marcou uma mudança efetiva no fluxo de
 trabalho de acabamento. Seus resultados são os melhores de todos os métodos aqui descritos, com preservação e
@@ -7634,7 +7628,7 @@ evitável. Se o desejado for uma superfície fosca ou texturizada, o banho de va
 mais pesados que o ar, podem circundar o recipiente e “derramar” dele). Usar as proteções é indispensável.
 * Deixa a peça flexível e pegajosa por alguns minutos. É preciso ter cuidado com o contato com ela para não
 arruinar sua superfície, e mesmo na hora da secagem é preciso deixá-la em lugar sem poeira e resíduos.  1.
-[[nebulizador-umidificador-vaporizador-aparato-maker]] === Nebulizador / umidificador / vaporizador / Aparato
+=== Nebulizador / umidificador / vaporizador / Aparato
 “Maker”
 
 Uma idéia que necessariamente passa pela mente de muita gente é: o procedimento de aplicação de solvente
@@ -7691,7 +7685,7 @@ em série.  * Itens de mercado de massa, com elementos e peças de reposição f
 * Tempo, disposição e estudos necessários para se construir tal aparato. Caso seja para uma empresa de impressão
 3D média ou grande, pode exigir um profissional dedicado para operação, manutenção e reparos.  * Fragilidade
 da solução, que não tem garantias de funcionamento e riscos grandes associados à construção interna.  1.
-[[máquinas-especializadas]] === Máquinas especializadas
+=== Máquinas especializadas
 
 Ora, recomendamos aparelhos especializados para o tratamento químico se a disposição para construir um for baixa,
 mas _qual_ aparelho? No momento de publicação deste livro não há nenhuma comercializada no Brasil, mas existe
@@ -7755,7 +7749,7 @@ seja o mais conhecido, os outros solventes e seus plásticos também funcionam �
 contato tão próximo com eles em tarefa de revestimento, colagem e pintura tornar essas operações muitíssimos
 mais perigosas.
 
-[[acabamento-térmico-recozimento-annealing]] == Acabamento térmico – recozimento (__annealing__)
+== Acabamento térmico – recozimento (__annealing__)
 
 Quando uma peça de impressão 3D é fabricada, o processo todo submete o material a várias tensões localizadas
 dado principalmente às diferenças de temperaturas entre os vários pontos em que o filamento é depositado. Muitas
@@ -7810,7 +7804,7 @@ O estudo não parece ter resultado em artigo acadêmico, carecendo por isso de c
 
 2 - https://www.youtube.com/watch?v=CZX8eHC7fws[_https://www.youtube.com/watch?v=CZX8eHC7fws_]
 
-[[pintura]] == Pintura
+== Pintura
 
 Tratando de impressão 3D FFF, pintura surge como um assunto inevitável, até pela limitação da tecnologia
 em fabricar com cores diversas. Se por um lado é v[[FEITO_pintura]]erdade que existem muitas peças em que a
@@ -7842,7 +7836,7 @@ melhoram o tato e orientam partículas metálicas – como sais de alumínio.
 Uma fórmula contendo estes compostos forma uma _suspensão_ dos pigmentos e cargas na resina – sendo insolúveis
 nela -, ao mesmo tempo em que esta resina está em solução com o solvente.
 
-[[molhabilidade]] === Molhabilidade
+=== Molhabilidade
 
 De modo geral, os plásticos de impressão 3D não têm condições ideais para a fixação de tintas, adesivos
 e metalização, devido a suas superfícies quimicamente inertes ou com baixa energia superficial. A aderência
@@ -7907,7 +7901,7 @@ http://abflexo.org.br/artigo-tecnico/tensao-superficial-em-substratos-plasticos[
 4 – A tabela deste livro foi baseada nesta referência, com algumas modificações e seleções:
 http://www.tstar.com/blog/bid/33845/surface-energy-of-plastics[_http://www.tstar.com/blog/bid/33845/surface-energy-of-plastics_]
 
-[[a-prática-tintas]] === A prática: tintas
+=== A prática: tintas
 
 Sabendo a composição e os princípios de aderência das tintas, podemos aprender quais usar. Existem diversos
 tipos de tintas no mercado, mas nem todas são propícias para usar com plástico.
@@ -7929,7 +7923,7 @@ Outros tipos de tinta – como esmalte, guache, tinta a óleo e tinta de tecido 
 para o uso com plásticos de impressão 3D. Uma exceção pode ser o uso de esmalte de unha com pincel fino para
 desenhar detalhes na peça.
 
-[[revestimento-coberturas-e-auxiliares]] === Revestimento, coberturas e auxiliares
+=== Revestimento, coberturas e auxiliares
 
 Além das tintas, a tarefa de pintura costuma pedir por alguns compostos que auxiliam o acabamento e melhoram a
 aparência e textura da peça, além de protegê-la de fatores ambientais:
@@ -7962,7 +7956,7 @@ que partes móveis se articulem. Pode ser necessário evitar a aplicação deles
 então modelá-la antecipadamente mais fina para compensar o volume a mais gasto. Um dos jeitos de fazer isso é
 a “compensação horizontal”, que veremos no capítulo de fatiamento.
 
-[[nitrocelulose-vs.-poliuretano]] === Nitrocelulose vs. Poliuretano
+=== Nitrocelulose vs. Poliuretano
 
 Na escolha de auxiliares para o acabamento, é comum se encontrarem compostos à base de duas substâncias diferentes:
 _nitrocelulose_ e __poliuretano__. Vale a pena vê-los em mais detalhes:
@@ -7993,7 +7987,7 @@ http://www.poliuretanos.com.br/livro/livro.htm[_http://www.poliuretanos.com.br/l
 toda a gama de revestimentos de proteção, temos a listagem do site especializados em tintas anticorrosivas:
 http://www.tintasanticorrosivas.com.br/informacoes-tecnicas/tintas-anticorrosivas/[_http://www.tintasanticorrosivas.com.br/informacoes-tecnicas/tintas-anticorrosivas/_].
 
-[[aplicação-das-tintas-e-revestimentos]] === Aplicação das tintas e revestimentos
+=== Aplicação das tintas e revestimentos
 
 As tintas e compostos auxiliares precisam ser aplicados na peça, e os dois modos principais de o fazer são com
 um instrumento de contato como pincel ou brocha, ou borrifação como spray (aerossol) ou aerógrafo. Mas antes
@@ -8126,7 +8120,7 @@ a importante lição de sempre limpar o aerógrafo depois de cada uso, pois o l�
 dentro da agulha de aplicação e aí a limpeza pode ser bastante complicada ou até impossível, com a caneta
 tendo que ser substituída em alguns casos.
 
-[[manutenção-e-cuidados-com-a-impressora-3d]] == Manutenção e Cuidados com a Impressora 3D
+== Manutenção e Cuidados com a Impressora 3D
 
 Sendo um aparelho que em sua operação normal lida com tantas forças mecânicas, térmicas e até químicas, é
 esperado que a impressora 3D sofra considerável desgaste com o uso, comprometendo seu funcionamento e precisão e
@@ -8140,7 +8134,7 @@ as particularidades de certos modelos, pode ser que não se apliquem ou precisem
 a lubrificação de um componente pode exigir um tipo de óleo diferente, ou partes como o _hotend_ podem não ser
 facilmente desmontáveis para limpeza, sofrendo mais desgaste com a tentativa de manutenção que com o uso cotidiano.
 
-[[componentes-mecânicos]] === Componentes mecânicos
+=== Componentes mecânicos
 
 * **Parafusos e porcas**: Em impressoras 3D reprap como _graber_ e __prusa__, os parafusos podem afrouxar
 um pouco quando submetidos a muita pressão estrutural ou vibrações, especialmente em peças móveis como
@@ -8275,7 +8269,7 @@ limpeza, um pano seco deve ser utilizado, ou no máximo um pano de microfibra co
 com sabão para limpeza mais pesada. Nunca use produtos pesados como querosene ou thinner no material. Recomenda-se
 fortemente que se proteja a carcaça de impressoras de MDF com vernizes ou lacas impermeáveis para estender sua vida
 útil. Recomenda-se o revestimento nas peças antes da montagem, ainda que isso dificulte um pouco os encaixes.  1.
-[[componentes-eletrônicos]] === Componentes eletrônicos
+=== Componentes eletrônicos
 
 * *Drivers* e **Motores**: é sempre bom fazer uma verificação nos motores, ver se eles não estão perdendo passo
 ou superaquecendo durante as impressões. As perdas de passo são visíveis pelo desalinhamento da peça quando nos
@@ -8312,7 +8306,7 @@ desconectar os fios, mas são mais difíceis de achar.
 
 image:image219.jpeg[image,width=642,height=239]
 
-[[lubrificação]] === Lubrificação
+=== Lubrificação
 
 Ao desavisado, pode parecer que qualquer lubrificação de peças de máquinas é um problema trivial e basta usar
 um óleo qualquer comprado em lojas de ferramentas para tê-lo resolvido. Esta aparência, no entanto, está muito
@@ -8415,7 +8409,7 @@ http://www.dolphingrupo.com.br/blog/20-08-15/lubrificar-máquinas-é-preciso-mas
 em mente no entanto que alguns dos compostos sugeridos na página podem ser difíceis de encontrar no Brasil:
 http://reprap.org/wiki/Lubrication[_http://reprap.org/wiki/Lubrication_]
 
-[[o-pesadelo-calibração-de-uma-delta]] === O Pesadelo: Calibração de uma delta
+=== O Pesadelo: Calibração de uma delta
 
 Quando se procura saber mais sobre as impressoras estilo __delta__, seja para comprar ou para montar, as respostas
 em fóruns podem assustar o interessado. Há um determinado aspecto das deltas que é unanimamente vilificado: sua
@@ -8864,7 +8858,7 @@ da impressora:
 
 image:image234.png[image,width=642,height=509]
 
-[[representações-de-formas-tridimensionais]] == Representações de formas tridimensionais
+== Representações de formas tridimensionais
 
 No plano tridimensional, no entanto, existem dois modos principais de se representar cada objeto do mundo real:
 
@@ -8971,7 +8965,7 @@ pode ser chamada de __roubo__, pois __não há subtração__.
 
 image:image238.png[image,width=517,height=412]
 
-[[operações-booleanas]] == Operações booleanas
+== Operações booleanas
 
 Um conceito importante para entender malhas e sólidos e como os problemas podem surgir é o de __operações
 booleanas__. São modificações que você exerce tendo dois ou mais sólidos ou malhas como operandos e uma única
@@ -8996,7 +8990,7 @@ vezes o procedimento de fechar buracos, se passado com os parâmetros incorretos
 não são relacionadas; neste caso uma reparação mais cuidadosa, com fechamento de seções específicas, pode
 ser necessária. A maioria dos softwares de modelagem e reparo permite tal tratamento.
 
-[[normais-invertidas]] === Normais invertidas
+=== Normais invertidas
 
 “Normal” é o nome que se dá, em uma polígono, a um vetor em ângulo reto com sua superfície, apontando
 “para fora”. Como explicamos ao falhar de malhas, elas são __orientadas__: se o polígono fosse uma folha de
@@ -9019,7 +9013,7 @@ decidida por “maioria” de acordo com os outros polígonos.
 
 image:image244.png[image,width=642,height=326]
 
-[[faces-arestas-e-vértices-flutuantes]] === Faces, arestas e vértices flutuantes
+=== Faces, arestas e vértices flutuantes
 
 Digitalizadores (scanners) tridimensionais são a quase exclusiva fonte deste problema. Seus algoritmos percorrem
 a superfície dos objetos escaneados e inferem pontos, arestas e superfícies, com uma grande porcentagem dessas
@@ -9039,7 +9033,7 @@ podem tornar impossível a correção posterior.
 
 image:image245.png[image,width=642,height=343]
 
-[[interseções]] === Interseções
+=== Interseções
 
 Partes da malha se introjetando ou coincidindo com o espaço interno de seu volume - este é um problema genérico
 que pode ocorrer até mesmo com modelagem sólida (geralmente menos propensa a erros) convertida para malha, embora
@@ -9052,7 +9046,7 @@ problemas interferindo na análise da topologia da malha, no entanto, a operaç�
 
 image:image246.png[image,width=642,height=332]
 
-[[non-manifold]] === Non-manifold
+=== Non-manifold
 
 Entramos no espinhoso e complexo campo da teoria da topologia, uma disciplina matemática de nível superior que
 traria exigências excessivas de conhecimento para o tratamento de formas para impressão 3D. A incompreensível
@@ -9096,7 +9090,7 @@ dos parâmetros) como o Azure Mesh Repair e MakePrintable.
 
 image:image251.png[image,width=566,height=443]
 
-[[problemas-de-malha-não-geométricos]] == Problemas de malha – não-geométricos
+== Problemas de malha – não-geométricos
 
 Nem todos os problemas de malha que se pode ter são relacionados à geometria _lógica_ da peça, e sim à
 geometria __física__. Em outras palavras: embora a forma seja perfeitamente equivalente a um objeto real, a
@@ -9107,7 +9101,7 @@ problemas geralmente pedem não só correção, mas um _redesign_ da peça, o qu
 peça para simplesmente imprimir para cliente. Detectados problemas deste tipo na peça, o melhor é devolver para
 redesign ou ao menos informar o cliente – com um acordo de isenção de responsabilidade por tais falhas.
 
-[[paredes-finas]] === Paredes finas
+=== Paredes finas
 
 Em um modelo fechado qualquer, a _espessura de parede_ (wall thickness) é a distância mínima entre dois pontos
 de uma superfície fechada. É uma das características geométricas mais importantes de um objeto: o quanto
@@ -9127,7 +9121,7 @@ em que a espessura mínima é de 2mm.
 
 image:image253.png[image,width=642,height=523]
 
-[[detalhes-pequenos]] === Detalhes pequenos
+=== Detalhes pequenos
 
 Ressaltamos duas vezes a parede ser não somente fina, mas mais fica que nosso bico. Este problema está relacionado
 ao anterior, mas as consequências e parâmetros são diferentes. Há vezes em que seu objeto precisa ter certos
@@ -9143,7 +9137,7 @@ ser entre 1 e 2 vezes o orifício do bico usado.
 
 image:image254.png[image,width=452,height=344]
 
-[[overhangs]] === Overhangs
+=== Overhangs
 
 __Overhangs__, uma palavra em inglês que pode se traduzir como _seções pendentes_ da peça, isto é, superfícies
 da parte de baixo da peça que estarão acima da plataforma sem algo para sustentá-las, ou com as faces em
@@ -9166,7 +9160,7 @@ interna difícil de alcançar. Existem mitigações para esses problemas, que ve
 
 image:image256.png[image,width=642,height=495]
 
-[[distribuição-de-forças]] === Distribuição de forças
+=== Distribuição de forças
 
 Por fim, muitas dessas _diretivas_ de qualidade de objetos impressos na verdade são apenas “atalhos” para
 termos objetos imprimíveis, robustos e com boa aparência. Se formos ao fundo da questão, no entanto, a maioria
@@ -9204,7 +9198,7 @@ a prática. O caso típico de uso a ser tratado em nossos exemplos é o de uma i
 no mercado nacional para fins pessoais ou profissionais. Alguns modelos de impressoras 3D com características
 especiais (como as estilo “delta”) serão tratadas em apêndices, assim como casos de uso que extrapolam o comum.
 
-[[introdução]] == Introdução
+== Introdução
 
 Uma Impressora 3D “de mercado” tipicamente vem com drivers de dispositivo e um software (fatiador) para você
 usar com a impressora 3D. No fatiador, você pode controlar a impressão enquanto acontece, ligado à impressora 3D,
@@ -9260,7 +9254,7 @@ usar o processamento de dispositivos embarcados. Por isso alguns fatiadores, com
 
 image:image258.png[image,width=626,height=475]
 
-[[fluxo-de-trabalho-workflow-da-impressão-3d]] == Fluxo de trabalho (workflow) da Impressão 3D
+== Fluxo de trabalho (workflow) da Impressão 3D
 
 * **Escolha ou obtenção das formas tridimensionais**. Há diversas fontes possíveis para as formas: ** Elas
 podem ser criadas por softwares _*modeladores sólidos*_ – aplicativos que permitem a modelagem tridimensional e
@@ -9300,7 +9294,7 @@ ou clorofórmio; * Opcional: *revestimento* da peça para conferir a ela alguma 
 
 image:image259.png[image,width=651,height=745]
 
-[[e-o-que-é-fatiar]] = E o que é fatiar?
+= E o que é fatiar?
 
 A etimologia da palavra já revela sua fundamentação: vamos pegar uma forma 3D, orientar em relação a uma
 superfície, e cortá-la em fatias horizontais (seções transversais) bem finas, como se fosse um pão de forma
@@ -9327,7 +9321,7 @@ image:image265.png[image,width=642,height=475]
 
 image:image266.png[image,width=662,height=269]
 
-[[principais-fatiadores-do-mercado]] == Principais fatiadores do mercado
+== Principais fatiadores do mercado
 
 A seguir, uma listagem atual dos principais fatiadores de impressão 3D FFF disponíveis para microcomputadores
 (PC/Mac).
@@ -9417,7 +9411,7 @@ proprietárias, restritivas e controladoras, para estender o poder sobre os prof
 – pode se tornar impossível exercer aquela profissão sem o aval da fabricante, um poder inadmissível que
 muitos entregam sem hesitação (condenando junto os colegas de profissão, pelo efeito de rebanho).
 
-[[aprendendo-a-fatiar]] = Aprendendo a fatiar
+= Aprendendo a fatiar
 
 Comecemos por ver os primeiros parâmetros, os mais básicos que precisaremos, para configurar a nossa impressão
 em um fatiador de mercado. O assistente de configuração do fatiador __Slic3r__, especificamente, pede justamente
@@ -9426,7 +9420,7 @@ ajustes aparecem nos outros fatiadores.
 
 image:image269.png[image,width=628,height=328]
 
-[[ajuste-i-tipo-de-código-de-máquina]] === Ajuste I: Tipo de código de máquina
+=== Ajuste I: Tipo de código de máquina
 
 Existem muitas impressoras 3D no mercado, e embora a maioria delas use uma variação do *G-Code* consagrado
 de décadas de uso em máquinas CNC, pequenas variações podem gerar grandes diferenças, como um código de
@@ -9442,7 +9436,7 @@ que transforma o arquivo .gcode em .x3g.
 
 image:image270.png[image,width=637,height=436]
 
-[[ajuste-ii-tamanho-e-formato-da-mesa]] === Ajuste II: tamanho e formato da mesa
+=== Ajuste II: tamanho e formato da mesa
 
 Este ajuste varia um pouco entre os fatiadores: em alguns deles você entra apenas os lados da mesa, em outros
 você entra as três dimensões X, Y e Z do seu volume de impressão. No Slic3r, você entra apenas os lados e
@@ -9468,7 +9462,7 @@ se beneficiar de um “truque” que é criar configurações especiais de impre
 gigantes – digamos, 2000 mm x 2000 mm de área – somente para poder dispor todos os modelos de uma só vez e
 ter uma estimativa do tempo total e volume de plástico gasto de uma quantidade grande de peças .
 
-[[ajuste-iii-diâmetro-do-orifício-do-bico]] === Ajuste III: diâmetro do (orifício do) bico
+=== Ajuste III: diâmetro do (orifício do) bico
 
 Lembre-se: o _bico_ é o __nozzle__, a pecinha pequena de onde o plástico sai derretido, não é o
 __hotend__. Portanto deve ficar bem evidente que sempre que falarmos em diâmetro do _bico_ estamos falando do
@@ -9486,7 +9480,7 @@ de comprimento cada.
 
 image:image274.png[image,width=642,height=304]
 
-[[ajuste-iv-diâmetro-do-filamento]] === Ajuste IV: diâmetro do filamento
+=== Ajuste IV: diâmetro do filamento
 
 Aqui ocorre uma confusão comum: o _hotend_ da sua impressora 3D tem um tubo interno que ou é preparado para
 filamentos de 1,75mm, ou é preparado para filamentos de 3mm. Este tubo será um pouco maior que o diâmetro nominal
@@ -9508,7 +9502,7 @@ image:image275.jpeg[image,width=412,height=383]
 
 image:image276.png[image,width=634,height=300]
 
-[[ajuste-v-temperatura-do-extrusor]] === Ajuste V: temperatura do extrusor
+=== Ajuste V: temperatura do extrusor
 
 Como no caso do diâmetro do filamento, este é só um ajuste inicial; você irá criar vários perfis diferentes
 posteriormente, por exemplo um para ABS, outro para PLA. No caso ilustrado, consideramos que vamos inicialmente
@@ -9516,7 +9510,7 @@ usar ABS, então configuramos a temperatura do extrusor em 230°C.
 
 image:image277.png[image,width=635,height=301]
 
-[[ajuste-vi-temperatura-da-mesa]] === Ajuste VI: temperatura da mesa
+=== Ajuste VI: temperatura da mesa
 
 Este parte terá uma leve variação entre fatiadores pois alguns oferecem um “checkbox” para você dizer
 se a impressora tem ou não mesa aquecida, e somente se estiver ligado permitem configurar uma temperatura. No
@@ -9532,7 +9526,7 @@ Terminamos a configuração inicial, e agora estamos prontos para usar o softwar
 
 image:image279.png[image,width=634,height=300]
 
-[[revendo-a-configuração]] == Revendo a configuração
+== Revendo a configuração
 
 Mas não acabou – após a primeira execução, o assistente pode ser chamado novamente pelo item “Help” →
 “Configuration Assistant”; mas é útil saber onde estão as configurações. A interface que aparece logo
@@ -9666,7 +9660,7 @@ extrusor já é dada pelo firmware, liberando o fatiador deste ajuste.
 Esta aba ainda tem configurações de retração por extrusor, mas trataremos dela mais à frente pois tem maior
 relação com outras configurações de fatiamento.
 
-[[o-g-code-nosso-de-cada-dia]] === O G-Code nosso de cada dia
+=== O G-Code nosso de cada dia
 
 Sorrateiramente, trouxemos o leitor até a aba de impressoras do Slic3r, porque na verdade a configuração
 inicial de uma impressora tem um passo importante que é por vezes negligenciado: o __G-Code inicial e final__. Na
@@ -9692,7 +9686,7 @@ dicas e truques para ele tornar a sua impressão melhor.
 
 image:image291.png[image,width=622,height=639]
 
-[[diâmetro-e-temperatura]] === Diâmetro e temperatura
+=== Diâmetro e temperatura
 
 Faltam esses ajustes, e basta pensar que eles são específicos em relação ao __carretel de filamento
 usado__. Enquanto para aquele seu carretel de PLA vermelho (cuja espessura medida é de 1,69mm) usa 220°C no
@@ -9705,7 +9699,7 @@ complicada, caso o leitor tenha curiosidade tratamos mais a frente em detalhes.
 
 image:image292.png[image,width=607,height=307]
 
-[[o-multiplicador-de-extrusão]] === O Multiplicador de Extrusão
+=== O Multiplicador de Extrusão
 
 Você sabe o que é o diâmetro e as temperaturas, portanto que _Extrusion Multiplier_ é esse? No Slic3r ele é
 um número pelo qual ele modificará o seu cálculo de plástico a ser extrudado. Digamos que para determinada
@@ -9776,7 +9770,7 @@ deste item é __flow__, fluxo).
 
 image:image294.png[image,width=553,height=390]
 
-[[os-mesmos-ajustes-de-sempre]] === Os mesmos ajustes de sempre
+=== Os mesmos ajustes de sempre
 
 Se você não se cansou _ainda_ de falarmos destas configurações, prepare-se porque vamos começar tudo de novo. A
 razão é que há outros fatiadores, e precisamos dar bons parâmetros de comparação. Mais do que a nomenclatura e
@@ -9790,7 +9784,7 @@ estar fazendo uma aposta que quem paga é o leitor.
 O Slic3r foi escolhido para ilustrar este livro porque ele é ao mesmo tempo rico em recursos, organizado
 racionalmente e suficientemente genérico que sirva para intuir e ilustrar os ajustes de outros fatiadores.
 
-[[simplify3d]] === Simplify3D
+=== Simplify3D
 
 Este competente fatiador proprietário tem usabilidade boa e variados recursos únicos que mesmo com sua forma de
 venda sem _trials_ ou versões limitadas lhe renderam uma boa parcela do mercado. Uma boa qualidade de fatiamento,
@@ -9849,7 +9843,7 @@ ele deve cobrar.
 
 image:image299.png[image,width=582,height=437]
 
-[[cura]] === Cura
+=== Cura
 
 É preciso esclarecer que para fins práticos, é sensato dizer que existem *dois* fatiadores de nome Cura: O que
 tem a numeração até a série 15.04 (sendo a versão 15.04.6 a de manutenção mais recente) e o que foi quase
@@ -9892,7 +9886,7 @@ extrusão.
 
 image:image303.png[image,width=614,height=563]
 
-[[importação-e-disposição-de-peças-na-mesa]] == Importação e disposição de peças na mesa
+== Importação e disposição de peças na mesa
 
 Uma vez tenhamos configurado esse mínimo no fatiador, já podemos – antes mesmo de qualquer elaboração nas
 configurações – usar o software para montar nossa “mesa de impressão virtual”, isto é, o que queremos
@@ -9965,7 +9959,7 @@ botão do meio para __pan__.
 
 image:image307.png[image,width=642,height=401]
 
-[[configurações-adicionais-de-posicionamento]] === Configurações adicionais de posicionamento
+=== Configurações adicionais de posicionamento
 
 Cada fatiador costuma vir com suas próprias facilidades e recursos extras de posicionamento e disposição,
 e vale a pena explicitar como funciona em cada um deles.
@@ -10078,7 +10072,7 @@ livro, um relato de bug está aberto para a implementação do recurso de desfaz
 https://github.com/alexrj/Slic3r/issues/3265[_https://github.com/alexrj/Slic3r/issues/3265_] e um patch já foi
 escrito para resolvê-lo: https://github.com/alexrj/Slic3r/pull/4100[_https://github.com/alexrj/Slic3r/pull/4100_].
 
-[[corte-divisão-de-peças]] === Corte / divisão de peças
+=== Corte / divisão de peças
 
 Exclusividade do Slic3r, essa função não existe nos outros fatiadores e serve para dividi-la em duas metades
 usando de um plano de corte. Para ativá-la, você pode selecionar o objeto e apertar o botão de menu “Cut”,
@@ -10087,7 +10081,7 @@ ou clicar com o botão direito e selecionar a opção “Cut”.
 image:image316.png[image,width=642,height=818]
 
 1.  [[section-12]] === + [[section-13]] === image:image317.png[image,width=642,height=441] +
-[[simulando-o-corte-no-cura-e-simplify3d]] === Simulando o corte no Cura e Simplify3D
+=== Simulando o corte no Cura e Simplify3D
 
 Apesar de esses fatiadores não terem uma função de corte específica como o Slic3r, é possível usar um editor
 de objetos tridimensionais externos como Blender, Meshlab e Meshixer para cortar a peça. Mas também é possível
@@ -10098,7 +10092,7 @@ relação ao “plano de corte”) e também de ter que saber a dimensão e posi
 corte. Demonstraremos no *Cura* pois é trivial saber como fazer as mesmas transformações no Simplify3D, dado
 o que já ensinamos.
 
-[[section-14]] === image:image318.png[image,width=578,height=377]
+=== image:image318.png[image,width=578,height=377]
 
 image:image319.png[image,width=579,height=422]
 
@@ -10106,7 +10100,7 @@ image:image320.png[image,width=623,height=379]
 
 image:image321.png[image,width=613,height=346]
 
-[[impressão-contínua-vs.-sequencial]] == Impressão contínua vs. sequencial
+== Impressão contínua vs. sequencial
 
 Um recurso que todos os fatiadores oferecem, mas de formas diferentes, é a possibilidade de o usuário escolher
 como quer que as peças da mesa sejam impressas, quando há várias: todas ao mesmo tempo (a primeira camada de
@@ -10213,7 +10207,7 @@ https://www.simplify3d.com/support/articles/multi-part-printing/[_https://www.si
 neles, a seguir: https://github.com/alexrj/Slic3r/issues/3739[_https://github.com/alexrj/Slic3r/issues/3739_]
 e https://github.com/Ultimaker/Cura/issues/1493[_https://github.com/Ultimaker/Cura/issues/1493_].
 
-[[outra-camada-de-configurações]] == Outra camada de configurações…
+== Outra camada de configurações…
 
 ...ou configurações de camada? Pois agora que terminamos a __base__, o mínimo que uma impressora precisa para
 começar a funcionar, precisamos saber como fazer uma impressão viável (isto é, que chegue à peça final sem
@@ -10257,7 +10251,7 @@ considerando o mecanismo.
 
 image:image333.png[image,width=596,height=631]
 
-[[controle-de-altura-de-camada-e-fatiamento-adaptativo]] == Controle de altura de camada e fatiamento adaptativo
+== Controle de altura de camada e fatiamento adaptativo
 
 [[FEITO adaptive_slicing]]Por bastante tempo, o Slic3r tem tido um recurso que é tanto bastante útil como pouco
 usado, que é o ajuste fino de controle de camadas por altura. Embora outros fatiadores também permitam isso de
@@ -10293,7 +10287,7 @@ com o usuário podendo alterá-las.
 
 image:image336.png[image,width=642,height=581]
 
-[[valor-da-cúspide]] === Valor da cúspide
+=== Valor da cúspide
 
 Se a configuração de altura de camada mínima e máxima é fácil de entender, nem tudo é simples no fatiamento
 adaptativo. Um valor mais complexo que também pode ser entrado é o _cusp value_ (valor da cúspide). Cúspide
@@ -10307,7 +10301,7 @@ image:image337.png[image,width=535,height=241]
 
 image:image338.png[image,width=579,height=508]
 
-[[em-outros-fatiadores]] === Em outros fatiadores
+=== Em outros fatiadores
 
 O Slic3r não é o único fatiador a ter fatiamento adaptativo, mas parece ser o que a implementa de forma mais
 consistente, configurável e modificável. Outros fatiadores que a implementam com parâmetros mais automáticos
@@ -10325,7 +10319,7 @@ http://www.instructables.com/id/Variable-Slicing-for-3D-Printing-on-Autodesk-Emb
 
 3 - https://github.com/platsch/Slic3r/tree/adaptive-slicing[_https://github.com/platsch/Slic3r/tree/adaptive-slicing_]
 
-[[a-importância-da-primeira-camada]] === A Importância da Primeira Camada
+=== A Importância da Primeira Camada
 
 image:image341.png[image,width=636,height=357]
 
@@ -10355,7 +10349,7 @@ para a máquina. Não confunda o _offset_ (deslocamento inicial) com a altura da
 
 image:image342.png[image,width=626,height=287]
 
-[[babystepping]] === Babystepping
+=== Babystepping
 
 [[FEITO babystepping]]Um recurso muito útil dos firmwares mais populares (mas não ativado por __default__) é o
 __babystepping__, ou __passos de bebê__. É um recurso usado somente em modo interativo, e disponível apenas em
@@ -10390,7 +10384,7 @@ http://forum.smoothieware.org/forum/t-1765243/in-print-z-height-adjustment-babys
 Para aparecer nos menus e poder ser usado, o babystepping tem que ser configurado no firmware como ativo e regravado
 no microcontrolador da impressora 3D.
 
-[[a-altura-da-primeira-camada]] === A altura da primeira camada
+=== A altura da primeira camada
 
 Existem duas estratégias diferentes e “quase opostas” para lidar com os ajustes de primeira camada
 nos fatiadores. A primeira estratégia envolve configurar uma primeira camada _mais grossa_ que o resto da sua
@@ -10436,13 +10430,13 @@ estruturas pendentes, geometrias difíceis, fragilidade ao calor acabam tendo so
 que são fabricadas em conjunto com a peça, para serem posteriormente destacadas e descartadas (ou, melhor ainda,
 recicladas como novos carretéis de filamento).
 
-[[prime]] === Prime
+=== Prime
 
 O __Prime__, também chamado de __Priming__, é o nome dado às variadas estratégias de início de impressão para
 ter o bico da impressora “limpo” dos fragmentos de plásticos ou sujeira e também para começar a extrudar
 plástico uniformemente.
 
-[[skirt-saia]] === *Skirt (saia)*
+=== *Skirt (saia)*
 
 image:image344.png[image,width=642,height=196]
 
@@ -10456,7 +10450,7 @@ iniciado. O skirt é útil para outras finalidades: ajuda a visualizar se há al
 realiza __priming__, que é purgar o plástico derretido que pode estar presente no bico de extrusões passadas. Como
 a quantidade de filamento que desperdiça é realmente muito pequena, é altamente recomendado que se o utilize sempre.
 
-[[brim-bainha]] === Brim (bainha)
+=== Brim (bainha)
 
 image:image345.png[image,width=642,height=196]
 
@@ -10489,7 +10483,7 @@ image:image346.png[image,width=633,height=451]
 
 image:image347.png[image,width=612,height=442]
 
-[[raft-balsa]] === Raft (balsa)
+=== Raft (balsa)
 
 image:image348.png[image,width=642,height=299]
 
@@ -10504,7 +10498,7 @@ lateral e não levanta a peça, o _raft_ fica por baixo dela. O _brim_ é contí
 portanto não tem uma superfície de contato tão grande com a mesa. A característica de ser “esparso” advém
 de o _raft_ compartilhar configurações com as estruturas de suporte, que é a que explicaremos a seguir.
 
-[[tornando-as-coisas-suportáveis]] === *Tornando as coisas suportáveis*
+=== *Tornando as coisas suportáveis*
 
 Já tratamos do problema da _estruturas pendentes_ quanto falamos sobre as malhas. Reiterando o que dissemos,
 partes do lado de baixo da peça que têm inclinação próxima da horizontal ou que aparecem “soltas” no
@@ -10544,7 +10538,7 @@ o estiver lendo.
 
 image:image351.png[image,width=642,height=764]
 
-[[um-toque-pessoal-os-suportes-de-colocação-manual]] === Um toque pessoal: os suportes de colocação manual
+=== Um toque pessoal: os suportes de colocação manual
 
 Dados os reveses dos suportes, e que suas configurações nem sempre são suficientes para assegurar uma colocação
 automática boa ou mesmo passável, os programadores do fatiador Simplify3D implementaram uma _excelente_ solução
@@ -10582,7 +10576,7 @@ suporte naquele volume (“Support Mesh”) como para forçar que ele não apare
 
 image:image356.png[image,width=642,height=558]
 
-[[a-cobertura-de-escorrimento-draft-shield-ou-ooze-shield]] === A cobertura de escorrimento (draft shield ou
+=== A cobertura de escorrimento (draft shield ou
 ooze shield)
 
 Essa estrutura tem vários nomes diferentes, todos difíceis de traduzir: “cobertura de trabalho”, “campo
@@ -10596,7 +10590,7 @@ Alguns fatiadores não têm esta estrutura, mas ela pode ser aproximada configur
 
 image:image357.jpeg[image,width=618,height=516]
 
-[[pilares-de-escorrimento-prime-purga]] === Pilares de escorrimento / prime / purga
+=== Pilares de escorrimento / prime / purga
 
 Assim como o __ooze shield__, o pilar de escorrimento, torre de purga ou torre de _prime_ serve para descartar
 filamento escorrido e limpar o bico a cada camada impressa. É bastante usado em extrusão dupla porque nesta um
@@ -10605,7 +10599,7 @@ problemas na peça, o pilar pode ser uma boa alternativa.
 
 image:image358.png[image,width=615,height=484]
 
-[[bridges-pontes]] === Bridges (pontes)
+=== Bridges (pontes)
 
 Um caso em que se tem estruturas pendentes onde os suportes não seriam tão úteis ou até atrapalhariam são
 as __pontes__. A ponte é uma estrutura cuja parte superior é completamente horizontal (sem material abaixo)
@@ -10623,14 +10617,14 @@ image:image360.jpeg[image,width=642,height=257]
 
 image:image361.png[image,width=623,height=527]
 
-[[configurações-de-qualidade]] == Configurações de Qualidade
+== Configurações de Qualidade
 
 Os conceitos que aprendemos até agora são essenciais para a _viabilidade_ da impressão. Uma vez que aprendemos
 tais requisitos, estamos prontos para aquela parte que torna o fatiamento algo semelhante a uma arte: os ajustes
 que, quando equilibrados de maneira calculada e harmoniosa, contribuem para dar à peça o acabamento, aparência
 ou propriedades desejadas.
 
-[[o-preenchimento]] === O Preenchimento
+=== O Preenchimento
 
 Nesta altura do aprendizado, o leitor já tem noção que as peças impressas em 3D não precisam ser totalmente
 sólidas, preenchidas: é desperdício de material, não contribui muito para a resistência e torna a peça
@@ -10694,7 +10688,7 @@ esparso a cada 3 camadas, você estará pedindo ao fatiador que faça as camadas
 altura, algo totalmente fora da margem de extrusão razoável de um bico de 0,4mm. O filete para preenchimento
 sairá completamente espirrado e torto e possivelmente nem se assentará em cima da camada anterior.
 
-[[paredes]] === Paredes
+=== Paredes
 
 Este ajuste se refere ao número de filetes ou camadas sólidas que o fatiador vai fazer antes de aplicar o padrão
 de preenchimento. A denominação varia entre os fatiadores e mesmo neles para os que tratam como paredes laterais ou
@@ -10721,7 +10715,7 @@ essa espessura de camada é tão adequada que o preenchimento pode nem ser neces
 Vale lembrar que tanto as paredes quanto o preenchimento contribuem para mais material condensado e portanto mais
 pronunciado será o efeito de __warp__.
 
-[[larguras-de-camada]] === Larguras de camada
+=== Larguras de camada
 
 Um ajuste que vimos para aumentar a aderência na mesa foi a “largura de camada”. Apesar de ser possível ajustar
 para a primeira camada especialmente, ele pode ser especificado para todas as camadas do fatiamento. Geralmente
@@ -10758,7 +10752,7 @@ camada: w = (π.d² + (4-π).h²)/(4h), com o valor de w limitado ao máximo de 
 
 image:image367.png[image,width=642,height=437]
 
-[[ventilação]] === Ventilação
+=== Ventilação
 
 A ventilação no fatiador se refere às ventoinhas que podem ter sua intensidade controlada pela placa da impressora;
 geralmente apenas uma, soprando o bico ou bicos do extrusor, conforme vimos no capítulo sobre extrusores. Portanto,
@@ -10775,7 +10769,7 @@ do fatiador em seus valores __default__.
 
 image:image368.png[image,width=502,height=465]
 
-[[velocidades]] === Velocidades
+=== Velocidades
 
 À primeira vista, a configurabilidade de velocidades da impressora pode parecer estranha ao marinheiro de primeira
 viagem; se é possível colocar valores arbitrários para as velocidades dos movimentos da impressora 3D, por que
@@ -10876,7 +10870,7 @@ de vãos não são tratados pelo algoritmo).
 
 image:image371.png[image,width=490,height=699]
 
-[[retração]] === Retração
+=== Retração
 
 Já mencionamos retração antes, agora vamos explicar o conceito: quando o hotend está extrudando filamento na
 peça e precisa fazer um movimento de “travel”, isto é, se mover no plano XY sem realizar nenhuma impressão,
@@ -10961,7 +10955,7 @@ atualmente o implementam (o Repetier ainda possibilita ativar um recurso de “a
 comandos G1 com extrusão pura para G10 e G11), mas os fatiadores Cura e Simplify3D não suportam esse recurso,
 com o Slic3r sendo atualmente o único que o implementa, nas configurações Printer Settings → General → Advanced.
 
-[[ajuste-da-costura]] === Ajuste da costura
+=== Ajuste da costura
 
 A “costura” ou “selo”, “seam” em inglês, é a parte da superfície em que o filete de plástico se
 junta consigo mesmo, tendo percorrido uma volta. Geralmente, esta junção é “presenteada” com uma pequena
@@ -11013,7 +11007,7 @@ em https://www.youtube.com/watch?v=Vk3weOHcHDw[_https://www.youtube.com/watch?v=
 
 3 - https://github.com/prusa3d/Slic3r/issues/153[_https://github.com/prusa3d/Slic3r/issues/153_]
 
-[[modo-espiral]] === Modo Espiral
+=== Modo Espiral
 
 Quando mencionamos a _prusa calculator_ ao explicar altura de camada, notamos que tipicamente a impressora 3D tem
 uma _resolução_ no eixo Z _muito maior_ que a necessária para qualquer impressão que façamos; no exemplo
@@ -11063,14 +11057,14 @@ image:image385.png[image,width=642,height=428]
 
 O modo vaso é especialmente útil para quem usa bicos largos (digamos, maiores que 0,8mm).
 
-[[impressão-objeto-a-objeto]] === Impressão objeto a objeto
+=== Impressão objeto a objeto
 
 São os fatiadores que fazem as impressoras 3D FFF funcionarem como as vemos: camada por camada, de baixo pra
 cima. Mas os comandos que a impressora interpreta permitem posicionamento arbitário do extrusor em qualquer posição
 tridimensional que se queira, e seria teoricamente possível que um fatiador a fizesse extrusar um detalhe do topo
 primeiro antes de um detalhe da base – desde que essa trajetória não levasse o mecanismo a bater nas peças, claro.
 
-[[ajustes-especiais-de-qualidade]] === Ajustes especiais de qualidade
+=== Ajustes especiais de qualidade
 
 Cada fatiador tem suas peculiaridades, analisamos aqui alguns dos recursos específicos de cada um:
 
@@ -11250,7 +11244,7 @@ Novamente, o Cura privilegia o _volume_ de filamento extrudado ao invés de comp
 tecnicamente mais adequado já que se espera que as impressoras passem a usar extrusão volumétrica. Para
 impressoras 3D com aferição dinâmica de espessura de filamento, a diferença de qualidade pode ser grande.
 
-[[compensação-horizontal]] === Compensação horizontal
+=== Compensação horizontal
 
 Se você já modelava em 3D antes de ter contato com a impressão 3D, pode ter topado com a seguinte situação:
 você modela duas peças, uma principal e outra que deve ser encaixar perfeitamente nela. Para obter esta paridade
@@ -11323,7 +11317,7 @@ sendo “puxado” dos cantos para dentro. Mais um fator que diminui furos!
 
 image:image405.png[image,width=619,height=451]
 
-[[como-corrigir-esse-problema]] === Como corrigir esse problema?
+=== Como corrigir esse problema?
 
 Vimos que esse é um problema com causas compostas e bem diversas – geométricas, físicas, até afetadas por
 outros ajustes como compensação horizontal e arredondamento de paredes externas no fatiamento. É, por natureza, um
@@ -11433,7 +11427,7 @@ impressão: o “funciona comigo” é um troféu que alguns exibem após conseg
 de formas simples, sem no entanto esmiuçar como e por quê o conseguiram, muitas vezes com alegações duvidosas
 sobre os resultados obtidos e contraditórias à engenharia envolvida.
 
-[[causas-da-dificuldade]] === Causas da dificuldade
+=== Causas da dificuldade
 
 Entender o que torna as diversas marcas e tipos de filamento flexível difíceis de imprimir em uma impressora 3D
 convencional é o primeiro passo para resolver o problema.
@@ -11478,7 +11472,7 @@ acumulam nos dentes e passam a funcionar como se fossem um lubrificante sólido.
 
 image:image407.png[image,width=642,height=467]
 
-[[soluções-e-mitigações-1]] === Soluções e mitigações
+=== Soluções e mitigações
 
 Entendido e caracterizado o problema, essas são as mitigações que se pode fazer para imprimir melhor com
 filamento flexível:
@@ -11538,7 +11532,7 @@ nylons, que sofrem warp e podem não aderir bem à mesa. A impressão mais alta 
 desde colocar o endstop do eixo Z ligeiramente mais alto até mexendo em parâmetros de fatiamento, como o offset
 vertical ou altura da primeira camada.  + E em termos de configurações de fatiamento, existem várias estratégias
 que podem ser tomada para melhor imprimir com filamento flexível e com menos possibilidades de falhas.  1.
-[[ajustes-de-fatiamento]] === Ajustes de fatiamento
+=== Ajustes de fatiamento
 
 * *Velocidade de extrusão* é a configuração mais importante para a impressão com flexível funcionar. Uma
 velocidade convencional de 60 mm/s geralmente não vai funcionar a não ser com extrusores muito bem preparados
@@ -11665,7 +11659,7 @@ image:image426.png[image,width=556,height=481]
 
 Voilà! Dupla extrusão, exatamente como queríamos.
 
-[[diversão-com-g-code]] == Diversão com G-Code
+== Diversão com G-Code
 
 [[gcode2]]Passamos brevemente pelo que é o G-Code em capítulos anteriores, mas não há como negar que o
 conhecimento desta ‘linguagem de máquina’ é essencial ao profissional de impressão 3D em todos os níveis,
@@ -11690,7 +11684,7 @@ e tem “macros” associáveis a botões.
 
 image:image428.png[image,width=630,height=437]
 
-[[uma-introdução-aos-comandos-g-code]] === Uma introdução aos comandos G-Code
+=== Uma introdução aos comandos G-Code
 
 Até agora mostramos muitos exemplos de código e mesmo falamos alguns __comandos__, mas não dissemos o sentido deles.
 
@@ -11923,7 +11917,7 @@ atual (X, Y, Z e E) * **M115**: mostra versão e capacidades do firmware.  * **M
 
 Apêndices
 
-[[licença-de-uso-e-reprodução-deste-documento]] = Licença de uso e reprodução deste documento
+= Licença de uso e reprodução deste documento
 
 Este documento é disponibilizado sob a **Creative Commons Attribution-ShareAlike 4.0
 International**, abreviada **CC BY-SA 4.0**, disponível na íntegra no endereço web
@@ -12396,9 +12390,9 @@ diferentes alturas.
 
 [[section-16]] =
 
-[[section-17]] =  +
+=  +
 
-[[sobre-o-autor]] = Sobre o autor
+= Sobre o autor
 
 image:image435.jpeg[image,width=285,height=213]Cláudio Luís Marques Sampaio, de apelido de internet
 __Patola__, é graduado em engenharia de computação e tem mestrado em biologia molecular e genética, ambos pela

@@ -1892,11 +1892,9 @@ variações, de forma geral entram nas seguintes categorias principais:
 .Enclausuramento
 [width="100%",cols="^s,^m,e",frame="topbot",options="header"]
 |====
-| Tipo | Exemplo | Descrição
-| Aberta | image:image61.png[image,width=141,height=189] | É possível alcançar
-a peça impressa diretamente.
-| Fechada | image:image62.png[image,width=158,height=158] | A peça
-fica em uma câmara interna.
+| Tipo		| Exemplo					| Descrição
+| Aberta 	| image:image61.png[image,width=141,height=189]	| É possível alcançar a peça impressa diretamente.
+| Fechada	| image:image62.png[image,width=158,height=158]	| A peça fica em uma câmara interna.
 |====
 
 .Material
@@ -1934,12 +1932,12 @@ de sinalização e a utilização em impressoras 3D é bem representada pelas m�
 .Transformações de eixos.
 [width="100%",cols="^s,^m,e",frame="topbot",options="header"]
 |====
-| Tipo | Exemplo | Descrição
-| Cartesiana | image:image54.jpeg[image,width=138,height=149] | [small]#Eixos X, Y e Z correspondem ao plano cartesiano.#
-| Delta | image:image57.png[image,width=122,height=255] | [small]#X, Y e Z são transformadas trigonométricas das posições dos três pilares (colunas verticais).#
-| CoreXY | image:reprapxy-pequeno.jpg[reprapxypequeno,width=533,height=400] | [small]#X e Y são transformadas lineares de acordo com o padrão "CoreXY" de deslocamento. Por ser uma transformação relativamente simples de coordenadas, informalmente costuma ser tratada como cartesiana.#
-| SCARA | image:scara.png[scara,width=601,height=710] | [small]#**S**elective **C**ompliance **A**rticulated **R**obot **A**rm, ou Braço Robótico Articulado de Conformidade Seletiva, é o nome dessa transformação de eixos comumente usada em máquinas industriais "pick and place" e de linha de montagem de veículos.#
-| Polar | image:polartheta.png[polartheta,width=466,height=385] | [small]#Coordenadas polares, ou seja, baseadas em ângulos, são populares nos campos matemáticos, mas em impressoras 3D não são muito práticos, servindo mais como prova de conceito. Alguns modelos de impressora têm apenas um ou dois eixos polares, e os restantes cartesianos.#
+| Tipo		| Exemplo								| Descrição
+| Cartesiana	| image:image54.jpeg[image,width=138,height=149]			| [small]#Eixos X, Y e Z correspondem ao plano cartesiano.#
+| Delta		| image:image57.png[image,width=122,height=255]				| [small]#X, Y e Z são transformadas trigonométricas das posições dos três pilares (colunas verticais).#
+| CoreXY 	| image:reprapxy-pequeno.jpg[reprapxypequeno,width=533,height=400]	| [small]#X e Y são transformadas lineares de acordo com o padrão "CoreXY" de deslocamento. Por ser uma transformação relativamente simples de coordenadas, informalmente costuma ser tratada como cartesiana.#
+| SCARA		| image:scara.png[scara,width=601,height=710]				| [small]#**S**elective **C**ompliance **A**rticulated **R**obot **A**rm, ou Braço Robótico Articulado de Conformidade Seletiva, é o nome dessa transformação de eixos comumente usada em máquinas industriais "pick and place" e de linha de montagem de veículos.#
+| Polar		| image:polartheta.png[polartheta,width=466,height=385]			| [small]#Coordenadas polares, ou seja, baseadas em ângulos, são populares nos campos matemáticos, mas em impressoras 3D não são muito práticos, servindo mais como prova de conceito. Alguns modelos de impressora têm apenas um ou dois eixos polares, e os restantes cartesianos.#
 |====
 
 Apesar de separarmos as impressoras 3D de mercado nessas cinco categorias, a verdade é que existem tantos sistemas
@@ -4004,17 +4002,14 @@ mais usados, e suas respectivas vantagens e desvantagens segue:
 
 [cols=",,,,",]
 |=================================================================================================================================================================================================================================================
-|Driver |Corr. máx. |Fórmula |Máx. Micropassos |Uso |A4988 |2,0A |Vref = Imax × 8 × Rs |16 |Driver mais
-popular e mais barato, facilmente encontrado nas lojas chinesas. Esquenta bastante quando perto da corrente
-máxima.  |DRV8825 |2,5A |Vref = Imax / 2 |32 |Preço um pouco maior que A4988, mas consegue mais micropassos,
-roda um pouco mais frio e aguenta maior corrente.  |LV8729 |2,0A |Vref = Imax / 2 |128 |Mais difícil de obter
-e mais caro que o DRV8825, tem como vantagens o silêncio e movimento extremamente suave, com 128 divisões de
-micropassos.  |TMC2100 |1,2A |Vref = Imax / 1,9 |256 |A maior vantagem deste driver é a subdivisão extrema
-em 256 micropassos e o silêncio, mas a corrente máxima baixa limita bastante seu uso.  |TMC2130 |2,0A
-|Vref = Imax |256 |Aceita picos breves de 2,5A. É altamente configurável e silenciosa.  |RAPS128 |2,2A
-|Vref = Imax / 2 |128 |Criado junto à placa RADDS para Arduino de 32 bits, tem uso popular em placas ARM
-e se destaca por um potenciômetro extra para configuração manual do decaimento e também por vir com um
-dissipador gigante.  |SD6128 |2,2A |Vref = Imax / 2 |128 |Semelhante à RAPS128 sem o potenciômetro extra.
+|Driver		|Corr. máx.		|Fórmula		|Máx. Micropassos	|Uso
+|A4988		|2,0A			|Vref = Imax × 8 × Rs	|16			|Driver mais popular e mais barato, facilmente encontrado nas lojas chinesas. Esquenta bastante quando perto da corrente máxima.
+|DRV8825	|2,5A			|Vref = Imax / 2	|32			|Preço um pouco maior que A4988, mas consegue mais micropassos, roda um pouco mais frio e aguenta maior corrente.
+|LV8729		|2,0A			|Vref = Imax / 2	|128			|Mais difícil de obter e mais caro que o DRV8825, tem como vantagens o silêncio e movimento extremamente suave, com 128 divisões de micropassos.
+|TMC2100	|1,2A			|Vref = Imax / 1,9	|256			|A maior vantagem deste driver é a subdivisão extrema em 256 micropassos e o silêncio, mas a corrente máxima baixa limita bastante seu uso.
+|TMC2130	|2,0A			|Vref = Imax		|256			|Aceita picos breves de 2,5A. É altamente configurável e silenciosa.
+|RAPS128	|2,2A			|Vref = Imax / 2	|128			|Criado junto à placa RADDS para Arduino de 32 bits, tem uso popular em placas ARM e se destaca por um potenciômetro extra para configuração manual do decaimento e também por vir com um dissipador gigante.
+|SD6128		|2,2A			|Vref = Imax / 2	|128			|Semelhante à RAPS128 sem o potenciômetro extra.
 |=================================================================================================================================================================================================================================================
 
 Vale notar que quando a divisão de micropassos é 128 ou superior, somente microcontroladores mais poderosos
@@ -7335,8 +7330,13 @@ image:image208.png[image,width=642,height=374]
 
 As três soluções têm uma porcentagem de MEK e acetona variável, mas dentre esses limites:
 
-[cols=",,",] |===================================== |*Solução* |*% de Acetona* |*% de MEK* |*Tigre* |22-70
-|30-86¹ |*Polytubes* |60-100 |1-20² |*Amanco* |40-50 |40-50³ |=====================================
+[cols=",,",]
+|=====================================
+|*Solução*	|*% de Acetona*		|*% de MEK*
+|*Tigre*	|22-70			|30-86¹
+|*Polytubes*	|60-100			|1-20²
+|*Amanco*	|40-50			|40-50³
+|=====================================
 
 *Vantagens:*
 
@@ -7835,16 +7835,32 @@ forças adesivas entre a tinta e o plástico (30 dinas/cm).³
 Segue uma tabela⁴ de tensões superficiais e ângulos de contato de plásticos utilizados em impressão 3D e
 utensílios de dia-a-dia.
 
-[cols=",,,",] |==========================================================================================
-|*Abreviação* |*Polímero* |*Energia de Superfície em dinas/cm* |*Ângulo de contato (graus)* |
-|Nylon 6/6 (poliexametileno adipamida) |46 | |PC |Policarbonato |46 |75 | |Nylon-6 ou Poliamida 6 |38 |
-|PET |Polietileno tereftalato |42 |76 |PMMA |Polimetilmetacrilato (acrílico ou Plexiglas®) |41 |82
-| |Poliimida (Kapton) |40 |83 |PVC r |Policloreto de Vinila (rígido) |39 |90 | |Poliéster |41 |70 |
-|Acetal |36 |85 |PLA |Ácido Polilático |36-42³ |80⁴ |ABS |Acrilonitrila Butadieno Estireno |35 |82
-|PVA |Álcool polivinílico |37 |10 | |Poliacrilato (filme acrílico) |35 | |PVC p |Policloreto de Vinila
-(plasticizado) |35 |89 |PS |Poliestireno |34 |72 | |Nylon-12 |36 | |PP |Polipropileno |30 |88 |PU |Poliuretano
-|38 |85 |PE |Polietileno |30 |88 | |Borracha natural |24 | |PDMS |Polidimetilsiloxano (usado em cubas de
-SLAs) |23 |98 |FEP |Etileno Propileno Fluorado |20 |98 |PTFE |Politetrafluoretileno (Teflon™) |19 |120
+[cols=",,,",]
+|==========================================================================================
+|*Abreviação*				|*Polímero*					|*Energia de Superfície em dinas/cm*	|*Ângulo de contato (graus)*
+|					|Nylon 6/6 (poliexametileno adipamida)		|46					|					
+|PC					|Policarbonato					|46					|75
+|					|Nylon-6 ou Poliamida				|6					|38
+|PET					|Polietileno tereftalato			|42					|76
+|PMMA					|Polimetilmetacrilato (acrílico ou Plexiglas®)	|41					|82
+|					|Poliimida (Kapton)				|40					|83
+|PVC r					|Policloreto de Vinila (rígido)			|39					|90
+|					|Poliéster					|41					|70
+|					|Acetal						|36					|85 
+|PLA					|Ácido Polilático				|36-42³					|80⁴
+|ABS					|Acrilonitrila Butadieno Estireno		|35					|82
+|PVA					|Álcool polivinílico				|37					|10
+|					|Poliacrilato (filme acrílico)			|35					|
+|PVC p					|Policloreto de Vinila (plasticizado)		|35					|89
+|PS					|Poliestireno					|34					|72
+|					|Nylon-12					|36					|
+|PP					|Polipropileno					|30					|88
+|PU					|Poliuretano					|38					|85
+|PE					|Polietileno					|30					|88
+|					|Borracha natural				|24					|
+|PDMS					|Polidimetilsiloxano (usado em cubas deSLAs)	|23					|98
+|FEP					|Etileno Propileno Fluorado			|20					|98
+|PTFE					|Politetrafluoretileno (Teflon™)		|19					|120
 |==========================================================================================
 
 Os poliolefinas – polímeros produzidos a partir de olefinas simples, ou alcenos como monômeros, como polietileno

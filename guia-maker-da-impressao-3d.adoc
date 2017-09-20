@@ -12,6 +12,16 @@ v0.99r2, 17/11/2017
 :reproducible:
 :icons: font
 :lang: pt-BR
+:toc-title: Índice
+:caution-caption: Cuidado
+:important-caption: Importante
+:note-caption: Nota
+:tip-caption: Dica
+:warning-caption: Atenção
+:appendix-caption: Apêndice
+:example-caption: Exemplo
+:figure-caption: Figura
+:table-caption: Tabela
 :ascii-ids:
 :showcomments:
 :gitrepo: https://github.com/Patola/ebook
@@ -1900,6 +1910,7 @@ fica em uma câmara interna.
 |====
 
 .Material
+
 * *MDF* (Medium Density Fibreboard, ou Painel de Fibra de Média Densidade):
 Popular nas variantes de _Graber i3_ vendidas no Brasil, o MDF é um compósito baseado em madeira que se assemelha
 a compensados, mas é menos resistente, mais liso e consistente e facilmente cortável em CNCs laser e mecânicas,
@@ -2026,7 +2037,7 @@ acima da outra com o suporte do elemento ocupando onde se cruzem. O nome signifi
 dois cabos”.
 
 [[dualwiregantry]]
-image:image64.png[image,width=594,height=351]
+image::image64.png[image,width=594,height=351]
 
 * *CoreXY*
 O sistema batizado
@@ -2037,7 +2048,7 @@ com cinemática paralela e motores fixos na estrutura, controle fácil e permiti
 movimentação, tendo sido adotado em várias reprap e impressoras 3D comerciais de estrutura fechada.
 
 [[desenhocorexy]]
-image:image65.jpeg[image,width=531,height=406]
+image::image65.jpeg[image,width=531,height=406]
 
 Como no caso das deltas, as impressoras 3D com
 CoreXY exigem que o firmware tenha conhecimento do sistema de eixos pois transformações de deslocamentos são
@@ -2046,7 +2057,7 @@ André Ruiz colaborou com esta obra com um diagrama elucidativo e bastante útil
 uma impressora deste tipo, a seguir:
 
 [[corexyandreruiz]]
-image:image66.png[image,width=594,height=404]
+image::image66.png[image,width=594,height=404]
 
 * *Outras XY e
 variantes* + Mais do que popularizar a cinemática do CoreXY, o sítio web de mesmo nome levantou a consciência que
@@ -2059,25 +2070,41 @@ por outro lado exigem uma estrutura bastante rígida e com muitos pontos de fixa
 tornando montagem e manutenção caras. A diretiva de economia do projeto reprap acabou levando a um arranjo mecânico
 bem distinto; embora inicialmente usassem dualwire gantry no primeiro modelo (darwin / rapman), modelos distintos
 de voluntários como a Prusa Mendel facilitaram enormemente o processo de peças e montagem com seu arranjo de
-eixos, que se traduz em: ** Uma mesa móvel (eixo Y); ** Duas guias lineares paralelas na horizontal para o eixo X
-(o chamado carro X); ** Eixo Z (vertical) representado por barras roscadas subindo e descendo o carro X, com guias
+eixos, que se traduz em:
+* Uma mesa móvel (eixo Y);
+* Duas guias lineares paralelas na horizontal para o eixo X
+(o chamado carro X);
+* Eixo Z (vertical) representado por barras roscadas subindo e descendo o carro X, com guias
 lineares paralelas às barras roscadas garantindo movimento retilíneo. Isso faz o eixo Z ser mais lento que X e Y,
-o que é desprezível visto que é o eixo que menos se movimenta durante uma impressão; ** Dois motores para o eixo
-Z, para evitar desnível e distribuir a força.  + image:image67.jpeg[image,width=570,height=660] *
-*Carro X estilo Prusa i3* + Com a iteração 3 do design de Josef Prusa, duas alterações foram feitas no arranjo
-mecânico e ficaram tão populares que muitas repraps copiaram: ** Os dois motores do eixo Z passaram da parte de
+o que é desprezível visto que é o eixo que menos se movimenta durante uma impressão;
+* Dois motores para o eixo
+Z, para evitar desnível e distribuir a força.
+
+[[prusamendelcomcarrox]]
+image::image67.jpeg[image,width=570,height=660]
+
+* *Carro X estilo Prusa i3* +
+Com a iteração 3 do design de Josef Prusa, duas alterações foram feitas no arranjo
+mecânico e ficaram tão populares que muitas repraps copiaram:
+
+** Os dois motores do eixo Z passaram da parte de
 cima do quadro para a parte de baixo. Isso abaixou o ponto de massa da impressora 3D (visto que motores são pesados)
 e a deixou mais estável. O ponto negativo disso é que barras roscadas desgastam menos com forças de tração
-do que compressão, então no eixo Z perdeu-se um pouco na vida útil dessas vitaminas.  ** O carro X teve suas
+do que compressão, então no eixo Z perdeu-se um pouco na vida útil dessas vitaminas.
+
+** O carro X teve suas
 guias lineares (barras lisas) trocadas de paralelas no plano horizontal para paralelas no plano vertical. Isso
 foi uma melhoria na estabilidade da impressora 3D porque o carro X se prende ao eixo Z, que é muito curto na
 dimensão Y e portanto não dá tanta estabilidade ao carro; fazendo o carro ser mais longo no eixo Z se aproveita
-da linearidade e estabilidade do arranjo de X com Z.  + image:image68.jpeg[image,width=531,height=630]
+da linearidade e estabilidade do arranjo de X com Z.
+
+[[prusai3motoresbaixo]]
+image::image68.jpeg[image,width=531,height=630]
 
 Muitos outros arranjos mecânicos existem, é claro. Os citados aqui, entretanto, acomodam a grande maioria dos
 casos das impressoras 3D FFF de mercado e dão uma boa noção da cinemática das impressoras.
 
-[[movimentação-da-mesa]] === Movimentação da Mesa
+.Movimentação da Mesa
 
 A movimentação da mesa de impressão – aquecida ou sem aquecimento – é o complemento à movimentação
 dos eixos. Alguns dos sistemas vistos resolvem parte do problema da localização do componente extrusor em um
@@ -2085,7 +2112,8 @@ espaço tridimensional; os arranjos CoreXY e Dualwire Gantry o situam em um plan
 se conjuga com um eixo Z lento para o posicionamento em um plano vertical; em cada um dos casos, só faltou a
 análise do eixo remanescente.
 
-* *Mesa fixa* + Uma impressora 3D com mesa fixa à primeira vista parece ser o caso ideal, afinal, quem quer
+* *Mesa fixa* +
+Uma impressora 3D com mesa fixa à primeira vista parece ser o caso ideal, afinal, quem quer
 uma peça sendo submetida a movimentos que tirem sua estabilidade enquanto é fabricada? Entretanto, isso
 traz complicações, a maior delas é poder precisar de motores e um mecanismo que se movam para cima durante a
 fabricação. Um conjunto desses é inevitavelmente pesado, e precisará não só de peças robustas como encaixes
@@ -2103,14 +2131,19 @@ porque os extrusores ou effectors serão ampliados em função da área, enquant
 cresce mais rápido - de acordo com o volume. Se uma impressora 3D com volume de impressão 10 cm x 10 cm x 10
 cm precisa sustentar um peso máximo de 1,04 kg de ABS, uma de volume de impressão 10 vezes maior de cada lado,
 ou seja, 1m x 1m x 1m teria um extrusor 100 vezes mais pesado – para um peso sobre a mesa _mil vezes_ maior
-(1.040 kg).  * *Mesa com movimento linear horizontal* + Usada nas _Prusa_ como eixo Y, o movimento horizontal,
+(1.040 kg).
+
+* *Mesa com movimento linear horizontal* +
+Usada nas _Prusa_ como eixo Y, o movimento horizontal,
 como no eixo Z, é sustentado por guias lineares (barras lisas com rolamentos) mas movido por correias de um motor
 para velocidade. Nas escalas em que as impressoras 3D com essa construção são usadas – cerca de 200x200x200mm
 de volume de construção, e 60 mm/s de velocidade máxima nos eixos horizontais – o movimento de vaivém da
 mesa não chega a apresentar artefatos notáveis no processo de impressão 3D. Mas em se aumentando a escala,
 e principalmente a velocidade, a estabilidade da peça impressa gradualmente diminuirá. Aceleração e jerk, a
-serem explicados na seção sobre firmware, terão grande influência na qualidade da peça neste caso.  * *Mesa
-com movimento linear vertical (cantilevered)* + No caso em que a mesa tem movimento vertical (eixo Z), topamos
+serem explicados na seção sobre firmware, terão grande influência na qualidade da peça neste caso.
+
+* *Mesa com movimento linear vertical (cantilevered)* +
+No caso em que a mesa tem movimento vertical (eixo Z), topamos
 com um problema de engenharia e arquitetura chamado de _cantilever_ ou __estrutura em consola__. O problema,
 que tem desdobramentos e complexidades que fogem ao escopo deste livro, consiste em conseguirmos dar estabilidade
 estrutural e dimensional para uma estrutura planar horizontal sustentada por um suporte vertical. Estando a borda
@@ -2127,7 +2160,9 @@ enquanto a mesa se move na horizontal. Nesses casos o extrusor sustenta um peso 
 volume da impressora e a velocidade de impressão não é muito grande, não afetando portanto a estabilidade da
 impressão. Isso pode acontecer, por exemplo, em impressoras 3D que tenham extrusor intercambiável, com extrusores
 de pasta de chocolate e outras peças pesadas podendo ser encaixadas. Pela própria natureza, essas impressoras
-3D têm estrutura aberta.  1.  [[mais-de-3-eixos]] === Mais de 3 eixos
+3D têm estrutura aberta.
+
+.Mais de 3 eixos
 
 A idéia parece absurda de início – só existem três dimensões, como se pode ter mais de 3 eixos? O arranjo,
 mais usado em CNCs para tentar amenizar as restrições geométricas das técnicas subtrativas, não consiste

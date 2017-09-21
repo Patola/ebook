@@ -2167,7 +2167,8 @@ no open-source. Na verdade, a construção mecânica de um aparato desses, ainda
 de engenharia, é a parte mais simples. A parte mais complexa é o algoritmo de fatiamento – traçar a trajetória
 destes 5 eixos para ter a forma mais suave e harmônica possível.
 
-image:image69.jpeg[image,width=508,height=627]
+[[reprap5eixos]]
+image::image69.jpeg[image,width=508,height=627]
 
 === “Vitaminas” comuns da estrutura de uma impressora 3D
 
@@ -2184,7 +2185,8 @@ seguido do diâmetro do corpo em milímetros) são menos numerosos no mercado. A
 (ou seja, com a ponta cega) também são mais raros, especialmente das medidas mais frequentes nas impressoras 3D
 domésticas (“M3” a “M5”, ou de 3mm de diâmetro a 5mm de diâmetro), agravado por a maioria das receitas
 de construção e impressoras comercializadas precisarem de tamanhos bem específicos de parafusos (variando de
-6 a 60mm de comprimento).  + As especificações dos parafusos são geralmente dadas pelo modelo – e às vezes
+6 a 60mm de comprimento).  +
+As especificações dos parafusos são geralmente dadas pelo modelo – e às vezes
 o material – seguido da cabeça (formato e encaixe), o diâmetro e o comprimento, não necessariamente nessa
 ordem. Assim, um “parafuso de máquina inox allen com cabeça chata M3x16” ou “parafuso auto-atarraxante de
 fenda philips de cabeça panela M4x40 de bronze” são denominações comuns. Arruelas e porcas + Apesar de não ser
@@ -2194,30 +2196,40 @@ do escopo deste livro entrar detalhadamente na logística e tipos dos parafusos,
 e _allen_ (hexagonal). Existem ainda os parafusos sem sulco, os usados com chave de boca (cabeça hexagonal),
 mas muito pouco usados nas impressoras 3D.
 
-image:image70.png[image,width=642,height=346]
+[[sulcosparafusos]]
+image::image70.png[image,width=642,height=346]
 
-* **O sulco não necessariamente define a cabeça**. Por exemplo, embora seja comum parafusos allen virem em cabeças
+** **O sulco não necessariamente define a cabeça**. Por exemplo, embora seja comum parafusos allen virem em cabeças
 cilíndricas, isso não é sempre verdade. Cabeças cônicas em especial podem vir a trincar ou danificar certos
 materiais que são feitas algumas impressoras, como acrílico ou MDF. Na dúvida, compre somente os de cabeças
-cilíndricas.  * *Parafusos pretos* são assim por usarem um tipo de aço mais resistente a tração. Aconselhados
+cilíndricas.
+** *Parafusos pretos* são assim por usarem um tipo de aço mais resistente a tração. Aconselhados
 para encaixes que precisarão de bastante força de sustentação, mas desaconselhados para encaixes que podem
 “espanar” ou danificar o material circundante, como o MDF. Os parafusos mais comuns nesse material são
-os tipo __allen__.  * **Porcas auto-travantes (nyloc) podem ser bastante úteis**. Tais porcas são geralmente
+os tipo __allen__.
+** **Porcas auto-travantes (nyloc) podem ser bastante úteis**. Tais porcas são geralmente
 hexagonais e com uma “entrada” onde há o sulco de encaixe e uma “saída” onde um anel de nylon exerce
 a função de elemento de atrito para impedir que a porca continue deslizando em torno do parafuso. São muitas
 vezes usadas como terminadores de parafusos tratores ou para fixar estruturas sujeitas a vibração, pela sua
-capacidade de amortecimento.  * *Porcas-borboleta* têm “asas” ou “abas” que permitem rosqueamento com os
+capacidade de amortecimento.
+** *Porcas-borboleta* têm “asas” ou “abas” que permitem rosqueamento com os
 dedos em torno do parafuso. São usadas em peças de impressora que podem necessitar de ajuste constante, como a
-fixação e nivelamento da mesa ou o aperto do filamento do extrusor.  * *Rebite roscado ou rebite de rosca* é
+fixação e nivelamento da mesa ou o aperto do filamento do extrusor.
+** *Rebite roscado ou rebite de rosca* é
 um tipo de porca especial mais longa e com uma “quina” que permite que seja usada como elemento de suporte de
-peso, sendo por isso usado como se fosse uma _castanha_ nas barras roscadas.  * *Porcas quadradas* são difíceis
+peso, sendo por isso usado como se fosse uma _castanha_ nas barras roscadas.
+** *Porcas quadradas* são difíceis
 de encontrar no Brasil e são bastante utilizadas em alguns modelos de impressoras __reprap__, por se encaixar
 perfeitamente em pequenos sulcos feitos por cortadoras a laser (facilitando as construções dos encaixes, como no
-caso do corte da graber i3).  * **Parafusos-mosca, ou parafusos sem cabeça**, que geralmente têm sulcos _allen_
+caso do corte da graber i3).
+** **Parafusos-mosca, ou parafusos sem cabeça**, que geralmente têm sulcos _allen_
 no próprio corpo, são comumente usados em pinhões de motores e acopladores de alumínio para fixar a peça em
 um chanfro do pino e impedir o movimento de rotação relativa. A ausência da cabeça é justamente para que não
 reste uma “saliência” na peça. Como são parafusos geralmente bem pequenos, quase sempre são feitos em aço
-reforçado preto.  + image:image71.png[image,width=618,height=622]
+reforçado preto.
+
+[[tiposparafusos]]
+image:image71.png[image,width=618,height=622]
 
 * *Barras lisas* +
 São elementos estruturais em que se assentam os eixos (X, Y e/ou Z) da impressora 3D. Geralmente
@@ -2226,8 +2238,9 @@ deste modo, o rolamento linear ou a bucha se tornam um elemento livre para desli
 da barra. É necessário que a barra seja reta com bastante precisão e sofra o mínimo possível de deformação;
 geralmente são usadas barras de 8mm (nas impressoras de tamanho médio, como Prusa i3) até 12mm (nas maiores,
 como a Sethi3D BB). É desejável que sejam barras “cromadas” pois o cromo dá resistência e diminui o
-atrito da superfície (especialmente importanto se for uma bucha).  * *Polias e correias (GT2 e equivalentes)*
-+ [[FEITO_Polias_e_correias]]São estruturas usadas em sistemas de engrenagens e * *Extrusões ou perfis de
+atrito da superfície (especialmente importanto se for uma bucha).
+* *Polias e correias (GT2 e equivalentes)* +
+São estruturas usadas em sistemas de engrenagens e * *Extrusões ou perfis de
 alumínio* + Estruturas muito usadas para o arcabouço estrutural das impressoras 3D – como os pilares de uma
 delta ou as colunas de uma cartesiana – devido à sua uniformidade dimensional, especialmente retidão precisa. A
 “Extrusão” se refere ao processo de fabricação do material, em que o alumínio é extrudado por um orifício
@@ -2241,7 +2254,11 @@ tem 15mm de cada lado com encaixe T-slot, um perfil de alumínio V-Slot 4060 tem
 perpendicular a ele e os lados têm encaixe V-Slot (que é na verdade uma forma de T-Slot). Uma recomendação,
 caso esteja usando este livro para decidir qual T-Slot usar, é usar o perfil *2020* pois é robusto, muito popular
 e existem modificações das deltas que usam outros perfis para usá-lo no lugar. Além disso, é mais fácil
-achar parafusos especializados em seus encaixes.  + image:image72.jpeg[image,width=604,height=353]
+achar parafusos especializados em seus encaixes.
+
+[[perfilaluminio]]
+image:image72.jpeg[image,width=604,height=353]
+
 * *Barras roscadas (parafusos infinitos)* +
 São elementos estruturais por vezes usados como elementos imóveis
 (como na estrutura da Prusa Mendel), por outras vezes usados como componentes giratórios que, através da
@@ -2258,7 +2275,8 @@ eixos. As barras roscadas mais comuns em impressoras 3D de baixo custo são a M5
 desvios de imprecisões mecânicas. Este elemento pode ser um _acoplador flexível de alumínio_ ou algum tubo
 conector de material resistente, como nylon.  + A distância entre dois fios da rosca no comprimento da barra
 é o __passo__, em inglês _pitch_ ou __lead__. Como as barras roscadas são na verdade um tipo de parafuso,
-usam a mesma denominação deles – como “M5” ou “M8” pra designar seu diâmetro.  * *Fusos de rosca* +
+usam a mesma denominação deles – como “M5” ou “M8” pra designar seu diâmetro.
+* *Fusos de rosca* +
 Diferentemente das barras roscadas, _fusos_ são elementos industriais especificamente criados para um elemento
 deslizante em seu comprimento, transformando movimento rotativo do pinhão do motor em linear. Alguns motores
 já vêm mesmo com o fuso fisicamente integrado a eles, como se fosse um pinhão, para evitar qualquer folga no
@@ -2278,32 +2296,45 @@ quatro roscas, geralmente discriminadas como quatro __entradas__.  + Embora fuso
 usados em diâmetros de 8mm ou maiores, o uso em 5mm ainda compensa sobre barras roscadas. A grande vantagem deles
 é poderem ser simplesmente trocados na estrutura de uma _reprap_ comum sem alteração de outros componentes, e
 uma simples reconfiguração do firmware para troca da resolução vertical. A melhora na qualidade de impressão,
-especialmente no artefato chamado de __Z wobble__, é instantânea.  * **Rolamentos + **Rolamentos (__bearings__ em
+especialmente no artefato chamado de __Z wobble__, é instantânea.
+* **Rolamentos +
+**Rolamentos (__bearings__ em
 inglês ou, informalmente, **rolimãs**) são dispositivos que permitem o movimento relativo controlado entre duas
 ou mais partes, substituindo o atrito de deslizamento pelo atrito de rolamento, visto que tem elementos denominados
 _corpos rolantes_ – geralmente pequenas esferas de aço cromado – que intermediam o contato entre o elemento
 deslizante e a superfície de deslizamento. São elementos apropriados para alta rotação, alta precisão, baixo
 torque e baixa vibração. Há dois tipos principais de rolamentos usados em impressoras 3D, classificados de
-acordo com o movimento: ** *lineares* + O movimento se dá com o rolamento deslizando ao longo do comprimento do
+acordo com o movimento:
+** *lineares* +
+O movimento se dá com o rolamento deslizando ao longo do comprimento do
 elemento maior, em linha reta. Como os corpos rolantes têm contato direto com o elemento, o uso contínuo pode
 causar desgaste, razão pela qual se deve usar nesse caso materiais bem resistentes como aço. Esses rolamentos
-são geralmente utilizados em eixos de impressoras 3D cartesianas ou pilares laterais de impressoras 3D delta.  **
-*radiais* + O movimento se dá com o rolamento tendo dois anéis, o exterior deslizando em torno do anel interior,
+são geralmente utilizados em eixos de impressoras 3D cartesianas ou pilares laterais de impressoras 3D delta.
+** *radiais* +
+O movimento se dá com o rolamento tendo dois anéis, o exterior deslizando em torno do anel interior,
 com cada anel se prendendo a um elemento de deslizamento. São geralmente utilizados para conduzir a rotação de
 uma correia de motor, elementos rotativos de engrenagens de extrusor ou como anteparos (idlers) à roda dentada
-de tração do extrusor.  ** *Outros tipos* + Os que mais serão usados em mecanismos de impressoras 3D serão os
+de tração do extrusor.
+** *Outros tipos* +
+Os que mais serão usados em mecanismos de impressoras 3D serão os
 lineares e radiais, mas existem inúmeras outras configurações de rolamentos – por exemplos, as juntas de esferas
 para rotação esférica e as dobradiças para articulações. Também existem muitos outros tipos de rolamentos em
 relação a outros aspectos da construção – por exemplo, rolamentos que usam cilindros ao invés de esferas,
-ou mesmo fluidos ou campos magnéticos.  * *Buchas* + Buchas são peças de material deslizante – geralmente
+ou mesmo fluidos ou campos magnéticos.
+
+[[barraserolamentos]]
+image:image73.jpeg[image,width=642,height=380]
+
+[[barraefusocomparados]]
+image:image75.png[image,width=642,height=362]
+
+* *Buchas* +
+Buchas são peças de material deslizante – geralmente
 bronze ou cobre, mas com – que cumprem o mesmo papel dos rolamentos lineares, deslizando um elemento ao longo do
 comprimento de uma barra. Diferentemente do rolamento que usa corpos rolantes, a bucha depende tão-somente do baixo
 atrito entre ele e o elemento deslizante, que deve ser cromado e bem lubrificado. A bucha tem um custo menor que o
 rolamento, mas sua maior vantagem em relação a ele é a operação silenciosa. Por outro lado, buchas cujo encaixe
-não seja perfeito emperram e não permitirão ao mecanismo funcionar, enquanto que o rolamento absorve as folgas.
-
-image:image73.jpeg[image,width=642,height=380]
-
+não seja perfeito emperram e não permitirão ao mecanismo funcionar, enquanto que o rolamento absorve as folgas. +
 As buchas de plástico no entanto costumam ser auto-lubrificantes, isto é, o próprio material, ao sofrer abrasão,
 deposita um lubrificante sólido que a faz ter baixo atrito com o material em contato. A óbvia desvantagem é
 que a abrasão acaba desgastando a peça, que acaba ganhando folga com o tempo. Buchas impressas em plásticos
@@ -2311,9 +2342,8 @@ de impressoras 3D também são usadas em algumas impressoras, mas geralmente tê
 IGUS, fabricante de buchas de plástico, vende filamentos de impressão 3D para tais propósitos (Iglidur I170 e
 Iglidur I180).
 
+[[buchasdrylin]]
 image:image74.png[image,width=642,height=365]
-
-image:image75.png[image,width=642,height=362]
 
 * *Patins e trilhos* +
 Patins e trilhos são outro modo de se ter _guias lineares_ que não usam as barras lisas
@@ -2324,30 +2354,32 @@ geralmente são vendidos juntamente com os trilhos, já encaixados, e submetidos
 pré-carga, em que a possibilidade de folga diminui enormemente. Como têm uma usinagem mais complexa e controlada,
 têm preços maiores que seus conjuntos equivalentes feitos com rolamentos e barras lisas. Impressoras com foco
 mais industrial as preferem, assim como algumas reprap (como a Kossel). Outra vantagem dos trilhos é serem mais
-leves.** + ** * *Traxxas rod ends, u-joints, trolley heads, ball joints* – essas peças, que não têm um único
+leves.
+* **Traxxas rod ends, u-joints, trolley heads, ball joints** – essas peças, que não têm um único
 nome em inglês nem nomenclatura consensual em português (apesar de o nome “juntas de esferas” ser aceitável),
 são usadas em impressoras 3D estilo delta como conectores dos braços da delta ao “effector” e ao trilho ou
 guia do poste. São peças também usadas por _hobbyistas_ de veículos de controle remoto, e são basicamente
 articulações de rotação para fixação de um braço a um eixo (geralmente a rosca de um parafuso). Existem
-alternativas a essas juntas feitas por esferas magnéticas deslizantes, mas ainda são pouco usadas.  1.
+alternativas a essas juntas feitas por esferas magnéticas deslizantes, mas ainda são pouco usadas.
+
 === Malha aberta ou fechada?
 
 A _Teoria de Controle_ dada a alunos de Engenharia Mecânica nos ensina que há dois tipos de sistemas de controle,
 *malha aberta* e **malha fechada**.
 
+[[malhaabertamalhafechada]]
 image:image76.png[image,width=642,height=348]
 
-* *Malha aberta* – é um sistema em que a saída (resultado) não exerce qualquer ação sobre o sinal de
+* *Malha aberta* - é um sistema em que a saída (resultado) não exerce qualquer ação sobre o sinal de
 controle, não sendo comparada com uma saída de referência esperada. Em outras palavras, é um sistema em que
 o componente apenas exerce certas ações programadas, não verificando se elas aconteceram como previsto. Sua
 máquina de lava roupa pode ser programada para ciclos de enxágue, lavagem e centrifugação, mas em cada um
 desses ela estará apenas exercendo ações mecânicas, não medindo a roupa está realmente seca, sendo lavada
-ou centrifugada.  * *Malha fechada* – há um ou mais componentes no sistema para verificar (medir) a execução
+ou centrifugada.
+* *Malha fechada* – há um ou mais componentes no sistema para verificar (medir) a execução
 da ação e realimentar o circuito com esta medida. Uma máquina de lavar roupa que usasse um sensor de umidade no
 término da ação de secagem para medir o resultado é uma malha fechada. A malha fechada permite ações como a
 correção – se a roupa não está suficientemente seca, inicia-se novamente a secagem até se ter a saída esperada.
-
-image:image77.jpeg[image,width=300,height=703]
 
 Conhecer o conceito de elementos de controle é essencial para entender a sua impressora 3D: não queremos um
 motor que só gire pra um lado ou pra outro, queremos saber as coordenadas! Não queremos um componente que só
@@ -2368,6 +2400,7 @@ desligada. O motor girando para o sentido “negativo” traz o elemento mais pe
 e ligar a chave – e o controlador imediatamente pára o motor, pois ele não pode ter coordenada negativa;
 o motor girando para o sentido positivo distancia o elemento da chave.
 
+[[motorchaveendstop]]
 image:image78.png[image,width=642,height=307]
 
 Obviamente, algumas variáveis são importantes aqui. A primeira observação a se notar é que se o motor está
@@ -2386,14 +2419,15 @@ precisão e repetibilidade. Tais valores definirão os tipos que podemos encontr
 
 * **Distância de acionamento**: simplesmente a distância a que o elemento medido (geralmente o extrusor, mas
 pode ser outra peça da impressora) está do endstop. Pode ser zero caso o endstop exija contato para fechar
-circuito. Geralmente dado em milímetros.  * **Precisão**: um número que diz a resolução da medição gerada,
+circuito. Geralmente dado em milímetros.
+* **Precisão**: um número que diz a resolução da medição gerada,
 ou o número de dígitos usados pra expressar o valor. Note o leitor que existe diferença entre _precisão_ e
 __acurácia__, mas isto foge do nosso escopo de tratamento; veja bibliografia nas notas para leitura posterior⁵. Se
 um endstop tem precisão de 0,01mm, significa que ele pode medir distâncias em múltiplos desse valor, tais como
-0,15mm ou 0,27mm, mas não 0,123mm.  * **Repetibilidade**: variação em medidas tomadas nas mesmas condições,
+0,15mm ou 0,27mm, mas não 0,123mm.
+* **Repetibilidade**: variação em medidas tomadas nas mesmas condições,
 com os mesmos itens, em sequência. Uma repetibilidade de 0,04mm significa que a medida pode variar, digamos,
 de 0,08mm até 0,12mm para uma distância real de 0,1mm, mas não sairá deste intervalo.
-
 * *Tipos principais de endstops* +
 Os endstops podem ser circuitos _energizados_ ou __não-energizados__. Circuitos
 energizados são aqueles que requerem uma tensão positiva – geralmente 5V – e um dreno para ativar o
@@ -2402,22 +2436,27 @@ sinal, deixando o circuito aberto ou fechado de acordo com o contato, devolvendo
 (o sinal ou alta impedância) e ocupando apenas dois fios. Os microcontroladores e microcomputadores usados para
 controle de impressoras 3D geralmente aceitam ambos os tipos. Dos que listamos, somente os mecânicos podem
 ser não-energizados. Endstops são usados em mais do que apenas o limite dos eixos, são importantes para o
-autonivelamento de mesa que será tratado mais adiante.  ** **Mecânicos**: são os mais simples, precisando
+autonivelamento de mesa que será tratado mais adiante.
+** **Mecânicos**: são os mais simples, precisando
 geralmente de apenas dois fios para fechar ou abrir o circuito. São acionados por contato de uma simples chave
 mecânica com mola e têm repetibilidade e precisão média pra alta – em números, geralmente 0,01mm de precisão
-e 0,1mm de repetibilidade, embora isso possa variar bastante de acordo com o fabricante.  ** **Ópticos**: estão
+e 0,1mm de repetibilidade, embora isso possa variar bastante de acordo com o fabricante.
+** **Ópticos**: estão
 entre os mais precisos, tendo também boa repetibilidade nas mesmas condições, mas são muito afetados por
 fatores externos como mudanças da superfície ou da iluminação. Não funcionam bem com superfície refletoras
-ou transparentes.  ** **De efeito hall (magnéticos)**: são sensores de dois componentes, um deles magnéticos e
+ou transparentes.
+** **De efeito hall (magnéticos)**: são sensores de dois componentes, um deles magnéticos e
 funcionam com o efeito de transdução de tensão em resposta a um campo magnético, de nome Efeito Hall. Como são
 dois componentes geralmente pré-calibrados de fábrica e testados com rigor, apresentam precisão e repetibilidade
 alta com estruturas bem isoladas mas podem sofrer perturbações de componentes eletrônicos muito próximos. A
 precisão pode ser comprometida com o aquecimento por mudança brusca nas propriedades magnéticas, portanto
-é melhor ser usado frio quando para autonivelamento de mesa.  ** **Indutivos**: podem ter a precisão bem alta
+é melhor ser usado frio quando para autonivelamento de mesa.
+** **Indutivos**: podem ter a precisão bem alta
 (0,005mm) mas repetibilidade relativamente baixa (0,05mm), piorando bastante de acordo com a montagem na estrutura
 e o material usado. Funcionam com o efeito de indução gerado pela proximidade de um metal, preferivelmente um
 metal ferrocondutor – funcionam bem com aço, têm sensibilidade menor para alumínio. Assim como os sensores
-de efeito hall, têm melhor precisão se usados frios.  ** **Capacitivos**: são sensores de montagem fácil que
+de efeito hall, têm melhor precisão se usados frios.
+** **Capacitivos**: são sensores de montagem fácil que
 podem detectar virtualmente qualquer material a pequenas distâncias, mas têm como desvantagem baixa precisão e
 repetibilidade.  + Esta lista não é exaustiva. Existem diversas tecnologias que podem ser usadas para calcular
 distâncias, como de costume faz parte da _mentalidade reprap_ entender que se trabalha com um espaço aberto
@@ -2425,11 +2464,12 @@ de possibilidades e que a popularização traz dispositivos antes desconhecidos 
 distância ultrassônicos ou detectores de pressão poderiam em tese ser utilizados. Projetos inovadores surgem
 a cada dia, como o sensor motorizado de pressão BLTouch, submetido a financiamento coletivo.
 
-image:image79.png[image,width=642,height=321]
+[[sensorbltouch]]
+image::image79.png[image,width=642,height=321]
 
 É importante perceber que embora teoricamente você pudesse se beneficiar de endstops sendo colocados nos dois
 extremos de um eixo – um representando a coordenada zero (mínimo) e outro representando a coordenada máxima
-– poucas impressoras usam os dois, normalmente escolhendo apenas os mínimos ou máximos. Nas cartesianas,
+- poucas impressoras usam os dois, normalmente escolhendo apenas os mínimos ou máximos. Nas cartesianas,
 os mínimos são quase universais, mas nas deltas, pela própria construção, se usam endstops máximos.
 
 Note-se que o uso de um endstop ajuda no controle de uma malha, mas não torna os circuitos de uma impressora
@@ -2444,40 +2484,45 @@ Por fim, uma excelente mostra das diferenças entre os vários tipos de sensores
 feita pelo vlogger Thomas Sanladerer, caso o leitor saiba inglês é um vídeo bastante recomendado:
 https://www.youtube.com/watch?v=il9bNWn66BY[_https://www.youtube.com/watch?v=il9bNWn66BY_]
 
-Notas:
-
-1 -
-http://www.protoparadigm.com/news-updates/accuracy-vs-precision-and-threaded-rod-vs-leadscrews-in-3d-printers/[_http://www.protoparadigm.com/news-updates/accuracy-vs-precision-and-threaded-rod-vs-leadscrews-in-3d-printers/_]
-
-2 -
-http://www.meccanismocomplesso.org/en/tslot-framing-openbeam-makerbeam-micromax/[_http://www.meccanismocomplesso.org/en/tslot-framing-openbeam-makerbeam-micromax/_]
-
-3 – http://www.corexy.com/[_http://www.corexy.com_]
-
-4 – Ainda que fuja ao escopo deste livro elaborar na questão da cinemática das impressoras, o site
+[NOTE]
+.Notas:
+====
+. http://www.protoparadigm.com/news-updates/accuracy-vs-precision-and-threaded-rod-vs-leadscrews-in-3d-printers/[_http://www.protoparadigm.com/news-updates/accuracy-vs-precision-and-threaded-rod-vs-leadscrews-in-3d-printers/_]
+. http://www.meccanismocomplesso.org/en/tslot-framing-openbeam-makerbeam-micromax/[_http://www.meccanismocomplesso.org/en/tslot-framing-openbeam-makerbeam-micromax/_]
+. http://www.corexy.com/[_http://www.corexy.com_]
+. Ainda que fuja ao escopo deste livro elaborar na questão da cinemática das impressoras, o site
 _reprap.org_ oferece ótimo material de estudo em inglês, a julgar pela sua própria entrada sobre _CoreXY_
 (http://reprap.org/wiki/CoreXY[_http://reprap.org/wiki/CoreXY_]), pela sua lista de _arranjos mecânicos_
 (http://reprap.org/wiki/Category:Mechanical_arrangement[_http://reprap.org/wiki/Category:Mechanical_arrangement_])
 ou pelos links acadêmicos de referência que cita
 (http://www.mesj.ukim.edu.mk/sites/default/files/Mech-Eng-25-1-2006_0.pdf[_http://www.mesj.ukim.edu.mk/sites/default/files/Mech-Eng-25-1-2006_0.pdf_]
-– __Parallel Kinematics Machine Tools: History, Present. Future__)
+- __Parallel Kinematics Machine Tools: History, Present. Future__)
+. http://paladintechworks.com/index.php/home/blog/12-tech/14-understanding-the-terms-precision-repeatability-and-accuracy-in-the-cnc-world[_http://paladintechworks.com/index.php/home/blog/12-tech/14-understanding-the-terms-precision-repeatability-and-accuracy-in-the-cnc-world_]
+====
 
-5 -
-http://paladintechworks.com/index.php/home/blog/12-tech/14-understanding-the-terms-precision-repeatability-and-accuracy-in-the-cnc-world[_http://paladintechworks.com/index.php/home/blog/12-tech/14-understanding-the-terms-precision-repeatability-and-accuracy-in-the-cnc-world_]
-
-1.  [[extrusor]] == Extrusor + O extrusor é o conjunto que puxa (traciona) o filamento plástico e o
+=== Extrusor + O extrusor é o conjunto que puxa (traciona) o filamento plástico e o
 derrete. Essas duas funções são realizadas por partes diferentes do extrusor: uma, o tracionador ou cold end
 (“extremidade fria”), é a que tem um motor e engrenagem dentada que dá a força e a velocidade para o
-filamento ser alimentado na segunda parte, que é chamada de hot end ou hotend (“extremidade quente”).¹ +
-image:image80.png[image,width=618,height=395] + O tracionador e o hotend não necessariamente estarão
+filamento ser alimentado na segunda parte, que é chamada de hot end ou hotend (“extremidade quente”).¹
+
+[[estruturaextrusorfreecad]]
+image:image80.png[image,width=618,height=395]
+
+O tracionador e o hotend não necessariamente estarão
 juntos ou mesmo próximos. A primeira distinção é justamente essa:
 
-* image:image81.jpeg[image,width=190,height=190]direct ou monolítico – tracionador e hotend
-acoplados * image:image82.png[image,width=215,height=185]bowden – tracionador e hotend separados
+[width="100%",cols="^s,^m,e",frame="topbot",options="header"]
+|====
+| Tipo | Exemplo | Descrição
+| Direct / Monolítico | image:image81.jpeg[image,width=190,height=190] | Tracionador e hotend
+acoplados
+| Bowden / Filamento guiado | image:image82.png[image,width=215,height=185] | tracionador e hotend separados
+|====
 
 Em impressoras 3d estilo __delta__, no hotend, você tem ainda a estrutura que une os braços chamada de effector:
 
-image:image83.png[image,width=642,height=498]
+[[fotoeffector]]
+image::image83.png[image,width=642,height=498]
 
 O bowden, também chamado de configuração com filamento guiado, tem o tracionador geramente fixado na carcaça e
 vai usar um tubo de baixo grau de atrito para unir as duas peças e preservar a tração do filamento sendo empurrado
@@ -2500,9 +2545,13 @@ Mas essa não é a única variação possível do extrusor nas impressoras 3D de
 quanto o hotend também têm seus tipos. Comecemos pelo tracionador, que tem sua classificação dependendo de
 como a engrenagem dentada que tem contato com o filamento recebe força do motor:
 
-* image:image84.jpeg[image,width=206,height=154]**geared** ou *engrenado* – através de engrenagens
-adicionais * image:image85.jpeg[image,width=203,height=152]**direct drive** – o pinhão traciona
+[width="100%",cols="^s,^m,e",frame="topbot",options="header"]
+|====
+| Tipo | Exemplo | Descrição
+| Engrenado ou _Geared_ | image:image84.jpeg[image,width=206,height=154] | Funciona com a tração transferida por engrenagens
+| __Direct Drive__ | image:image85.jpeg[image,width=203,height=152] | O pinhão traciona
 diretamente o filamento
+|====
 
 Um extrusor _engrenado_ tem uma “redução” no movimento, isto é, com o sistema de engrenagens, ele passa
 a ter que dar mais voltas para tracionar um mesmo comprimento de filamento; no entanto, com essa redução de
@@ -2514,15 +2563,21 @@ Note ainda que o tracionador engrenado geralmente usa um parafuso modificado pre
 o filamento. Esse parafuso é chamado de __parafuso trator__, com a cabeça hexagonal conectada à engrenagem
 maior. Tanto o _pinhão_ do motor quanto o parafuso trator podem ter _sulcos_ (fendas cilíndricas com os dentes de
 tração circulando o filamento de forma radial) ou _canaletas_ (fendas retas e mais largas com os dentes paralelos
-e retos), conforme a Figura 8.
+e retos), conforme a Figura <<parafusotratorepinhao>>.
 
-image:image86.jpeg[image,width=642,height=365]
+[[parafusotratorepinhao, XX]]
+image::image86.jpeg[parafusotratorepinhao,width=642,height=365,title="1. Parafuso trator com sulco; 2. Parafuso trator com canaleta; 3. Pinhão (MK7) com sulco; 4. Pinhão completamente canaletado; 5. Pinhão (MK8) com sulco."]
 
 Os hotends se dividem, por sua vez, em:
 
-* image:image87.jpeg[image,width=212,height=157]**PEEK + metal** – plástico resistente a calor
-e isolante.  * image:image88.jpeg[image,width=211,height=157]**de metal com PTFE interno** *
-image:image89.png[image,width=212,height=163]**todo de metal (all-metal)**
+[width="100%",cols="^s,^m,e",frame="topbot",options="header"]
+|====
+| Tipo | Exemplo | Descrição
+| PEEK + metal | image:image87.jpeg[image,width=212,height=157] | Plástico resistente a calor
+e isolante térmico.
+| Metal com PTFE interno | image:image88.jpeg[image,width=211,height=157] | O hotend é quase inteiramente de metal, mas tem um pequeno tubo interno de PTFE para o filamento.
+| Todo de metal (all-metal) |  image:image89.png[image,width=212,height=163] | O hotend é de metal, sem o tubo de PTFE.
+|====
 
 Os hotends do primeiro tipo – usando um plástico chamado PEEK (polyether ether ketone, poliéter-éter-cetona)
 – foram os usados no começo do projeto RepRap e hoje quase não se os encontra mais. Eles têm o revestimento de

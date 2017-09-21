@@ -40,7 +40,7 @@ errada de motivações e objetivos. O livro é _livre_ (open-source), licença C
 propósitos de algo meramente gratuito.
 
 = Prefácio
-O conhecimento necessário para escrever este livro não surgiu da mente do autor. Surgiu, antes, das mentes agregadas
+O conhecimento necessário para escrever este livro não surgiu somente da mente do autor. Surgiu, antes, das mentes agregadas
 de vários indivíduos brilhantes e laboriosos que, por vezes camuflados sob pseudônimos irônicos de internet,
 trabalharam duro e com paixão para o desenvolvimento e democratização de uma tecnologia que, por décadas,
 ficou aprisionada em redutos industriais de acesso controlado e vigiado. A esses indivíduos, no entanto, poucas
@@ -2909,12 +2909,12 @@ bloco aquecedor maior e por default vem com bicos de orifícios maiores (0,6 a 0
 
 === Ventoinhas (fans)
 
-As ventoinhas são componentes importantes de uma impressora 3D e não são usados somente no extrusor; podem servir
-também para resfriar a CPU da impressora, como exaustor dos vapores de plástico em impressoras 3D fechadas ou
+As ventoinhas são componentes importantes de uma impressora 3D e não são usadas somente no extrusor; podem servir
+também para resfriar a CPU da impressora ou como exaustor dos vapores de plástico em impressoras 3D fechadas ou
 até como homogeinizador do ar quente em equipamentos com câmara aquecida.
 
 Os tipos de ventoinhas usados em impressoras 3D apresentam pontos em comum com as usadas em PCs. São basicamente
-motores sem escova (__brushless motors__) equipados com pás parar gerar um fluxo de ar. As mais simples têm apenas
+motores sem escova (__brushless motors__) equipados com pás para gerar um fluxo de ar. As mais simples têm apenas
 dois fios (terra e Vcc) e um circuito interno básico que gera as formas de onda para girar as pás. As com três
 fios geralmente usam o terceiro para informar a velocidade do rotor ao controlador e se houver um quarto fio ele
 serve para controlar a velocidade através de PWM (explicada mais adiante na parte sobre motores) -- o que não
@@ -2948,7 +2948,7 @@ que saem do escopo do tratado aqui por virtualmente não serem usadas em impress
 uma ventoinha de bico virada na ‘direção geral’ da impressão pode não ser a estratégia mais eficaz, visto
 que o ponto a ser refrigerado, o plástico saindo do bico, é bem circunscrito; um jeito muito mais eficiente seria
 concentrar o fluxo de ar neste ponto, papel que alguns elementos conhecidos como _funis_ ou _dutos de ventoinhas_
-tentam fazer (como o da figura XX[[figura_xx]]). No entanto, a dinâmica de fluidos não é algo tão direto assim
+tentam fazer (como o da figura XX). No entanto, a dinâmica de fluidos não é algo tão direto assim
 e a turbulência interna ao duto é tão grande que efetivamente reduz e muito a eficiência de resfriamento de
 uma ventoinha afunilada, pois o vento chega extremamente amortecido ao bico. Para ventoinha de bico, existe um
 elemento com eficiência muito maior, que é a ventoinha _radial_ ou __centrífuga__, tratadas em inglês como
@@ -2956,14 +2956,16 @@ elemento com eficiência muito maior, que é a ventoinha _radial_ ou __centrífu
 tamanho e preço: as variedades encontradas são mais caras que as comuns e geralmente de 40 ou 50mm de lado,
 sendo praticamente impossível encontrar uma de 30mm.
 
-image:image104.png[image,width=546,height=570]
+[[fotoblowfan1]]
+image::image104.png[image,width=546,height=570]
 
-Notas:
+[NOTE]
+.Notas:
+====
+. http://www.nmbtc.com/pdf/engineering/fans_ball_vs_sleeve.pdf[_http://www.nmbtc.com/pdf/engineering/fans_ball_vs_sleeve.pdf_]
+====
 
-1 -
-http://www.nmbtc.com/pdf/engineering/fans_ball_vs_sleeve.pdf[_http://www.nmbtc.com/pdf/engineering/fans_ball_vs_sleeve.pdf_]
-
-=== Não acabou: elementos para aferição da temperatura!
+=== Elementos para aferição da temperatura
 
 Como foi citado quando os endstops foram descritos, é importante haver elementos de mensuração da resposta
 aos comandos enviados para a impressora e, assim como aferição do posicionamento é importante, aferição da
@@ -2978,14 +2980,16 @@ cuja resistência aumente com a temperatura; por esse mesmo motivo também são 
 onde PTC vem de Positive Temperature Coefficient, ou Coeficiente de Temperatura Positivo em inglês. Um termorresistor
 particularmente eficaz e barato usado em algumas repraps é o _PT100_ (às vezes confundido com termopar). No entanto,
 devido à baixa sensibilidade do microcontrolador a esses tipos de circuitos, eles necessitam de amplificação
-do sinal (circuito externo) para oferecerem mensurações úteis.  * **Termistores NTC**, às vezes chamados
+do sinal (circuito externo) para oferecerem mensurações úteis.
+* **Termistores NTC**, às vezes chamados
 simplesmente de *termistores* sem qualificativos adicionais, são o tipo mais comum em impressoras 3D domésticas
 pela simplicidade de uso e preço, e são componentes passivos cuja resistência diminui com a temperatura. Como
 têm maior variação (exponencial) com a temperatura que RTDs, não precisam de amplificação. Um termistor
 NTC bem popular em repraps é o EPCOS 100K, sendo vendido a preços muito baixos e aguentando temperaturas até
 perto de 300°C. Ultrapassando esta temperatura é virtualmente impossível encontrar termistores NTC no mercado,
 excetuando o caso muito específico do termistor do “Pico Hotend”, um item exclusivo (ou seja, até o momento
-não existem réplicas genéricas) feito com tecnologia de ponta.  * *Termopares* são dispositivos elétricos
+não existem réplicas genéricas) feito com tecnologia de ponta.
+* *Termopares* são dispositivos elétricos
 formados de dois diferentes condutores (geralmente metais) formando uma _junta elétrica_ e produzindo a partir
 dela _tensão elétrica_ que pode ser medida por circuito especializado. Na maioria das impressoras 3D de baixo
 custo, termopares não podem ser ligados diretamente ao microcontrolador, necessitando de circuito adicional de
@@ -2999,7 +3003,7 @@ a faixa de 300°C, necessária para alguns materiais “difíceis” ou “indus
 nylons, PEEK e PEI, que têm migrado do mundo industrial para o doméstico com a sofisticação das impressoras
 3D de baixo custo.
 
-1.  [[section-3]] == + [[mesa-plataforma-de-impressão]] == *Mesa (Plataforma de Impressão)*
+=== *Mesa (Plataforma de Impressão)*
 
 Numa impressora 3D FFF, a plataforma de impressão de uma impressora 3D é a parte do equipamento que sustentará
 a peça enquanto está sendo produzida. Além da sustentação, a mesa deve dar ainda suficiente estabilidade e
@@ -3011,7 +3015,7 @@ de metal, polímero ou outros materiais de acordo com as afinidades químicas. A
 de impressoras sem aquecimento, o default aqui analisado será a mesa _aquecida_ visto que se pode inferir o uso
 das mesas sem aquecimento a partir delas.
 
-=== Mesa aquecida
+.Mesa aquecida
 
 Vamos começar por algo que nem sempre é reconhecido: a mesa _aquecida_ é um artefato da estratégia de barateamento
 do projeto RepRap. Antes dele, as impressoras FDM não usavam mesas aquecidas; com construção industrial e peças
@@ -3034,19 +3038,18 @@ O mercado também começa a ver suas primeiras impressoras 3D de baixo custo com
 faça _patent fencing_ da técnica com a patente US-6722872-B1, a patente registrada nos EUA, válida até 2020,
 cobre apenas câmaras com motores externos a ela e com barreiras flexíveis.
 
-=== Modelos de Mesa Aquecida
+.Modelos de Mesa Aquecida
 
 Não há um só modelo de mesa aquecida. Há vários tipos e é bom entender essas diferenças, que podem inclusive
 afetar a qualidade das peças. Fatores de importância na construção de uma mesa são a condutividade térmica,
 a uniformidade da temperatura em toda sua área (especialmente para materiais propensos a __warp__, como ABS),
 facilidade de montagem, eficiência de operação. A lista a seguir não é exaustiva:
 
-* *Mesa com resistências* +
-Foram as primeiras a surgir. Resistências simples são elementos aquecedores fáceis de
+* *Mesa com resistências* -- foram as primeiras a surgir. Resistências simples são elementos aquecedores fáceis de
 construir; a construção consiste de uma mesa geralmente de metal com blocos de resistência igualmente espaçados
 colados abaixo. Os blocos fazem a mesa ser grossa na construção e o fato de serem “ilhas” de calor torna
-a temperatura da mesa não-uniforme. Dependendo do metal, a mesa pode apresentar empenamento.  * *Mesa de PCB
-resistiva (MK1, MK2)* -- Josef Průša inventou a primeira versão de mesa resistiva em “PCB” (Printed
+a temperatura da mesa não-uniforme. Dependendo do metal, a mesa pode apresentar empenamento.
+* *Mesa de PCB resistiva (MK1, MK2)* -- Josef Průša inventou a primeira versão de mesa resistiva em “PCB” (Printed
 Circuit Board), isto é, uma placa de circuito grande com uma trilha que faz o papel de uma longa resistência
 em serpentina em toda a área. Deste modo se consegue uma boa uniformidade do aquecimento e o material da placa
 (fibra de vidro usada para circuitos) é bastante fino, permitindo fácil montagem. Há também espaço para leds
@@ -3054,12 +3057,14 @@ estilo “SMD” que dão status se a placa está recebendo corrente ou não. Ou
 sucessora, mas alternativa - melhora o design tendo uma reentrância para o alojamento da cabeça do termistor
 e também aumenta a área disponível para soldar os contatos. Há uma versão chamada de MK2B que tem pinagens
 diferentes oferecendo resistências diferentes, de modo que a mesa possa ser usada com fontes de 12V ou 24V. Um
-dos maiores problemas do circuito impresso é a tendência a empenar.  * *Mesa de alumínio resistivo (MK3)* -- A
+dos maiores problemas do circuito impresso é a tendência a empenar.
+* *Mesa de alumínio resistivo (MK3)* -- a
 próxima versão da mesa trocou o circuito impresso pelo alumínio (com a mesma trilha resistiva), que é um metal
 com alta condutividade térmica; assim a uniformidade de temperatura da mesa fica ainda mais alta. No entanto,
 há que se considerar uma desvantagem na segurança que é o fato de o alumínio ser metal e portanto condutor de
 eletricidade, e trilhas descobertas ou excesso de alimentação terem potencial maior de gerar faíscas, curtos e
-acidentes do que a fibra de vidro isolante.  * *Mesa de metal com manta aquecida de silicone* -- uma solução que
+acidentes do que a fibra de vidro isolante.
+* *Mesa de metal com manta aquecida de silicone* -- uma solução que
 traz maior isolamento da alimentação do que a mesa de alumíno resistivo é a mesa de metal (geralmente aço inox
 ou alumínio) com uma manta de silicone colada. A manta de silicone é uma forma de resistência aquecedora segura,
 bem isolada e de grande variedade de formas, tamanhos e tensões suportadas. Não é tão fina como uma trilha de
@@ -3067,11 +3072,12 @@ circuito, entretanto, e o volume e peso, ainda que não exagerados, podem ser um
 mais recomendadas para mesas aquecidas estáticas ou de movimentação em Z.  * *Mesa de metal com resistência
 impressa em película de poliimida (kapton)* -- solução semelhante à de manta de silicone, com a vantagem de
 a película usada ser extremamente fina. Infelizmente, os preços das películas sobem estratosfericamente para
-áreas maiores que 10cm x 10cm, tornando-se superiores aos das próprias mesas com resistências embutidas.  *
-*Mesa de alumínio acoplada a mesa resistiva* -- consistindo de uma solução “Maker” para medidas de mesa
+áreas maiores que 10cm x 10cm, tornando-se superiores aos das próprias mesas com resistências embutidas.
+* *Mesa de alumínio acoplada a mesa resistiva* -- consistindo de uma solução “Maker” para medidas de mesa
 não-convencionais, consiste de usar uma baratíssima mesa aquecida resistiva como a MK2 e colar em uma placa maior
 de alumínio (digamos, de 250x250mm para uma MK2B de 214x214mm) usando um adesivo térmico como a fita dupla-face
-de transferência térmica 467MP da 3M.  * **Mesa aquecida (qualquer tipo) com isolante térmico**. Uma ajuda que
+de transferência térmica 467MP da 3M.
+* **Mesa aquecida (qualquer tipo) com isolante térmico** -- uma ajuda que
 costuma impedir que a mesa perca energia por baixo é colar uma placa de isolante térmico na parte de baixo dela,
 que não está em contato com a peça. Um dos materiais mais baratos e fáceis de utilizar para esse fim é placa
 adesiva de cortiça, encontrável em lojas de ferragens ou materiais de construção.  1.  [[vidro-da-mesa]] ===
@@ -3086,23 +3092,26 @@ O uso de uma placa de vidro sobre a mesa tem as seguintes utilidades:
 
 * **Nivela a superfície**. Vidro é um dos materiais com usinagem retilínea mais facilitada, mais do que
 metais e PCB que são os materiais usados na mesa. Prender um vidro a elas não só faz com que a impressão
-tenha uma superfície mais uniforme, como as “corrige” prevenindo empenamentos e deformações.  * **Evita
-stress mecânico nas peças da impressora**. Uma impressão 3D finalizada raramente se solta espontaneamente da
+tenha uma superfície mais uniforme, como as “corrige” prevenindo empenamentos e deformações.
+* **Evita stress mecânico nas peças da impressora**. Uma impressão 3D finalizada raramente se solta espontaneamente da
 mesa; ela pode oferecer resistência ao destaque, que pode ser inclusive danoso às peças da impressora se exigir
 muita força. Ter uma superfície facilmente removível, para que a peça possa ser destacada em local apropriado,
-ajuda muito na vida útil da máquina.  * **É um material resistente a muitos produtos químicos**. Como é comum
+ajuda muito na vida útil da máquina.
+* **É um material resistente a muitos produtos químicos**. Como é comum
 usar métodos de aderência de superfície, o vidro é um material excelente para isso, sendo resistente à grande
-maioria dos solventes.  * **É um material com ótima tolerância para plásticos e colas**. A superfície lisa e
+maioria dos solventes.
+* **É um material com ótima tolerância para plásticos e colas**. A superfície lisa e
 a polaridade das moléculas do vidro facilita que a impressão adira à superfície, ao mesmo tempo que dificulta
 que essa aderência seja muito forte. E também é um material que aceita com muita facilidade ser revestido com
-colas ou fitas que ajudem a aderência.  * **É um material barato e descartável**. Vidraçarias comuns fazem
+colas ou fitas que ajudem a aderência.
+* **É um material barato e descartável**. Vidraçarias comuns fazem
 o serviço de cortar placas retangulares de vidro de quaisquer tamanho por baixo preço. Deste modo, mesmo que
 a placa de vidro eventualmente sofra danos pelo manuseamento incorreto ou excesso de pressão mecânica, ela é
 facilmente substituível, e costuma ficar bem dentro do orçamento de um profissional de impressão 3D algumas
-placas de vidro de reserva para essas eventualidades.  * **Como é removível e barato, permite a substituição
-imediata e poupa tempo**. Terminou a impressão e precisa começar outra? Remova o vidro com a peça, coloque
-novo vidro e inicie a nova impressão imediatamente. Enquanto a segunda impressão prossegue, usa-se o tempo para
-remover a primeira do vidro.
+placas de vidro de reserva para essas eventualidades.
+* **Como é removível e barato, permite a substituição imediata e poupa tempo**. Terminou a impressão e precisa
+começar outra? Remova o vidro com a peça, coloque  novo vidro e inicie a nova impressão imediatamente. Enquanto
+a segunda impressão prossegue, usa-se o tempo para remover a primeira do vidro.
 
 No entanto, nem tudo são vantagens. Usar um vidro sobre a mesa aquecida tem seus próprios reveses:
 
@@ -3110,7 +3119,8 @@ No entanto, nem tudo são vantagens. Usar um vidro sobre a mesa aquecida tem seu
 efeito de comparação a do alumínio é 204 W/mk -- e isso tem um efeito dramático nas mesas aquecidas. Com as
 potências e tamanhos típicos de impressoras 3D modernas, um vidro de 3mm de espessura pode abaixar a temperatura
 por uns 15°C. Por causa disso, é sugerido o uso de vidros de baixa espessura, 2 ou 3mm são suficientes para um
-bom equilíbrio entre resistência e eficiência térmica.  * *Vidro é um material denso* (2500 kg/m³) e portanto
+bom equilíbrio entre resistência e eficiência térmica.
+* *Vidro é um material denso* (2500 kg/m³) e portanto
 para os modelos de impressoras 3D que usam mesas móveis, seu peso será um ônus para a movimentação. O motor
 que movimenta a mesa tem que ser escolhido já levando em conta o peso adicional da mesa na inércia de trabalho.
 * *Vidro é cortante quando quebrado* e portanto há perigo em se manuseá-lo.
@@ -3123,7 +3133,7 @@ o acréscimo visto que um vidro comum corretamente manuseado não tende a quebra
 utilizam espelhos ao invés de vidros, a fina camada de prata reflexiva ajuda um pouco na condutividade térmica
 e tem apelo estético para fotografias, também ajudando a aferir visualmente a distância do hotend pra mesa.
 
-=== *Aderência à mesa*
+.Aderência à mesa
 
 Durante o processo de impressão, é essencial que a peça impressa fique o mais imóvel possível na superfície
 plana da mesa. Qualquer balanço imperceptível para os olhos, qualquer deslocamento por mínimo que seja terá
@@ -3165,42 +3175,43 @@ como veremos na parte de fatiamento.
 
 Os métodos de aderência se enquadram em três categorias:
 
-* *Fitas* +
-São colocadas sobre a mesa ou o vidro usualmente por toda sua área, com as tiras em paralelo
+* *Fitas*: São colocadas sobre a mesa ou o vidro usualmente por toda sua área, com as tiras em paralelo
 sem que uma passe sobre a outra para não causar desnível na superfície. Costumam durar um número pequeno
 de impressões, começando a rasgar ou descolar da superfície com o uso. Geralmente os rolos de fita estarão
-disponíveis em variedades de 12, 24 e 48mm de largura, com as mais largas (48mm) sendo recomendadas.  ** *Fita
-kapton* -- método muito popular quando do início das impressoras 3D domésticas, *Kapton* é marca registrada de
+disponíveis em variedades de 12, 24 e 48mm de largura, com as mais largas (48mm) sendo recomendadas.
+** *Fita kapton* -- método muito popular quando do início das impressoras 3D domésticas, *Kapton* é marca registrada de
 uma fita colante do material **poliimida**, que aguenta altas temperaturas (500°C) sem deteriorar e sem perder a
 aderência. A fita com sua cor característica dourado translúcido tem boa compatibilidade molecular com plásticos
 e a aderência pode ser aumentada com colas ou tornando sua superfície lisa mais irregular com massagem com palha
-de aço. Tem aderência *média* e funciona melhor quando aplicada diretamente em uma mesa de alumínio do que
-no vidro. Um ponto baixo do kapton é a sua **dificuldade de aplicação**, visto que é uma fita que rasga com
+de aço. Tem aderência média e funciona melhor quando aplicada diretamente em uma mesa de alumínio do que
+no vidro. Um ponto baixo do kapton é a sua __dificuldade de aplicação__, visto que é uma fita que rasga com
 facilidade e que precisa ser aplicada com bastante jeito na superfície para não deixar bolhas. Por outro lado,
 tem repetibilidade alta, podem ser usada muitas vezes seguidas até a próxima aplicação. A fita também é usada
 em vários componentes de impressora 3D devido à sua resistência à temperatura, como para ajudar a fixação
-dos termistores na mesa e hotend.  + Um substituto eficiente da fita kapton que tem basicamente a mesma dinâmica
+dos termistores na mesa e hotend.  +
+Um substituto eficiente da fita kapton que tem basicamente a mesma dinâmica
 de aplicação, mas maior aderência quando aquecida, maior resistência a rasgos e ainda maior facilidade de
-aplicação sem bolhas é a **fita PET**, infelizmente um insumo quase impossível de se achar no Brasil.  **
-*Fita azul de pintor / fita crepe azul* -- esta fita, vendida no Brasil principalmente pela 3M (modelo 2090), é
+aplicação sem bolhas é a **fita PET**, infelizmente um insumo quase impossível de se achar no Brasil.
+** *Fita azul de pintor / fita crepe azul* -- esta fita, vendida no Brasil principalmente pela 3M (modelo 2090), é
 uma fita crepe com adesivo mais forte que a comum e uma *cobertura de acrílico* que tem grande compatibilidade
 química com a maioria dos plásticos, e aderência a eles que aumenta com a temperatura. Tem repetibilidade
-baixa pra média, com peças grandes favorecendo que a fita descole e rasgue.  * *Superfícies adesivas* +
-São folhas de materiais especiais cortados na mesma medida que a mesa ou vidro da impressora 3D e colados sobre
-elas. Funcionam como materiais adesivos especiais e duráveis cuja aderência aumenta com a temperatura. No Brasil
-não são técnicas muito usadas porque geralmente os materiais são caros (muitas vezes tendo que ser importados);
+baixa pra média, com peças grandes favorecendo que a fita descole e rasgue.
+* *Superfícies adesivas*: São folhas de materiais especiais cortados na mesma medida que a mesa ou vidro da impressora 3D e
+colados sobre elas. Funcionam como materiais adesivos especiais e duráveis cuja aderência aumenta com a temperatura. No
+Brasil não são técnicas muito usadas porque geralmente os materiais são caros (muitas vezes tendo que ser importados);
 a variedade nacional de tamanhos de mesa de impressora 3D também dificulta um pouco o uso, ainda que um modelo
-maior possa ser cortado.  ** *PEI (polieterimida)* -- folha de material translúcido nas cores âmbar ou azul com
+maior possa ser cortado.
+** *PEI (polieterimida)* -- folha de material translúcido nas cores âmbar ou azul com
 alta afinidade com plásticos e alta durabilidade. Curiosamente, é também a base da família de filamentos de
-alta temperatura da Stratasys, criados pela Sabic e chamados de “Ultem”.  ** *BuildTak, PrintBite, Fleks3d e
-semelhantes* -- marcas comerciais que usam a mesma idéia: uma folha flexível de material plástico adesivo que
-é grudada na mesa e tem alta afinidade com ABS e PLA, com a aderência aumentando com a temperatura. Têm dois
-tipos principais: as que são realmente lâminas flexíveis e finas (BuildTak. PrintBite) ou grossas e não tão
-flexíveis (Fleks3D). As primeiras geralmente são coladas na mesa até desgastarem, as segundas são encaixadas
-e preparadas para serem removidas e até “flexionadas” ligeiramente para soltarem as peças.  ** *Polaseal*
--- este plástico é adquirido em papelarias e é o popular “plástico de plastificação”. Ele é cortado,
-colocado sobre o vidro e aquecido até grudar, para então servir de superfície adesiva para impressões.  *
-*Colas, sprays e líquidos* + Pode estranhar à primeira vista saber que _colas_ são usadas para fixação
+alta temperatura da Stratasys, criados pela Sabic e chamados de “Ultem”.
+** *BuildTak, PrintBite, Fleks3d e semelhantes* -- marcas comerciais que usam a mesma idéia: uma folha flexível
+de material plástico adesivo que é grudada na mesa e tem alta afinidade com ABS e PLA, com a aderência aumentando
+com a temperatura. Têm dois tipos principais: as que são realmente lâminas flexíveis e finas (BuildTak. PrintBite)
+ou grossas e não tão flexíveis (Fleks3D). As primeiras geralmente são coladas na mesa até desgastarem, as segundas são
+encaixadas e preparadas para serem removidas e até “flexionadas” ligeiramente para soltarem as peças.
+** *Polaseal* -- este plástico é adquirido em papelarias e é o popular “plástico de plastificação”. Ele é cortado,
+colocado sobre o vidro e aquecido até grudar, para então servir de superfície adesiva para impressões.
+* *Colas, sprays e líquidos*: Pode estranhar à primeira vista saber que _colas_ são usadas para fixação
 de peças impressas em uma plataforma já que geralmente a palavra é associada à soldagem permanente de uma
 parte em outra, mas colas temporárias fazem mais parte do dia-a-dia do que geralmente se admite: papeizinhos de
 __post-it__, fita crepe e fita para pintura são alguns dos exemplos.  + Note-se que as colas podem ser usadas em

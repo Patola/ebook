@@ -11,6 +11,7 @@
   * Autocalibração de delta com G32 no Smoothieware, grid leveling
   * Autonivelamento Unificador do Marlin 1.1.0
   * Obtenção e utlização do bump map - mapa de distorções da mesa
+  * Explicação de substituição de parâmetros de G-Code nos 3 fatiadores
 
 ## Média Prioridade
 * Operação cotidiana da impressora:

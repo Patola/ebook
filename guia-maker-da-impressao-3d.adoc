@@ -278,7 +278,7 @@ um pantógrafo ligado a um cortador que reproduzia cada um desses perfis, totali
 batizou o processo de __fotoescultura__.
 
 [[fotoescultura]]
-image:image5.gif[image,width=388,height=423]
+image::image5.gif[image,width=388,height=423]
 
 Isso significa que já no século XIX tínhamos não só um rudimento da impressão 3D, como também de um processo de
 digitalização em 3D hoje chamado de fotogrametria. Faltavam, claro, os computadores para automatizar este processo.
@@ -329,7 +329,7 @@ feixe desta luz, sucessivas camadas representando as seções transversais de um
 até a mais alta, são atingidas seletivamente pelo feixe solidificando-o.
 
 [[slaantiga]]
-image:image6.jpeg[image,width=600,height=488]
+image::image6.jpeg[image,width=600,height=488]
 
 Em 1986, Chuck fundou a primeira companhia de Impressão 3D do mundo, a **3D Systems Inc**. A companhia criou
 o hoje famoso formato de arquivo “STL”, uma forma simples de representação de uma malha tridimensional
@@ -344,7 +344,7 @@ os grânulos do mesmo material ao redor. A patente foi concedida em 1989 e licen
 que foi mais tarde adquirida pela 3D Systems.
 
 [[brilhosls]]
-image:image7.jpeg[image,width=642,height=458]
+image::image7.jpeg[image,width=642,height=458]
 
 Foi o ano de 1989 que viu o surgimento da técnica de impressão 3D que, por suas características de robustez e
 economia, se tornou a dominante no mercado de massa de hoje: a FDM, ou modelagem por deposição de material fundido
@@ -353,7 +353,7 @@ a filha e maquetes para engenheiros (ou assim diz a lenda), fez o pedido de pate
 financiamento para criar a empresa **Stratasys**.
 
 [[fotosstratasys]]
-image:image8.jpeg[image,width=615,height=383]
+image::image8.jpeg[image,width=615,height=383]
 
 == Os anos 90 e primeira metade dos anos 2000
 
@@ -374,12 +374,12 @@ ao invés de somente sinterizados. A **EBM**, ou Electron Bean Melting, utiliza 
 SLM mas usando um feixe de elétrons e consegue trabalhar com materiais com altíssimo ponto de fusão como titânio.
 
 [[lomartefinal]]
-image:image9.png[image,width=642,height=535]
+image::image9.png[image,width=642,height=535]
 
 == O rompimento: o projeto RepRap
 
 [[fotoreprap]]
-image:image10.jpeg[image,width=642,height=379]
+image::image10.jpeg[image,width=642,height=379]
 
 Infelizmente, com todo esse aparecimento de novas tecnologias prometendo revolucionar a indústria e os modos de
 criação, vieram também as chagas da propriedade intelectual. Tradicionalmente, ao criar uma nova tecnologia,
@@ -1893,8 +1893,8 @@ variações, de forma geral entram nas seguintes categorias principais:
 [width="100%",cols="^s,^m,e",frame="topbot",options="header"]
 |====
 | Tipo		| Exemplo					| Descrição
-| Aberta 	| image:image61.png[image,width=141,height=189]	| É possível alcançar a peça impressa diretamente.
-| Fechada	| image:image62.png[image,width=158,height=158]	| A peça fica em uma câmara interna.
+| Aberta 	| image::image61.png[image,width=141,height=189]	| É possível alcançar a peça impressa diretamente.
+| Fechada	| image::image62.png[image,width=158,height=158]	| A peça fica em uma câmara interna.
 |====
 
 .Material
@@ -1931,11 +1931,11 @@ de sinalização e a utilização em impressoras 3D é bem representada pelas m�
 [width="100%",cols="^s,^m,e",frame="topbot",options="header"]
 |====
 | Tipo		| Exemplo								| Descrição
-| Cartesiana	| image:image54.jpeg[image,width=138,height=149]			| [small]#Eixos X, Y e Z correspondem ao plano cartesiano.#
-| Delta		| image:image57.png[image,width=122,height=255]				| [small]#X, Y e Z são transformadas trigonométricas das posições dos três pilares (colunas verticais).#
-| CoreXY 	| image:reprapxy-pequeno.jpg[reprapxypequeno,width=533,height=400]	| [small]#X e Y são transformadas lineares de acordo com o padrão "CoreXY" de deslocamento. Por ser uma transformação relativamente simples de coordenadas, informalmente costuma ser tratada como cartesiana.#
-| SCARA		| image:scara.png[scara,width=601,height=710]				| [small]#**S**elective **C**ompliance **A**rticulated **R**obot **A**rm, ou Braço Robótico Articulado de Conformidade Seletiva, é o nome dessa transformação de eixos comumente usada em máquinas industriais "pick and place" e de linha de montagem de veículos.#
-| Polar		| image:polartheta.png[polartheta,width=466,height=385]			| [small]#Coordenadas polares, ou seja, baseadas em ângulos, são populares nos campos matemáticos, mas em impressoras 3D não são muito práticos, servindo mais como prova de conceito. Alguns modelos de impressora têm apenas um ou dois eixos polares, e os restantes cartesianos.#
+| Cartesiana	| image::image54.jpeg[image,width=138,height=149]			| [small]#Eixos X, Y e Z correspondem ao plano cartesiano.#
+| Delta		| image::image57.png[image,width=122,height=255]				| [small]#X, Y e Z são transformadas trigonométricas das posições dos três pilares (colunas verticais).#
+| CoreXY 	| image::reprapxy-pequeno.jpg[reprapxypequeno,width=533,height=400]	| [small]#X e Y são transformadas lineares de acordo com o padrão "CoreXY" de deslocamento. Por ser uma transformação relativamente simples de coordenadas, informalmente costuma ser tratada como cartesiana.#
+| SCARA		| image::scara.png[scara,width=601,height=710]				| [small]#**S**elective **C**ompliance **A**rticulated **R**obot **A**rm, ou Braço Robótico Articulado de Conformidade Seletiva, é o nome dessa transformação de eixos comumente usada em máquinas industriais "pick and place" e de linha de montagem de veículos.#
+| Polar		| image::polartheta.png[polartheta,width=466,height=385]			| [small]#Coordenadas polares, ou seja, baseadas em ângulos, são populares nos campos matemáticos, mas em impressoras 3D não são muito práticos, servindo mais como prova de conceito. Alguns modelos de impressora têm apenas um ou dois eixos polares, e os restantes cartesianos.#
 |====
 
 Apesar de separarmos as impressoras 3D de mercado nessas cinco categorias, a verdade é que existem tantos sistemas
@@ -2227,7 +2227,7 @@ reste uma “saliência” na peça. Como são parafusos geralmente bem pequenos
 reforçado preto.
 
 [[tiposparafusos]]
-image:image71.png[image,width=618,height=622]
+image::image71.png[image,width=618,height=622]
 
 * *Barras lisas* +
 São elementos estruturais em que se assentam os eixos (X, Y e/ou Z) da impressora 3D. Geralmente
@@ -2255,7 +2255,7 @@ e existem modificações das deltas que usam outros perfis para usá-lo no lugar
 achar parafusos especializados em seus encaixes.
 
 [[perfilaluminio]]
-image:image72.jpeg[image,width=604,height=353]
+image::image72.jpeg[image,width=604,height=353]
 
 * *Barras roscadas (parafusos infinitos)* +
 São elementos estruturais por vezes usados como elementos imóveis
@@ -2321,10 +2321,10 @@ relação a outros aspectos da construção – por exemplo, rolamentos que usam
 ou mesmo fluidos ou campos magnéticos.
 
 [[barraserolamentos]]
-image:image73.jpeg[image,width=642,height=380]
+image::image73.jpeg[image,width=642,height=380]
 
 [[barraefusocomparados]]
-image:image75.png[image,width=642,height=362]
+image::image75.png[image,width=642,height=362]
 
 * *Buchas* +
 Buchas são peças de material deslizante – geralmente
@@ -2341,7 +2341,7 @@ IGUS, fabricante de buchas de plástico, vende filamentos de impressão 3D para 
 Iglidur I180).
 
 [[buchasdrylin]]
-image:image74.png[image,width=642,height=365]
+image::image74.png[image,width=642,height=365]
 
 * *Patins e trilhos* +
 Patins e trilhos são outro modo de se ter _guias lineares_ que não usam as barras lisas
@@ -2366,7 +2366,7 @@ A _Teoria de Controle_ dada a alunos de Engenharia Mecânica nos ensina que há 
 *malha aberta* e **malha fechada**.
 
 [[malhaabertamalhafechada]]
-image:image76.png[image,width=642,height=348]
+image::image76.png[image,width=642,height=348]
 
 * *Malha aberta* - é um sistema em que a saída (resultado) não exerce qualquer ação sobre o sinal de
 controle, não sendo comparada com uma saída de referência esperada. Em outras palavras, é um sistema em que
@@ -2399,7 +2399,7 @@ e ligar a chave – e o controlador imediatamente pára o motor, pois ele não p
 o motor girando para o sentido positivo distancia o elemento da chave.
 
 [[motorchaveendstop]]
-image:image78.png[image,width=642,height=307]
+image::image78.png[image,width=642,height=307]
 
 Obviamente, algumas variáveis são importantes aqui. A primeira observação a se notar é que se o motor está
 se movendo na direção do endstop, há contato e ele precisa parar, esse tempo de reação entre o contato e
@@ -2504,7 +2504,7 @@ derrete. Essas duas funções são realizadas por partes diferentes do extrusor:
 filamento ser alimentado na segunda parte, que é chamada de hot end ou hotend (“extremidade quente”).¹
 
 [[estruturaextrusorfreecad]]
-image:image80.png[image,width=618,height=395]
+image::image80.png[image,width=618,height=395]
 
 O tracionador e o hotend não necessariamente estarão
 juntos ou mesmo próximos. A primeira distinção é justamente essa:
@@ -2512,9 +2512,9 @@ juntos ou mesmo próximos. A primeira distinção é justamente essa:
 [width="100%",cols="^s,^m,e",frame="topbot",options="header"]
 |====
 | Tipo | Exemplo | Descrição
-| Direct / Monolítico | image:image81.jpeg[image,width=190,height=190] | Tracionador e hotend
+| Direct / Monolítico | image::image81.jpeg[image,width=190,height=190] | Tracionador e hotend
 acoplados
-| Bowden / Filamento guiado | image:image82.png[image,width=215,height=185] | tracionador e hotend separados
+| Bowden / Filamento guiado | image::image82.png[image,width=215,height=185] | tracionador e hotend separados
 |====
 
 Em impressoras 3d estilo __delta__, no hotend, você tem ainda a estrutura que une os braços chamada de effector:
@@ -2546,8 +2546,8 @@ como a engrenagem dentada que tem contato com o filamento recebe força do motor
 [width="100%",cols="^s,^m,e",frame="topbot",options="header"]
 |====
 | Tipo | Exemplo | Descrição
-| Engrenado ou _Geared_ | image:image84.jpeg[image,width=206,height=154] | Funciona com a tração transferida por engrenagens
-| __Direct Drive__ | image:image85.jpeg[image,width=203,height=152] | O pinhão traciona
+| Engrenado ou _Geared_ | image::image84.jpeg[image,width=206,height=154] | Funciona com a tração transferida por engrenagens
+| __Direct Drive__ | image::image85.jpeg[image,width=203,height=152] | O pinhão traciona
 diretamente o filamento
 |====
 
@@ -2571,10 +2571,10 @@ Os hotends se dividem, por sua vez, em:
 [width="100%",cols="^s,^m,e",frame="topbot",options="header"]
 |====
 | Tipo | Exemplo | Descrição
-| PEEK + metal | image:image87.jpeg[image,width=212,height=157] | Plástico resistente a calor
+| PEEK + metal | image::image87.jpeg[image,width=212,height=157] | Plástico resistente a calor
 e isolante térmico.
-| Metal com PTFE interno | image:image88.jpeg[image,width=211,height=157] | O hotend é quase inteiramente de metal, mas tem um pequeno tubo interno de PTFE para o filamento.
-| Todo de metal (all-metal) |  image:image89.png[image,width=212,height=163] | O hotend é de metal, sem o tubo de PTFE.
+| Metal com PTFE interno | image::image88.jpeg[image,width=211,height=157] | O hotend é quase inteiramente de metal, mas tem um pequeno tubo interno de PTFE para o filamento.
+| Todo de metal (all-metal) |  image::image89.png[image,width=212,height=163] | O hotend é de metal, sem o tubo de PTFE.
 |====
 
 Os hotends do primeiro tipo – usando um plástico chamado PEEK (polyether ether ketone, poliéter-éter-cetona)
@@ -2606,11 +2606,11 @@ Um hotend all-metal de mercado com um “termistor” comum (componente medidor 
 repraps) trabalha bem até uns 300°C, propício para filamentos de maior ponto de fusão como policarbonato,
 poliacetal e alguns nylons.
 
-image:image90.jpeg[image,width=642,height=526]
+image::image90.jpeg[image,width=642,height=526]
 
 === Revestimento do bloco aquecedor
 
-image:image91.jpeg[image,width=642,height=363]
+image::image91.jpeg[image,width=642,height=363]
 
 O revestimento de bloco aquecedor (termo em inglês: “hotend silicone socks”, ou meias de silicone
 para hotend) é uma invenção da empresa E3D que ajuda consideravelmente na eficiência do aquecimento
@@ -2620,7 +2620,7 @@ moldes impressos e silicone de molde de alta temperatura para a partir do molde 
 seu hotend; o primeiro molde desses foi disponibilizado pelo usuário _thefrog_ no sítio thingiverse em
 http://www.thingiverse.com/thing:1432346[_http://www.thingiverse.com/thing:1432346_].
 
-image:image92.png[image,width=642,height=367]
+image::image92.png[image,width=642,height=367]
 
 === Dissipação
 
@@ -2629,7 +2629,7 @@ passiva é o calor ser dissipado naturalmente pela geometria do hotend, sem nece
 – como pelas aletas, por exemplo. Dissipação ativa é usar uma peça auxiliar, geralmente uma ventoinha,
 para auxiliar a expulsão de calor do pescoço dissipador e impedir que a zona de aquecimento suba muito.
 
-image:image93.png[image,width=559,height=660]
+image::image93.png[image,width=559,height=660]
 
 A refrigeração ativa é especialmente importante para materiais com alto calor específico (como o PLA, que
 tem 2060 J/Kg°C a 190°C), pois eles demoram mais para dissipar o calor e este tende portanto a subir mais pelo
@@ -2649,7 +2649,7 @@ do nozzle, enquanto o PLA sai líquido e ainda sucumbe um pouco após tocar a me
 diferença deste comportamento para as peças impressas: as de PLA tenderão a adquirir um aspecto mais caído,
 mais “derretido”, por acomodação do filamento ainda não totalmente solidificado.
 
-image:image94.png[image,width=642,height=454]
+image::image94.png[image,width=642,height=454]
 
 Por outro lado, como veremos mais à frente com o ABS, há materiais que você não quer que esfriem mais rápido
 pois sofrem efeitos de empenamento (“warp”) e rachaduras. Como lidar com isso? A solução mais frequente
@@ -2659,7 +2659,7 @@ durante a impressão, o que significa que ela tem que ser microcontrolada, ou co
 rege o processo de impressão. Esta ventoinha é chamada de _ventoinha do bico_ (nozzle fan), em contraste com
 ventoinha do pescoço dissipador.
 
-image:image95.jpeg[image,width=642,height=553]
+image::image95.jpeg[image,width=642,height=553]
 
 1 – Há uma grande variação de uso na nomenclatura, o que é esperado em um mercado de massa sem padrões
 industriais impostos. Algumas pessoas e empresas usam “extrusora” ao invés de “extrusor”; outras usarm
@@ -2781,7 +2781,7 @@ por vez, com filamentos diferentes que se solidificam ao sair, você não conseg
 possa “fundi-los” imprimindo um sobre o outro. Este último problema, aliás, acabou levando ao design seguinte:
 extrusores misturados e combinadores.
 
-image:image96.png[image,width=291,height=277]image:image97.png[image,width=289,height=275]
+image::image96.png[image,width=291,height=277]image::image97.png[image,width=289,height=275]
 
 [[IRRELEVANTE extrusores_independentes]]É interessante ainda notar que existem alguns designs de extrusores
 múltiplos que tentam resolver esses problemas de variadas formas, uma delas sendo extrusores independentes
@@ -2792,7 +2792,7 @@ existem soluções comerciais, e, melhor ainda, open-source aparecendo, como a B
 de eletrônica, firmware e até fatiador (Cura) especialmente modificado pra tratar com essa cinemática estão
 em https://github.com/BCN3D[_https://github.com/BCN3D_].
 
-image:image98.png[image,width=582,height=510]
+image::image98.png[image,width=582,height=510]
 
 Além dos extrusores independentes, existem duas outras modalidades que têm se mostrado bastante viáveis e
 ganhado suporte nos fatiadores e firmwares, que são os extrusores _combinadores_ e __misturadores__.
@@ -2839,7 +2839,7 @@ novas já implementam até os comandos para misturas subtrativas de cores CMY(K)
 tinta. Um plugin de pós-processamento para o fatiador Cura 15.04 que faz a mistura de acordo com algumas receitas
 consta do thingiverse: http://www.thingiverse.com/thing:1664880[_http://www.thingiverse.com/thing:1664880_]
 
-image:image99.png[image,width=462,height=400]image:image100.png[image,width=290,height=339]image:image101.png[image,width=294,height=339]
+image::image99.png[image,width=462,height=400]image::image100.png[image,width=290,height=339]image::image101.png[image,width=294,height=339]
 
 === *Enfim, o bico*
 
@@ -2854,7 +2854,7 @@ estudo⁴ sobre a corrosão que tais filamentos causam em bicos de latão conven
 a venda do seu bico de aço inoxidável, muito mais propício para essas impressões (ao mesmo tempo que é em
 tese adequado para contato com comida).
 
-image:image102.jpeg[image,width=642,height=547]
+image::image102.jpeg[image,width=642,height=547]
 
 Apesar de aço não ter a condutividade térmica tão alta quanto latão (o que poderia, em teoria, aumentar a
 probabilidade de entupimentos), materiais avançados para impressoras 3D FFF realmente estão começando a surgir,
@@ -2862,7 +2862,7 @@ inclusive com metais misturados, e para certos usos até mesmo o aço pode se mo
 de financiamento coletivo no _kickstarter_ financiou com sucesso a fabricação de um bico feito de tungstênio⁵,
 o metal mais duro conhecido!
 
-image:image103.png[image,width=642,height=441]
+image::image103.png[image,width=642,height=441]
 
 Ainda que não haja um padrão obrigatório de medidas de bicos, a grande maioria dos bicos “genéricos”
 usa uma rosca M6 (6mm de diâmetro) para se conectar ao bloco aquecedor de alumínio (Flashforge, Wanhao i3 e
@@ -2941,7 +2941,7 @@ elemento com eficiência muito maior, que é a ventoinha _radial_ ou __centrífu
 tamanho e preço: as variedades encontradas são mais caras que as comuns e geralmente de 40 ou 50mm de lado,
 sendo praticamente impossível encontrar uma de 30mm.
 
-image:image104.png[image,width=546,height=570]
+image::image104.png[image,width=546,height=570]
 
 Notas:
 
@@ -3232,7 +3232,7 @@ seu uso praticamente indolor, e com o líquido sendo também facilmente dissolv�
 não seja imediata. O produto A.Bond funciona muito bem tanto para ABS quanto PLA, PETG e Tritan, mas não parece
 funcionar bem para alguns plásticos menos usados, como policarbonato e PEAD.
 
-image:image105.png[image,width=642,height=238]
+image::image105.png[image,width=642,height=238]
 
 O leitor se sentirá confuso: com tantas opções, qual usar? É impossível receitar qualquer um desses métodos
 sem cometer injustiça com os outros, e o fato de todo serem usados com seus proponentes apaixonados significa que
@@ -3341,7 +3341,7 @@ compensando a inclinação. “Recebi o comando para ir para o ponto (10,10,5) n
 mesa, este ponto está na verdade em (10,11,4), então é para esta coordenada que vou me mover.” Como estes pontos
 serão, dada a inclinação pequena, bastante próximos, a impressão ocorre compensada sem problemas ou distorções.
 
-image:image106.png[image,width=622,height=500]
+image::image106.png[image,width=622,height=500]
 
 Não que não haja desafios e novos problemas criados pelo autonivelamento. Pelo contrário, já nos deparamos com
 um, que é a necessidade de dois componentes novos para a impressora: um endstop mecânico para medir a distância
@@ -3388,7 +3388,7 @@ que age em ímãs. Um ímã permanente comum de mercado, como os de neodímio, t
 ímãs de pólos iguais de frente e tenta juntá-los, sentirá que eles se repelem. Se virar um dos ímãs de modo
 que seu pólo sul fique virado para o norte do outro, eles se atrairão.
 
-image:image107.png[image,width=473,height=437]
+image::image107.png[image,width=473,height=437]
 
 Tratamos nesse caso dos ímãs permanentes, mas podemos utilizar de uma conformação de materiais tais que ao
 passar uma corrente elétrica em determinado sentido, a indução criada pela corrente cria um eletroímã, um
@@ -3396,7 +3396,7 @@ passar uma corrente elétrica em determinado sentido, a indução criada pela co
 eletroímãs geralmente são feito com uma bobina de fio de cobre em volta de um material ferroso e um exemplo
 bem simples é um prego com fio enrolado ligado a uma bateria.
 
-image:image108.png[image,width=480,height=315]
+image::image108.png[image,width=480,height=315]
 
 *DC* ou **AC**: Repare que a bateria da ilustração é uma fonte de _corrente contínua_ ou _DC_ (do inglês
 “direct current”), isto é, o prego permanece imantado com uma corrente que não varia (ainda que somente em
@@ -3407,7 +3407,7 @@ de “indutância” e o prego mudando de orientação magnética várias vezes 
 alternada basicamente liga e desliga (ou inverte) a corrente várias vezes por segundo, e se colocarmos isso em
 um gráfico em relação ao tempo, teremos uma _forma de onda_ recorrente.
 
-image:image109.png[image,width=642,height=298]
+image::image109.png[image,width=642,height=298]
 
 Numa impressora 3D, a alimentação dos componentes é quase universalmente **DC**, obtida através de uma fonte
 de tensão cujos detalhes veremos na seção de alimentação, e que transforma a corrente alternada da tomada em
@@ -3422,7 +3422,7 @@ conduz corrente quando isso acontece. Esse contato pode produzir faíscas e como
 acaba levando ao desgaste das partes. Por outro lado, esses motores têm uma construção simples e barata, e só
 necessitam de dois fios (sinal e terra) para funcionar.
 
-image:image110.png[image,width=642,height=443]
+image::image110.png[image,width=642,height=443]
 
 Todos os motores que trataremos são *sem escova* (__brushless__). A escova é a peça condutora de eletricidade
 que faz o contato intermitente durante o giro do rotor. Nos motores sem escova, as bobinas serão elementos fixos no
@@ -3434,7 +3434,7 @@ apenas uma bobina ou duas bobinas em 180°, o ímã poderia ir tanto no sentido 
 se alinhar com elas. Vamos usar quatro (seria possível usar três, mas o controle ficaria mais complexo). Vamos
 supor ainda que neste caso, vamos deixar as bobinas sempre energizadas com corrente, seja direta, seja invertida.
 
-image:image111.png[image,width=642,height=384]
+image::image111.png[image,width=642,height=384]
 
 O motor simples da ilustração exemplifica bem o que se passa nos motores de mercado; a diferença é que os
 últimos são bem mais complexos. Um NEMA17 comum de reprap tem este ângulo de passo de 1,8 graus, o que quer
@@ -3444,13 +3444,13 @@ de 4 kgf.cm, uma grandeza que representa a resistência que o motor terá para s
 Da posição em que está, o motor da ilustração pode continuar girando no sentido anti-horário se fizermos o
 seguinte: invertemos _somente_ as bobinas 4 e 2. Veja o que acontece.
 
-image:image112.png[image,width=642,height=273]
+image::image112.png[image,width=642,height=273]
 
 O padrão no entanto muda com esta configuração: se invertemos as bobinas 1 e 3, o motor dará um passo no sentido
 __horário__, ou seja, voltará um passo. Para continuarmos girando no sentido anti-horário, precisamos inverter
 as 4 bobinas.
 
-image:image113.png[image,width=642,height=317]
+image::image113.png[image,width=642,height=317]
 
 No final desse exercício, o leitor pode estar pensando: por que deixar todas as bobinas ligadas em algum sentido? É
 possível, para qualquer motor, ter as bobinas desligadas. A finalidade foi mostrar que podemos controlar os
@@ -3462,7 +3462,7 @@ de excitação de duas fases*_ e é caracterizada por torque melhorado. Em motor
 intercalam: 6 bobinas, e temos 1 + 3 + 5 formando uma fase, 2 + 4 + 6 formando outra (figura XXa). Do mesmo modo,
 com 8 bobinas teremos 1+3+5+7 e 2+4+6+8 (figura XXb)
 
-image:image114.png[image,width=642,height=342]
+image::image114.png[image,width=642,height=342]
 
 **Polaridade**: considerando um motor de duas fases, a fiação que liga as bobinas costuma ser arranjada de dois
 jeitos distintos nos motores de passo: nos motores **bipolares**, uma fase corresponde a exatamente um fio de
@@ -3471,7 +3471,7 @@ de modo que a comutação é facilitada – uma metade por vez. Para o mesmo nú
 unipolar tem mais fios que um bipolar, ainda que algumas vezes os fios centrais das fases sejam conectados em um
 fio único. O diagrama extremamente simplificado a seguir pode ajudar a entender melhor:
 
-image:image115.png[image,width=642,height=320]
+image::image115.png[image,width=642,height=320]
 
 Apesar de o motor bipolar ter uma construção mais “simples” (menos fios), gerar passos nele é mais
 complicado. Você pode ter a corrente em *ambos* os sentidos no fio, positivo e negativo (daí o **bi**polar),
@@ -3479,7 +3479,7 @@ enquanto que o motor **uni**polar só é energizado em *um* sentido em cada meta
 do motor unipolar _mais simples_ e o do bipolar _mais complexo_ do ponto de vista de elementos de circuito e
 programação do microcontrolador.
 
-image:image116.jpeg[image,width=642,height=645]
+image::image116.jpeg[image,width=642,height=645]
 
 Se ainda assim for difícil para que o leitor abstraia o movimento, existem excelentes recursos na internet com
 animações detalhadas do que acontece. Alguns exemplos são recomendados:
@@ -3499,7 +3499,7 @@ frames impressos em 3D e leds mostrando quais partes estão energizadas. O proje
 entender e já com muitas derivações, aparece no thingiverse com o título “3D Printed Stepper Motor v1.1”:
 http://www.thingiverse.com/thing:986260[_http://www.thingiverse.com/thing:986260_]
 
-image:image117.png[image,width=642,height=501]
+image::image117.png[image,width=642,height=501]
 
 === Micropassos
 
@@ -3509,7 +3509,7 @@ de ângulo puxando o motor “para os dois lados” ao mesmo tempo. Imaginemos q
 queiramos só andar 45°, ao invés de 90°. Tudo o que precisamos fazer é, ao invés de inverter as 4 bobinas,
 inverter só a 2 e 4.
 
-image:image118.png[image,width=642,height=317]
+image::image118.png[image,width=642,height=317]
 
 Esta estratégia é conhecida como *meio-passo* (__half-step__) e sua extrapolação para maiores divisões se
 batizou de *micropassos* (__microsteps__). Alcançamos 45° porque as forças de atração são iguais; mas se
@@ -3517,14 +3517,14 @@ mexermos com a intensidade da corrente que passa em cada conjunto de fios, conse
 colocarmos *100%* da corrente nas bobinas *1* e *3* e *41,42%* da corrente nas bobinas *2* e **4**, conseguiremos
 uma atração que resulta em um ângulo de ¾ de 90° (67,5°) em relação à 4.
 
-image:image119.png[image,width=642,height=273]
+image::image119.png[image,width=642,height=273]
 
 Não se preocupe muito com os números para chegar a esses ângulos, o importante é o princípio; mas para
 informação, foi usado cálculo de seno e cosseno para chegar aos valores. Se estivermos no caso típico de dirigir
 o motor com vários pulsos para uma posição, o gráfico da corrente relativa ao tempo mostrará a aproximação
 quadriculada de uma senóide.
 
-image:image120.gif[image,width=517,height=323]
+image::image120.gif[image,width=517,height=323]
 
 Outras proporções de correntes podem nos levar a divisões ainda menores: 1/8, 1/16, 1/32 e em alguns casos
 é possível chegar a 1/256 de divisão de passo! __Perceba no entanto que o torque quando se usa micropasso é
@@ -3613,7 +3613,7 @@ componente eletrônico produza. Se pedimos uma corrente de 0,7812465272 Ampéres
 com este valor. Se queremos ao longo do tempo que a tensão siga a curva de uma senóide, podemos fazer isso com
 precisão. Se precisamos de uma potência que siga uma curva arbitrária ao longo do tempo, o ajuste será perfeito.
 
-image:image121.png[image,width=478,height=285]
+image::image121.png[image,width=478,height=285]
 
 E isso tudo, é claro, só existirá em contos de fadas tecnológicos. Na vida real, há custos e aproximações
 e em impressoras de baixo custo como as repraps, um conjunto limitado de dispositivos eletrônicos a usar. O
@@ -3625,7 +3625,7 @@ ligada ou desligada) e gera uma saída da intensidade desejada. Neste caso terem
 do número de bits da entrada que usamos; se temos 8 bits, teremos 256 saídas possíveis (2⁸); se temos 16 bits,
 teremos 65.536 saídas possíveis (2¹⁶).
 
-image:image122.png[image,width=478,height=329]
+image::image122.png[image,width=478,height=329]
 
 Entretanto, ainda que DACs não sejam caros isoladamente, uma impressora 3D tem vários dispositivos a serem
 controlados e os microcontroladores baratos como o Arduino Mega não vêm com tais elementos. Se houver uma
@@ -3651,7 +3651,7 @@ Em muitos casos, e no caso específico das impressoras 3D de mercado, o PWM não
 pulso; tem também um pino de _sinal_ ou _direção_ (positiva ou negativa). Não ficaríamos restritos a 5V ou 0V;
 teríamos também -5V.
 
-image:image123.png[image,width=478,height=329]
+image::image123.png[image,width=478,height=329]
 
 *Mas se o sinal é diferente, o resultado também não será diferente?* Ou, já que estamos enviando um sinal _muito
 diferente_ do que iríamos mandar, o dispositivo no final desse circuito não vai fazer algo também diferente
@@ -3725,14 +3725,14 @@ e estator se alinham de modo que a relutância magnética é mínima, através d
 representam palavras-chave de pesquisa para o leitor, visto que tratar deste assunto sairia muito do escopo do
 livro¹. São baratos e usados em motores pequenos como em mesas de microposicionamento.
 
-image:image124.png[image,width=451,height=310]
+image::image124.png[image,width=451,height=310]
 
 * *Motores Híbridos* – são esses os usados nas impressoras 3D “reais”, e se aproveitam das duas
 estratégias. Ao invés de usarem somente atração eletromagnética, usam o efeito de caminho de menor relutância,
 se valendo de imantação permanente axial ao invés de radial, isto é, temos dois cilindros dentados, um imantado
 positivo e outro imantado negativo, como na foto e diagrama a seguir.
 
-image:image125.png[image,width=642,height=375]
+image::image125.png[image,width=642,height=375]
 
 Motores híbridos usam a mesma estratégia para passos e micropassos que o motor simplificado que ilustramos. Para
 uma visão animada da polarização e movimento com detalhes desses motores, recomendamos a referência de internet
@@ -3768,7 +3768,7 @@ Servos não são desconhecidos no universo _Maker_ – pelo contrário, em suas 
 bastante populares. Aparecem ubiquamente nos aeromodelos, nas impressoras 3D para subir e baixar sensores de
 nivelamento de mesa, e nos projetos impressos de máquinas simples.
 
-image:image126.png[image,width=411,height=491]
+image::image126.png[image,width=411,height=491]
 
 Os servos podem usar diversas tecnologias de motores subjacentes, desde motores de passo a motores AC e DC e até
 mesmo motores pneumáticos ou hidráulicos. O que o faz ser um servo é a presença de um _encoder rotatório_ ou
@@ -3783,11 +3783,11 @@ eletrônica a função de __driver__. Este circuito, especialmente nos motores d
 usados em CNCs, é consideravelmente maior que um driver de impressora 3D doméstica. Nos pequenos, porém, ele
 é até incluído no corpo do servo.
 
-image:image127.png[image,width=545,height=499]
+image::image127.png[image,width=545,height=499]
 
 Por causa do encoder em sua construção, servos são mais longos que seus motores equivalentes.
 
-image:image128.png[image,width=501,height=405]
+image::image128.png[image,width=501,height=405]
 
 No caso mais comum, o posicionamento de um servo é feito enviando ao seu driver um sinal PWM. Atipicamente,
 no entanto, a posição máxima não compreende a um duty cycle de 100%; nos pequenos servos como o SG90, um PWM
@@ -3874,7 +3874,7 @@ e a instalação, calibração e uso dele com RAMPS pode ser visto
 em https://www.youtube.com/watch?v=T-pY4OZzvaU[_https://www.youtube.com/watch?v=T-pY4OZzvaU_]. No momento da
 publicação, o dispositivo custa, sem frete, 49 dólares e com motor, 65 dólares.
 
-image:image129.png[image,width=642,height=464]
+image::image129.png[image,width=642,height=464]
 
 == Microcontrolador
 
@@ -3891,7 +3891,7 @@ envolver soldagens industriais. Em 2010 já aparecia a Gen4, e abreviando a hist
 iteração oficial desta linha de placas microcontroladoras: a Geração 7, feita com o intuito de facilitar ao
 máximo ao hobbyista de eletrônica montar em casa ou na garagem, com PCB de um lado e conectores soldáveis a mão.
 
-image:image130.jpeg[image,width=622,height=486]
+image::image130.jpeg[image,width=622,height=486]
 
 Um fato digno de nota é que a versão brasileira da Gen7 (Gen7BR2), com componentes mais fáceis de encontrar no
 mercado brasileiro, feitas pelo grupo ReprapBR, constam no site oficial, e as primeiras versões das impressoras
@@ -3930,7 +3930,7 @@ sigla de **R**eprap **A**rduino **M**ega **P**ololu **S**hield. O nome especific
 adicional, encaixável nos pinos) para o _Arduino Mega_ especificamente e com componentes __Pololu__. Pololu é
 a marca dos drivers de motores de passo acopláveis – do tipo **A4988**.
 
-image:image131.jpeg[image,width=549,height=539]
+image::image131.jpeg[image,width=549,height=539]
 
 A placa RAMPS e os _drivers_ são open-source, e a página da RAMPS 1.4 do projeto reprap se destaca por ser uma
 das páginas mais bem documentadas de projeto de hardware open-source até hoje², com não só todos os diagramas
@@ -3946,7 +3946,7 @@ um diodo no meio do slot de driver do eixo X, o diodo D1, a alimentação é rep
 ele é ligado em conjunto com o resto da impressora. Se a tensão[[FEITO_ramps]] a ser usada pelo conjunto não
 for 12V, ou se a corrente for sujeita a interferências, esse diodo deve ser removido e a conexão deixada em aberto.
 
-image:image132.png[image,width=586,height=836]
+image::image132.png[image,width=586,height=836]
 
 === O que um controlador de impressão 3D deve ter
 
@@ -4006,7 +4006,7 @@ dos pontos e velocidade para gerenciá-la a contento. Existem no mercado, no ent
 gerenciamento de memória, gráficos e animações. Assim, mesmo o microcontrolador mais simples pode ter saída
 gráfica elegante e até controles por toque.
 
-image:image133.png[image,width=642,height=375]
+image::image133.png[image,width=642,height=375]
 
 === Um pouco mais sobre os drivers da RAMPS
 
@@ -4028,7 +4028,7 @@ configurado pelo arranjo de três jumpers abaixo do encaixe do driver. Geralment
 “conectado” equivalem ao número máximo de micropassos do driver, e outros arranjos a número menor de
 micropassos.
 
-image:image134.png[image,width=642,height=469]
+image::image134.png[image,width=642,height=469]
 
 * **Corrente máxima que suporta**. É importante que o driver seja “compatível” com o motor usado. Alguns
 motores podem exigir alta corrente como 1,8A para funcionamento (aparece nas especificações como corrente
@@ -4054,11 +4054,11 @@ do Rs é indicado no __datasheet__, mas já estamos assumindo que não o temos e
 é saber localizar, no driver, os componentes de interesse. O primeiro ponto de interesse é saber onde ficam os
 “terras” do driver. É indicado na própria placa, na parte de baixo:
 
-image:image135.png[image,width=642,height=332]
+image::image135.png[image,width=642,height=332]
 
 Virando os drivers, podemos identificar o resto dos componentes nas placas:
 
-image:image136.png[image,width=601,height=616]
+image::image136.png[image,width=601,height=616]
 
 No caso do DRV8825, implementações dele que usam _Rs_ diferente de 0,1Ω são virtualmente inexistentes, mas
 para o A4988 os valores de 0,05Ω e 0,2Ω são comumentes encontrados.
@@ -4120,12 +4120,12 @@ prova positiva – *vermelha* – deve ser encostada no **parafuso do potenciôm
 terra mais distante do potenciômetro, para evitar curtos acidentais. Alternativamente, a ponta de prova negativa
 pode ser usada no *negativo da fonte* ou das *entradas da RAMPS* também.
 
-image:image138.png[image,width=642,height=398]
+image::image138.png[image,width=642,height=398]
 
 *A chave de fenda ou philips de plástico* (“ceramic screwdriver” nos sites de compra) pode ser difícil de
 adquirir. Uma alternativa é imprimir em PLA uma substituta.
 
-image:image139.png[image,width=642,height=475]
+image::image139.png[image,width=642,height=475]
 
 === Modo de decaimento: quando e como ajustar
 
@@ -4180,7 +4180,7 @@ http://hydraraptor.blogspot.com.br/2012/04/stepstuck.html[_http://hydraraptor.bl
 * DRV8825. O driver tem um pino “DECAY” especialmente pra isso, geralmente em GND (terra) para modo
 misto. Ligando-se o pino a Vcc, ele passa a atuar em modo de decaimento rápido.
 
-image:image140.jpeg[image,width=509,height=417]
+image::image140.jpeg[image,width=509,height=417]
 
 === Visão retroativa é 20/20: os defeitos da RAMPS
 
@@ -4226,7 +4226,7 @@ tempos atuais* – microcontrolador de 8 bits lento (16 MHz), saída para apenas
 ou wifi e outros problemas semelhantes são decorrentes do baixo custo e da ṕoca em que foi concebida. Hoje já
 temos controladores muito mais sofisticados, com telas coloridas e capacidade até de fatiar diretamente peças 3D.
 
-image:image141.png[image,width=642,height=448]
+image::image141.png[image,width=642,height=448]
 
 === Outros controladores de impressão: a ascensão dos ARM
 
@@ -4280,7 +4280,7 @@ têm ganhado notoriedade pela compatibilidade com o Smoothieware e muitas impres
 porque apesar de baseadas em design open-source não liberaram os fontes de seus designs e se encontram, atualmente,
 em uma situação de antagonismo com a comunidade e revendedores da Smoothieboard.
 
-image:image142.png[image,width=642,height=326]
+image::image142.png[image,width=642,height=326]
 
 Maiores referências sobre outros controladores, especialmente os baseados em ARM, podem ser encontradas nos
 seguintes endereços online:
@@ -4304,7 +4304,7 @@ as conexões. Essa é a idéia do controlador “Re-ARM” da Panucatt, que roda
 pinos compatíveis com 5V, um microcontrolador de 32 bits de 100 MHz e várias opções de conectividade:
 http://www.panucatt.com/Re_ARM_for_RAMPS_p/ra1768.htm[_http://www.panucatt.com/Re_ARM_for_RAMPS_p/ra1768.htm_]
 
-image:image143.png[image,width=642,height=421]
+image::image143.png[image,width=642,height=421]
 
 * Muita confusão vem do fato que um embarcado ARM popular de hobbyistas, o __Raspberry Pi__, é comumente visto
 conectado ao hardware de impressoras. A confusão vem de supor que ele está servindo como o controlador de impressão
@@ -4337,7 +4337,7 @@ programação de microcontroladores. Para fazer um led piscar, nada de usar um J
 flags e fusos de um IDE pesado e cheio de menus, de ficar o dia inteiro lendo o manual da plaquinha. Ao invés
 disso, basta apertar um botão:
 
-image:image144.png[image,width=642,height=509]
+image::image144.png[image,width=642,height=509]
 
 Já dissemos que a história da reprap é entremeada com a do Arduino, e isso se estende ao IDE. IDE que foi e
 continua sendo um alvo predileto de reclamação por profissionais que mexem com embarcados, dada sua simplicidade:
@@ -4345,7 +4345,7 @@ dizem não ter recursos avançados de edição, de não oferecer completação d
 de implementação e, sobretudo, de não ser propícia para programas complexos de vários módulos e cabeçalhos,
 capotando sob seus próprios defeitos após as primeiras centenas de linhas de código.
 
-image:image145.png[image,width=642,height=475]
+image::image145.png[image,width=642,height=475]
 
 Tais acusações não são totalmente desprovidas de mérito: a simplicidade do IDE Arduino realmente pesa contra a
 escrita de código muito complexo. O fator faltante aqui foi considerar o peso do ecossistema open-source: muitas
@@ -4435,7 +4435,7 @@ o usuário novato e o fato de serem em inglês também não ajuda; algumas descr
 referências em outros arquivos e, por fim, para mudar esses valores o usuário deve abrir o arquivo de projeto
 do firmware no IDE Arduino e, depois de mudar o que precisa, compilar e subir para o microcontrolador ligado à USB.
 
-image:image146.png[image,width=642,height=490]
+image::image146.png[image,width=642,height=490]
 
 O _Repetier Firmware_ funciona de forma semelhante ao Marlin: ele usa um único arquivo Configuration.h que o usuário
 deve editar para configurar a sua impressora. No entanto, a Hot-World GmbH procurou atingir um público mais leigo
@@ -4444,7 +4444,7 @@ usuário configure toda a placa usando o navegador, e no fim baixe o IDE Arduino
 e configurado. Ele ainda tem que conectar a placa da USB, mandar compilar e subir o firmware para a placa, mas de
 forma bem menos propensa a erros.
 
-image:image147.png[image,width=642,height=569]
+image::image147.png[image,width=642,height=569]
 
 Outros firmwares tratam a questão da dificuldade de mexer com estes ajustes de máquina com estratégias diversas. O
 __Teacup__, por exemplo, vem com um programa configurador gráfico em python; o _Smoothieware_ permite que a
@@ -4502,7 +4502,7 @@ de parafusos de saída, um para o terra e outro para a fase (a tensão positiva,
 ainda um parafuso de ajuste de tensão (**V ADJ**), ventoinha interna com aberturas para refrigeração e seletor
 lateral 127V/220V de entrada.
 
-image:image148.png[image,width=642,height=409]
+image::image148.png[image,width=642,height=409]
 
 O nome de fonte “industrial” se deve à sua utilização como componente genérico de equipamentos da indústria
 (compare com as fontes de tensão como as de laptop, que também são fontes chaveadas mas “fechadas” e com
@@ -4527,7 +4527,7 @@ para a fonte, de modo que um trabalho de impressão pode ligar a impressora ante
 tendo grande economia de energia. E de bônus, a fonte ainda disponibiliza uma trilha de sinal de 5VSb (+5V Standby,
 ou +5V de repouso) que pode ser usada para energizar um raspberry pi mesmo com o resto desligado.³
 
-image:image149.png[image,width=642,height=360]
+image::image149.png[image,width=642,height=360]
 
 Notas:
 
@@ -4580,14 +4580,14 @@ três pinos R, G e B que receberão uma tensão variável de 0 a 12V para a inte
 e um de Vcc (tensão de referência – 12V). Lembrando que esses pinos terão que receber potência, então um
 circuito adicional será necessário.
 
-image:image150.jpeg[image,width=642,height=388]
+image::image150.jpeg[image,width=642,height=388]
 
 O próximo passo é escolher os pinos da RAMPS (ou do seu controlador) que controlarão cada uma das
 cores. Escolheremos pinos “analógicos” do Arduino (lembrando que não são analógicos “de verdade” mas
 PWM). Uma das fileiras pouco utilizadas do Arduino é a dos __servos__: podemos escolher o três pinos D4, D5 e
 D6 em seguida para ser R, G e B, conforme o usuário _LVMJohnson_ do Instructables fez.
 
-image:image151.png[image,width=642,height=556]
+image::image151.png[image,width=642,height=556]
 
 Somente estas ligações já seriam suficientes para ter os LEDs controláveis por g-code: o comando M42 envia um
 PWM de intensidade no parâmetro S para o pino no parâmetro P:
@@ -4725,7 +4725,7 @@ precisa de várias adaptações e mesmo assim não raramente superaquece com 24V
 24V; aplicar essa tensão em uma mesa de 12V típica como a MK2 (com resistência entre 0,8 a 1,2 Ω) faz passar
 corrente excessiva nas trilhas, queimando o conjunto. As mesas MK2B vêm com contatos diferentes para serem usadas
 em 12V ou 24V: os contatos para 24V fazem a resistência ficar entre 3 e 3,4Ω, permitindo que uma corrente ainda
-dentro das especificações passe pela mesa.  + image:image152.png[image,width=618,height=317] 4.
+dentro das especificações passe pela mesa.  + image::image152.png[image,width=618,height=317] 4.
 *Usar um SSR na mesa* + Essa é uma solução que pode ser considerada “radical” por expor o operador a certos
 riscos de acidente, especialmente por trabalhar com correntes muito altas. Não é recomendada, portanto, para
 iniciantes em eletrônica ou instalações sem proteções elétricas, com cabos expostos ou itens inflamáveis. No
@@ -4746,12 +4746,12 @@ desarmados e reagem com relativa lentidão: é preciso um tipo de relé especial
 ou _*SSR*_ (Solid-State Relay). O relé é um interruptor controlado eletronicamente. Ele tem duas entradas e duas
 saídas. Quando as entradas estão no mesmo potencial ou em aberto (desligada), ele _abre o circuito_ e impede que
 passe corrente na saída. Quando as entradas recebem uma diferença de potencial positiva (ligadas), ele _fecha
-o circuito_ e coloca as saídas em contato.  + image:image153.png[image,width=618,height=398] +
+o circuito_ e coloca as saídas em contato.  + image::image153.png[image,width=618,height=398] +
 Existem SSRs DC e AC, mas a denominação diz respeito aos pinos de saída; a entrada sempre será uma diferença
 de potencial constante. Como a saída que nos interessa ligar a desligar é a energia da tomada – 127V AC ou
 220V AC – o SSR a ser usado em nosso caso é o SSR AC, como ilustrado.
 
-image:image154.png[image,width=642,height=409]
+image::image154.png[image,width=642,height=409]
 
 **Um SSR bem ajustado melhora muito o tempo de aquecimento**, mas representa também um **enorme risco**. Pra
 começar, ele exige alimentação independente pela rede elétrica e por ele passa alta corrente, que é o que
@@ -4768,7 +4768,7 @@ uma corrente tão alta, isso não funciona muito bem; o _overshoot_ e __undersho
 o componente continuar aquecendo ou esfriando faz a temperatura variar enormemente em volta da temperatura-alvo,
 o que traz grande instabilidade para o processo de impressão.
 
-image:image155.png[image,width=642,height=578]
+image::image155.png[image,width=642,height=578]
 
 Outros problemas se acumulam nessa abordagem, como os efeitos indutivos do campo eletromagnético gerado, então
 não é uma boa idéia. Uma abordagem mais fina é preferida e vamos explicar como funciona.
@@ -4873,7 +4873,7 @@ SINAL = K~p~ × [proporcional] + K~i~ × [integral] + K~d~ × [derivada]
 As fórmulas de [proporcional], [integral] e [derivada] de acordo com o tempo são calculadas automaticamente pra
 nós (Ufa! Ainda bem que existem computadores!), mas ainda precisamos saber como achar esses três números.
 
-image:image156.png[image,width=642,height=490]
+image::image156.png[image,width=642,height=490]
 
 Na “vida real”, o algoritmo PID é uma solução otimizada aplicável em diversos tipos de situação,
 especialmente as que envolvem equilíbrio contínuo, e regulando grandezas como fluxo, temperatura, pressão,
@@ -4898,7 +4898,7 @@ uma temperatura tão alta quanto as de trabalho, mas é bom que seja próxima. B
 a mesa aquecida e 180 graus para o extrusor. É dada pelo parâmetro S, como em S100.  * Quantas iterações no
 máximo até acabar o procedimento. O default é 8, parâmetro C8.
 
-image:image157.png[image,width=642,height=599]
+image::image157.png[image,width=642,height=599]
 
 O final do procedimento de auto-afinação de PID vai devolver algo como:
 
@@ -5043,13 +5043,13 @@ tarefa fácil até mesmo pra amadores. Na verdade, até parte do próprio proces
 pode envolver isso, como na calibração de uma delta em que muitas vezes se usa uma caneta ou lápis no extrusor
 antes de inserir o hotend, já que fica mais fácil achar desníveis microscópicos pela força dos traços no papel.
 
-image:image158.png[image,width=642,height=451]
+image::image158.png[image,width=642,height=451]
 
 Esse ecossistema open-source e “lego”, que encoraja a criatividade e expressão, gera as mais variadas formas
 de reprap. Outros exemplos criativos são a delta de 5 metros de altura da SeeMeCNC – que é uma reprap enorme
 usando a placa _RaMBo_ - e a impressora portátil “pendurável” de volume infinito, a HangPrinter.
 
-image:image159.png[image,width=642,height=409]
+image::image159.png[image,width=642,height=409]
 
 Tais curiosidades são demonstrativas do poder de mentes criativas e nem são realmente excepcionais – acompanhar
 notícias relacionadas a impressão 3D passa a nítida noção que a cada dia existe uma excentricidade nova ou um
@@ -5061,7 +5061,7 @@ qualquer massa semi-sólida, geralmente formada pela mistura de ingredientes só
 primeiros extrusores de pasta _universais_ usados em maior escala foi criado em 2012 pelo reprapper _RichRap_
 (Richard Horne) e chamado de “Universal Paste Extruder”.
 
-image:image160.png[image,width=642,height=319]
+image::image160.png[image,width=642,height=319]
 
 A idéia é boa, mas a primeira pergunta que vem à mente do leitor atento é o baixo volume da seringa – apenas
 10ml; se a “impressão” levar mais que isso, é preciso parar todo o conjunto, desmontar e reabastecer a seringa,
@@ -5078,12 +5078,12 @@ Mas, ainda assim, a idéia é promissora, e não faltam iniciativas comerciais q
 outra. Um exemplo é a impressora multi-extrusores Tytan 3D, que tem uma versão de extrusor de pasta em bowden
 com tanque para até 10l de cerâmica.
 
-image:image161.png[image,width=642,height=373]
+image::image161.png[image,width=642,height=373]
 
 Outro exemplo notável, este mais prático para o hobbyista, é a empresa italiana Open Electronics, que comercializa
 um extrusor aquecido com seringa de 60ml que pode ser montado em qualquer reprap:
 
-image:image162.jpeg[image,width=642,height=389]
+image::image162.jpeg[image,width=642,height=389]
 
 Do mesmo modo que encontramos empreendimentos comerciais que usam essa criatividade para contribuir com o
 ecossistema aberto, entanto, também existem os parasitas que desejam achar nela um ponto de vantagem para
@@ -5133,7 +5133,7 @@ com o realmente novo e inexplorado. É a assim batizada __bioimpressão 3D__, ou
 a idéia de utilizar __material vivo__, na forma de tecidos biológicos ou culturas de células, para criar ou
 alterar órgãos, sistemas e estruturas tridimensionais.
 
-image:image163.png[image,width=602,height=551]
+image::image163.png[image,width=602,height=551]
 
 E é __aí__, no **extrusor**, que reside a maior dificuldade. Em como conter, tracionar, conservar e encapsular esse
 material biológico, incluindo células e biomoléculas. Não é qualquer matéria-prima: não se pode simplesmente
@@ -5182,7 +5182,7 @@ Uma estratégia básica de lidar com biotintas é ter dois materiais: um de estr
 com as células vivas. Um extrusor especial despeja as gotículas celulares por um bico enquanto extrusa o material
 protetor (geralmente um hidrogel compósito, como alginato misturado com gelatina) em volta.
 
-image:image164.png[image,width=606,height=463]
+image::image164.png[image,width=606,height=463]
 
 No estágio atual da bioimpressão 3D, temos iniciativas open-source como a bioimpressora 3D _*Renegade*_ da
 empresa Ourobotics, assim como alguns projetos menores de equipamentos semelhantes de cunho biológico³. No
@@ -5239,7 +5239,7 @@ e cada componente do dímero um **monômero**. Mas os polímeros tendem a contin
 um extremo se liga a outro monômero, a do outro também, e por aí se estendem, até formarem filetes moleculares
 extremamente longos e de números variáveis de monômeros.
 
-image:image165.png[image,width=618,height=566]
+image::image165.png[image,width=618,height=566]
 
 Muitos fenômenos e reações diferentes podem fazer as moléculas se unirem de forma polimérica, desde reações
 químicas “convencionais” usando catalisadores até processos físicos e químicos mais elaborados como
@@ -5339,7 +5339,7 @@ ao descolamento da peça da superfície. Ainda outro exemplo: duas áreas contí
 espontaneamente por as duas esfriarem de tal modo que a força de contração nelas “puxa” os átomos para
 seus respectivos centros de massa. Esse último fenômeno ganhou o apelido de __delaminação__.
 
-image:image166.jpeg[image,width=572,height=378]
+image::image166.jpeg[image,width=572,height=378]
 
 Para arrematar, plásticos mais resistentes ao calor (como policarbonato e ABS) terão temperatura de transição
 vítrea maior, o que quer dizer que têm um intervalo maior de temperaturas em que ficam no estado sólido. É o
@@ -5367,7 +5367,7 @@ tem temperatura de transição vítrea começando em 105°C, por exemplo, 85°C 
 a diferença de temperaturas entre várias da peça fica sempre mínimo, e uma vez a impressão termine, basta
 abaixar a temperatura vagarosamente para a peça estabilizar.
 
-image:image167.png[image,width=642,height=352]
+image::image167.png[image,width=642,height=352]
 
 Nas impressoras RepRap, em que o baixo custo é um imperativo, a câmara aquecida, um componente que é tipicamente
 dispendioso para construir e consumidor de muita energia, foi substituído pela __mesa aquecida__. Além de gastar
@@ -5450,7 +5450,7 @@ várias impressoras, com e sem cobertura. Os emitidos em maior quantidade foram 
 e imitação de madeira (de 2 a 180 µg/min), estireno do ABS e HiPS (de 10 a 110µg/min) e lactida (um derivado
 irritante do ácido lático) do PLA (de 4 a 5 µg/min),
 
-image:image168.png[image,width=611,height=372]
+image::image168.png[image,width=611,height=372]
 
 **Poeira do plástico**: plásticos soltam partículas como a maioria dos materiais e um perigo normalmente
 negligenciado por operadores de impressoras 3D é o perigo de partículas sólidas com potencial irritante flutuando
@@ -5597,14 +5597,14 @@ também empresas especializadas em reaproveitamento para impressão 3D, no Brasi
 que comercializa filamentos reciclados e no futuro pretende expandir suas operações com pontos de arrecadação
 para partes de impressão 3D descartadas.
 
-image:image169.png[image,width=642,height=189]
+image::image169.png[image,width=642,height=189]
 
 Existe, entretanto, um porém. Em todas essas etapas, existe uma crítica, que é a de separação. Esse processo pode
 ser bem complexo e caro, ainda mais se forem usados muitos tipos diferentes. Em um mundo ideal, esses plásticos
 já viriam separados. De fato, a separação prévia dos plásticos por tipo é tão importante que já existe
 há anos a classificação de reciclagem de plásticos, que você já deve ter reparado em utensílios que tenha usado:
 
-image:image170.jpeg[image,width=642,height=487]
+image::image170.jpeg[image,width=642,height=487]
 
 A separação de plásticos é uma necessidade no Brasil, essencial para a viabilidade da reciclagem visto que
 o processo de separação automatizado é caríssimo⁵. O problema é que classificação ilustrada é usada em
@@ -5631,7 +5631,7 @@ em uma impressora FFF?
 
 Pra visualizar um pouco melhor, vamos ver como é o plano básico de uma extrusora de filamento.
 
-image:image171.png[image,width=642,height=445]
+image::image171.png[image,width=642,height=445]
 
 A maioria das filamentadoras domésticas comercializadas hoje em dia seguem tal esquema: têm um funil ou cuba em
 que os grãos de plástico são colocados. Os grãos entram no tambor, que tem um parafuso de rosca movimentado
@@ -5664,7 +5664,7 @@ E sensores, são desejáveis vários sensores para controlar o processo. Não h�
 que o diâmetro fique uniforme, e existem medidores de diâmetro que podem dizer se está dentro do intervalo
 de tolerância.
 
-image:image172.png[image,width=642,height=384]
+image::image172.png[image,width=642,height=384]
 
 E as etapas que dizemos ainda estão no âmbito __Maker__. No industrial, com suas complexas estruturas de controle
 e necessidade de volume e velocidade de extrusão, a situação é proporcionalmente mais cara e complicada⁷.
@@ -5687,7 +5687,7 @@ extrusores modificados de impressoras 3D que aceitam grãos de plástico ao inv�
 mas se o uso da filamentadora doméstica já é contingente, imagine uma pesada mini-filamentadora no carro da
 impressora que nem a operação de retração do filamento poderá executar⁸.
 
-image:image173.png[image,width=642,height=320]
+image::image173.png[image,width=642,height=320]
 
 Existem outros recursos interessantes online, em especial a __appropedia__, a enciclopédia de ecologia e
 sustentabilidade que faz parte das recomendações do Dr. Joshua Pearce e muitos modelos de filamentadoras,
@@ -5895,7 +5895,7 @@ são daninhos de três maneiras
 limpeza ou lavagem do item. O resultado serão fungos, bactérias e outros organismos patológicos que oferecem
 alto risco de contaminação em usos posteriores da peça.
 
-image:image174.png[image,width=642,height=466]
+image::image174.png[image,width=642,height=466]
 
 Os banhos alisadores com vapores solventes – que funcionam razoavelmente bem para eliminar esses vãos e selar
 a peça quando são controlados – não são seguros para usar nos plásticos para fins alimentícios pois podem
@@ -5903,7 +5903,7 @@ deixar resíduos tóxicos (embora se possa imaginar que tendo um método com exa
 destes resíduos, se chegue a um patamar aceitável). Lixamento da peça para eliminar vãos requer trabalho manual
 e só funciona com geometria mais grossas e menos rebuscadas de peças.
 
-image:image175.png[image,width=642,height=609]
+image::image175.png[image,width=642,height=609]
 
 === Maquinário
 
@@ -6103,7 +6103,7 @@ de impressão 3D mais porosos que o possam absorver. Um problema dos revestiment
 aderência ao material, se seu uso compreender fricção ou outros tipos de stress mecânico o revestimento pode
 se soltar e deixar exposto o material original.
 
-image:image176.jpeg[image,width=612,height=508]
+image::image176.jpeg[image,width=612,height=508]
 
 * *Materiais especiais* – embora somente o material de impressão 3D ser compatível com o contato alimentício
 não seja suficiente para garantir o uso alimentício do objeto impresso, existe uma estratégia que é promissora
@@ -6111,7 +6111,7 @@ como solução neste campo, que é um plástico alimentício com antimicrobianos
 usada por um grupo de estudos da Universidade de Waterloo, que foi testada com sucesso usando PEAD extrudado com
 nanopartículas de prata, processo que inclusive não prejudica a reciclabilidade do PEAD.
 
-image:image177.png[image,width=642,height=443]
+image::image177.png[image,width=642,height=443]
 
 [[section-7]] ===
 
@@ -6193,7 +6193,7 @@ odontológicas) e trabalhos de Cícero Moraes, Paulo Miamoto Dias e seus associa
 de softwares para ajudar nessas tarefas também é importante, e além do brasileiro _Invesalius_ já mencionado,
 existe ainda o também open-source e multiplataforma _Slicer_ de reconstrução digital.
 
-image:image178.png[image,width=615,height=419]
+image::image178.png[image,width=615,height=419]
 
 E tais fronteiras se expandem a cada dia, em garagens e universidades, procurando aprimorar a saúde e qualidade
 de vida das pessoas através da tecnologia e pensamento “fora da caixa”. Por exemplo, por que não aproveitar
@@ -6207,7 +6207,7 @@ complexa quanto a que já vimos relacionada a alimentos. Em especial, o grupo de
 __Biomecânica e Forense UNIFESP__, procura dialogar com os setores da sociedade que regulam tais dispositivos,
 colocando tal material público em seu canal de youtube⁷.
 
-image:image179.png[image,width=642,height=637]
+image::image179.png[image,width=642,height=637]
 
 === Outros usos biológicos
 
@@ -6289,7 +6289,7 @@ da molécula de água (H₂O).
 
 === A natureza polar da água
 
-image:image180.png[image,width=642,height=529]
+image::image180.png[image,width=642,height=529]
 
 Essa aparente inócua propriedade da água, associada com sua geometria peculiar de polaridade em forma de V, gera
 toda uma variedade de propriedades macroscópicas interessantes. A primeira é a disposição que as moléculas
@@ -6299,7 +6299,7 @@ cada molécula de água tende a atrair e orientar em posições específicas qua
 em torno de si (duas com o hidrogênio virado para seu oxigênio, e mais uma para cada um dos dois hidrogênios,
 com o oxigênio orientado na direção deles). O arranjo resultante pode ser visto na figura seguinte.
 
-image:image181.png[image,width=642,height=353]
+image::image181.png[image,width=642,height=353]
 
 A polaridade peculiar da água e o fato de suas moléculas se atraírem e estruturarem dessa maneira colabora
 em uma série de propriedades interessantes, desde ser líquida em temperaturas mais altas até sua tensão
@@ -6310,7 +6310,7 @@ Quando a água atrai *mais a si mesma* que ao material em questão, ela tende a 
 é _*hidrofóbico*_ (tem “medo de água”). No segundo caso o material é _*hidrofílico*_ (tem “afinidade
 com água”).
 
-image:image182.png[image,width=642,height=331]
+image::image182.png[image,width=642,height=331]
 
 Os detergentes usados em sua cozinha utilizam uma propriedade chamada _anfipatia_ ou _anfifilia_ que consiste
 em ter uma extremidade polar (como a água) e uma extremidade apolar (como o óleo) e portanto conseguir mediar
@@ -6326,7 +6326,7 @@ de fazer moléculas (de água, no caso) aderirem na superfície é chamado de _*
 costuma ser confundindo com a __absorção__, um fenômeno distinto em que o fluido é dissolvido “dentro” do
 material. Reiterando: tanto a higroscopia quanto a adsorção tratam somente da __superfície__.
 
-image:image183.png[image,width=642,height=345]
+image::image183.png[image,width=642,height=345]
 
 Muitos materiais de impressão 3D como PLA e Nylon são bastante higroscópicos, e como o contato com água acaba
 contribuindo para a degradação do polímero, torna-se necessário acondicionamento adequado do carretel em lugar
@@ -6395,7 +6395,7 @@ que se tenha um líquido que funciona como uma “cola” - a acetona é extrema
 e minutos ou até segundos depois de se aplicar este líquido em uma superfície, ele solidifica inteiramente. Isso
 é uma prática tão frequente que a solução ganhou o nome de “suco de ABS”.
 
-image:image184.jpeg[image,width=528,height=319]
+image::image184.jpeg[image,width=528,height=319]
 
 Na impressão cotidiana, as temperaturas mais comuns para o ABS ficam entre 230 a 240°C no extrusor com alguns
 _grades_ industriais como MG94 sendo impressos a 270°C (o que lhe confere maior força de aderência entre
@@ -6452,7 +6452,7 @@ O PLA não tem boa compatibilidade com colas de cianoacrilato (como “Super Bon
 posteriormente. Para colar peças com o material colas baseadas em silicone, xileno e poliuretano funcionam melhor,
 como o “Adesivo Flexível Multiuso 3M Scotch® Flex”.
 
-image:image185.jpeg[image,width=494,height=422]
+image::image185.jpeg[image,width=494,height=422]
 
 O sítio web _ecycle_ tem uma bela caracterização do PLA do
 ponto de vista de plásticos de engenharia, mercado e ecologia:
@@ -6474,7 +6474,7 @@ curiosamente tem no mercado duas variedades, uma com transição vítrea em 60°
 ao PLA (60°C de mesa, 220°C no extrusor) e tem baixíssimo warp, e uma com certo grau de warp e temperaturas
 próximas do ABS (100-110°C de mesa, 240°C no extrusor).
 
-image:image186.jpeg[image,width=495,height=457]
+image::image186.jpeg[image,width=495,height=457]
 
 == Tritan
 
@@ -6524,7 +6524,7 @@ mas não oferecendo ainda o 6/12 (sendo este comercializado, por exemplo, pela r
 forma mais consistentemente por uma grande faixa de temperaturas e ainda é menos sensível a absorção de água
 que outros nylons (5% de sua densidade em água em 24h, metade dos outros).
 
-image:image187.jpeg[image,width=471,height=427]
+image::image187.jpeg[image,width=471,height=427]
 
 Uma vantagem da alta higroscopia do Nylon é ser bastante compatível com tintas e pigmentos, mas por outro
 lado é muito comum impressões com nylon serem arruinadas por causa disso. Uma receita para secar nylons (e que
@@ -6643,7 +6643,7 @@ denominado de “stringing” - durante a impressão, que são removidos no fina
 
 === TPU
 
-image:image188.png[image,width=642,height=607]
+image::image188.png[image,width=642,height=607]
 
 A sigla significa **T**ermoPlástico **P**oli**u**retano, e embora tecnicamente se enquadrem na categoria de “TPE”,
 têm propriedades distintas que os fazem ser tratados de maneira diferente. Semelhantes à borracha – a própria
@@ -6674,7 +6674,7 @@ para outros fabricantes que fazem os desse tipo. O filamento é PLA com partícu
 3 vezes mais denso que o PLA puro, e sendo impresso nas mesmas temperaturas que o PLA. Ao imprimir, a peça sai fosca
 e para adquirir o tom metálico característico deve ser bastante polida, preferencialmente com uma tamboreadeira.
 
-image:image189.jpeg[image,width=516,height=397]
+image::image189.jpeg[image,width=516,height=397]
 
 === De metal para fundição / sinterização
 
@@ -6693,7 +6693,7 @@ O resultado final, no entanto, impressiona. Afinal, vê-se uma impressora 3D cas
 processadas, equivalem a uma peça de impressão 3D industrial SLM, caríssima. Mas como muita coisa na impressão
 3D, essa ainda é uma das tecnologias que precisa provar seu valor para proliferar em massa.
 
-image:image190.jpeg[image,width=642,height=426]
+image::image190.jpeg[image,width=642,height=426]
 
 === Imitação de madeira
 
@@ -6702,7 +6702,7 @@ famosa encarnação sendo a “Laywoo-D3” tem a curiosa propriedade de ter sua
 com a temperatura de impressão, que pode ir de 180°C até 240°C. Truques no fatiamento se aproveitando disso
 (iterando temperaturas) podem dar um aspecto bem verossímil de madeira no produto final.
 
-image:image191.jpeg[image,width=385,height=296]
+image::image191.jpeg[image,width=385,height=296]
 
 === Fibra de Carbono
 
@@ -6714,7 +6714,7 @@ com bicos de latão comum pois os destrói rapidamente, devendo ser usados bicos
 até titânio. Devido à própria fibra de carbono, esse filamento é encontrado somente na cor preta e depois de
 impresso tem uma superfície fosca e ligeiramente rugosa.
 
-image:image192.png[image,width=336,height=347]
+image::image192.png[image,width=336,height=347]
 
 == Condutivos
 
@@ -6744,7 +6744,7 @@ uma altura adicional para o bico não raspar na placa.
 Como essa categoria de filamentos não é definida por uma formulação comum, cada fabricante terá suas
 temperaturas recomendadas.
 
-image:image193.png[image,width=564,height=445]
+image::image193.png[image,width=564,height=445]
 
 == Solúveis
 
@@ -6772,7 +6772,7 @@ e sem umidade para não inchar e degradar depois de aberto.
 Outra dificuldade de uso do PVA é que é um filamento extremamente flexível, sofrendo das mesmas limitações
 e propensão à histerese elástica que os TPEs.
 
-image:image194.png[image,width=642,height=435]
+image::image194.png[image,width=642,height=435]
 
 === Infinity Rinse-Away
 
@@ -6910,7 +6910,7 @@ alicates finos comuns não conseguem penetrar.  * *Alicate de pressão* – é u
 pode ser _fixado_ numa mordedura específica de modo que, com a ajuda de uma mola que faz pressão na abertura,
 prenda a peça com firmeza para ser trabalhada.
 
-image:image195.png[image,width=642,height=726]
+image::image195.png[image,width=642,height=726]
 
 === De lixamento ou desbastamento
 
@@ -6967,7 +6967,7 @@ mas menor torque. Uma modificação que se aconselha usar na microrretífica que
 impressão 3D é a colocação de uma haste flexível extensora que permite à ponta giratória entrar em lugares
 difíceis da peça e o corpo da microrretífica não atrapalhar o acabamento.
 
-image:image196.png[image,width=642,height=504]
+image::image196.png[image,width=642,height=504]
 
 Qual usar, a furadeira ou a microrretífica? Em geral a microrretífica se mostra uma melhor opção pro trabalho em
 peças de impressora 3D, pois já vem com grande variedade de pontas e, sendo menor, é mais facilmente manipulada
@@ -7027,7 +7027,7 @@ outras tarefas. Necessita de treino pra usar pois é fácil a ferramenta “espa
 somente aplainá-lo, mas é sem dúvida útil. Como muitos projetos criativos, começou com financiamento coletivo
 no kickstarter e hoje tem a venda internacional por http://www.retouch3d.com/[_http://www.retouch3d.com_].
 
-image:image197.png[image,width=642,height=391]
+image::image197.png[image,width=642,height=391]
 
 * *Ferro de solda velho* – Um ferro de solda está entre as ferramentas térmicas mais baratas que se pode comprar,
 especialmente um ferro de baixa potência como de 20 ou 30W. É um substituto razoável para fazer um trabalho
@@ -7067,19 +7067,19 @@ apoio, e os __sargentos__, ferramentas portáteis que servem para fixação ou c
 caso se tenha pouco espaço de trabalho, é recomendada um morsa articulada de sucção que além de ter liberdades
 de posicionamento é uma ferramenta móvel – comparada à de bancada que geralmente é afixada com parafusos.
 
-image:image198.jpeg[image,width=642,height=182]
+image::image198.jpeg[image,width=642,height=182]
 
 * *Kit de assistentes de soldagem* – apesar do nome ligado à eletrônica, essas ferramentas que consistem em
 extremidades de metal com formas diversas para criar alavancas, enganchar, mover, limpar, punçar e puxar elementos
 pequenos são ótimas para tratar detalhes minúsculos e partes difíceis de alcançar de peças de impressão 3D.
 
-image:image199.jpeg[image,width=534,height=375]
+image::image199.jpeg[image,width=534,height=375]
 
 * *Terceira mão* – sendo um suporte mais delicado e sofisticado que uma morsa, é muito usado para soldagem,
 mas serve também para imobilizar e suportar peças pequenas rebuscadas para trabalhos complexos. Um kit que
 contenha lupa e iluminação é recomendado.
 
-image:image200.png[image,width=486,height=411]
+image::image200.png[image,width=486,height=411]
 
 * *Lupa* – serve para trabalhar com detalhes pequenos, e existem modelos na forma de óculos ou monóculo que
 evitam ocupar as mãos, servindo para trabalhos em que se a use mais continuamente e não se queira usar a lupa da
@@ -7137,7 +7137,7 @@ rachaduras e bolhas. É um incidente que acontece com frequência ao se tentar a
 visto que o solvente continua agindo após a interrupção do banho. É preciso um pouco de treino até encontrar
 o ponto ideal de tratamento com o solvente específico, tanto em tempo quanto em quantidade.
 
-image:image201.png[image,width=642,height=559]
+image::image201.png[image,width=642,height=559]
 
 * Devido ao ponto anterior, as ferramentas para manuseamento e apoio da peça devem ser finas para minimizar o
 contato e aderência, além de resistentes aos solventes. Peças de metal como pinças de fundição e pegadores de
@@ -7193,7 +7193,7 @@ __4__. https://www.nature.com/articles/srep06973[_https://www.nature.com/article
 
 === Acetona
 
-image:image202.png[image,width=642,height=444]
+image::image202.png[image,width=642,height=444]
 
 O solvente mais utilizado e documentado de todos é, sem dúvida nenhuma, a acetona, também chamada de propanona
 ou dimetil cetona. É o composto da classe das _cetonas_ mais simples, na forma de um líquido incolor de odor
@@ -7239,7 +7239,7 @@ a forma como a acetona age com o PLA usado dependerá de muitos fatores pertinen
 revés muito grande, entretanto, é que na maioria desses casos, a ação de alisamento aparente mostra seus
 problemas a médio ou longo prazo, com o aparecimento de fissuras, rachaduras, desbotamentos e fragmentação da peça.
 
-image:image203.png[image,width=642,height=457]
+image::image203.png[image,width=642,height=457]
 
 *Vantagens:*
 
@@ -7259,7 +7259,7 @@ https://www.atsdr.cdc.gov/toxprofiles/tp21.pdf[_https://www.atsdr.cdc.gov/toxpro
 
 === Clorofórmio
 
-image:image204.png[image,width=642,height=440]
+image::image204.png[image,width=642,height=440]
 
 Pânico! Horror! Indignação! A substância mais conhecida do público leigo pelo “lança-perfume”¹ ou pelo
 clichê hollywoodiano de ser embebida em um pano e colocada no rosto de uma vítima para incapacitá-la não merece a
@@ -7315,7 +7315,7 @@ Acesso em 15 de julho de 2017.
 
 === Diclorometano
 
-image:image205.png[image,width=642,height=352]
+image::image205.png[image,width=642,height=352]
 
 Se o clorofórmio é __triclorometano__, CHCl₃, o diclorometano ou cloreto de metileno é o “irmão menor”,
 com apenas dois átomos de cloro – CH₂Cl₂. Aparece na mesma _Lista II_ de substâncias controladas da
@@ -7339,7 +7339,7 @@ aplicação com vapor (<100°C) e tem ponto de auto-ignição bem alto.
 * Preço maior e disponibilidade menor que o clorofórmio.  * Mesma necessidade de proteção do clorofórmio.
 * Necessidade de permissão da Polícia Federal e limite de 2l por mês.  1.  [[tetraidrofurano]] === Tetraidrofurano
 
-image:image206.png[image,width=642,height=402]
+image::image206.png[image,width=642,height=402]
 
 O Tetraidrofurano (às vezes escrito – incorretamente - “tetrahidrofurano”), THF ou oxolano¹ é um éter
 heterocíclico incolor, com odor pungente e forte ação solvente, atacado PLA, ABS, ASA, policarbonato e até látex,
@@ -7377,7 +7377,7 @@ http://sistemasinter.cetesb.sp.gov.br/produtos/ficha_completa1.asp?consulta=TETR
 
 === Metil-Etil-Cetona (MEK)
 
-image:image207.png[image,width=634,height=410]
+image::image207.png[image,width=634,height=410]
 
 Se o clorofórmio tem seu irmão mais fraco, o diclorometano, pode-se dizer que a acetona tem uma irmã mais
 forte, visto pela sua enorme polaridade de 2,76D, a metil-etil-cetona, MEK (do inglês __methyl ethyl ketone__)
@@ -7410,7 +7410,7 @@ precisando apenas o comprador ser maior de 18 anos. Desses produtos, o mais impo
 preparadora_ ou _solução limpadora_ de canos e PVC, uma mistura primariamente de acetona e MEK. Discriminamos
 três marcas principais fáceis de encontrar no mercado brasileiro: __Tigre__, _Pulvitec_ e __Amanco__.
 
-image:image208.png[image,width=642,height=374]
+image::image208.png[image,width=642,height=374]
 
 As três soluções têm uma porcentagem de MEK e acetona variável, mas dentre esses limites:
 
@@ -7571,7 +7571,7 @@ táctil com a ponta retrátil, inspira considerável melhoria da habilidade de t
 não seja um instrumento caro, no entanto, não se encontra pra vender no Brasil e é necessário importá-lo. Uma
 alternativa barata e artesanal é apresentada no canal de youtube do autor.
 
-image:image209.jpeg[image,width=642,height=303]
+image::image209.jpeg[image,width=642,height=303]
 
 *Vantagens:*
 
@@ -7666,7 +7666,7 @@ a peça deve ficar longe de poeira ou resíduos, pois esses tendem a aderir faci
 béquer, base e pegador e quaisquer outros itens com contato com o vapor devem ser limpos depois do procedimento,
 pois tenderão a acumular plástico dissolvido e outros resíduos.
 
-image:image210.jpeg[image,width=642,height=338]
+image::image210.jpeg[image,width=642,height=338]
 
 *Vantagens:*
 
@@ -7727,7 +7727,7 @@ usa partes de um mini-umidificador ultrassônico portátil (dos que difundem vap
 uma lata de refrigerante) e itens de prateleira como jarro de vidro, tubos de polietileno, lata de tinta vazia,
 conectores de rosca e bombinhas de ar. Opcionalmente permite controle por timer, constando também nas instruções.
 
-image:image211.jpeg[image,width=642,height=262]
+image::image211.jpeg[image,width=642,height=262]
 
 *Vantagens:*
 
@@ -7747,7 +7747,7 @@ mas _qual_ aparelho? No momento de publicação deste livro não há nenhuma com
 uma criada por financiamento coletivo que virou um produto de verdade comercializado por uma companhia de Taiwan,
 a __Magic Box__.
 
-image:image212.jpeg[image,width=642,height=417]
+image::image212.jpeg[image,width=642,height=417]
 
 Ela trabalha com uma câmara hermética em que se põe a peça e um compartimento para o solvente, que é borrifado
 para câmara formando uma névoa que ataca a peça. É também com vapor frio, mas o controle se vê pelos botões
@@ -7765,7 +7765,7 @@ perigoso e tolerado por máquinas, e criar conjugado a ele uma máquina que o ap
 _Polysmooth™_ e da máquina aplicadora __Polysher™__, que usam o solvente de prateleira _álcool isopropílico_
 (isopropanol), que não ataca componentes eletrônicos e é barato e largamente usado pela indústria.
 
-image:image213.png[image,width=591,height=471]
+image::image213.png[image,width=591,height=471]
 
 *Vantagens:*
 
@@ -7851,7 +7851,7 @@ possíveis resíduos ou contaminação nos alimentos assados no mesmo dispositiv
 ultrafinas do processo de extrusão e das substâncias tóxicas presentes no vapor do plástico, toda cautela é
 pouca – recomenda-se usar um forno dedicado a essa função.
 
-image:image214.png[image,width=564,height=459]
+image::image214.png[image,width=564,height=459]
 
 1 –
 https://3dprint.com/3388/study-how-to-make-3d-prints-stronger/[_https://3dprint.com/3388/study-how-to-make-3d-prints-stronger/_].
@@ -7903,7 +7903,7 @@ meio externo. Esse filme faz com que o movimento de um objeto seja mais difícil
 que quando ele está completamente submerso. A força necessária para romper um filme de 1cm de comprimento é
 chamada de tensão superficial e medida em dinas (10^-5^ N) por centímetro.
 
-image:image215.png[image,width=642,height=386]
+image::image215.png[image,width=642,height=386]
 
 Para um líquido formar uma superfície uniforme sobre um sólido – o efeito que desejamos ao aplicar nele
 a tinta -, é necessário que sua tensão superficial seja inferior às forças adesivas entre o líquido e o
@@ -8156,7 +8156,7 @@ caneta. Uma proporção muito grossa fará o facho ser irregular, expelir perdig
 muito rala fará o facho ser fraco e não aderir corretamente à superfície. A consistência e diluição ideais
 variam de acordo com tinta e fabricante e são obtidas por um processo de experiência, tentativa e erro⁴.
 
-image:image216.jpeg[image,width=642,height=356]
+image::image216.jpeg[image,width=642,height=356]
 
 *Notas:*
 
@@ -8249,7 +8249,7 @@ colocada entre os dois motores para nivelamento. Coloca-se no carro X um _relóg
 e então se gira um ou outro motor para abaixar ou levantar cada eixo, até que se os deixe paralelos – isto é,
 em todo lugar que o relógio comparador tocar na superfície pela extensão do carro X, dará a mesma medida.
 
-image:image217.png[image,width=634,height=343]
+image::image217.png[image,width=634,height=343]
 
 Conformações diferentes de eixos – por exemplo, que toquem um elemento paralelo, ao invés da mesa de impressão
 – exigirão estratégias diferentes, mas que podem ser inferidas a partir da mostrada. No caso ilustrado,
@@ -8274,7 +8274,7 @@ espessura entre a ponta do hotend e a mesa – geralmente um cartão de visitas.
 agilidade desse procedimento, como o uso de porcas borboleta ao invés de porcas comuns para poderem ser ajustadas
 com a mão, ou mesmo designs impressos de sites de impressão 3D.
 
-image:image218.jpeg[image,width=642,height=216]
+image::image218.jpeg[image,width=642,height=216]
 
 * **Empenamento da mesa**: problema especialmente comum em mesas grandes, pode ocorrer de, ao se tentar
 nivelar uma mesa de impressão, perceber que não é a inclinação o problema, e sim a superfície não ser
@@ -8375,7 +8375,7 @@ como os de mesa aquecida e extrusor, mas sua colocação precisa ser bem planeja
 cada elo da lagarta tem uma pequena portinhola que permite que a lagarta seja removida e recolocada sem precisar
 desconectar os fios, mas são mais difíceis de achar.
 
-image:image219.jpeg[image,width=642,height=239]
+image::image219.jpeg[image,width=642,height=239]
 
 === Lubrificação
 
@@ -8498,7 +8498,7 @@ raramente idênticas. Nas deltas de mercado, a variabilidade é maior, em parte 
 diferença de custo. Os dois modelos mais famosos, Kossel e Rostock, têm muitas derivações diferentes de variados
 tamanhos e compleições, e cada fabricante toma liberdades em suas medidas que as diferenciam ainda mais. Assim,
 não há valores “padrão” em que se basear exceto para alguns poucos modelos comerciais de maior sucesso.
-+ image:image220.jpeg[image,width=568,height=422]
++ image::image220.jpeg[image,width=568,height=422]
 
 * *Dificuldade de obtenção das medidas* – em cima do fator de despadronização, as deltas em sua montagem têm
 “pontos livres” cujo posicionamento durante a montagem não é exato, como a altura de onde se prende o endstop
@@ -8530,9 +8530,9 @@ Smoothieware **gamma_max**. Por ser relativamente fácil de obter, fácil de cor
 em uma delta comum com endstops máximos, será a nossa “âncora” para medidas.  3.  *Deslocamento* (offset) *de
 cada endstop de cada torre* (inclinação do plano). Se as torres são A, B e C, vamos chamá-los de D~A~, D~B~ e D~C~.
 
-image:image221.png[image,width=642,height=551]
+image::image221.png[image,width=642,height=551]
 
-image:image222.png[image,width=642,height=424]
+image::image222.png[image,width=642,height=424]
 
 1.  **Concavidade**. Essa pode ser a parte mais difícil de ser compreendida, e se traduz no seguinte: quando as
 medidas dos componentes estão erradas, a transformação trigonométrica de coordenadas nos pilares A, B e C para
@@ -8547,7 +8547,7 @@ qualidade de impressão nas grandezas em que vamos trabalhar. De qualquer jeito,
 têm ajustes especiais para tratar esses casos – não abordados aqui.  3.  **Inclinação da mesa**. Assim como
 o plano dos endstops, a mesa pode ter uma inclinação não visível a olho nu. Essa inclinação complicaria pois
 seria composta com o plano dos endstops. Ao invés de medi-la e tentar corrigi-la, é possível _não usá-la_
-sem perder precisão, de modo explicado a seguir.  + image:image223.png[image,width=618,height=512]
+sem perder precisão, de modo explicado a seguir.  + image::image223.png[image,width=618,height=512]
 
 * Entendido que vamos tirar as medidas apenas para os itens **1, 2 e 3**, a idéia é __começar com tudo mecanicamente
 acertado e uniforme__, ou pelo menos o mais uniforme praticável: _simetria_ é mais importante que _precisão_
@@ -8567,7 +8567,7 @@ firmware nas torres deve ser colocado a partir das peças usadas na delta, não 
 percorrida. Como para o caso das impressoras cartesianas, use a _prusa calculator_ para calcular os números de
 acordo com as peças.
 
-image:image224.png[image,width=642,height=530]
+image::image224.png[image,width=642,height=530]
 
 Um exemplo seria o caso ilustrado na figura. Julgando que o motor do extrusor já foi medido e é de 760 passos
 por mm, a linha do Configuration.h no Marlin seria:
@@ -8584,7 +8584,7 @@ logo só se mede uma torre. Meça com uma régua e não se preocupe muito com va
 medidas serão corrigidas na frente. Os principais elementos de interesse aparecem na figura. A nomenclatura usada
 é a do Marlin atigo (antes da versão 1.1.0). Essas medidas são também as que o G-Code *M665* usa como parâmetros.
 
-image:image225.png[image,width=642,height=427]
+image::image225.png[image,width=642,height=427]
 
 As medidas são quase todas horizontais, _delta_diagonal_rod_ sendo a única na diagonal:
 
@@ -8628,13 +8628,13 @@ três torres serem exatamente iguais. Por outro lado, a inclinação dos endstop
 de altura deles em cada torre, e será assimétrico por torre. Um *triângulo equilátero* com centro na origem
 e com os vértices na *direção das torres* terá cada um de seus vértices exatamente na mesma altura!
 
-image:image226.png[image,width=642,height=408]
+image::image226.png[image,width=642,height=408]
 
 * E o melhor tamanho para tal triângulo é tal que seus vértices fiquem a meia distância entre a posição (X,Y)
 do endstop e o centro da mesa, porque aí teremos uma proporção simples (metade) para saber o deslocamento /
 erro do endstop:
 
-image:image227.png[image,width=642,height=336]
+image::image227.png[image,width=642,height=336]
 
 * Quanto vale _2a_ neste caso? Oras, é um valor que já medimos: **DELTA RADIUS + DELTA_EFFECTOR_OFFSET**! Basta
 portanto pegar este valor e dividir por 2, para saber o tamanho _a_ da mediana do triângulo vermelho!  * Poupado
@@ -8642,7 +8642,7 @@ o trabalho de calcular os três pontos do triângulo equilátero, eles são, em 
 mediana __a__: (0,__a__), (-0.866×__a__, -0.5×__a__) e (0.866×__a__, -0.5×__a__). Essas medidas são tiradas
 das propriedades do triângulo equilátero.²
 
-image:image228.png[image,width=642,height=459]
+image::image228.png[image,width=642,height=459]
 
 * Agora, tendo os pontos do triângulo e entendendo que o que vamos fazer é descobrir a inclinação do plano dos
 endstops, é bom saber que existem jeitos distinto de lidar com as medidas a ser coletadas. Fazer a movimentação
@@ -8651,7 +8651,7 @@ também permitem controle pela USB através de um print host (enviando comandos 
 mostrada. Como alguns comandos serão repetidos várias vezes, nessa hora vale a pena conhecer bem o print host
 usado pra ver se suporta _macros_ ou _atalhos_ – scripts simples facilmente acessíveis para operações repetitivas.
 
-image:image229.png[image,width=642,height=340]
+image::image229.png[image,width=642,height=340]
 
 * Eis o que vamos fazer: vamos posicionar o bico do hotend nos três pontos do triângulo na coordenada zero
 (encostados na mesa). Em cada um desses pontos vamos, com uma régua ou paquímetro, medir a diferença. Após
@@ -8698,7 +8698,7 @@ G1 X64.95 Y-37.5 Z0 *** G28 + G1 X0 Y75 Z0 ** Como o ponto _*a*_ é o nosso pont
 mesa e os outros ficarão acima. Um resultado possível colocando em cada ponto e medindo a distância bico-mesa
 com paquímetro ou régua:
 
-image:image230.png[image,width=642,height=382]
+image::image230.png[image,width=642,height=382]
 
 * Medimos uma diferença de Z de 0.3mm pra *b* e 0,4mm pra **c**. Mas precisamos saber a altura em que o centro
 (0,0) está para poder inferir a altura relativa de cada ponto. Para isso, basta tirar a média aritmética das
@@ -8726,7 +8726,7 @@ que o hotend realmente ficou.  * Digamos que o hotend parou a 18,4mm acima da me
 1,6mm (20-18,4) abaixo do plano dos endstops. Se tivesse parado a 21,4 acima da mesa, ele teria parado _-1,4mm_
 (20-21,4) _abaixo_ do plano dos endstops, ou melhor dizendo, 1,4mm _acima_ do plano dos endstops. Conforme a figura:
 
-image:image231.png[image,width=642,height=349]
+image::image231.png[image,width=642,height=349]
 
 * Apesar de DELTA_RADIUS ser uma grandeza na horizontal e termos medido um deslocamento vertical, a relação
 trigonométrica entre as duas faz com que esse deslocamento possa ser adicionado ou diminuído de DELTA_RADIUS, para
@@ -8742,7 +8742,7 @@ o hotend encostou na mesa. Calibramos DELTA_RADIUS!  * Terminou? Não. Ajustamos
 pode estar errado, o DELTA_DIAGONAL_ROD. O sintoma de um DELTA_DIAGONAL_ROD errado (ele é o tamanho do braço,
 lembre-se) são distâncias horizontais erradas na mesma proporção que ele. Se o DELTA_DIAGONAL_ROD estiver duas
 vezes menor que o real, por exemplo, e você mandar imprimir um quadrado de uma camada de altura, ele imprimirá o
-quadrado com arestas da metade do tamanho desejado.  + image:image232.png[image,width=618,height=602]
+quadrado com arestas da metade do tamanho desejado.  + image::image232.png[image,width=618,height=602]
 * Esse fator nos dá a receita para achar o erro do DELTA_DIAGONAL_ROD: o meio mais simples é, se a impressora
 estiver com o extrusor funcionando, fazer ela imprimir um quadrado chato de tamanho conhecido – digamos, _100mm x
 100mm_ de lado e 1mm de altura. Mede-se o lado impresso, suponhamos que tenha dado _96mm_ de lado. Isso quer dizer
@@ -8922,12 +8922,12 @@ objetos tridimensionais é o **plano cartesiano tridimensional**, em que o eixo 
 à profundidade e o Z à altura. As unidades desses eixos podem ser arbitrárias (mm, polegadas, etc.) ou mesmo
 não haver (serem simplesmente “pontos” determinados sem correspondentes no mundo real)
 
-image:image233.png[image,width=642,height=405]
+image::image233.png[image,width=642,height=405]
 
 Na impressão 3D FFF, as coordenadas tridimensionais correspondem aos seguintes arranjos em relação à estrutura
 da impressora:
 
-image:image234.png[image,width=642,height=509]
+image::image234.png[image,width=642,height=509]
 
 == Representações de formas tridimensionais
 
@@ -8952,9 +8952,9 @@ simples de programar e computacionalmente eficiente. Muitos programas portanto f
 converter superfícies para sólidos, exige análise topológica e bastante heurística e é por isso mesmo não
 só complexa para programar como computacionalmente demorada.
 
-image:image235.png[image,width=642,height=355]
+image::image235.png[image,width=642,height=355]
 
-image:image236.png[image,width=587,height=435]
+image::image236.png[image,width=587,height=435]
 
 Tanto para sólidos quanto para superfícies, no entanto, existem outras subdivisões:
 
@@ -8981,7 +8981,7 @@ milímetros. Pra arrematar, o formato não tem designadores pra objetos diferent
 várias peças, verá que elas se movem juntas – pois são consideradas uma entidade única. Muitos desses
 softwares por isso mesmo oferecem a função de “identificar e separar partes” pra facilitar o manuseamento.
 
-image:image237.png[image,width=373,height=367]
+image::image237.png[image,width=373,height=367]
 
 Toda essa simplicidade exigida tem uma razão. Os softwares que usaremos para enviar as formas para a impressora
 precisam realizar _muitas_ manipulações e operações matemáticas em cima dessas formas, e muitas vezes as
@@ -9034,7 +9034,7 @@ https://3dprintingindustry.com/news/deliberate-mistakes-key-protecting-3d-printe
 - cabe notar que a nomenclatura usada é equivocad: cópia não-autorizada de “propriedade” intelectual não
 pode ser chamada de __roubo__, pois __não há subtração__.
 
-image:image238.png[image,width=517,height=412]
+image::image238.png[image,width=517,height=412]
 
 == Operações booleanas
 
@@ -9043,15 +9043,15 @@ booleanas__. São modificações que você exerce tendo dois ou mais sólidos ou
 malha ou sólido como resultado. São três as operações básicas (é possível ter operações derivadas),
 ilustradas aqui no software OpenSCAD com a única mudança sendo no nome da função:
 
-image:image239.png[image,width=642,height=372]
+image::image239.png[image,width=642,height=372]
 
-image:image240.png[image,width=642,height=328]
+image::image240.png[image,width=642,height=328]
 
-image:image241.png[image,width=642,height=350]
+image::image241.png[image,width=642,height=350]
 
 1.  [[erros-de-malhas]] == Erros de malhas 1.  [[buracos]] === Buracos
 
-image:image242.png[image,width=642,height=417]
+image::image242.png[image,width=642,height=417]
 
 Apenas cascas (malhas fechadas) conseguem representar uma estrutura sólida tridimensional. Malhas que estejam
 abertas podem resultar de vários processos diferentes no fluxo de modelagem, desde operações entre superfícies
@@ -9067,7 +9067,7 @@ ser necessária. A maioria dos softwares de modelagem e reparo permite tal trata
 “para fora”. Como explicamos ao falhar de malhas, elas são __orientadas__: se o polígono fosse uma folha de
 papel, ele teria dois lados, um considerado “de dentro” e o outro “de fora”.
 
-image:image243.png[image,width=423,height=294]
+image::image243.png[image,width=423,height=294]
 
 O problema que pode acontecer nas malhas é que, ao computar qual é o lado “de dentro” e o “de fora”, o
 software se confunde, como por exemplo em operações booleanas ou esculpimento de superfícies irregulares. Esse
@@ -9082,7 +9082,7 @@ que costuma resolver grande parte dos problemas é a seleção de uma área ou o
 “normalizar” a orientação dos triângulos, o que quer dizer que polígonos adjacentes terão sua orientação
 decidida por “maioria” de acordo com os outros polígonos.
 
-image:image244.png[image,width=642,height=326]
+image::image244.png[image,width=642,height=326]
 
 === Faces, arestas e vértices flutuantes
 
@@ -9102,7 +9102,7 @@ sido contagiada/deturpada pela limpeza inadequada dessa nuvem. Nesse caso, o mel
 fonte original da malha para corrigi-la e refazer a inferência, visto que certos erros no início desse processo
 podem tornar impossível a correção posterior.
 
-image:image245.png[image,width=642,height=343]
+image::image245.png[image,width=642,height=343]
 
 === Interseções
 
@@ -9115,7 +9115,7 @@ de ocorrer em conjunto. Como este costuma ser um erro de modelagem envolvendo au
 mesma), os softwares de conserto tentam “unir” as partes coincidentes com operações booleanas. Com outros
 problemas interferindo na análise da topologia da malha, no entanto, a operação pode falhar.
 
-image:image246.png[image,width=642,height=332]
+image::image246.png[image,width=642,height=332]
 
 === Non-manifold
 
@@ -9144,11 +9144,11 @@ situações: ** Faces/arestas/vértices ocupando o mesmo lugar, parcial ou total
 sem estarem conectados. Se nosso cubo do Blender fosse realmente 6 quadrados dispostos espacialmente de acordo
 com as faces de um cubo, teríamos um design __non-manifold__, porque cada aresta apareceria duas vezes (uma de
 cada quadrado) e como as arestas do quadrados não estão conectadas, haveria “buracos” de tamanho zero.  +
-image:image247.png[image,width=530,height=499]image:image248.png[image,width=547,height=479]
+image::image247.png[image,width=530,height=499]image::image248.png[image,width=547,height=479]
 ** Faces internas, que não contribuem para a geometria do objeto.
-+ image:image249.png[image,width=247,height=234] ** Uma aresta conectada a várias
++ image::image249.png[image,width=247,height=234] ** Uma aresta conectada a várias
 superfícies. Isso impede, entre outras coisas, que o software saiba qual é o lado interno ou externo da casca.
-+ image:image250.png[image,width=246,height=232]
++ image::image250.png[image,width=246,height=232]
 
 Os exemplos simplificados mostrados acima podem parecer bem fáceis de resolver, mas matematicamente falando
 quebram a consistência topológica e atrapalham ou impedem os softwares de lidar corretamente com eles. Muitos
@@ -9159,7 +9159,7 @@ os open-source: Blender (que tem uma aba repleta de funções para inspecionar e
 meshlab, FreeCAD; o gratuito meshmixer; ou serviços gratuitos de nuvem (automáticos, permitindo pouco controle
 dos parâmetros) como o Azure Mesh Repair e MakePrintable.
 
-image:image251.png[image,width=566,height=443]
+image::image251.png[image,width=566,height=443]
 
 == Problemas de malha – não-geométricos
 
@@ -9184,13 +9184,13 @@ suficientemente bem aos materiais comuns de impressão 3D. Vários softwares de 
 achar paredes finas: os open-source FreeCAD, Meshlab e Blender são bons exemplos, mas softwares proprietários
 como Meshmixer e Netfabb também têm tais recursos.
 
-image:image252.png[image,width=642,height=402]
+image::image252.png[image,width=642,height=402]
 
 Tenha ainda ciência o leitor que isso é uma simplificação do problema. Mesmo nos documentos da Shapeway, a
 espessura tem suas variações: eles criam o conceito de “cabo” (__wire__) para especificar certas geometrias
 em que a espessura mínima é de 2mm.
 
-image:image253.png[image,width=642,height=523]
+image::image253.png[image,width=642,height=523]
 
 === Detalhes pequenos
 
@@ -9206,7 +9206,7 @@ que o filete que podem produzir, simplesmente não o incluem no código para imp
 impressão costumam designar um detalhamento mínimo (saliência ou reentrância) em uma superfície, que costuma
 ser entre 1 e 2 vezes o orifício do bico usado.
 
-image:image254.png[image,width=452,height=344]
+image::image254.png[image,width=452,height=344]
 
 === Overhangs
 
@@ -9216,7 +9216,7 @@ um ângulo tão próximo do horizontal que a deposição de plástico derretido 
 possibilitá-las. Lembre-se que a impressão 3D FDM divide as peças em camadas e _sempre_ ocorre de baixo para cima,
 sem que o bico retorne a camadas mais baixas. Ficará mais fácil visualizar com o caso de um cogumelo a ser impresso:
 
-image:image255.png[image,width=555,height=570]
+image::image255.png[image,width=555,height=570]
 
 Veremos no fatiamento que temos a oportunidade de pedir ao software de impressão que coloque estruturas automáticas
 ou semi-automáticas, destacáveis no final da impressão, chamadas de *suportes* para lidar com a maioria desses
@@ -9229,7 +9229,7 @@ então nem sempre serão desejáveis; por exemplo, detalhes finos ou internos po
 mas a tarefa de os remover após a impressão poderá quebrar as partes delicadas ou ser impraticável numa parte
 interna difícil de alcançar. Existem mitigações para esses problemas, que veremos na parte de fatiamento.
 
-image:image256.png[image,width=642,height=495]
+image::image256.png[image,width=642,height=495]
 
 === Distribuição de forças
 
@@ -9254,7 +9254,7 @@ estão aparecendo procurando resolver esse problema e até um serviço online su
 (http://my3dmatter.com/fea-for-fdm-3d-printing/[_http://my3dmatter.com/fea-for-fdm-3d-printing/_]), mas a solução
 deste problema, qualquer que seja, provavelmente demorará algum tempo para chegar ao cidadão comum.
 
-image:image257.jpeg[image,width=523,height=533]
+image::image257.jpeg[image,width=523,height=533]
 
 Notas:
 
@@ -9323,7 +9323,7 @@ usar o processamento de dispositivos embarcados. Por isso alguns fatiadores, com
 (não por acaso justamente os open-source), oferecem a funcionalidade de fatiador puro como um opcional do programa
 (você pode invocá-los em modo _batch_ pela linha de comando ou através de outro programa).
 
-image:image258.png[image,width=626,height=475]
+image::image258.png[image,width=626,height=475]
 
 == Fluxo de trabalho (workflow) da Impressão 3D
 
@@ -9363,7 +9363,7 @@ serão coladas; para alguns plásticos, temos a opção de **acabamento químico
 ou clorofórmio; * Opcional: *revestimento* da peça para conferir a ela alguma propriedade como dureza ou brilho;
 * Opcional: *pintura* da peça para lhe dar cores e “vida”.
 
-image:image259.png[image,width=651,height=745]
+image::image259.png[image,width=651,height=745]
 
 = E o que é fatiar?
 
@@ -9375,7 +9375,7 @@ Quanto mais finas as fatias, menos os detalhes verticais nelas importam (como in
 aproxima de algo perfeitamente bidimensional. Com fatias de paredes simplificadas suficientemente finas e um
 número muito grande delas, seu empilhamento será praticamente igual à figura tridimensional que as originou.
 
-image:image264.png[image,width=608,height=510]
+image::image264.png[image,width=608,height=510]
 
 O profissional abre o software fatiador e o alimenta com a peça ou peças tridimensionais (arquivos digitais como
 STL, AMF, 3MF, OBJ) que deseja imprimir, as visualizando na interface e as dispondo em uma “bandeja virtual”,
@@ -9388,9 +9388,9 @@ ou ser enviado a ela – dependendo do modelo, por uma porta USB, bluetooth ou r
 
 Fica mais fácil ver com o resultado da visualização de algumas camadas do fatiamento da Figura 15:
 
-image:image265.png[image,width=642,height=475]
+image::image265.png[image,width=642,height=475]
 
-image:image266.png[image,width=662,height=269]
+image::image266.png[image,width=662,height=269]
 
 == Principais fatiadores do mercado
 
@@ -9448,7 +9448,7 @@ renderização tridimensional que não necessita de aceleração (sendo interess
 de depuração detalhadas para achar erros e equivalências em G-Code (este último recurso o torna o melhor fatiador
 para usuários avançadíssimos e desenvolvedores que precisam depurar novos recursos de firmware). Plataformas: Mac OS
 X, Linux, Windows. Código em https://github.com/timschmidt/repsnapper[_https://github.com/timschmidt/repsnapper_].
-+ image:image267.png[image,width=506,height=348] * *IceSL* – fatiador _experimental_
++ image::image267.png[image,width=506,height=348] * *IceSL* – fatiador _experimental_
 que é uma espécie de mistura de “OpenSCAD” com Slic3r, feito inicialmente pra fins
 acadêmicos. Multiplataforma, mas infelizmente não é open-source, o que é especialmente lamentável
 pois se fosse teria muito apelo pra crescer, conseguindo fazer formas complexas sem perder detalhes
@@ -9468,7 +9468,7 @@ _Repetier Server,_ com visualização e edição de g-code, e poderosa interface
 * **Atelier**: controlador de impressão open-source com grande participação brasileira no desenvolvimento,
 escrito em C++ com a biblioteca gráfica Qt.
 
-image:image268.png[image,width=589,height=546]
+image::image268.png[image,width=589,height=546]
 
 Trabalharemos com 3 fatiadores e um Print Host para comparação: os open-source *Slic3r* e **Cura**, o proprietário
 gratuito *Repetier Host* e o proprietário pago **Simplify3D**. Esses softwares foram escolhidos tanto por sua
@@ -9489,7 +9489,7 @@ em um fatiador de mercado. O assistente de configuração do fatiador __Slic3r__
 as configurações iniciais que nos interessam, e usaremos como ilustração passando em seguida em como esses
 ajustes aparecem nos outros fatiadores.
 
-image:image269.png[image,width=628,height=328]
+image::image269.png[image,width=628,height=328]
 
 === Ajuste I: Tipo de código de máquina
 
@@ -9505,7 +9505,7 @@ nativo próprio (de nome S3G, Sanguino3 G-code, e extensão .s3g ou .x3g) que al
 (em nosso exemplo, somente o Simplify3D), tendo os outros que recorrer a um software conversor posterior (gpx)
 que transforma o arquivo .gcode em .x3g.
 
-image:image270.png[image,width=637,height=436]
+image::image270.png[image,width=637,height=436]
 
 === Ajuste II: tamanho e formato da mesa
 
@@ -9524,9 +9524,9 @@ no centro da mesa.
 
 O Slic3r oferece ainda uma terceira possibilidade de você usar um arquivo STL para definir a forma da mesa.
 
-image:image271.png[image,width=636,height=331]
+image::image271.png[image,width=636,height=331]
 
-image:image272.png[image,width=636,height=331]
+image::image272.png[image,width=636,height=331]
 
 Vale notar, finalmente, que especialmente quem usa a impressão 3D para serviços de impressão sob demanda pode
 se beneficiar de um “truque” que é criar configurações especiais de impressoras com “mesas virtuais”
@@ -9543,13 +9543,13 @@ impressoras também oferece o bico como uma peça trocável, encaixável no bloc
 (6mm de diâmetro) comum, permitindo com essa padronização que o usuário use suas impressoras com diferentes
 diâmetros de bico.
 
-image:image273.png[image,width=356,height=282]
+image::image273.png[image,width=356,height=282]
 
 O fatiador usará este número para saber qual é a espessura do filete que ele deposita. Se ele for preencher um
 quadrado de 1,2mm x 1,2mm com um bico de 0,4mm, por exemplo, ele fará 3 linhas paralelas (3 x 0,4 = 1,2) de 1,2mm
 de comprimento cada.
 
-image:image274.png[image,width=642,height=304]
+image::image274.png[image,width=642,height=304]
 
 === Ajuste IV: diâmetro do filamento
 
@@ -9569,9 +9569,9 @@ subextrusão. Essas duas situações são problemáticas. Uma recomendação que
 filamento em vários pontos e fazer uma média, e refazer a medida cada vez que se trocar o carretel de filamento
 (os fatiadores permitem vários perfis de configuração de filamento).
 
-image:image275.jpeg[image,width=412,height=383]
+image::image275.jpeg[image,width=412,height=383]
 
-image:image276.png[image,width=634,height=300]
+image::image276.png[image,width=634,height=300]
 
 === Ajuste V: temperatura do extrusor
 
@@ -9579,7 +9579,7 @@ Como no caso do diâmetro do filamento, este é só um ajuste inicial; você ir�
 posteriormente, por exemplo um para ABS, outro para PLA. No caso ilustrado, consideramos que vamos inicialmente
 usar ABS, então configuramos a temperatura do extrusor em 230°C.
 
-image:image277.png[image,width=635,height=301]
+image::image277.png[image,width=635,height=301]
 
 === Ajuste VI: temperatura da mesa
 
@@ -9591,11 +9591,11 @@ a temperatura-padrão de 120°C pra que a primeira camada fique acima da tempera
 recomendação do Slic3r de 110° é adequada para mesas sem vidro. Note que algumas impressoras 3D podem não ter
 potência suficiente para chegar a 120°C na mesa, caso em que a única saída é colocar um valor menor neste campo.
 
-image:image278.png[image,width=634,height=300]
+image::image278.png[image,width=634,height=300]
 
 Terminamos a configuração inicial, e agora estamos prontos para usar o software!
 
-image:image279.png[image,width=634,height=300]
+image::image279.png[image,width=634,height=300]
 
 == Revendo a configuração
 
@@ -9603,13 +9603,13 @@ Mas não acabou – após a primeira execução, o assistente pode ser chamado n
 “Configuration Assistant”; mas é útil saber onde estão as configurações. A interface que aparece logo
 após o assistente é essa:
 
-image:image280.png[image,width=616,height=453]
+image::image280.png[image,width=616,height=453]
 
 Faremos uma modificação nas configurações gerais. O Slic3r inicia em “modo novato” (novice mode), em
 que apenas as configurações mais simples são exibidas. Como queremos saber todas, vamos mudar para o modo
 “Expert”. Vá em “File” → “Preferences”:
 
-image:image281.png[image,width=248,height=278]
+image::image281.png[image,width=248,height=278]
 
 Vamos mudar “Simple” para “Expert”. Para facilitar nossa operação, vamos também marcar a opção
 “Remember output directory” para que ele lembre onde estamos gravando nossos arquivos “.gcode”, que
@@ -9665,18 +9665,18 @@ até a impressão 3D terminar, o que tipicamente leva várias horas para uma pe�
 Aprenderemos os dois modos aqui. Vamos deixar o fatiador configurado para poder controlar a impressora pela USB,
 que é o modo mais geral. Vamos desabilitar o __disable__. Nossa configuração final das preferências ficará assim:
 
-image:image282.png[image,width=284,height=377]
+image::image282.png[image,width=284,height=377]
 
 Confimando a seleção, o Slic3r nos pede que reiniciemos:
 
-image:image283.png[image,width=336,height=117]
+image::image283.png[image,width=336,height=117]
 
 Saia do software e o chame novamente. Você perceberá uma nova aba, “Controller”. Se clicar nas outras abas,
 verá que em relação ao modo simples agora aparecem bem mais opções, divididas por seções laterais.
 
 Vamos aproveitar e já configurar a impressora 3D para ser reconhecida pela USB. Clique na aba “Printer settings”.
 
-image:image284.png[image,width=589,height=568]
+image::image284.png[image,width=589,height=568]
 
 O ajuste de “Extruders” permite que o slic3r lide com mais de um extrusor, para impressões com dois ou mais
 materiais simultâneos. E o “octoprint” é um software open-source que roda um servidor de impressão, ou seja,
@@ -9694,34 +9694,34 @@ http://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx[_http://
 No Windows, para verificar qual porta foi criada, entre no gerenciador de dispositivos e procure por UART to
 USB bridge:
 
-image:image285.png[image,width=339,height=315]
+image::image285.png[image,width=339,height=315]
 
 Se tudo der certo, uma vez que o driver esteja instalado, a autodetecção do Slic3r vai funcionar nas opções,
 quando você apertar a setinha que desenrola as portas disponíveis:
 
-image:image286.png[image,width=493,height=286]
+image::image286.png[image,width=493,height=286]
 
 Selecionada a porta, a configuração “Speed” se torna automaticamente ativa. A grande maioria das impressoras
 3D aceita a velocidade de 115200 bps, que é a configuração segura que usaremos. Algumas impressoras 3D aceitam
 velocidade maiores como 225000 e 250000 (confirma o manual da sua impressora). Após entrarmos com a velocidade,
 clicamos no botão “Test” para ver se a conexão funcionou com sucesso.
 
-image:image287.png[image,width=447,height=282]
+image::image287.png[image,width=447,height=282]
 
 Na aba “Controller” agora já é possível inclusive se conectar à impressora para enviar alguns comandos
 básicos. Como é um recurso recente do slic3r, o que se pode fazer por essa interface ainda é pouco – mas o
 importante é que a configuração habilita o comando “Print” da aba __Plater__, possibilitando que imprimamos
 a partir da bandeja virtual.
 
-image:image288.png[image,width=596,height=350]
+image::image288.png[image,width=596,height=350]
 
-image:image289.png[image,width=616,height=528]
+image::image289.png[image,width=616,height=528]
 
 O outro ajuste que da impressora 3D que configuramos mas ainda não apareceu é o diâmetro do bico. Basta clicarmos
 no item _Extruder 1_ que o encontramos. Nada mais lógico; o bico é parte do hotend que é parte do extrusor,
 logo a configuração fica aí.
 
-image:image290.png[image,width=623,height=160]
+image::image290.png[image,width=623,height=160]
 
 Se tivéssemos mais de um extrusor, cada um deles teria um item de configuração para si, e eles poderiam ter
 diâmetros de bicos diferentes. O item seguinte, __extruder offset__, só tem sentido para configurações com
@@ -9755,7 +9755,7 @@ diferentes firmwares de impressoras 3D: http://reprap.org/wiki/G-code[_http://re
 Tratamos g-codes em mais detalhes no capítulo “Diversão com G-Code”, em que descrevemos o formato e passamos
 dicas e truques para ele tornar a sua impressão melhor.
 
-image:image291.png[image,width=622,height=639]
+image::image291.png[image,width=622,height=639]
 
 === Diâmetro e temperatura
 
@@ -9768,7 +9768,7 @@ estão na aba de filamento do Slic3r e em outros fatiadores seguem o padrão de 
 diferentes para que possa ter muitas dessas combinações armazenadas. Essa configuração pode se tornar bastante
 complicada, caso o leitor tenha curiosidade tratamos mais a frente em detalhes.
 
-image:image292.png[image,width=607,height=307]
+image::image292.png[image,width=607,height=307]
 
 === O Multiplicador de Extrusão
 
@@ -9791,7 +9791,7 @@ muito mais facilmente aos fios do pinhão, tendo eles enterrados profundamente, 
 como PLA, oferecerão maior resistência. Esse contato diferenciado entre filamentos faz com que para a mesma
 _velocidade angular_ (taxa com que o pinhão roda) se traduza em diferentes __velocidades escalares__.
 
-image:image293.png[image,width=642,height=439]
+image::image293.png[image,width=642,height=439]
 
 Sempre é interessante ver a história da reprap, e o blogueiro _nophead_ tem um artigo
 mais profundo sobre este problema da ‘mordida’ do pinhão que virou referência:
@@ -9839,7 +9839,7 @@ porcentagem. O efeito é o mesmo, é o fator multiplicado por 100. Um multiplica
 é correspondente a um multiplicador de extrusão do Cura de 120% (e a nomenclatura no Cura para a configuração
 deste item é __flow__, fluxo).
 
-image:image294.png[image,width=553,height=390]
+image::image294.png[image,width=553,height=390]
 
 === Os mesmos ajustes de sempre
 
@@ -9875,16 +9875,16 @@ No Simplify3D, a primeira aba se refere ao extrusor e nela já temos a configura
 do multiplicador de extrusão. Curiosamente, temos também aí ajustes de retração associados ao extrusor,
 algo que trataremos mais à frente.
 
-image:image295.png[image,width=631,height=504]
+image::image295.png[image,width=631,height=504]
 
 Já as configurações de ajuste de temperatura do filamento o Simplify3D organiza numa aba à parte, em que
 todos os elementos com temperatura controlável ficam organizados. Assim, você pode ter um elemento extrusor,
 um segundo elemento extrusor (para quando tem extrusor duplo), a mesa aquecida e até ter elementos para câmara
 aquecida e outras mesas aquecidas (algumas impressoras 3D de maior volume usam isso).
 
-image:image296.png[image,width=529,height=450]
+image::image296.png[image,width=529,height=450]
 
-image:image297.png[image,width=531,height=429]
+image::image297.png[image,width=531,height=429]
 
 Anti-intuitivamente, os ajustes de forma e tamanho de mesa do Simplify3D ficam na aba G-Code, e os G-Codes de início
 e fim não ficam nessa aba – ficam na aba scripts. Veja no entanto que a forma de mesa é um “override” em
@@ -9898,7 +9898,7 @@ As configurações de máquina do Simplify3D permitem alguns ajustes que não vi
 a direção em que o fim de curso ocorre e na visualização, inverter algum dos eixos. Ele também tem os
 “offsets” de extrusor que a configuração do Slic3r oferece e que quase nunca são usados.
 
-image:image298.png[image,width=611,height=459]
+image::image298.png[image,width=611,height=459]
 
 O diâmetro do filamento aparece na categoria “Other” (outros), outra organização não muito intuitiva de
 configurações. Apesar de sua ululante excelência técnica, parece ter faltado aos arquitetos do Simplify3D um
@@ -9912,7 +9912,7 @@ o peso, pode calcular também o custo financeiro do uso do material. Se o operad
 pode colocar diretamente seu preço neste campo que quando realizar o fatiamento o Simplify3D já dirá quanto
 ele deve cobrar.
 
-image:image299.png[image,width=582,height=437]
+image::image299.png[image,width=582,height=437]
 
 === Cura
 
@@ -9920,7 +9920,7 @@ image:image299.png[image,width=582,height=437]
 tem a numeração até a série 15.04 (sendo a versão 15.04.6 a de manutenção mais recente) e o que foi quase
 totalmente reescrito, cuja numeração na época da redação deste texto estava em 2.7.
 
-image:image300.png[image,width=642,height=235]
+image::image300.png[image,width=642,height=235]
 
 O redesenho do Cura tem seus motivos. Muitos recursos a mais foram adicionados ao fatiador, mas a “poeira”
 de tanta mudança ainda está se assentando. Quando um software sofre mudanças tais que perde recursos que antes
@@ -9932,7 +9932,7 @@ Por outro lado, a diferença de recursos (novos) que o Cura novo tem em relaçã
 valeria a pena listar aqui. Basta dizer que ele tem tantos recursos e tão granulares que permite que você ajuste
 a _visibilidade_ deles.
 
-image:image301.png[image,width=542,height=474]
+image::image301.png[image,width=542,height=474]
 
 Esse é, portanto, um grande diferencial dessa nova versão do Cura. Ele permite sintonia milimétrica de cada
 pequeno detalhe do fatiamento, de forma que quem precisa de ajustes finos terá no fatiador, hors concours,
@@ -9949,13 +9949,13 @@ ajustes de impressão e impressoras; e permite a você definir “profiles” e 
 de impressão. Vários dos nossos itens iniciais, incluindo até mesmo o G-Code de início e fim de impressão,
 estão diretamente no diálogo de configuração de impressora.
 
-image:image302.png[image,width=615,height=531]
+image::image302.png[image,width=615,height=531]
 
 E os outros itens de nosso interesse – temperaturas e diâmetro do filamento? Não é preciso procurar muito. Estão
 logo no início, nas configurações de ajuste de material, seguidos pelo “flow” que é o multiplicador de
 extrusão.
 
-image:image303.png[image,width=614,height=563]
+image::image303.png[image,width=614,height=563]
 
 == Importação e disposição de peças na mesa
 
@@ -9986,9 +9986,9 @@ serviços de nuvem que fazem o mesmo, incluindo o próprio thingiverse, e o inte
 *JP* fez um software proprietário gratuito de lithopanes para Windows, com interface gráfica bem intuitiva:
 http://www.imprimindo3d.com.br/software-para-impressao-de-lithophanes/[_http://www.imprimindo3d.com.br/software-para-impressao-de-lithophanes/_]
 
-image:image304.png[image,width=642,height=678]
+image::image304.png[image,width=642,height=678]
 
-image:image305.png[image,width=623,height=416]
+image::image305.png[image,width=623,height=416]
 
 Uma vez importada a figura tridimensional, ela aparecerá por _default_ no centro da mesa. Se forem importadas várias
 figuras, o software pode preguiçosamente dispô-las no centro sobrepondo as anteriores, ou pode rearranjá-las na
@@ -10004,7 +10004,7 @@ arquivo STL carregado como um único objeto. Isso pode ser inconveniente para po
 pois ele só permitirá a você operar em todos de uma vez. Para evitar isso, tanto Slic3r quanto Simplify3D
 permitem a você separar os vários objetos:
 
-image:image306.png[image,width=642,height=373]
+image::image306.png[image,width=642,height=373]
 
 Você vê que no menu do Slic3r ainda aparecem opções para manipulações dos objetos como rotacionar, “scale”
 (redimensionar) e espelhar. Mas primeiro vamos ao mais básico: o melhor é primeiro você aumentar o seu campo
@@ -10028,7 +10028,7 @@ vários fatiadores, visto que será comum confundir as teclas.  * Cura: Com o mo
 botão esquerdo na peça para arrastá-la; botão direito em qualquer lugar para rotacionar o ponto de vista;
 botão do meio para __pan__.
 
-image:image307.png[image,width=642,height=401]
+image::image307.png[image,width=642,height=401]
 
 === Configurações adicionais de posicionamento
 
@@ -10045,19 +10045,19 @@ de um número (os graus de rotação em relação ao eixo), pode ser muito difí
 acontece.  + Nesse sentido, é útil resgatar um pouco de teoria da modelagem tridimensional. Os softwares de
 tratamento de forma 3D seguem a *regra da mão direita* para rotação.
 
-image:image308.png[image,width=642,height=499]
+image::image308.png[image,width=642,height=499]
 
-1.  [[section-11]] === image:image309.png[image,width=642,height=319] + O Cura faz as rotações
+1.  [[section-11]] === image::image309.png[image,width=642,height=319] + O Cura faz as rotações
 com o mesmo referencial (pois ele permite entrar valores), mas o Simplify3D pode confundir quem não quiser usar o
 modo interativo e colocar os valores diretamente, pois a representação _default_ dos eixos dele inverte o Y pois
 assim a visualização da impressão em impressoras 3D cartesianas fica mais fácil. Para a rotação funcionar
 segundo a regra da mão direita, é preciso desmarcar a inversão do Y, ou simplesmente decorar que os sentidos
 de rotação numérica, no default dele, são invertidos.
 
-image:image310.png[image,width=507,height=364]
+image::image310.png[image,width=507,height=364]
 
 * **Simplify3D**: As configurações de visualização, posicionamento e disposição estão espalhadas pelo menu
-*Tools* → *Options* do fatiador: + image:image311.png[image,width=463,height=605] + As importantes
+*Tools* → *Options* do fatiador: + image::image311.png[image,width=463,height=605] + As importantes
 para nosso caso serão: ** *Swap mouse scroll wheel zoom direction* – faz com que o sentido da rodinha do mouse
 se inverta: para trás diminuirá e para frente aumentará o zoom.  ** **Middle mouse button resets view**: caso
 o ângulo de visualização esteja muito ruim, você pode resetá-lo para o _default_ simplesmente pressionando o
@@ -10068,7 +10068,7 @@ as transformações visualmente o Simplify3D apresenta “gizmos” (controles) 
 realizá-las. Com essa configuração selecionada, o fatiador sempre mostrará os 3 eixos para transformação ao
 invés de somente um.
 
-image:image312.png[image,width=642,height=263]
+image::image312.png[image,width=642,height=263]
 
 * Na aba *Machine* temos novamente de interesse a possibilidade de ligar ou desligar na configuração default o
 “flip Y” visto na regra da mão direita.  * Na aba *Models* temos o “**Automatically scale to correct unit system
@@ -10091,12 +10091,12 @@ que se a face selecionada não for a mais baixa na peça, ela não encostará na
 + Tanto no Ctrl-T quanto no Ctrl-L as modificações de posicionamento e rotação ficam armazenadas nos campos
 numéricos do objeto, e podem ser zeradas restaurando o objeto a coordenadas “default”.
 
-image:image313.png[image,width=642,height=366]
+image::image313.png[image,width=642,height=366]
 
 * **Cura**: as opções gerais do Cura, que afetam visualização e posicionamento, podem ser um pouco difíceis
 de compreender. A tela de configuração pode ser acessada no Menu __Preferences → Configure Cura → General__:
 
-image:image314.png[image,width=642,height=530]
+image::image314.png[image,width=642,height=530]
 
 As opções pertinentes são:
 
@@ -10126,7 +10126,7 @@ opções para posicionamento, rotação, modificação, etc., e para cada uma de
 __default__, os controles têm uma “grade” de valores em que ficam, mas se você deixar a tecla *Shift*
 apertada pode fazer ajuste fino. O mesmo efeito pode ser dado desselecionando o “snap” do controle específico.
 
-image:image315.png[image,width=577,height=432]
+image::image315.png[image,width=577,height=432]
 
 * **Rotacionar a peça na mesa para obter orientação ótima**: esta opção do Cura aparece
 em _Extensions → OrientationPlugin → Calculate optimal printing orientation_ caso o
@@ -10149,9 +10149,9 @@ Exclusividade do Slic3r, essa função não existe nos outros fatiadores e serve
 usando de um plano de corte. Para ativá-la, você pode selecionar o objeto e apertar o botão de menu “Cut”,
 ou clicar com o botão direito e selecionar a opção “Cut”.
 
-image:image316.png[image,width=642,height=818]
+image::image316.png[image,width=642,height=818]
 
-1.  [[section-12]] === + [[section-13]] === image:image317.png[image,width=642,height=441] +
+1.  [[section-12]] === + [[section-13]] === image::image317.png[image,width=642,height=441] +
 === Simulando o corte no Cura e Simplify3D
 
 Apesar de esses fatiadores não terem uma função de corte específica como o Slic3r, é possível usar um editor
@@ -10163,13 +10163,13 @@ relação ao “plano de corte”) e também de ter que saber a dimensão e posi
 corte. Demonstraremos no *Cura* pois é trivial saber como fazer as mesmas transformações no Simplify3D, dado
 o que já ensinamos.
 
-=== image:image318.png[image,width=578,height=377]
+=== image::image318.png[image,width=578,height=377]
 
-image:image319.png[image,width=579,height=422]
+image::image319.png[image,width=579,height=422]
 
-image:image320.png[image,width=623,height=379]
+image::image320.png[image,width=623,height=379]
 
-image:image321.png[image,width=613,height=346]
+image::image321.png[image,width=613,height=346]
 
 == Impressão contínua vs. sequencial
 
@@ -10194,7 +10194,7 @@ e provavelmente muitos outros a serem inventados. Portanto, você não informa d
 sistema de eixos que usa e suas limitações específicas, você informa dados mais simples. E aí temos a diferença:
 cada fatiador pede dados ligeiramente diferentes para saber se a impressão atual baterá nessas limitações.
 
-[[FEITO continuavssequencial]]image:image322.png[image,width=621,height=450]
+[[FEITO continuavssequencial]]image::image322.png[image,width=621,height=450]
 
 O modo default dos fatiadores é o contínuo. Como os diferentes fatiadores tratam o problema:
 
@@ -10205,9 +10205,9 @@ está. Se houver mais de um extrusor e o deslocamento estiver configurado no Sli
 mas como geralmente o deslocamento está no firmware, o que se usa nesses casos é somar a distância entre os
 extrusores e os raios deles para o controle de colisão.
 
-image:image323.png[image,width=529,height=212]
+image::image323.png[image,width=529,height=212]
 
-image:image324.png[image,width=601,height=396]
+image::image324.png[image,width=601,height=396]
 
 O Slic3r usa esses dados para avisar sobre colisões já enquanto se arrumam os objetos na mesa. Deixá-los próximos
 demais de tal modo que o cilindro colida com algum objeto fará a barra de status mostrar o aviso “Some objects
@@ -10216,7 +10216,7 @@ colidirá com eles”). Se os objetos estiverem separados, mas ainda forem maior
 ele avisará “Some objects are too tall and cannot be printer without extruder collisions” (“Alguns objetos
 são altos demais e não podem ser impressos sem colisões do extrusor”.
 
-image:image325.png[image,width=578,height=461]
+image::image325.png[image,width=578,height=461]
 
 * Cura: como o Slic3r, tem a *altura dos eixos* configurável nas definições de impressora: Preferences →
 Printers → Machine Settings → Gantry height. No entanto ele não tem a opção de “raio” ou volume do
@@ -10227,9 +10227,9 @@ exige conhecimento avançado e muita consulta, na prática esse dado está indis
 outro lado, ele tem os dados simplificados “printhead settings” que permitem dizer o mesmo, sendo apenas
 distâncias horizontais do bico aos extremos do extrusor.
 
-image:image326.png[image,width=642,height=508]
+image::image326.png[image,width=642,height=508]
 
-image:image327.png[image,width=642,height=294]
+image::image327.png[image,width=642,height=294]
 
 Se você tem uma impressora corretamente cadastrada entre as impressoras do Cura, o dado da forma do extrusor já
 estará configurado como devia. Se estiver usando um perfil genérico, para o extrusor sem ventoinha ele usa as
@@ -10237,14 +10237,14 @@ medidas de um quadrado de 2mm de lado, e com ventoinha um retângulo de 30mm no 
 eixo (gantry height) está em 20mm também, e se quiséssemos que o Cura não a levasse em consideração bastaria
 colocar um valor bem alto, como 99999999.
 
-image:image328.png[image,width=619,height=468]
+image::image328.png[image,width=619,height=468]
 
 * Simplify3D: O Simplify3D começa com a abordagem de simplesmente _não ter_ o raio, medida ou formato do extrusor,
 tendo especificável (mas não configurável) somente a altura de colisão do eixo. Dessa forma, ele deixa a tarefa
 de espaçar corretamente as formas na mesa inteiramente para o operador. O modo sequencial é dado na hora em que
 o Simplify3D vai executar o fatiamento, e nesse momento você deve especificar a altura dos eixos.
 
-image:image329.png[image,width=598,height=379]
+image::image329.png[image,width=598,height=379]
 
 E mais uma diferença do Simplify3D é que a sequência não é dada entre cada _peça_ na mesa e sim entre
 cada __processo__. Isto significa que se você tem 30 peças, se quiser imprimi-las em sequência precisará de
@@ -10254,7 +10254,7 @@ ele divide em seções: como a altura máxima que ele consegue obter é, digamos
 ele imprime os processos em sequência até chegar a 20mm em cada um deles; então, na altura 20mm + uma camada,
 ele reinicia a sequência até completar 40mm; e daí em diante, até completar todos os objetos.³
 
-image:image330.png[image,width=591,height=449]
+image::image330.png[image,width=591,height=449]
 
 Neste caso a vantagem do Simplify3D sobre Cura e Slic3r é aparente, mesmo não tendo a análise mais completa
 levando em conta o formato do hotend ou extrusor. Resta esperar que tais recursos sejam também implementados
@@ -10289,7 +10289,7 @@ E se queremos detalhes, precisamos evitar ao máximo o efeito “degrau” que p
 impressão muito grossas, análogo à pixelização que se vê em gráficos de computadores antigos. A _altura de
 camada_ (__layer height__, em inglês) é, na prática, a “resolução” da impressora 3D.
 
-image:image331.png[image,width=528,height=423]
+image::image331.png[image,width=528,height=423]
 
 A altura de camada será limitada fisicamente pelo diâmetro do bico, já que é ele que determina a altura máxima
 que o filete de plástico consegue atingir. Via de regra, não é recomendável usar uma altura de camada maior que
@@ -10299,7 +10299,7 @@ de menos de 20% pois o plástico terá uma subextrusão tão acentuada que acaba
 ainda com outros problemas. Portanto, para um bico padrão de 0,4mm se recomenda uma altura de camada entre 0,08mm
 e 0,32mm – tendo sempre em vista que essa “regra” é apenas uma orientação, com muitos casos em que não vale.
 
-image:image332.png[image,width=642,height=573]
+image::image332.png[image,width=642,height=573]
 
 Uma camada mais fina torna em geral a superfície mais suave e portanto pode parecer sempre desejável, mas tem
 desvantagens. Como o extrusor se movimenta na mesma velocidade quer esteja fazendo uma camada de 0,3mm, quer uma de
@@ -10320,7 +10320,7 @@ plástico pode trazer deslocamentos micrométricos mas relevantes, e a empresa P
 um mecanismo de cálculo de vários índices para sua impressora 3D, entre eles a de “altura de camada ideal”
 considerando o mecanismo.
 
-image:image333.png[image,width=596,height=631]
+image::image333.png[image,width=596,height=631]
 
 == Controle de altura de camada e fatiamento adaptativo
 
@@ -10331,12 +10331,12 @@ facilidade com que isso é feito: selecionando o objeto, clicando com o botão d
 para configurações _por objeto_ e usando a aba “layers” pra definir os intervalos de altura e as alturas de
 camada que terão (valores fora desses intervalos terão a altura de camada da configuração geral).
 
-image:image334.png[image,width=549,height=460]
+image::image334.png[image,width=549,height=460]
 
 O _fork_ do Slic3r da Prusa Research, o Prusa Slic3r, levou este conceito mais adiante e permite uma configuração
 suave e visual das alturas de camada:
 
-image:image335.png[image,width=521,height=455]
+image::image335.png[image,width=521,height=455]
 
 E como se usa esta facilidade? Ora, se você já enxergou uma peça impressa e o efeito de “escada” ou
 “serrilhado” na vertical especialmente nas partes que deveriam ser curvas suaves, sabe o problema de se dividir
@@ -10356,7 +10356,7 @@ da implementação independente da idéia feita pelo usuário __platsch__no Slic
 de manual e automático: o algoritmo inicialmente faz a análise e ajustes das alturas de camadas automaticamente,
 com o usuário podendo alterá-las.
 
-image:image336.png[image,width=642,height=581]
+image::image336.png[image,width=642,height=581]
 
 === Valor da cúspide
 
@@ -10368,9 +10368,9 @@ configurável para o fatiamento. Um valor de cúspide igual a zero fará com que
 média das curvas, e as deixará sempre no valor mínimo. Um valor de cúspide igual ou maior que a altura de
 camada máxima deixará as camadas sempre no valor máximo.
 
-image:image337.png[image,width=535,height=241]
+image::image337.png[image,width=535,height=241]
 
-image:image338.png[image,width=579,height=508]
+image::image338.png[image,width=579,height=508]
 
 === Em outros fatiadores
 
@@ -10379,9 +10379,9 @@ consistente, configurável e modificável. Outros fatiadores que a implementam c
 são o open-source _repsnapper_ e o proprietário __voxelizer__. No caso do repsnapper é apenas uma opção a
 ser ligada ou desligada e no caso do voxelier só o tamanho de camada mínimo e máximo são configuráveis.
 
-image:image339.png[image,width=518,height=432]
+image::image339.png[image,width=518,height=432]
 
-image:image340.png[image,width=567,height=352]
+image::image340.png[image,width=567,height=352]
 
 1 -
 http://www.instructables.com/id/Variable-Slicing-for-3D-Printing-on-Autodesk-Ember/[_http://www.instructables.com/id/Variable-Slicing-for-3D-Printing-on-Autodesk-Ember/_]
@@ -10392,7 +10392,7 @@ http://www.instructables.com/id/Variable-Slicing-for-3D-Printing-on-Autodesk-Emb
 
 === A Importância da Primeira Camada
 
-image:image341.png[image,width=636,height=357]
+image::image341.png[image,width=636,height=357]
 
 A altura de camada __da primeira camada__, diferente das camadas da peça inteira, costuma levar diferentes
 considerações e tem seu tamanho ajustável de forma independente das outras camadas. Isso acontece porque a
@@ -10418,7 +10418,7 @@ isso seria extrudar plástico completamente encostado na mesa, o que gera press�
 o bico. O fatiador inicia suas impressões da altura de camada inicial mais um “offset geral” configurável
 para a máquina. Não confunda o _offset_ (deslocamento inicial) com a altura da primeira camada, tratada mais adiante.
 
-image:image342.png[image,width=626,height=287]
+image::image342.png[image,width=626,height=287]
 
 === Babystepping
 
@@ -10470,7 +10470,7 @@ dessa primeira camada (referida como extrusion width) a mesma. Assim a mesma qua
 0,2mm que é a sua altura de camada principal passa a ocupar 0,1mm, deixando essa camada bem “apertada” na
 mesa e portanto com bastante aderência.
 
-image:image343.png[image,width=599,height=327]
+image::image343.png[image,width=599,height=327]
 
 Outras técnicas que ajudam uma primeira camada boa:
 
@@ -10509,7 +10509,7 @@ plástico uniformemente.
 
 === *Skirt (saia)*
 
-image:image344.png[image,width=642,height=196]
+image::image344.png[image,width=642,height=196]
 
 A idéia desta estrutura – uma das desempenhar a função de “prime” – é literalmente desperdiçar filamento
 antes de iniciar a impressão: o _skirt_ nada mais é que um contorno da primeira camada da peça, separado desta
@@ -10523,7 +10523,7 @@ a quantidade de filamento que desperdiça é realmente muito pequena, é altamen
 
 === Brim (bainha)
 
-image:image345.png[image,width=642,height=196]
+image::image345.png[image,width=642,height=196]
 
 Já vimos que a aderência à mesa é um problema atacado por várias estratégias, e o brim vem se somar a
 elas. Consiste em fazer um contorno chato ligado à peça que aumenta a _superfície de aderência_ da peça em
@@ -10550,13 +10550,13 @@ bainha somente nelas, economizando plástico e tempo de impressão? A razão é 
 complexa e sujeita a casos de falha. Isso não evitou que algumas pessoas modelassem elas mesmas essas estruturas
 – batizadas carinhosamente de __mouse ears__, orelhas de camundongo, e colocassem no seu modelo.
 
-image:image346.png[image,width=633,height=451]
+image::image346.png[image,width=633,height=451]
 
-image:image347.png[image,width=612,height=442]
+image::image347.png[image,width=612,height=442]
 
 === Raft (balsa)
 
-image:image348.png[image,width=642,height=299]
+image::image348.png[image,width=642,height=299]
 
 Este nome um tanto cômico na verdade reflete a aparência da estrutura: é como se houvesse uma estrutura de troncos
 e galhos elevando um pouco a peça e funcionando como uma “bóia” em relação à plataforma de impressão. E
@@ -10581,7 +10581,7 @@ Tradicionalmente, as estruturas de suporte automático, nos fatiadores, usam dua
 o _ângulo mínimo_ em relação à vertical para o suporte ser colocado e o __padrão__, isto é, que forma
 esparsa os pilares terão, já que não serão totalmente preenchidos.
 
-image:image349.png[image,width=632,height=633]
+image::image349.png[image,width=632,height=633]
 
 Suportes são estruturas “detestadas mas necessárias” no mundo da impressão 3D. Muitas vezes colocadas
 pelo fatiador em uma área de difícil alcance, ou mesmo desnecessária, são um estorvo que leva muita gente a
@@ -10591,7 +10591,7 @@ dedicada a geometrias que evitem colocação de suportes e que na impressão 3D 
 utilizando filamentos dissolvíveis, embora encareça consideravelmente o processo, torna-se algo tão favorecido
 especialmente para as formas mais rebuscadas.
 
-image:image350.png[image,width=616,height=371]
+image::image350.png[image,width=616,height=371]
 
 Um destaque especial para um “macete” de qualidade: até a versão 1.2.9, os suportes do Slic3r
 são lentos e rebuscados, não funcionando tão bem quanto os de outros fatiadores. Como muitos
@@ -10607,7 +10607,7 @@ que essas diferenças e novidades da versão “prusa”, no momento de criaçã
 incorporadas ao Slic3r “oficial”, e possivelmente estarão disponíveis no momento em que você, leitor,
 o estiver lendo.
 
-image:image351.png[image,width=642,height=764]
+image::image351.png[image,width=642,height=764]
 
 === Um toque pessoal: os suportes de colocação manual
 
@@ -10623,7 +10623,7 @@ arrematar, fisicamente o próprio suporte do Simplify3D é um dos mais fáceis d
 padrão de sanfona que preserva melhor a qualidade das superfícies que apóia e que faz com que todo o suporte
 saia de uma vez só quando puxado.
 
-image:image352.png[image,width=603,height=437]
+image::image352.png[image,width=603,height=437]
 
 De fato, haja visto essa solução muito boa para o problema, o leitor pode se perguntar: por que nem todos os
 fatiadores a adotaram? A melhor resposta é que este recurso necessita de algoritmos complexos e uma sintonia fina
@@ -10632,20 +10632,20 @@ outros fatiadores para impressoras FFF do mercado que permitem a colocação man
 Craftware e o Raise3D Ideamaker. Ambos são proprietários, mas pelo menos também são multiplataforma (Mac OS X,
 Linux e Windows).
 
-image:image353.png[image,width=517,height=480]image:image354.png[image,width=566,height=407]
+image::image353.png[image,width=517,height=480]image::image354.png[image,width=566,height=407]
 
 Uma outra opção gratuita e proprietária é o software _Meshmixer_ da Autodesk. Diferente dos citados, ele não é
 um fatiador; ele é um __editor de malhas__, um software feito para auxiliar no tratamento de malhas para impressão
 e também com capacidades limitadas de modelagem. Similar ao Meshmixer a Autodesk oferece também o _Print Studio_
 com a mesma capacidade de fazer suportes automáticos, apesar de menor configurabilidade.
 
-image:image355.png[image,width=603,height=582]
+image::image355.png[image,width=603,height=582]
 
 Outro modo de colocar suportes personalizados – ou removê-los – é o usado pelo fatiador *Cura* em sua versão
 2.4.0: ele permite que se definam certas malhas como __malhas de modificação de suporte__, tanto para forçar
 suporte naquele volume (“Support Mesh”) como para forçar que ele não apareça (“Anti Overhang Mesh”).
 
-image:image356.png[image,width=642,height=558]
+image::image356.png[image,width=642,height=558]
 
 === A cobertura de escorrimento (draft shield ou
 ooze shield)
@@ -10659,7 +10659,7 @@ prevenir o warp. Quando o objetivo é este último, geralmente a estrutura acomp
 
 Alguns fatiadores não têm esta estrutura, mas ela pode ser aproximada configurando um _skirt_ com a altura da peça.
 
-image:image357.jpeg[image,width=618,height=516]
+image::image357.jpeg[image,width=618,height=516]
 
 === Pilares de escorrimento / prime / purga
 
@@ -10668,7 +10668,7 @@ filamento escorrido e limpar o bico a cada camada impressa. É bastante usado em
 bico é utilizado por vez, e o bico não ativo tende a deixar escorrer filamento. Se o ooze shield estiver causando
 problemas na peça, o pilar pode ser uma boa alternativa.
 
-image:image358.png[image,width=615,height=484]
+image::image358.png[image,width=615,height=484]
 
 === Bridges (pontes)
 
@@ -10682,11 +10682,11 @@ escolhidas. Alguns integrantes do _thingiverse_ e outros websites de compartilha
 “testes de tortura de pontes”, para você testar os limites de sua impressora com essas estruturas. Um dos
 mais clássicos é o do usuário __Triffid Hunter__, integrante ativo do projeto reprap.
 
-image:image359.png[image,width=633,height=577]
+image::image359.png[image,width=633,height=577]
 
-image:image360.jpeg[image,width=642,height=257]
+image::image360.jpeg[image,width=642,height=257]
 
-image:image361.png[image,width=623,height=527]
+image::image361.png[image,width=623,height=527]
 
 == Configurações de Qualidade
 
@@ -10709,7 +10709,7 @@ os valores entre 0 e 100, o fatiador empregará o segundo ajuste, que é o __pad
 estrutura repetitiva. Um terceiro ajuste do preenchimento é o ângulo em relação ao eixo X da mesa, e serve
 para que o preenchimento não coincida com a orientação da peça, tendo uma distribuição melhor de forças.
 
-image:image362.png[image,width=626,height=534]
+image::image362.png[image,width=626,height=534]
 
 O Slic3r e Simplify3D permitem grande variedade de padrões de preenchimento. A maioria dos casos no entanto tem
 mais valor ornamental e não contribui muito para melhorar propriedades desejáveis da peça. O Slic3r permite
@@ -10740,7 +10740,7 @@ o preenchimento, mas analisa o interior da peça oca para colocar suportes, gara
 peça. O Slic3r tem a configuração Print Settings → Infill → Reducing printing time → “Only infill where
 needed”, que força preenchimento zero mas coloca suportes nas partes internas com seções pendentes.
 
-image:image363.png[image,width=642,height=487]
+image::image363.png[image,width=642,height=487]
 
 Alguns fatiadores permitem ainda fazer o preenchimento com altura de camada diferente do resto da impressão. Neste
 caso, a altura de camada do preenchimento precisa ser múltipla da altura de camada da impressão – digamos,
@@ -10771,12 +10771,12 @@ do topo (__top__) e da parte de baixo (__bottom__). Alguns fatiadores usam para 
 parte de baixo são dadas em camadas e __horizontal shells – Solid layers Top & Bottom__.  * **Cura**: paredes
 laterais são _wall thickness_ (espessura de parede). Do topo e da parte de baixo são _Top/Bottom Thickness_
 (espessura superior/inferior). Podem ser dados tanto em número de perímetros/camadas quanto em milímetros, o
-fatiador popula o campo de acordo.  + image:image364.png[image,width=618,height=268] * **Simplify3D**:
+fatiador popula o campo de acordo.  + image::image364.png[image,width=618,height=268] * **Simplify3D**:
 paredes laterais são __Outline/Perimeter Shells__. Do topo e da barte de baixo são _Top Solid Layers_ e __Bottom
 Solid Layers__. São sempre dados em números de filetes / camadas.  * Outros fatiadores terão suas próprias
 nomenclaturas, mas a partir destes exemplos é possível inferir quais sejam.
 
-image:image365.png[image,width=620,height=504]
+image::image365.png[image,width=620,height=504]
 
 Seguindo a indicação para FFF de espessuras mínimas para resistência (entre 1 e 2 mm), podemos inferir que
 para um bico de 0,4mm e altura de camada de 0,2mm uma boa espessura lateral seriam 4 filetes (0,4 x 4 = 1,6mm)
@@ -10805,7 +10805,7 @@ baixa, mas pode ser também uma largura de extrusão menor que a real. Nesse cas
 * **para filetes distantes**, _aumente_ a largura de extrusão.  * **Para filetes apertados ou encavalados demais**,
 _diminua_ a largura de extrusão.
 
-image:image366.png[image,width=642,height=408]
+image::image366.png[image,width=642,height=408]
 
 __*Nota de configuração*__: o Slic3r permite ajustar as larguras de camada tanto em valor absoluto (por exemplo,
 0,4mm) quanto porcentagem (por exemplo, 200%). Mas porcentagem _de quê_ exatamente? Intuir-se-ia ser o diâmetro do
@@ -10821,7 +10821,7 @@ Notas:
 1 – A fórmula do Slic3r é , onde w = largura de extrusão calculada, d = diâmetro do bico e h = altura de
 camada: w = (π.d² + (4-π).h²)/(4h), com o valor de w limitado ao máximo de 3d.
 
-image:image367.png[image,width=642,height=437]
+image::image367.png[image,width=642,height=437]
 
 === Ventilação
 
@@ -10838,7 +10838,7 @@ de simplesmente “deixar a ventoinha ligada o tempo todo”.  * Quando o filame
 “desabando” nas partes mais delicadas como pontes e overhangs. Neste caso, basta deixar os ajustes automáticos
 do fatiador em seus valores __default__.
 
-image:image368.png[image,width=502,height=465]
+image::image368.png[image,width=502,height=465]
 
 === Velocidades
 
@@ -10885,7 +10885,7 @@ recurso chamado de “autospeed” (autovelocidade) que calcula as velocidades i
 a pressão interna do hotend a mais constante possível; o Cura simplesmente permite que o usuário decida tudo,
 deixando todas as configurações ao alcance. Pode ser enlouquecedor lidar com tantas configurações.
 
-image:image369.png[image,width=616,height=407]
+image::image369.png[image,width=616,height=407]
 
 O melhor a fazer para saber velocidades boas para sua impressora 3D é recorrer à fonte – o fabricante. Grupos
 de discussão, facebook e semelhantes relacionados ao produto também podem ter dicas de usuários aventureiros que
@@ -10911,7 +10911,7 @@ só, visto que frequentemente os dois eixos têm as mesmas velocidades e caracte
 Como a _direção_ conta, isso quer dizer que até mantendo a velocidade escalar constante, mas mudando a direção,
 o ajuste de _jerk_ pode entrar em ação.
 
-image:image370.png[image,width=642,height=648]
+image::image370.png[image,width=642,height=648]
 
 Colocando um jerk *alto* (digamos, 30 ou 40mm/s), você está dizendo para o seu fatiador ou firmware que o hardware
 da sua impressora é de qualidade industrial e muito próximo do ideal, não gerando artefatos com esse valor. Com
@@ -10939,7 +10939,7 @@ extrusão em Print Settings → _Speed_ → _Autospeed (advanced)_ → _Max prin
 velocidades da mesma seção que se deseja que o algoritmo trate (velocidades de suportes, pontes e preenchimentos
 de vãos não são tratados pelo algoritmo).
 
-image:image371.png[image,width=490,height=699]
+image::image371.png[image,width=490,height=699]
 
 === Retração
 
@@ -10965,7 +10965,7 @@ ele não consegue passar pela seção do tubo que leva à zona aquecida, pois es
 resultado é entupimento e desgaste do filamento na engrenagem do tracionador. Estima-se que 2 segundos fora da
 zona aquecida são o suficiente para o filamento expandir o suficiente para entupir, antes de ser tracionado novamente.
 
-image:image372.png[image,width=539,height=342]
+image::image372.png[image,width=539,height=342]
 
 Algumas estratégias são usadas para diminuir este efeito.
 
@@ -11044,26 +11044,26 @@ patente foi aceita mesmo com vários casos documentados de “arte prévia” de
 a invalidaria.¹ Nas discussões de fatiadores como o slic3r, se optou por não implementar a técnica para evitar
 qualquer imbróglio legal.² É o “espaço de idéias” sendo fechado a olhos vistos.
 
-image:image373.png[image,width=642,height=695]
+image::image373.png[image,width=642,height=695]
 
-image:image374.png[image,width=625,height=260]
+image::image374.png[image,width=625,height=260]
 
 No Slic3r, o ajuste da costura está em Print Settings → Layers and Perimeters → Advanced → Seam Position. Você
 pode escolher entre alinhado, aleatório e “mais perto” (tentará achar uma face com ângulo agudo para esconder
 a costura). O Prusa Slic3r oferece ainda a opção “Rear”, que é o Y máximo, e por default já implementa
 uma forma modesta de __seam hiding__³.
 
-image:image375.png[image,width=344,height=180]
+image::image375.png[image,width=344,height=180]
 
 No Simplify3D, o ajuste da costura está em Layers → Start Points. Você pode escolher entre aleatório, otimizar
 para velocidade, e mais perto (alinhado) de um ponto definido pelo usuário no plano XY.
 
-image:image376.png[image,width=428,height=157]
+image::image376.png[image,width=428,height=157]
 
 No Cura, o ajuste da costura está em Shell → Z Seam Alignment, e você pode escolher entre aleatório, menor
 caminho e mais perto (alinhado) de um ponto definido pelo usuário no plano XY.
 
-image:image377.png[image,width=642,height=242]
+image::image377.png[image,width=642,height=242]
 
 1 - Este artigo explica o problema do método patenteado pela Stratasys:
 http://patents.stackexchange.com/questions/4667/3d-printing-seam-concealment-for-3d-models-patent-application-prior-art-re[_http://patents.stackexchange.com/questions/4667/3d-printing-seam-concealment-for-3d-models-patent-application-prior-art-re_].
@@ -11094,37 +11094,37 @@ objetos bojudos com apenas uma “ilha” por camada, cujo interior não deve se
 faz é a impressão contínua do contorno da peça, subindo suavemente numa espiral (daí o nome) progressivamente
 mais alta, até chegar ao topo. Fica mais fácil entender através da ilustração do fatiamento de um objeto.
 
-image:image378.png[image,width=630,height=360]
+image::image378.png[image,width=630,height=360]
 
 O tipo de objeto que mais se beneficia desse tipo de impressão são __vasos__, por isso este modo também é
 conhecido como “modo vaso”. O objeto único de geometria simples é um requisito para ele funcionar corretamente;
 caso vários objetos ou um objeto complexo estiverem carregados, os fatiadores não avisam que não vão imprimir
 numa espiral ininterrupta – ao invés disso, eles simplesmente imprimem em camadas, sem espiralizar.
 
-image:image379.png[image,width=619,height=451]
+image::image379.png[image,width=619,height=451]
 
 Uma exceção à regra é o Slic3r, que não fatia com o modo espiral ligado se houver mais de um objeto na mesa
 – e deixa a seguinte mensagem na barra de status, até que o problema seja resolvido:
 
-image:image380.png[image,width=499,height=26]
+image::image380.png[image,width=499,height=26]
 
 “Spiral Vase” é o nome da opção nesse fatiador e está nas configurações de camada. Quando você ativa
 o modo, ele avisa que vai mudar várias outras configurações e pede confirmação que deseja prosseguir:
 
-image:image381.png[image,width=570,height=544]
+image::image381.png[image,width=570,height=544]
 
-image:image382.png[image,width=559,height=422]
+image::image382.png[image,width=559,height=422]
 
-image:image383.png[image,width=449,height=178]
+image::image383.png[image,width=449,height=178]
 
-image:image384.png[image,width=642,height=570]
+image::image384.png[image,width=642,height=570]
 
 Por causa da maneira como o modo espiral funciona, com a camada superior sendo automaticamente removida, muitos
 objetos em sites de compartilhamento de designs como o thingiverse deixam para download o contorno sólido do
 “vaso”, assumindo que o modo espiral automaticamente o deixará aberto em cima. Um exemplo é a série de
 vasos “Julia” do thingiverse (Julia é o nome dado a um conjunto de fórmulas matemáticas fractais):
 
-image:image385.png[image,width=642,height=428]
+image::image385.png[image,width=642,height=428]
 
 O modo vaso é especialmente útil para quem usa bicos largos (digamos, maiores que 0,8mm).
 
@@ -11142,7 +11142,7 @@ Cada fatiador tem suas peculiaridades, analisamos aqui alguns dos recursos espec
 *Slic3r* – Em _Print Settings_ → _Layers and perimeters_ há o quadro “__quality__” com 4 opções
 liga/desliga:
 
-image:image386.png[image,width=577,height=139]
+image::image386.png[image,width=577,height=139]
 
 * *Extra perimeters if needed* (perímetros extras se necessário) – em superfícies inclinadas, uma configuração
 baixa de perímetros (paredes) pode, através do arredondamento, acabar expondo a parte interna da peça. Com
@@ -11176,11 +11176,11 @@ peça excessivamente detalhada.
 mas a maioria deles é na aba __Advanced__.
 
 * Comecemos por eles, então, na seção de _thin walls_ (paredes finas): +
-image:image387.png[image,width=441,height=136] + O ajuste é bastante semelhante ao _detect thin_ walls
+image::image387.png[image,width=441,height=136] + O ajuste é bastante semelhante ao _detect thin_ walls
 do Slic3r: desligado (“Only use perimeters for thin walls”) ou ligado, com a tolerância de sobreposição de
 um perímetro em cima do outro definida. Assim como no Slic3r, se mesmo com esse valor algumas brechas aparecerem,
 você deve ir na aba “Infill” e aumentar o valor do “Outline overlap” (default em 20%).  * *Controle de
-escorrimento* + image:image388.png[image,width=425,height=177] + Este ajuste trata de modificadores
+escorrimento* + image::image388.png[image,width=425,height=177] + Este ajuste trata de modificadores
 para o movimento de retração do final de uma extrusão.  ** O primeiro ajuste, ☑ __*Only retract when crossing
 open spaces*__, faz com que ele só execute a retração se não for passar em alguma parte já impressa do objeto;
 senão, ele conta para essa parte remover qualquer resíduo do bico.  ** O segundo, ☑ __*Force retraction
@@ -11199,10 +11199,10 @@ ligado, a exceção seria para filamentos translúcidos e transparentes, em que 
 crossing outline for travel movements*__”, não deve ser ligado, pois faria o fatiador priorizar percursos sem
 passar por partes impressas.  * O Simplify3D tem as configurações bastante organizadas, e as de retração não
 se resumem a essa. Na aba “others”, há mais ajustes, pertinentes ao caso de vários extrusores (tools): +
-image:image389.png[image,width=429,height=157] + São eles a quantidade de filamento a retrair,
+image::image389.png[image,width=429,height=157] + São eles a quantidade de filamento a retrair,
 a quantidade adicional a extrudar quando recomeçar (que aconselhamos deixar sempre em zero) e a velocidade da
 retração.  * Por fim, o último lugar onde se configura retração no Simplify3D é na aba “Extruder”. Essas
-são as configurações principais de retração: + image:image390.png[image,width=618,height=200]
+são as configurações principais de retração: + image::image390.png[image,width=618,height=200]
 ** _*Retraction distance*_ e _*extra restart distance*_ são os mesmos do tool change, mas para o caso geral.
 ** __*Retraction vertical lift*__, também chamado Z-hopping, é levantar brevemente o extrusor quando houver
 retração para diminuir a formação de verrugas. Envolve movimento Z do extrusor que costuma ser lento em
@@ -11215,14 +11215,14 @@ __combing__. Ligando-se esse ajuste o fatiador passa a procurar realizar o wipe 
 de uma ilha impressa, e o wipe distance é a distância que ele deve percorrer realizado o movimento. Se _*perform
 retraction during wipe movement*_ estiver ligado, a distância aqui não é usada, sendo usada a duração da
 retração no lugar. O _wipe_ só é executado se a mínima distância para retração tiver sido percorrida.  *
-_*Bridging*_ + image:image391.png[image,width=424,height=211] + Antigamente bastante deficiente tanto
+_*Bridging*_ + image::image391.png[image,width=424,height=211] + Antigamente bastante deficiente tanto
 na detecção quanto na configurabilidade de suas pontes, a versão 4.0 do Simplify3D trouxe boas melhorias nessa
 parte. Os ajustes são: ** __*Unsupported area threshold*__: quanto de área mínima sem suporte é necessária
 para que o algoritmo decida que vai usar a estratégia de “ponte” para ligar uma seção à outra. Dada em
 milímetros quadrados (mm²).  ** __*Extra inflation distance*__: este ajuste leva em conta que a região de
 suporte da ponte se apóia em determinadas camadas inferiores (mais interna que as paredes), e permite expandir
 a região usada como apoio pra permitir uma fundação mais sólida. Pode ser difícil visualizar, então aqui
-está um exemplo de uma ponte expandida em 2mm + image:image392.png[image,width=594,height=282] **
+está um exemplo de uma ponte expandida em 2mm + image::image392.png[image,width=594,height=282] **
 _*Bridging extrusion multiplier*_ e __*bridging speed multiplier*__: assim como no Slic3r, estes multiplicadores
 de extrusão e velocidade permite que durante a ponte o fatiador extrudem menos plástico e mais rapidamente,
 para que ele fique mais esticado.  ** _*Use fixed bridging infill angle [0] deg*_ – faz com que os filetes que
@@ -11230,7 +11230,7 @@ percorrem a ponte tenham um ângulo diferente de 0 graus (paralelo à direção 
 settings to perimeters*_ – ao invés de considerar a ponte como somente a parte interna da estrutura que liga
 duas ilhas, considera seus perímetros como parte dela.
 
-image:image393.png[image,width=642,height=473]
+image::image393.png[image,width=642,height=473]
 
 *Cura* – Os ajustes relacionados a qualidade de impressão no Cura são tantos que fica difícil selecioná-los. Por
 isso, selecionamos os mais semelhantes ao slic3r e simplify3d, referentes a perímetros, parede finas e
@@ -11239,7 +11239,7 @@ conhecida. O Cura já apresenta “dicas” em azul com a descrição do que a c
 para português em sua versão oficial do programa pelo autor deste livro -, portanto a explicação aqui envolverá
 mais do que isso.
 
-image:image394.png[image,width=642,height=232]
+image::image394.png[image,width=642,height=232]
 
 * _*Outer Wall Inset*_ é um ajuste que juntamente com a compensação horizontal, tratada na próxima seção,
 ajuda uma peça a ter dimensões mais de acordo com o modelo. No momento do fatiamento ou tradução da peça 3D
@@ -11254,7 +11254,7 @@ outro lado, em seções pendentes, por o filete mais externo ser depositado sem 
 interior, ele pode acabar tendo menor qualidade.  * _*Alternate Extra Wall*_ faz em camadas alternadas a parede
 ter um filete a mais pra dentro. Este filete ajuda a sustentar o suporte interno, reforçando a peça como um todo.
 
-image:image395.png[image,width=642,height=240]
+image::image395.png[image,width=642,height=240]
 
 * __*Compensate Wall Overlaps*__: em algumas geometrias, o processo de fatiamento calcula uma trajetória de
 filete que por vezes tem que passar no mesmo lugar duas vezes – sobrepondo um filete sobre outro. Embora
@@ -11267,7 +11267,7 @@ que as áreas em volta são preenchidas, mas uma “falha” permanece. Ativar e
 da impressão da camada o extrusor volte a esta falha e a preencha com uma “gota” de filamento. O maior revés
 desta configuração é o tempo maior de impressão.
 
-image:image396.png[image,width=642,height=276]
+image::image396.png[image,width=642,height=276]
 
 * __*Print Thin Walls*__: Se já entendemos que o algoritmo de fatiamento “arredonda” a trajetória para a forma
 desejada visto que a espessura do filete não é desprezível, o ajuste de imprimir paredes finas nada mais faz que
@@ -11284,11 +11284,11 @@ que necessitam dessas lacunas e o fatiamento não as revela, é por causa disso.
 
 **Retração**: os ajustes principais de retração do Cura ficam na seção “**Material**”:
 
-image:image397.png[image,width=642,height=265]
+image::image397.png[image,width=642,height=265]
 
 Mas não todos. Os restantes ficam na seção _*Travel*_ (__*Percurso*__):
 
-image:image398.png[image,width=642,height=154]
+image::image398.png[image,width=642,height=154]
 
 Ao invés de discutir cada ajuste da retração ou reiterar expressões óbvias com “Retrai em Mudança de
 Camada”, mais vale entendermos as diferenças e semelhanças da retração do Cura com os outros fatiadores. O
@@ -11309,7 +11309,7 @@ Extrusion Distance Window*__) para que ele volte a retrair.
 __*Coasting*__: já introduzimos o conceito desta operação e mostramos os ajustes para o Simplify3D, mas o Cura
 permite uma configuração mais detalhada da mesma operação:
 
-image:image399.png[image,width=642,height=78]
+image::image399.png[image,width=642,height=78]
 
 Novamente, o Cura privilegia o _volume_ de filamento extrudado ao invés de comprimento, o que é na verdade
 tecnicamente mais adequado já que se espera que as impressoras passem a usar extrusão volumétrica. Para
@@ -11328,7 +11328,7 @@ em conta as dimensões ideais das camadas, o fato de cada filete abaixo ser “e
 bordas da peça se _espalharem_ um pouco mais do que o ideal, e traçarem um contorno no plano XY mais largo que
 o modelado. Exagerando o espalhamento para ilustração, o que aconteceu com os encaixes foi análogo a isto:
 
-image:image400.png[image,width=528,height=442]
+image::image400.png[image,width=528,height=442]
 
 Uma solução pra isso foi criada primeiro no fatiador slic3r, logo em seguida copiada pelo Simplify3D e um pouco
 depois, pelo Cura. Ocorre que as operações-padrão de “inset” e “outset” (termos de computação gráfica)
@@ -11338,13 +11338,13 @@ expansão em todas as direções dela, o modelo é, ele mesmo, uma expansão de 
 calcular esta forma mais interna e fatiá-la no lugar do modelo, pois a expansão dela equivalerá às dimensões
 reais dele. Desse modo:
 
-image:image401.png[image,width=507,height=469]
+image::image401.png[image,width=507,height=469]
 
 O valor de compensação horizontal é obtido pragmaticamente para o bico e filamento estimando-se a diferença
 entre encaixes. A compensação horizontal negativa funciona bem para o caso dos encaixes, mas a positiva também
 é útil para, por exemplo, letras finas que não aparecem…
 
-image:image402.png[image,width=619,height=518]
+image::image402.png[image,width=619,height=518]
 
 Como última nota sobre este recurso utilíssimo, cabe notar que os nomes são diferentes em fatiadores diferentes:
 
@@ -11368,7 +11368,7 @@ para imprimir:
 usadas para a impressão, eles produzem um prisma poligonal, ou seja, o círculo é transformado em um polígono
 equilátero de muitos lados.
 
-image:image403.png[image,width=642,height=500]
+image::image403.png[image,width=642,height=500]
 
 1.  **Pausas de segmento**: ok, converter um círculo para um polígono com 10 facetas não é boa idéia. Na hora
 de imprimir, então, vamos usar o máximo número de segmentos de reta possível – digamos, 1000 segmentos. E
@@ -11379,14 +11379,14 @@ um número enorme de instruções a executar em pouco tempo, e ainda contando ac
 acaba fazendo pausas entre elas.  2.  **Encolhimento de arco**: esse problema acontece quando o seu círculo tem
 espessura diferente de zero, ou seja, um círculo de “mundo real”. O seguinte diagrama explica o problema:
 
-image:image404.png[image,width=642,height=599]
+image::image404.png[image,width=642,height=599]
 
 1.  **Corte / repuxo de cantos**: enquanto que os problemas anteriores eram mais geométricos, este tem mais a ver
 com propriedades físicas como viscosidade, aderência, elasticidade e até calor específico. Quando o _hotend_
 deposita filamento em uma trajetória reta, e de repente sofre uma mudança suave de ângulo, o filamento acaba
 sendo “puxado” dos cantos para dentro. Mais um fator que diminui furos!
 
-image:image405.png[image,width=619,height=451]
+image::image405.png[image,width=619,height=451]
 
 === Como corrigir esse problema?
 
@@ -11525,7 +11525,7 @@ que isto aconteça e mesmo o tubo por onde entra o filamento flexível para ir p
 baixo atrito e bem justo (o que se contrapõe ao uso de tubos mais espaçosos para funcionar bem com variações
 de diâmetro de filamento).
 
-image:image406.png[image,width=642,height=466]
+image::image406.png[image,width=642,height=466]
 
 * *Velocidades altas* compõem a chance de embolamento, pois tracionam maior quantidade de filamento com tendência a
 dobrar numa unidade de tempo, com a mesma resistência mecânica.  * *Mudanças de velocidade, ou seja, acelerações*
@@ -11541,7 +11541,7 @@ sem folgas__, podendo ocorrer tanto por ajustes de fatiamento quanto por perdas 
 especialmente em impressões longas. Parte disso acontece por causa de pequenos fragmentos do filamento que se
 acumulam nos dentes e passam a funcionar como se fossem um lubrificante sólido.
 
-image:image407.png[image,width=642,height=467]
+image::image407.png[image,width=642,height=467]
 
 === Soluções e mitigações
 
@@ -11555,7 +11555,7 @@ vídeo citado. Existem extrusores de mercado específicos para lidar com filamen
 vários modelos de impressora, como o __Flexion Extruder__, que tem até mecanismo de autolimpeza para impedir
 que a engrenagem acumule fragmentos de filamento que prejudicariam a tração.
 
-image:image408.png[image,width=642,height=332]
+image::image408.png[image,width=642,height=332]
 
 Pode não ser necessário comprar um extrusor novo: existem vários modelos imprimíveis,
 com uma busca no site _thingiverse_ retornando mais de 500 modelos diferentes:
@@ -11564,7 +11564,7 @@ https://www.thingiverse.com/search?q=flexible+filament+extruder[_https://www.thi
 * *Dependendo do extrusor, pode ser suficiente uma pequena modificação* para eliminar a folga. Tal modificação
 será uma peça impressa que se encaixa na folga do extrusor e permite que o filamento escape.
 
-image:image409.png[image,width=530,height=394]
+image::image409.png[image,width=530,height=394]
 
 * **Uma das modificações mais efetivas, que pode geralmente ser utilizada em conjunto com uma peça antigap, é
 a inserção de um tubo de PTFE até o hotend**. O tubo de PTFE é uma peça comum e fácil de ser encontrada na
@@ -11573,7 +11573,7 @@ atrito e pode ser facilmente cortada com uma navalha para ficar bem rente às en
 modelos de extrusores para filamentos flexíveis já exigem o uso do tubo de PTFE, mas ele pode ser facilmente
 adaptado alargando-se o tubo de saída do tracionador para seu encaixe.
 
-image:image410.png[image,width=642,height=311]
+image::image410.png[image,width=642,height=311]
 
 * **A distância do tracionador ao hotend deve ser mínima**. Quanto maior a distância, maior a histerese elástica
 que impede o tracionamento e favorece o comportamento de “mola”. Por isso mesmo, bons extrusores de filamento
@@ -11585,13 +11585,13 @@ varia de acordo com o filamento flexível usado, com alguns ovalando mais facilm
 é desejável que o operador possa experimentar e encontrar o ponto ótimo de aperto. Uma das melhores formas de
 se implementar isso é com parafusos reguláveis:
 
-image:image411.png[image,width=594,height=342]
+image::image411.png[image,width=594,height=342]
 
 * Um *tensor de filamento* também ajuda a domar a histerese do filamento flexível, mantendo-o esticado até
 a altura do tracionador. É útil porque filamento flácido tende a entrar nas engrenagens mais “de lado” e
 portanto a embolar na saída.
 
-image:image412.png[image,width=571,height=417]
+image::image412.png[image,width=571,height=417]
 
 * **Se puder escolher o parafuso tracionador ou pinhão do extrusor, prefira os canaletados ao invés dos retos**. Eles
 guiam e aderem melhor a filamentos flexíveis. Por outro lado, isso exige também que a canaleta seja precisamente
@@ -11637,7 +11637,7 @@ suporte nos fatiadores populares.
 Portanto, com exceção do AMF que _pode_ funcionar adequadamente no Slic3r – exceto quando ele associa o extrusor
 errado ao material! -, não parece muito jeito de lidar com a dupla extrusão, há?
 
-image:image413.png[image,width=624,height=526]
+image::image413.png[image,width=624,height=526]
 
 A resposta é que há sim, é perfeitamente possível e até fácil modelar e associar partes de um modelo a extrusor
 se você conhece o fluxo de trabalho recomendado para isso. A razão de não ser tão intuitivo com um arquivo
@@ -11655,30 +11655,30 @@ onde aquele corpo acaba, no fatiador eles aparecerão encaixados.
 Você precisa informar ao fatiador, no entanto, que ele não deve mudar as coordenadas dos objetos, como por
 exemplo os rearranjando automaticamente. No Slic3r, você faz isso pelo menu File → Preferences:
 
-image:image414.png[image,width=487,height=358]
+image::image414.png[image,width=487,height=358]
 
 Abrimos ambos os STLs no Slic3r. Podem ser ambos ao mesmo tempo, um em sequência ao outro, ou arrastando os
 arquivos para a janela: eles aparecerão sobrepostos, formando um cone contínuo:
 
-image:image415.png[image,width=603,height=516]
+image::image415.png[image,width=603,height=516]
 
 Damos dois cliques em qualquer lugar do objeto. O Slic3r tem algo que são os “ajustes individuais por objeto”, que
 permitem fazer ajustes diferentes para vários objetos na mesa de impressão, como por exemplo infills diferentes. No
 nosso caso, estamos querendo associar cada objeto a um material, ou cor nesse caso. Acabamos selecionando a parte
 laranja do cone, como a janela mostra:
 
-image:image416.png[image,width=439,height=331]
+image::image416.png[image,width=439,height=331]
 
 Clicamos no sinal de “+” verde abaixo da palavra “Extruder”. Aparecerá uma lista desenrolável imensa para
 selecionarmos o ajuste específico. Vamos para cima e achamos o “Extruders > Extruder”. Ele vem preenchido
 com o valor “default”. Vejo o painel de materiais do lado e o filamento branco aparece primeiro, o que quer
 dizer que está no extrusor 1. Como o material que quero é o filamento vermelho, seleciono o extrusor 2.
 
-image:image417.png[image,width=572,height=419]
+image::image417.png[image,width=572,height=419]
 
 Repito a operação para o segundo objeto:
 
-image:image418.png[image,width=578,height=423]
+image::image418.png[image,width=578,height=423]
 
 Dou “OK” e pronto, está terminado. O cone será impresso.
 
@@ -11686,23 +11686,23 @@ No Cura, o fluxo é um pouco diferente. Você importa as duas peças, e ele as d
 importadas, selecionamos a ferramenta “per objects settings”, que já mostra de cara a configuração do
 extrusor para modificarmos:
 
-image:image419.png[image,width=583,height=410]
+image::image419.png[image,width=583,height=410]
 
 Deixo a parte selecionada com o primeiro extrusor, seleciono a segunda parte e mudo o ajuste para o segundo
 extrusor. Agora só falta informar ao Cura que aquelas duas peças estão no mesmo sistema de coordenadas. A
 palavra-chave para isso é “merge”, misturar. Seleciono os dois modelos deixando a tecla _shift_ apertada e
 clicando em cada um. Então clico com o botão direito em cima e escolho o “Merge Models”:
 
-image:image420.png[image,width=580,height=410]
+image::image420.png[image,width=580,height=410]
 
 Pronto! A visualização já mostra que os modelos estão com cores (extrusores) diferentes:
 
-image:image421.png[image,width=581,height=408]
+image::image421.png[image,width=581,height=408]
 
 Eu posso ainda pedir uma “confirmação adicional” fazendo a _boa prática_ de sempre verificar o fatiamento. No
 caso do Cura, é clicando no olho e selecionando “Layers”:
 
-image:image422.png[image,width=597,height=419]
+image::image422.png[image,width=597,height=419]
 
 Pronto! Fatiamento de dupla extrusão pronto pra ser impresso.
 
@@ -11710,23 +11710,23 @@ No Simplify3D, o processo é facilitado com o “Wizard de Extrusão Dupla”, q
 deixe ativo o perfil da sua impressora de dupla extrusão e importe os dois STLs. Em seguida, selecione Tools →
 Dual Extrusion Wizard (Assistente de Extrusão Dupla):
 
-image:image423.png[image,width=601,height=429]
+image::image423.png[image,width=601,height=429]
 
 No diálogo a seguir, simplesmente escolha que objeto vai em qual extrusor e selecione a opção “group and
 align models” para informar que eles estão no mesmo sistema de coordenadas:
 
-image:image424.png[image,width=431,height=295]
+image::image424.png[image,width=431,height=295]
 
 Você verá uma peça que parece de uma cor só, porque a visualização do Simplify3D mostra assim. Mas veja que
 o cone aparece inteiro, o que quer dizer que as duas partes foram colocadas no mesmo sistema de coordenadas.
 
-image:image425.png[image,width=558,height=399]
+image::image425.png[image,width=558,height=399]
 
 Clique em “prepare to print” para fatiar, selecione as duas cores e verá o fatiamento. Ainda não aparecem as
 duas cores diferenciadas; para aparecer, você tem que ir no painel à esquerda, “Show in Preview” e selecionar
 “Active Toolhead”, para que o fatiador diferencie os extrusores (“toolheads”) por cores.
 
-image:image426.png[image,width=556,height=481]
+image::image426.png[image,width=556,height=481]
 
 Voilà! Dupla extrusão, exatamente como queríamos.
 
@@ -11741,7 +11741,7 @@ extensão .gco ou .gcode). Recomendamos que a cada receita aplicada o leitor gra
 editor ou visualizador de texto puro (gedit no Linux, wordpad no Windows, TextEdit no Mac OS X). Se o fatiador
 usado for o **Slic3r**, a seguinte configuração deve ser ligada:
 
-image:image427.png[image,width=553,height=478]
+image::image427.png[image,width=553,height=478]
 
 Para os propósitos deste capítulo, é desejável que o leitor use um controlador de impressão (print host)
 para testar os comandos e ver sua saída. É importante também ter em mente que são comandos que vão mexer
@@ -11753,7 +11753,7 @@ O controlador de impressão usado para ilustrar os exemplos aqui será o pronter
 ser baixado de _http://www.pronterface.com/#download_ – este controlador de impressão é simples, autocontido
 e tem “macros” associáveis a botões.
 
-image:image428.png[image,width=630,height=437]
+image::image428.png[image,width=630,height=437]
 
 === Uma introdução aos comandos G-Code
 
@@ -11889,7 +11889,7 @@ extrusor não se move nessas condições. Para voltar ao modo absoluto, se usa *
 valem para as coordenadas do extrusor – ele tem seu próprio status, ajustado para absoluto com o G-Code *M82*
 (default) e para relativo com o **M83**.
 
-image:image429.png[image,width=642,height=459]
+image::image429.png[image,width=642,height=459]
 
 * [[FEITO_G2_e_G3]]G2 e G3 são comandos de movimentação como G0/G1 mas para arcos, como descritos na seção
 sobre o problema dos círculos.  * O *G4* é um comando de pausa por tempo. Para uso interativo de G-Code não
@@ -11923,7 +11923,7 @@ ao centro da mesa, baixe a sonda de autonivelamento e a use para o homing em __Z
 X__n__ – vai até o fim de curso do eixo X. _n_ é ignorado.  ** Y__n__ – vai até o fim de curso do eixo Y. _n_
 é ignorado.  ** Z__n__ – vai até o fim de curso do eixo Z. _n_ é ignorado.
 
-image:image430.png[image,width=642,height=468]
+image::image430.png[image,width=642,height=468]
 
 * G29, G32, G33 e os vários modos de *autonivelamento de mesa* – Neste ponto o leitor já deve estar razoavelmente
 confortável com a noção de autonivelamento de mesa: uma chave ligada ao extrusor detecta a distância dele
@@ -11969,7 +11969,7 @@ a mesa para que fique paralela à direção de impressão.  3.  Com o mapa de de
 faz-se uma transformação diagonal em cada paralelepípedo do mapa; ou b.  faz-se uma transformação diagonal
 regressiva em cada paralelepípedo do mapa, tornando-se mais paralela à medida que se aproxima de uma altura H.
 
-image:image431.png[image,width=642,height=820]
+image::image431.png[image,width=642,height=820]
 
 **Comandos M de interesse**: Os comandos “M” são extensões do G-Code inicialmente usadas para elementos
 particulares das impressoras 3D em relação às suas parentes CNC, mas logo se tomaram mais que isso, controlando
@@ -11994,7 +11994,7 @@ Este documento é disponibilizado sob a **Creative Commons Attribution-ShareAlik
 International**, abreviada **CC BY-SA 4.0**, disponível na íntegra no endereço web
 https://creativecommons.org/licenses/by-sa/4.0/legalcode[_https://creativecommons.org/licenses/by-sa/4.0/legalcode_].
 
-image:image432.png[image,width=329,height=108]
+image::image432.png[image,width=329,height=108]
 
 Traduzindo a licença para termos leigos em português, ela diz o seguinte:
 
@@ -12009,13 +12009,13 @@ O licenciante não pode revogar estes direitos desde que você siga os termos da
 
 De acordo com os seguintes termos:
 
-image:image433.png[image,width=75,height=72]
+image::image433.png[image,width=75,height=72]
 
 *Atribuição* – você deve dar o __crédito apropriado¹__, providenciar um link para a licença e __indicar
 se mudanças foram feitas²__. Você o pode fazer de qualquer maneira razoável, mas não de algum modo que sugira
 que o licenciante endosse você ou o seu uso.
 
-image:image434.png[image,width=73,height=72]
+image::image434.png[image,width=73,height=72]
 
 CompartilhaIgual – Se você remixar, transformar ou criar a partir do material, tem de distribuir as suas
 contribuições __sob a mesma licença__³ que o original.
@@ -12465,7 +12465,7 @@ diferentes alturas.
 
 = Sobre o autor
 
-image:image435.jpeg[image,width=285,height=213]Cláudio Luís Marques Sampaio, de apelido de internet
+image::image435.jpeg[image,width=285,height=213]Cláudio Luís Marques Sampaio, de apelido de internet
 __Patola__, é graduado em engenharia de computação e tem mestrado em biologia molecular e genética, ambos pela
 Universidade Estadual de Campinas. Desenvolvedor de Software, Administrador de Sistemas, Educador e Palestrante, é
 apaixonado por embarcados, pelo movimento Maker, por impressoras 3D e, claro, pela sua esposa Kimberly. Considera que

@@ -2805,12 +2805,13 @@ existem soluções comerciais, e, melhor ainda, open-source aparecendo, como a B
 de eletrônica, firmware e até fatiador (Cura) especialmente modificado pra tratar com essa cinemática estão
 em https://github.com/BCN3D[_https://github.com/BCN3D_].
 
-image:image98.png[image,width=582,height=510]
+[[bcn3dsigma]]
+image::image98.png[bcn3dsigma,width=582,height=510,title="A Impressora 3D Open-Source BCN3D Sigma, com dois extrusores independentes. Fonte: https://www.bcn3dtechnologies.com/en/3d-printer/bcn3d-sigma/",align="center"]
 
 Além dos extrusores independentes, existem duas outras modalidades que têm se mostrado bastante viáveis e
 ganhado suporte nos fatiadores e firmwares, que são os extrusores _combinadores_ e __misturadores__.
 
-=== Extrusores combinadores e misturadores
+.Extrusores combinadores e misturadores
 
 O uso de extrusores múltiplos em impressoras 3D FFF até há pouco tempo era de relativa raridade, restrito a
 máquinas bastante caras em relação à média. Foi uma área que demorou a amadurecer, e não só no __hardware__:
@@ -2835,8 +2836,8 @@ suporta extrusão múltipla aceitará sem reservas o extrusor combinador. Alguns
 por se usar esse tipo de extrusor, como um leve alívio no peso por usar um único hotend e não ter o problema de
 desnível de bicos. Ainda acontecerá certo _oozing_ e ainda, ao se mudar de um filamento para outro, o material
 derretido remanescente no bico fará com que a impressão apresente um “degradê” do material. Adicionalmente,
-pela própria geometria dos dispositivos combinadores, quase sempre eles são exclusivos para __bowden__.  *
-*Extrusor misturador* é aquele em que a junção dos canais de filamento, ao invés de ocorrer na parte fria,
+pela própria geometria dos dispositivos combinadores, quase sempre eles são exclusivos para __bowden__.
+* *Extrusor misturador* é aquele em que a junção dos canais de filamento, ao invés de ocorrer na parte fria,
 ocorre em uma câmara de aquecimento conjunta no hotend. Este tipo de extrusor permite mistura real de materiais
 ou cores, com tracionamento simultâneo possível para todos os filamentos alimentados. A potência necessária
 para aquecer a câmara conjunta será bem maior, assim como o tamanho da parte em metal. Como ainda temos um único
@@ -2852,12 +2853,15 @@ novas já implementam até os comandos para misturas subtrativas de cores CMY(K)
 tinta. Um plugin de pós-processamento para o fatiador Cura 15.04 que faz a mistura de acordo com algumas receitas
 consta do thingiverse: http://www.thingiverse.com/thing:1664880[_http://www.thingiverse.com/thing:1664880_]
 
-image:image99.png[image,width=462,height=400]image:image100.png[image,width=290,height=339]image:image101.png[image,width=294,height=339]
+[[fluxcapacitor1]]
+image::image99.png[image,width=462,height=400,title="Flux Capacitor - peça combinadora em bowden para um hotend - https://www.thingiverse.com/thing:301982 (Immagina e Crea)",align="center"]
 
-=== *Enfim, o bico*
+[[cyclopsediamond]]
+image::cyclops-e-diamond.png[cyclopsediamond,width=908,height=450,title="Esquerda: hotend misturador duplo estilo e3d cyclops (aliexpress.com), direita: hotend misturador triplo estilo reprap.me Diamond (aliexpress.com)"]
 
-Chegamos ao extremo do assunto -- o bico. É onde termina o hotend e você deve estar se perguntando que material
-é esse, de tom amarelo, meio dourado, de que eles são feitos. É __latão__, uma liga não-ferromagnética de metal
+.Enfim, o bico
+Chegamos ao extremo do assunto -- o bico. É onde termina o hotend, e você já deve estar se perguntando que material
+é esse, de tom amarelo, meio dourado, com que ele geralmente é feito. É __latão__, uma liga não-ferromagnética de metal
 feita de cobre e zinco com baixo coeficiente de atrito, alta condutividade térmica e alta durabilidade. Certas ligas
 de latão são dopadas com chumbo (cerca de 2%) o que leva a objeções com adequabilidade para contato com alimentos.
 
@@ -2867,7 +2871,8 @@ estudo⁴ sobre a corrosão que tais filamentos causam em bicos de latão conven
 a venda do seu bico de aço inoxidável, muito mais propício para essas impressões (ao mesmo tempo que é em
 tese adequado para contato com comida).
 
-image:image102.jpeg[image,width=642,height=547]
+[[e3dlataoeaco]]
+image::image102.jpeg[image,width=642,height=547]
 
 Apesar de aço não ter a condutividade térmica tão alta quanto latão (o que poderia, em teoria, aumentar a
 probabilidade de entupimentos), materiais avançados para impressoras 3D FFF realmente estão começando a surgir,
@@ -2875,6 +2880,7 @@ inclusive com metais misturados, e para certos usos até mesmo o aço pode se mo
 de financiamento coletivo no _kickstarter_ financiou com sucesso a fabricação de um bico feito de tungstênio⁵,
 o metal mais duro conhecido!
 
+[[screenshottungsten]]
 image:image103.png[image,width=642,height=441]
 
 Ainda que não haja um padrão obrigatório de medidas de bicos, a grande maioria dos bicos “genéricos”
@@ -2891,19 +2897,15 @@ divide pela metade a pressão mas também necessitará de um bloco e cartucho aq
 de entrega de energia térmica -- maior potência. O hotend _volcano_ da e3d, que aparece na Figura 14, tem um
 bloco aquecedor maior e por default vem com bicos de orifícios maiores (0,6 a 0,8mm) exatamente por este motivo.
 
-1 -
-https://3dprintingindustry.com/news/prometheus-system-kickstarter-95071/[_https://3dprintingindustry.com/news/prometheus-system-kickstarter-95071/_]
-
-2 -
-http://prusaprinters.org/original-prusa-i3-mk2-multi-material-upgrade-release/[_http://prusaprinters.org/original-prusa-i3-mk2-multi-material-upgrade-release/_]
-
-3 -
-https://immaginaecrea.wordpress.com/2014/04/17/il-flusso-canalizzatore-stampa-3d-a-piu-colori-singolo-ugello/[_https://immaginaecrea.wordpress.com/2014/04/17/il-flusso-canalizzatore-stampa-3d-a-piu-colori-singolo-ugello/_]
-
-4- http://e3d-online.com/is-carbon-killing-your-nozzle[_http://e3d-online.com/is-carbon-killing-your-nozzle_]
-
-5 -
-https://www.kickstarter.com/projects/dddmaterial/3d-printer-tungsten-premium-nozzle-reloaded[_https://www.kickstarter.com/projects/dddmaterial/3d-printer-tungsten-premium-nozzle-reloaded_]
+[NOTE]
+.Notas:
+====
+. https://3dprintingindustry.com/news/prometheus-system-kickstarter-95071/[_https://3dprintingindustry.com/news/prometheus-system-kickstarter-95071/_]
+. http://prusaprinters.org/original-prusa-i3-mk2-multi-material-upgrade-release/[_http://prusaprinters.org/original-prusa-i3-mk2-multi-material-upgrade-release/_]
+. https://immaginaecrea.wordpress.com/2014/04/17/il-flusso-canalizzatore-stampa-3d-a-piu-colori-singolo-ugello/[_https://immaginaecrea.wordpress.com/2014/04/17/il-flusso-canalizzatore-stampa-3d-a-piu-colori-singolo-ugello/_]
+. http://e3d-online.com/is-carbon-killing-your-nozzle[_http://e3d-online.com/is-carbon-killing-your-nozzle_]
+. https://www.kickstarter.com/projects/dddmaterial/3d-printer-tungsten-premium-nozzle-reloaded[_https://www.kickstarter.com/projects/dddmaterial/3d-printer-tungsten-premium-nozzle-reloaded_]
+====
 
 === Ventoinhas (fans)
 

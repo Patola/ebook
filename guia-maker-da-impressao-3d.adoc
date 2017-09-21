@@ -3151,15 +3151,21 @@ de composição química para utilizar suas propriedades de aderência e compati
 
 Um auxiliar de aderência ideal deve ter as seguintes propriedades:
 
-* **Ter aplicação fácil**, já que cada passo extra no fluxo de trabalho conta negativamente.  * **Ter
-remoção fácil**, no sentido de não haver muito trabalho de removê-lo, ou a seus resíduos.  * **Ter preço
-acessível**, especialmente porque será um consumível; * **Ter compatibilidade com o material de impressão**,
-pois alguns métodos têm compatibilidade com certos plásticos e não outros; * **Ter repetibilidade**, ou poder
-ser usado mais de uma vez; + No caso de mesa aquecida: * **Ter poder de aderência constante ou crescente com
+* **Ter aplicação fácil**, já que cada passo extra no fluxo de trabalho conta negativamente.
+* **Ter
+remoção fácil**, no sentido de não haver muito trabalho de removê-lo, ou a seus resíduos.
+* **Ter preço
+acessível**, especialmente porque será um consumível;
+* **Ter compatibilidade com o material de impressão**,
+pois alguns métodos têm compatibilidade com certos plásticos e não outros;
+* **Ter repetibilidade**, ou poder
+ser usado mais de uma vez; + No caso de mesa aquecida:
+* **Ter poder de aderência constante ou crescente com
 a temperatura**, pois como a mesa estará aquecida durante a impressão e esfriará ao seu término, compostos
 cuja aderência se degrada com o aumento de temperatura não serão muito úteis. Existem aqueles cuja aderência
 aumenta quanto mais se aumenta a temperatura, esfriando ao terminar com uma diferença tão grande que a peça se
-solta espontaneamento com um estalido.  * **Ter resistência ao aquecimento**, pois não adianta um líquido que
+solta espontaneamento com um estalido.
+* **Ter resistência ao aquecimento**, pois não adianta um líquido que
 evapore ou uma fita que se degrade ou perca a cola quando a mesa se aquece.
 
 Como é uma “questão em aberto” na Impressão 3D com muitos indivíduos propondo novos meios a cada dia,
@@ -3215,16 +3221,19 @@ colocado sobre o vidro e aquecido até grudar, para então servir de superfície
 de peças impressas em uma plataforma já que geralmente a palavra é associada à soldagem permanente de uma
 parte em outra, mas colas temporárias fazem mais parte do dia-a-dia do que geralmente se admite: papeizinhos de
 __post-it__, fita crepe e fita para pintura são alguns dos exemplos.  + Note-se que as colas podem ser usadas em
-combinação com as fitas, gastando-se um pouco mais para unir as vantagens de um método ao outro.  ** **Cola PVAc
+combinação com as fitas, gastando-se um pouco mais para unir as vantagens de um método ao outro.
+** **Cola PVAc
 (cola branca escolar)²**: é usada majoritariamente com PLA, plástico que já tem maior aderência ao vidro por
 natureza. Apesar de ser uma **cola fraca**, sua grande vantagem é a facilidade de remoção, deixando resíduos
-mínimos e laváveis. É aplicada gotejando sobre o vidro e espalhando.  ** **Cola Bastão com PVP**: as colas em
+mínimos e laváveis. É aplicada gotejando sobre o vidro e espalhando.
+** **Cola Bastão com PVP**: as colas em
 bastão escolares costumam vir em duas variedades, as baseadas em glicerina e as com um composto listado como PVP --
 polivinilpirrolidona ou polivinilpirrolideno -- que contém as propriedades desejadas para um auxiliar de aderência,
 especialmente a aderência aumentada a altas temperaturas. A aplicação é bem fácil e deixa praticamente zero
 resíduos. A aderência é fraca quando fria e média quando quente. Usada geralmente com PLA e ABS. Curiosidade:
 álcool em gel também tem PVP k120, uma variedade especialmente adesiva, portanto usado por alguns como auxiliar
-de aderência.  ** **Cola de PVC**: essa cola na verdade é o plástico PVC diluído em solvente. É um produto
+de aderência.
+** **Cola de PVC**: essa cola na verdade é o plástico PVC diluído em solvente. É um produto
 fácil de achar com *aderência média pra alta* e **aplicação fácil**. Deixa entretanto *muitos resíduos* ao
 final da impressão e não é tão simples de remover. Usa-se principalmente com ABS, por sua força de aderência.
 ** **Spray de cabelo**: idéia advinda da criatividade dos usuários, mostra bem o conceito de “exaptação”
@@ -3232,10 +3241,12 @@ final da impressão e não é tão simples de remover. Usa-se principalmente com
 *aderência média* e deixa praticamente **zero resíduo**. Muitas marcas brasileiras funcionam bem para este
 propósito, duas reconhecidas pelo público são Karina e Fixit. Um revés do spray de cabelo é que a aplicação
 dele direto na mesa pode atingir partes que devam ficar lubrificadas e sem atrito, como as barras lisas dos
-eixos. Por isso se recomenda aplicar no vidro destacado da mesa. Usa-se com ABS e PLA.  ** **Gelatina sem sabor**:
+eixos. Por isso se recomenda aplicar no vidro destacado da mesa. Usa-se com ABS e PLA.
+** **Gelatina sem sabor**:
 consta como idéia brasileira documentada no projeto reprap (“Jello Solution”), com uma parte de gelatina para
 10 partes de água com gotas de própolis para impedir crescimento de bactérias; espalha-se com um algodão no
-vidro e tem aderência média, usável com ABS e PLA.  ** **“Suco de ABS**”: este é o nome informal dado ao
+vidro e tem aderência média, usável com ABS e PLA.
+** **“Suco de ABS**”: este é o nome informal dado ao
 ABS dissolvido em acetona pura. Se sua impressão deixou restos, você pode aproveitá-los dissolvendo em acetona
 (não serve a de farmácia/supermercado) na proporção de 1 g de ABS pra cada 10ml de acetona; este composto é
 aplicado na mesa que é aquecida, fazendo a acetona evaporar e criando uma camada muito fina de plástico ABS
@@ -3294,9 +3305,12 @@ em materiais que podem ser *10 vezes mais caros* que os comuns de mercado. Porta
 desproporcionalmente largo, e foi procurada uma solução universal que não necessitasse de muita experimentação
 ou tentativas.  + A solução encontrada tirou vantagem de uma propriedade dos tipo de métodos descritos: as *colas*
 podem ser usadas com **as fitas**. A estratégia-base, portanto, é usar a **fita azul de pintor**, e as *diversas
-colas conforme a necessidade:* ** **Fita azul pura**: para PLA, peças pequenas de ABS e filamentos fáceis e
-de alta aderência, como flexíveis ou PETG.  ** **Fita azul com spray da cliever**: para quase todo o resto,
-especialmente os materiais difíceis como policarbonato e nylon. Para ABS pode-se aplicar A.Bond.  ** **Fita azul
+colas conforme a necessidade:
+* ** **Fita azul pura**: para PLA, peças pequenas de ABS e filamentos fáceis e
+de alta aderência, como flexíveis ou PETG.
+** **Fita azul com spray da cliever**: para quase todo o resto,
+especialmente os materiais difíceis como policarbonato e nylon. Para ABS pode-se aplicar A.Bond.
+** **Fita azul
 com cola PVAc**: ainda que seja uma cola fraca, a dissolução fácil dela e a grande afinidade com alguns tipos
 de materiais dá à cola branca uma série de vantagens; ela interage bem com materiais que têm afinidade com
 a celulose, como o PEAD e poliacetal; ela também dá uma aderência sutilmente aumentada a peças que se julga
@@ -3567,7 +3581,8 @@ para cada motor tem uma série de vantagens:
 usando passo ou micropasso nem fazer os cálculos pra isso, só precisa enviar pulsos. E cada motor tem seu
 próprio driver.  * *Coloca proteções adicionais* de circuitos, minimizando as chances de correntes inversas,
 sobretensões, picos de corrente, principalmente na alternância de correntes, incluindo uma “__Ponte H__”
-(um arranjo eletrônico especializado para comutações rápidas sem corrente de retorno).  * **Ajusta correntes
+(um arranjo eletrônico especializado para comutações rápidas sem corrente de retorno).
+* **Ajusta correntes
 e tensões como necessário**. O driver é um dos poucos componentes de impressora 3D realmente adaptativo por
 natureza: ele recebe uma variada gama de tensões e consegue abstraí-la para seu funcionamento. Um dos mais
 baratos disponíveis no mercado é o __Allegro A4988__, que aceita de 8 a 35V de entrada, funcionando portanto com
@@ -3667,7 +3682,8 @@ ou seja, 4V.
 
 Na nomenclatura convencional, teremos:
 
-* *Ciclo* ou **período**: o tempo de cada pulso; por exemplo, 1 millissegundo.  * **Frequência**: quantos ciclos
+* *Ciclo* ou **período**: o tempo de cada pulso; por exemplo, 1 millissegundo.
+* **Frequência**: quantos ciclos
 por cada unidade de tempo. É o inverso do ciclo; se temos um ciclo de 1 milissegundo (0,001 segundo), a frequência
 é 1 ÷ 0,001, ou 1000 ciclos por segundo. “Ciclos por segundo” são Hertz (Hz), a unidade de frequência.  *
 *Duty Cycle* ou **Taxa de Ciclo**: para um determinado ciclo, a porcentagem de tempo em que o pulso está ativo;
@@ -3691,7 +3707,8 @@ um simples capacitor -- que ao ser colocado no circuito, transforma o PWM no sin
 Na “vida real”, além da implementação simplificada em circuitos digitais, o PWM tem outras vantagens:
 
 * **Eficiência**: O PWM apresenta muito pouca perda de potência, geralmente ficando acima dos 90% de aproveitamento
-da energia³. Pelo mesmo motivo, aquece muito menos e roda mais frio que outros circuitos.  * **Maior imunidade
+da energia³. Pelo mesmo motivo, aquece muito menos e roda mais frio que outros circuitos.
+* **Maior imunidade
 ao ruído**. Como o sinal é digital, apenas ligado ou desligado, é muito menos provável que uma interferência
 o amplifique ou atenue o suficiente para tirar deste estado.
 
@@ -3982,10 +3999,12 @@ os seguintes componentes são necessários (a lista não é exaustiva):
 * **O microcontrolador ou microprocessador**. Este é o “cérebro” do controlador de impressão, onde roda o
 código (__firmware__) que lê a entrada (o arquivo a imprimir), aciona os diversos dispositivos e permite o controle
 interativo. No caso da RAMPS, é o _chip_ central do arduino em que ela está ligada que faz esse papel. Tal _chip_
-é de 8 bits, mas existem dispositivos de 32 bits.  * **A entrada de potência**. É onde entra a energia que irá
+é de 8 bits, mas existem dispositivos de 32 bits.
+* **A entrada de potência**. É onde entra a energia que irá
 para os elementos que serão energizados -- motores de passo, servo motores, cartuchos aquecedores. Geralmente
 12V DC ou 24 V DC. A RAMPS tem duas entradas simultâneas para 12V, uma que aceita até 5A de corrente e uma que
-aceita até 11A (essa vai para a mesa).  * **A entrada de energia dos componentes**. É onde entra a energia de
+aceita até 11A (essa vai para a mesa).
+* **A entrada de energia dos componentes**. É onde entra a energia de
 baixa potência que permite ao controlador ser ligado, assim como a energia de sinais digitais e dos elementos
 passivos como termistores e endstops. Ela pode ser derivada da entrada de potência. No caso da RAMPS, ela tem
 um regulador de tensão ligada à entrada de potência de 12V que liga o arduino conectado a ela. Em outros
@@ -3994,28 +4013,33 @@ se liga a entrada de potência ou não. Este modo proporciona economia e seguran
 necessário. Quando se usa uma fonte de PC ATX para energizar a impressora, pode-se ligar um cabo da RAMPS até
 uma entrada denominada “PSON” (Power Supply ON, ou “ligar fonte”) para que o microcontrolador tenha o
 poder de ligá-la ou desligá-la. Obviamente neste cenário o microcontrolador tem que ser energizado por uma
-fonte de energia independente!  * **As saídas de energia dos componentes de aquecimento**. Cartuchos aquecedores
+fonte de energia independente!
+* **As saídas de energia dos componentes de aquecimento**. Cartuchos aquecedores
 dos extrusores. Mesa e câmara aquecida, como são componentes que exigem potência muito maior, costumam estar
 em trilhas separadas. São saídas reguladas por transistores (FETs). Na RAMPS, as saídas denominadas D9 e D10
 são destinadas aos extrusores, e a D8 (de potência maior a transistor com dissipador maior), ligada à trilha
 de 11A, para a mesa. Outros elementos de aquecimento possível são câmara de impressora e ventoinha aquecedora.
 * *As saídas de energia das ventoinhas.* No caso a RAMPS a saída D9 pode ser usada para ventoinha ao invés
 de um segundo extrusor, em outros controladores de impressão -- como a _RUMBA_ -- trilhas especiais de média
-potência são reservadas para isso, permitindo a cada extrusor ter sua própria ventoinha controlada.  * **Saídas
+potência são reservadas para isso, permitindo a cada extrusor ter sua própria ventoinha controlada.
+* **Saídas
 para os motores**. A RAMPS pode controlar até 5 motores independentes. Tipicamente os motores dos eixos X, Y e
 Z mais dois extrusores, E0 e E1. A saída do eixo Z tem dois conectores para que se possam controlar dois motores
 de forma idêntica, levando a contagem total a 6 motores. Outros microcontroladores podem ter mais saídas, como a
 _Azteeg X3 Pro_ que tem 8 saídas de motores.  * *Pinos de entrada para sensores eletrônicos* como __endstops__,
 __termistores__, _sensores de diâmetro de filamento_ e outros componentes.  * *Pinos de saída para dispositivos
-microcontroláveis extras* como servo motor de sonda Z, bloqueador de filamento e outros componentes.  * **Drivers
+microcontroláveis extras* como servo motor de sonda Z, bloqueador de filamento e outros componentes.
+* **Drivers
 de motores, ou slots para drivers**. Os motores de passos precisam de drivers e eles podem estar soldados na placa
 controladora ou, como na RAMPS, encaixáveis em slots. Como são entradas para drivers configuráveis, têm também
-uma fileira de três pares de pinos para configuração dos drivers através de __jumpers__.  * **Entrada USB
+uma fileira de três pares de pinos para configuração dos drivers através de __jumpers__.
+* **Entrada USB
 ou algum outro meio de comunicação com computadores de mesa**. Embora algumas impressoras tenham outros meios
 como rede sem fio ou ethernet, a USB continua sendo o jeito mais popular por ser um dispositivo robusto, barato
 e compatível com qualquer computador moderno. Esta comunicação pode ser usada de vários modos: impressão em
 tempo real, transmissão do arquivo para imprimir, atualização de firmware, controle da impressora ou mudaça
-de configurações.  * **Dispositivo de armazenamento (opcional)**: já é comum que as impressoras 3D de hoje em
+de configurações.
+* **Dispositivo de armazenamento (opcional)**: já é comum que as impressoras 3D de hoje em
 dia venham com um slot para cartão SD ou pendrive USB. São geralmente usados para armazenar o “gcode” criado
 pelos fatiadores de impressão e no caso dos microcontroladores ARM também usados para armazenar configurações.
 * **Tela**. Podendo ser de uma simples tela LCD de caracteres a uma _touchscreen_ colorida, geralmente é mais
@@ -4097,7 +4121,8 @@ http://www.ti.com/lit/ds/symlink/drv8825.pdf[_http://www.ti.com/lit/ds/symlink/d
 + A fórmula da corrente -- chamaremos de _Imax_ - em função da _Vref_ e de _Rs_ é: + Como
 sabemos que _Rs_ é sempre 0,1, substituímos: + ou, colocando _Vref_ em função de __Imax__:
 + Em outras palavras: se o DRV8825 está ligado a um motor que aceita corrente máxima de 1,5A,
-a tensão medida em Vref deve ser: * **A4988**: o datasheet do driver é encontrado na página da Allegro:
+a tensão medida em Vref deve ser:
+* **A4988**: o datasheet do driver é encontrado na página da Allegro:
 http://www.allegromicro.com/~/media/Files/Datasheets/A4988-Datasheet.ashx[__http://__www.allegromicro.com/~/media/Files/Datasheets/A4988-Datasheet.ashx]:
 + O que equivale a + No caso de usarmos um motor com corrente máxima de 1,2A e o nosso driver acima com Rs de
 0,1Ω, a fórmula fica:
@@ -5285,7 +5310,8 @@ Isolamento térmico e elétrico -- a estrutura do polímero favorece espaços va
 de elétrons móveis, o que facilita o isolamento térmico e elétrico.  * Leveza -- os mesmos espaços vazios
 costumam fazer dos polímeros materiais relativamente leves.  * Facilidade de processamento e usinagem -- o fato
 de serem facilmente arranjados em fibras e de as cadeias poliméricas serem bastante manuseáveis por processos
-mecânicos e térmicos confere a eles posição predominante na indústria.  * **Têm uma variedade muito grande de
+mecânicos e térmicos confere a eles posição predominante na indústria.
+* **Têm uma variedade muito grande de
 propriedades e cores**, derivando tanto das propriedades dos monômeros quanto das cadeias poliméricas e suas formas.
 
 De todos os polímeros naturais ou artificiais, os plásticos são os que mais nos interessam. São uma categoria
@@ -5573,32 +5599,41 @@ alguns exemplos são a norma brasileira para ensaio de plásticos biodegradávei
 pelo menos algumas dessas definições já nos dá guia para entender o cenário em que navegamos.
 
 * **Reciclável**: todo material que após transformações físicas ou químicas podem ser reutilizados no mercado,
-seja sob a forma original ou como matéria-prima para outros objetos de finalidades diversas.  * **Retornável**:
+seja sob a forma original ou como matéria-prima para outros objetos de finalidades diversas.
+* **Retornável**:
 objetos que podem ser reutilizados na mesma função sem passar pela reciclagem do material, como garrafas
-de cerveja.  * **Reutilizável**: objetos que podem ser reutilizados na mesma função ou em novas funções
+de cerveja.
+* **Reutilizável**: objetos que podem ser reutilizados na mesma função ou em novas funções
 após seu uso inicial, como potes de alimentos que podem ser usados como copos ou como pequenas caixinhas para
-pertences pessoais.  * **Renovável**: designação usada também para energia, um recurso renovável é aquele
+pertences pessoais.
+* **Renovável**: designação usada também para energia, um recurso renovável é aquele
 que pode ser restaurado por processos naturais a uma velocidade superior a seu consumo por humanos. O exemplo
 canônico de recursos __não-__renováveis é o petróleo, um composto fóssil que ainda dá origem à maioria
 dos plásticos de impressão 3D e surgiu a partir de transformação química sob alta pressão e temperatura de
-restos orgânicos de fauna e flora microscópica por milhões de anos.  * **Degradável**: um material que seja
+restos orgânicos de fauna e flora microscópica por milhões de anos.
+* **Degradável**: um material que seja
 _degradável_ submete-se a uma mudança significativa em sua estrutura química sob circunstâncias ambientais
 específicas, tendo por resultado a perda de algumas propriedades químicas e/ou físicas.  * *Oxidegradável* ou
 **Oxibiodegradável**: o segundo termo é usado informalmente como sinônimo do primeiro, embora não signifique
 estritamente o mesmo. É o material que pode sofrer degradação por ação do oxigênio, geralmente com um aditivo
 para acelerar o processo. Essa degradação não é completa, levando somente à fragmentação do plástico,
 sem facilitar seu retorno a cadeias naturais e deixando mais difícil de tratar, visto que é perdido como poeira.
-* **Hidrodegradável**: material que pode ser degradado por ação da água (hidrólise).  * **Fotodegradável**:
-material que pode ser degradado por ação da luz.  * **Termodegradável**: material que pode ser degradado por ação
-do calor.  * **Biodegradável**: material que pode sofrer degradação por atividade biológica de ocorrência natural
+* **Hidrodegradável**: material que pode ser degradado por ação da água (hidrólise).
+* **Fotodegradável**:
+material que pode ser degradado por ação da luz.
+* **Termodegradável**: material que pode ser degradado por ação
+do calor.
+* **Biodegradável**: material que pode sofrer degradação por atividade biológica de ocorrência natural
 através de ação enzimática. Pode ser *aeróbica* quando é em presença de oxigênio, *anaeróbica* na ausência
 deste. A degradação anaeróbica costuma ter como subproduto o metano, e os dois tipos geram também dióxido de
-carbono e matéria orgânica estabilizada.  * **Compostável**: material que pode sofrer revalorização de seus
+carbono e matéria orgânica estabilizada.
+* **Compostável**: material que pode sofrer revalorização de seus
 resíduos orgânicos via biodegradação aeróbica controlada. A compostagem é verificável com certificação --
 por exemplo, para ser compostável o material tem que biodegrada obrigatoriamente em até 180 dias. Intuitivamente,
 a compostabilidade significa que o material biodegrada facilmente e pode ser também reutilizado facilmente.  *
 **Repolpável**: adjetivo usado geralmente para fitas e adesivos que são naturalmente absorvidos pela superfície
-de aderência.  * **Bioplásticos**: a palavra é usada para designar os plásticos de duas categorias distintas²:
+de aderência.
+* **Bioplásticos**: a palavra é usada para designar os plásticos de duas categorias distintas²:
 ** Polímeros feitos ao todo ou em parte de **fontes renováveis**, sejam biodegradáveis ou não; ou ** Polímeros
 **biodegradáveis**, seja de fonte renovável ou fonte fóssil.
 
@@ -5609,9 +5644,11 @@ e outros), é biodegradável, compostável e até repolpável. Ambos, porém, s�
 impressões 3D feitas com eles podem ser moídas e o plástico reutilizado no mercado -- e um desses usos, é
 claro, é ser novamente derretido e virar filamento para impressão. O processo passa pelas seguintes etapas³:
 
-* *Coleta* e **separação**: a separação dos resíduos de acordo com o seu material.  * **Revalorização**:
+* *Coleta* e **separação**: a separação dos resíduos de acordo com o seu material.
+* **Revalorização**:
 é a fase na qual o material já separado passa por um processo que faz com que ele volte a ser matéria-prima,
-envolvendo também limpeza e eliminação de resíduos.  * **Transformação**: fase em que o material transformado
+envolvendo também limpeza e eliminação de resíduos.
+* **Transformação**: fase em que o material transformado
 em matéria-prima volte a ser produto. Pode ser **química**, *energética* ou **mecânica**, no caso dos filamentos
 de impressão 3D ela é mecânica (trituração do plástico para pequenos flocos), e necessita ainda de mistura
 com uma porcentagem (geralmente entre 10 a 60%) de plástico não-reciclado do mesmo tipo para assegurar a qualidade
@@ -5970,9 +6007,11 @@ mas fungos e bactérias são preocupantes.
 Na ciência da segurança alimentícia, os tipos de contaminação que pode haver são três:
 
 * **Contaminação química**. Produtos químicos prejudiciais à saúde que acabam no alimento, como aditivos
-do plástico.  * **Contaminação mecânica**. Pêlos, unhas, sujeira, tecidos, farpas de madeira, plástico ou
+do plástico.
+* **Contaminação mecânica**. Pêlos, unhas, sujeira, tecidos, farpas de madeira, plástico ou
 metal que acabam no alimento. Não há diferença nesse sentido da impressão 3D para outros meios, e o máximo
-com que devemos preocupar é a geometria do objeto não facilitar este tipo de ocorrência.  * **Contaminação
+com que devemos preocupar é a geometria do objeto não facilitar este tipo de ocorrência.
+* **Contaminação
 biológica**. Microorganismos daninhos passados para a comida, como protozoários, vírus, parasitas nematóides
 e fungos.
 
@@ -7029,7 +7068,8 @@ altas, o acabamento também as acaba exigindo.
 * *Soprador de ar quente* ou *pistola de sopro térmico* -- essa pistola (chamado por vários nomes) é bastante
 útil no acabamento. As mais fracas têm um sopro que passa dos 400°C, as mais fortes alcançam o dobro disso
 -- portanto é preciso também usá-la com cautela, pois pode gerar queimaduras graves se atingir a pele. Alguns
-dos usos que se dão a ela: ** **Eliminar fiapos**. Os fios mais finos de filamento plástico derretem bem mais
+dos usos que se dão a ela:
+** **Eliminar fiapos**. Os fios mais finos de filamento plástico derretem bem mais
 rápido que outras partes quando o ar quente os atinge.  ** *Alisar a superfície.* Usada com habilidade, o sopro
 quente pode reduzir ou até eliminar as linhas de camadas das peças; mas é uma tarefa consideravelmente difícil
 especialmente porque o sopro pode acabar gerando deformação no plástico quente e destruir detalhes mais frágeis.
@@ -7487,7 +7527,8 @@ situação. Thinners são geralmente usados para tintas de diversos tipos, com v
 padrão pode ser observado que é a mistura de hidrocarbonetos aromáticos, ésteres, glicóis, álcoois e cetonas,
 alguns desses produtos com ações destrutivas aos plásticos. A legislação não exige que a composição exata
 do thinner seja especificada, então é muito difícil dizer a adequação de uma marca particular para o objetivo
-de fazer acabamento em plásticos e praticamente impossível de comparar com outras substâncias.  * **Acetato de
+de fazer acabamento em plásticos e praticamente impossível de comparar com outras substâncias.
+* **Acetato de
 etila**: um solvente relativamente barato e encontrável em lojas de laboratório com momento de dipolo de 1,78D,
 não necessitando de permissão especial para compra. geralmente recomendado para uso com o PLA mas diferentemente
 do que se diz sobre ele, não funcionando se o polímero for __enantiopuro__¹ (tiver um único isômero no material
@@ -7581,13 +7622,15 @@ residual que adere às cerdas, quando o solvente seca, tende a se acumular e inu
 ou formando uma camada grossa em volta. Mas mesmo a limpeza metódica não garante sobrevida muito maior ao pincel:
 este deve ser visto como um item consumível e renovável, visto que após um número variável de aplicações
 começa a deteriorar e até perder cerdas -- que podem grudar na peça, a arruinando. Nesse caso, então, pode
-ser preferível priorizar pincéis de baixo preço em detrimento dos mais sofisticados.  * **Seringa / pipeta /
+ser preferível priorizar pincéis de baixo preço em detrimento dos mais sofisticados.
+* **Seringa / pipeta /
 mini-borrifador**. Método geralmente usado para trabalhos mais esporádicos, consiste em gotejar ou borrifar
 em baixo volume e de forma controlada seções da peça com o líquido solvente para atuação local. Haja visto
 que não se toca a peça com o aplicador, é um método que depende inteiramente de o líquido agir com o efeito e
 intensidade desejados, o que nem sempre acontece. Pode ser feito de forma econômica comprando seringas de farmácia
 (que são de polipropileno e, portanto, resistente aos solventes aqui mencionados) e removendo a agulha. Caso
-um borrifador seja usado, é importante verificar que seja de material resistente ao solvente usado.  * **Caneta
+um borrifador seja usado, é importante verificar que seja de material resistente ao solvente usado.
+* **Caneta
 aplicadora**. Esta é uma nova opção que surgiu em financiamento coletivo e independentemente em certas lojas
 de impressão 3D: um dispositivo feito de plástico resistente a solventes (geralmente polipropileno) e com uma
 ponta esponjosa retrátil que quando pressionada se encharca com o solvente do compartimento. O único pequeno
@@ -7904,14 +7947,18 @@ e em sua formulação podem ser encontrados:
 
 * **Aglutinantes**: a resina, também conhecida por ligante ou veículo, é o componente que vai formar o filme
 seco e o único cuja presença é obrigatória. É classificada de acordo com o mecanismo de cura, sendo os quatro
-mais comuns a __evaporação__, _reticulação_ cruzada, _polimerização_ e __coalescência__.  * **Corantes ou
+mais comuns a __evaporação__, _reticulação_ cruzada, _polimerização_ e __coalescência__.
+* **Corantes ou
 pigmentos**: em forma de pó, são envoltos pela resina (líquida) e são os encarregados de dar cor à peça.
 * **Cargas**: em forma de pó, são também envoltos pela resina, encarregando-se de melhorar as propriedades
-físicas e condicionar o aspecto final.  * **Solventes**: regulam a viscosidade do produto ao método de aplicação
-e as propriedades de cura deste. É volátil e não se torna parte do filme seco da tinta.  * **Aditivos**: são
+físicas e condicionar o aspecto final.
+* **Solventes**: regulam a viscosidade do produto ao método de aplicação
+e as propriedades de cura deste. É volátil e não se torna parte do filme seco da tinta.
+* **Aditivos**: são
 compostos que, mesmo usados em pouca quantidade, proporcionam grande efeito no produto em suas propriedade físicas
 e químicas, como melhorar estabilidade e compatibilidade dos pigmentos, conferir propriedades anticongelantes,
-melhorar a textura, catalisar reações, emulsificar a mistura, promover aderência e outros.  * **Ceras**:
+melhorar a textura, catalisar reações, emulsificar a mistura, promover aderência e outros.
+* **Ceras**:
 melhoram o tato e orientam partículas metálicas -- como sais de alumínio.
 
 Uma fórmula contendo estes compostos forma uma _suspensão_ dos pigmentos e cargas na resina -- sendo insolúveis
@@ -8008,13 +8055,15 @@ fáceis de aplicar até no plástico cru, não têm muita retenção -- podendo 
 úmido. São geralmente foscas e secam rapidamente após a aplicação. Não são adequadas para peças expostas ao
 tempo ou umidade.  * *Tinta acrílica* é o plástico acrílico (PMMA) com solvente; é também à base d’água e
 tem o aspecto semelhante à PVA, um pouco mais brilhante e forte em geral, embora exista a variedade fosca. Demora
-mais pra secar e se torna impermeável * **Tinta “PU” (poliuretano) ou epóxi**. Bicomponentes, são também
+mais pra secar e se torna impermeável
+* **Tinta “PU” (poliuretano) ou epóxi**. Bicomponentes, são também
 chamadas de _tintas automotivas_ por serem comumente utilizadas em automóveis. São geralmente mais viscosas e
 não solúveis em água, também fazendo um bom trabalho de preenchimento, e dependem do catalisador para secar
 completamente. Uma vez seca, proporciona também ótima proteção à peça. Sua flexibilidade natural as protege
 de rachamentos.  * *Tinta poliéster* tem um aspecto brilhante, por vezes até metálico, mas é fina (não servindo
 para cobrir imperfeições) e não resiste muito ao descascamento, necessitando de verniz ou laca aplicado após
-a pintura.  * **Tinta automotiva spray**. Geralmente é tinta acrílica em aerossol para aplicação rápida.
+a pintura.
+* **Tinta automotiva spray**. Geralmente é tinta acrílica em aerossol para aplicação rápida.
 
 Outros tipos de tinta -- como esmalte, guache, tinta a óleo e tinta de tecido -- não são geralmente ideais
 para o uso com plásticos de impressão 3D. Uma exceção pode ser o uso de esmalte de unha com pincel fino para
@@ -8040,7 +8089,8 @@ incolor (totalmente transparente, e pode ser usada para fixar glitters e purpuri
 em álcool e com acabamento amarelado) e goma laca purificada (acabamento e fixação de glitter). Existem lacas
 brilhantes e foscas.  * *Betumes* são revestimentos usados para dar acabamento envelhecido.  * *Vernizes* são
 películas de acabamento, não necessariamente com propriedade selante. Alguns vernizes podem ser coloridos para
-complementar as tintas que cobrem. Existem vernizes brilhantes, texturizados e foscos.  * **Revestimento próprio
+complementar as tintas que cobrem. Existem vernizes brilhantes, texturizados e foscos.
+* **Revestimento próprio
 para impressão 3D**. A conhecida empresa _Smooth-On_ tem um composto chamado **XTC-3D**, feito especialmente para
 revestir peças impressas em FFF dando um acabamento brilhante e alisado. Resina de fibra de vidro epóxi pode
 substituir a XTC-3D que não é vendida no Brasil.  * *Líquido Jet* é um líquido à base de acetona utilizado
@@ -8236,7 +8286,8 @@ facilmente desmontáveis para limpeza, sofrendo mais desgaste com a tentativa de
 * **Parafusos e porcas**: Em impressoras 3D reprap como _graber_ e __prusa__, os parafusos podem afrouxar
 um pouco quando submetidos a muita pressão estrutural ou vibrações, especialmente em peças móveis como
 extrusor ou suportes do carro X. Recomenda-se apertar tais parafusos com periodicidade anual. Caso a carcaça
-seja de acrílico é preciso especial cuidado no aperto pois este material tem tendência a rachar.  * **Motor e
+seja de acrílico é preciso especial cuidado no aperto pois este material tem tendência a rachar.
+* **Motor e
 correia**: Ainda em relação aos parafusos em _graber_ e __prusa__, os mais propensos a folga são os que esticam
 a correia dos carros X e Y. Em ambos os casos, antes de se apertar os parafusos deve-se afrouxá-los o máximo sem
 removê-los; então, deslizar o motor para deixar a correia o mais esticada possível, para só então apertá-los.
@@ -8248,12 +8299,14 @@ desgaste prematuro ou perda das esferas dos rolamentos. Falta de paralelismo ent
 causar isso. Se tais irregularidades forem percebidas, recomenda-se desmontar o conjunto para a localização
 do problema. Se as barras tiverem entortado levemente, recomenda-se trocá-las, visto que a correção nunca
 fica perfeita. Caso o problema seja nos rolamentos, é mais barato colocar novos. Sendo falta de paralelismo,
-geralmente remontar o conjunto tomando cuidado de acertar os encaixes já resolve o problema.  * **Buchas**:
+geralmente remontar o conjunto tomando cuidado de acertar os encaixes já resolve o problema.
+* **Buchas**:
 No caso de buchas de bronze ou __drylin__, o desgaste é esperado dado o contato constante com a barra lisa, e a
 vida útil de tais componentes é necessariamente limitada. O carro deve ser deslizado no eixo procurando-se fazer
 um pouco de força no sentido transversal, de modo a procurar detectar alguma folga. Se houver folga no carro, é
 sinal que as buchas esgotaram sua vida útil e precisam ser trocadas. Recomenda-se fazer a verificação a cada
-6 meses.  * **Barra roscada e fuso**: o desgaste de barra roscada é mais comum do que de fusos, visto que seus
+6 meses.
+* **Barra roscada e fuso**: o desgaste de barra roscada é mais comum do que de fusos, visto que seus
 fios são bem mais finos e sua estrutura é feita para sustentação e não movimento. De qualquer maneira, é algo
 que pode acontecer com ambos os componentes. O desgaste pode acontecer tanto na barra quanto na castanha ou porca,
 e pode ser descoberto quando, girando manualmente o eixo com os dedos, se encontra folga ou “emperramento” do
@@ -8309,7 +8362,8 @@ e outras características de construção, mas em geral mesas de metal podem ser
 em superfícies planas, e pra mesas de circuito impresso se aconselha a troca tanto por serem mais baratas quanto
 mais difíceis de corrigir. Enquanto a troca não é feita, o recurso de _mesh leveling_ automático do firmware
 Marlin pode ser usado temporariamente para compensar a geometria irregular, visto que o nivelamento automático
-simples não ajuda neste caso.  * **Extrusor/tracionador**: ainda que haja enormes variações entre os modelos
+simples não ajuda neste caso.
+* **Extrusor/tracionador**: ainda que haja enormes variações entre os modelos
 de extrusor do mercado, é mais ou menos universal que a tração pelos dentes do pinhão desprenda lascas e
 pequenos fragmentos do plástico, e que com o tempo essa “poeira” adira a esses dentes, tornando a tração
 mais difícil e escorregadia. Para complicar, é frequente que o acesso a essas partes seja dificultado pela
@@ -8387,14 +8441,17 @@ tamanho de cabos passam -- e é comum ver impressoras com cabos diversos de tama
 como desorganizados como se fossem uma “maçaroca” de fios que além de ser perigosa e ineficiente, torna bastante
 trabalhosa a manutenção de um aparelho que devia ser justamente muito fácil de mexer e arrumar.  + Se você “se
 reconheceu” nesta caracterização de impressora, existem alguns utensílios que podem auxiliar na arrumação,
-organização e fixação dos cabos. A seguir: ** **Tiras enforca-gato**: também conhecidas por _abraçadeiras de
+organização e fixação dos cabos. A seguir:
+** **Tiras enforca-gato**: também conhecidas por _abraçadeiras de
 nylon_ e variados outros nomes, são tiras oferecidas em variados tamanhos e se fecham travando inserindo uma ponta
-em um pequeno orifício na outra extremidade, prendendo com firmeza.  ** **Espiral organizadora de cabos**: é um
+em um pequeno orifício na outra extremidade, prendendo com firmeza.
+** **Espiral organizadora de cabos**: é um
 dos organizadores mais fáceis de se colocar e remover em fios e cabos, sendo portanto adequada para fiações que
 exigem frequente manutenção: permite ser colocada mesmo com os cabos já ligados em seus respectivos terminais.
 ** **Malha náutica**: uma malha flexível e compressiva em que se inserem os fios e cabos antes de os prender nos
 contatos. Oferece o melhor acabamento visual, mas dificulta a manutenção visto que para se remover os cabos sem
-cortar a malha é necessário desconectar pelo menos uma de suas extremidades.  ** **Lagarta/esteira porta-cabos**:
+cortar a malha é necessário desconectar pelo menos uma de suas extremidades.
+** **Lagarta/esteira porta-cabos**:
 lembrando em aparência a espiral organizadora, é um aparato de plástico mais sofisticado (e mais caro) que
 limita o movimento dos cabos a um plano de deslizamento. É bastante utilizada para operação guiada de cabos,
 como os de mesa aquecida e extrusor, mas sua colocação precisa ser bem planejada. Existem alguns modelos em que
@@ -8443,21 +8500,25 @@ entremear com elas e formar um composto abrasivo e grudento, prejudicando todo o
 para tais componentes é um óleo fino, como o óleo doméstico _Singer_ ou outros óleos da mesma categoria usados
 em bicicletas. Óleos minerais e óleos de silicone costumam também ter bom desempenho nessa peças, com o óleo
 usado em esteiras sendo uma boa indicação para uso geral dado seu baixo preço e resistência a temperatura. Se
-recomenda reaplicação mensal.  * **Fusos de rosca**: em impressoras 3D fechadas que tenham tais mecanismo isolados
+recomenda reaplicação mensal.
+* **Fusos de rosca**: em impressoras 3D fechadas que tenham tais mecanismo isolados
 e protegidos da ação do plástico, ainda mais se tiverem o acesso dificultado, o uso de graxas especiais para
 fusos, geralmente baseadas em lítio e vendidas em casas de ferramentas e artigos para automóveis, pode ser uma
 alternativa melhor por proteger e lubrificar as peças por mais tempo, não topando nos problemas de desgaste
 existente nas barras roscadas, e ainda amortecer folgas microscópicas. Por outro lado, se tais fusos estiverem
 expostos, tanto pela facilidade de manutenção quanto pela menor propensão a acumular poeira, os mesmos óleos
-das barras roscadas são recomendados.  * **Rolamentos radiais**: são peças quase sempre fechadas e vêm com sua
+das barras roscadas são recomendados.
+* **Rolamentos radiais**: são peças quase sempre fechadas e vêm com sua
 própria lubrificação, portanto lubrificação adicional não é necessária. Caso se detecte atrito da peça,
 devido ao seu baixo preço pode ser mais palatável substituí-la que tentar lubrificá-la. Alguns rolamentos
 maiores de vida útil longa têm o que se chama de “pino graxeiro”, que é uma entrada específica para se
-aplicar graxa com instrumento especializado.  * **Rolamentos lineares em barras lisas**: praticamente todos os
+aplicar graxa com instrumento especializado.
+* **Rolamentos lineares em barras lisas**: praticamente todos os
 rolamentos lineares encontrados em impressoras 3D são fechados (dão a volta completa em torno da barra) e não
 necessitam de aplicação adicional de lubrificação. No entanto, a barra lisa que abraçam estará sujeita ao
 ambiente, e se recomenda usar o mesmo óleo doméstico ou de silicone das barras roscadas para proteger a peça. Se
-recomenda reaplicação mensal.  * **Buchas**: as buchas, usadas nos mesmos lugares em que os rolamentos lineares,
+recomenda reaplicação mensal.
+* **Buchas**: as buchas, usadas nos mesmos lugares em que os rolamentos lineares,
 podem ser feitas de materiais diversos como bronze, cobre, plásticos (incluindo auto-lubrificantes) e PTFE, o que
 complica uma receita geral para seus lubrificantes -- por exemplo, as de plástico auto-lubrificante não demanda
 lubrificação adicional, e em certos casos usar um lubrificante incompatível com um dos dois materiais em contato
@@ -8467,9 +8528,11 @@ a lubrificação é estritamente necessária para o caso de metal com metal (por
 lisa de aço cromado). Para buchas de plástico de impressão como ABS ou PLA, não se deve usar óleo mineral,
 ou de ésteres e poliglicóis; por outro lado, o óleo de silicone é compatível (e óleo de silicone não pode
 ser usado com buchas de silicone). Algumas graxas mais finas de propósito geral também cumprem bem a tarefa de
-proteger as barras lisas e permitir bom deslizamento das buchas.  * **Articulações e juntas de esfera**: Nestes
+proteger as barras lisas e permitir bom deslizamento das buchas.
+* **Articulações e juntas de esfera**: Nestes
 casos graxa de lítio pode ter um bom desempenho. Lubrificante sólido de PTFE pode ter ainda melhor desempenho,
-pois não tende a acumular sujeira, embora precise ser reaplicado frequentemente.  * **Hotend**: usado para quando
+pois não tende a acumular sujeira, embora precise ser reaplicado frequentemente.
+* **Hotend**: usado para quando
 se quer aprimorar o deslizamento do filamento (especialmente PLA) dentro do tubo, muitas vezes se usa uma gota de
 óleo no tubo de hotend. Para esse fim, os óleos de alta temperatura são os mais adequados, em especial o óleo
 de silicone.
@@ -8617,12 +8680,14 @@ As medidas são quase todas horizontais, _delta_diagonal_rod_ sendo a única na 
 * *DELTA_DIAGONAL_ROD* (o comprimento do braço da delta) está no arquivo Marlin.ino nas versões antigas e
 no Configuration.h nas versões novas do Marlin. Também tem o nome de *DELTA_DIAGONAL_ROD* no Configuration.h
 do Repetier, e no smoothieware se chama **arm_length**. Outro nome com que é referenciado é __*diagonal rod
-length*__. No comando **M665**, é o parâmetro **L**.  * **DELTA_RADIUS**, a distância horizontal do parafuso do
+length*__. No comando **M665**, é o parâmetro **L**.
+* **DELTA_RADIUS**, a distância horizontal do parafuso do
 braço no effector até o outro parafuso do braço no carro do trilho, é chamada de arm_radius no smoothieware
 ou ainda tratada como __*horizontal radius when centered*__. O Repetier chama essa medida de **ROD_RADIUS**, mas
 não configura seu valor. No Marlin antigo, ele não necessariamente era medido: podia ser calculado com a seguinte
 expressão: + **DELTA_RADIUS = DELTA_SMOOTH_ROD_OFFSET -- DELTA_EFFECTOR_OFFSET -- DELTA_CARRIAGE_OFFSET**. No
-comando **M665**, é o parâmetro **R**.  * **DELTA_SMOOTH_ROD_OFFSET**, valor não usado mais pelas novas
+comando **M665**, é o parâmetro **R**.
+* **DELTA_SMOOTH_ROD_OFFSET**, valor não usado mais pelas novas
 versões do Marlin, mede a distância horizontal do centro da mesa até o centro da torre. No Repetier, ele tem
 o nome de **PRINTER_RADIUS**, e não é usado no Smoothieware. Como pode não ser usado -- não prejudicaria as
 transformações? Na verdade, se for ignorado o tamanho do effector e se considerá-lo como um ponto, os cálculos
@@ -8843,13 +8908,15 @@ seguintes parâmetros:
 
 * *Pnúmero* -- número de pontos de sondagem da aresta do quadrado.  ** *P1* -- sonda apenas o centro da mesa e
 infere a altura.  ** *P2* -- sonda um quadrado 2x2 ** *P3* a *P7* -- sonda quadrados 3x3, 4x4 etc. É necessário
-no mínimo P3 para ele medir as imprecisões de ângulos das torres.  * **T0**/**T1**: Com 0, não calibra os
+no mínimo P3 para ele medir as imprecisões de ângulos das torres.
+* **T0**/**T1**: Com 0, não calibra os
 ângulos das torres. Com 1, calibra tais ângulos. Aconselha-se T0. O default é T1 para P>2.  * *C__número__*
 -- calibra para uma dada precisão; por exemplo, C0.03 calcula para que o desvio padrão seja no máximo de 0,03mm,
 levando tantas iterações quanto necessárias.  * *F__número__* -- força pelo menos _número_ iterações serem
 executadas antes de sair do procedimento.  * *V__número__* -- modo de execução: ** *V0* -- Modo _dry-run_
 (execução a seco). Apenas relata os ajustes, mas não configura.  ** *V1* -- Relata os ajustes.  ** *V2* --
-Relata os ajustes e os resultados que obtém da sonda Z.  * **E0**/**E1**: Usado no caso de sonda Z retrátil. Com 0
+Relata os ajustes e os resultados que obtém da sonda Z.
+* **E0**/**E1**: Usado no caso de sonda Z retrátil. Com 0
 (default), não recolhe nem estende a sonda. Com 1, recolhe e estende a sonda a cada medição.
 
 Exemplos de execução do comando. Saída do comando mostrada em verde:
@@ -8986,11 +9053,13 @@ Tanto para sólidos quanto para superfícies, no entanto, existem outras subdivi
 
 * **Poligonal / poliédrica**: os sólidos e superfícies são todos formados de segmentos de retas. Qualquer
 superfície ou linha que pareça na curva na verdade foi “interpolada”com muitos segmentos de forma a passar
-a impressão de algo curvo.  * **Modelagem curva**: além dos segmentos de retas, esse tipo de representação
+a impressão de algo curvo.
+* **Modelagem curva**: além dos segmentos de retas, esse tipo de representação
 admite curvas na representação matemática das formas. As curvas podem ser arcos de círculo, “splines”
 ou mais comumente o caso específico de splines chamada NURBS. Elas representam uma equação matemática que
 define cada ponto de determinado segmento da forma -- e uma equação que tem um pequeno número de índices. A
-maioria dos modeladores sólidos, por sua sofisticação maior inerente, suporta curvas.  * **Escultura digital**:
+maioria dos modeladores sólidos, por sua sofisticação maior inerente, suporta curvas.
+* **Escultura digital**:
 também um tipo de modelagem curva, os expedientes que esse tipo de representação usa para chegar às formas
 são diferentes. Técnicas como deslocamento, superfícies de subdivisão, tesselagem dinâmica e voxelização
 permitem que o software use de abordagens manuais, artísticas e orgânicas para representar formas.
@@ -9364,7 +9433,8 @@ processados matematicamente. Em geral os modeladores de superfície geram formas
 os aplicativos ZBrush, Sculptris e Blender mas também o Sketchup.  ** *Modeladores matemáticos* de funções
 algébricas podem gerar formas de gráficos tridimensionais, também em malha, como Mathematica e MathCAD; **
 **Linguagens de programação em 3D**, como CadQuery, OpenSCAD, SolidPython; ** Digitalização 3D de imagens
-(por fotogrametria, por scanner 3D especializado, por ultrassom “4D”) ** **Procura e download da Internet**,
+(por fotogrametria, por scanner 3D especializado, por ultrassom “4D”)
+** **Procura e download da Internet**,
 em sites de impressão 3D como _thingiverse_ ou __youmagine__, sites genéricos de formas 3D como _grabcad_
 e _cgtrader_ ou até mecanismos de busca 3D como __yobi3d__, _stlfinder_ e __yeggi__.  ** Extração de dados
 de aplicativos e jogos, através de “desempacotadores” e conversores automáticos. Um exemplo notável é o
@@ -9484,7 +9554,8 @@ https://members.loria.fr/Sylvain.Lefebvre/icesl/[_https://members.loria.fr/Sylva
 IdeaMaker* -- fatiador bem novo, tem aparência e recursos muito parecidos com o Simplify3D (incluido os suportes
 manuais) mas é gratuito. Se destaca pela interface limpa e pelo recurso de corte de peças por planos (incluindo
 planos inclinados). Sítio web em https://www.raise3d.com/pages/ideamaker[_https://www.raise3d.com/pages/ideamaker_]
-+ Temos ainda softwares que não são fatiadores completos, mas __print hosts__: * **pronterface/suite Printrun**:
++ Temos ainda softwares que não são fatiadores completos, mas __print hosts__:
+* **pronterface/suite Printrun**:
 um controlador de impressão open-source escrito em python com interface compacta, poderosa e ágil, muito usado para
 diagnósticos e resolução de problemas avançados em impressoras 3D. Permite usar o Slic3r como fatiador puro.  *
 **Repetier Host**: um controlador de impressão proprietário escrito em .Net sofisticado, com bandeja virtual para
@@ -10085,11 +10156,13 @@ image:image310.png[image,width=507,height=364]
 * **Simplify3D**: As configurações de visualização, posicionamento e disposição estão espalhadas pelo menu
 *Tools* → *Options* do fatiador: + image:image311.png[image,width=463,height=605] + As importantes
 para nosso caso serão: ** *Swap mouse scroll wheel zoom direction* -- faz com que o sentido da rodinha do mouse
-se inverta: para trás diminuirá e para frente aumentará o zoom.  ** **Middle mouse button resets view**: caso
+se inverta: para trás diminuirá e para frente aumentará o zoom.
+** **Middle mouse button resets view**: caso
 o ângulo de visualização esteja muito ruim, você pode resetá-lo para o _default_ simplesmente pressionando o
 botão do meio do mouse. Se você usa vários fatiadores ou programas de modelagem, é recomendado desligar esta
 configuração pois muitos deles usam o botão do meio para outras funções, levando a pressioná-lo sem querer
-no fatiador e perdendo a visualização em que estava.  ** **Always show full 3D transform gizmo**: para fazer
+no fatiador e perdendo a visualização em que estava.
+** **Always show full 3D transform gizmo**: para fazer
 as transformações visualmente o Simplify3D apresenta “gizmos” (controles) em que se clica com o mouse para
 realizá-las. Com essa configuração selecionada, o fatiador sempre mostrará os 3 eixos para transformação ao
 invés de somente um.
@@ -10127,10 +10200,12 @@ image:image314.png[image,width=642,height=530]
 As opções pertinentes são:
 
 * **Viewport Behaviour -- Display overhang**: na visualização default, com essa opção ligada mostra em
-vermelho brilhante os overhangs/seções pendentes da forma.  * **Center camera when item is selected**: desliza
+vermelho brilhante os overhangs/seções pendentes da forma.
+* **Center camera when item is selected**: desliza
 a visualização da câmara para focalizar em um objeto quando se o seleciona (sem mudar o nível de __zoom__).
 * **Ensure models are kept apart**: já mencionada, com ela ligada os modelos são espaçados de forma a não
-colidirem ou se penetrarem.  * **Automatically drop models to the build plate**: automaticamente deixa os objetos
+colidirem ou se penetrarem.
+* **Automatically drop models to the build plate**: automaticamente deixa os objetos
 importados ao nível da mesa (sem rotacioná-los).  * As três opções seguintes são relacionadas e merecem uma
 explicação: sendo uma aplicação __OpenGL__, isto é, que se vale de aceleração de hardware para desenhar as
 formas tridimensionais na tela, o Cura em sua inicialização tenta ativar a renderização, mas se não consegue
@@ -10141,7 +10216,8 @@ default. A *Only display top layer(s) in layer view compatibility mode* faz com 
 a camada superior ou camadas superiores do intervalo, e a *Display five top layers in layer view compatibility mode*
 diz que o número dessas camadas superiores mostradas é cinco. A opção *Force layer view compatibility mode
 (restart required)* força que o Cura já inicie em modo de compatibilidade sem tentar ativar a aceleração de
-hardware, e só começa a valer quando a aplicação é reiniciada.  * **Scale large models**: com essa opção
+hardware, e só começa a valer quando a aplicação é reiniciada.
+* **Scale large models**: com essa opção
 ativada, verifica se a peça cabe no volume de impressão configurado, e se não couber a reduz até que caiba.
 * **Scale extremely small models**: como no simplify3d, se detecta se a peça é pequena demais (mais de 100 vezes
 menor que o volume de impressão) e calcula um multiplicador de potência 10 para ela que a coloque em um tamanho
@@ -10502,7 +10578,8 @@ Outras técnicas que ajudam uma primeira camada boa:
 
 * **Temperatura mais alta**. Com uma temperatura na mesa mais alta para a primeira camada, está terá maior
 viscosidade e ficará mais “chata”. Também se pode colocar uma temperatura mais alta para o extrusor, para
-garantir “achatamento” e aderência.  * **Menor velocidade**. Isso é essencial especialmente para plásticos
+garantir “achatamento” e aderência.
+* **Menor velocidade**. Isso é essencial especialmente para plásticos
 que solidificam mais rápido como o ABS: nas camadas superiores, o plástico sendo depositado estará se fundindo
 ao mesmo material abaixo, e suas moléculas têm alta afinidade. Na primeira camada, no entanto, só há a mesa
 e um possível adesivo passado por cima dela; o bico pode acabar “arrastando” o filete, principalmente nas
@@ -10513,7 +10590,8 @@ de 20% a 40% da velocidade normal de impressão é recomendada e isso costuma vi
 ser configurado especificamente para a primeira camada. Se na primeira camada for visível a separação entre os
 filetes de plástico, este item (geralmente uma porcentagem) deve ser aumentado. Veja que o fatiador “compensa”
 a largura maior aumentando a quantidade de plástico (e também separa mais as linhas, em proporção), de modo
-a evitar que a mesa se inunde de plástico.  * **Colas e adesivos**. Materiais mais difíceis como policarbonato,
+a evitar que a mesa se inunde de plástico.
+* **Colas e adesivos**. Materiais mais difíceis como policarbonato,
 poliacetal e HDPE podem não funcionar bem nem com os ajustes anteriores. Nessa hora, certos adesivos específicos
 podem ajudar bastante. Desde cola branca escolar até produtos feitos especificamente para impressão 3D (A.Bond,
 Spray Cliever e outros), as opções são variadas aqui. É importante verificar a compatibilidade química do
@@ -10775,8 +10853,10 @@ e ainda fique ligeiramente mais robusta. Seguindo o exemplo de 0,1mm e 0,3mm, o 
 é ligeiramente diferente:
 
 * **Slic3r**: ** Print Settings → Layers and perimeters → Layer height: [**0.1**] mm; ** Print Settings →
-Infill → Reducing printing time → Combine Infill every: [**3**] layers * **Simplify3D**: ** Layer → Primary
-Layer Height: [**0,1000**] mm; ** Infill → General → Print Sparse Infill Every [**3**] Layers * **Cura**: **
+Infill → Reducing printing time → Combine Infill every: [**3**] layers
+* **Simplify3D**: ** Layer → Primary
+Layer Height: [**0,1000**] mm; ** Infill → General → Print Sparse Infill Every [**3**] Layers
+* **Cura**: **
 Quality → Layer Height [**0.1** mm] ** Infill → Infill Layer Thickness: [**0.3** mm]
 
 É importante notar que esse ajuste pode facilmente levar a situações absurdas, que podem até estragar a
@@ -10794,10 +10874,12 @@ do topo (__top__) e da parte de baixo (__bottom__). Alguns fatiadores usam para 
 (por exemplo, 0,8mm).
 
 * **Slic3r**: paredes laterais são dadas em perímetros: __vertical shells -- perimeters__. Do topo e da
-parte de baixo são dadas em camadas e __horizontal shells -- Solid layers Top & Bottom__.  * **Cura**: paredes
+parte de baixo são dadas em camadas e __horizontal shells -- Solid layers Top & Bottom__.
+* **Cura**: paredes
 laterais são _wall thickness_ (espessura de parede). Do topo e da parte de baixo são _Top/Bottom Thickness_
 (espessura superior/inferior). Podem ser dados tanto em número de perímetros/camadas quanto em milímetros, o
-fatiador popula o campo de acordo.  + image:image364.png[image,width=618,height=268] * **Simplify3D**:
+fatiador popula o campo de acordo.  + image:image364.png[image,width=618,height=268]
+* **Simplify3D**:
 paredes laterais são __Outline/Perimeter Shells__. Do topo e da barte de baixo são _Top Solid Layers_ e __Bottom
 Solid Layers__. São sempre dados em números de filetes / camadas.  * Outros fatiadores terão suas próprias
 nomenclaturas, mas a partir destes exemplos é possível inferir quais sejam.
@@ -10828,7 +10910,8 @@ largura de camada, ele extrusa mais plástico e também tece menos segmentos (a 
 Se sua impressão estiver saindo com as linhas “não se tocando”, o primeiro suspeito é a taxa de extrusão
 baixa, mas pode ser também uma largura de extrusão menor que a real. Nesse caso:
 
-* **para filetes distantes**, _aumente_ a largura de extrusão.  * **Para filetes apertados ou encavalados demais**,
+* **para filetes distantes**, _aumente_ a largura de extrusão.
+* **Para filetes apertados ou encavalados demais**,
 _diminua_ a largura de extrusão.
 
 image:image366.png[image,width=642,height=408]
@@ -11374,8 +11457,11 @@ image:image402.png[image,width=619,height=518]
 
 Como última nota sobre este recurso utilíssimo, cabe notar que os nomes são diferentes em fatiadores diferentes:
 
-* **Slic3r**: Print settings → Advanced → Other → XY Size Compensation * **Cura**: Shell → Horizontal
-Expansion * **Simplify3D**: Other → Horizontal Size Compensation * **repsnapper**: Preferences → Optimization
+* **Slic3r**: Print settings → Advanced → Other → XY Size Compensation
+* **Cura**: Shell → Horizontal
+Expansion
+* **Simplify3D**: Other → Horizontal Size Compensation
+* **repsnapper**: Preferences → Optimization
 → Offset Outer Shells By (mm) 1.  [[o-problema-dos-arcos-e-círculos]] == O problema dos arcos e círculos
 
 Além do “espalhamento” indesejado das impressões 3D que a compensação horizontal ataca, temos também um
@@ -11606,7 +11692,8 @@ que impede o tracionamento e favorece o comportamento de “mola”. Por isso me
 flexível são compactos. Pela mesma razão, _bowdens_ costumam ser impraticáveis para uso com filamento flexível,
 uma notável exceção sendo o das impressoras _Ultimaker_ que com velocidades baixas consegue imprimi-los -- e
 aí a razão de ser uma exceção é por a impressora usar filamento de 3mm de diâmetro, um padrão já em desuso
-mas com menor histerese elástica.  * **O aperto do tracionador deve ser regulável**. Como o ponto ideal de aperto
+mas com menor histerese elástica.
+* **O aperto do tracionador deve ser regulável**. Como o ponto ideal de aperto
 varia de acordo com o filamento flexível usado, com alguns ovalando mais facilmente que outros com o aperto alto,
 é desejável que o operador possa experimentar e encontrar o ponto ótimo de aperto. Uma das melhores formas de
 se implementar isso é com parafusos reguláveis:
@@ -11621,7 +11708,8 @@ image:image412.png[image,width=571,height=417]
 
 * **Se puder escolher o parafuso tracionador ou pinhão do extrusor, prefira os canaletados ao invés dos retos**. Eles
 guiam e aderem melhor a filamentos flexíveis. Por outro lado, isso exige também que a canaleta seja precisamente
-alinhada com a saída do tracionador, caso contrário o filamento sofre dobras.  * **A primeira camada não deve
+alinhada com a saída do tracionador, caso contrário o filamento sofre dobras.
+* **A primeira camada não deve
 ser muito rente**. Contrariando o que aprendemos sobre fatiamento, no caso do filamento flexível é bom deixar
 uma pequena folga na primeira camada. Isso porque a impressão rente deixa a pressão dentro do hotend alta,
 e também porque a maioria dos filamentos flexíveis tem excelente adesão à mesa. A exceção notável são os
@@ -11653,11 +11741,14 @@ impressão, e é altamente recomendada para filamento flexível.  * *Para mitiga
 Finalmente, vamos tratar de um dos ajustes que mais quebram a cabeça dos que tratam com modelos que precisam ser
 impressos em extrusão dupla. Primeiro, vamos revisitar os quatro formatos principais de arquivos para impressão 3D:
 
-* **STL**: o mais simples, apenas uma malha de triângulos orientados, sem informação de material.  * **OBJ**:
+* **STL**: o mais simples, apenas uma malha de triângulos orientados, sem informação de material.
+* **OBJ**:
 tem informação de material por polígonos e não objetos, e de uma forma mais orientada a visualização. Os
-fatiadores não associam essa informação a extrusores diferentes.  * **AMF**: tem informação de material
+fatiadores não associam essa informação a extrusores diferentes.
+* **AMF**: tem informação de material
 adequada à impressão 3D, pode funcionar para associação automáticas a extrusores no Slic3r dependendo de
-como o arquivo foi criado; não funciona no Cura novo e no Simplify3D.  * **3MF**: um formato novo ainda sem muito
+como o arquivo foi criado; não funciona no Cura novo e no Simplify3D.
+* **3MF**: um formato novo ainda sem muito
 suporte nos fatiadores populares.
 
 Portanto, com exceção do AMF que _pode_ funcionar adequadamente no Slic3r -- exceto quando ele associa o extrusor
@@ -11818,9 +11909,11 @@ dos softwares apesar de desencorajados. O número tem que ser o primeiro campo d
 de sequencial: se a primeira linha começa com “N1”, a segunda deve ser “N2”. A utilidade desses números é
 primariamente para estruturas de _loops_ e __condicionais__, que os firmwares de impressora 3D atualmente nem mesmo
 suportam. Por isso não trataremos os comandos **IF**, **GOTO**, **WHILE**, os *registradores* e as *expressões
-condicionais* de G-Code.  * **Comando**: É a palavra-chave que vai declarar a ação a ser tomada, com ou sem
+condicionais* de G-Code.
+* **Comando**: É a palavra-chave que vai declarar a ação a ser tomada, com ou sem
 argumentos. O G-Code não aceita mais de um comando por linha. Nas impressoras 3D, estamos limitados a três comandos:
-**G**, *M* e **T**.  * **Parâmetros**: Assim como os comandos, os _parâmetros_ são dados por uma letra seguida por
+**G**, *M* e **T**.
+* **Parâmetros**: Assim como os comandos, os _parâmetros_ são dados por uma letra seguida por
 um número (positivo ou negativo; os negativos, obviamente, começam com o sinal de “-”). Os tipos de parâmetro
 mais comuns passados para comandos são: ** *S* era usado originalmente em CNCs para designar a velocidade (speed)
 de rotação, mas em impressoras 3D este parâmetro __não tem esta função__. Ele é usado como um parâmetro
@@ -11830,9 +11923,11 @@ genérico para _distância_ ou __temperatura__, sendo usado em comandos de retra
 configuração do firmware.  ** *T* é em poucos firmwares usado para feedrate de recuperação da retração. Note
 que aqui T é parâmetro, não comando.  ** *X, Y* e **Z**: coordenadas/distâncias. **X10 Y5 Z30**, por exemplo,
 significa 10 unidades em X, 5 em Y, 30 em Z. O significado dessas coordenadas dependerá da configuração e do
-comando -- por exemplo, podem ser coordenadas absolutas ou relativas à posição atual da ferramenta.  ** **E**:
+comando -- por exemplo, podem ser coordenadas absolutas ou relativas à posição atual da ferramenta.
+** **E**:
 quantidade de filamento do extrusor.  ** *A, B* e **C**: coordenadas/distâncias angulares ou rotacionais. Não
-usadas em impressoras 3D.  ** **P**: parâmetro de uso geral, sem significado predefinido, para comandos variados.
+usadas em impressoras 3D.
+** **P**: parâmetro de uso geral, sem significado predefinido, para comandos variados.
 * **Checksum**: É um campo que contém um asterisco seguindo de um número de 0 a 255. Este número é calculado
 a partir de todos os caracteres da linha atual até antes do asterisco, e serve para em conexões com ruído fazer
 uma verificação simples se todos os caracteres chegaram corretamente. Não é usado em impressoras 3D modernas.
@@ -11981,11 +12076,13 @@ o G29 (ou G32 no caso do Repetier). Algumas configurações colocam o G29/G32 ap
 temperatura-alvo, pois ela se expande ligeiramente com o aquecimento e sondá-la já expandida evita distorções.
 + O autonivelamento feito desse jeito é sempre necessário em toda impressão, pois a inclinação da mesa fica
 na RAM -- memória volátil - do microcontrolador e não é gravada. Adicionalmente, ela é resetada cada vez que
-se faz homing (G28), precisando ser refeita.  ** **Modos de detecção de desnível**: O autonivelamento funciona
+se faz homing (G28), precisando ser refeita.
+** **Modos de detecção de desnível**: O autonivelamento funciona
 de uma entre três formas: 1.  Mede-se o Z em 3 pontos e calcula-se a média (G29 do Repetier); 2.  Mede-se o
 Z em 3 a 8 pontos e calcula-se um plano inclinado que passa naqueles pontos (autonivelamento padrão); 3.
 Mede-se o Z em vários pontos da mesa e calcula-se uma malha de planos inclinados interligados que mapeia as
-“imperfeições” da mesa. Este método se usa quando há deformação da mesa.  ** **Modos de correção do
+“imperfeições” da mesa. Este método se usa quando há deformação da mesa.
+** **Modos de correção do
 desnível**: 1.  Usa-se uma média dos níveis de Z para a primeira camada. Se a diferença for grande entre os
 desníveis, poderá fazer o bico raspar na mesa. Ou ainda fazer com que o filamento não adira o suficiente. É
 usado apenas no G29 do Repetier Firmware.  2.  Com o plano de desnível detectado no método 2, toma-se uma de
@@ -12001,15 +12098,23 @@ image:image431.png[image,width=642,height=820]
 particulares das impressoras 3D em relação às suas parentes CNC, mas logo se tomaram mais que isso, controlando
 até motores. Aqui uma lista dos mais úteis:
 
-* *M0* -- parada incondicional, esvaziando o buffer e desligando motores e elementos de aquecimento.  * **M18**:
+* *M0* -- parada incondicional, esvaziando o buffer e desligando motores e elementos de aquecimento.
+* **M18**:
 desabilita todos os motores de passo, que em caso contrário permanecem ligados e prendendo o movimento. Pode
 ser útil, por exemplo, caso você precise mexer no carro X manulmente e ver se está deslizando suavemente no
-trilho. Para a impressora voltar a energizá-los, use **M17**.  * **M104 S__nn__**: ajusta a temperatura-alvo do
-extrusor atual para __nn__, sem bloquear o prompt.  * **M106 P__m__ S__nn__**: ajusta a ventoinha de número _m_
-para a intensidade _nn_ de 0 a 255. M107 a desliga.  * **M109 S__nn__**: ajusta a temperatura-alvo do extrusor atual
-para _nn_ e bloqueia o prompt, esperando que ele chegue à temperatura para liberar.  * **M114**: mostra posição
-atual (X, Y, Z e E) * **M115**: mostra versão e capacidades do firmware.  * **M119**: mostra status dos endstop
-(acionados ou não).  * **M140 S__nn__**: ajusta a temperatura-alvo da mesa para __nn__, sem bloquear o prompt.
+trilho. Para a impressora voltar a energizá-los, use **M17**.
+* **M104 S__nn__**: ajusta a temperatura-alvo do
+extrusor atual para __nn__, sem bloquear o prompt.
+* **M106 P__m__ S__nn__**: ajusta a ventoinha de número _m_
+para a intensidade _nn_ de 0 a 255. M107 a desliga.
+* **M109 S__nn__**: ajusta a temperatura-alvo do extrusor atual
+para _nn_ e bloqueia o prompt, esperando que ele chegue à temperatura para liberar.
+* **M114**: mostra posição
+atual (X, Y, Z e E)
+* **M115**: mostra versão e capacidades do firmware.
+* **M119**: mostra status dos endstop
+(acionados ou não).
+* **M140 S__nn__**: ajusta a temperatura-alvo da mesa para __nn__, sem bloquear o prompt.
 * **M190 S__nn__**: ajusta a temperatura-alvo da mesa para __nn__, bloqueando o prompt até que seja atingida.
 
 Apêndices
@@ -12279,7 +12384,8 @@ um filme plástico adesivo resistente ao calor usado para proteger e firmar peç
 há alguns anos.  * *Kossel* -- um dos modelos mais famosos de reprap estilo __delta__.  * *Lost PLA casting*
 -- o processo de cera perdida, mas executado com peças de PLA no lugar da cera.  * *Lost wax casting* -- ver
 _cera perdida._ * *Maker* -- literalmente, __fazedor__; * *MakerLinux* -- nome do pequeno empreendimento do autor
-do livro, em que baseia seus serviços e criações para a comunidade.  * *Malha* ** *Aberta e Fechada (controle)*
+do livro, em que baseia seus serviços e criações para a comunidade.  * *Malha
+* ** *Aberta e Fechada (controle)*
 -- _Malha aberta_ é um sistema em que a saída (resultado) não exerce qualquer ação sobre o sinal de controle,
 _malha fechada_ é um sistema em que há um ou mais componentes no sistema para verificar (medir) a execução da
 ação e realimentar o circuito com esta medida.  ** *Como representação de uma figura tridimensional* -- uma
@@ -12318,7 +12424,8 @@ de rotação. É o tipo de motor mais frequentemente usado em impressoras 3D, es
 * *Motor planetário* -- motor que usa engrenagens “planetárias” (epicíclicas, o centro de uma rodando
 em volta do centro de outra) internamente para conseguir redução da distância e multiplicação do torque.  *
 *Mouse ears* -- estrutura circular adicionada aos cantos de peças a serem impressas para aprimorar sua aderência
-na plataforma de impressão, descartada depois da peça impressa.  * *NC* ** *Non-Commercial* -- no âmbito de
+na plataforma de impressão, descartada depois da peça impressa.  * *NC
+* ** *Non-Commercial* -- no âmbito de
 licenças de software e hardware, significa licenças de obras que não podem ser usadas para fins comerciais.
 ** *Normally Closed* -- no âmbito eletrônico, diz respeito a chaves que em seu estado inativo, representam um
 circuito fechado, abrindo quando acionados.  * *NEMA* -- associação de padrões estadunidense, “National
@@ -12464,12 +12571,14 @@ de temperaturas maiores que os medidos por termistores.  * *Termorresistência* 
 * *Torque* -- força de torção que resulta em rotação.  * *Trilho* -- elemento deslizante por onde o _patim_
 se move.  * *Tritan* -- termoplástico propício para filamento de impressão 3D concorrente do policarbonato,
 supostamente seguro para fins alimentícios por não conter BPA.  * *Ultem ®9085* -- filamento industrial da
-Stratasys de alto ponto de fusão e retardamento de chamas, baseado em __PEI__.  * *UV* ** *UltraVioleta* --
+Stratasys de alto ponto de fusão e retardamento de chamas, baseado em __PEI__.  * *UV
+* ** *UltraVioleta* --
 faixa do espectro eletromagnético com frequências logo acima da luz visível, em que a energia intrínseca sobe
 o suficiente para que o limite superior já seja radiação ionizante. A Ultravioleta é dividida em faixas UV A
 (315-400nm de comprimento de onda, faixa de trabalho de impressoras 3D SLA e DLP e também onde a radiação causa
 o efeito de fotoenvelhecimento da pele humana), UV B (280nm-315nm, que faz ocorrer as queimaduras solares), UV C
-(100-280nm, bloqueada pela camada de ozônio) e a faixa extrema (até 10nm).  ** **De U-V mapping / mapeamento
+(100-280nm, bloqueada pela camada de ozônio) e a faixa extrema (até 10nm).
+** **De U-V mapping / mapeamento
 U-V**: este termo de modelagem tridimensional refere-se ao mapeamento dos eixos U e V (em contraste a X, Y e Z)
 de um plano colorizado por textura na malha (pele, superfície) de um objeto 3D.  * *Vitamina* -- o projeto reprap
 denomina de “vitaminas” a qualquer parte não-impressa de uma impressora 3D reprap, como a eletrônica, guias

@@ -3381,7 +3381,7 @@ mesa, este ponto está na verdade em (10,11,4), então é para esta coordenada q
 serão, dada a inclinação pequena, bastante próximos, a impressão ocorre compensada sem problemas ou distorções.
 
 [[autonivelamentoendstop1]]
-image::image106.png[image,width=622,height=500,title="Autonivelamento de mesa, com um endstop mecânico retrátil encostando na mesa visivelmente inclinada para medir a distância vertical. Créditos: Alex Borro, vídeo completo em https://www.youtube.com/watch?v=3IKMeOYz-1Q"]
+image::image106.png[image,width=622,height=500,align="center",title="Autonivelamento de mesa, com um endstop mecânico retrátil encostando na mesa visivelmente inclinada para medir a distância vertical. Créditos: Alex Borro, vídeo completo em https://www.youtube.com/watch?v=3IKMeOYz-1Q"]
 
 Não que não haja desafios e novos problemas criados pelo autonivelamento. Pelo contrário, já nos deparamos com
 um, que é a necessidade de dois componentes novos para a impressora: um endstop mecânico para medir a distância
@@ -3429,7 +3429,7 @@ que age em ímãs. Um ímã permanente comum de mercado, como os de neodímio, t
 que seu pólo sul fique virado para o norte do outro, eles se atrairão.
 
 [[imasatracaorepulsao]]
-image::image107.png[image,width=473,height=437,title="Atração e repulsão básicas entre forças eletromagnéticas. Pólos iguais se repelem, pólos diferentes se atraem. As linhas de força são bem mais complexas que isso, simplificamos para compreensão."]
+image::image107.png[image,width=473,height=437,align="center",title="Atração e repulsão básicas entre forças eletromagnéticas. Pólos iguais se repelem, pólos diferentes se atraem. As linhas de força são bem mais complexas que isso, simplificamos para compreensão."]
 
 Tratamos nesse caso dos ímãs permanentes, mas podemos utilizar de uma conformação de materiais tais que ao
 passar uma corrente elétrica em determinado sentido, a indução criada pela corrente cria um eletroímã, um
@@ -3438,7 +3438,7 @@ eletroímãs geralmente são feito com uma bobina de fio de cobre em volta de um
 bem simples é um prego com fio enrolado ligado a uma bateria.
 
 [[eletroimasimples]]
-image::image108.png[image,width=480,height=315,title="Um eletroímã simples, com pólos norte e sul. Desligado da bateria, o prego com fio de cobre deixa de se comportar como ímã."]
+image::image108.png[image,width=480,height=315,align="center",title="Um eletroímã simples, com pólos norte e sul. Desligado da bateria, o prego com fio de cobre deixa de se comportar como ímã."]
 
 *DC* ou **AC**: Repare que a bateria da ilustração é uma fonte de _corrente contínua_ ou _DC_ (do inglês
 “direct current”), isto é, o prego permanece imantado com uma corrente que não varia (ainda que somente em
@@ -3450,7 +3450,7 @@ alternada basicamente liga e desliga (ou inverte) a corrente várias vezes por s
 um gráfico em relação ao tempo, teremos uma _forma de onda_ recorrente.
 
 [[ondasformasdecorrente]]
-image::image109.png[image,width=642,height=298,title="Duas formas de onda possíveis para correntes elétricas alternadas (AC). A primeira liga e desliga a corrente de 1 Ampére (eixo Y) a cada um segundo e meio (eixo X), é uma onda quadrada. A segunda levanta e abaixa a corrente continuamente de +1 Ampére até -1 Ampére periodicamente em uma 'senóide', 6 vezes a cada 0,1 segundo, equivalendo a uma corrente típica de tomada doméstica (que alterna 60 vezes por segundo, ou 60Hz)."]
+image::image109.png[image,width=642,height=298,align="center",title="Duas formas de onda possíveis para correntes elétricas alternadas (AC). A primeira liga e desliga a corrente de 1 Ampére (eixo Y) a cada um segundo e meio (eixo X), é uma onda quadrada. A segunda levanta e abaixa a corrente continuamente de +1 Ampére até -1 Ampére periodicamente em uma 'senóide', 6 vezes a cada 0,1 segundo, equivalendo a uma corrente típica de tomada doméstica (que alterna 60 vezes por segundo, ou 60Hz)."]
 
 Numa impressora 3D, a alimentação dos componentes é quase universalmente **DC**, obtida através de uma fonte
 de tensão cujos detalhes veremos na seção de alimentação, e que transforma a corrente alternada da tomada em
@@ -3466,7 +3466,7 @@ acaba levando ao desgaste das partes. Por outro lado, esses motores têm uma con
 necessitam de dois fios (sinal e terra) para funcionar.
 
 [[diagramamotorescovas]]
-image::image110.png[image,width=642,height=443,title="O diagrama de um motor com escovas. Neste motor, o estator são os fios de energia, a escova e o ímã permanente em volta; o rotor são as bobinas e o comutador. O leitor deve considerar isto como uma curiosidade: útil para projetos 'maker', não para impressão 3D."]
+image::image110.png[image,width=642,height=443,align="center",title="O diagrama de um motor com escovas. Neste motor, o estator são os fios de energia, a escova e o ímã permanente em volta; o rotor são as bobinas e o comutador. O leitor deve considerar isto como uma curiosidade: útil para projetos 'maker', não para impressão 3D."]
 
 Todos os motores que trataremos são *sem escova* (__brushless__). A escova é a peça condutora de eletricidade
 que faz o contato intermitente durante o giro do rotor. Nos motores sem escova, as bobinas serão elementos fixos no
@@ -3479,7 +3479,7 @@ se alinhar com elas. Vamos usar quatro (seria possível usar três, mas o contro
 supor ainda que neste caso, vamos deixar as bobinas sempre energizadas com corrente, seja direta, seja invertida.
 
 [[bobinas41bobinas23]]
-image::image111.png[image,width=642,height=384,title="Colocamos as quatro bobinas em torno do ímã permanente e as ligamos com dois pólos norte (bobinas 4,1) e dois pólos sul (bobinas 2,3) consecutivos virados para o centro. As atrações e repulsões assim configuradas só permitem que o ímã (o rotor) gire em uma direção: 90 graus em sentido anti-horário. Assim que completa o giro, o ímã encontra uma situação de equilíbrio e não se move mais. Este movimento é um *passo* de motor. A geometria deste motor de passo simples faz com que cada passo ande 90 graus."]
+image::image111.png[image,width=642,height=384,align="center",title="Colocamos as quatro bobinas em torno do ímã permanente e as ligamos com dois pólos norte (bobinas 4,1) e dois pólos sul (bobinas 2,3) consecutivos virados para o centro. As atrações e repulsões assim configuradas só permitem que o ímã (o rotor) gire em uma direção: 90 graus em sentido anti-horário. Assim que completa o giro, o ímã encontra uma situação de equilíbrio e não se move mais. Este movimento é um *passo* de motor. A geometria deste motor de passo simples faz com que cada passo ande 90 graus."]
 
 O motor simples da ilustração exemplifica bem o que se passa nos motores de mercado; a diferença é que os
 últimos são bem mais complexos. Um NEMA17 comum de reprap tem este ângulo de passo de 1,8 graus, o que quer
@@ -3497,7 +3497,7 @@ __horário__, ou seja, voltará um passo. Para continuarmos girando no sentido a
 as 4 bobinas.
 
 [[bobinasmaisumpassoantihorario]]
-image::image113.png[image,width=642,height=317,title="Mais um passo em sentido anti-horário. Já dá pra imaginar qual seja o passo seguinte, inverter as bobinas 2 e 4. Fica como exercício para o leitor visualizar. Após isso, novamente inverter as 4 bobinas para chegar à configuração inicial (completando 360 graus)."]
+image::image113.png[image,width=642,height=317,align="center",title="Mais um passo em sentido anti-horário. Já dá pra imaginar qual seja o passo seguinte, inverter as bobinas 2 e 4. Fica como exercício para o leitor visualizar. Após isso, novamente inverter as 4 bobinas para chegar à configuração inicial (completando 360 graus)."]
 
 No final desse exercício, o leitor pode estar pensando: por que deixar todas as bobinas ligadas em algum sentido? É
 possível, para qualquer motor, ter as bobinas desligadas. A finalidade foi mostrar que podemos controlar os
@@ -3510,7 +3510,7 @@ intercalam: 6 bobinas, e temos 1 + 3 + 5 formando uma fase, 2 + 4 + 6 formando o
 com 8 bobinas teremos 1+3+5+7 e 2+4+6+8 (figura XXb)
 
 [[bobinasmaisbobinas]]
-image::image114.png[image,width=642,height=342,title="Motores com mais bobinas, sempre intercaladas e com duas fases - aqui mostradas em cores diferentes para melhor entendimento. O rotor central tem sua construção magnética omitida neste momento para simplicidade, pois nesses casos não são usados dois semicírculos."]
+image::image114.png[image,width=642,height=342,align="center",title="Motores com mais bobinas, sempre intercaladas e com duas fases - aqui mostradas em cores diferentes para melhor entendimento. O rotor central tem sua construção magnética omitida neste momento para simplicidade, pois nesses casos não são usados dois semicírculos."]
 
 **Polaridade**: considerando um motor de duas fases, a fiação que liga as bobinas costuma ser arranjada de dois
 jeitos distintos nos motores de passo: nos motores **bipolares**, uma fase corresponde a exatamente um fio de
@@ -3520,7 +3520,7 @@ unipolar tem mais fios que um bipolar, ainda que algumas vezes os fios centrais 
 fio único. O diagrama extremamente simplificado a seguir pode ajudar a entender melhor:
 
 [[diagramafiacaomotores]]
-image::image115.png[image,width=642,height=320,title="Diagrama para entender a fiação dos motores (que passa por dentro do motor, mas é mostrado 'por fora' para entendimento). Todos os motores ilustrados têm duas fases (bifásicos). As cores indicadas na ilustração são cores comuns nos fios de motores de mercado, mas não são padronizadas ou universais. Pode-se ainda ter uma configuração não mostrada no diagrama, um 'motor universal' com quatro fios, em que cada uma de 4 bobinas é acionável isoladamente."]
+image::image115.png[image,width=642,height=320,align="center",title="Diagrama para entender a fiação dos motores (que passa por dentro do motor, mas é mostrado 'por fora' para entendimento). Todos os motores ilustrados têm duas fases (bifásicos). As cores indicadas na ilustração são cores comuns nos fios de motores de mercado, mas não são padronizadas ou universais. Pode-se ainda ter uma configuração não mostrada no diagrama, um 'motor universal' com quatro fios, em que cada uma de 4 bobinas é acionável isoladamente."]
 
 Apesar de o motor bipolar ter uma construção mais “simples” (menos fios), gerar passos nele é mais
 complicado. Você pode ter a corrente em *ambos* os sentidos no fio, positivo e negativo (daí o **bi**polar),
@@ -3529,7 +3529,7 @@ do motor unipolar _mais simples_ e o do bipolar _mais complexo_ do ponto de vist
 programação do microcontrolador.
 
 [[fotomotordesmontado]]
-image::image116.jpeg[image,width=642,height=645,title="Um motor NEMA17 usado em impressoras 3D de mercado aberto, com duas fiações com convenções de cores diferentes: uma preta, vermelha, azul e verde e uma vermelha, amarela, cinza e azul. Perceba que o conector do motor da foto tem 6 pinos, e o cabo que sai dele só tem 4 fios. É porque o motor pode funcionar tanto como motor bipolar quanto como unipolar. Se fosse usado em modo unipolar, o cabo apresentaria 5 ou 6 fios conforme o diagrama anterior. Note outros elementos da construção do motor, como o rotor magnético e as bobinas no estator. Falaremos deles mais à frente."]
+image::image116.jpeg[image,width=642,height=645,align="center",title="Um motor NEMA17 usado em impressoras 3D de mercado aberto, com duas fiações com convenções de cores diferentes: uma preta, vermelha, azul e verde e uma vermelha, amarela, cinza e azul. Perceba que o conector do motor da foto tem 6 pinos, e o cabo que sai dele só tem 4 fios. É porque o motor pode funcionar tanto como motor bipolar quanto como unipolar. Se fosse usado em modo unipolar, o cabo apresentaria 5 ou 6 fios conforme o diagrama anterior. Note outros elementos da construção do motor, como o rotor magnético e as bobinas no estator. Falaremos deles mais à frente."]
 
 Se ainda assim for difícil para que o leitor abstraia o movimento, existem excelentes recursos na internet com
 animações detalhadas do que acontece. Alguns exemplos são recomendados:
@@ -3552,7 +3552,7 @@ entender e já com muitas derivações, aparece no thingiverse com o título “
 http://www.thingiverse.com/thing:986260[_http://www.thingiverse.com/thing:986260_]
 
 [[motordepassoimpressoem3d]]
-image::image117.png[image,width=642,height=501,title="Fica até difícil __não entender__: o 'motor de passo impresso em 3D' mostra quais bobinas são energizadas em cada momento pra que não haja nenhuma dúvida para o aluno."]
+image::image117.png[image,width=642,height=501,align="center",title="Fica até difícil __não entender__: o 'motor de passo impresso em 3D' mostra quais bobinas são energizadas em cada momento pra que não haja nenhuma dúvida para o aluno."]
 
 ==== Micropassos
 
@@ -3563,7 +3563,7 @@ queiramos só andar 45°, ao invés de 90°. Tudo o que precisamos fazer é, ao 
 inverter só a 2 e 4.
 
 [[bobinasmicropassos45graus]]
-image::image118.png[image,width=642,height=317,title="Começamos a girar no sentido anti-horário, mas o equilíbrio de forças está no meio do caminho. Ao invés de completarmos 90°, conseguimos posicionar o rotor em 45°; para completar 90⁰ bastará inverter 1 e 3."]
+image::image118.png[image,width=642,height=317,align="center",title="Começamos a girar no sentido anti-horário, mas o equilíbrio de forças está no meio do caminho. Ao invés de completarmos 90°, conseguimos posicionar o rotor em 45°; para completar 90⁰ bastará inverter 1 e 3."]
 
 Esta estratégia é conhecida como *meio-passo* (__half-step__) e sua extrapolação para maiores divisões se
 batizou de *micropassos* (__microsteps__). Alcançamos 45° porque as forças de atração são iguais; mas se
@@ -3572,7 +3572,7 @@ colocarmos *100%* da corrente nas bobinas *1* e *3* e *41,42%* da corrente nas b
 uma atração que resulta em um ângulo de ¾ de 90° (67,5°) em relação à 4.
 
 [[bobinasumquartodepasso]]
-image::image119.png[image,width=642,height=273,title="Conseguimos avançar apenas 1/4 de passo mexendo na intensidade das correntes para as bobinas."]
+image::image119.png[image,width=642,height=273,align="center",title="Conseguimos avançar apenas 1/4 de passo mexendo na intensidade das correntes para as bobinas."]
 
 Não se preocupe muito com os números para chegar a esses ângulos, o importante é o princípio; mas para
 informação, foi usado cálculo de seno e cosseno para chegar aos valores. Se estivermos no caso típico de dirigir
@@ -3580,7 +3580,7 @@ o motor com vários pulsos para uma posição, o gráfico da corrente relativa a
 quadriculada de uma senóide.
 
 [[graficocorrenteabmicrostep]]
-image::image120.gif[image,width=517,height=323,title="Gráfico da corrente de saída nos dois pares de fios (A e B) para micropassos do 'datasheet' de um DRV8825, que consegue até 32 subdivisões de passo."]
+image::image120.gif[image,width=517,height=323,align="center",title="Gráfico da corrente de saída nos dois pares de fios (A e B) para micropassos do 'datasheet' de um DRV8825, que consegue até 32 subdivisões de passo."]
 
 Outras proporções de correntes podem nos levar a divisões ainda menores: 1/8, 1/16, 1/32 e em alguns casos
 é possível chegar a 1/256 de divisão de passo! __Perceba no entanto que o torque quando se usa micropasso é
@@ -3676,7 +3676,7 @@ com este valor. Se queremos ao longo do tempo que a tensão siga a curva de uma 
 precisão. Se precisamos de uma potência que siga uma curva arbitrária ao longo do tempo, o ajuste será perfeito.
 
 [[graficocurvaarbitrariapotencia]]
-image::image121.png[image,width=478,height=285,title="Uma curva arbitrária de potência que queremos entregar ao longo do tempo, com subidas e descidas suaves."]
+image::image121.png[image,width=478,height=285,align="center",title="Uma curva arbitrária de potência que queremos entregar ao longo do tempo, com subidas e descidas suaves."]
 
 E isso tudo, é claro, só existirá em contos de fadas tecnológicos. Na vida real, há custos e aproximações
 e em impressoras de baixo custo como as repraps, um conjunto limitado de dispositivos eletrônicos a usar. O
@@ -3689,7 +3689,7 @@ do número de bits da entrada que usamos; se temos 8 bits, teremos 256 saídas p
 teremos 65.536 saídas possíveis (2^16^).
 
 [[graficocurvapotenciadac]]
-image::image122.png[image,width=478,height=329,title="A nossa curva de potência desejada quando entregue por um DAC - Conversor Analógico-Digital - de 3 bits (8 intensidades de potência possíveis). Na prática, DACs baratos de mercado costumam ter entre 10 e 12 bits (1024 a 4096 intensidades discretas)."]
+image::image122.png[image,width=478,height=329,align="center",title="A nossa curva de potência desejada quando entregue por um DAC - Conversor Analógico-Digital - de 3 bits (8 intensidades de potência possíveis). Na prática, DACs baratos de mercado costumam ter entre 10 e 12 bits (1024 a 4096 intensidades discretas)."]
 
 Entretanto, ainda que DACs não sejam caros isoladamente, uma impressora 3D tem vários dispositivos a serem
 controlados e os microcontroladores baratos como o Arduino Mega não vêm com tais elementos. Se houver uma
@@ -3717,7 +3717,7 @@ pulso; tem também um pino de _sinal_ ou _direção_ (positiva ou negativa). Nã
 teríamos também -5V.
 
 [[graficocurvatraduzidaprapwm]]
-image:image123.png[image,width=478,height=329,title="A nossa curva quando traduzida para PWM. Perceba como a duração de cada pulso no eixo do tempo corresponde à altura da onda. Nesse caso temos um PWM direcional, pois não nos limitamos a zero e um: também mandamos pulsos negativos."]
+image:image123.png[image,width=478,height=329,align="center",title="A nossa curva quando traduzida para PWM. Perceba como a duração de cada pulso no eixo do tempo corresponde à altura da onda. Nesse caso temos um PWM direcional, pois não nos limitamos a zero e um: também mandamos pulsos negativos."]
 
 *Mas se o sinal é diferente, o resultado também não será diferente?* Ou, já que estamos enviando um sinal _muito
 diferente_ do que iríamos mandar, o dispositivo no final desse circuito não vai fazer algo também diferente
@@ -3752,29 +3752,26 @@ vasto na engenharia elétrica e existe em diversos “sabores”, incluindo form
 (como a triangular e senoidal) e com modulações diferentes. O leitor curioso é incentivado a pesquisar mais
 sobre isso em livros de engenharia elétrica ou mesmo na internet.^5^
 
-Notas:
-
-1 -- Curiosamente, a função C++ analogWrite() do Arduino é um nome equivocado; o Arduino não envia um sinal
+[NOTE]
+.Notas:
+====
+. Curiosamente, a função C++ `analogWrite()` do Arduino é um nome equivocado; o Arduino não envia um sinal
 analógico e sim um PWM controlado por hardware.
-
-2 -- Um estudo da perda térmica em PWM pode ser visto em uma página do projeto reprap:
+. Um estudo da perda térmica em PWM pode ser visto em uma página do projeto reprap:
 _http://reprap.org/wiki/Gen7_Research#Heat_vs._PWM_Frequency_
-
-3 -
-http://hydraraptor.blogspot.com.br/2012/04/stepstuck.html[_http://hydraraptor.blogspot.com.br/2012/04/stepstuck.html_]
-
-4 - O A4988 não utiliza, estritamente falando, PWM, mas uma técnica bastante semelhante com o nome
+. http://hydraraptor.blogspot.com.br/2012/04/stepstuck.html[_http://hydraraptor.blogspot.com.br/2012/04/stepstuck.html_]
+. O A4988 não utiliza, estritamente falando, PWM, mas uma técnica bastante semelhante com o nome
 de PPM, Pulse Position Modulation, __modulação por posição de pulso__. No caso do PPM o pulso é
 sempre do mesmo tamanho, mas a posição em que ocorre dentro da janela do período é o que determina
 a “intensidade”. Existem outras variações de PWM como o PWC (Pulse Width Coding, descrito na página 5 de
 http://www.atmel.com/Images/Atmel-8014-Using-Timer-Capture-to-Measure-PWM-Duty-Cycle_ApplicationNote_AVR135.pdf[_http://www.atmel.com/Images/Atmel-8014-Using-Timer-Capture-to-Measure-PWM-Duty-Cycle_ApplicationNote_AVR135.pdf_]),
 PCM, PAM, PPM (esses em
 http://www.electronicshub.org/modulation-and-different-types-of-modulation/[_http://www.electronicshub.org/modulation-and-different-types-of-modulation/_])
-
-5 -- Podemos sugerir o excelente texto de Newton C. Braga, disponível no seu site no endereço
+. Podemos sugerir o excelente texto de Newton C. Braga, disponível no seu site no endereço
 http://www.newtoncbraga.com.br/index.php/robotica/5169-mec071a[_http://www.newtoncbraga.com.br/index.php/robotica/5169-mec071a_]
+====
 
-=== Motores do Mundo Real
+==== Motores do Mundo Real
 
 E como tudo que tem uma descrição teórica simplificada, os motores que utilizamos em nossas impressoras 3D são
 mais complicados, frutos de décadas de progresso no campo. Mas não _*muito*_ mais complicados: os princípios
@@ -3791,29 +3788,33 @@ e estator se alinham de modo que a relutância magnética é mínima, através d
 representam palavras-chave de pesquisa para o leitor, visto que tratar deste assunto sairia muito do escopo do
 livro^1^. São baratos e usados em motores pequenos como em mesas de microposicionamento.
 
-image:image124.png[image,width=451,height=310]
+[[bobinasmotorderelutanciavariavel]]
+image::image124.png[image,width=451,height=310,align="center",title="Um motor de relutância variável."]
 
 * *Motores Híbridos* -- são esses os usados nas impressoras 3D “reais”, e se aproveitam das duas
 estratégias. Ao invés de usarem somente atração eletromagnética, usam o efeito de caminho de menor relutância,
 se valendo de imantação permanente axial ao invés de radial, isto é, temos dois cilindros dentados, um imantado
 positivo e outro imantado negativo, como na foto e diagrama a seguir.
 
-image:image125.png[image,width=642,height=375]
+[[fotomotorhibridocomdiagrama]]
+image::image125.png[image,width=642,height=375,align="center",title="Um motor híbrido bipolar NEMA17 de reprap desmontado e seu diagrama, visto de frente, e com uma fase (A) ativada. Perceba que os dois cilindros dentados têm os dentes intercalados, de modo que uma bobina que atraia um pólo repele o outro -- deste modo, há maior aproveitamento e controle da rotação."]
 
 Motores híbridos usam a mesma estratégia para passos e micropassos que o motor simplificado que ilustramos. Para
 uma visão animada da polarização e movimento com detalhes desses motores, recomendamos a referência de internet
 https://www.youtube.com/watch?v=t-3VnLadIbc[_https://www.youtube.com/watch?v=t-3VnLadIbc_] - “How the Stepper
 motors are made and how they operate -- Part 2”.
 
-Notas:
-
-1 -- Uma referência boa sobre solenóides pode ser vista no excelente sítio de Newton Braga:
+[NOTE]
+.Notas:
+====
+. Uma referência boa sobre solenóides pode ser vista no excelente sítio de Newton Braga:
 http://www.newtoncbraga.com.br/index.php/como-funciona/3890-mec095[_http://www.newtoncbraga.com.br/index.php/como-funciona/3890-mec095_].
-Uma apresentação falando sobre relutância magnética, a
+. Uma apresentação falando sobre relutância magnética, a
 relação com solenóides e força magnetomotriz pode ser achada em
 https://docente.ifrn.edu.br/odailsoncavalcante/disciplinas/maquinas-eletricas-e-acionamentos/revisao-de-eletromagnetismo[_https://docente.ifrn.edu.br/odailsoncavalcante/disciplinas/maquinas-eletricas-e-acionamentos/revisao-de-eletromagnetismo_].
+====
 
-=== Servo Motores
+==== Servo Motores
 
 Quando aprendemos endstops, vimos que o posicionamento dos motores na impressora 3D é implementado como uma __*malha
 aberta*__, isto é, como um circuito cujo resultado nunca é medido e comparado com o esperado. Assim, quando enviamos
@@ -3834,7 +3835,8 @@ Servos não são desconhecidos no universo _Maker_ -- pelo contrário, em suas e
 bastante populares. Aparecem ubiquamente nos aeromodelos, nas impressoras 3D para subir e baixar sensores de
 nivelamento de mesa, e nos projetos impressos de máquinas simples.
 
-image:image126.png[image,width=411,height=491]
+[[servomotoressg90]]
+image::image126.png[image,width=411,height=491,align="center",title="SG90, um dos servos de baixo custo mais populares do mercado, junto a três braços distintos que são encaixáves no pinhão. Tem 1,8 kgf.cm de torque em 5V e pesa apenas 9g. Devido ao fato de ser translúcido é possível ver sua estrutura interna, usando de engrenagens extras -- redução -- para aumentar o torque às custas da velocidade. Fonte: aliexpress.com"]
 
 Os servos podem usar diversas tecnologias de motores subjacentes, desde motores de passo a motores AC e DC e até
 mesmo motores pneumáticos ou hidráulicos. O que o faz ser um servo é a presença de um _encoder rotatório_ ou

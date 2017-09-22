@@ -3717,7 +3717,7 @@ pulso; tem também um pino de _sinal_ ou _direção_ (positiva ou negativa). Nã
 teríamos também -5V.
 
 [[graficocurvatraduzidaprapwm]]
-image:image123.png[image,width=478,height=329,align="center",title="A nossa curva quando traduzida para PWM. Perceba como a duração de cada pulso no eixo do tempo corresponde à altura da onda. Nesse caso temos um PWM direcional, pois não nos limitamos a zero e um: também mandamos pulsos negativos."]
+image::image123.png[image,width=478,height=329,align="center",title="A nossa curva quando traduzida para PWM. Perceba como a duração de cada pulso no eixo do tempo corresponde à altura da onda. Nesse caso temos um PWM direcional, pois não nos limitamos a zero e um: também mandamos pulsos negativos."]
 
 *Mas se o sinal é diferente, o resultado também não será diferente?* Ou, já que estamos enviando um sinal _muito
 diferente_ do que iríamos mandar, o dispositivo no final desse circuito não vai fazer algo também diferente
@@ -3851,11 +3851,13 @@ eletrônica a função de __driver__. Este circuito, especialmente nos motores d
 usados em CNCs, é consideravelmente maior que um driver de impressora 3D doméstica. Nos pequenos, porém, ele
 é até incluído no corpo do servo.
 
-image:image127.png[image,width=545,height=499]
+[[fotoelementosdeumservo]]
+image::image127.png[image,width=545,height=499,align="center",title="Elementos de um servo pequeno. Perceba que apenas 3 fios entram no conjunto - um para neutro, outro para tensão de referência (Vcc) – esses dois energizam o conjunto - e o terceiro é o sinal: um simples PWM para dizer a posição desejada. O circuito de controle faz todo o tratamento do encoder incluindo corrigir o motor e não devolve ao microcontrolador que enviou o sinal nenhum dado. Fonte da foto em https://www.youtube.com/watch?v=v2jpnyKPH64"]
 
 Por causa do encoder em sua construção, servos são mais longos que seus motores equivalentes.
 
-image:image128.png[image,width=501,height=405]
+[[servolongodoaliexpress]]
+image::image128.png[image,width=501,height=405,align="center",title="Exemplo de um servo motor de passo NEMA23 de torque 20 kgf.cm para CNC com o respectivo controlador/driver. Fonte: aliexpress.com"]
 
 No caso mais comum, o posicionamento de um servo é feito enviando ao seu driver um sinal PWM. Atipicamente,
 no entanto, a posição máxima não compreende a um duty cycle de 100%; nos pequenos servos como o SG90, um PWM
@@ -3874,7 +3876,8 @@ mandar um comando para 60° e um para 80°. Novamente, isso será particular ao 
 Para uma leitura complementar sobre servos em português, recomendamos o site da Citisystems:
 https://www.citisystems.com.br/servo-motor/[_https://www.citisystems.com.br/servo-motor/_].
 
-**Servos de rotação contínua**: os servos pequenos são baratos e incluem vários elementos úteis no conjunto:
+.Servos de rotação contínua
+os servos pequenos são baratos e incluem vários elementos úteis no conjunto:
 não só o encoder, mas também o circuito de controle, as engrenagens de redução e ainda costumam vir com diferentes
 braços. Devido a essa facilidade de aquisição, e à necessidade de motores estritamente controláveis que possam
 girar livremente (mais de 180°) em projetos de __hobbyistas__, existe um procedimento muito comum de _remoção_
@@ -3882,9 +3885,10 @@ de elementos desse tipo de motor para que ele funcione em rotação contínua. T
 de 3 etapas:
 
 * Remoção dos obstáculos físicos, como pinos de segurança ou obstruções na rotação, que impeçam as
-engrenagens de girar além dos 180°; * Remoção ou desativação do encoder; * Substituição da conexão
-do encoder por um elemento que retorne sempre o mesmo sinal, equivalente a uma posição da rotação do motor
-(geralmente a de 0°).
+engrenagens de girar além dos 180°;
+* Remoção ou desativação do encoder;
+* Substituição da conexão do encoder por um elemento que retorne sempre o mesmo sinal, equivalente a uma posição
+da rotação do motor (geralmente a de 0°).
 
 Muitos profissionais consideram que tal conjunto nem mesmo pode ser denominado “servo”, visto que a principal
 característica de um servo, o uso do encoder, é removida. Além disso, existem certos elementos que minam a
@@ -3898,11 +3902,15 @@ Uma leitura complementar em inglês sobre servos de rotação
 contínua, incluindo uma receita para implementá-los, está em
 https://www.pololu.com/blog/24/continuous-rotation-servos-and-multi-turn-servos[_https://www.pololu.com/blog/24/continuous-rotation-servos-and-multi-turn-servos_].
 
-=== Servos na impressão 3D
+==== Servos na impressão 3D
 
-**Antes, uma nota sobre os firmwares**: alguns firmwares de impressora 3D, como o __Marlin__, têm suporte a
+[NOTE]
+.Antes, uma nota sobre os firmwares
+====
+alguns firmwares de impressora 3D, como o __Marlin__, têm suporte a
 servos. Mas essa informação pode ser interpretada equivocadamente: o firmware não tem suporte a servos __no
 lugar dos motores de passo__.
+====
 
 A utilização de motores de passo nas impressoras 3D FFF é praticamente universal; pouco se ouve falar
 em impressoras que os usem e os microcontroladores de mercado não são preparados pra lidar com eles -- os
@@ -3924,27 +3932,27 @@ característica não decepcionou; existem não uma, mas _*duas*_ soluções para
 ambas as soluções são open source! E ambas as soluções, ao invés de vender servos prontos, modificam os
 baratíssimos NEMA17 de mercado utilizados em impressoras 3D, permitindo a economia do mercado de massa.
 
-*ustepper* -- mistura um driver _stepstick_ para dirigir o motor a um encoder rotatório de 12 bits com um
+* *ustepper* +
+mistura um driver _stepstick_ para dirigir o motor a um encoder rotatório de 12 bits com um
 microcontrolador AVR, sendo parafusado ou imantado nas costas de um motor de passo NEMA17 comum. Pode ser ligado
-diretamente a uma RAMPS ou microcontrolador equivalente por três fios de controle no soquete para drivers da placa.
-
+diretamente a uma RAMPS ou microcontrolador equivalente por três fios de controle no soquete para drivers da placa. +
 O sítio web do ustepper é http://www.ustepper.com/[_http://www.ustepper.com_] e o vídeo de introdução pode ser
 visto no youtube: https://www.youtube.com/watch?v=1ebjdsye-PE[_https://www.youtube.com/watch?v=1ebjdsye-PE_]. No
 momento da publicação deste livro, o preço do dispositivo, sem frete, é de 48 euros sem motor e 58 euros com motor.
-
-*mechaduino* -- equivalente ao ustepper porém com controle de torque e velocidade e microcontrolador mais poderoso,
+* *mechaduino* +
+equivalente ao ustepper porém com controle de torque e velocidade e microcontrolador mais poderoso,
 podendo por isso funcionar em modo de malha fechada “verdadeira” e até dispensar os endstops. A instalação é
 semelhante ao ustepper mas ele exige um procedimento de calibração bem detalhado nas instruções que acompanham
-o produto.
-
+o produto. +
 O sítio web do mechaduino é http://www.tropical-labs.com/[_http://www.tropical-labs.com_]
 e a instalação, calibração e uso dele com RAMPS pode ser visto
 em https://www.youtube.com/watch?v=T-pY4OZzvaU[_https://www.youtube.com/watch?v=T-pY4OZzvaU_]. No momento da
 publicação, o dispositivo custa, sem frete, 49 dólares e com motor, 65 dólares.
 
-image:image129.png[image,width=642,height=464]
+[[desmontracaoustepper]]
+image::image129.png[image,width=642,height=464,align="center",title="Mesmo depois de um empurrão desses, o ustepper consegue fazer com que o motor de passo recupere o lugar onde estava e continue a impressão normalmente. Vídeo em https://www.youtube.com/watch?v=oidiMjSqiBU"]
 
-== Microcontrolador
+=== Microcontrolador
 
 Já foi falado que o projeto _reprap_ que deu início às impressoras 3D FFF modernas nasceu junto com o Arduino. Os
 primeiros rascunhos de impressoras 3D do projeto reprap em 2006 mostram projetos envolvendo microcontroladores PIC
@@ -3959,7 +3967,8 @@ envolver soldagens industriais. Em 2010 já aparecia a Gen4, e abreviando a hist
 iteração oficial desta linha de placas microcontroladoras: a Geração 7, feita com o intuito de facilitar ao
 máximo ao hobbyista de eletrônica montar em casa ou na garagem, com PCB de um lado e conectores soldáveis a mão.
 
-image:image130.jpeg[image,width=622,height=486]
+[[eletronicagen7pitoresca]]
+image:image130.jpeg[image,width=622,height=486,align="center",title="Eletrônica Gen7, com o pitoresco fundo escolhido para passar a idéia de poder ser montada nos lugares mais remotos. Fonte: http://reprap.org/wiki/Generation_7_Electronics"]
 
 Um fato digno de nota é que a versão brasileira da Gen7 (Gen7BR2), com componentes mais fáceis de encontrar no
 mercado brasileiro, feitas pelo grupo ReprapBR, constam no site oficial, e as primeiras versões das impressoras
@@ -3973,7 +3982,7 @@ interessados e hobbyistas, especialmente fora dos EUA, tal empreendimento era co
 lembrar que os sites chineses de eletrônicos em 2010-2011 ainda não tinham pegado a tração que têm hoje. Essa
 tração veio, inclusive, do outro projeto open-source de sucesso.
 
-=== O Arduino Salvou a Impressão 3D Open-Source
+.O Arduino Salvou a Impressão 3D Open-Source
 
 Em outubro de 2010, o projeto Arduino lançou o __Arduino Mega__. Com o mesmo poder computacional do Arduino Uno,
 mas mais memória e pinos (8 kiB de RAM ao invés de 2, 128 KiB de flash ao invés de 32, 54 pinos digitais ao
@@ -3998,7 +4007,8 @@ sigla de **R**eprap **A**rduino **M**ega **P**ololu **S**hield. O nome especific
 adicional, encaixável nos pinos) para o _Arduino Mega_ especificamente e com componentes __Pololu__. Pololu é
 a marca dos drivers de motores de passo acopláveis -- do tipo **A4988**.
 
-image:image131.jpeg[image,width=549,height=539]
+[[kitrampsaliexpress]]
+image::image131.jpeg[image,width=549,height=539,align="center",title="Um típico 'kit RAMPS' da China, que já vem com um clone chinês do Arduino Mega, 5 drivers de alta potência 'DRV8825', a RAMPS versão 1.4 e até um LCD grande com controles e entrada para cartão SD, tudo por menos de 30 (trinta) dólares incluindo o frete. Hoje em dia as placas 'tudo-em-um' começam lentamente a se tornar viáveis, mas ainda custam pelo menos o dobro do preço de um kit desses. Fonte: aliexpress.com"]
 
 A placa RAMPS e os _drivers_ são open-source, e a página da RAMPS 1.4 do projeto reprap se destaca por ser uma
 das páginas mais bem documentadas de projeto de hardware open-source até hoje^2^, com não só todos os diagramas

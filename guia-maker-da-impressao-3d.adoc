@@ -95,7 +95,7 @@ Por fim, seria contraditório um livro se pretender libertador e ser, ele mesmo,
 de direitos autorais (copyright) são uma realidade atual inescapável, permitindo ao autor decidir por _120 anos_
 o que as pessoas podem ou não fazer com seu trabalho intelectual. Em contraponto a isso, existe o _Copyleft (All
 Rights Reversed)_ que, usando a própria lei de copyright, vira seus conceitos de ponta-cabeça, concedendo direitos
-aos recipientes ao invés de limitações. A licença de uso de todo o conteúdo¹ deste livro está nos apêndices,
+aos recipientes ao invés de limitações. A licença de uso de todo o conteúdo^1^ deste livro está nos apêndices,
 mas de modo simplificado: você pode copiar este conteúdo quanto quiser, pode modificá-lo e fazer e redistribuir
 sua própria versão, pode inclusive vendê-lo e fazer uso comercial dele; mas deve manter e citar a licença, ou
 seja, dar aos outros o mesmo direito incondicionalmente, e deve preservar o crédito da autoria original do documento.
@@ -253,9 +253,9 @@ são os equipamentos comumente usados para aquilo que é chamado de __prototipag
 conjunto de tecnologias usadas para a fabricação de objetos físicos diretamente a partir de dados de computador,
 dados estes gerados a partir de um software de “CAD” (Computer-Aided Design, ou seja, qualquer programa que
 faça a modelagem), e guiados por um “CAM” (o software que cuida da parte efetiva da fabricação, como um
-controlador de impressão 3D ou fatiador).¹ Nessas horas, a criatividade da internet também pesa nos termos
+controlador de impressão 3D ou fatiador).^1^ Nessas horas, a criatividade da internet também pesa nos termos
 técnicos: o conhecido grupo do servidor de torrents _The Pirate Bay_ batizou os dados de computador que, ao serem
-alimentados em uma máquina específica, geram objetos físicos de “physibles”², o que em português daria
+alimentados em uma máquina específica, geram objetos físicos de “physibles”^2^, o que em português daria
 algo como “fisíveis” (não confundir com “fusíveis”!).
 
 [NOTE]
@@ -311,7 +311,7 @@ Foi em 1981, entretanto, em que o primeiro modelo funcional de uma máquina de i
 por Hideo Kodama do Instituto de Pesquisas Industriais Municipal de Nagoya, no Japão. Seu sistema descrevia um
 sistema de prototipagem rápida baseada em fotopolímeros com construção de camadas correspondendo a seções
 transversais do modelo por três diferentes aparatos, dois deles sendo reconhecíveis no mercado hoje como as SLA
-“top-down” e “bottom-up” e o terceiro lembrando bastante a técnica conhecida como __polyjet__.¹
+“top-down” e “bottom-up” e o terceiro lembrando bastante a técnica conhecida como __polyjet__.^1^
 
 [NOTE]
 ====
@@ -385,7 +385,7 @@ Infelizmente, com todo esse aparecimento de novas tecnologias prometendo revoluc
 criação, vieram também as chagas da propriedade intelectual. Tradicionalmente, ao criar uma nova tecnologia,
 indivíduos e empresas registram em seu país uma “patente”, que é um dispositivo legal que permite ao seu
 detentor ter o monopólio de comercialização daquela idéia ou processo por um prazo que chega até 20 anos
-a partir da data de aplicação¹. Ao aplicar a uma patente em um país, por força de tratados internacionais,
+a partir da data de aplicação^1^. Ao aplicar a uma patente em um país, por força de tratados internacionais,
 o requerente ganha também a exclusividade internacional para registrar o mesmo processo em outro países pelo
 prazo de um ano.
 
@@ -419,13 +419,13 @@ completa. Segundo a wikipedia, no ano de 2009 o preço de uma impressora 3D dimi
 aproximadamente 100 vezes.
 
 O projeto reprap cumpriu perfeitamente muitos de seus objetivos. Conseguiu peças mais acessíveis e baratas para
-os componentes de impressão 3D², usando desde barras roscadas que se encontra em qualquer loja de parafuso para
+os componentes de impressão 3D^2^, usando desde barras roscadas que se encontra em qualquer loja de parafuso para
 eixos ao invés de fusos trapezoidais até plataformas com resistência aquecedora para serem usadas no lugar
 das caríssimas câmaras aquecidas isoladas. Agregou e incentivou desenvolvedores a criarem firmwares open-source
 completos e cheios de recursos para os microcontroladores usados, estes baseados no Arduino Mega e mais tarde em
 microprocessadores sofisticados como o do embarcado Beaglebone Black. Estabeleceu um centro de referência para
 as informações sobre impressoras 3D de baixo custo. E junto com isso estabeleceu uma série de padrões seguidos
-por empresas e indivíduos sem necessidade de agências reguladoras para encarecer o processo.³
+por empresas e indivíduos sem necessidade de agências reguladoras para encarecer o processo.^3^
 
 Hoje o projeto reprap tem meia dúzia de fatiadores open-source multiplataforma e que funcionam em qualquer
 impressora 3D FFF de baixo custo, tem 11 firmwares diferentes que podem ser usados em suas máquinas (o número
@@ -533,7 +533,7 @@ No mesmo ano de 2014, um escândalo acomete a Makerbot através de sua companhia
 da extrema popularidade do seu site __thingiverse__, a empresa aplicou alguns registros de patentes de design
 open-source feitos por usuários do portal, sem sequer informá-los disso e para usar em seus produtos. A empresa
 OpenBeam, uma das empresas do ecossistema open-source de impressão 3D, descobriu isso e publicou uma carta aberta
-à Makerbot para ela “manter a classe”¹. Um movimento em massa de saída dos usuários iniciou, sendo que
+à Makerbot para ela “manter a classe”^1^. Um movimento em massa de saída dos usuários iniciou, sendo que
 muitos deles deixam postados protestos em suas páginas do thingiverse apontando para outros portais do mesmo gênero.
 
 Devido a manchas na reputação como essa, ao elevado preço das impressoras 3D da empresa, à diminuição
@@ -623,18 +623,18 @@ dificultado às máquinas e instalações das impressoras 3D estava nitidamente 
 acadêmica de divulgação de informação, exposição às claras e acesso livre para experimentação. Ainda
 assim, com dinheiro envolvido e iniciativas de colaboração com universidades destacadas - principalmente em
 seus departamentos de engenharia -, os artigos de relevância começaram a crescer em número. É de 2002 que por
-exemplo temos o artigo seminal __Anisotropic material properties of fused deposition modeling ABS__¹, que analisa o
+exemplo temos o artigo seminal __Anisotropic material properties of fused deposition modeling ABS__^1^, que analisa o
 problema das resistências não-uniformes numa peça impressa em 3D; também em 2002 que temos o __Fused deposition
-modeling of novel scaffold arthictectures for tissue engineering applications__², analisando padrões de suporte
+modeling of novel scaffold arthictectures for tissue engineering applications__^2^, analisando padrões de suporte
 e raft. Do lado da estereolitografia, que já tinha relações mais estreitas com a academia, temos o __Use of
-stereolithography to manufacture critizal-sized 3D biodegradable scaffolds for bone ingrowth__³, um artigo sobre
+stereolithography to manufacture critizal-sized 3D biodegradable scaffolds for bone ingrowth__^3^, um artigo sobre
 padrões de estrutura para auxílio de crescimento de ossos, e já sinalizando para a entrada da impressão 3D no
 campo biomédico. Muitos outros artigos com técnicas, números e variáveis usados até em impressoras 3D de baixo
 custo são dessa época -- mostrando uma explosão tanto da relevância da tecnologia quanto do interesse acadêmico.
 
 Foi desse interesse acadêmico, aliás, e nesse ambiente favorável que Adrian Bowyer, Vik Olliver e outros
 tiveram em 2004 a idéia para o projeto 2004 e em 2006 Boywer já publicava a apresentação __The Replicating
-Rapid-prototyper - moving hardware through the wires__⁴ pela Universidade de Illinois.
+Rapid-prototyper - moving hardware through the wires__^4^ pela Universidade de Illinois.
 
 Em meados dos anos 2000, o próprio _Journal of Rapid Prototyping_ já estava consolidado como uma publicação de
 Alto Impacto e as variadas tecnologias de impressão 3D já tinham razoável _mindshare_ acadêmico, que depois seria
@@ -642,7 +642,7 @@ ampliado para fora da academia devido ao projeto reprap. A segunda metade da pri
 uma escalada extraordinária de artigos úteis para fabricação, muitos deles já tratando a incipiente idéia da
 impressão 3D de baixo custo. Entre eles temos o paper de Bowyer e seus colaboradores avaliando os resultados do
 projeto reprap em 2009, “__RepRap: The Replicating Rapid Prototyper -- maximizing customizability by breeding
-the means of production__”⁵ e novamente em 2011 com “RepRap -- the replicating rapid prototyper”⁶.
+the means of production__”^5^ e novamente em 2011 com “RepRap -- the replicating rapid prototyper”^6^.
 
 [NOTE]
 .Referências:
@@ -684,7 +684,7 @@ de passarem pelo processo formal de revisão de pares (externo) e publicados.
 Um pesquisador que esteve presente em todos esses momentos e teve participação pesada no movimento RepRap é o
 Prof. Dr. Joshua Pearce, estando entre os 0.1% maiores contribuidores, e sempre com artigos de enorme utilidade
 para a fabricação digital de baixo custo, com tantos exemplos úteis que a citação de artigos desta parte
-__transbordaria__. Para citar apenas alguns artigos¹ recentes, em “Emergence of Home Manufacturing in the
+__transbordaria__. Para citar apenas alguns artigos^1^ recentes, em “Emergence of Home Manufacturing in the
 Developed World: Return on Investment for Open-Source 3-D Printers”, ele examina o retorno econômico da venda
 e peças de impressoras 3D open-source; em “Free and Open Source Automated 3-D Microscope” ele ensina como
 construir um microscópio eletrônico usando impressão 3D; em “Open Source Laser Polymer Welding System:
@@ -699,7 +699,7 @@ química e biologia do Brasil se fosse mais conhecido por aqui.
 
 Dr. Pearce continua ativo e produzindo muita informação. Em especial, ele e seu grupo têm o costume de, mais
 do que deixar os artigos publicamente acessíveis na __academia.edu__, detalhar os projetos no wiki de tecnologia
-sustentável http://appropedia.org/[_http://appropedia.org_], onde tem uma página detalhando suas informações.²
+sustentável http://appropedia.org/[_http://appropedia.org_], onde tem uma página detalhando suas informações.^2^
 
 [[opensourcelab]]
 image::image20.png[image,width=471,height=705]
@@ -728,7 +728,7 @@ associado, citações contabilizadas (exceto por dados privados como os coletado
 têm sua localização e importância relativa enormemente dificultadas em relação aos acadêmicos. São artigos
 que merecem ser retirados da obscuridade até para embasar o escrutínio acadêmico de que necessitam e este livro
 procura cumprir este papel. Alguns deles são referenciados no decorrer deste livro, um exemplo notável sendo o
-artigo “Polyholes”¹ do usuário experimentalista _nophead_ (Chris Palmer).
+artigo “Polyholes”^1^ do usuário experimentalista _nophead_ (Chris Palmer).
 
 [NOTE]
 ====
@@ -1064,16 +1064,16 @@ proeminente foi esquecida, receberemos de braços abertos esta informação.
 === A Exaptação
 
 Um conceito da biologia evolucionista que pode ser útil para entender a mentalidade “Maker” tão integral à
-impressão 3D atual é o de __exaptação__¹, um fenômeno que ocorre quando um determinado traço biológico que
+impressão 3D atual é o de __exaptação__^1^, um fenômeno que ocorre quando um determinado traço biológico que
 desempenha determinada função é cooptado para uma função diferente, tendendo a evoluir naquela direção. Assim
 como as penas primitivas, usadas para regulação térmica, acabaram sendo cooptadas para facilitar planagem e voo,
 se cooptaram os grudentos _laquês de cabelo_ para facilitar a aderência da peça impressa na mesa. Assim como a
 proteína alfa-cristalina, usada no metabolismo do sistema regulatório dos primeiros seres, acabou cooptada para
-preencher o tecido transparente da córnea ocular², o espaguete de _nylon_ usado em roçadeiras para cortar grama
+preencher o tecido transparente da córnea ocular^2^, o espaguete de _nylon_ usado em roçadeiras para cortar grama
 foi derretido nas impressoras 3D para fabricar peças e utensílios. De fato, até na arqueologia e história
 por vezes se cita “exaptação” para ilustrar inovações tecnológicas da humanidade a partir de objetos
 que desempenhavam outras funções, e mesmo para tempos modernos há artigos e publicações que resgatam este
-termo³. Isso ocorre porque a exaptação é um exemplo ilustre de uso criativo e livre de algo já existente,
+termo^3^. Isso ocorre porque a exaptação é um exemplo ilustre de uso criativo e livre de algo já existente,
 ou pelo menos até que mecanismos de controle que impedem reuso e inovação como Digital Rights Management,
 copyright e patentes metam o pé na frente -- algo que os cientistas que começaram a usar o videogame Playstation
 3 da Sony como supercomputador para seus clusters de processamento descobriram da pior maneira, quando a empresa
@@ -1101,7 +1101,7 @@ Innovation Through Exaptation - http://timkastelle.org/blog/2010/05/innovation-t
 Se há algo que pode ser dito sem equívocos sobre a época atual, é que a indústria obtusa e conservadora não
 entende o mercado Maker. Uma sugestão gritante disso é a dificuldade de achar peças de máquinas no varejo,
 disponíveis apenas no atacado, dificultando a vida dos entusiastas de impressão 3D (nada de _long tail_ no ramo
-industrial, aparentemente¹). Outra evidência independente é a mentalidade “sucesso do iPhone”: virtualmente
+industrial, aparentemente^1^). Outra evidência independente é a mentalidade “sucesso do iPhone”: virtualmente
 todas as empresas do ramo de fabricação agem como se achassem que o que falta é um “jeito genial” de
 tornar as impressoras 3D tão fáceis quanto um eletrodoméstico, como aconteceu com o iPhone e em parte com o
 computador. Existem dois problemas com essa visão -- uma é ela contextualizar a relação entre fabricante,
@@ -1144,7 +1144,7 @@ conta que há muitas aplicações para as quais esta informação é essencial -
 exemplo representativo do mercado “Maker” porque ele pressupõe abertura e transparência. Além disso, por
 sua própria natureza controladora, as empresas mais industriais costumam ter contratos prolongados e relação
 estreita com o cliente, facilitando expedientes como reciclagem de carretéis (um dos raros pontos positivos da
-Stratasys²). Existe uma iniciativa entre os próprios fabricantes e comerciantes ligados à impressão 3D (em
+Stratasys^2^). Existe uma iniciativa entre os próprios fabricantes e comerciantes ligados à impressão 3D (em
 sua maior parte, empresas pequenas e médias) para resolver este problema, envolvendo padronizações de medidas,
 regras para informação ao cliente, expedientes de reciclagem e proteção do consumidor, mas ainda tímida e
 sem site próprio, consistindo no momento de fórum e grupo de __whatsapp__. Torçamos para que uma iniciativa
@@ -1251,7 +1251,7 @@ em parte, essa analogia quebra: estamos tratando de experiências domésticas, o
 ou pequena empresa. Aquela inovação legítima na maioria dos casos não tem o incentivo para ser documentada
 cientificamente, nem submetida a escrutínio formal, e raras vezes chega a se traduzir em produto. Em especial as
 _falhas_ pois são tidas como motivos de vergonha e não são muito comentadas -- uma notável exceção sendo a
-coluna “Fail of the Week” do sítio web __Hackaday³__. Algumas vezes, com sorte, será descrita ou implementada
+coluna “Fail of the Week” do sítio web __Hackaday^3^__. Algumas vezes, com sorte, será descrita ou implementada
 de modo a que outros possam repeti-la e a idéia se espalhe. A chance é baixa, mas a “reinvenção da roda”
 acontecendo em paralelo massivamente às vezes compensa estatisticamente as baixas chances e oferece algo de novo.
 
@@ -1344,16 +1344,16 @@ Patentes, especialmente as consideradas “bem escritas”, são um estorvo inco
 incalculável contra o progresso da tecnologia, pois bloqueiam um design / projeto / invenção e às vezes todo um
 campo da tecnologia de progredir por sua duração que é, grosso modo, de vinte anos. Foi o caso da impressão
 3D FFF com a Stratasys, e outros casos históricos em que a tecnologia “emperrou” por décadas por causa
-delas são conhecidos, como o barco a vapor.¹ Este progresso incremental que ocorreu com os extrusores _também_
+delas são conhecidos, como o barco a vapor.^1^ Este progresso incremental que ocorreu com os extrusores _também_
 ocorre com as patentes, mas com atrasos de anos para a chegada no mercado e quantias imensas de dinheiro jogadas
 fora com os registros na “guerra de pequenos incrementos”, contribuindo com os altos preços das tecnologias
-e do custo de pesquisa e desenvolvimento.²
+e do custo de pesquisa e desenvolvimento.^2^
 
 Uma vantagem, por assim dizer, das patentes é que elas obrigam o inventor a detalhar com pormenores e ilustrações
 a sua idéia, de modo que quem constrói algo semelhante possa ser processado -- e quem quiser construir algo
 semelhante, uma vez expirada a patente (que não pode ser renovada), conseguiria. Um exemplo notável disso é a
 iniciativa do advogado de patentes novaiorquinho Martin Galese, que resgata patentes expiradas para transformar
-em modelo digital e compartilhar no site __thingiverse³__.
+em modelo digital e compartilhar no site __thingiverse^3^__.
 
 Mas patentes não são a única _fricção_ que atrapalham a agilidade da __frictionless innovation__. Nem mesmo
 licenças de uso livres são o fator principal para a modificação e reuso. Como foi ressaltado no caso do extrusor
@@ -1470,7 +1470,7 @@ facilidade em se realizarem tais negócios e até pelos ajudantes de serviço de
 tipo de serviço é que os termos de contrato estão pré-estabelecidos, afastando dores legais do caminho.
 
 Para assegurar um sistema com bastante concorrência, o 3D Hubs pede ao produtor que entre com dados na interface
-para que haja o cálculo automático do preço de qualquer peça, de acordo com o volume em mm³ dela. Assim,
+para que haja o cálculo automático do preço de qualquer peça, de acordo com o volume em mm^3^ dela. Assim,
 quando o consumidor procura produtores em sua área e já tem o modelo da peça, pode simplesmente ver os diferentes
 preços já explicitados na busca do sistema.
 
@@ -1562,12 +1562,12 @@ cima -- de acordo com a expectativa do cliente.
 ==== Fechando parênteses
 
 Voltando aos problemas da cobrança da calculadora do Cammada, a primeira dificuldade consiste no fato de o serviço
-se basear em cobrança por _volume_ (cm³). O principal ingrediente das impressões 3D é o material da impressão
+se basear em cobrança por _volume_ (cm^3^). O principal ingrediente das impressões 3D é o material da impressão
 -- no caso das impressoras FFF, o plástico, e ele é quase universalmente vendido em carretéis __por quilo__, ou
 seja, por peso (ou massa). Não é um obstáculo intransponível porque quando se tem a densidade exata do material,
-a transposição de um para o outro é direta: tendo o volume em cm³, basta multiplicar pela densidade para se
+a transposição de um para o outro é direta: tendo o volume em cm^3^, basta multiplicar pela densidade para se
 obter o peso gasto. Para facilitar mais ainda, os números de peso e volume são geralmente bem próximos, de modo
-que um dá a idéia do outro: água tem 1 g/cm³, ABS tem 1,04 g/cm³, e PLA geralmente está entre 1,21 a 1,26 g/cm³.
+que um dá a idéia do outro: água tem 1 g/cm^3^, ABS tem 1,04 g/cm^3^, e PLA geralmente está entre 1,21 a 1,26 g/cm^3^.
 
 Mas cada etapa adicional, ainda que trivial, contribui negativamente para um fator que é constantemente
 desprezado pelos produtores: a _estimativa independente de custo_ pelo consumidor. Quem vai gozar dos benefícios
@@ -1751,13 +1751,13 @@ aliexpress que demorasse alguns meses para chegar.
 
 * Muitos projetos -- a maioria, aliás -- atrasam a data de
 entrega dos prêmios. Em 2012 um levantamento do portal _kickstarter_ pela CNNMoney verificou que 84% dos projetos
-atrasaram¹. Atraso não é a mesma coisa que falha, certamente, com os projetos que realmente falham sendo menos de
+atrasaram^1^. Atraso não é a mesma coisa que falha, certamente, com os projetos que realmente falham sendo menos de
 5%, mas se é algo com que se conta para produção, o despreparo para isso pode acarretar prejuízos.
 
 * Como se
 fosse uma nova Corrida ao Ouro, muitos projetos se aproveitam da ingenuidade ou pouco conhecimento científico dos
 usuários e prometem façanhas irrealizáveis e tecnologias inexistentes, um novo __ouro de tolos__. Alguns exemplos
-são o “respirador artificial compacto” __Triton__² e o “extrator de água” __Waterseer__³. O logro do
+são o “respirador artificial compacto” __Triton__^2^ e o “extrator de água” __Waterseer__^3^. O logro do
 Waterseer é ainda mais complexo pois o investidor não ganha um prêmio, o resultado do projeto sendo entregue
 a “lugares na África” não especificados, isto é, ainda espolia ardilosamente sentimentos humanitários
 de quem dá o dinheiro! Tais projetos invariavelmente mostram renderizações computadorizadas da situação
@@ -1789,7 +1789,7 @@ que passar por um bocado de certificações industriais e testes de regulações
 que empreendedores de mercado mais falhem que sucedam. Alguns projetos podem ainda ter sucesso, mas a falta de
 planejamento para _depois dele_ pode levar uma campanhia à falência. *Mesmo uma idéia genuinamente brilhante e
 inovadora pode falhar, e falha* -- muito facilmente. Exemplos não faltam, um deles sendo a impressora 3D estilo
-delta Tiko⁴, e um exemplo nacional sendo a controladora de impressão 3D de escopo industrial “3DRoot”⁵. Em
+delta Tiko^4^, e um exemplo nacional sendo a controladora de impressão 3D de escopo industrial “3DRoot”^5^. Em
 comum entre esses dois projetos, aliás, é confiar demais na parte do hardware e esquecer que o _software_ (ou no
 caso o firmware da controladora) é complexo e precisa de muito uso em campo pra ser devidamente depurado e afinado,
 ainda mais quando não são usados como base softwares maduros e testados como os do projeto reprap.
@@ -1806,7 +1806,7 @@ dar a sensação de empoderamento ao financiador permitindo que ele especifique 
 ele financia. O segundo caso terá muito mais sucesso pela gratificação que proporciona, e sendo um campo em
 aberto, muitas soluções criativas podem ser inventadas para se ter sucesso na campanha. No caso específico de
 campanhas de cunho __político__, ideologias pesam bastante e o maior projeto de financiamento coletivo de cunho
-não-lucrativo foi do advogado Lawrence Lessig para reformar as regras de financiamento de campanhas políticas.⁶
+não-lucrativo foi do advogado Lawrence Lessig para reformar as regras de financiamento de campanhas políticas.^6^
 
 * Uma vantagem do financiamento coletivo é que um dos modos de o realizar -- o mais frequente -- é “tudo ou
 nada”: o financiado estipula uma quantia mínima a ser atingida para que o processo possa ter sucesso, um prazo é
@@ -1814,14 +1814,14 @@ criado (digamos, dois meses) e durante este prazo, a campanha está aberta aos i
 quantia mínima não seja alcançada, todo o dinheiro é devolvido. Ninguém sai perdendo. Um produtor resoluto pode
 tentar obter o financiamento outras vezes, e isso realmente acontece -- certas campanhas só pegam “tração” na
 segunda ou terceira vez que são tentadas, e daí migram para o sucesso, como o bico de tungstênio de impressora 3D
-da dddmaterial⁷.
+da dddmaterial^7^.
 
 * É educativo ao interessado no financiamento estudar os casos de falha de entrega, mais que
 os casos de sucesso. Fiascos milionários com quebra de contrato e intrigas pessoais como a impressora de resina
-__Peachy Printer__⁸ podem acontecer com qualquer um, e mostram bem a tensão e pressão pública que acometem
+__Peachy Printer__^8^ podem acontecer com qualquer um, e mostram bem a tensão e pressão pública que acometem
 um projeto desses. É interessante ainda ver que mesmo com a fragorosa falha deste projeto, o fato de a terem
-criado em regime open-source, com repositório no github⁹, permitiu que o projeto fosse continuado na forma
-da YXE3D¹⁰, o que nos leva ao próximo ponto.
+criado em regime open-source, com repositório no github^9^, permitiu que o projeto fosse continuado na forma
+da YXE3D^1^⁰, o que nos leva ao próximo ponto.
 
 [[yxe3dexpeachyprinter]]
 image::image46.png[image,width=580,height=563]
@@ -1833,7 +1833,7 @@ evitar ou amenizar um processo pesado, por exemplo) e uma chance de continuidade
 de usuários progressivamente mais informada tem se importado bastante com este detalhe em uma campanha, e ele
 serve como publicidade e inspirador de confiança para investidores. A mentalidade open-source tem sido tão
 influentes que existem portais de financiamento coletivo _somente para projetos desse_ tipo como o BountySource e
-FreedomSponsors¹¹, e não surpreendentemente, os portais convencionais também têm toda uma seção dedicada
+FreedomSponsors^1^^1^, e não surpreendentemente, os portais convencionais também têm toda uma seção dedicada
 a isso. Um portal web onde você pode escolher licenças para seu produto de acordo com sua necessidade é o
 _Creative_ Commons, http://www.creativecommons.org/[_http://www.creativecommons.org_]. Note, entretanto, que o
 conceito de “open-source” não permite nenhum tipo de proibição de uso comercial, e licenças que fazem isso
@@ -2024,7 +2024,7 @@ image::image64.png[image,width=594,height=351]
 
 * *CoreXY*
 O sistema batizado
-de _CoreXY_ tornou-se popular por um sítio web³ que o explica em pormenores e ensina como construí-lo e
+de _CoreXY_ tornou-se popular por um sítio web^3^ que o explica em pormenores e ensina como construí-lo e
 controlá-lo. Basicamente é um sistema de eixos que permite controle fino dos eixos X e Y mas economizando em
 peças e evitando o cruzamento de eixos rígidos que acontece no __Dualwire Gantry__. É um sistema robusto,
 com cinemática paralela e motores fixos na estrutura, controle fácil e permitindo grandes velocidades de
@@ -2046,7 +2046,7 @@ image::image66.png[image,width=594,height=404]
 variantes* + Mais do que popularizar a cinemática do CoreXY, o sítio web de mesmo nome levantou a consciência que
 sistemas de eixos e cinemáticas podem ser aperfeiçoados e otimizados para vários tipos de construções. Muitos
 outros surgiram ou vieram à tona, alguns sendo variações do próprio CoreXY (__H.Bot__, __cantilevered CoreXY__,
-__CoreXZ__, etc.). ⁴
+__CoreXZ__, etc.). ^4^
 * *Carro X estilo Mendel i2* +
 Se por um lado os sistemas de cinemática paralela como
 o _dualwire gantry_ e o _CoreXY_ representam a sofisticação de movimentação em impressoras 3D cartesianas,
@@ -2243,7 +2243,7 @@ alumínio* + Estruturas muito usadas para o arcabouço estrutural das impressora
 delta ou as colunas de uma cartesiana -- devido à sua uniformidade dimensional, especialmente retidão precisa. A
 “Extrusão” se refere ao processo de fabricação do material, em que o alumínio é extrudado por um orifício
 de formato bem determinado; o nome “perfil” refere, por sua vez, à forma deste orifício. Uma forma bastante
-utilizada de perfis de alumínio é o “**T-Slot**”², nome que se refere ao formato invaginado em cada aresta do
+utilizada de perfis de alumínio é o “**T-Slot**”^2^, nome que se refere ao formato invaginado em cada aresta do
 quadrado de perfil da estrutura. Este formato é bastante útil pois permite a inserção de outros elementos que
 ficarão firmados à peça, incluindo porcas (comuns ou especiais) que permitem fixar com bastante resistência
 e estabilidade conectores e suportes. Perfis de alumínio são referidos por uma numeração técnica que diz,
@@ -2263,7 +2263,7 @@ São elementos estruturais por vezes usados como elementos imóveis
 rotação de seus sulcos, fazem outra peça (uma porca ou “castanha”) subir ou descer, transformando assim
 o movimento rotatório de um pinhão de motor em movimento linear em uma direção. Barras roscadas não são
 fabricadas no entanto com este objetivo e além do mais baixo aproveitamento energético do movimento do motor,
-têm baixa precisão comparada ao mecanismo correto, o __fuso__.¹ Seus filetes bem finos têm um tempo de vida
+têm baixa precisão comparada ao mecanismo correto, o __fuso__.^1^ Seus filetes bem finos têm um tempo de vida
 útil curto limitado pelo desgaste e sua fabricação geralmente não os faz ser completamente retos. No entanto,
 são vendidos por metro e seu custo é baixíssimo.  + As barras roscadas são normalmente usadas no eixo Z
 (o vertical) que é por isso o eixo mais lento; uma volta completa de 360°C corresponde a uma distância muito
@@ -2420,7 +2420,7 @@ pode ser outra peça da impressora) está do endstop. Pode ser zero caso o endst
 circuito. Geralmente dado em milímetros.
 * **Precisão**: um número que diz a resolução da medição gerada,
 ou o número de dígitos usados pra expressar o valor. Note o leitor que existe diferença entre _precisão_ e
-__acurácia__, mas isto foge do nosso escopo de tratamento; veja bibliografia nas notas para leitura posterior⁵. Se
+__acurácia__, mas isto foge do nosso escopo de tratamento; veja bibliografia nas notas para leitura posterior^5^. Se
 um endstop tem precisão de 0,01mm, significa que ele pode medir distâncias em múltiplos desse valor, tais como
 0,15mm ou 0,27mm, mas não 0,123mm.
 * **Repetibilidade**: variação em medidas tomadas nas mesmas condições,
@@ -2502,7 +2502,7 @@ ou pelos links acadêmicos de referência que cita
 O extrusor é o conjunto que puxa (traciona) o filamento plástico e o
 derrete. Essas duas funções são realizadas por partes diferentes do extrusor: uma, o tracionador ou cold end
 (“extremidade fria”), é a que tem um motor e engrenagem dentada que dá a força e a velocidade para o
-filamento ser alimentado na segunda parte, que é chamada de hot end ou hotend (“extremidade quente”).¹
+filamento ser alimentado na segunda parte, que é chamada de hot end ou hotend (“extremidade quente”).^1^
 
 [[estruturaextrusorfreecad]]
 image:image80.png[image,width=618,height=395]
@@ -2646,7 +2646,7 @@ inclusive por a ligação ser fácil e gastar muito pouca energia.
 
 .Resfriamento forçado do material
 
-Do mesmo modo que o pescoço dissipador, o material extrudado² do bico pode necessitar de ajuda para sair do
+Do mesmo modo que o pescoço dissipador, o material extrudado^2^ do bico pode necessitar de ajuda para sair do
 estado líquido para o sólido, o que também é importante para os mesmos materiais com alto calor específico
 do parágrafo anterior. O PLA é um bom exemplo, se você extrudar um filete de ABS e um filete de PLA, verá
 pelo movimento menos dúctil que o de ABS torna-se sólido bem mais rapidamente, quase imediatamente ao sair
@@ -2828,8 +2828,8 @@ ou _misturam_ materiais diferentes para impressão. Para entender melhor, vamos 
 filamentos diferentes, no entanto com __um filamento por vez__. A cada momento em que um ou outro filamento for
 utilizado, o outro deve ser completamente removido (retraído) da área em comum, pois estão no estado sólido e
 não se misturariam. As vantagens desse design são a economia -- o canal em Y para os dois filamentos pode até ser
-impresso em plástico (como no caso do extrusor “Flux Capacitor”¹ ou no kit quádruplo da prusa²) ou injetado
-(“Prometheus System”³) - e a simplicidade de operação: para o preparador de impressão, o extrusor combinador
+impresso em plástico (como no caso do extrusor “Flux Capacitor”^1^ ou no kit quádruplo da prusa^2^) ou injetado
+(“Prometheus System”^3^) - e a simplicidade de operação: para o preparador de impressão, o extrusor combinador
 é apenas um extrusor múltiplo com distância zero entre “os bicos” em que a cada vez que ele tiver que fazer a
 operação de troca de material, tem que fazer um movimento de retração do filamento grande. Qualquer software que
 suporta extrusão múltipla aceitará sem reservas o extrusor combinador. Alguns problemas são aliviados ou resolvidos
@@ -2867,7 +2867,7 @@ de latão são dopadas com chumbo (cerca de 2%) o que leva a objeções com adeq
 
 Nem sempre o bico é feito de latão, especialmente agora que novos materiais abrasivos (como ABS com fibra de
 carbono) estão começando a ser usados em impressoras 3D convencionais. A empresa e3d fez história com seu
-estudo⁴ sobre a corrosão que tais filamentos causam em bicos de latão convencionais e usou dele para promover
+estudo^4^ sobre a corrosão que tais filamentos causam em bicos de latão convencionais e usou dele para promover
 a venda do seu bico de aço inoxidável, muito mais propício para essas impressões (ao mesmo tempo que é em
 tese adequado para contato com comida).
 
@@ -2877,7 +2877,7 @@ image::image102.jpeg[image,width=642,height=547]
 Apesar de aço não ter a condutividade térmica tão alta quanto latão (o que poderia, em teoria, aumentar a
 probabilidade de entupimentos), materiais avançados para impressoras 3D FFF realmente estão começando a surgir,
 inclusive com metais misturados, e para certos usos até mesmo o aço pode se mostrar insuficiente. Uma campanha
-de financiamento coletivo no _kickstarter_ financiou com sucesso a fabricação de um bico feito de tungstênio⁵,
+de financiamento coletivo no _kickstarter_ financiou com sucesso a fabricação de um bico feito de tungstênio^5^,
 o metal mais duro conhecido!
 
 [[screenshottungsten]]
@@ -3120,7 +3120,7 @@ efeito de comparação a do alumínio é 204 W/mk -- e isso tem um efeito dramá
 potências e tamanhos típicos de impressoras 3D modernas, um vidro de 3mm de espessura pode abaixar a temperatura
 por uns 15°C. Por causa disso, é sugerido o uso de vidros de baixa espessura, 2 ou 3mm são suficientes para um
 bom equilíbrio entre resistência e eficiência térmica.
-* *Vidro é um material denso* (2500 kg/m³) e portanto
+* *Vidro é um material denso* (2500 kg/m^3^) e portanto
 para os modelos de impressoras 3D que usam mesas móveis, seu peso será um ônus para a movimentação. O motor
 que movimenta a mesa tem que ser escolhido já levando em conta o peso adicional da mesa na inércia de trabalho.
 * *Vidro é cortante quando quebrado* e portanto há perigo em se manuseá-lo.
@@ -3152,30 +3152,25 @@ de composição química para utilizar suas propriedades de aderência e compati
 Um auxiliar de aderência ideal deve ter as seguintes propriedades:
 
 * **Ter aplicação fácil**, já que cada passo extra no fluxo de trabalho conta negativamente.
-* **Ter
-remoção fácil**, no sentido de não haver muito trabalho de removê-lo, ou a seus resíduos.
-* **Ter preço
-acessível**, especialmente porque será um consumível;
-* **Ter compatibilidade com o material de impressão**,
-pois alguns métodos têm compatibilidade com certos plásticos e não outros;
-* **Ter repetibilidade**, ou poder
-ser usado mais de uma vez; + No caso de mesa aquecida:
-* **Ter poder de aderência constante ou crescente com
-a temperatura**, pois como a mesa estará aquecida durante a impressão e esfriará ao seu término, compostos
-cuja aderência se degrada com o aumento de temperatura não serão muito úteis. Existem aqueles cuja aderência
+* **Ter remoção fácil**, no sentido de não haver muito trabalho de removê-lo, ou a seus resíduos.
+* **Ter preço acessível**, especialmente porque será um consumível;
+* **Ter compatibilidade com o material de impressão**, pois alguns métodos têm compatibilidade com certos plásticos e não outros;
+* **Ter repetibilidade**, ou poderser usado mais de uma vez;
+No caso de mesa __aquecida__:
+* **Ter poder de aderência constante ou crescente com a temperatura**, pois como a mesa estará aquecida durante a impressão e esfriará ao seu término, compostos cuja aderência se degrada com o aumento de temperatura não serão muito úteis. Existem aqueles cuja aderência
 aumenta quanto mais se aumenta a temperatura, esfriando ao terminar com uma diferença tão grande que a peça se
 solta espontaneamento com um estalido.
 * **Ter resistência ao aquecimento**, pois não adianta um líquido que
 evapore ou uma fita que se degrade ou perca a cola quando a mesa se aquece.
 
-Como é uma “questão em aberto” na Impressão 3D com muitos indivíduos propondo novos meios a cada dia,
+Como a aderência é uma “questão em aberto” na Impressão 3D com muitos indivíduos propondo novos meios a cada dia,
 é impossível fazer justiça a todos eles ou mesmo listá-los abrangentemente. A abordagem deste livro consiste
-então de listar os métodos e técnicas mais usados no presente momento, advertindo o leitor que isso pode mudar
+somente de listar os métodos e técnicas mais usados no presente momento, advertindo o leitor que isso pode mudar
 rapidamente com o advento ou popularização de novas soluções. Como foi dito na introdução, alguns dos métodos
 mostrados aqui serão exemplos gritantes de __exaptação__.
 
 Note o leitor, ainda, que embora os métodos de aderência sejam uma _contingência_ eficiente contra o warp _nas
-primeiras camadas_ da impressão, eles não são uma __solução__.¹ Além disso, tais métodos não anulam a
+primeiras camadas_ da impressão, eles não são uma __solução__.^1^ Além disso, tais métodos não anulam a
 importância de outros fatores na aderência, como *uma primeira camada bem esmagada* (hotend bem próximo à mesa)
 como veremos na parte de fatiamento.
 
@@ -3194,7 +3189,7 @@ no vidro. Um ponto baixo do kapton é a sua __dificuldade de aplicação__, vist
 facilidade e que precisa ser aplicada com bastante jeito na superfície para não deixar bolhas. Por outro lado,
 tem repetibilidade alta, podem ser usada muitas vezes seguidas até a próxima aplicação. A fita também é usada
 em vários componentes de impressora 3D devido à sua resistência à temperatura, como para ajudar a fixação
-dos termistores na mesa e hotend.  +
+dos termistores na mesa e hotend. +
 Um substituto eficiente da fita kapton que tem basicamente a mesma dinâmica
 de aplicação, mas maior aderência quando aquecida, maior resistência a rasgos e ainda maior facilidade de
 aplicação sem bolhas é a **fita PET**, infelizmente um insumo quase impossível de se achar no Brasil.
@@ -3222,8 +3217,7 @@ de peças impressas em uma plataforma já que geralmente a palavra é associada 
 parte em outra, mas colas temporárias fazem mais parte do dia-a-dia do que geralmente se admite: papeizinhos de
 __post-it__, fita crepe e fita para pintura são alguns dos exemplos.  + Note-se que as colas podem ser usadas em
 combinação com as fitas, gastando-se um pouco mais para unir as vantagens de um método ao outro.
-** **Cola PVAc
-(cola branca escolar)²**: é usada majoritariamente com PLA, plástico que já tem maior aderência ao vidro por
+** **Cola PVAc (cola branca escolar)^2^**: é usada majoritariamente com PLA, plástico que já tem maior aderência ao vidro por
 natureza. Apesar de ser uma **cola fraca**, sua grande vantagem é a facilidade de remoção, deixando resíduos
 mínimos e laváveis. É aplicada gotejando sobre o vidro e espalhando.
 ** **Cola Bastão com PVP**: as colas em
@@ -3234,34 +3228,36 @@ resíduos. A aderência é fraca quando fria e média quando quente. Usada geral
 álcool em gel também tem PVP k120, uma variedade especialmente adesiva, portanto usado por alguns como auxiliar
 de aderência.
 ** **Cola de PVC**: essa cola na verdade é o plástico PVC diluído em solvente. É um produto
-fácil de achar com *aderência média pra alta* e **aplicação fácil**. Deixa entretanto *muitos resíduos* ao
+fácil de achar com __aderência média pra alta__ e __aplicação fácil__. Deixa entretanto muitos resíduos ao
 final da impressão e não é tão simples de remover. Usa-se principalmente com ABS, por sua força de aderência.
 ** **Spray de cabelo**: idéia advinda da criatividade dos usuários, mostra bem o conceito de “exaptação”
-(adaptar algo para uma finalidade diferente da que foi concebido). Funciona bem, tem *aplicação fácil* com
-*aderência média* e deixa praticamente **zero resíduo**. Muitas marcas brasileiras funcionam bem para este
+(adaptar algo para uma finalidade diferente da que foi concebido). Funciona bem, tem __aplicação fácil__ com
+__aderência média__ e deixa praticamente zero resíduo. Muitas marcas brasileiras funcionam bem para este
 propósito, duas reconhecidas pelo público são Karina e Fixit. Um revés do spray de cabelo é que a aplicação
 dele direto na mesa pode atingir partes que devam ficar lubrificadas e sem atrito, como as barras lisas dos
 eixos. Por isso se recomenda aplicar no vidro destacado da mesa. Usa-se com ABS e PLA.
-** **Gelatina sem sabor**:
-consta como idéia brasileira documentada no projeto reprap (“Jello Solution”), com uma parte de gelatina para
-10 partes de água com gotas de própolis para impedir crescimento de bactérias; espalha-se com um algodão no
-vidro e tem aderência média, usável com ABS e PLA.
+** **Gelatina sem sabor**: Consta como idéia brasileira documentada no projeto reprap (“Jello Solution”), com uma parte
+de gelatina para 10 partes de água com gotas de própolis para impedir crescimento de bactérias; espalha-se com um algodão
+no vidro e tem aderência média, usável com ABS e PLA.
 ** **“Suco de ABS**”: este é o nome informal dado ao
 ABS dissolvido em acetona pura. Se sua impressão deixou restos, você pode aproveitá-los dissolvendo em acetona
 (não serve a de farmácia/supermercado) na proporção de 1 g de ABS pra cada 10ml de acetona; este composto é
 aplicado na mesa que é aquecida, fazendo a acetona evaporar e criando uma camada muito fina de plástico ABS
-grudado ao vidro. Este método tem *aderência média* mas deixa *resíduos* -- que felizmente são **fáceis
-de remover**. Não é um método popular no Brasil devido à dificuldade de adquirir a acetona pura - em lojas
+grudado ao vidro. Este método tem __aderência média__ mas deixa resíduos -- que felizmente são **fáceis 0de remover**.
+Não é um método popular no Brasil devido à dificuldade de adquirir a acetona pura - em lojas
 de laboratório, com permissão da polícia federal e limite mensal de 2l. Só funciona com ABS, sua aplicação
-pode atrapalhar a impressão com outros plásticos.  + *Produtos Profissionais para impressoras 3D:* + O mercado
+pode atrapalhar a impressão com outros plásticos.
+* **Produtos Profissionais para impressoras 3D**: O mercado
 brasileiro já entendeu que as impressoras 3D estão em expansão e precisam de insumos próprios. Por isso,
 indivíduos e empreendimentos inovadores criaram e estão criando soluções que ajudam no fluxo de trabalho
-e entre estas, estão as soluções para aprimorar a aderência.  ** *Spray de aderência (Cliever)* + É um
+e entre estas, estão as soluções para aprimorar a aderência.
+** *Spray de aderência (Cliever)*: É um
 produto profissional vendido em frascos de spray de 100ml com aplicação fácil, resíduo virtualmente zero e
 alta aderência, sendo esta sua principal vantagem e seu único problema: a aderência é tão alta que pode ser
 bastante difícil remover a peça no final, necessitando de submersão em água com detergente para diluição e
 arriscando a arrancar “lascas” do vidro. Recomendado para todos os materiais, não só PLA e ABS mas também os
-difíceis como policarbonato e nylons.  ** *A.Bond (líquido adesivo)* + Mais econômico que o Spray da Cliever
+difíceis como policarbonato e nylons.
+** *A.Bond (líquido adesivo)*: Mais econômico que o Spray da Cliever
 e disponível por vários fornecedores, utiliza PVP em sua composição e vem em frascos de 50 ou 100ml, com
 aplicação fácil, resíduo virtualmente zero e aderência baixa em temperatura ambiente e alta com temperaturas
 acima de 80°C. A aderência menor em temperaturas baixas ajuda bastante a remoção de peças no final, tornando
@@ -3269,26 +3265,28 @@ seu uso praticamente indolor, e com o líquido sendo também facilmente dissolv�
 não seja imediata. O produto A.Bond funciona muito bem tanto para ABS quanto PLA, PETG e Tritan, mas não parece
 funcionar bem para alguns plásticos menos usados, como policarbonato e PEAD.
 
-image:image105.png[image,width=642,height=238]
+[[metodosdeaderencia1]]
+image::image105.png[image,width=642,height=238]
 
 O leitor se sentirá confuso: com tantas opções, qual usar? É impossível receitar qualquer um desses métodos
 sem cometer injustiça com os outros, e o fato de todo serem usados com seus proponentes apaixonados significa que
 pelo menos alguns indivíduos encontraram o equilíbrio de uso neles. Mas como um ponto de partida, é possível
 citar quatro casos de uso distintos e uma sugestão particular para cada um deles:
 
-* *Somente PLA, sem mesa aquecida* +
-Neste caso de uso, o usuário da impressora 3D usa apenas o material PLA,
+* **Somente PLA, sem mesa aquecida**: Neste caso de uso, o usuário da impressora 3D usa apenas o material PLA,
 com ou sem mesa aquecida. Este caso inicial é o mais fácil de tratar porque o PLA tem propriedades quase ideais
 para fixação: alta aderência entre camadas, alta aderência com o vidro e baixo “warp” (deformação com
 resfriamento). Neste caso a *cola PVAc* resolve muito bem o problema: aplicação fácil, pouco resíduo e baixa
 aderência. Como o PLA tem alta aderência, há maior probabilidade de haver aderência em excesso do que em falta,
 e se a peça grudar com muita força, basta um banho de água morna com uma gota de detergente para dissolver a
 camada de cola e soltar a peça. Outros métodos que podem ser usados de maneira quase idêntica: cola em bastão
-e fita azul.  * *PLA e ABS, ou majoritariamente ABS, e peças pequenas (< 5cm)* + Neste caso de uso, uma solução
+e fita azul.
+* **PLA e ABS, ou majoritariamente ABS, e peças pequenas (< 5cm)**: Neste caso de uso, uma solução
 econômica seria o spray de cabelo direto no vidro. Fácil e direta.  * *PLA e ABS, ou majoritariamente ABS, e peças
 de qualquer tamanho* + Neste caso de uso, o A.Bond no vidro seria uma opção indicada, por suas características
-de economia, facilidade de aplicação e de remoção.  * *PLA, ABS, materiais exóticos e peças muito delicadas*
-+ Sendo este o caso de uso do autor, será dada certa _licença poética_ para uma opinião mais subjetiva sobre
+de economia, facilidade de aplicação e de remoção.
+* **PLA, ABS, materiais exóticos e peças muito delicadas**: Sendo este o caso de uso do autor, será dada certa
+_licença poética_ para uma opinião mais subjetiva sobre
 o melhor método, lembrando sempre ao leitor que a resposta para um indivíduo não é automaticamente aplicável
 a outros, tanto pela disponibilidade de materiais quanto pelos modelos de impressora, fluxo de trabalho e outras
 variáveis que interferirão. Com isto fora do caminho, detalhamos o uso: o autor usa impressoras 3D como máquinas
@@ -3301,36 +3299,38 @@ com adesivos já renderam desde impressões que sequer conseguem que o plástico
 que se soldaram com tanta força ao vidro que resultaram em vidros estilhaçados na tentativa de remoção, tanto
 quanto lascas desprendidas em muitos casos. Adicione-se o fato que muitas vezes são feitas peças com geometria
 experimental ou rebuscada e extremamente delicada, em que **qualquer pressão mecânica pode despedaçá-la**,
-em materiais que podem ser *10 vezes mais caros* que os comuns de mercado. Portanto, o _espectro de uso_ aqui é
+em materiais que podem ser *10 vezes mais caros* que os comuns de mercado. Portanto, o __espectro de uso__ aqui é
 desproporcionalmente largo, e foi procurada uma solução universal que não necessitasse de muita experimentação
 ou tentativas.  + A solução encontrada tirou vantagem de uma propriedade dos tipo de métodos descritos: as *colas*
 podem ser usadas com **as fitas**. A estratégia-base, portanto, é usar a **fita azul de pintor**, e as *diversas
 colas conforme a necessidade:
-* ** **Fita azul pura**: para PLA, peças pequenas de ABS e filamentos fáceis e
+* **Fita azul pura**: para PLA, peças pequenas de ABS e filamentos fáceis e
 de alta aderência, como flexíveis ou PETG.
 ** **Fita azul com spray da cliever**: para quase todo o resto,
 especialmente os materiais difíceis como policarbonato e nylon. Para ABS pode-se aplicar A.Bond.
-** **Fita azul
-com cola PVAc**: ainda que seja uma cola fraca, a dissolução fácil dela e a grande afinidade com alguns tipos
+** **Fita azul com cola PVAc**: ainda que seja uma cola fraca, a dissolução fácil dela e a grande afinidade com alguns tipos
 de materiais dá à cola branca uma série de vantagens; ela interage bem com materiais que têm afinidade com
 a celulose, como o PEAD e poliacetal; ela também dá uma aderência sutilmente aumentada a peças que se julga
-anteriormente serem mais difíceis no caso de PLA e pequenas de ABS.  + Este workflow tem a vantagem de funcionar
+anteriormente serem mais difíceis no caso de PLA e pequenas de ABS. +
+Este workflow tem a vantagem de funcionar
 quase sempre. É fácil saber qual dos três casos usar e é praticamente impossível errar por menos, sendo mais
 frequente que a peça fique muito aderida ao vidro. O autor já deixa um recipiente com formato próximo ao da
 mesa com água morna e uma gota de detergente preparados. A água morna (~35°C) é usada porque essa temperatura
 facilita a ação de solvente; a gota de detergente para romper a tensão superficial da água e permitir que ela
 adentre pelos poros da fita. Quando a fita absorve a água ela não somente tem sua cola diluída, mas também se
-expande; e com a expansão, contribui para o destacamento da peça. Com isso a peça **nunca é submetida a tensão
-mecânica**, não terá cantos forçados por instrumentos, e se desprende graciosamente da superfície, junto com
-a fita.³ + Outras vantagens da fita azul reconhecidas pelo autor: uniformiza a planicidade do vidro, compensando
-pequenos riscos, saliências ou até mesmo buracos de lascas; deixando uma superfície opaca e saturada na mesa,
-possibilita o uso de câmera térmica que não funciona bem com metais e superfícies reflexivas ou transparentes; a
-superfície opaca e saturada também habilita o uso de endstops ópticos para autonivelamento de mesa e ainda permite
-uma filmagem mais agradável e colorida da impressão -- importante para o desenvolvimento de material educacional.
+expande; e com a expansão, contribui para o destacamento da peça. Com isso a peça **nunca é submetida a tensão mecânica**,
+não terá cantos forçados por instrumentos, e se desprende graciosamente da superfície, junto com
+a fita.^3^ +
+Outras vantagens da fita azul reconhecidas pelo autor: uniformiza a planicidade do vidro, compensando
+pequenos riscos, saliências ou até mesmo buracos de lascas; deixa uma superfície opaca e de cor saturada na mesa,
+possibilitando o uso de câmera térmica (que não funciona bem com metais e superfícies reflexivas ou transparentes) e
+o uso de endstops ópticos, e ainda dando uma aparência mais colorida, agradável e facilmente distinguível pra visualizações
+remotas por câmera e confecção de fotos e vídeos educativos ou promocionais.
 
-*Notas:*
-
-*1* -- Isso é uma questão bastante delicada, pois certos indivíduos parecem enxergar a contração do plástico
+[NOTE]
+.Notas:
+====
+. Isso é uma questão bastante delicada, pois certos indivíduos parecem enxergar a contração do plástico
 no resfriamento __como algo evitável__, e __não é__. Em cada temperatura e pressão específica, o plástico,
 assim como outros materiais, tende a ocupar um determinada volume, e qualquer desvio deste volume gerará forças
 que saem facilmente da faixa tratável quando há diferenças significativas de temperatura pelo material. Neste
@@ -3339,17 +3339,16 @@ warp e se destacará entre as camadas, no que se apelido de “delaminação”;
 de contração conjugadas com a alta aderência podem inclusive quebrar o vidro. Portanto, a _solução_ para o
 warp e delaminação não é o “adesivo perfeito”, e sim uma câmara ou componente aquecido que permita ir
 resfriando a peça vagarosa e uniformemente, impedindo grandes diferenças de volume de deformá-la.
-
-*2 --* Embora a “cola de PVAc” seja mais tratada de “cola de PVA”, utilizamos a expressão menos ambígua
+. Embora a “cola de PVAc” seja mais tratada de “cola de PVA”, utilizamos a expressão menos ambígua
 para nos referir ao __Acetato de Polivinila__, pois um outro composto que também tem utilidade no meio de impressão
 3D usa a mesma sigla, mas é um álcool: __Álcool de Polivinila__. É utilizado como matéria-prima para filamento
 dissolvível em água.
-
-*3* -- Sempre que se menciona o destacamento da peça por submersão em água, lembre o leitor que diferenças
+. Sempre que se menciona o destacamento da peça por submersão em água, lembre o leitor que diferenças
 grandes de temperatura tendem a deformar a peça, portanto não é bom colocá-la ainda “morna” na água. O
 ideal é aguardar um tempo para esfriar.
+====
 
-=== *Autonivelamento de Mesa (Bed Auto Leveling ou BAL)*
+.Autonivelamento de Mesa (Bed Auto Leveling ou BAL)
 
 Uma das maiores preocupações para se conseguir uma boa qualidade de impressão é começar com o pé direito. Em
 termos mais técnicos, é se preocupar com a primeira camada: é a etapa mais importante de toda a impressão,
@@ -3381,7 +3380,8 @@ compensando a inclinação. “Recebi o comando para ir para o ponto (10,10,5) n
 mesa, este ponto está na verdade em (10,11,4), então é para esta coordenada que vou me mover.” Como estes pontos
 serão, dada a inclinação pequena, bastante próximos, a impressão ocorre compensada sem problemas ou distorções.
 
-image:image106.png[image,width=622,height=500]
+[[autonivelamentoendstop1]]
+image::image106.png[image,width=622,height=500,title="Autonivelamento de mesa, com um endstop mecânico retrátil encostando na mesa visivelmente inclinada para medir a distância vertical. Créditos: Alex Borro, vídeo completo em https://www.youtube.com/watch?v=3IKMeOYz-1Q"]
 
 Não que não haja desafios e novos problemas criados pelo autonivelamento. Pelo contrário, já nos deparamos com
 um, que é a necessidade de dois componentes novos para a impressora: um endstop mecânico para medir a distância
@@ -3407,7 +3407,7 @@ um exemplo notável é a estratégia da impressora brasileira Sethi S3 que, uma 
 usa potenciômetros (eixos) debaixo dela para corrigir sua inclinação mudando o ângulo no sentido contrário,
 ao invés de corrigir as coordenadas pelo firmware.
 
-== Motores
+=== Motores
 
 Mencionamos muitos elementos que envolvem motores: eixos, malhas abertas e fechadas, extrusores e até mesa,
 e só agora chegamos a eles. Há uma razão para isso. A parte da engenharia que trata desses dispositivos é,
@@ -3428,7 +3428,8 @@ que age em ímãs. Um ímã permanente comum de mercado, como os de neodímio, t
 ímãs de pólos iguais de frente e tenta juntá-los, sentirá que eles se repelem. Se virar um dos ímãs de modo
 que seu pólo sul fique virado para o norte do outro, eles se atrairão.
 
-image:image107.png[image,width=473,height=437]
+[[imasatracaorepulsao]]
+image::image107.png[image,width=473,height=437,title="Atração e repulsão básicas entre forças eletromagnéticas. Pólos iguais se repelem, pólos diferentes se atraem. As linhas de força são bem mais complexas que isso, simplificamos para compreensão."]
 
 Tratamos nesse caso dos ímãs permanentes, mas podemos utilizar de uma conformação de materiais tais que ao
 passar uma corrente elétrica em determinado sentido, a indução criada pela corrente cria um eletroímã, um
@@ -3436,7 +3437,8 @@ passar uma corrente elétrica em determinado sentido, a indução criada pela co
 eletroímãs geralmente são feito com uma bobina de fio de cobre em volta de um material ferroso e um exemplo
 bem simples é um prego com fio enrolado ligado a uma bateria.
 
-image:image108.png[image,width=480,height=315]
+[[eletroimasimples]]
+image::image108.png[image,width=480,height=315,title="Um eletroímã simples, com pólos norte e sul. Desligado da bateria, o prego com fio de cobre deixa de se comportar como ímã."]
 
 *DC* ou **AC**: Repare que a bateria da ilustração é uma fonte de _corrente contínua_ ou _DC_ (do inglês
 “direct current”), isto é, o prego permanece imantado com uma corrente que não varia (ainda que somente em
@@ -3447,7 +3449,8 @@ de “indutância” e o prego mudando de orientação magnética várias vezes 
 alternada basicamente liga e desliga (ou inverte) a corrente várias vezes por segundo, e se colocarmos isso em
 um gráfico em relação ao tempo, teremos uma _forma de onda_ recorrente.
 
-image:image109.png[image,width=642,height=298]
+[[ondasformasdecorrente]]
+image::image109.png[image,width=642,height=298,title="Duas formas de onda possíveis para correntes elétricas alternadas (AC). A primeira liga e desliga a corrente de 1 Ampére (eixo Y) a cada um segundo e meio (eixo X), é uma onda quadrada. A segunda levanta e abaixa a corrente continuamente de +1 Ampére até -1 Ampére periodicamente em uma 'senóide', 6 vezes a cada 0,1 segundo, equivalendo a uma corrente típica de tomada doméstica (que alterna 60 vezes por segundo, ou 60Hz)."]
 
 Numa impressora 3D, a alimentação dos componentes é quase universalmente **DC**, obtida através de uma fonte
 de tensão cujos detalhes veremos na seção de alimentação, e que transforma a corrente alternada da tomada em
@@ -3461,8 +3464,8 @@ em impressoras 3D. A escova é um elemento ligado à bobina giratória que entra
 conduz corrente quando isso acontece. Esse contato pode produzir faíscas e como ocorre muitas vezes por segundo,
 acaba levando ao desgaste das partes. Por outro lado, esses motores têm uma construção simples e barata, e só
 necessitam de dois fios (sinal e terra) para funcionar.
-
-image:image110.png[image,width=642,height=443]
+[[diagramamotorescovas]]
+image::image110.png[image,width=642,height=443,title="O diagrama de um motor com escovas. Neste motor, o estator são os fios de energia, a escova e o ímã permanente em volta; o rotor são as bobinas e o comutador. O leitor deve considerar isto como uma curiosidade: útil para projetos 'maker', não para impressão 3D."]
 
 Todos os motores que trataremos são *sem escova* (__brushless__). A escova é a peça condutora de eletricidade
 que faz o contato intermitente durante o giro do rotor. Nos motores sem escova, as bobinas serão elementos fixos no
@@ -3663,14 +3666,14 @@ __potenciômetro__, que varia a potência como em um controle de chuveiro usando
 a potência não utilizada é perdida em calor. Outro elemento interessante seria um DAC, ou _Digital-Analog Converter_
 (Conversor Analógico-Digital). Este circuito toma como entrada um número binário (cada dígito sendo uma tensão,
 ligada ou desligada) e gera uma saída da intensidade desejada. Neste caso teremos um número de saída dependentes
-do número de bits da entrada que usamos; se temos 8 bits, teremos 256 saídas possíveis (2⁸); se temos 16 bits,
-teremos 65.536 saídas possíveis (2¹⁶).
+do número de bits da entrada que usamos; se temos 8 bits, teremos 256 saídas possíveis (2^8^); se temos 16 bits,
+teremos 65.536 saídas possíveis (2^16^).
 
 image:image122.png[image,width=478,height=329]
 
 Entretanto, ainda que DACs não sejam caros isoladamente, uma impressora 3D tem vários dispositivos a serem
 controlados e os microcontroladores baratos como o Arduino Mega não vêm com tais elementos. Se houver uma
-solução mais à mão, que inclusive possa usar sinais digitais, é melhor. Essa solução existe e é o PWM.¹
+solução mais à mão, que inclusive possa usar sinais digitais, é melhor. Essa solução existe e é o PWM.^1^
 
 Nos sinais digitais, temos apenas “zeros” e “uns” à nossa disposição, desligado e ligado. Em um cabo de
 tensão, por exemplo, só podemos passar 0 V ou 5 V, e nada no meio. Por outro lado, temos controle fino do tempo
@@ -3707,7 +3710,7 @@ um simples capacitor -- que ao ser colocado no circuito, transforma o PWM no sin
 Na “vida real”, além da implementação simplificada em circuitos digitais, o PWM tem outras vantagens:
 
 * **Eficiência**: O PWM apresenta muito pouca perda de potência, geralmente ficando acima dos 90% de aproveitamento
-da energia³. Pelo mesmo motivo, aquece muito menos e roda mais frio que outros circuitos.
+da energia^3^. Pelo mesmo motivo, aquece muito menos e roda mais frio que outros circuitos.
 * **Maior imunidade
 ao ruído**. Como o sinal é digital, apenas ligado ou desligado, é muito menos provável que uma interferência
 o amplifique ou atenue o suficiente para tirar deste estado.
@@ -3715,19 +3718,19 @@ o amplifique ou atenue o suficiente para tirar deste estado.
 Por outro lado, ele também tem desvantagens a serem consideradas. A maior delas é **gerar mais ruído
 eletromagnético**. Mudanças bruscas de sinal causam esse efeito, o que pode pedir por maior blindagem contra
 ruídos no equipamento. Desvantagens menores são efeitos colaterais da escolha de frequência do PWM, como acerto
-de fase ou geração de ruído sonoro, que dependerão do circuito.³
+de fase ou geração de ruído sonoro, que dependerão do circuito.^3^
 
 Nas impressoras 3D, o PWM é gerado de diversas formas. No firmware, geralmente “soft PWM” (PWM controlado
 por software) de baixa frequência (7 Hz) é usado para os elementos térmicos (mesa e extrusor) e PWM nativo do
 microcontrolador para a ventoinha. No caso dos motores, o firmware envia um instrução “mova um passo” para
 o driver, que o transforma em PWMs adequados para o motor. Geralmente a frequência desses PWMs é por volta de
-30 KHz (como no driver DRV8825), com o driver A4988 tendo ela variável e apenas o tamanho do pulso fixo⁴. Com
+30 KHz (como no driver DRV8825), com o driver A4988 tendo ela variável e apenas o tamanho do pulso fixo^4^. Com
 a frequência abaixo de 20 KHz, isso pode resultar em sons audíveis.
 
 Muito do que foi dito aqui foi simplificado para melhor compreensão, tenha o leitor em conta que PWM é um assunto
 vasto na engenharia elétrica e existe em diversos “sabores”, incluindo formas de onda diversas da quadrada
 (como a triangular e senoidal) e com modulações diferentes. O leitor curioso é incentivado a pesquisar mais
-sobre isso em livros de engenharia elétrica ou mesmo na internet.⁵
+sobre isso em livros de engenharia elétrica ou mesmo na internet.^5^
 
 Notas:
 
@@ -3766,7 +3769,7 @@ variável__, usando __solenóides__, trabalham com outro tipo de grandeza eletro
 capturam o caminho de __menor relutância__: o motor (que é um núcleo de ferro com extremidades não-magnéticas)
 e estator se alinham de modo que a relutância magnética é mínima, através da força magnetomotriz. Os termos
 representam palavras-chave de pesquisa para o leitor, visto que tratar deste assunto sairia muito do escopo do
-livro¹. São baratos e usados em motores pequenos como em mesas de microposicionamento.
+livro^1^. São baratos e usados em motores pequenos como em mesas de microposicionamento.
 
 image:image124.png[image,width=451,height=310]
 
@@ -3925,7 +3928,7 @@ Já foi falado que o projeto _reprap_ que deu início às impressoras 3D FFF mod
 primeiros rascunhos de impressoras 3D do projeto reprap em 2006 mostram projetos envolvendo microcontroladores PIC
 com placas de expansão para o controle dos motores, sensores e temperaturas, dirigidas por um computador de mesa
 (Generation 1 Electronics, ou Gen1). Em seguida, já se vê o planejamento do uso de um Arduino Uno, a Gen2, ainda
-com uma série de placas de expansão. A geração 3¹, de fevereiro de 2009, aproveita a natureza open-source
+com uma série de placas de expansão. A geração 3^1^, de fevereiro de 2009, aproveita a natureza open-source
 do arduino e cria o projeto de uma placa única com o microcontrolador ATMEGA644P e as _saídas de potência_
 necessárias; essa placa já representa o começo da interação com a Makerbot (é a placa que iria ser usada em
 sua primeira impressora, a CupCake) mas sofre do problema de ser uma placa microcontroladora sofisticada, difícil
@@ -3976,7 +3979,7 @@ a marca dos drivers de motores de passo acopláveis -- do tipo **A4988**.
 image:image131.jpeg[image,width=549,height=539]
 
 A placa RAMPS e os _drivers_ são open-source, e a página da RAMPS 1.4 do projeto reprap se destaca por ser uma
-das páginas mais bem documentadas de projeto de hardware open-source até hoje², com não só todos os diagramas
+das páginas mais bem documentadas de projeto de hardware open-source até hoje^2^, com não só todos os diagramas
 e arquivos necessários em formato __Eagle__, mas também com instruções detalhadas e comentadas que serviriam
 de guia pedagógico para um curso de introdução à microeletrônica.
 
@@ -4558,7 +4561,7 @@ image:image148.png[image,width=642,height=409]
 O nome de fonte “industrial” se deve à sua utilização como componente genérico de equipamentos da indústria
 (compare com as fontes de tensão como as de laptop, que também são fontes chaveadas mas “fechadas” e com
 cabo e conectores montados) e por apresentarem certas proteções importantes, como a carcaça metálica contra
-eletricidade estática, refrigeração e circuitos contra surtos e inversões.¹
+eletricidade estática, refrigeração e circuitos contra surtos e inversões.^1^
 
 A fonte industrial não é a única usada em impressoras 3D. Devido à sua disponibilidade no mercado a preços
 baixos e ao frequente descarte de tais fontes como “sucata”, fontes de PC também são chaveadas e disponibilizam
@@ -4567,7 +4570,7 @@ para alta corrente em 12V e a 2 a 4 trilhas com neutro (0V); a fonte de PC dispo
 a placa-mãe e os periféricos do computador, com cada conector tendo vários fios finos (de baixa corrente) em
 diferentes tensões, inclusive negativas: -12V, -5V, 0V, 3,3V, 5V e 12V. É necessário portanto adaptar a fonte
 de PC, abrindo-lhe a carcaça e juntando todos os fios de 12V em um ou dois cabos de alta corrente para a RAMPS
-e o mesmo com os fios de neutro; e cortar e isolar todos os fios com outras tensões.²
+e o mesmo com os fios de neutro; e cortar e isolar todos os fios com outras tensões.^2^
 
 Fontes de PC podem ter ainda uma facilidade que geralmente falta às fontes industriais. PCs mais antigos usavam fontes
 estilo *AT* (“Advanced Technology), os atuais usam fontes estilo *ATX* (“Advanced Technology eXtended”), que
@@ -4576,7 +4579,7 @@ colocado em zero volts permite energizar as saídas de potência da fonte, e qua
 positiva impede que elas sejam energizadas. Na prática, ele serve como se fosse um interruptor ligado/desligado
 para a fonte, de modo que um trabalho de impressão pode ligar a impressora antes de iniciar e desligá-la no final,
 tendo grande economia de energia. E de bônus, a fonte ainda disponibiliza uma trilha de sinal de 5VSb (+5V Standby,
-ou +5V de repouso) que pode ser usada para energizar um raspberry pi mesmo com o resto desligado.³
+ou +5V de repouso) que pode ser usada para energizar um raspberry pi mesmo com o resto desligado.^3^
 
 image:image149.png[image,width=642,height=360]
 
@@ -4618,10 +4621,10 @@ e final de uma série de etapas da impressão.
 O problema? As fitas de led são o periférico mais despadronizado de todo o universo reprap. Existem vários tipos
 de fita -- elas podem ser monocromáticas ou RGB, de intensidade regulável (__dimmable__/”dimerizável”)
 ou discretas (só acendem e apagam), de alta e baixa potência, e cada uma dessas tem controle e idiossincrasias
-diferentes. Além disso, mesmo as de baixa potência extrapolam a carga de sinal do microcontrolador¹ (uma fita LED
+diferentes. Além disso, mesmo as de baixa potência extrapolam a carga de sinal do microcontrolador^1^ (uma fita LED
 5050 requer 7,36 W/m), precisando de alimentação separada como com a mesa e extrusores -- e os microcontroladores
 de mercado não oferecem saídas específicas para elas. Finalmente, se faz o controle com gcodes que acionam
-pinos do microcontrolador diretamente², não podendo se usar do status interno dos sensores da impressora 3D para
+pinos do microcontrolador diretamente^2^, não podendo se usar do status interno dos sensores da impressora 3D para
 configurar os padrões e cores dos leds por não ter testes de condição (__if__-__then__-__else__); em outras
 palavras, um uso limitado.
 
@@ -4650,7 +4653,7 @@ M42 P5 S255 ; liga o pino verde (5) com intensidade 100%
 E podemos criar g-codes de início e finalização com mudanças de cores em cada etapa: aquecimento do extrusor,
 aquecimento da mesa, priming, troca de extrusor, final da impressão. Uma dica útil é antes de mudar a cor,
 usar o comando M400 que serve para terminar qualquer movimento que a impressora esteja fazendo, antes de mudar a
-cor. Exemplo de um G-Code inicial, baseado no tutorial de Tom Sanladerer³:
+cor. Exemplo de um G-Code inicial, baseado no tutorial de Tom Sanladerer^3^:
 
 M42 P4 S255 ; pino vermelho em máxima intensidade
 
@@ -4673,7 +4676,7 @@ M109 S240 ; ajusta a temperatura do _hotend_ em 240 e espera chegar nesse valor.
 M42 P5 S255 ; liga o led verde; luz branca indica que a impressão iniciará.
 
 No Smoothieware, as fitas de led podem também serem controladas com pinos arbitrários da placa. Por exemplo,
-os pinos PWM de designação P1.23, P1.24 e P1.26 estão geralmente disponíveis⁴, então podemos utilizá-los
+os pinos PWM de designação P1.23, P1.24 e P1.26 estão geralmente disponíveis^4^, então podemos utilizá-los
 para os componentes R, G e B. O módulo _*Switch*_ do smoothie, que permite definir comandos G-Code arbitrários
 para pinos específicos, será usado para isso. Por exemplo, para definir o vermelho, podemos colocar isso no
 arquivo de configuração:
@@ -5140,12 +5143,12 @@ Do mesmo modo que encontramos empreendimentos comerciais que usam essa criativid
 ecossistema aberto, entanto, também existem os parasitas que desejam achar nela um ponto de vantagem para
 fechamento, delimitação e controle de mercado, principalmente através do mecanismo de patentes -- aprendizes
 de Stratasys, por assim dizer. Um exemplo notável é a impressora __MarkForged Mark Two__, que imprime em nylon
-entremeado com uma linha de fibra de carbono¹. Outro modo frequente é tentar seduzir o usuário menos técnico
+entremeado com uma linha de fibra de carbono^1^. Outro modo frequente é tentar seduzir o usuário menos técnico
 com uma “facilidade” que envolve sequestro do controle, com um exemplo famoso sendo a linha de impressoras FFF
 _Cube_ da 3D Systems que usa cartuchos de filamento plástico proprietário, que permite a troca de modo fácil e
 automático e até com previsão de término do material. Felizmente foi uma estratégia que falhou pateticamente,
 tanto por saudável concorrência do mercado de outros fabricantes de impressoras 3D quanto pelo surgimento de
-dispositivos, como o brasileiro __Cube3DFree__², que permitiam evadir o chip detector e usar filamentos comuns
+dispositivos, como o brasileiro __Cube3DFree__^2^, que permitiam evadir o chip detector e usar filamentos comuns
 de mercado. Isso é um lembrete que o risco de perdas de liberdade, controle e progresso tecnológico está sempre
 presente, e por isso é essencial sempre buscar conscientizar __maker__s, usuários e consumidores de tecnologia.
 
@@ -5226,8 +5229,8 @@ também por seu histórico: as microscópicas gotas de tinta de impressoras a ja
 do tamanho de células -- em especial, de células humanas (perto de 10 µm). E o método de entrega de tinta de
 impressoras como as __Canon__, “Thermal DoD” (gotícula sob demanda térmica) cria uma corrente que aquece
 uma unidade, gerando uma bolha que propele a “tinta” de células no substrato. Este método, iniciado pelo
-cientista Makoto Nakamura¹, foi tão efetivo que hoje já existem tutoriais de internet ensinando a transformar
-sua impressora de jato de tinta em bioimpressora.²
+cientista Makoto Nakamura^1^, foi tão efetivo que hoje já existem tutoriais de internet ensinando a transformar
+sua impressora de jato de tinta em bioimpressora.^2^
 
 Uma estratégia básica de lidar com biotintas é ter dois materiais: um de estruturação e proteção e o outro
 com as células vivas. Um extrusor especial despeja as gotículas celulares por um bico enquanto extrusa o material
@@ -5236,17 +5239,17 @@ protetor (geralmente um hidrogel compósito, como alginato misturado com gelatin
 image:image164.png[image,width=606,height=463]
 
 No estágio atual da bioimpressão 3D, temos iniciativas open-source como a bioimpressora 3D _*Renegade*_ da
-empresa Ourobotics, assim como alguns projetos menores de equipamentos semelhantes de cunho biológico³. No
+empresa Ourobotics, assim como alguns projetos menores de equipamentos semelhantes de cunho biológico^3^. No
 campo mais industrial, a empresa *Organovo* tem feito bastante incursões na bioimpressão 3D com tecnologias de
 tecidos e impressão de órgãos, como rins e fígado, além da impressão de tumores sob demanda, para testes
 farmacológicos ágeis. É difícil limitar as possíveis aplicações da bioimpressão 3D. Christopher Barnatt
-mostra em seu vídeo possibilidades verossímeis que assustam⁴, como a utilização em cirurgias plásticas:
+mostra em seu vídeo possibilidades verossímeis que assustam^4^, como a utilização em cirurgias plásticas:
 bioimpressoras acopladas ao rosto rapidamente evaporariam pele antiga para imprimir pele nova no formato desejado,
 como um rosto baixado da internet, ou o escaneamento 3D do rosto da mesma pessoa quando mais jovem. Outras
 bioimpressoras poderiam ter extrusores cirúrgicos que penetram o corpo e poderiam imprimir órgãos __in situ__,
 fazendo as conexões nervosas e sanguíneas durante o próprio processo de impressão. É muito fácil ser perder
 na imaginação, e para o leitor curioso, separamos alguns links que certamente serão úteis, incluindo um curso
-completo de bioimpressão com diploma (em inglês) pela net⁵.
+completo de bioimpressão com diploma (em inglês) pela net^5^.
 
 1 -- O professor Makoto Nakamura é conhecido por ter dado a “ignição” em toda a idéia de
 bioimpressão, com vários artigos científicos publicados sobre o assunto. Para facilitar o acesso, o texto
@@ -5469,7 +5472,7 @@ não desprezível. Com todo um setor produtivo dedicado inteiramente aos plásti
 esperar que exista uma vasta literatura sobre o assunto -- e existe, de modo que fica impossível listar realmente
 toda e qualquer consequência biológica nociva. Mas, de modo geral, os maiores problemas diretos dos plásticos
 ocorrem quando são queimados, liberando compostos orgânicos voláteis (**VOCs**), principalmente tóxicos da
-classe conhecida como __dioxinas__¹_,_ mas também os __ftalatos__, muitos desses dos aditivos que lhes são
+classe conhecida como __dioxinas__^1^_,_ mas também os __ftalatos__, muitos desses dos aditivos que lhes são
 adicionados para conferir determinadas propriedades. Os ftalatos e um aditivo usado para endurecer plástico,
 o Bisfenol A ou BPA, também podem “vazar” dos plásticos que o contém por aquecimento simples ou stress
 mecânico. Dioxinas, alquilfenóis, ftalatos (especialmente o bis (2-etil-hexil) ftalato, ou DEHP) e o BPA são
@@ -5477,10 +5480,10 @@ _perturbadores_ ou __interferentes endócrinos__, substâncias que se assemelham
 a receptores destes no corpo humano, causando desequilíbrio do sistema endócrino e tendo efeitos de alteração
 das funções reprodutivas, mentais e de desenvolvimento do corpo. A extensão do efeito desses perturbadores
 endócrinos, especialmente nas doses encontradas em plásticos, ainda é bastante disputada, com o BPA especialmente
-ganhando avisos de advertência de uso pelo Instituto Nacional de Saúde dos EUA², ao mesmo tempo em que o Centro
-de Controle de Doenças diz não ser tão perigoso assim³. E mesmo os plásticos explicitamente vendidos como
+ganhando avisos de advertência de uso pelo Instituto Nacional de Saúde dos EUA^2^, ao mesmo tempo em que o Centro
+de Controle de Doenças diz não ser tão perigoso assim^3^. E mesmo os plásticos explicitamente vendidos como
 “livres de BPA”, como o __Tritan__, têm compostos como o BHPF (fluoreno-9-bisfenol) e TPP (trifenil fosfato)
-que também causam perturbação endócrina⁴.
+que também causam perturbação endócrina^4^.
 
 De todos os plásticos, o PLA parece ser o mais inofensivo por ser um bioplástico e queimar liberando componentes
 orgânicos de pouca toxicidade, como o ácido láctico. Ainda assim, até o PLA padece de um problema que complica o
@@ -5495,9 +5498,9 @@ e venenos para obter sua tonalidade, esse não é um perigo desprezível para um
 200°C em uma sala pequena. Então, até o seu carretel de “PLA natural” pode ter substâncias que você
 não imaginaria, e não desejaria, que estivessem lá. Isso não seria um problema tão grande se os filamentos
 tivessem a sua própria receita publicada em regime __open-source__, o que soa absurdo a um mercado tão secretivo
--- ainda assim, há quem tente⁵.
+-- ainda assim, há quem tente^5^.
 
-Um estudo recente (2016) montou um aparato para poder medir as emissões de VOCs de vários filamentos⁶ e com
+Um estudo recente (2016) montou um aparato para poder medir as emissões de VOCs de vários filamentos^6^ e com
 várias impressoras, com e sem cobertura. Os emitidos em maior quantidade foram caprolactama de filamentos de nylon
 e imitação de madeira (de 2 a 180 µg/min), estireno do ABS e HiPS (de 10 a 110µg/min) e lactida (um derivado
 irritante do ácido lático) do PLA (de 4 a 5 µg/min),
@@ -5510,7 +5513,7 @@ livremente no ar, ainda mais com procedimentos de dia-a-dia como destaque de sup
 superfícies. Nesse caso, como o tamanho do particulado dessas operações fica mais ou menos na mesma faixa
 da serragem e pó de madeira da indústria madeireira, entre 10 µm e 1000 µm, precauções dessa indústria
 podem ser tomadas como uso de máscara de poeira, mangas longas e luvas e óculos de proteção e operação em
-um ambiente arejado ou com exaustão de partículas.⁷
+um ambiente arejado ou com exaustão de partículas.^7^
 
 **Partículas ultrafinas**: Há uma diferença significativa, no entanto, entre o pó de madeira (ou a poeira em
 geral) e o particulado da impressão 3D: enquanto no caso geral se considera a poeira _muito_ pequena (menor que
@@ -5520,15 +5523,15 @@ um particulado de menos de 100nm (0,1µm) de diâmetro que, inaladas, podem caus
 entrar na corrente sanguínea e interagir com nossas células, ou serem depositados em áreas sensíveis como a
 medula espinhal, nódulos linfáticos, baço e coração, em alguns casos podendo até chegar ao cérebro. Estudos
 epidemiológicos recentes mostram que há correlação entre essas partículas e relatos de problemas de saúde,
-incluindo mortalidade cardiorrespiratória, AVCs e asma⁸. ABS, em particular, libera uma quantidade de partículas
+incluindo mortalidade cardiorrespiratória, AVCs e asma^8^. ABS, em particular, libera uma quantidade de partículas
 ultrafinas 10 vezes maior que PLA, além de ser mais irritante.
 
 Esse problema é tão mais grave por não ser tão fácil resolver este problema: pra começar, a Stratasys tem
-a patente US 6722871 B1⁹, que ainda vai demorar alguns anos para expirar e que efetivamente proíbe fabricantes
+a patente US 6722871 B1^9^, que ainda vai demorar alguns anos para expirar e que efetivamente proíbe fabricantes
 que desejam vender impressoras 3D nos EUA de terem uma impressora completamente vedada. Para tornar o problema mais
 difícil de resolver, os meios de filtragem convencional como filtros de carbono só funcionam com partículas de no
 mínimo 500nm, não servindo para as partículas ultrafinas (a maioria das coberturas anti-emissões de impressoras 3D
-do mercado¹⁰ e mesmo alguns projetos “faça você mesmo” não levam isso em consideração¹¹). É certamente
+do mercado^1^⁰ e mesmo alguns projetos “faça você mesmo” não levam isso em consideração^1^^1^). É certamente
 uma demanda de mercado que está custando a ser atendida até no exterior, que dizer então do Brasil… No momento,
 as únicas mitigações parecem ser imprimir em local arejado e não permanecer muito tempo perto da impressora 3D,
 e talvez fazer uma cobertura com adaptador para sugar o ar da impressora (e ainda fica a dúvida de como capturar
@@ -5595,7 +5598,7 @@ não-biodegradável para que volte a fazer parte de objetos úteis e não tenham
 
 Mas _grosso modo_ não é suficiente para esse assunto. Ele tem definições precisas, padronizadas internacionalmente,
 alguns exemplos são a norma brasileira para ensaio de plásticos biodegradáveis e compostáveis -- NBR 15448-1
-(nomenclatura) e NBR 15448-2 (requisitos e métodos), a norma estadunidense ASTM D6400 e a europeia EN 12432¹. Saber
+(nomenclatura) e NBR 15448-2 (requisitos e métodos), a norma estadunidense ASTM D6400 e a europeia EN 12432^1^. Saber
 pelo menos algumas dessas definições já nos dá guia para entender o cenário em que navegamos.
 
 * **Reciclável**: todo material que após transformações físicas ou químicas podem ser reutilizados no mercado,
@@ -5633,7 +5636,7 @@ por exemplo, para ser compostável o material tem que biodegrada obrigatoriament
 a compostabilidade significa que o material biodegrada facilmente e pode ser também reutilizado facilmente.  *
 **Repolpável**: adjetivo usado geralmente para fitas e adesivos que são naturalmente absorvidos pela superfície
 de aderência.
-* **Bioplásticos**: a palavra é usada para designar os plásticos de duas categorias distintas²:
+* **Bioplásticos**: a palavra é usada para designar os plásticos de duas categorias distintas^2^:
 ** Polímeros feitos ao todo ou em parte de **fontes renováveis**, sejam biodegradáveis ou não; ou ** Polímeros
 **biodegradáveis**, seja de fonte renovável ou fonte fóssil.
 
@@ -5642,7 +5645,7 @@ exemplos. O ABS não é de fonte renovável (vem do petróleo) e também não é
 bioplástico. Por outro lado, o PLA é um “bioplástico do bem”: é de fonte renovável (milho, cana-de-açúcar
 e outros), é biodegradável, compostável e até repolpável. Ambos, porém, são recicláveis, isto é: as
 impressões 3D feitas com eles podem ser moídas e o plástico reutilizado no mercado -- e um desses usos, é
-claro, é ser novamente derretido e virar filamento para impressão. O processo passa pelas seguintes etapas³:
+claro, é ser novamente derretido e virar filamento para impressão. O processo passa pelas seguintes etapas^3^:
 
 * *Coleta* e **separação**: a separação dos resíduos de acordo com o seu material.
 * **Revalorização**:
@@ -5670,14 +5673,14 @@ há anos a classificação de reciclagem de plásticos, que você já deve ter r
 image:image170.jpeg[image,width=642,height=487]
 
 A separação de plásticos é uma necessidade no Brasil, essencial para a viabilidade da reciclagem visto que
-o processo de separação automatizado é caríssimo⁵. O problema é que classificação ilustrada é usada em
+o processo de separação automatizado é caríssimo^5^. O problema é que classificação ilustrada é usada em
 utensílios industrializados convencionais, mas embora alguns plásticos até possam ser usados na impressão 3D
 (como PEAD e PP), os principais ficam de fora, agrupados genericamente. Esse é um campo em que órgãos normativos
 privados, que tenham maior agilidade de processo que entidades industriais e ligadas ao governo como a ABNT com
 suas normas cobradas, poderiam criar recomendações que seriam mais do que bem-vindas. Evitariam o desperdício,
 permitiriam baratear os insumos e até a substituir outros processos de fabricação onde a vantagem ecológica
 se faça necessária (ainda mais considerando que o relativamente baixo desperdício de material já faz da FFF
-ecologicamente superior em relação a outros processos de fabricação⁶).
+ecologicamente superior em relação a outros processos de fabricação^6^).
 
 === Extrusoras / Filamentadoras Maker: são práticas?
 
@@ -5730,7 +5733,7 @@ de tolerância.
 image:image172.png[image,width=642,height=384]
 
 E as etapas que dizemos ainda estão no âmbito __Maker__. No industrial, com suas complexas estruturas de controle
-e necessidade de volume e velocidade de extrusão, a situação é proporcionalmente mais cara e complicada⁷.
+e necessidade de volume e velocidade de extrusão, a situação é proporcionalmente mais cara e complicada^7^.
 
 Além do mais, o ilustrado foi somente o necessário no processo de extrusão padrão com material virgem,
 possivelmente já preparado num misturador com os aditivos necessários (para adicionar cor, melhorar propriedades
@@ -5748,15 +5751,15 @@ internet em inglês. Um dos mais bem completos e fáceis, feito em etapas com mu
 open-source _Filabot_ e é parte do material educativo da tradicional loja _Maker_ Adafruit. Existem também
 extrusores modificados de impressoras 3D que aceitam grãos de plástico ao invés do filamento em carretel,
 mas se o uso da filamentadora doméstica já é contingente, imagine uma pesada mini-filamentadora no carro da
-impressora que nem a operação de retração do filamento poderá executar⁸.
+impressora que nem a operação de retração do filamento poderá executar^8^.
 
 image:image173.png[image,width=642,height=320]
 
 Existem outros recursos interessantes online, em especial a __appropedia__, a enciclopédia de ecologia e
 sustentabilidade que faz parte das recomendações do Dr. Joshua Pearce e muitos modelos de filamentadoras,
-a maioria open-source: Recyclebot⁹, Extrusionbot, Felfil, Lyman Extruder e outros. É muito interessante ver
+a maioria open-source: Recyclebot^9^, Extrusionbot, Felfil, Lyman Extruder e outros. É muito interessante ver
 o trabalho de tais pessoas interessadas não só em preservar o ambiente como em disseminar informação sem
-fronteiras ou controles¹⁰. No mercado brasileiro, as principais empresas de impressoras 3D não parecem ainda
+fronteiras ou controles^1^⁰. No mercado brasileiro, as principais empresas de impressoras 3D não parecem ainda
 estarem interessadas em vender estes equipamentos, mas é questão de tempo; pode-se achá-los em sítios de compra
 como _mercadolivre_ ou classificados como __olx__. Não costuma compensar encomendá-los da China, visto que são
 equipamentos pesados, de frete caro.
@@ -5873,7 +5876,7 @@ camada e bastante deformação.
 
 O plástico de tipo 1 -- PET (polietileno tereftalato), tão usado em garrafas de refrigerante de 2l, pode parecer
 seguro para alimentos, mas existe possibilidade de vazamento de trióxido de antimônio a longo prazo, uma substâcia
-moderadamente tóxica¹. Sua variedade de impressão 3D, o PET Glicol ou PETG, goza das mesmas propriedades. Não é
+moderadamente tóxica^1^. Sua variedade de impressão 3D, o PET Glicol ou PETG, goza das mesmas propriedades. Não é
 uma escolha tão boa quando os três primeiros e tem o agravante de ser um plástico permeável, com a permeabilidade
 especialmente evidente nos vãos de camadas.
 
@@ -5885,7 +5888,7 @@ perder estrutura com radiação ultravioleta e outros fatores ambientais é um f
 
 Outro plástico candidato é o __Tritan__, um copoliéster concorrente do policarbonato, cristalino e resistente. Como
 é relativamente novo no mercado, poucos testes foram feitos. A Eastman o vende dizendo ser seguro para fins
-alimentícios², mas já vimos nas referências sobre perturbadores endócrinos que isso pode ser tão somente
+alimentícios^2^, mas já vimos nas referências sobre perturbadores endócrinos que isso pode ser tão somente
 por falta de estudos conclusivos sobre o material.
 
 Nylon 6 e 6/6 sem aditivos são inertes e seguros. A fabricante Taulman é famosa por ter entre seus nylons os
@@ -5903,7 +5906,7 @@ em filamentos pode não ser.
 
 E a razão disso é que, dadas as propriedades do material, para poder ser extrusado em impressora 3D sem falhas
 frequentes, com a consistência necessária e na temperatura correta suas propriedades têm que ser “afinadas”
-com o uso de dopantes e aditivos³. Adicionalmente, os filamentos adquirem cor e textura com corantes e compostos
+com o uso de dopantes e aditivos^3^. Adicionalmente, os filamentos adquirem cor e textura com corantes e compostos
 que lhes conferem brilho ou aparência agradável. Com cada material tendo suas propriedades e dopantes adequados,
 a segurança para fins alimentares pode acabar sendo sacrificada com o compósito resultante. Um bom exemplo é
 o __poliuretano__, substância segura mas que com dopagem para poder ser usada em impressoras 3D deixa de valer
@@ -5926,7 +5929,7 @@ Por fim, os aditivos e dopantes também determinam se o plástico pode ser usado
 microondas. Principalmente polipropileno, mas às vezes PEBD e até PET _quando têm formulações específicas
 para esse fim_ são adequados. É preciso que os próprios aditivos não interajam com a radiação ionizante e
 não gerem calor; um exemplo de uso proibido seria filamento com o corante bastante comum “negro-de-fumo”,
-usado para tonalidades negras e acinzentadas.⁴
+usado para tonalidades negras e acinzentadas.^4^
 
 === Temperatura
 
@@ -5976,7 +5979,7 @@ peças sem assepsia ou geometria adequada para limpeza, possibilidade de contami
 vãos e reentrâncias e até materiais que em contato com o plástico podem contaminá-lo. O exemplo mais repetido
 é o hotend, feito de metais não seguros para contato com alimento, em especial o bico do hotend que quase sempre
 é feito de latão, uma liga que é composta de cobre e zinco mas chega a ter até 2% de chumbo, um metal pesado
-altamente tóxico, em sua composição⁵. Claro que o _filamento_ não é alimento, mas a preocupação consiste
+altamente tóxico, em sua composição^5^. Claro que o _filamento_ não é alimento, mas a preocupação consiste
 em o metal contaminar o plástico que por sua vez contaminará o alimento. Algumas empresas, como a _e3d-online,_
 vendem bicos especiais de aço inoxidável que além de funcionarem melhor com filamentos abrasivos, são feitos
 de um material considerado seguro para fins alimentícios.
@@ -5996,7 +5999,7 @@ sem muito risco de problemas, mas não seria sensato imprimir uma garrafa para l
 Ou o grau pode ser em relação ao aditivo usado. O bórax (borato de sódio / tetraborato de sódio), por exemplo,
 é usado como fluxo e detergente na polimerização de alguns filamentos. A presença dele invalida o uso do
 plástico para comida? A resposta não é simplesmente “sim” ou “não”, é __depende__. A toxicidade dele
-é muito baixa⁶, e se você não ficar esfregando incessantemente o alimento no plástico, provavelmente não
+é muito baixa^6^, e se você não ficar esfregando incessantemente o alimento no plástico, provavelmente não
 sentirá nenhum efeito.
 
 A questão pode ser ainda de __tipo__. Você pode ter um molde de doces que desinfeta depois de cada uso, então
@@ -6036,7 +6039,7 @@ Protocolos não precisam ser clínicos, podem até mesmo ser de outras áreas. C
 comercializar um modelo de copo impresso -- apenas um copo, um dos objetos mais simples. Escolhemos imprimir em
 PLA natural por sua disponibilidade. Como temos o problema dos vãos entre camadas que tanto pode fazer o líquido
 vazar pelos interstícios quanto acumular microorganismos e sujeira, vamos testar um tipo de alisamento químico
-para o PLA: o tetraidrofurano⁷ tem a toxicidade tão baixa quanto a acetona e é um solvente que funciona nesse
+para o PLA: o tetraidrofurano^7^ tem a toxicidade tão baixa quanto a acetona e é um solvente que funciona nesse
 plástico. Dar um banho de PLA no copo deixa sua superfície lisa! No entanto:
 
 * Por razões comerciais e de funcionalidade, teremos que testar se o copo não vaza. Para isso, terá que ser
@@ -6061,8 +6064,8 @@ precisará de um profissional de engenharia de alimentos ou biologia clínica pa
 Os resultados desses protocolos são igualmente tabelados e guardados para consulta posterior. Pode ser difícil
 visualizar como é um protocolo clínico apenas pela descrição, mas é algo a que profissionais dos ramos citados
 são treinados para fazer. De qualquer jeito, mesmo não sendo da área, o leitor pode ter referências sobre meios
-de cultura⁸ ou até baixar exemplos de protocolos utilizados por universidades e empresas⁹. Não é uma tarefa
-simples; não é raro vermos curiosos _Makers_ tentando executá-los e falhando, sem entender a causa.¹⁰
+de cultura^8^ ou até baixar exemplos de protocolos utilizados por universidades e empresas^9^. Não é uma tarefa
+simples; não é raro vermos curiosos _Makers_ tentando executá-los e falhando, sem entender a causa.^1^⁰
 
 É interessante notar que esta lista não é exaustiva. Existem mais procedimentos para garantir o uso saudável
 do objeto, e pra complicar a questão o plástico escolhido (PLA) não pode ser lavado em lava-louças (pois
@@ -6233,23 +6236,23 @@ com tecnologias sob patentes e estritamente controladas. Torna-se até um dos po
 ao leigo, que enxergar “impressão 3D” como uma coisa só, em vez de dezenas de tecnologias bem diferentes.
 
 Tornado isto bem claro, portanto, é também necessário falar de uma das propriedades mais importantes para objetos
-no campo de medicina e veterinária, a __biocompatibilidade__. Com pelo menos 5 definições formais distintas¹, o
+no campo de medicina e veterinária, a __biocompatibilidade__. Com pelo menos 5 definições formais distintas^1^, o
 entendimento intuitivo do conceito diz respeito a um material não ter efeitos deletérios aos materiais ou sistemas
 biológicos com que interage. Na maior parte das utilizações que nos interessam, o plástico ser _biocompatível_
 significa que não causará irritações na pele, e existe uma boa sobreposição entre os materiais que são
 biocompatíveis e os que são seguros para fins alimentícios, como PLA e polipropileno. Existe uma escala de
 biocompatibilidade: limitada (menos de 24h de exposição), prolongada (de 24h a 30 dias) e permanente (mais de
-30 dias), padronizada pela ISO 10993² com testes parametrizados.
+30 dias), padronizada pela ISO 10993^2^ com testes parametrizados.
 
 Com todos esses poréns em mente, podemos explorar o uso dos objetos de plástico impressos na medicina. Além do
 óbvio uso genérico como em suportes de itens médicos, invólucros de aparelhos, caixas, decorações e objetos
 educacionais, um dos casos que se vale do baixo custo e disponibilidade da impressão 3D FFF, quando a complexidade
 não é microscópica, é usar escaneamentos de tomografia ou ressonância de um paciente para criar modelos 3D
 de seus órgãos e imprimi-los, para que os médicos que vão fazer uma cirurgia possam avaliar a forma e definir
-suas estratégias de operação com eles em mãos.³ Ou em operações que necessitam de modelos impressos em 3D
+suas estratégias de operação com eles em mãos.^3^ Ou em operações que necessitam de modelos impressos em 3D
 como implantes ou órteses, pode-se utilizar a FFF para prototipagem em impressões candidatas, com a tecnologia
-mais cara sendo usada com a versão final.⁴ Tais aplicações ocorrem em ambientes de hospitais e clínicas e
-seu uso tem crescido.⁵
+mais cara sendo usada com a versão final.^4^ Tais aplicações ocorrem em ambientes de hospitais e clínicas e
+seu uso tem crescido.^5^
 
 No entanto, o uso _criativo_ fora do ambiente, feito por indivíduos fora do ambiente especializado de um hospital,
 também tem rendido frutos. Exemplos já foram mencionados, mas vale lembrá-los: Mão3D e sua inspiração
@@ -6265,12 +6268,12 @@ de vida das pessoas através da tecnologia e pensamento “fora da caixa”. Por
 a propriedade do PLA de baixo ponto de transição vítrea, aquela mesmo que o torna inapropriado para contato com
 alimentos devido a deformar no lava-louças? Mas desta vez para fazer com que o plástico mole possa ser adaptado
 em forma de tala no braço de um paciente. Esta foi a idéia de Ana Paula Cano, integrante do grupo Mão3D em seu
-Trabalho de Conclusão de Curso⁶.
+Trabalho de Conclusão de Curso^6^.
 
 Lembre-se ainda que cada uso especializado de impressão 3D tem sua legislação específica, que pode ser tão
 complexa quanto a que já vimos relacionada a alimentos. Em especial, o grupo de estudos de que Ana faz parte,
 __Biomecânica e Forense UNIFESP__, procura dialogar com os setores da sociedade que regulam tais dispositivos,
-colocando tal material público em seu canal de youtube⁷.
+colocando tal material público em seu canal de youtube^7^.
 
 image:image179.png[image,width=642,height=637]
 
@@ -6444,7 +6447,7 @@ as temperaturas de extrusão e mesa adequadas.
 ABS é o primeiro e principal material usado em impressão 3D, e embora historicamente seu uso apresente uma tendência
 à diminuição pelo aumento da oferta de outros materiais com propriedades mais desejáveis, ele continua forte
 no mercado pelo seu baixo preço de obtenção (em forma crua e em grandes quantidades, podendo chegar a US$ 5 por
-quilo), leveza (1,04 g/cm³, ligeiramente mais pesado que a água), boa resistência mecânica (alta resistência
+quilo), leveza (1,04 g/cm^3^, ligeiramente mais pesado que a água), boa resistência mecânica (alta resistência
 a compressão) e flexibilidade. A aparência de superfície do ABS costuma ser fosca ou “mate”, sem muito brilho.
 
 Quimicamente, é um derivado do petróleo, sendo o entrelaçamento de três copolímeros: Acrilonitrila, Butadieno
@@ -6559,7 +6562,7 @@ de composição e mercado semelhante ao ABS, tendo como principais diferenciais 
 a 0,7%) que o ABS, alta resistência a raios ultravioleta, sendo ideal para impressões expostas ao ambiente,
 maior resistência mecânica e até menos tendência a amarelar com o tempo. Assim como o ABS, é dissolvível
 em acetona. É levemente higroscópico, sendo recomendável secá-lo antes de extrudar. É também um pouco mais
-denso -- 1,07 g/cm³ ao invés de 1,04 do ABS.
+denso -- 1,07 g/cm^3^ ao invés de 1,04 do ABS.
 
 Geralmente extrudado em temperaturas próximas ao ABS, com um mínimo de 240°C no extrusor e 120°C na mesa. Antes
 usado somente em impressoras industriais, já existem vendedores de filamentos do mercado de massa que o fabricam.
@@ -6603,7 +6606,7 @@ reunião das propriedades desejáveis que adquirem, especialmente em resistênci
 Em termos de propriedades mecânicas o PMMA -- polymethyl metacrylate / polimetil-metacrilato - lembra o PLA por sua
 rigidez, mas é mais resistente a temperatura, sofre mais warp e apresenta geralmente transparência ou translucidez
 (cujo efeito é dificultado pela deposição em camadas da impressão). Tem resistência à tração quase duas vezes
-maior que a do ABS e resistência à compressão quase 3 vezes maior, com densidade próxima à do PLA (1,20 g/cm³
+maior que a do ABS e resistência à compressão quase 3 vezes maior, com densidade próxima à do PLA (1,20 g/cm^3^
 contra ~1,24 deste último). Como o ABS, é solúvel em acetona. É extrudado em temperaturas entre 240 a 260°C
 e por sofrer warp, necessita de mesa aquecida a pelo menos 100°C. É bastante difícil de encontrar no Brasil e
 tem a importação bem cara, o que é lamentável pois é um dos poucos filamentos realmente rígidos disponíveis.
@@ -6698,7 +6701,7 @@ elastoméricas. Marcas como Ninjaflex (EUA) e Flex3DBR (brasileira) são exemplo
 não-tóxicas, com excelente aderência entre camadas e não necessitando nem mesmo de mesa aquecida para a impressão
 (ou temperaturas entre 40 a 60°C), com temperaturas de extrusor entre 210 a 230°C em geral. Geralmente têm
 composição bem suave e elástica, lembrando um balão de soprar de criança. Costumam ter densidade parecida
-com a do PLA, entre 1,20 a 1,25 g/cm³.
+com a do PLA, entre 1,20 a 1,25 g/cm^3^.
 
 Existem variedades de PLA que são fabricadas como termoplásticos elastômeros, costumando ter uma pouco menos
 de elasticidade e flexibilidade que outros TPEs.
@@ -6921,7 +6924,7 @@ de segurança* -- óculos de plástico resistente próprios para evitar que os o
 e líquidos. Os mais recomendados são o que vedam a entrada de vapores.  * *Luvas de nitrilo descartáveis* -- as
 conhecidas “luvas azuis” que aparecem em seriados médicos são luvas de borracha resistentes a punção e a
 vapores e solventes como os tipicamente usados em pintura e acabamento químico. Após o uso, devem ser embaladas
-para descarte¹. As luvas de látex comuns são mais baratas mas oferecem maior risco.  * *Jaleco* ou *Macacão
+para descarte^1^. As luvas de látex comuns são mais baratas mas oferecem maior risco.  * *Jaleco* ou *Macacão
 de proteção química* complementam o conjunto quando se usa a máscara de gás, junto a protetores de cabelo ou
 capacetes que evitam que os líquidos e gases contaminem o corpo. Essas roupas devem idealmente ser confortáveis e
 folgadas para minimizar rasgões e puxões do tecido. Após o uso, devem ser imediatamente colocadas para limpeza.
@@ -7022,12 +7025,12 @@ que precisam de desbastamento localizado. São duas as ferramentas mais utilizad
 das luvas de proteção e da máscara de poeira!_
 
 * *Furadeira* -- é a que a maioria das pessoas tem em casa, usada para trabalhos domésticos, paredes e madeiras. Usa
-basicamente 3 tipos de brocas¹: para metais, paredes e madeira, essa última geralmente com uma adaga no meio que
+basicamente 3 tipos de brocas^1^: para metais, paredes e madeira, essa última geralmente com uma adaga no meio que
 serve de guia. A mais adequada para se usar para fazer furos em plástico é a para madeira, mas nosso interesse é
 desbastamento. Nesse caso existem hastes especiais para polimento que encaixam no mandril da furadeira e permitem
-várias conjuntos de lixas e escovas.² * *Microrretífica* -- também conhecida pelo nome da marca mais famosa no
+várias conjuntos de lixas e escovas.^2^ * *Microrretífica* -- também conhecida pelo nome da marca mais famosa no
 exterior, __Dremel__, a microrretífica é um instrumento rotatório menor que a furadeira que já costuma vir com
-uma maleta de acessórios, incluindo várias pontas para polimento³. Tem rotação mais rápida que a furadeira,
+uma maleta de acessórios, incluindo várias pontas para polimento^3^. Tem rotação mais rápida que a furadeira,
 mas menor torque. Uma modificação que se aconselha usar na microrretífica que a faz muito mais útil para
 impressão 3D é a colocação de uma haste flexível extensora que permite à ponta giratória entrar em lugares
 difíceis da peça e o corpo da microrretífica não atrapalhar o acabamento.
@@ -7175,12 +7178,12 @@ peça toda.
 Por isso, um tipo de tratamento que começou como curiosidade, mas acabou virando ferramenta essencial para o
 trabalho de acabamento é o tratamento químico. A idéia geral de tratar o plástico ABS com o solvente acetona
 já era conhecida antes mesmo do movimento reprap, mas o tratamento mais popular, o uso de vapor aquecido atacando o
-plástico, parece ter vindo da mente dos reprappers Neil Underwood e Austin Wilson, documentada no blog de Austin¹
+plástico, parece ter vindo da mente dos reprappers Neil Underwood e Austin Wilson, documentada no blog de Austin^1^
 em 2013. Na condensação do solvente na superfície, o líquido resultante escorre, selando as lacunas entre
 camadas e suavizando os contornos verticais da peça. Então a peça é retirada do banho de vapor de solvente, que
 acaba o processo de evaporação e deixa a peça resultante alisada e até brilhante. Pode parecer um procedimento
 “doméstico” e desajeitado, mas os anos provaram que está aí pra ficar e tem o uso ratificado pela prática,
-constando até de artigos científicos em usos biológicos.²
+constando até de artigos científicos em usos biológicos.^2^
 
 Existem vários jeitos de realizar a operação descrita, mas alguns pontos merecem destaque:
 
@@ -7269,9 +7272,9 @@ __thinner__s de tinta. Sendo um composto produzido pelo próprio organismo e ten
 sua capacidade tóxica é baixa, tendo toxicidade aguda e crônica baixas se ingerida ou inalada. Não há estudos
 que lhe atribuam efeitos carcinogênico, mutagênico ou neurotóxico. É até mesmo usada em baixa quantidade em
 alguns alimentos e bebidas, por ser “geralmente reconhecida como segura”. Por outro lado, o contato da acetona
-com a pele dissolve os óleos de proteção naturais e a resseca.¹
+com a pele dissolve os óleos de proteção naturais e a resseca.^1^
 
-Tem densidade de 0,7845 g/cm³ (~80% da da água) e ponto de ebulição em 56°C, sendo no entanto bastante volátil
+Tem densidade de 0,7845 g/cm^3^ (~80% da da água) e ponto de ebulição em 56°C, sendo no entanto bastante volátil
 mesmo abaixo dessa temperatura -- uma de suas propriedades mais utilizadas. Na forma de gás, tem densidade duas
 vezes maior que o ar, tendendo a se acumular em cima do líquido ao invés de se dispersar. O ponto de fulgor da
 acetona é de -20°C e o composto é bastante inflamável, o que quer dizer que acima dessa temperatura a acetona
@@ -7327,7 +7330,7 @@ https://www.atsdr.cdc.gov/toxprofiles/tp21.pdf[_https://www.atsdr.cdc.gov/toxpro
 
 image:image204.png[image,width=642,height=440]
 
-Pânico! Horror! Indignação! A substância mais conhecida do público leigo pelo “lança-perfume”¹ ou pelo
+Pânico! Horror! Indignação! A substância mais conhecida do público leigo pelo “lança-perfume”^1^ ou pelo
 clichê hollywoodiano de ser embebida em um pano e colocada no rosto de uma vítima para incapacitá-la não merece a
 fama que tem, a começar pelo clichê ser falso (administrado desse modo, ele levaria pelo menos cinco minutos para
 agir). No “mundo real”, o clorofórmio ou triclorometano, de fórmula CHCl₃, é, como a acetona, produzido
@@ -7335,7 +7338,7 @@ industrialmente em larga escala e entra no processo produtivo como precursor de 
 ou Teflon) e solventes de tantas outras, como gorduras, óleos, borracha, alcalóides, ceras e resinas. Também
 aparece por processos naturais, especiamente sintetizado por algumas algas e fungos.
 
-Muito de sua toxicidade vem de ser um composto organoclorado², sendo reativo e carcinogênico. Apesar disso, é bem
+Muito de sua toxicidade vem de ser um composto organoclorado^2^, sendo reativo e carcinogênico. Apesar disso, é bem
 absorvido, metabolizado e eliminado por mamíferos após exposição oral ou dérmica, podendo criar feridas por
 dissolver os lipídios da epiderme. A eliminação é primariamente pelos pulmões. O clorofórmio é um depresso
 do sistema nervoso central, podendo causar torpor e coma, com sintomas sérios com a ingestão de 7,5g do material
@@ -7407,7 +7410,7 @@ aplicação com vapor (<100°C) e tem ponto de auto-ignição bem alto.
 
 image:image206.png[image,width=642,height=402]
 
-O Tetraidrofurano (às vezes escrito -- incorretamente - “tetrahidrofurano”), THF ou oxolano¹ é um éter
+O Tetraidrofurano (às vezes escrito -- incorretamente - “tetrahidrofurano”), THF ou oxolano^1^ é um éter
 heterocíclico incolor, com odor pungente e forte ação solvente, atacado PLA, ABS, ASA, policarbonato e até látex,
 devendo ser manuseado com luvas de nitrilo. Devido a ser fracamente polar, pode dissolver tanto compostos polares
 quanto apolares e é miscível em água. Tem a toxicidade semelhante à da acetona, isto é, baixa, mas devido à
@@ -7483,9 +7486,9 @@ As três soluções têm uma porcentagem de MEK e acetona variável, mas dentre 
 [cols=",,",]
 |=====================================
 |*Solução*	|*% de Acetona*		|*% de MEK*
-|*Tigre*	|22-70			|30-86¹
-|*Polytubes*	|60-100			|1-20²
-|*Amanco*	|40-50			|40-50³
+|*Tigre*	|22-70			|30-86^1^
+|*Polytubes*	|60-100			|1-20^2^
+|*Amanco*	|40-50			|40-50^3^
 |=====================================
 
 *Vantagens:*
@@ -7531,7 +7534,7 @@ de fazer acabamento em plásticos e praticamente impossível de comparar com out
 * **Acetato de
 etila**: um solvente relativamente barato e encontrável em lojas de laboratório com momento de dipolo de 1,78D,
 não necessitando de permissão especial para compra. geralmente recomendado para uso com o PLA mas diferentemente
-do que se diz sobre ele, não funcionando se o polímero for __enantiopuro__¹ (tiver um único isômero no material
+do que se diz sobre ele, não funcionando se o polímero for __enantiopuro__^1^ (tiver um único isômero no material
 -- que é geralmente o caso), tendo infelizmente ação reduzida sobre a superfície da maioria das formulações
 desse polímero. Na prática, vê-se que a baixa ação dele em peças de PLA não justifica seu uso, e dado que seu
 ponto de ebulição é alto -- 77,1°C -- pode ser que haja confusão entre os que o advogam entre o tratamento
@@ -7909,9 +7912,9 @@ quente para dentro dele é recomendado.
 
 Embora no ramo industrial o recozimento seja um processo bem controlado, conhecido e usado, na impressão 3D de
 baixo custo não parece existir ainda corpo teórico científico e acadêmico consistente de como o conduzir. Os
-testes documentados de alguns estudantes da Universidade Estadual do Arizona¹ são um começo, embora nas
+testes documentados de alguns estudantes da Universidade Estadual do Arizona^1^ são um começo, embora nas
 recomendações coloquem uma temperatura especialmente alta e um tempo curto para o PLA (30 minutos a 140°C)
--- outras fontes oferecem valores bem mais conservadores, como o vídeo de Thomas Sanladerer sobre o processo²
+-- outras fontes oferecem valores bem mais conservadores, como o vídeo de Thomas Sanladerer sobre o processo^2^
 (110°C por uma hora). Nas experiências do autor deste livro, os valores menos agressivos do Thomas se aplicam
 melhor aos filamentos que usa.
 
@@ -7942,7 +7945,7 @@ materiais envolvida. Considerando pintura como todo revestimento dos objetos imp
 e funcionalidade, os compostos da pintura, as tintas, permitem decorar, proteger contra rachaduras e envelhecimento
 e também melhorar as características da superfície protegida.
 
-*Tinta* não é somente um líquido colorido. A tinta é uma mistura mais ou menos complexa¹ de diferentes compostos,
+*Tinta* não é somente um líquido colorido. A tinta é uma mistura mais ou menos complexa^1^ de diferentes compostos,
 e em sua formulação podem ser encontrados:
 
 * **Aglutinantes**: a resina, também conhecida por ligante ou veículo, é o componente que vai formar o filme
@@ -7980,16 +7983,16 @@ image:image215.png[image,width=642,height=386]
 
 Para um líquido formar uma superfície uniforme sobre um sólido -- o efeito que desejamos ao aplicar nele
 a tinta -, é necessário que sua tensão superficial seja inferior às forças adesivas entre o líquido e o
-sólido². Quando isso ocorre, considera-se que o líquido tem boa molhabilidade, ou seja, ele se espalha sobre
+sólido^2^. Quando isso ocorre, considera-se que o líquido tem boa molhabilidade, ou seja, ele se espalha sobre
 o sólido. Este índice pode ser medido pelo ângulo de contato entre o líquido e a superfície, quantificando
 a afinidade entre o líquido e o sólido. Com ângulo próximo de zero, a molhabilidade é máxima.
 
 A tensão superficial de tintas líquidas situa-se entre 36 a 38 dinas/cm para tintas à base de solventes e
 entre 40 e 45 dinas/cm para tintas à base d’água. Quando uma tinta líquida é aplicada sobre o polietileno
 sem tratamento, será visível a formação de gotículas, já que a tensão superficial da tinta é superior às
-forças adesivas entre a tinta e o plástico (30 dinas/cm).³
+forças adesivas entre a tinta e o plástico (30 dinas/cm).^3^
 
-Segue uma tabela⁴ de tensões superficiais e ângulos de contato de plásticos utilizados em impressão 3D e
+Segue uma tabela^4^ de tensões superficiais e ângulos de contato de plásticos utilizados em impressão 3D e
 utensílios de dia-a-dia.
 
 [cols=",,,",]
@@ -8004,7 +8007,7 @@ utensílios de dia-a-dia.
 |PVC r					|Policloreto de Vinila (rígido)			|39					|90
 |					|Poliéster					|41					|70
 |					|Acetal						|36					|85
-|PLA					|Ácido Polilático				|36-42³					|80⁴
+|PLA					|Ácido Polilático				|36-42^3^					|80^4^
 |ABS					|Acrilonitrila Butadieno Estireno		|35					|82
 |PVA					|Álcool polivinílico				|37					|10
 |					|Poliacrilato (filme acrílico)			|35					|
@@ -8167,7 +8170,7 @@ cerdas naturais ou sintéticas, é aconselhado deixar o pincel secar antes de mo
 Existem várias áreas do conhecimento humano em que pincéis são usados, como pintura industrial, maquiagem,
 revestimentos e proteções. Para conveniência e brevidade, trataremos apenas dos de artesanato, com a
 lembrança que o espírito _maker_ criativo pode utilizar sempre de ferramentas de outras áreas em um processo
-de “exaptação”. E como sempre, referências adicionais são dadas para leitura complementar sobre o assunto¹.
+de “exaptação”. E como sempre, referências adicionais são dadas para leitura complementar sobre o assunto^1^.
 
 _*Demãos*_ -- o processo de pintura quase nunca é imediato -- exige paciência, treino e método, não apenas no
 momento da aplicação, mas também na _estratégia_ de aplicação de tintas e revestimentos. Na quase totalidade
@@ -8219,9 +8222,9 @@ aerógrafos em impressão 3D:
 
 * O aerógrafo utiliza um compressor de ar comprado à parte. Para trabalhos em que não se exija muita pressão
 ou tempo de trabalho contínuo, que se supõe ser o da maioria dos casos da pintura de peças, o compressor de
-ar portátil ou mini-compressor², que costuma custar entre 40 e 60 dólares, é recomendado pela praticidade e
+ar portátil ou mini-compressor^2^, que costuma custar entre 40 e 60 dólares, é recomendado pela praticidade e
 preço. O compressor de ar fixo é mais poderoso e pode trabalhar continuamente por várias horas mas vai custar
-mais de 150 dólares.  * Existem vários tipos de “canetas” de aerógrafo, citadas nas referências³. Para
+mais de 150 dólares.  * Existem vários tipos de “canetas” de aerógrafo, citadas nas referências^3^. Para
 praticidade, o recomendado para uso com peças de impressão 3D é o aerógrafo de gravidade de mistura interna
 e de dupla ação, com abertura de 0,3mm. Esse tipo de aerógrafo permite o controle da pressão da “mistura”
 de líquido e água que será borrifada assim como a abertura do facho, potencializando controle fino da pintura
@@ -8230,7 +8233,7 @@ de desenho na peça quanto em fachos largos para cobertura de tinta ou revestime
 uso de aerógrafo é acertar as proporções de diluição da mistura com thinner que vai no recipiente acima da
 caneta. Uma proporção muito grossa fará o facho ser irregular, expelir perdigotos ou até entupir; uma proporção
 muito rala fará o facho ser fraco e não aderir corretamente à superfície. A consistência e diluição ideais
-variam de acordo com tinta e fabricante e são obtidas por um processo de experiência, tentativa e erro⁴.
+variam de acordo com tinta e fabricante e são obtidas por um processo de experiência, tentativa e erro^4^.
 
 image:image216.jpeg[image,width=642,height=356]
 
@@ -8472,11 +8475,11 @@ e soluções paliativas; imagine lubrificar uma peça sujeita a grandes temperat
 gere vapores tóxicos.
 
 **Óleos versus Graxas**: existe um debate recorrente na indústria de máquinas sobre o uso de óleos (líquidos)
-ou graxas¹. A graxa, ou óleo graxo, é um agente de dispersão de um produto espessante num lubrificante líquido,
+ou graxas^1^. A graxa, ou óleo graxo, é um agente de dispersão de um produto espessante num lubrificante líquido,
 com consistência entre sólida e semifluida, podendo conter outros ingredientes para ter propriedades específicas
 desejadas. Como se pode inferir pela descrição, as graxas geralmente serão mais caras. Existem muitos tipos
 diferentes de óleos e ainda mais tipos diferentes de graxas, mas para nossas finalidades o mais adequado é manter
-o assunto simplificado. Lubrificantes em geral servem para²:
+o assunto simplificado. Lubrificantes em geral servem para^2^:
 
 * Converter em atrito sólido para atrito líquido, reduzindo a perda de energia; * Reduzir o contato entre
 as superfícies e assim o desgaste; * Proteger as superfícies contra substâncias corrosivas como ácidos ou
@@ -8491,7 +8494,7 @@ Amenizar/amortecer as folgas ou interstícios da geometria do mecanismo.
 Existem ainda _lubrificantes sólidos_ como grafite ou PTFE (Teflon), que dão uma lubrificação seca às peças.
 
 Dada essa distinção, segue-se uma lista de sugestões do que usar em cada peça da impressora 3D e sua devida
-explicação³:
+explicação^3^:
 
 * **Barras roscadas**: devido às características de barras roscadas de grande propensão a desgaste do metal
 devido aos fios finos, o uso de graxa ou lubrificantes sólidos não é recomendado. Outro problema de usar graxa
@@ -8731,7 +8734,7 @@ image:image227.png[image,width=642,height=336]
 portanto pegar este valor e dividir por 2, para saber o tamanho _a_ da mediana do triângulo vermelho!  * Poupado
 o trabalho de calcular os três pontos do triângulo equilátero, eles são, em (X,Y), relativos a um tamanho de
 mediana __a__: (0,__a__), (-0.866×__a__, -0.5×__a__) e (0.866×__a__, -0.5×__a__). Essas medidas são tiradas
-das propriedades do triângulo equilátero.²
+das propriedades do triângulo equilátero.^2^
 
 image:image228.png[image,width=642,height=459]
 
@@ -8769,7 +8772,7 @@ baixo na torre, ou informar esta correção no firmware, para que ele compense. 
 última, *realizar a correção nos parâmetros* sem mudar fisicamente nada.  ** G-Codes usados: *** *M665* --
 ajustar configuração de abaulamento + Parâmetros: **** L__número__ -- DELTA_DIAGONAL_ROD **** R__número__
 -- DELTA_RADIUS **** H__número__ -- DELTA_HEIGHT *** *M666* -- ajustar configuração de desnível (plano
-dos endstops)³ + Parâmetros: **** X__número__ -- deslocamento na torre A, negativo para baixo, positivo
+dos endstops)^3^ + Parâmetros: **** X__número__ -- deslocamento na torre A, negativo para baixo, positivo
 para cima.  **** Y__número__ -- deslocamento na torre B.  **** Z__número__ -- deslocamento na torre C.  *
 Vamos então começar o procedimento.  ** Vamos considerar que tiramos as seguintes medidas para a impressora: ***
 DELTA_HEIGHT é 200mm. Na prática, raramente será tão exata.  *** (DELTA_RADIUS + DELTA_EFFECTOR_OFFSET), ou
@@ -8840,7 +8843,7 @@ estiver com o extrusor funcionando, fazer ela imprimir um quadrado chato de tama
 que ele precisa ser 100 / 94 = 1,041666... vezes maior. Digamos, ainda, que o DELTA_DIAGONAL_ROD cadastrado seja
 _240mm_ (pode-se usar o comando M666 sem parâmetros para saber). Multiplica-se 240 por 1,041666..., chegando-se
 a 250mm. G-Code: **M666 L250**. Seguindo de um comando *M500* para gravar os ajustes, nossa calibração da delta
-estaria finalizada⁴.  * Se sua impressora não estiver ainda com o hotend ou tracionador funcionais, você pode
+estaria finalizada^4^.  * Se sua impressora não estiver ainda com o hotend ou tracionador funcionais, você pode
 mandar imprimir sem filamento -- o que se chama de “dry run”, ou execução seca -- e ir seguindo a trajetória
 do hotend com um lápis ou caneta. Algumas pessoas vão além e ao invés de colocar um hotend funcionado, deixam
 uma caneta presa no extrusor e mandam imprimir: a primeira camada será desenhada na base (colocando-se um papel
@@ -8877,7 +8880,7 @@ ponta do hotend até a mesa, em diversas coordenadas. E se um sensor no effector
 altura? Ora, é exatamente isso o que a sonda Z (“Z probe”) usada no autonivelamento de mesas de impressão faz!
 
 No momento da redação deste livro, os únicos firmwares que parecem ter implementado esta idéia é o _Marlin
-Firmware_ _1.1.0_ e seu fork __MK4duo 4.3.2__¹. Assim como a calibração de delta, a autocalibração exigirá
+Firmware_ _1.1.0_ e seu fork __MK4duo 4.3.2__^1^. Assim como a calibração de delta, a autocalibração exigirá
 uma série de ajustes já perfeitamente configurados. Os requisitos são esses:
 
 * Como a autocalibração usará a sonda Z do hotend, o _offset_ (deslocamento) da sonda em relação ao bico
@@ -9342,7 +9345,7 @@ no mercado e muitos dos CADs mais sofisticados e completos como o SolidWorks a i
 
 No entanto, mesmo com a impressão 3D FFF tendo se popularizado tanto, virtualmente nenhum pacote de software
 do mercado está devidamente preparado para lidar com o maior revés de análise da FFF, aquele que já
-mencionamos: a __anisotropia__¹, que tem mensuração bastante difícil por variar de acordo com o material e
+mencionamos: a __anisotropia__^1^, que tem mensuração bastante difícil por variar de acordo com o material e
 temperaturas usadas, a resolução usada, os ajustes usados nos fatiadores como preenchimento e paredes, e por
 o problema de laminação de estruturas ser difícil de equacionar neste tipo de análise. Alguns estudos já
 estão aparecendo procurando resolver esse problema e até um serviço online surgiu a preços estratosféricos
@@ -9871,8 +9874,8 @@ image:image292.png[image,width=607,height=307]
 
 Você sabe o que é o diâmetro e as temperaturas, portanto que _Extrusion Multiplier_ é esse? No Slic3r ele é
 um número pelo qual ele modificará o seu cálculo de plástico a ser extrudado. Digamos que para determinada
-camada ele calcula que gastará 15 mm³ de plástico e você põe o multiplicador de extrusão em 1.1; 15 * 1.1 =
-16.5 mm³, que é o quanto ele realmente gastará de plástico, causando o que se chama de __superextrusão__. Em
+camada ele calcula que gastará 15 mm^3^ de plástico e você põe o multiplicador de extrusão em 1.1; 15 * 1.1 =
+16.5 mm^3^, que é o quanto ele realmente gastará de plástico, causando o que se chama de __superextrusão__. Em
 alguns casos, a superextrusão pode ser útil para fazer camadas mais grossas, mais resistentes. O mesmo pode ser
 dito da subextrusão, extrudar menos do que deveria (com o multiplicador em 0,9, por exemplo): tem uma utilidade
 limitada na fabricação de detalhes mais finos ou rarefeitos.
@@ -10134,7 +10137,7 @@ e vale a pena explicitar como funciona em cada um deles.
 
 * **Slic3r**: sendo ainda o mais simples dos três em sua interface, não tem muitos recursos especiais de
 posicionamento e mesmo o posicionamento pela interface não é lá muito intuitivo. Também não ajuda o fato de
-este fatiador nem mesmo implementar a função básica de **desfazer (undo)**¹. Temos nas preferências gerais um
+este fatiador nem mesmo implementar a função básica de **desfazer (undo)**^1^. Temos nas preferências gerais um
 ajuste para auto-centralizar peças, na interface da mesa um botão para “arranjar” as peças automaticamente e o
 botão direito para uma série de operações, ajustes e configurações por objeto. Um ajuste de posicionamento que
 merece menção especial, no entanto, é a de rotação das peças. Como ela é feita somente pela especificação
@@ -10323,7 +10326,7 @@ image:image325.png[image,width=578,height=461]
 * Cura: como o Slic3r, tem a *altura dos eixos* configurável nas definições de impressora: Preferences →
 Printers → Machine Settings → Gantry height. No entanto ele não tem a opção de “raio” ou volume do
 extrusor/hotend porque na verdade esses dados estão precisamente especificados internamente para cada modelo de
-impressora; ao invés de ser somente um círculo, o arquivo __json__¹ que define características mecânicas da
+impressora; ao invés de ser somente um círculo, o arquivo __json__^1^ que define características mecânicas da
 impressora 3D permite especificar um polígono com várias arestas. No entanto, como editar esses arquivos-texto
 exige conhecimento avançado e muita consulta, na prática esse dado está indisponível para o usuário comum. Por
 outro lado, ele tem os dados simplificados “printhead settings” que permitem dizer o mesmo, sendo apenas
@@ -10350,17 +10353,17 @@ image:image329.png[image,width=598,height=379]
 
 E mais uma diferença do Simplify3D é que a sequência não é dada entre cada _peça_ na mesa e sim entre
 cada __processo__. Isto significa que se você tem 30 peças, se quiser imprimi-las em sequência precisará de
-30 processos, um para cada uma, mesmo que sejam processos idênticos.² + Mas a melhor diferença ficou para o
+30 processos, um para cada uma, mesmo que sejam processos idênticos.^2^ + Mas a melhor diferença ficou para o
 final: o Simplify3D não se nega a fatiar se a altura do objeto ultrapassar a altura dos eixos. Ao invés disso,
 ele divide em seções: como a altura máxima que ele consegue obter é, digamos, os 20mm que especificamos,
 ele imprime os processos em sequência até chegar a 20mm em cada um deles; então, na altura 20mm + uma camada,
-ele reinicia a sequência até completar 40mm; e daí em diante, até completar todos os objetos.³
+ele reinicia a sequência até completar 40mm; e daí em diante, até completar todos os objetos.^3^
 
 image:image330.png[image,width=591,height=449]
 
 Neste caso a vantagem do Simplify3D sobre Cura e Slic3r é aparente, mesmo não tendo a análise mais completa
 levando em conta o formato do hotend ou extrusor. Resta esperar que tais recursos sejam também implementados
-nesses fatiadores!⁴
+nesses fatiadores!^4^
 
 Notas:
 
@@ -10451,7 +10454,7 @@ necessárias fossem mais finas, numa graduação de acordo com sua suavidade ou 
 no Slic3r quanto o Prusa Slic3r. No entanto, inclinações e suavidades de curva são propriedades geométricas
 que podem facilmente ser analisadas, e o procedimento pode perfeitamente ser automatizado. Essa é a idéia já bem
 antiga de __fatiamento adaptativo__, mas que recentemente tomou renovado interesse com o algoritmo __VariSlice__™ da
-Autodesk¹, criado pelo time de desenvolvimento da impressora 3D DLP open-source Ember. O algoritmo foi implementado
+Autodesk^1^, criado pelo time de desenvolvimento da impressora 3D DLP open-source Ember. O algoritmo foi implementado
 na linguagem Processing (Java) e seu código-fonte disponibilizado sob licença open-source, podendo gerar tabelas de
 alturas para camadas para serem importadas no Slic3r. O time de desenvolvimento da Ember também está participando
 da implementação independente da idéia feita pelo usuário __platsch__no Slic3r, com uma combinação das idéias
@@ -10465,7 +10468,7 @@ image:image336.png[image,width=642,height=581]
 Se a configuração de altura de camada mínima e máxima é fácil de entender, nem tudo é simples no fatiamento
 adaptativo. Um valor mais complexo que também pode ser entrado é o _cusp value_ (valor da cúspide). Cúspide
 é a ponta ou extremidade aguda de algo, e neste termo ele se refere ao encontro entre as camadas -- o ponto
-mais distante da curva da forma. A distância máxima deste ponto em relação à curva é o valor da cúspide²,
+mais distante da curva da forma. A distância máxima deste ponto em relação à curva é o valor da cúspide^2^,
 configurável para o fatiamento. Um valor de cúspide igual a zero fará com que as camadas nunca se desviem da
 média das curvas, e as deixará sempre no valor mínimo. Um valor de cúspide igual ou maior que a altura de
 camada máxima deixará as camadas sempre no valor máximo.
@@ -10901,7 +10904,7 @@ para a primeira camada especialmente, ele pode ser especificado para todas as ca
 o fatiador faz o cálculo automático da largura de camada “ideal” a partir do diâmetro do bico, e pode
 mantê-lo constante ou variá-lo durante a impressão para melhorar a qualidade da peça. O Simplify3D, por exemplo,
 considera que a largura do filete é de 20% maior que o orifício -- 0,48mm para um nozzle de 0,4mm; o slic3r usa
-uma fórmula complexa¹ para calcular isso -- resultando em 0,67mm para um nozzle de 0,4mm com altura de camada 0,2
+uma fórmula complexa^1^ para calcular isso -- resultando em 0,67mm para um nozzle de 0,4mm com altura de camada 0,2
 e 0,48 para altura de camada 0,3 -- e 5% maior que o bico para o filete _externo_ (a parede mais externa). Com até
 mesmo os fatiadores discordando entre si, não é surpresa que eles permitam que o ajuste seja personalizado. É
 importante notar que o fatiador ainda confia na quantidade de plástico correta configurada: se você aumenta a
@@ -10928,7 +10931,7 @@ de bug para isso: https://github.com/alexrj/Slic3r/issues/3658[_https://github.c
 Notas:
 
 1 -- A fórmula do Slic3r é , onde w = largura de extrusão calculada, d = diâmetro do bico e h = altura de
-camada: w = (π.d² + (4-π).h²)/(4h), com o valor de w limitado ao máximo de 3d.
+camada: w = (π.d^2^ + (4-π).h^2^)/(4h), com o valor de w limitado ao máximo de 3d.
 
 image:image367.png[image,width=642,height=437]
 
@@ -11003,10 +11006,10 @@ ou comparação, entretanto, oferecemos algumas sugestões gerais, que podem ou 
 
 * Velocidade de perímetro: 60 mm/s * Velocidade de perímetro pequeno: 20 mm/s * Velocidade de primeira camada:
 20% * Velocidade de travel: 100 mm/s * Velocidade de infill: 70 mm/s * Velocidade de pontes: 80 mm/s * Velocidade
-de _overhangs_ (somente no software repsnapper): 20 mm/s * Aceleração: 1000 mm/s² nos eixos X e Y, 3000 mm/s²
+de _overhangs_ (somente no software repsnapper): 20 mm/s * Aceleração: 1000 mm/s^2^ nos eixos X e Y, 3000 mm/s^2^
 para as impressoras 3D mais robustas, especialmente CoreXY e semelhantes.  * Jerk X/Y: 20 mm/s * É importantíssimo
 lembrar que você deve _decidir_ quem cuida de sua aceleração, ou o fatiador ou o firmware! Se as acelerações
-forem configuradas no fatiador, o ideal é aumentar ao máximo no firmware (digamos, 10000 mm/s²) para minimizar
+forem configuradas no fatiador, o ideal é aumentar ao máximo no firmware (digamos, 10000 mm/s^2^) para minimizar
 as interferências. O mesmo vale em relação ao _jerk_ e velocidades máximas.
 
 *Jerk* -- elaborando um pouco mais sobre o que esse ajuste significa, ele é a _máxima_ mudança de velocidade que o
@@ -11036,7 +11039,7 @@ no original em inglês, como jargão técnico.
 **Nota**: existe um conceito de _jerk_ da física que não é o mesmo jerk que conceituamos. Traduzido como
 “arrancada”, o jerk da física designa a taxa de variação da aceleração, assim como a aceleração designa
 a taxa de variação da velocidade e a velocidade é a taxa de variação de posição. A unidade deste _jerk_ é
-distância por tempo ao cubo (e.g. 1000 mm/s³), enquanto que a do ajuste do fatiador ou firmware é em distância
+distância por tempo ao cubo (e.g. 1000 mm/s^3^), enquanto que a do ajuste do fatiador ou firmware é em distância
 por tempo (e.g. 20 mm/s).
 
 *Autospeed do Slic3r* -- há um ajuste especial do Slic3r que, tendo em vista as equações de Bernoulli para
@@ -11150,8 +11153,8 @@ Stratasys adquiriu a patente do método nos EUA (patente __US 20130095303 A1__),
 de mercado se valham dele. Ler a patente chega a ser perturbador -- eles listam todo e qualquer caso imaginável
 de deixar a costura levemente retrocedida, para assegurar que nem algo parecido posser ser feito por outros. A
 patente foi aceita mesmo com vários casos documentados de “arte prévia” desta técnica, algo que teoricamente
-a invalidaria.¹ Nas discussões de fatiadores como o slic3r, se optou por não implementar a técnica para evitar
-qualquer imbróglio legal.² É o “espaço de idéias” sendo fechado a olhos vistos.
+a invalidaria.^1^ Nas discussões de fatiadores como o slic3r, se optou por não implementar a técnica para evitar
+qualquer imbróglio legal.^2^ É o “espaço de idéias” sendo fechado a olhos vistos.
 
 image:image373.png[image,width=642,height=695]
 
@@ -11160,7 +11163,7 @@ image:image374.png[image,width=625,height=260]
 No Slic3r, o ajuste da costura está em Print Settings → Layers and Perimeters → Advanced → Seam Position. Você
 pode escolher entre alinhado, aleatório e “mais perto” (tentará achar uma face com ângulo agudo para esconder
 a costura). O Prusa Slic3r oferece ainda a opção “Rear”, que é o Y máximo, e por default já implementa
-uma forma modesta de __seam hiding__³.
+uma forma modesta de __seam hiding__^3^.
 
 image:image375.png[image,width=344,height=180]
 
@@ -11328,7 +11331,7 @@ _*Bridging*_ + image:image391.png[image,width=424,height=211] + Antigamente bast
 na detecção quanto na configurabilidade de suas pontes, a versão 4.0 do Simplify3D trouxe boas melhorias nessa
 parte. Os ajustes são: ** __*Unsupported area threshold*__: quanto de área mínima sem suporte é necessária
 para que o algoritmo decida que vai usar a estratégia de “ponte” para ligar uma seção à outra. Dada em
-milímetros quadrados (mm²).  ** __*Extra inflation distance*__: este ajuste leva em conta que a região de
+milímetros quadrados (mm^2^).  ** __*Extra inflation distance*__: este ajuste leva em conta que a região de
 suporte da ponte se apóia em determinadas camadas inferiores (mais interna que as paredes), e permite expandir
 a região usada como apoio pra permitir uma fundação mais sólida. Pode ser difícil visualizar, então aqui
 está um exemplo de uma ponte expandida em 2mm + image:image392.png[image,width=594,height=282] **
@@ -11404,7 +11407,7 @@ Camada”, mais vale entendermos as diferenças e semelhanças da retração do 
 que o Simplify3D chama de *wipe* é o que o Cura chamada de *combing* (“penteamento”), ou seja, passar o bico em
 área já impressa para depositar filamento escorrido ou resíduos dentro da peça. A “distância extra” que o
 Simplify3D extruda depois da retração é equivalente à “__*Quantidade Adicional de Avanço da Retração*__”
-(__*Retraction Extra Prime Amount*__), só que dada em _volume_ (mm³) ao invés de distância de entrada do
+(__*Retraction Extra Prime Amount*__), só que dada em _volume_ (mm^3^) ao invés de distância de entrada do
 filamento. Se quiser achar o volume _v_ em função do diâmetro _d_ do bico e da distância _L_ do filamento,
 a fórmula é:
 
@@ -11467,7 +11470,7 @@ Expansion
 Além do “espalhamento” indesejado das impressões 3D que a compensação horizontal ataca, temos também um
 outro problema que não raramente é confundido com este espalhamento, pois tende a deixar seções circulares
 mais estreitas. Este é na verdade um dos inúmeros aspectos de um problema _milenar_ da humanidade chamado de
-“quadratura do círculo”¹, ou quais os métodos que podem ser usados para transformar a curva do círculo em
+“quadratura do círculo”^1^, ou quais os métodos que podem ser usados para transformar a curva do círculo em
 um segmento linear. Na engenharia, especificamente na engenharia que criou a impressão 3D, esse problema afeta
 as estruturas em arco e circulares, especialmente os orifícios circulares. Na introdução do livro falamos
 de _papers não-acadêmicos_ e citamos o célebre post de blog do reprapper _nophead_ que expõe esse problema:
@@ -11552,7 +11555,7 @@ o repsnapper como prova de conceito, a carência de recursos desse fatiador não
 Mas não é necessário. Essa inferência de segmentos pra curvas pode ser feita _depois_ do fatiamento. De
 fato, existe um software externo que, alimentado com G-Code de _qualquer_ fatiador de mercado, infere as curvas
 e devolve um G-Code com elas transformadas em arcos *G2* e **G3**. Esse software, livre e multiplataforma,
-chama-se **GCode Arc Optimiser**, é escrito em PHP e tem colaboração do autor do livro². Pode ser baixado de
+chama-se **GCode Arc Optimiser**, é escrito em PHP e tem colaboração do autor do livro^2^. Pode ser baixado de
 https://github.com/manticorp/GcodeArcOptimiser[_https://github.com/manticorp/GcodeArcOptimiser_]. O software exige
 uma versão do interpretador PHP instalada e para ser usado, necessita que um pequeno script seja criado em sua
 pasta (pode ser criado por qualquer editor de textos puro e gravado como “cli.php”):
@@ -11725,7 +11728,7 @@ para filamentos flexíveis, filamentos menos exigentes e formas impressas simple
 facebook que dizem imprimir Ninjaflex nesta velocidade em impressora com bowden! Comece com uma velocidade pequena
 -- digamos, 15 mm/s, ou até mesmo 5mm/s -- imprimindo uma forma simples e vá aumentando à medida que conseguir
 confiança que a impressora dá conta.  * *Aceleração do extrusor* também deve ser colocada em um valor baixo para
-manter a pressão interna mais constante; um valor entre 200 e 500 mm/s² é recomendado.  * *Retração* deve ser
+manter a pressão interna mais constante; um valor entre 200 e 500 mm/s^2^ é recomendado.  * *Retração* deve ser
 minimizada. Embora alguns _reprappers_ aconselhem desligá-la totalmente, costuma ser suficiente deixá-la com baixa
 velocidade e pequena distância (digamos, 15 mm/s e 2mm de retração). É importante também impedir um número
 grande de retrações; neste caso, os ajustes de limitar o número por distância do Cura serão bem úteis, com
@@ -12142,25 +12145,25 @@ De acordo com os seguintes termos:
 
 image:image433.png[image,width=75,height=72]
 
-*Atribuição* -- você deve dar o __crédito apropriado¹__, providenciar um link para a licença e __indicar
-se mudanças foram feitas²__. Você o pode fazer de qualquer maneira razoável, mas não de algum modo que sugira
+*Atribuição* -- você deve dar o __crédito apropriado^1^__, providenciar um link para a licença e __indicar
+se mudanças foram feitas^2^__. Você o pode fazer de qualquer maneira razoável, mas não de algum modo que sugira
 que o licenciante endosse você ou o seu uso.
 
 image:image434.png[image,width=73,height=72]
 
 CompartilhaIgual -- Se você remixar, transformar ou criar a partir do material, tem de distribuir as suas
-contribuições __sob a mesma licença__³ que o original.
+contribuições __sob a mesma licença__^3^ que o original.
 
-Sem restrições adicionais -- você não pode aplicar termos jurídicos ou _medidas de caráter tecnológico⁴_
+Sem restrições adicionais -- você não pode aplicar termos jurídicos ou _medidas de caráter tecnológico^4^_
 que restrinjam legalmente outros de fazerem algo que a licença permita.
 
 Avisos:
 
 Você não tem de cumprir com os termos da licença relativamente a elementos do material que estejam no domínio
-público ou cuja utilização seja permitida por uma _exceção ou limitação⁵_ que seja aplicável.
+público ou cuja utilização seja permitida por uma _exceção ou limitação^5^_ que seja aplicável.
 
 Não são dadas quaisquer garantias. A licença pode não lhe dar todas as autorizações necessárias para o uso
-pretendido. Por exemplo, outros direitos, tais como __direitos de imagem, de privacidade ou direitos morais⁶__,
+pretendido. Por exemplo, outros direitos, tais como __direitos de imagem, de privacidade ou direitos morais^6^__,
 podem limitar o uso do material.
 
 _Notas numéricas:_

@@ -3464,6 +3464,7 @@ em impressoras 3D. A escova é um elemento ligado à bobina giratória que entra
 conduz corrente quando isso acontece. Esse contato pode produzir faíscas e como ocorre muitas vezes por segundo,
 acaba levando ao desgaste das partes. Por outro lado, esses motores têm uma construção simples e barata, e só
 necessitam de dois fios (sinal e terra) para funcionar.
+
 [[diagramamotorescovas]]
 image::image110.png[image,width=642,height=443,title="O diagrama de um motor com escovas. Neste motor, o estator são os fios de energia, a escova e o ímã permanente em volta; o rotor são as bobinas e o comutador. O leitor deve considerar isto como uma curiosidade: útil para projetos 'maker', não para impressão 3D."]
 
@@ -3477,7 +3478,8 @@ apenas uma bobina ou duas bobinas em 180°, o ímã poderia ir tanto no sentido 
 se alinhar com elas. Vamos usar quatro (seria possível usar três, mas o controle ficaria mais complexo). Vamos
 supor ainda que neste caso, vamos deixar as bobinas sempre energizadas com corrente, seja direta, seja invertida.
 
-image:image111.png[image,width=642,height=384]
+[[bobinas41bobinas23]]
+image::image111.png[image,width=642,height=384,title="Colocamos as quatro bobinas em torno do ímã permanente e as ligamos com dois pólos norte (bobinas 4,1) e dois pólos sul (bobinas 2,3) consecutivos virados para o centro. As atrações e repulsões assim configuradas só permitem que o ímã (o rotor) gire em uma direção: 90 graus em sentido anti-horário. Assim que completa o giro, o ímã encontra uma situação de equilíbrio e não se move mais. Este movimento é um *passo* de motor. A geometria deste motor de passo simples faz com que cada passo ande 90 graus."]
 
 O motor simples da ilustração exemplifica bem o que se passa nos motores de mercado; a diferença é que os
 últimos são bem mais complexos. Um NEMA17 comum de reprap tem este ângulo de passo de 1,8 graus, o que quer
@@ -3487,13 +3489,15 @@ de 4 kgf.cm, uma grandeza que representa a resistência que o motor terá para s
 Da posição em que está, o motor da ilustração pode continuar girando no sentido anti-horário se fizermos o
 seguinte: invertemos _somente_ as bobinas 4 e 2. Veja o que acontece.
 
-image:image112.png[image,width=642,height=273]
+[[bobinas90grausdepois]]
+image::image112.png[image,width=642,height=273,title="O rotor continua se movendo no sentido horário e estaciona 90 graus (um passo) depois."]
 
 O padrão no entanto muda com esta configuração: se invertemos as bobinas 1 e 3, o motor dará um passo no sentido
 __horário__, ou seja, voltará um passo. Para continuarmos girando no sentido anti-horário, precisamos inverter
 as 4 bobinas.
 
-image:image113.png[image,width=642,height=317]
+[[bobinasmaisumpassoantihorario]]
+image::image113.png[image,width=642,height=317,title="Mais um passo em sentido anti-horário. Já dá pra imaginar qual seja o passo seguinte, inverter as bobinas 2 e 4. Fica como exercício para o leitor visualizar. Após isso, novamente inverter as 4 bobinas para chegar à configuração inicial (completando 360 graus)."]
 
 No final desse exercício, o leitor pode estar pensando: por que deixar todas as bobinas ligadas em algum sentido? É
 possível, para qualquer motor, ter as bobinas desligadas. A finalidade foi mostrar que podemos controlar os
@@ -3505,7 +3509,8 @@ de excitação de duas fases*_ e é caracterizada por torque melhorado. Em motor
 intercalam: 6 bobinas, e temos 1 + 3 + 5 formando uma fase, 2 + 4 + 6 formando outra (figura XXa). Do mesmo modo,
 com 8 bobinas teremos 1+3+5+7 e 2+4+6+8 (figura XXb)
 
-image:image114.png[image,width=642,height=342]
+[[bobinasmaisbobinas]]
+image::image114.png[image,width=642,height=342,title="Motores com mais bobinas, sempre intercaladas e com duas fases - aqui mostradas em cores diferentes para melhor entendimento. O rotor central tem sua construção magnética omitida neste momento para simplicidade, pois nesses casos não são usados dois semicírculos."]
 
 **Polaridade**: considerando um motor de duas fases, a fiação que liga as bobinas costuma ser arranjada de dois
 jeitos distintos nos motores de passo: nos motores **bipolares**, uma fase corresponde a exatamente um fio de
@@ -3514,7 +3519,8 @@ de modo que a comutação é facilitada -- uma metade por vez. Para o mesmo núm
 unipolar tem mais fios que um bipolar, ainda que algumas vezes os fios centrais das fases sejam conectados em um
 fio único. O diagrama extremamente simplificado a seguir pode ajudar a entender melhor:
 
-image:image115.png[image,width=642,height=320]
+[[diagramafiacaomotores]]
+image::image115.png[image,width=642,height=320,title="Diagrama para entender a fiação dos motores (que passa por dentro do motor, mas é mostrado 'por fora' para entendimento). Todos os motores ilustrados têm duas fases (bifásicos). As cores indicadas na ilustração são cores comuns nos fios de motores de mercado, mas não são padronizadas ou universais. Pode-se ainda ter uma configuração não mostrada no diagrama, um 'motor universal' com quatro fios, em que cada uma de 4 bobinas é acionável isoladamente."]
 
 Apesar de o motor bipolar ter uma construção mais “simples” (menos fios), gerar passos nele é mais
 complicado. Você pode ter a corrente em *ambos* os sentidos no fio, positivo e negativo (daí o **bi**polar),
@@ -3522,7 +3528,8 @@ enquanto que o motor **uni**polar só é energizado em *um* sentido em cada meta
 do motor unipolar _mais simples_ e o do bipolar _mais complexo_ do ponto de vista de elementos de circuito e
 programação do microcontrolador.
 
-image:image116.jpeg[image,width=642,height=645]
+[[fotomotordesmontado]]
+image::image116.jpeg[image,width=642,height=645,title="Um motor NEMA17 usado em impressoras 3D de mercado aberto, com duas fiações com convenções de cores diferentes: uma preta, vermelha, azul e verde e uma vermelha, amarela, cinza e azul. Perceba que o conector do motor da foto tem 6 pinos, e o cabo que sai dele só tem 4 fios. É porque o motor pode funcionar tanto como motor bipolar quanto como unipolar. Se fosse usado em modo unipolar, o cabo apresentaria 5 ou 6 fios conforme o diagrama anterior. Note outros elementos da construção do motor, como o rotor magnético e as bobinas no estator. Falaremos deles mais à frente."]
 
 Se ainda assim for difícil para que o leitor abstraia o movimento, existem excelentes recursos na internet com
 animações detalhadas do que acontece. Alguns exemplos são recomendados:
@@ -3532,19 +3539,22 @@ ser visto em https://www.youtube.com/watch?v=bCEiOnuODac[_https://www.youtube.co
 do canal “Learn Engineering”, em inglês. O BLDC é bastante semelhante ao motor de passo
 mas tem como diretiva maximizar o torque e deixá-lo o mais suave possível, sem as paradas do
 primeiro -- precisão de posicionamento não é necessária. Diferentemente dos motores de passo,
-que costumam usar uma ou duas fases, os BLDCs tipicamente têm três fases.  * O blog brasileiro
+que costumam usar uma ou duas fases, os BLDCs tipicamente têm três fases.
+* O blog brasileiro
 _fazedores_ tem algumas GIFs animadas com um motor de passo de acionamento simples (uma fase por vez):
 http://blog.fazedores.com/serie-motores-introducao-ao-motor-de-passo/[_http://blog.fazedores.com/serie-motores-introducao-ao-motor-de-passo/_]
 * Uma demonstração experimental de motores de passo “caseiros” semelhantes aos diagramas ilustrados aqui,
-em português: https://www.youtube.com/watch?v=dS7tI75JczY[_https://www.youtube.com/watch?v=dS7tI75JczY_] * Uma das
+em português: https://www.youtube.com/watch?v=dS7tI75JczY[_https://www.youtube.com/watch?v=dS7tI75JczY_]
+* Uma das
 grandes aplicações da impressão 3D é na área educacional, e indivíduos criativos fizeram um motor de passo com
 frames impressos em 3D e leds mostrando quais partes estão energizadas. O projeto, com alguns vídeos fáceis de
 entender e já com muitas derivações, aparece no thingiverse com o título “3D Printed Stepper Motor v1.1”:
 http://www.thingiverse.com/thing:986260[_http://www.thingiverse.com/thing:986260_]
 
-image:image117.png[image,width=642,height=501]
+[[motordepassoimpressoem3d]]
+image::image117.png[image,width=642,height=501,title="Fica até difícil __não entender__: o 'motor de passo impresso em 3D' mostra quais bobinas são energizadas em cada momento pra que não haja nenhuma dúvida para o aluno."]
 
-=== Micropassos
+==== Micropassos
 
 Nosso motor imaginário tem um posicionamento bastante grosseiro -- cada vez que andamos, é um quarto de
 círculo. Acontece que, pelo controle que temos dele, é possível dar um “jeitinho” de ganhar divisões novas
@@ -3552,7 +3562,8 @@ de ângulo puxando o motor “para os dois lados” ao mesmo tempo. Imaginemos q
 queiramos só andar 45°, ao invés de 90°. Tudo o que precisamos fazer é, ao invés de inverter as 4 bobinas,
 inverter só a 2 e 4.
 
-image:image118.png[image,width=642,height=317]
+[[bobinasmicropassos45graus]]
+image::image118.png[image,width=642,height=317,title="Começamos a girar no sentido anti-horário, mas o equilíbrio de forças está no meio do caminho. Ao invés de completarmos 90°, conseguimos posicionar o rotor em 45°; para completar 90⁰ bastará inverter 1 e 3."]
 
 Esta estratégia é conhecida como *meio-passo* (__half-step__) e sua extrapolação para maiores divisões se
 batizou de *micropassos* (__microsteps__). Alcançamos 45° porque as forças de atração são iguais; mas se
@@ -3560,21 +3571,23 @@ mexermos com a intensidade da corrente que passa em cada conjunto de fios, conse
 colocarmos *100%* da corrente nas bobinas *1* e *3* e *41,42%* da corrente nas bobinas *2* e **4**, conseguiremos
 uma atração que resulta em um ângulo de ¾ de 90° (67,5°) em relação à 4.
 
-image:image119.png[image,width=642,height=273]
+[[bobinasumquartodepasso]]
+image::image119.png[image,width=642,height=273,title="Conseguimos avançar apenas 1/4 de passo mexendo na intensidade das correntes para as bobinas."]
 
 Não se preocupe muito com os números para chegar a esses ângulos, o importante é o princípio; mas para
 informação, foi usado cálculo de seno e cosseno para chegar aos valores. Se estivermos no caso típico de dirigir
 o motor com vários pulsos para uma posição, o gráfico da corrente relativa ao tempo mostrará a aproximação
 quadriculada de uma senóide.
 
-image:image120.gif[image,width=517,height=323]
+[[graficocorrenteabmicrostep]]
+image::image120.gif[image,width=517,height=323,title="Gráfico da corrente de saída nos dois pares de fios (A e B) para micropassos do 'datasheet' de um DRV8825, que consegue até 32 subdivisões de passo."]
 
 Outras proporções de correntes podem nos levar a divisões ainda menores: 1/8, 1/16, 1/32 e em alguns casos
 é possível chegar a 1/256 de divisão de passo! __Perceba no entanto que o torque quando se usa micropasso é
 menor do que com passo inteiro, menos carga poderá ser movida__. Os componentes que realizam esse controle são
 especializados e têm um nome próprio:
 
-=== Drivers de motores de passos
+==== Drivers de motores de passos
 
 O controle do motor de passo é uma tarefa tão específica que exige um componente específico. Apesar de a maioria
 dos microcontroladores terem capacidade para realizar esta tarefa, tê-la separada em um componente específico
@@ -3582,31 +3595,33 @@ para cada motor tem uma série de vantagens:
 
 * **Abstrai o controle dos motores**, simplificando. O microcontrolador não precisa saber se o motor está
 usando passo ou micropasso nem fazer os cálculos pra isso, só precisa enviar pulsos. E cada motor tem seu
-próprio driver.  * *Coloca proteções adicionais* de circuitos, minimizando as chances de correntes inversas,
+próprio driver.
+* *Coloca proteções adicionais* de circuitos, minimizando as chances de correntes inversas,
 sobretensões, picos de corrente, principalmente na alternância de correntes, incluindo uma “__Ponte H__”
 (um arranjo eletrônico especializado para comutações rápidas sem corrente de retorno).
-* **Ajusta correntes
-e tensões como necessário**. O driver é um dos poucos componentes de impressora 3D realmente adaptativo por
+* **Ajusta correntes e tensões como necessário**. O driver é um dos poucos componentes de impressora 3D realmente adaptativo por
 natureza: ele recebe uma variada gama de tensões e consegue abstraí-la para seu funcionamento. Um dos mais
 baratos disponíveis no mercado é o __Allegro A4988__, que aceita de 8 a 35V de entrada, funcionando portanto com
 praticamente todas as tensões utilizadas em circuitos de impressoras 3D. Para o motor, o driver funciona como uma
 fonte de corrente na forma de enviar o sinal necessário para que ele se mova; é a corrente, e não a tensão, a
 grandeza que determina o torque que o motor exerce. Os motores de mercado diferem em que corrente máxima recebem,
 ficando geralmente de 1A a 2,5A, e essa corrente máxima é configurável no driver -- por exemplo, no caso
-do A4988, fazemos isso mecanicamente, através de um diminuto potenciômetro na peça.  * *Separa fisicamente*
-o controle do motor do resto da placa, isolando um dos mais frequentes pontos de falha. Se o driver queimar, pode
+do A4988, fazemos isso mecanicamente, através de um diminuto potenciômetro na peça.
+* **Separa fisicamente** o controle do motor do resto da placa, isolando um dos mais frequentes pontos de falha. Se o driver queimar, pode
 simplesmente ser trocado: o resto da placa não sofre danos. Torna-se mais fácil ainda nas placas (como a RAMPS)
 que têm drivers encaixáveis ao invés de soldados. Nesse caso os drivers ainda representam economia ao não
 preencher os slots vagos e poder escolher o driver mais econômico para o modelo de seu motor. Na seção sobre
 RAMPS falamos mais sobre esses drivers.
 
 Assim como no caso dos motores de passo, os micropassos podem parecer meio abstratos a princípio, e nesse caso
-ver animações pode passar melhor o que está acontecendo. Recomendamos:
+ver animações pode passar melhor o que está acontecendo. Recomendamos essas referências:
 
 * https://www.youtube.com/watch?v=TWMai3oirnM[_https://www.youtube.com/watch?v=TWMai3oirnM_]
--- em inglês, usa um motor de passo bipolar para ilustrar o movimento.  *
-https://www.youtube.com/watch?v=Yt96gdpxV2g[_https://www.youtube.com/watch?v=Yt96gdpxV2g_] -- em português,
-explica os micropassos.  1.  [[modos-de-decaimento]] === Modos de Decaimento
+-- em inglês, usa um motor de passo bipolar para ilustrar o movimento.
+* https://www.youtube.com/watch?v=Yt96gdpxV2g[_https://www.youtube.com/watch?v=Yt96gdpxV2g_] -- em português,
+explica os micropassos.
+
+==== Modos de Decaimento
 
 A presença de bobinas faz os motores serem o que chamamos de __cargas indutivas__. São cargas que usam o fenômeno
 eletromagnético da indução para gerar trabalho, e uma característica marcante destas cargas é armazenar energia
@@ -3623,14 +3638,16 @@ a zero. Isso é feito desligando criteriosamente transistores do circuito numa s
 em até cerca de 200 nanossegundos. A contrapartida desse modo é que o rotor não é simplesmente parado no
 lugar: ele é “desengrenado” e leva um tempo para parar. Em outras palavras: a corrente zera rapidamente,
 o motor pára lentamente. Correntes mudando rapidamente geram maior interferência eletromagnética e ruído,
-o uso deste modo é responsável por um motor “barulhento”.  * *Decaimento Lento* (__slow decay mode__):
+o uso deste modo é responsável por um motor “barulhento”.
+* *Decaimento Lento* (__slow decay mode__):
 neste modo, uma metade da Ponte H é escolhida e desligada. Isso tem o efeito de criar um loop resistivo em
 que a corrente é lentamente drenada. Por outro lado, tal loop cria uma “freagem” no motor que faz com que
 pare bruscamente na posição em que está (ocasionando maior precisão de posicionamento). O quão rápido a
 corrente pára depende das características técnicas dos transistores (FETs) usados no circuito, em particular
 seus “RDSon”. Em outras palavras: a corrente zera lentamente, o motor pára rapidamente. Este modo também tem
 de forma geral melhor torque que o decaimento rápido. Em contrapartida, não funciona bem em maiores velocidades,
-visto que cada pulso é seguido de uma parada brusca.  * *Decaimento Misto* (__mixed decay mode__): Procura unir
+visto que cada pulso é seguido de uma parada brusca.
+* *Decaimento Misto* (__mixed decay mode__): Procura unir
 o melhor dos modos de decaimento rápido e lento, geralmente começando com o decaimento rápido e trocando para
 o decaimento lento em certa proporção do pulso. Diferentes drivers oferecem diferentes opções para esse modo;
 por exemplo, os DRV8825 têm uma proporção fixa, os DRV8811 permitem configurar as porcentagens de cada modo.
@@ -3644,10 +3661,11 @@ tratando especificamente sobre isso. A seguir (em inglês):
 * Como diminuir o ruído no seu driver: http://ebldc.com/?p=187[_http://ebldc.com/?p=187_]
 * Um exemplo aprofundado de análise de problemas de drivers, com a solução:
 http://www.engineerination.com/2015/02/drv8825-missing-steps.html?m=1[_http://www.engineerination.com/2015/02/drv8825-missing-steps.html?m=1_]
-1.  [[pwm-ou-você-estava-sendo-enganado]] === PWM, ou: você estava sendo enganado!
+
+==== PWM, ou: você estava sendo enganado!
 
 __Caro leitor, nós mentimos__. Até agora, tratamos de correntes e tensões como grandezas perfeitamente controladas
-em intensidade pelos circuitos. Isso não é bem verdade, e pra explicar por quê, vamos apresentar o PWM (__Pulse
+em intensidade pelos circuitos. Isso não é inteiramente verdade e pra explicar por quê, vamos apresentar o PWM (__Pulse
 Width Modulation__), ou __Modulação de Largura de Pulso__. Este é um conceito importante que vai se aplicar
 a muitos componentes de uma impressora 3D e é usado extensivamente em diversos tipos de aparelhos eletrônicos,
 principalmente os que trabalham com temperatura, carga e movimento.
@@ -3657,7 +3675,8 @@ componente eletrônico produza. Se pedimos uma corrente de 0,7812465272 Ampéres
 com este valor. Se queremos ao longo do tempo que a tensão siga a curva de uma senóide, podemos fazer isso com
 precisão. Se precisamos de uma potência que siga uma curva arbitrária ao longo do tempo, o ajuste será perfeito.
 
-image:image121.png[image,width=478,height=285]
+[[graficocurvaarbitrariapotencia]]
+image::image121.png[image,width=478,height=285,title="Uma curva arbitrária de potência que queremos entregar ao longo do tempo, com subidas e descidas suaves."]
 
 E isso tudo, é claro, só existirá em contos de fadas tecnológicos. Na vida real, há custos e aproximações
 e em impressoras de baixo custo como as repraps, um conjunto limitado de dispositivos eletrônicos a usar. O
@@ -3669,7 +3688,8 @@ ligada ou desligada) e gera uma saída da intensidade desejada. Neste caso terem
 do número de bits da entrada que usamos; se temos 8 bits, teremos 256 saídas possíveis (2^8^); se temos 16 bits,
 teremos 65.536 saídas possíveis (2^16^).
 
-image:image122.png[image,width=478,height=329]
+[[graficocurvapotenciadac]]
+image::image122.png[image,width=478,height=329,title="A nossa curva de potência desejada quando entregue por um DAC - Conversor Analógico-Digital - de 3 bits (8 intensidades de potência possíveis). Na prática, DACs baratos de mercado costumam ter entre 10 e 12 bits (1024 a 4096 intensidades discretas)."]
 
 Entretanto, ainda que DACs não sejam caros isoladamente, uma impressora 3D tem vários dispositivos a serem
 controlados e os microcontroladores baratos como o Arduino Mega não vêm com tais elementos. Se houver uma
@@ -3696,7 +3716,8 @@ Em muitos casos, e no caso específico das impressoras 3D de mercado, o PWM não
 pulso; tem também um pino de _sinal_ ou _direção_ (positiva ou negativa). Não ficaríamos restritos a 5V ou 0V;
 teríamos também -5V.
 
-image:image123.png[image,width=478,height=329]
+[[graficocurvatraduzidaprapwm]]
+image:image123.png[image,width=478,height=329,title="A nossa curva quando traduzida para PWM. Perceba como a duração de cada pulso no eixo do tempo corresponde à altura da onda. Nesse caso temos um PWM direcional, pois não nos limitamos a zero e um: também mandamos pulsos negativos."]
 
 *Mas se o sinal é diferente, o resultado também não será diferente?* Ou, já que estamos enviando um sinal _muito
 diferente_ do que iríamos mandar, o dispositivo no final desse circuito não vai fazer algo também diferente
@@ -3711,8 +3732,7 @@ Na “vida real”, além da implementação simplificada em circuitos digitais,
 
 * **Eficiência**: O PWM apresenta muito pouca perda de potência, geralmente ficando acima dos 90% de aproveitamento
 da energia^3^. Pelo mesmo motivo, aquece muito menos e roda mais frio que outros circuitos.
-* **Maior imunidade
-ao ruído**. Como o sinal é digital, apenas ligado ou desligado, é muito menos provável que uma interferência
+* **Maior imunidade ao ruído**. Como o sinal é digital, apenas ligado ou desligado, é muito menos provável que uma interferência
 o amplifique ou atenue o suficiente para tirar deste estado.
 
 Por outro lado, ele também tem desvantagens a serem consideradas. A maior delas é **gerar mais ruído

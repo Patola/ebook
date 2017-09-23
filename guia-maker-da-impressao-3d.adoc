@@ -24,6 +24,7 @@ v0.99r2, 17/11/2017
 :table-caption: Tabela
 :ascii-ids:
 :showcomments:
+:stem: latexmath
 :gitrepo: https://github.com/Patola/ebook
 :copyright: CC-BY-SA 4.0
 :text-alignment: justify
@@ -121,7 +122,7 @@ correção é também uma informação preciosa, uma lição aprendida, e para q
 correções feitas no documento serão anotadas em seu __Changelog__, no mesmo repositório em que ele se encontra.
 ====
 <<<
-= Agradecimentos
+== Agradecimentos
 Este livro teve muitos colaboradores indiretos, que auxiliaram o autor na resolução de dúvidas, sugestão de
 temas, correção de erros e demais contribuições que permitiram que o conteúdo saísse… __amaciado__. Ricardo
 Cavalini do __Makers__, com sua didática pró-ativa e avaliação metódica, exterminou muitos erros pontuais
@@ -207,7 +208,7 @@ se sinta impelido a retribuir. Até pequenas correções de informação serão 
 os _bugs_ do texto. E assim como Eric Raymond demonstra em __A Catedral e o Bazar__, “com olhos suficientes,
 todos os bugs são rasos”.
 
-= Introdução
+== Introdução
 Quando se fala em Impressão 3D, a maior surpresa para quem é apresentado à tecnologia é saber que ela é bastante
 antiga. As primeiras tentativas de fabricar peças computadorizadas de forma aditiva surgiram ainda na década
 de 1970 e finalmente na década de 80 foram formalizadas e tiveram suas primeiras patentes. Mas o que aconteceu,
@@ -220,7 +221,7 @@ pontos em comum -- e principalmente trabalhar com ela.
 
 O melhor jeito de começar uma explicação, entretanto, é com definições:
 
-== O que é, afinal, Impressão 3D?
+=== O que é, afinal, Impressão 3D?
 
 Formalmente, a Impressão 3D é definida pela _criação de um objeto de três dimensões usando processos
 aditivos._ Três dimensões significa que o objeto tem volume -- altura, largura e comprimento -, em comparação
@@ -268,9 +269,9 @@ compreensão geral do assunto.
 2 - https://thepiratebay.org/blog/203[_https://thepiratebay.org/blog/203_]
 ====
 
-= Histórico
+== Histórico
 
-== Fotoescultura e topografia
+=== Fotoescultura e topografia
 
 Em 1860 o artista francês François Willème criou um processo em que colocava o objeto de interesse em uma
 plataforma rodeado por 24 câmeras; fotografava para obter a silhueta de cada ângulo; e usava um processo usando
@@ -319,7 +320,7 @@ transversais do modelo por três diferentes aparatos, dois deles sendo reconhec�
 H Kodama - Review of Scientific Instruments, 1981 - scitation.aip.org
 ====
 
-== 3D Systems, DTM e Stratasys
+=== 3D Systems, DTM e Stratasys
 
 A primeira patente relacionada a impressão 3D veio em 16 de julho 1984, mas de franceses liderados por Alain Le
 Mehaute. Entretanto, a patente foi abandonada pelas instituições que fundavam a pesquisa e Charlie (Chuck) Hull,
@@ -355,7 +356,7 @@ financiamento para criar a empresa **Stratasys**.
 [[fotosstratasys]]
 image:image8.jpeg[image,width=615,height=383]
 
-== Os anos 90 e primeira metade dos anos 2000
+=== Os anos 90 e primeira metade dos anos 2000
 
 Após estes primeiros empreendedores darem a ignição na indústria de impressão 3D, os anos 90 e início dos
 2000 tiveram uma explosão de novas técnicas de manufatura aditiva e esses anos representaram o amadurecimento da
@@ -376,7 +377,7 @@ SLM mas usando um feixe de elétrons e consegue trabalhar com materiais com alt�
 [[lomartefinal]]
 image:image9.png[image,width=642,height=535]
 
-== O rompimento: o projeto RepRap
+=== O rompimento: o projeto RepRap
 
 [[fotoreprap]]
 image:image10.jpeg[image,width=642,height=379]
@@ -500,7 +501,7 @@ https://all3dp.com/history-of-the-reprap-project/[_https://all3dp.com/history-of
 http://www.3dprinterworld.com/article/aleph-objects-enjoys-809-percent-two-year-revenue-growth[_http://www.3dprinterworld.com/article/aleph-objects-enjoys-809-percent-two-year-revenue-growth_]
 ====
 
-== Makerbot (2009)
+=== Makerbot (2009)
 
 [[fotomakerbot]]
 image::image13.jpeg[image,width=642,height=434]
@@ -548,7 +549,7 @@ uma companhia diminuta perto do que era.
 http://www.openbeamusa.com/blog/2014/5/22/stay-classy-makerbot[_http://www.openbeamusa.com/blog/2014/5/22/stay-classy-makerbot_]
 ====
 
-== A Alvorada da SLA -- Formlabs e B9 Tech
+=== A Alvorada da SLA -- Formlabs e B9 Tech
 
 Ainda que este curso tenha maior foco na tecnologia FFF, é importante notar uma outra técnica de impressão 3D
 que está tendo uma trajetória não muito diferente das de material fundido. A tecnologia é a estereolitografia
@@ -596,7 +597,7 @@ empresas e indivíduos foram pelo mesmo caminho e você encontra comunidades fer
 site “Build Your Own SLA” (http://buildyourownsla.com/[_http://buildyourownsla.com_]) ou do projeto OpenSLA
 (https://plus.google.com/communities/109609533907401814291[_https://plus.google.com/communities/109609533907401814291_]).
 
-=== A Alvorada da SLS?
+==== A Alvorada da SLS?
 
 A Formlabs não descansou em cima dos méritos. Além de continuar aprimorando e colocando sensores e controladores
 nos novos modelos e de liberar certos códigos de forma aberta e multiplataforma, recentemente lançou uma solução
@@ -606,7 +607,7 @@ de impressão em lote automatizada (__Form Cell__) e agora uma impressora 3D SLS
 [[fotoformfuse1sls]]
 image::image19.png[image,width=642,height=409]
 
-== A Academia e a Impressão 3D
+=== A Academia e a Impressão 3D
 
 Internacionalmente, a impressão 3D e suas várias tecnologias não eram muito conhecidas ou popularizadas (por
 causa das patentes) até começar a tomar proporções industriais, no final da década de 90. Como consequência
@@ -667,7 +668,7 @@ maximizing customizability by breeding the means of production.
 replicating rapid prototyper. __Robotica__, __29__(01), 177-191.
 ====
 
-== academia.edu e Joshua M. Pearce
+==== academia.edu e Joshua M. Pearce
 
 No mundo de _facebook_ de hoje, é notório que as redes sociais de internet são um poder à parte, uma forma de
 organização com grande impacto sócio-econômico global, e com a capacidade efetiva de dirigir a mudança de
@@ -714,7 +715,7 @@ https://mtu.academia.edu/JoshuaPearce[_https://mtu.academia.edu/JoshuaPearce_]
 2 - http://www.appropedia.org/User:J.M.Pearce[_http://www.appropedia.org/User:J.M.Pearce_]
 ====
 
-== Ainda sobre os “papers não-acadêmicos”
+==== Ainda sobre os “papers não-acadêmicos”
 
 Já no início desta obra fomos claros quanto às referências informais. Estamos num período
 de mudança de papéis sociais, não há dúvidas disso. E embora tenhamos ressaltado o papel da academia como uma
@@ -737,8 +738,8 @@ artigo “Polyholes”^1^ do usuário experimentalista _nophead_ (Chris Palmer).
 http://hydraraptor.blogspot.com.br/2011/02/polyholes.html[_http://hydraraptor.blogspot.com.br/2011/02/polyholes.html_]
 ====
 
-== E no Brasil?
-=== O Fork Comunitário:
+=== E no Brasil?
+==== O Fork Comunitário:
 Do GuiaCNC para a RepRapBR
 
 O projeto RepRap foi -- e continua sendo -- o catalisador de oportunidades para que pessoas criativas, engenhosas
@@ -752,7 +753,7 @@ dada a “partida”, começaram a realizar encontros de confraternização e tr
 empreitada. Este foi o primeiro e-mail do grupo que se intitulou “Grupo de Estudo RepRapBR” (o remetente foi
 __Alain Mouette__, que já acompanhava há anos o projeto RepRap):
 
-[IMPORTANT][icon=None]
+[IMPORTANT,icon=None]
 ====
 [small]`Este é o convite oficial para participação do Grupo de Estudo para RepRap. +
  +
@@ -839,7 +840,7 @@ São eles o projeto __Mão3D__, de próteses impressas baratas; as várias inici
 _Cícero Moraes_ e __Paulo Miamoto Dias__; o instituto de pesquisa CTI Renato Archer; a empresa brasileira __Makers
 Brasil__, intimamente ligada à explosão do movimento Maker; e os grupos de pesquisa LAPAC da Unicamp e GPMA do ITA.
 
-=== Makers Brasil
+==== Makers Brasil
 
 Empresa inovadora no mercado __Maker__, começou seu primeiro curso e workshop de impressão 3D já em 2013 (já
 tendo educado mais de mil alunos só em impressão 3D em 2016). Fundada em 2012 por Ricardo Cavallini, criador do
@@ -855,7 +856,7 @@ http://www.makers.net.br/[_http://www.makers.net.br_].
 [[fotomakersnet]]
 image::image24.png[image,width=642,height=571]
 
-=== LAPAC -- Universidade Estadual de Campinas
+==== LAPAC -- Universidade Estadual de Campinas
 
 A Universidade Estadual de Campinas, uma das mais proeminentes do país em pesquisa e extensão, não poderia
 deixar de participar desta tendência. Desde sua criação em 2006, o _Laboratório de Automação e Prototipagem
@@ -883,7 +884,7 @@ http://www.fec.unicamp.br/\~lapac/publicacoes.htm[_http://www.fec.unicamp.br/~la
 adicionais podem ser encontrados no currículo _lattes_ da chefe do Laboratório, Gabriela Celani:
 http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4792067H6[_http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4792067H6_]
 
-=== O Projeto Mão3D
+==== O Projeto Mão3D
 
 Gerido e criado pela Professora Doutora Maria Elizete Kunkel em janeiro de 2015, o projeto Mão3D, inspirado
 pelo iniciativa internacional de auxílio a desabilitados “Enabling the Future” e seu projeto comunitário de
@@ -935,7 +936,7 @@ Das colaborações do projeto Mão3D, uma que se destaca é a colaboração com 
 Pesquisa em Manufatura Aditiva do Instituto Tecnológico da Aeronáutica, GPMA/ITA. O desafio é tão grande que,
 como se diria no dialeto popular, os universitários tiveram que chamar os _outros_ universitários!
 
-=== O GPMA/ITA
+==== O GPMA/ITA
 
 O plástico das impressoras 3D de fabricação de filamento fundido é razoavelmente resistente e serve para
 próteses de mão que não passam por muitos estresses mecânicos. Mas a coisa muda de figura quando consideramos
@@ -966,7 +967,7 @@ para que qualquer usuário -- maker, profissional, industrial ou doméstico -- p
 que pagar fortunas pela informação. O grupo centraliza sua interação com a comunidade e os links dos artigos
 em sua fanpage no facebook: https://www.facebook.com/GPMA.ITA/[_https://www.facebook.com/GPMA.ITA/_]
 
-=== A Fotogrametria de Cícero Moraes e Paulo Miamoto Dias
+==== A Fotogrametria de Cícero Moraes e Paulo Miamoto Dias
 
 Como desdobramento dos trabalhos de Cícero e Paulo em colaboração com o médico veterinário Roberto Fecchio,
 as técnicas foram aplicadas para a digitalização de lesões em animais para sua reabilitação protética. Algum
@@ -1022,7 +1023,7 @@ image::image29.png[image,width=632,height=544]
 de uma instituição governamental que é central ao desenvolvimento da impressão 3D industrial e comunitária
 no Brasil: muitos de seus trabalhos foram fabricados por impressoras 3D do CTI Renato Archer.
 
-=== CTI -- Centro de Tecnologia da Informação Renato Archer
+==== CTI -- Centro de Tecnologia da Informação Renato Archer
 
 É impossível falar de impressão 3D no Brasil sem mencionar o trabalho do Centro de Tecnologia da
 Informação Renato Archer, popularmente conhecido como “CTI”, em especial o seu Departamento de Tecnologias
@@ -1040,7 +1041,7 @@ a _Andreas Vesalius_ (1514-1564, considerado o “pai da anatomia moderna”) e 
 sob a GPL versão 2, disponível para Mac OS X, Linux e Windows.
 
 [[screenshotinvesalius]]
-image::mage30.jpeg[image,width=593,height=438]
+image::image30.jpeg[image,width=593,height=438]
 
 [[colagemcti]]
 image::image31.png[image,width=586,height=520]
@@ -1051,7 +1052,7 @@ com a queda da patente, já em 2007 tendo colaborado com um livro organizado pel
 [[livromariovolpato]]
 image::image32.jpeg[image,width=352,height=570]
 
-=== Outros pioneiros e divulgadores
+==== Outros pioneiros e divulgadores
 
 A tarefa de reconstrução histórica nunca é completa, ainda mais no Brasil onde a informação é desencontrada e
 esparsa. Certamente não citamos todas as pessoas que contribuíram para a divulgação e enriquecimento do espaço
@@ -4024,9 +4025,10 @@ um diodo no meio do slot de driver do eixo X, o diodo D1, a alimentação é rep
 ele é ligado em conjunto com o resto da impressora. Se a tensão[[FEITO_ramps]] a ser usada pelo conjunto não
 for 12V, ou se a corrente for sujeita a interferências, esse diodo deve ser removido e a conexão deixada em aberto.
 
-image:image132.png[image,width=586,height=836]
+[[diagramadasligacoesdaramps]]
+image:image132.png[image,width=586,height=836,align="center",title="Esquema de ligação dos fios da RAMPS 1.4 do site da reprap, traduzido para português. O 'SDRAMPS' na figura (um leitor de cartão SD) raramente é utilizado; normalmente se colocam nesses conectores e na fileira logo em frente um adaptador para ligação a um display LCD que já vem com leitor de SD embutido. Fonte da figura: reprap.org"]
 
-=== O que um controlador de impressão 3D deve ter
+.O que um controlador de impressão 3D deve ter
 
 Baseado no desenho esquemático das conexões da RAMPS, essa é uma informação que já podemos inferir. Basicamente,
 os seguintes componentes são necessários (a lista não é exaustiva):
@@ -4057,19 +4059,16 @@ de 11A, para a mesa. Outros elementos de aquecimento possível são câmara de i
 * *As saídas de energia das ventoinhas.* No caso a RAMPS a saída D9 pode ser usada para ventoinha ao invés
 de um segundo extrusor, em outros controladores de impressão -- como a _RUMBA_ -- trilhas especiais de média
 potência são reservadas para isso, permitindo a cada extrusor ter sua própria ventoinha controlada.
-* **Saídas
-para os motores**. A RAMPS pode controlar até 5 motores independentes. Tipicamente os motores dos eixos X, Y e
+* **Saídas para os motores**. A RAMPS pode controlar até 5 motores independentes. Tipicamente os motores dos eixos X, Y e
 Z mais dois extrusores, E0 e E1. A saída do eixo Z tem dois conectores para que se possam controlar dois motores
 de forma idêntica, levando a contagem total a 6 motores. Outros microcontroladores podem ter mais saídas, como a
 _Azteeg X3 Pro_ que tem 8 saídas de motores.  * *Pinos de entrada para sensores eletrônicos* como __endstops__,
 __termistores__, _sensores de diâmetro de filamento_ e outros componentes.  * *Pinos de saída para dispositivos
 microcontroláveis extras* como servo motor de sonda Z, bloqueador de filamento e outros componentes.
-* **Drivers
-de motores, ou slots para drivers**. Os motores de passos precisam de drivers e eles podem estar soldados na placa
+* **Drivers de motores, ou slots para drivers**. Os motores de passos precisam de drivers e eles podem estar soldados na placa
 controladora ou, como na RAMPS, encaixáveis em slots. Como são entradas para drivers configuráveis, têm também
 uma fileira de três pares de pinos para configuração dos drivers através de __jumpers__.
-* **Entrada USB
-ou algum outro meio de comunicação com computadores de mesa**. Embora algumas impressoras tenham outros meios
+* **Entrada USB ou algum outro meio de comunicação com computadores de mesa**. Embora algumas impressoras tenham outros meios
 como rede sem fio ou ethernet, a USB continua sendo o jeito mais popular por ser um dispositivo robusto, barato
 e compatível com qualquer computador moderno. Esta comunicação pode ser usada de vários modos: impressão em
 tempo real, transmissão do arquivo para imprimir, atualização de firmware, controle da impressora ou mudaça
@@ -4091,9 +4090,10 @@ dos pontos e velocidade para gerenciá-la a contento. Existem no mercado, no ent
 gerenciamento de memória, gráficos e animações. Assim, mesmo o microcontrolador mais simples pode ter saída
 gráfica elegante e até controles por toque.
 
-image:image133.png[image,width=642,height=375]
+[[controladoresdelcd]]
+image::image133.png[image,width=642,height=375,align="center",title="Controladores de LCD comumente encontrados em repraps. À esquerda, o Smart Controller, que tem ainda um 'buzzer' para bipes, um botão giratório pressionável e um minibotão para reset. Perceba ainda que a ligação à RAMPS é feita através de um adaptador. À direita o 'Full Graphics' Smart Controller, maior e mais ‘quadrado’. Fonte: reprap.org"]
 
-=== Um pouco mais sobre os drivers da RAMPS
+.Um pouco mais sobre os drivers da RAMPS
 
 Passamos sobre o funcionamento dos _drivers_ ao explicarmos motores de passo, mas é necessário também aprender a
 lidar com eles na prática, inclusive torná-los prontos pra uso. Drivers que já são integrados na própria placa
@@ -4113,7 +4113,8 @@ configurado pelo arranjo de três jumpers abaixo do encaixe do driver. Geralment
 “conectado” equivalem ao número máximo de micropassos do driver, e outros arranjos a número menor de
 micropassos.
 
-image:image134.png[image,width=642,height=469]
+[[jumpersdaramps]]
+image::image134.png[image,width=642,height=469,align="center",title="Slots de extrusor (E0 e E1) em uma RAMPS e seus pinos de jumpers. Nos pinos para E1 (círculo 1), os jumpers estão todos desconectados, significando que não haverá micropassos - 1:1. Nos pinos para E0 (círculo 2), todos os jumpers estão conectados, configurando o driver para divisão de micropassos 1:16 se for um modelo A4988. Foto do autor."]
 
 * **Corrente máxima que suporta**. É importante que o driver seja “compatível” com o motor usado. Alguns
 motores podem exigir alta corrente como 1,8A para funcionamento (aparece nas especificações como corrente
@@ -4125,40 +4126,48 @@ terá que usar dissipadores de alumínio). Geralmente os drivers variam de capac
 de um driver com o motor ligado a ele, é bastante recomendado um procedimento de “afinação” que evite que o
 driver entregue corrente demais para o motor, sobrecarregando e esquentando todo o conjunto, ou entregue corrente
 de menos, perdendo passos. O procedimento tem que ser feito com a eletrônica energizada e conectada e, idealmente,
-a corrente deveria ser medida.  + Medir uma corrente em um circuito é um procedimento difícil. Envolve interromper
+a corrente deveria ser medida.  +
+Medir uma corrente em um circuito é um procedimento difícil. Envolve interromper
 o circuito por onde a corrente passa e inserir um elemento medidor de baixa resistência elétrica para que ela
-seja forçada a passar por ele.  + No entanto, no caso do driver, existe um procedimento mais fácil. Uma tensão
-que lhe é característica, ou *Tensão de Referência* (“**Vref**” - reference voltage), pode ser medida
+seja forçada a passar por ele.  +
+No entanto, no caso do driver, existe um procedimento mais fácil. Uma tensão
+que lhe é característica, ou *Tensão de Referência* (“**V~ref~**” - reference voltage), pode ser medida
 com facilidade, e a corrente que nos interessa calculada a partir de uma __fórmula__. Esta fórmula aparece no
 _datasheet_ do driver, mas quando se compra drivers de lugares baratos como a China, ele pode não ser facilmente
-encontrável, e mesmo a marca do driver não facilmente identificável.  + Neste caso, ainda é possível saber a
+encontrável, e mesmo a marca do driver não facilmente identificável. +
+Neste caso, ainda é possível saber a
 fórmula para a tensão de referência. Os drivers do mesmo tipo (A4988, DRV8825, etc.) usam a mesma fórmula, só
-variando um componente que é o **Sense Resistor**, ou **Rs**. É um resistor SMD que aparece em dobro na pequena
+variando um componente que é o **Sense Resistor**, ou **R~S~**. É um resistor SMD que aparece em dobro na pequena
 plaquinha do driver, mas como os designs variam (até para o mesmo tipo), sua localização é variável. O valor
-do Rs é indicado no __datasheet__, mas já estamos assumindo que não o temos em mão: portanto, o primeiro passo
+do R~S~ é indicado no __datasheet__, mas já estamos assumindo que não o temos em mão: portanto, o primeiro passo
 é saber localizar, no driver, os componentes de interesse. O primeiro ponto de interesse é saber onde ficam os
 “terras” do driver. É indicado na própria placa, na parte de baixo:
 
-image:image135.png[image,width=642,height=332]
+[[fotoa4988edrv8825_1]]
+image::image135.png[image,width=642,height=332,align="center",title="Os terras dos drivers estão indicados em azul claro."]
 
 Virando os drivers, podemos identificar o resto dos componentes nas placas:
 
-image:image136.png[image,width=601,height=616]
+[[fotodrv8825ea4988_1]]
+image::image136.png[image,width=601,height=616,align="center",title="Os drivers mais populares usados em RAMPS, o A4988 (em verde, mas encontrado também em vermelho) e o DRV8825 (em roxo). Os pontos de 'terra' são os que achamos na foto anterior. O potenciômetro é o disquinho de metal giratório, indicado em laranja. E o R~S~ são os 'sense resistor"'' com uma lupa, conseguimos ler tanto para o DRV8825 quanto o A4988 o valor 'R100' que indica 100mΩ, ou seja, 0,1Ω. **Nota**: perceba que para a mesma orientação, o potenciômetro do DRV8825 aparece na parte superior e o do A4988 na parte inferior."]
 
-No caso do DRV8825, implementações dele que usam _Rs_ diferente de 0,1Ω são virtualmente inexistentes, mas
+No caso do DRV8825, implementações dele que usam _R~S~_ diferente de 0,1Ω são virtualmente inexistentes, mas
 para o A4988 os valores de 0,05Ω e 0,2Ω são comumentes encontrados.
 
-Vamos então, consultar os respectivos datasheets e encontrar as fórmulas para saber a _Vref_ desejada em função
+Vamos então, consultar os respectivos datasheets e encontrar as fórmulas para saber a _V~ref~_ desejada em função
 da corrente máxima.
 
 * DRV8825 -- o datasheet do driver pode ser encontrado na página da Texas Instruments:
-http://www.ti.com/lit/ds/symlink/drv8825.pdf[_http://www.ti.com/lit/ds/symlink/drv8825.pdf_]
-+ A fórmula da corrente -- chamaremos de _Imax_ - em função da _Vref_ e de _Rs_ é: + Como
-sabemos que _Rs_ é sempre 0,1, substituímos: + ou, colocando _Vref_ em função de __Imax__:
+http://www.ti.com/lit/ds/symlink/drv8825.pdf[_http://www.ti.com/lit/ds/symlink/drv8825.pdf_] +
+A fórmula da corrente -- chamaremos de _I~max~_ - em função da _V~ref~_ e de _R~s~_ é:
+
+stem:[I_{max}=\frac{V_{ref}}{5 \cdot R_s}]
+
+Como sabemos que _Rs_ é sempre 0,1, substituímos: + ou, colocando _Vref_ em função de __Imax__:
 + Em outras palavras: se o DRV8825 está ligado a um motor que aceita corrente máxima de 1,5A,
 a tensão medida em Vref deve ser:
 * **A4988**: o datasheet do driver é encontrado na página da Allegro:
-http://www.allegromicro.com/~/media/Files/Datasheets/A4988-Datasheet.ashx[__http://__www.allegromicro.com/~/media/Files/Datasheets/A4988-Datasheet.ashx]:
+http://www.allegromicro.com/\~/media/Files/Datasheets/A4988-Datasheet.ashx[__http://__www.allegromicro.com/~/media/Files/Datasheets/A4988-Datasheet.ashx]:
 + O que equivale a + No caso de usarmos um motor com corrente máxima de 1,2A e o nosso driver acima com Rs de
 0,1Ω, a fórmula fica:
 
@@ -12629,13 +12638,10 @@ uma “verruga” no plástico.  * *Z wobble* -- padrão regular de desníveis d
 sentido vertical causado por diversos fatores, entre eles diferenças de encaixes dos sulcos da barra roscada em
 diferentes alturas.
 
-[[section-16]] =
-
-=  +
-
+<<<
 = Sobre o autor
 
-image:image435.jpeg[image,width=285,height=213]Cláudio Luís Marques Sampaio, de apelido de internet
+image:image435.jpeg[image,width=285,height=213,align="left",float="right"]Cláudio Luís Marques Sampaio, de apelido de internet
 __Patola__, é graduado em engenharia de computação e tem mestrado em biologia molecular e genética, ambos pela
 Universidade Estadual de Campinas. Desenvolvedor de Software, Administrador de Sistemas, Educador e Palestrante, é
 apaixonado por embarcados, pelo movimento Maker, por impressoras 3D e, claro, pela sua esposa Kimberly. Considera que

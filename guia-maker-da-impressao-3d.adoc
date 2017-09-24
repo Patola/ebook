@@ -971,7 +971,7 @@ em sua fanpage no facebook: https://www.facebook.com/GPMA.ITA/[_https://www.face
 
 Como desdobramento dos trabalhos de Cícero e Paulo em colaboração com o médico veterinário Roberto Fecchio,
 as técnicas foram aplicadas para a digitalização de lesões em animais para sua reabilitação protética. Algum
-tempo depois, protótipos de próteses foram impressos, até que o primeiro caso bem-sucedido foi o da jabota
+tempo depois, protótipos de próteses foram impressos, até que o primeiro caso bem-sucedido foi o do jabuti
 Freddy. Outros animais também foram reabilitados com a integração de modelagem e impressão 3D, materiais dentários
 e cirurgia veterinária. O grupo voluntário que formou-se a partir desta parceria, terminou por atender mais 12
 animais, e segue em atividade, ganhando a alcunha de ‘Animal Avengers’, após uma brincadeira que comparava as
@@ -983,7 +983,7 @@ Nos trabalhos da dupla (muitas vezes com outros colaboradores), Cícero geralmen
 em vários veículos de mídia nacionais e internacionais, incluindo o programa Fantástico da Rede Globo de
 Televisão. Seus vídeos educativos no youtube baseados nos trabalhos que faz contribuíram para sua fama, assim
 como seus artigos de blog e até participação em artigos científicos, com seu maior trabalho sendo o seu e-book
-em português, em c-oautoria com Miamoto, que ensina Reconstrução Facial Forense usando softwares livres e gratuitos.
+em português em co-autoria com Miamoto, que ensina Reconstrução Facial Forense usando softwares livres e gratuitos.
 
 [[fotociceroepaulo]]
 image::image28.jpeg[image,width=642,height=435]
@@ -1685,7 +1685,7 @@ pequenas ou bem localizadas, com grande chance de introduzir erros na malha.
 apesar de ser em um material só - e você tem uma impressora FFF com apenas um extrusor, considere adquirir uma
 outra impressora com dois extrusores para essas ocasiões. A razão é que você poderá usar nela filamentos
 dissolvíveis que permitem imprimir suportes removíveis por imersão no acabamento. Tais filamentos, tanto por
-seu preço quanto por sua especificade, tornam o serviço consideravelmente mais custoso, mas muitos clientes
+seu preço quanto por sua especificidade, tornam o serviço consideravelmente mais custoso, mas muitos clientes
 privilegiam a qualidade e complexidade da forma e pagarão o necessário. É um diferencial valioso.
 * Ferramentas: procure não se fiar nunca em apenas uma ferramenta. Existem diversas ferramentas “ajudantes” e analíticas
 que aprimoram bastante o workflow de fabricação e não têm equivalentes, ou têm equivalentes inferiores mesmo
@@ -1891,7 +1891,7 @@ responder isso, vamos separar as impressoras 3D em suas partes componentes:
 variações, de forma geral entram nas seguintes categorias principais:
 
 .Enclausuramento
-[width="100%",cols="^s,^m,e",frame="topbot",options="header"]
+[width="100%",cols="^1s,^2m,2e",frame="topbot",options="header"]
 |====
 | Tipo		| Exemplo					| Descrição
 | Aberta 	| image:image61.png[image,width=141,height=189]	| É possível alcançar a peça impressa diretamente.
@@ -1929,14 +1929,14 @@ de sinalização e a utilização em impressoras 3D é bem representada pelas m�
 .Arranjo Mecânico e Cinemática
 
 .Transformações de eixos.
-[width="100%",cols="^s,^m,e",frame="topbot",options="header"]
+[width="100%",cols="^1s,^2m,2e",frame="topbot",options="header"]
 |====
 | Tipo		| Exemplo								| Descrição
-| Cartesiana	| image:image54.jpeg[image,width=138,height=149]			| [small]#Eixos X, Y e Z correspondem ao plano cartesiano.#
-| Delta		| image:image57.png[image,width=122,height=255]				| [small]#X, Y e Z são transformadas trigonométricas das posições dos três pilares (colunas verticais).#
-| CoreXY 	| image:reprapxy-pequeno.jpg[reprapxypequeno,width=533,height=400]	| [small]#X e Y são transformadas lineares de acordo com o padrão "CoreXY" de deslocamento. Por ser uma transformação relativamente simples de coordenadas, informalmente costuma ser tratada como cartesiana.#
-| SCARA		| image:scara.png[scara,width=601,height=710]				| [small]#**S**elective **C**ompliance **A**rticulated **R**obot **A**rm, ou Braço Robótico Articulado de Conformidade Seletiva, é o nome dessa transformação de eixos comumente usada em máquinas industriais "pick and place" e de linha de montagem de veículos.#
-| Polar		| image:polartheta.png[polartheta,width=466,height=385]			| [small]#Coordenadas polares, ou seja, baseadas em ângulos, são populares nos campos matemáticos, mas em impressoras 3D não são muito práticos, servindo mais como prova de conceito. Alguns modelos de impressora têm apenas um ou dois eixos polares, e os restantes cartesianos.#
+| Cartesiana	a| image:image54.jpeg[image,width=138,height=149]			| [small]##Eixos X, Y e Z correspondem ao plano cartesiano.##
+| Delta		a| image:image57.png[image,width=122,height=255]				| [small]##X, Y e Z são transformadas trigonométricas das posições dos três pilares (colunas verticais).##
+| CoreXY 	a| image:reprapxy-pequeno.jpg[reprapxypequeno,width=533,height=400]	| [small]##X e Y são transformadas lineares de acordo com o padrão "CoreXY" de deslocamento. Por ser uma transformação relativamente simples de coordenadas, informalmente costuma ser tratada como cartesiana.##
+| SCARA		a| image:scara.png[scara,width=601,height=710]				| [small]##**S**elective **C**ompliance **A**rticulated **R**obot **A**rm, ou Braço Robótico Articulado de Conformidade Seletiva, é o nome dessa transformação de eixos comumente usada em máquinas industriais "pick and place" e de linha de montagem de veículos.##
+| Polar		a| image:polartheta.png[polartheta,width=466,height=385]			| [small]##Coordenadas polares, ou seja, baseadas em ângulos, são populares nos campos matemáticos, mas em impressoras 3D não são muito práticos, servindo mais como prova de conceito. Alguns modelos de impressora têm apenas um ou dois eixos polares, e os restantes cartesianos.##
 |====
 
 Apesar de separarmos as impressoras 3D de mercado nessas cinco categorias, a verdade é que existem tantos sistemas
@@ -2004,7 +2004,7 @@ o tracionador ou até o filamento.
 * *Lentidão em algumas operações* -- as impressoras reprap são, em sua
 maioria, baseadas em um microcontrolador open-source __Arduino Mega__, que embora tenha em seus 16 MHz velocidade
 mais que suficiente para guiar os três eixos e temperaturas de uma impressão comum, não tem circuito dedicado
-para operações com ponto flutuante e portanto faz cada operação matemática de transformação de coordenadas
+para operações com ponto flutuante - fazendo cada operação matemática de transformação de coordenadas
 de forma não muito eficiente, por software. Isso torna-se visível quando a delta tem um display LCD, que com o compartilhamento
 de tempo entre os cálculos no momento em que a impressora imprime, fica com respostas visivelmente lentas para
 interação com o usuário. Isso é um problema que vem sendo resolvido naturalmente com a substituição do
@@ -2239,8 +2239,9 @@ geralmente são usadas barras de 8mm (nas impressoras de tamanho médio, como Pr
 como a Sethi3D BB). É desejável que sejam barras “cromadas” pois o cromo dá resistência e diminui o
 atrito da superfície (especialmente importanto se for uma bucha).
 * *Polias e correias (GT2 e equivalentes)* +
-São estruturas usadas em sistemas de engrenagens e * *Extrusões ou perfis de
-alumínio* + Estruturas muito usadas para o arcabouço estrutural das impressoras 3D -- como os pilares de uma
+São estruturas usadas em sistemas de engrenagens de transferência de força e energia cinética. As __**polias**__ são as peças giratórias, presas a um eixo geralmente de metal, e no caso das repraps quase sempre com sulcos para o encaixe das __**correias**__. As __**correias**__, por sua vez, são cintas de material flexível mas inextensível (não sofrem extensão elástica) presas às polias ou engrenagem por atritos ou sulcos. A polia de encaixe ou fricção transforma movimento rotacional para linear para a correia, e a correia transforma movimento linear para rotacional. As polias (e correias) lisas servem como rolamentos, não oferecendo resistência ou tração e tendo papel coadjuvante na movimentação. As correias e polias usadas em impressão 3D têm uma nomenclatura que reflete seu formato de dente ("perfil"), muitas vezes tendo também o espaçamento entre os dentes. Um exemplo é o perfil **Poly Chain GT2**(R), bastante popular, com 2mm de espaço por dente. Geralmente as GT2 de 6mm (de largura) são usadas nas impressoras 3D, com o GT5 sendo uma escolha frequente em modelos maiores. As correias usam fios de aço (chamados de "alma de aço") inseridos no material flexível para garantir a inextensibilidade.
+* **Extrusões ou perfis de alumínio** +
+Estruturas muito usadas para o arcabouço estrutural das impressoras 3D -- como os pilares de uma
 delta ou as colunas de uma cartesiana -- devido à sua uniformidade dimensional, especialmente retidão precisa. A
 “Extrusão” se refere ao processo de fabricação do material, em que o alumínio é extrudado por um orifício
 de formato bem determinado; o nome “perfil” refere, por sua vez, à forma deste orifício. Uma forma bastante
@@ -2266,50 +2267,54 @@ o movimento rotatório de um pinhão de motor em movimento linear em uma direç�
 fabricadas no entanto com este objetivo e além do mais baixo aproveitamento energético do movimento do motor,
 têm baixa precisão comparada ao mecanismo correto, o __fuso__.^1^ Seus filetes bem finos têm um tempo de vida
 útil curto limitado pelo desgaste e sua fabricação geralmente não os faz ser completamente retos. No entanto,
-são vendidos por metro e seu custo é baixíssimo.  + As barras roscadas são normalmente usadas no eixo Z
+são vendidos por metro e seu custo é baixíssimo. +
+As barras roscadas são normalmente usadas no eixo Z
 (o vertical) que é por isso o eixo mais lento; uma volta completa de 360°C corresponde a uma distância muito
 pequena no comprimento da barra, e a uma distância bem maior quando o movimento é feito por correias nos outros
-eixos. As barras roscadas mais comuns em impressoras 3D de baixo custo são a M5 (5mm de diâmetro) e M8 (8mm).
-+ A barra roscada é presa ao pinhão do motor por um elemento com alguma flexibilidade para amortecer folgas e
+eixos. As barras roscadas mais comuns em impressoras 3D de baixo custo são a M5 (5mm de diâmetro) e M8 (8mm). +
+A barra roscada é presa ao pinhão do motor por um elemento com alguma flexibilidade para amortecer folgas e
 desvios de imprecisões mecânicas. Este elemento pode ser um _acoplador flexível de alumínio_ ou algum tubo
-conector de material resistente, como nylon.  + A distância entre dois fios da rosca no comprimento da barra
+conector de material resistente, como nylon. +
+A distância entre dois fios da rosca no comprimento da barra
 é o __passo__, em inglês _pitch_ ou __lead__. Como as barras roscadas são na verdade um tipo de parafuso,
 usam a mesma denominação deles -- como “M5” ou “M8” pra designar seu diâmetro.
 * *Fusos de rosca* +
 Diferentemente das barras roscadas, _fusos_ são elementos industriais especificamente criados para um elemento
 deslizante em seu comprimento, transformando movimento rotativo do pinhão do motor em linear. Alguns motores
 já vêm mesmo com o fuso fisicamente integrado a eles, como se fosse um pinhão, para evitar qualquer folga no
-mecanismo (Figura 2). O fuso pode ser conectado por um acoplador de alumínio como no caso da barra roscada também.
-+ Fusos são definidos pelo elemento móvel que usam, a __castanha__. Quando usam uma peça deslizante simples,
+mecanismo (Figura XX). O fuso pode ser conectado por um acoplador de alumínio como no caso da barra roscada também. +
+Fusos são definidos pelo elemento móvel que usam, a __castanha__. Quando usam uma peça deslizante simples,
 geralmente de cobre ou poliacetal, são chamados simplesmente de fusos trapezoidais. Quando usam um elemento que
 contêm esferas de aço interiores que concedem muito baixo grau de atrito ao movimento, são chamados de __fusos
 de esferas recirculantes__. Devido ao seu custo, é raro encontrarmos impressoras 3D de baixo custo usando este
 último tipo de fuso, embora o uso do fuso trapezoidal em impressoras 3D comerciais de baixo custo esteja ficando
-bastante popular, pela melhoria visível na qualidade de impressão.  + Em relação a barras roscadas, fusos
+bastante popular, pela melhoria visível na qualidade de impressão. +
+Em relação a barras roscadas, fusos
 apresentarão menor “resolução”, isto é, uma volta completa do motor equivalerá a uma distância vertical
 maior no fuso, visto que os ângulos da rosca são mais acentuados. Isso também significa que o desgaste será
-menor e a velocidade maior.  + Outra diferença dos fusos em relação a barras roscadas é a quantidade de roscas
+menor e a velocidade maior. +
+Outra diferença dos fusos em relação a barras roscadas é a quantidade de roscas
 (espirais cavadas) que apresentam. Enquanto uma barra roscada apresenta sempre uma única rosca contínua, fusos
 podem apresentar roscas independentes -- por exemplo, um fuso TR8:8 (8mm de diâmetro, passo de 8mm) pode ter
-quatro roscas, geralmente discriminadas como quatro __entradas__.  + Embora fusos trapezoidais sejam normalmente
+quatro roscas, geralmente discriminadas como quatro __entradas__. +
+Embora fusos trapezoidais sejam normalmente
 usados em diâmetros de 8mm ou maiores, o uso em 5mm ainda compensa sobre barras roscadas. A grande vantagem deles
 é poderem ser simplesmente trocados na estrutura de uma _reprap_ comum sem alteração de outros componentes, e
 uma simples reconfiguração do firmware para troca da resolução vertical. A melhora na qualidade de impressão,
 especialmente no artefato chamado de __Z wobble__, é instantânea.
-* **Rolamentos +
-**Rolamentos (__bearings__ em
-inglês ou, informalmente, **rolimãs**) são dispositivos que permitem o movimento relativo controlado entre duas
+* **Rolamentos** +
+Rolamentos ou rolimãs (__bearings__ em inglês) são dispositivos que permitem o movimento relativo controlado entre duas
 ou mais partes, substituindo o atrito de deslizamento pelo atrito de rolamento, visto que tem elementos denominados
 _corpos rolantes_ -- geralmente pequenas esferas de aço cromado -- que intermediam o contato entre o elemento
 deslizante e a superfície de deslizamento. São elementos apropriados para alta rotação, alta precisão, baixo
 torque e baixa vibração. Há dois tipos principais de rolamentos usados em impressoras 3D, classificados de
 acordo com o movimento:
-** *lineares* +
+** *Lineares* +
 O movimento se dá com o rolamento deslizando ao longo do comprimento do
 elemento maior, em linha reta. Como os corpos rolantes têm contato direto com o elemento, o uso contínuo pode
 causar desgaste, razão pela qual se deve usar nesse caso materiais bem resistentes como aço. Esses rolamentos
 são geralmente utilizados em eixos de impressoras 3D cartesianas ou pilares laterais de impressoras 3D delta.
-** *radiais* +
+** *Radiais* +
 O movimento se dá com o rolamento tendo dois anéis, o exterior deslizando em torno do anel interior,
 com cada anel se prendendo a um elemento de deslizamento. São geralmente utilizados para conduzir a rotação de
 uma correia de motor, elementos rotativos de engrenagens de extrusor ou como anteparos (idlers) à roda dentada
@@ -2383,7 +2388,7 @@ correção -- se a roupa não está suficientemente seca, inicia-se novamente a 
 Conhecer o conceito de elementos de controle é essencial para entender a sua impressora 3D: não queremos um
 motor que só gire pra um lado ou pra outro, queremos saber as coordenadas! Não queremos um componente que só
 aqueça o máximo, queremos algo que aqueça e que, ao chegar na temperatura desejada, estabilize. Se a medição
-falha e o componente aquece sem controle, temos resultados como o da Figura XXX.
+falha e o componente aquece sem controle, temos resultados como o da Figura XX.
 
 E é como elemento de medição que vamos entender o __endstop__. Em português o termo é “detector” ou
 “sensor” de fim de curso, o que dá uma idéia para que serve. Para isso, devemos entender que os motores
@@ -2514,9 +2519,8 @@ juntos ou mesmo próximos. A primeira distinção é justamente essa:
 [width="100%",cols="^s,^m,e",frame="topbot",options="header"]
 |====
 | Tipo | Exemplo | Descrição
-| Direct / Monolítico | image:image81.jpeg[image,width=190,height=190] | Tracionador e hotend
-acoplados
-| Bowden / Filamento guiado | image:image82.png[image,width=215,height=185] | tracionador e hotend separados
+| Direct / Monolítico a| image:image81.jpeg[image,width=190,height=190] | Tracionador e hotend acoplados
+| Bowden / Filamento guiado a| image:image82.png[image,width=215,height=185] | tracionador e hotend separados
 |====
 
 Em impressoras 3d estilo __delta__, no hotend, você tem ainda a estrutura que une os braços chamada de effector:
@@ -2548,9 +2552,8 @@ como a engrenagem dentada que tem contato com o filamento recebe força do motor
 [width="100%",cols="^s,^m,e",frame="topbot",options="header"]
 |====
 | Tipo | Exemplo | Descrição
-| Engrenado ou _Geared_ | image:image84.jpeg[image,width=206,height=154] | Funciona com a tração transferida por engrenagens
-| __Direct Drive__ | image:image85.jpeg[image,width=203,height=152] | O pinhão traciona
-diretamente o filamento
+| Engrenado ou _Geared_ a| image:image84.jpeg[image,width=206,height=154] | Funciona com a tração transferida por engrenagens
+| __Direct Drive__ a| image:image85.jpeg[image,width=203,height=152] | O pinhão traciona diretamente o filamento
 |====
 
 Um extrusor _engrenado_ tem uma “redução” no movimento, isto é, com o sistema de engrenagens, ele passa
@@ -2573,10 +2576,9 @@ Os hotends se dividem, por sua vez, em:
 [width="100%",cols="^s,^m,e",frame="topbot",options="header"]
 |====
 | Tipo | Exemplo | Descrição
-| PEEK + metal | image:image87.jpeg[image,width=212,height=157] | Plástico resistente a calor
-e isolante térmico.
-| Metal com PTFE interno | image:image88.jpeg[image,width=211,height=157] | O hotend é quase inteiramente de metal, mas tem um pequeno tubo interno de PTFE para o filamento.
-| Todo de metal (all-metal) |  image:image89.png[image,width=212,height=163] | O hotend é de metal, sem o tubo de PTFE.
+| PEEK + metal a| image:image87.jpeg[image,width=212,height=157] | Plástico resistente a calor e isolante térmico.
+| Metal com PTFE interno a| image:image88.jpeg[image,width=211,height=157] | O hotend é quase inteiramente de metal, mas tem um pequeno tubo interno de PTFE para o filamento.
+| Todo de metal (all-metal) a|  image:image89.png[image,width=212,height=163] | O hotend é de metal, sem o tubo de PTFE.
 |====
 
 Os hotends do primeiro tipo -- usando um plástico chamado PEEK (polyether ether ketone, poliéter-éter-cetona)
@@ -3405,8 +3407,7 @@ movimentos adicionais no eixo Z sejam realizados, ao invés de um único movimen
 impressoras 3D que utilizam barras roscadas, que têm grande desgaste com o movimento vertical, isto é um ônus bem
 grande, diminuindo bastante a vida útil destas peças. Este também é um campo fértil para soluções criativas;
 um exemplo notável é a estratégia da impressora brasileira Sethi S3 que, uma vez medido o desnível da mesa,
-usa potenciômetros (eixos) debaixo dela para corrigir sua inclinação mudando o ângulo no sentido contrário,
-ao invés de corrigir as coordenadas pelo firmware.
+usa deslocamentos fixos aos motores para ajustar um novo plano e compensar esse desnível.
 
 === Motores
 
@@ -4429,7 +4430,7 @@ as conexões. Essa é a idéia do controlador “Re-ARM” da Panucatt, que roda
 pinos compatíveis com 5V, um microcontrolador de 32 bits de 100 MHz e várias opções de conectividade.
 
 [[screenshotrearm]]
-image::image143.png[image,width=642,height=421,title="O Re-ARM, um microcontrolador que pode substituir o Arduino Mega do seu conjunto RAMPS + Arduino. Disponível em http://www.panucatt.com/Re_ARM_for_RAMPS_p/ra1768.htm"]
+image::image143.png[image,width=642,height=421,title="O &quot;Re-ARM&quot;, um microcontrolador que pode substituir o Arduino Mega do seu conjunto RAMPS + Arduino. Disponível em http://www.panucatt.com/Re_ARM_for_RAMPS_p/ra1768.htm"]
 
 * Muita confusão vem do fato que um embarcado ARM popular de hobbyistas, o __Raspberry Pi__, é comumente visto
 conectado ao hardware de impressoras. A confusão vem de supor que ele está servindo como o controlador de impressão
@@ -4441,7 +4442,7 @@ um relógio de hardware, de entradas analógicas e de PWM de hardware. Ainda ass
 especialmente para este embarcado que utiliza de diversos truques de software para contornar estas limitações, o
 __Printipi__, disponível em https://github.com/Wallacoloo/printipi/[_https://github.com/Wallacoloo/printipi/_]. No
 momento da publicação deste livro, o software ainda se encontra em estado experimental e está há mais de um
-ano sem novo código.
+ano sem atualizações.
 
 ==== Firmware
 
@@ -8695,7 +8696,7 @@ Smoothieware **gamma_max**. Por ser relativamente fácil de obter, fácil de cor
 em uma delta comum com endstops máximos, será a nossa “âncora” para medidas.  3.  *Deslocamento* (offset) *de
 cada endstop de cada torre* (inclinação do plano). Se as torres são A, B e C, vamos chamá-los de D~A~, D~B~ e D~C~.
 
-image:image221.png[image,width=642,height=551]
+image::image221.png[image,width=642,height=551,title="Visão de cima de uma delta, sendo ressaltadas as torres A, B e C (perceba que estão em sentido anti-horário) e as coordenadas X e Y, com a origem (0,0) no centro da mesa. A coordenada Z é a altura. A equivalência entre A, B e C e X, Y e Z é importante para as transformações trigonométricas que mapeiam coordenadas das torres em coordenadas cartesianas. Ressalte-se que a sequência ABC começa do canto inferior esquerdo e vai no sentido anti-horário. Dependendo da documentação consultada, tais torres podem aparecer como Alpha, Beta, Gamma ou mesmo X, Y e Z (causando confusão com os eixos cartesianos)."]
 
 image:image222.png[image,width=642,height=424]
 
@@ -9202,7 +9203,7 @@ em grande parte porque os melhores algoritmos de auto-conserto de malha são pro
 portanto, bloqueáveis. Por isso, conhecimento de como malhas funcionam e como sobrepujar seus problemas
 é algo importante até por questões de liberdade! Você pode saber mais sobre o assunto na notícia em inglês:
 https://3dprintingindustry.com/news/deliberate-mistakes-key-protecting-3d-printed-parts-theft-114092/[_https://3dprintingindustry.com/news/deliberate-mistakes-key-protecting-3d-printed-parts-theft-114092/_]
-- cabe notar que a nomenclatura usada é equivocad: cópia não-autorizada de “propriedade” intelectual não
+- cabe notar que a nomenclatura usada é equivocada: cópia não-autorizada de “propriedade” intelectual não
 pode ser chamada de __roubo__, pois __não há subtração__.
 
 image:image238.png[image,width=517,height=412]
@@ -9365,7 +9366,7 @@ image:image253.png[image,width=642,height=523]
 
 === Detalhes pequenos
 
-Ressaltamos duas vezes a parede ser não somente fina, mas mais fica que nosso bico. Este problema está relacionado
+Ressaltamos duas vezes a parede ser não somente fina, mas mais fina que nosso bico. Este problema está relacionado
 ao anterior, mas as consequências e parâmetros são diferentes. Há vezes em que seu objeto precisa ter certos
 detalhes pequenos como chanfros, pequenas elevações e traços cuja função é ornamental e não terão necessidade
 de serem mecanicamente íntegros. O melhor exemplo disso são peças com certas letras em alto relevo. No entanto,

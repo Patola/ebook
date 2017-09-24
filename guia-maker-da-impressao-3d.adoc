@@ -4157,38 +4157,49 @@ para o A4988 os valores de 0,05Ω e 0,2Ω são comumentes encontrados.
 Vamos então, consultar os respectivos datasheets e encontrar as fórmulas para saber a _V~ref~_ desejada em função
 da corrente máxima.
 
-* DRV8825 -- o datasheet do driver pode ser encontrado na página da Texas Instruments:
-http://www.ti.com/lit/ds/symlink/drv8825.pdf[_http://www.ti.com/lit/ds/symlink/drv8825.pdf_] +
-A fórmula da corrente -- chamaremos de _I~max~_ - em função da _V~ref~_ e de _R~s~_ é:
+.DRV8825
+O datasheet do driver pode ser encontrado na página da Texas Instruments:
+http://www.ti.com/lit/ds/symlink/drv8825.pdf[_http://www.ti.com/lit/ds/symlink/drv8825.pdf_]
 
-stem:[I_{max}=\frac{V_{ref}}{5 \cdot R_s}]
+A fórmula da corrente -- chamaremos de _I~max~_ - em função da _V~ref~_ e de _R~S~_ é: +
+stem:[I_{max}=\frac{V_{ref}}{5 \times R_s}] +
+Como sabemos que R~S~ é sempre 0,1, substituímos: +
+stem:[I_{max}=\frac{V_{ref}}{5 \times 0,1}=\frac{V_{ref}}{0,5}=V_{ref} \times 2] +
+ou, colocando _V~ref~_ em função de _I~max~_: +
+stem:[V_{ref}=\frac{I_{max}}{2}] +
+Em outras palavras: se o DRV8825 está ligado a um motor que aceita corrente máxima de 1,5A,
+a tensão medida em V~ref~ deve ser: +
+stem:[V_{ref}=\frac{1,5}{2}=0,75V]
 
-Como sabemos que _Rs_ é sempre 0,1, substituímos: + ou, colocando _Vref_ em função de __Imax__:
-+ Em outras palavras: se o DRV8825 está ligado a um motor que aceita corrente máxima de 1,5A,
-a tensão medida em Vref deve ser:
-* **A4988**: o datasheet do driver é encontrado na página da Allegro:
-http://www.allegromicro.com/\~/media/Files/Datasheets/A4988-Datasheet.ashx[__http://__www.allegromicro.com/~/media/Files/Datasheets/A4988-Datasheet.ashx]:
-+ O que equivale a + No caso de usarmos um motor com corrente máxima de 1,2A e o nosso driver acima com Rs de
-0,1Ω, a fórmula fica:
+.A4988
+O datasheet do driver é encontrado na página da Allegro:
+http://www.allegromicro.com/\~/media/Files/Datasheets/A4988-Datasheet.ashx[__http://__www.allegromicro.com/~/media/Files/Datasheets/A4988-Datasheet.ashx]. O que procuramos é: +
+stem:[I_{max}=\frac{V_{ref}}{8 \times R_{S}}] +
+O que equivale a stem:[V_{ref}=I_{max} \times 8 \times R_{S}]. +
+No caso de usarmos um motor com corrente máxima de 1,2A e o nosso driver acima com R~S~ de 0,1Ω, a fórmula fica: +
+stem:[V_{ref}=1,2 \times 8 \times 0,1 = 0,96V]
 
 Como colaboração de _André Ruiz_ do grupo ReprapBR, temos a seguinte tabela para consulta rápida de DRV8825
 e A4988:
 
+[[tabeladriverspng]]
+image::tabela-drivers.png[width=1260,height=154,align="center"]
+
 * Outros drivers: o A4988 e o DRV8825 são de longe os mais usados nas impressoras 3D atuais. Outros drivers existem
 -- e com certeza mais aparecerão -- mas têm uso muito confinado. Por outro lado, isso facilita na fórmula de
-__Vref__, visto que seu _Rs_ não varia com a pouca disponibilidade. Uma tabelinha de alguns drivers de mercado
+__V~ref~__, visto que seu _R~S~_ não varia com a pouca disponibilidade. Uma tabelinha de alguns drivers de mercado
 mais usados, e suas respectivas vantagens e desvantagens segue:
 
-[cols=",,,,",]
+[cols=">1s,^1s,^3m,^1e,^5",options="header"]
 |=================================================================================================================================================================================================================================================
 |Driver		|Corr. máx.		|Fórmula		|Máx. Micropassos	|Uso
-|A4988		|2,0A			|Vref = Imax × 8 × Rs	|16			|Driver mais popular e mais barato, facilmente encontrado nas lojas chinesas. Esquenta bastante quando perto da corrente máxima.
-|DRV8825	|2,5A			|Vref = Imax / 2	|32			|Preço um pouco maior que A4988, mas consegue mais micropassos, roda um pouco mais frio e aguenta maior corrente.
-|LV8729		|2,0A			|Vref = Imax / 2	|128			|Mais difícil de obter e mais caro que o DRV8825, tem como vantagens o silêncio e movimento extremamente suave, com 128 divisões de micropassos.
-|TMC2100	|1,2A			|Vref = Imax / 1,9	|256			|A maior vantagem deste driver é a subdivisão extrema em 256 micropassos e o silêncio, mas a corrente máxima baixa limita bastante seu uso.
-|TMC2130	|2,0A			|Vref = Imax		|256			|Aceita picos breves de 2,5A. É altamente configurável e silenciosa.
-|RAPS128	|2,2A			|Vref = Imax / 2	|128			|Criado junto à placa RADDS para Arduino de 32 bits, tem uso popular em placas ARM e se destaca por um potenciômetro extra para configuração manual do decaimento e também por vir com um dissipador gigante.
-|SD6128		|2,2A			|Vref = Imax / 2	|128			|Semelhante à RAPS128 sem o potenciômetro extra.
+|A4988		|2,0A			|V~ref~ = I~max~ × 8 × R~S~	|16			|[small]##Driver mais popular e mais barato, facilmente encontrado nas lojas chinesas. Esquenta bastante quando perto da corrente máxima.##
+|DRV8825	|2,5A			|V~ref~ = I~max~ / 2	|32			|[small]##Preço um pouco maior que A4988, mas consegue mais micropassos, roda um pouco mais frio e aguenta maior corrente.##
+|LV8729		|2,0A			|V~ref~ = I~max~ / 2	|128			|[small]##Mais difícil de obter e mais caro que o DRV8825, tem como vantagens o silêncio e movimento extremamente suave, com 128 divisões de micropassos.##
+|TMC2100	|1,2A			|V~ref~ = I~max~ / 1,9	|256			|[small]##A maior vantagem deste driver é a subdivisão extrema em 256 micropassos e o silêncio, mas a corrente máxima baixa limita bastante seu uso.##
+|TMC2130	|2,0A			|V~ref~ = I~max~		|256			|[small]##Aceita picos breves de 2,5A. É altamente configurável e silenciosa.##
+|RAPS128	|2,2A			|V~ref~ = I~max~ / 2	|128			|[small]##Criado junto à placa RADDS para Arduino de 32 bits, tem uso popular em placas ARM e se destaca por um potenciômetro extra para configuração manual do decaimento e também por vir com um dissipador gigante.##
+|SD6128		|2,2A			|V~ref~ = I~max~ / 2	|128			|[small]##Semelhante à RAPS128 sem o potenciômetro extra.##
 |=================================================================================================================================================================================================================================================
 
 Vale notar que quando a divisão de micropassos é 128 ou superior, somente microcontroladores mais poderosos
@@ -4196,15 +4207,15 @@ que os usados em Arduinos de 8 bits conseguirão aproveitar tais vantagens. Uma 
 recurso frequentemente anunciado de ser “silencioso”; isso é algo que se obtém deixando as frequências de
 trabalho fora do espectro audível (maior que 20 kHz, embora acima de 17 KHz já seja normalmente suficiente).
 
-=== Ajustando manualmente a Vref dos drivers
+=== Ajustando manualmente a V~ref~ dos drivers
 
 Uma vez que a RAMPS esteja montada, com os motores ligados, os drivers encaixados e o firmware carregado, deve-se
 ligá-la e pelo LCD ou por algum print host, tentar fazer os motores girarem. Os motores não precisam estar ligados
 nos eixos; pode ser até melhor testá-los sem estarem montados. Tome especial cuidado no encaixe de drivers A4988
 e DRV8825, pois eles têm o potenciômetro em sentido contrário. Veja a foto abaixo para ter a referência.
 
-Se já sabemos a _Vref_ que precisamos, devemos procurar chegar o mais próximo dela __girando o potenciômetro__. Deve
-ser usada uma chave de fenda ou philips *de plástico ou cerâmica* para isso, pois uma que conduza pode gerar
+Se já sabemos a _V~ref~_ que precisamos, devemos procurar chegar o mais próximo dela __girando o potenciômetro__. Deve
+ser usada uma chave de fenda ou philips **de plástico ou cerâmica** para isso, pois uma que conduza pode gerar
 faísas ou contatos inesperados. Para o sentido **horário**, a tensão medida __*aumenta*__; para o sentido
 **anti-horário**, ela __*diminui*__. Girar demais o potenciômetro faz ele cair numa “zona morta” em que a
 tensão medida flutua aleatoriamente, basta continuar girando até a zona em que ela volta a mudar linearmente.
@@ -4215,16 +4226,18 @@ prova positiva -- *vermelha* -- deve ser encostada no **parafuso do potenciômet
 terra mais distante do potenciômetro, para evitar curtos acidentais. Alternativamente, a ponta de prova negativa
 pode ser usada no *negativo da fonte* ou das *entradas da RAMPS* também.
 
-image:image138.png[image,width=642,height=398]
+[[ajustandovref1]]
+image::image138.png[image,width=642,height=398,title="Procedimento de ajuste de tensão dos drivers em uma RAMPS. Para simplicidade ela é mostrada desconectada e desligada, mas o procedimento deve ser feito a quente com os motores ligados. Usam-se multímetros com as pontas de prova nos lugares indicados e um instrumento de plástico ou cerâmica para girar o potenciômetro e ajustar a tensão. Os valores mostrados nos multímetros correspondem aos exemplos ilustrados anteriormente. Durante o procedimento de ajuste, é aconselhado não deixar a regulação alta por muito tempo pois há perigo de sobreaquecer e queimar os drivers."]
 
 *A chave de fenda ou philips de plástico* (“ceramic screwdriver” nos sites de compra) pode ser difícil de
 adquirir. Uma alternativa é imprimir em PLA uma substituta.
 
-image:image139.png[image,width=642,height=475]
+[[driveralignerpatola]]
+image::image139.png[image,width=642,height=475,title="Ferramenta plástica impressa para alinhamento do potenciômetro (trimpot) -- versões em fenda e em philips, com cabo fino ou cabo grosso para maior firmeza, disponibilizado pelo autor deste livro. Baixável em https://www.thingiverse.com/thing:1080946"]
 
 === Modo de decaimento: quando e como ajustar
 
-_*Modos de decaimento*_ de passos são os mesmos que vimos ao tratar de motores de passo: modo rápido (__fast
+**Modos de decaimento** de passos são os mesmos que vimos ao tratar de motores de passo: modo rápido (__fast
 decay mode__), modo lento (__slow decay mode__) e modo misto (__mixed decay mode__).
 
 Para contextualizar a dificuldade de mudá-los, é bom lembrar que o início do movimento reprap foi marcado
@@ -4250,12 +4263,15 @@ mais de acordo com o que se deseja. Algumas situações possíveis -- que são a
 potência é necessário menos corrente no circuito. Isso pode fazer com que o decaimento precise de ajustes,
 especialmente no que concerne à entrega de corrente. Um exemplo é com o driver DRV8825 em máxima divisão de
 micropassos (1:32) e motor de baixa corrente; ele pode perder passos no modo default de auto-ajuste, e pode se
-beneficiar de ser colocado em modo de decaimento rápido.  * Microcontrolador ARM -- tanto por trabalharem em
+beneficiar de ser colocado em modo de decaimento rápido.
+* Microcontrolador ARM -- tanto por trabalharem em
 tensão nominal default de 3,3V quanto por comumente usarem drivers mais raros com maior divisão de micropassos,
 tais microcontroladores podem precisar de ajustes finos para as potências, correntes, frequências e tensões
-com que trabalham.  * Grande volume de impressão -- maior volume de impressão implica em motores percorrendo
+com que trabalham.
+* Grande volume de impressão -- maior volume de impressão implica em motores percorrendo
 distâncias contínuas maiores, com a aceleração sendo considerável. A suavidade do movimento, assim como a ação
-de contraposição à inércia sofrem considerável influência do decaimento.  * Grande carga (como um extrusor
+de contraposição à inércia sofrem considerável influência do decaimento.
+* Grande carga (como um extrusor
 pesado) ou alta velocidade -- o decaimento poderá favorecer um caso ou outro, raramente os dois. Decaimento
 inadequado em ambos os casos causa o efeito de __ringing__, ou “ziguezagues” nas linhas de impressão.
 
@@ -4275,7 +4291,8 @@ http://hydraraptor.blogspot.com.br/2012/04/stepstuck.html[_http://hydraraptor.bl
 * DRV8825. O driver tem um pino “DECAY” especialmente pra isso, geralmente em GND (terra) para modo
 misto. Ligando-se o pino a Vcc, ele passa a atuar em modo de decaimento rápido.
 
-image:image140.jpeg[image,width=509,height=417]
+[[gambiarrapinodecay]]
+image::image140.jpeg[image,width=509,height=417,title="Pino 'DECAY' de um driver DRV8825 ligado ao pino M2 para receber 5V e deixar selecionado o modo de decaimento rápido ('fast decay'). Fonte: http://www.morgan3dp.com/stepstuck-revisited-drv8825/"]
 
 === Visão retroativa é 20/20: os defeitos da RAMPS
 
@@ -4290,20 +4307,24 @@ são tremendamente problemáticos: são grandes e frágeis, frequentemente atrap
 perninha de conexão; são propensos eles próprios a superaquecimento e até combustão, especialmente o MFR1100
 que só aguenta até 16V; são difíceis de encontrar no mercado brasileiro. Muitos _hobbyistas_ compram RAMPS
 prontas pelo preço e simplesmente removem esses termofusíveis, trocando por fusíveis comuns de corrente ou até
-mesmo fazendo simplesmente a conexão direta. A versão 1.4.2 da RAMPS os troca por fusíveis de automóveis.  *
-*Incapacidade para 24V* -- a ausência de um componente que possa energizar o arduino em 24V, o projeto original
+mesmo fazendo simplesmente a conexão direta. A versão 1.4.2 da RAMPS os troca por fusíveis de automóveis.
+* *Incapacidade para 24V* -- a ausência de um componente que possa energizar o arduino em 24V, o projeto original
 com capacitores eletrolíticos de 16V e o já citado termofusível MFR 1100 são grandes impeditivos para se usar
 sem modificaçÕes a RAMPS em 24V, uma opção de fonte cada vez mais popular devido ao melhor aproveitamento
 de potência. O problema dos capacitores tem sido resolvido com a maioria dos vendedores, mesmo os chineses de
 baixo custo, já vendendo a placa com capacitores de 35V, mas ainda é preciso ter tal critério para escolher
-o produto.  * *A orientação dos drivers* -- a RAMPS carece de conectores direcionados para conexão dos drivers
+o produto.
+* *A orientação dos drivers* -- a RAMPS carece de conectores direcionados para conexão dos drivers
 de motores de passos. É muito fácil conectá-los ao contrário, o que leva a que queimem. O problema é agravado
 por os drivers mais populares, A4988 e DRV8825, terem o potenciômetro em lados diferentes da placa e parecerem
-“invertidos”.  * *A orientação dos conectores de endstop* -- um conector de endstop colocado ao contrário
-pode fazer a placa queimar.  * *O conector de energia é subdimensionado* -- a RAMPS tem uma trilha de até 5A e
+“invertidos”.
+* *A orientação dos conectores de endstop* -- um conector de endstop colocado ao contrário
+pode fazer a placa queimar.
+* *O conector de energia é subdimensionado* -- a RAMPS tem uma trilha de até 5A e
 outra de até 11A; o conector MODU verde de 4 vias onde a energia delas é ligada, no entanto, é projetado para um
 máximo de **10A**. Ainda que geralmente 11A esteja dentro da “margem de erro” do conector, não são raros os
-casos em que este conector “derrete” por superaquecimento.  * *Pinos de conexão dos motores muito estreitos*
+casos em que este conector “derrete” por superaquecimento.
+* *Pinos de conexão dos motores muito estreitos*
 -- existem variações de diferentes espessuras dos conectores de motores bipolares. Com o estreito espaçamento
 e disposição dos conectores na placa, alguns conectores simplesmente não se encaixam se não forem lixados ou
 cortados. Esse problema é especialmente contundente nas duas conexões em paralelo para os motores do eixo Z.
@@ -4311,17 +4332,20 @@ cortados. Esse problema é especialmente contundente nas duas conexões em paral
 e o usuário tem que escolher entre usar tal conector para o aquecedor de um segundo _hotend_ ou a ventoinha. Isso
 quer dizer que extrusores duplos em RAMPS não terão ventilação controlada no bico. A potência necessária para
 acionar uma ventoinha é menor que a necessária para esquentar um hotend; outras placas têm saídas de baixa
-potência extras para ventoinhas.  * *Versão “congelada” na 1.4* -- embora não seja inteiramente verdade
+potência extras para ventoinhas.
+* *Versão “congelada” na 1.4* -- embora não seja inteiramente verdade
 (a versão mais nova “oficial” no momento da publicação deste livro é a 1.4.2, com pequenas melhorias),
-a versão 1.4, de 2011, é a quase universalmente vendida a preços baixos.  * *Dependente do Arduino* -- ao
+a versão 1.4, de 2011, é a quase universalmente vendida a preços baixos.
+* *Dependente do Arduino* -- ao
 mesmo tempo uma vantagem -- por usar um componente facilmente encontrável -, é também uma desvantagem por
 envolver montagens e por ter dois componentes diversos que podem acarretar problemas. Existem placas que juntam a
-funcionalidade de um shield ao microcontrolador arduino, como a RUMBA e a Sethi3D CPU.  * *Subdimensionada para os
-tempos atuais* -- microcontrolador de 8 bits lento (16 MHz), saída para apenas dois extrusores, falta de ethernet
+funcionalidade de um shield ao microcontrolador arduino, como a RUMBA e a Sethi3D CPU.
+* *Subdimensionada para os tempos atuais* -- microcontrolador de 8 bits lento (16 MHz), saída para apenas dois extrusores, falta de ethernet
 ou wifi e outros problemas semelhantes são decorrentes do baixo custo e da ṕoca em que foi concebida. Hoje já
 temos controladores muito mais sofisticados, com telas coloridas e capacidade até de fatiar diretamente peças 3D.
 
-image:image141.png[image,width=642,height=448]
+[[problemasramps1]]
+image::image141.png[image,width=642,height=448,title="Alguns dos problemas descritos. *1* - conector de ventoinha ou extrusor (D9); *2* - termofusíveis; *3* - conectores simétricos, sem indicação de orientação; *4* - pinos de motores estreitos; *5* - pinos de endstops sem orientação clara e sem proteção contra inversão."]
 
 === Outros controladores de impressão: a ascensão dos ARM
 
@@ -4375,31 +4399,37 @@ têm ganhado notoriedade pela compatibilidade com o Smoothieware e muitas impres
 porque apesar de baseadas em design open-source não liberaram os fontes de seus designs e se encontram, atualmente,
 em uma situação de antagonismo com a comunidade e revendedores da Smoothieboard.
 
-image:image142.png[image,width=642,height=326]
+[[smoothieboardemkssbase]]
+image::image142.png[image,width=642,height=326,title="À esquerda, a Smoothieboard original, open source. À direita, a clone chinesa compatível e proprietária MKS Sbase v1.3. A smoothieboard usa drivers soldados à placa do tipo A5984, a MK Sbase usa DRV8825; ambos têm divisões de até 32 micropassos"]
 
 Maiores referências sobre outros controladores, especialmente os baseados em ARM, podem ser encontradas nos
 seguintes endereços online:
 
 * http://reprap.org/wiki/List_of_electronics[_http://reprap.org/wiki/List_of_electronics_]
--- a lista básica dos microcontroladores do projeto reprap e suas características.  *
+-- a lista básica dos microcontroladores do projeto reprap e suas características.
+*
 http://reprap.org/wiki/Comparison_of_Electronics[_http://reprap.org/wiki/Comparison_of_Electronics_]
--- uma tabela comparativa de tais controladores.  * Controlador open-source Duet:
+-- uma tabela comparativa de tais controladores.
+* Controlador open-source Duet:
 http://www.reprap.org/wiki/Duet[_http://www.reprap.org/wiki/Duet_] e https://www.duet3d.com/[_https://www.duet3d.com/_]
 * Smoothieboard e Smoothie: http://reprap.org/wiki/Smoothieboard[_http://reprap.org/wiki/Smoothieboard_]
-e http://smoothieware.org/[_http://smoothieware.org/_] * Comparação entre _Duet_ e __Smoothieboard__:
+e http://smoothieware.org/[_http://smoothieware.org/_]
+* Comparação entre _Duet_ e __Smoothieboard__:
 http://forum.seemecnc.com/viewtopic.php?f=111&t=9205[_http://forum.seemecnc.com/viewtopic.php?f=111&t=9205_]
-* AZSMZ e MKS SBASE podem ser encontradas nos sites chineses para venda.  * Muitas dessas marcas têm também
+* AZSMZ e MKS SBASE podem ser encontradas nos sites chineses para venda.
+* Muitas dessas marcas têm também
 placas baseadas em arduino de 8 bits, como a Azteeg X3 e MKS Gen. Verifique cuidadosamente para não comprar
-gato por lebre.  * Muitas vezes é difícil mudar uma impressora totalmente conectada e funcional para um novo
+gato por lebre.
+* Muitas vezes é difícil mudar uma impressora totalmente conectada e funcional para um novo
 controlador de impressão. Soluções de mercado para facilitar essa transição existem, como as réplicas da
 RAMPS que funcionam com Arduino Due ao invés de Arduino Mega. No entanto, se a dificuldade de transição se
 encontra não no firmware mas nas conexões físicas e drivers, uma boa maneira de fazer a transição pode
 ser trocar o Arduino -- e colocar um microcontrolador que encaixe perfeitamente na RAMPS comum, reusando
 as conexões. Essa é a idéia do controlador “Re-ARM” da Panucatt, que roda o _Smoothieware_ e oferece
-pinos compatíveis com 5V, um microcontrolador de 32 bits de 100 MHz e várias opções de conectividade:
-http://www.panucatt.com/Re_ARM_for_RAMPS_p/ra1768.htm[_http://www.panucatt.com/Re_ARM_for_RAMPS_p/ra1768.htm_]
+pinos compatíveis com 5V, um microcontrolador de 32 bits de 100 MHz e várias opções de conectividade.
 
-image:image143.png[image,width=642,height=421]
+[[screenshotrearm]]
+image::image143.png[image,width=642,height=421,title="O Re-ARM, um microcontrolador que pode substituir o Arduino Mega do seu conjunto RAMPS + Arduino. Disponível em http://www.panucatt.com/Re_ARM_for_RAMPS_p/ra1768.htm"]
 
 * Muita confusão vem do fato que um embarcado ARM popular de hobbyistas, o __Raspberry Pi__, é comumente visto
 conectado ao hardware de impressoras. A confusão vem de supor que ele está servindo como o controlador de impressão
@@ -4411,7 +4441,9 @@ um relógio de hardware, de entradas analógicas e de PWM de hardware. Ainda ass
 especialmente para este embarcado que utiliza de diversos truques de software para contornar estas limitações, o
 __Printipi__, disponível em https://github.com/Wallacoloo/printipi/[_https://github.com/Wallacoloo/printipi/_]. No
 momento da publicação deste livro, o software ainda se encontra em estado experimental e está há mais de um
-ano sem novo código.  1.  [[firmware]] === Firmware
+ano sem novo código.
+
+==== Firmware
 
 Já conhecemos a eletrônica, mas o que roda nela? No Universo Maker, o *Arduino* já é velho conhecido, assim como
 o seu ambiente de desenvolvimento que leva o mesmo nome: um IDE simples feito em Java inicialmente para a extensão
@@ -12256,337 +12288,543 @@ sua direção!). Adotamos, no software, o mesmo conjunto de convenções de nome
 * Para compostos químicos, se não achar a palavra por extenso, procure pela abreviação. Por exemplo, se você
 quer saber sobre o termo “polioximetileno”, ele terá a sigla POM.
 
+
 * *3DP* -- Também chamada de __binder jetting__, é uma técnica de impressão 3D que consiste em uma câmara
 ser preenchida com sucessivas camadas planas de pó, e para cada camada depositada, uma cabeça de jato de tinta
-deposita nas partes certas um líquido ligante com pigmentos que dão cor e endurecem a forma.  * *3D Scanning* --
+deposita nas partes certas um líquido ligante com pigmentos que dão cor e endurecem a forma.
+* *3D Scanning* --
 ou __digitalização 3D__, é o ato de se inferir ou medir com máquinas a forma tridimensional de um objeto. Existem
 várias técnicas de digitalização 3D, a mais acessível sendo a __fotogrametria__, que é a tomada de fotografias
-do objeto por vários ângulos e a sucessiva inferência matemática de sua forma por comparação.  * *3D Systems*
+do objeto por vários ângulos e a sucessiva inferência matemática de sua forma por comparação.
+* *3D Systems*
 -- empresa do ramo de impressão 3D fundada em 1986 por Chuck Hull, na ocasião do patenteamento da técnica de
-impressão 3D _Estereolitografia_ (SLA).  * *3MF* -- formato extensível de arquivo de malha com informações de
+impressão 3D _Estereolitografia_ (SLA).
+* *3MF* -- formato extensível de arquivo de malha com informações de
 constelações de objetos, cores, materiais, misturas, fatiamentos e outros metadados criado em XML para representar
 objetos a serem impressos em 3D por um consórcio liderado pela Microsoft. Apesar da especificação aberta e com
 código-fonte disponível, ainda é um formato pouco suportado por fatiadores e principalmentes modeladores 3D.  *
-*A4988* -- o tipo mais popular e barato de _driver_ de motor de passo.  * *ABS* -- Acrilonitrila Butadieno Estireno,
-o plástico mais usado em impressão 3D, um copolímero derivado de petróleo.  * *ABS juice* ou *suco de ABS*
--- solução de ABS dissolvido em acetona, usada para reparar peças e melhorar aderência à mesa.  * *ABS-PC*
+*A4988* -- o tipo mais popular e barato de _driver_ de motor de passo.
+* *ABS* -- Acrilonitrila Butadieno Estireno,
+o plástico mais usado em impressão 3D, um copolímero derivado de petróleo.
+* *ABS juice* ou *suco de ABS*
+-- solução de ABS dissolvido em acetona, usada para reparar peças e melhorar aderência à mesa.
+* *ABS-PC*
 -- mistura dos plásticos ABS e Policarbonato, fazendo um meio-termo entre a resistência do policarbonato e a
-facilidade de uso do ABS.  * *Acetona* -- solvente que pode ser usado para alisar peças em ABS ou até dissolver
-este plástico.  * *Aditiva* (Fabricação / Manufatura) -- nomeiam-se assim as tecnologias que constroem objetos
+facilidade de uso do ABS.
+* *Acetona* -- solvente que pode ser usado para alisar peças em ABS ou até dissolver
+este plástico.
+* *Aditiva* (Fabricação / Manufatura) -- nomeiam-se assim as tecnologias que constroem objetos
 tridimensionais através da adição de camadas, em contraste com as subtrativas, que trabalham por remoção
-de material.  * *AMF* -- formato extensível de arquivo de malha com informações de constelações de objetos,
+de material.
+* *AMF* -- formato extensível de arquivo de malha com informações de constelações de objetos,
 cores, materiais, triângulos curvados, misturas e outros metadados criado em XML para representar objetos a serem
 impressos em 3D pela ASTM International e ISO, tornando-se o padrão ISO/ASTM 52915:2013. É um formato mais antigo
 que seu concorrente 3MF e bem suportado em fatiadores, mas ainda deficiente no suporte pelos modeladores 3D.  *
 *Anisotropia* -- a qualidade de ter propriedades físicas variáveis de acordo com a direção. Por exemplo,
 um objeto impresso em FFF poderá ter alongamento na ruptura ou rigidez diferentes nas direções X, Y e Z.  *
 *Arduino* -- linha de microcontroladores open-source usada como base para as impressoras 3D open-source reprap.
+
 * *ASA* -- Acrilonitrila Estireno Acrilato, é um polímero plástico usado para impressão 3D, “concorrente”
-do ABS com menor contração e mais resistência ao ambiente.  * *Autonivelamento de mesa* -- recurso que algumas
+do ABS com menor contração e mais resistência ao ambiente.
+* *Autonivelamento de mesa* -- recurso que algumas
 impressoras 3D têm de autodetectar inclinações da mesa de impressão e corrigi-las automaticamente ao se imprimir.
+
 * *Bainha* -- em inglês __Brim__, é uma estrutura impressa chata em volta da peça que ajuda na adesão à mesa.
-* *BAL* -- sigla para Bed Auto-Leveling, autonivelamento de mesa em inglês.  * *Barra lisa* -- ou __guia linear__,
-são cilindros de aço usados como eixos deslizantes nas impressoras 3D.  * *Barra roscada* -- ou __parafuso
+
+* *BAL* -- sigla para Bed Auto-Leveling, autonivelamento de mesa em inglês.
+* *Barra lisa* -- ou __guia linear__,
+são cilindros de aço usados como eixos deslizantes nas impressoras 3D.
+* *Barra roscada* -- ou __parafuso
 infinito__, é uma rosca longa usada como _fuso_ em impressoras 3D para mover um eixo (normalmente o vertical) *
 *Barreira térmica* -- peça que fica entre o bloco aquecedor e o pescoço dissipador em um _hotend_ de impressora
 3D e, feita de aço (mau condutor de calor) e sendo estreita, serve para proporcionar uma quebra na temperatura.  *
 *Bearing* -- nome para _rolamento_ em inglês, peça com esferas de metal internas usada para elementos deslizantes
-e rotatórios em máquinas.  * *Bico* -- ou _nozzle_ em inglês, é a extremidade do hotend por onde sai o plástico
-derretido, geralmente feita de latão.  * *Binder jetting* -- técnica de impressão 3D industrial, também chamada de
-“3DP”, em que um líquido colorido e aglutinante alveja uma mesa de pó de material camada a camada.  * *Bipolar*
-(motor) -- motor elétrico com apenas dois pólos em seu campo estacionário, usado em impressoras 3D.  * *Blob*
+e rotatórios em máquinas.
+* *Bico* -- ou _nozzle_ em inglês, é a extremidade do hotend por onde sai o plástico
+derretido, geralmente feita de latão.
+* *Binder jetting* -- técnica de impressão 3D industrial, também chamada de
+“3DP”, em que um líquido colorido e aglutinante alveja uma mesa de pó de material camada a camada.
+* *Bipolar*
+(motor) -- motor elétrico com apenas dois pólos em seu campo estacionário, usado em impressoras 3D.
+* *Blob*
 -- ou borrão, ou “verruga”, é o nome que se dá às pequenas saliências aparentes em peças tridimensionais
-de FFF por plástico em excesso ou outros erros de processo.  * *BOM* -- Bill Of Material, Lista de Materiais,
-termo que costuma aparecer em receitas de construção de impressoras 3D open-source (reprap).  * *Borossilicato*
+de FFF por plástico em excesso ou outros erros de processo.
+* *BOM* -- Bill Of Material, Lista de Materiais,
+termo que costuma aparecer em receitas de construção de impressoras 3D open-source (reprap).
+* *Borossilicato*
 -- vidro resistente feito da mistura de sílica e óxido bórico e usado para cobertura de mesas aquecidas no
-exterior, mas difícil de encontrar no Brasil.  * *Bowden* -- estrutura em que o tracionador do extrusor fica
+exterior, mas difícil de encontrar no Brasil.
+* *Bowden* -- estrutura em que o tracionador do extrusor fica
 distante do aquecedor, sendo os dois ligados por um tubo de baixo atrito (em geral de PTFE). Também chamado
-de __filamento guiado__.  * *Bridge* -- Ponte. Estrutura impressa que liga duas ilhas sem suporte.  * *Brim*
--- Bainha (ver definição).  * *CAD* -- Computer-Aided Design: projeto auxiliado por computador, no contexto
-da impressão 3D geralmente designando modeladores tridimensionais.  * *CAM* -- Computer-Aided Manufacturing:
+de __filamento guiado__.
+* *Bridge* -- Ponte. Estrutura impressa que liga duas ilhas sem suporte.
+* *Brim*
+-- Bainha (ver definição).
+* *CAD* -- Computer-Aided Design: projeto auxiliado por computador, no contexto
+da impressão 3D geralmente designando modeladores tridimensionais.
+* *CAM* -- Computer-Aided Manufacturing:
 manufatura auxiliada por computador, no contexto da impressão 3D geralmente designando o processo de impressão.  *
 *Câmara aquecida* -- carcaça de impressoras fechadas preparada com dispositivo aquecedor para manter a temperatura
-interna alta e evitar o “warp”.  * *Cera perdida* -- processo de fabricação com molde em que uma escultura
+interna alta e evitar o “warp”.
+* *Cera perdida* -- processo de fabricação com molde em que uma escultura
 em cera imersa em pó é evaporada e substituída por material derretido (geralmente metal) que então solidifica
-tomando sua forma.  * *Clorofórmio* -- solvente tóxico que afeta alguns plásticos de impressão 3D, como o PLA.
+tomando sua forma.
+* *Clorofórmio* -- solvente tóxico que afeta alguns plásticos de impressão 3D, como o PLA.
+
 * *CNC* -- Controle Numérico por Computador, se refere às ferramentas automatizadas que executam comandos
-de controle pré-programados.  * *Coasting* -- ou __desengrenagem__, é uma técnica de impressão 3D FFF que
+de controle pré-programados.
+* *Coasting* -- ou __desengrenagem__, é uma técnica de impressão 3D FFF que
 consiste em desligar o motor de tração antes do término da trajetória do plástico a ser depositado para que o
-plástico escorrido se descarregue e complete a camada.  * *Combing* -- ou __wiping__, ou ainda __penteamento__,
+plástico escorrido se descarregue e complete a camada.
+* *Combing* -- ou __wiping__, ou ainda __penteamento__,
 é uma técnica de impressão 3D FFF que consiste em passar o bico com plástico escorrido em partes já impressas
-da peça, de modo a limpar o bico e impedir que esse plástico escorrido forme __blobs__.  * *Compensação XY
+da peça, de modo a limpar o bico e impedir que esse plástico escorrido forme __blobs__.
+* *Compensação XY
 / horizontal* -- é uma técnica de fatiamento presente nos fatiadores slic3r, craftware, simplify3d e Cura
 que permite compensar o espalhamento ou contração excessivo de material na impressão, agindo na direção
-contrária desta.  * *Craftware* -- fatiador de impressão 3D com suportes personalizados da empresa CraftUnique,
-software proprietário gratuito disponível para Windows, Mac OS X e Linux.  * *Cura* -- fatiador de impressão
-3D open-source da empresa Ultimaker, disponível para Windows, Mac OS X e Linux.  * *Datasheet* -- referência
+contrária desta.
+* *Craftware* -- fatiador de impressão 3D com suportes personalizados da empresa CraftUnique,
+software proprietário gratuito disponível para Windows, Mac OS X e Linux.
+* *Cura* -- fatiador de impressão
+3D open-source da empresa Ultimaker, disponível para Windows, Mac OS X e Linux.
+* *Datasheet* -- referência
 técnica de um componente ou dispositivo eletrônico, com todas as especificações, tolerâncias, valores e
-fórmulas associados.  * *Delaminação* -- fenômeno que ocorre com a contração do material sendo impresso que
-faz camadas se soltarem e fendas aparecerem na peça.  * *Delrin* -- nome comercial do POM, plástico de baixo
+fórmulas associados.
+* *Delaminação* -- fenômeno que ocorre com a contração do material sendo impresso que
+faz camadas se soltarem e fendas aparecerem na peça.
+* *Delrin* -- nome comercial do POM, plástico de baixo
 atrito usado em castanhas de fusos e rolamentos plásticos. Também conhecido por polioximetileno ou poliacetal.
+
 * *Delta* (impressoras) -- é um tipo de robô paralelo que consiste de três braços conectados por juntas
 universais na base. É um dos dois arranjos populares de eixos para impressoras 3D, junto com as “cartesianas”.
-* *Deltabot* -- sinônimo de delta, no contexto de impressão 3D.  * *Digitalização* -- ato de conversão
+
+* *Deltabot* -- sinônimo de delta, no contexto de impressão 3D.
+* *Digitalização* -- ato de conversão
 de informação analógica para digital; no contexto da impressão 3D, especificamente, designa a conversão de
-objetos do mundo real para modelos 3D de computador.  * *Dissipação ativa* -- quando o componente usa ventoinha
-para ser resfriado, ao invés de depender somente de material e geometria.  * *Dissipação passiva* -- quando
-o componente usa somente a geometria e material para dissipar o calor.  * *Direct Extruder* -- Extrusor em que
-o tracionador e o hotend estão unidos diretamente. Não confundir com **direct drive**.  * *Direct Drive* --
+objetos do mundo real para modelos 3D de computador.
+* *Dissipação ativa* -- quando o componente usa ventoinha
+para ser resfriado, ao invés de depender somente de material e geometria.
+* *Dissipação passiva* -- quando
+o componente usa somente a geometria e material para dissipar o calor.
+* *Direct Extruder* -- Extrusor em que
+o tracionador e o hotend estão unidos diretamente. Não confundir com **direct drive**.
+* *Direct Drive* --
 mecanismo em que o motor aciona diretamente o elemento tracionado pelo pinhão, sem passar por engrenagens extras.
-* *DIY* -- “Do It Yourself”, “Faça Você Mesmo” em inglês.  * *DLP* -- “DLP” na verdade é sigla
+
+* *DIY* -- “Do It Yourself”, “Faça Você Mesmo” em inglês.
+* *DLP* -- “DLP” na verdade é sigla
 para “Digital Light Processing”, uma tecnologia de projeção de luz patenteada pela Texas Instruments, mas o
 nome no contexto de impressão 3D designa a SLA/DLP, impressoras de resina com endurecimento por projetores DLP.
+
 * *DMLS* -- Direct Metal Laser Sintering, uma técnica de impressão 3D que usa sinterização de pó de metal
-em uma cuba, semelhantes a SLS.  * *Draft tower* -- estrutura oca criada durante a impressão, especialmente
+em uma cuba, semelhantes a SLS.
+* *Draft tower* -- estrutura oca criada durante a impressão, especialmente
 impressão de dois ou mais extrusores, para funcionar para purga de filamento excedente. Também chamada de
-purge tower ou purge pillar ou em português, __torre de purga__.  * *Drive gear* -- literalmente traduzido
-como __engrenagem do acionador__, é o pinhão dentado usado nos motores.  * *Driver* -- nome genérico dado ao
+purge tower ou purge pillar ou em português, __torre de purga__.
+* *Drive gear* -- literalmente traduzido
+como __engrenagem do acionador__, é o pinhão dentado usado nos motores.
+* *Driver* -- nome genérico dado ao
 dispositivo eletrônico que faz o acionamento e controle do motor de passo, implementando proteções como Ponte H.
+
 * *DRV8825* -- driver comum para motores de impressoras 3D, mais caro que o A4988 mas mais resistente e com maior
-capacidade de corrente.  * *E3D* -- fabricante open-source de hotends baseada em Oxford que efetivamente lidera
-o mercado e os padrões dessas peças de impressoras 3D.  * *EBM* -- Electronic Beam Melting, uma tecnologia de
-impressão 3D industrial que usa feixes de elétrons para criação de peças metálicas.  * *Enabling the Future*
+capacidade de corrente.
+* *E3D* -- fabricante open-source de hotends baseada em Oxford que efetivamente lidera
+o mercado e os padrões dessas peças de impressoras 3D.
+* *EBM* -- Electronic Beam Melting, uma tecnologia de
+impressão 3D industrial que usa feixes de elétrons para criação de peças metálicas.
+* *Enabling the Future*
 -- projeto comunitário de âmbito mundial que procura disponibilizar designs de próteses imprimíveis para
-que voluntários as imprimam e distribuam a pessoas deficientes por todo o mundo.  * *Endstop* -- nome da chave
-de fim de curso que, na malha aberta de uma impressora 3D, determina a coordenada zero do eixo.  * *Escaneamento
-3D* -- o mesmo que __digitalização 3D__.  * *Estereolitografia* -- também chamada de SLA, é a tecnologia
+que voluntários as imprimam e distribuam a pessoas deficientes por todo o mundo.
+* *Endstop* -- nome da chave
+de fim de curso que, na malha aberta de uma impressora 3D, determina a coordenada zero do eixo.
+* *Escaneamento
+3D* -- o mesmo que __digitalização 3D__.
+* *Estereolitografia* -- também chamada de SLA, é a tecnologia
 de impressão que envolve resinas _fotopolimerizáveis_ atingidas de forma controlada por um laser ultravioleta
 guiado por __galvos__. Tem uma tecnologia derivada chamada de SLA/DLP, usando um projetor ao invés dos galvos.
+
 * *Exaptação* -- termo da biologia evolutiva, designa um órgão que ganha função diferente daquela que
 normalmente exerce, como um braço que acaba evoluindo para asa. No escopo das impressoras 3D, tem a ver com a
 propensão Maker de utilizar objetos de indústria de massa, como sprays de cabelo e molas de pregadores, para
-funções para as quais não foram projetados, nas impressoras 3D.  * *Expo3DBR* -- evento anual de exposição e
-encontro de profissionais de impressão 3D originário da comunidade __ReprapBR__.  * *Extrudar* -- expelir, emitir.
+funções para as quais não foram projetados, nas impressoras 3D.
+* *Expo3DBR* -- evento anual de exposição e
+encontro de profissionais de impressão 3D originário da comunidade __ReprapBR__.
+* *Extrudar* -- expelir, emitir.
+
 * *Extrusão de alumínio* -- nome que se dá às barras retas (perfis) de alumínio usadas na construção de algumas
-impressoras 3D.  * *Extrusor* -- o elemento da impressora que deposita o plástico, formado da parte tracionadora,
-ou cold end, e da parte de derretimento do plástico, o hotend.  * *Extrusora* -- extrusor. Em alguns contextos o
+impressoras 3D.
+* *Extrusor* -- o elemento da impressora que deposita o plástico, formado da parte tracionadora,
+ou cold end, e da parte de derretimento do plástico, o hotend.
+* *Extrusora* -- extrusor. Em alguns contextos o
 gênero feminino da palavra pode designar uma filamentadora, servindo para distinguir da peça de impressora 3D.
+
 * *Extrusor Monolítico* -- outro nome para extrusor direct ou direto, isto é, em que cold end e hotend estão
-unidos diretamente, sem bowden.  * *Extrusor Direto/Direct* -- extrusor em que cold end e hotend estão unidos
-diretamente, sem bowden.  * *Fan* -- ventoinha, como as de PC, usadas em dispositivos da impressora 3D.  * *Fatiador*
+unidos diretamente, sem bowden.
+* *Extrusor Direto/Direct* -- extrusor em que cold end e hotend estão unidos
+diretamente, sem bowden.
+* *Fan* -- ventoinha, como as de PC, usadas em dispositivos da impressora 3D.
+* *Fatiador*
 -- software que permite o arranjo de peças tridimensionais numa bandeja virtual e a transforma em instruções para
-a impressora 3D fabricar tal forma. Muitos fatiadores são também __print hosts__.  * *FDM™* -- Fused Deposition
+a impressora 3D fabricar tal forma. Muitos fatiadores são também __print hosts__.
+* *FDM™* -- Fused Deposition
 Modeling, ou deposição de modelagem fundida, a tecnologia das impressoras 3D que derretem plástico. O nome é
-marca registrada da Stratasys.  * *FFF* -- nome alternativa para FDM sem trademarks envolvidos, mas designando o
-mesmo processo e usado pelo projeto reprap para evitar complicações legais.  * *Fibra de Carbono* -- material
+marca registrada da Stratasys.
+* *FFF* -- nome alternativa para FDM sem trademarks envolvidos, mas designando o
+mesmo processo e usado pelo projeto reprap para evitar complicações legais.
+* *Fibra de Carbono* -- material
 que consiste de filamentos fortes e com estrutura cristalina de carbono, comumente usado como agente de reforço de
-outros materiais. Na impressão 3D, é vendido misturado a ABS ou Nylon.  * *Filamentadora* -- aparelho que derrete
+outros materiais. Na impressão 3D, é vendido misturado a ABS ou Nylon.
+* *Filamentadora* -- aparelho que derrete
 grãos de plástico e extruda filamento plástico para ser usado em impressoras 3D. Também chamada de extrusora.
+
 * *Filamento* -- o “fio” de plástico que alimenta uma impressora 3D FFF para a construção de objetos.  *
 *Filamento Guiado* -- também conhecido como __bowden__, é um arranjo de extrusor em que cold end e hotend são
 conectados por um tubo de baixo atrito longo, normalmente feito de PTFE. Nesse arranjo, geralmente o cold end -- o
-tracionador -- fica fixo enquanto o hotend é a peça móvel.  * *Fita Azul de Pintor* -- Fita crepe com cobertura
+tracionador -- fica fixo enquanto o hotend é a peça móvel.
+* *Fita Azul de Pintor* -- Fita crepe com cobertura
 acrílica _exaptada_ para funcionar como revestimento de mesa de impressão, visto que sua cobertura acrílica,
-ao ser aquecida, facilita a aderência das peças sendo impressas.  * *Fork* -- Significa “bifurcação” em
+ao ser aquecida, facilita a aderência das peças sendo impressas.
+* *Fork* -- Significa “bifurcação” em
 inglês e é usado principalmente para projetos de software aberto cujo desenvolvimento diverge em duas direções:
 uma “derivada”, isto é, com desenvolvedores ou propósitos diferentes, e a “original”. Muito frequentes
 no meio aberto, os _forks_ costumam surgir quando há discordâncias entre os desenvolvedores ou simplesmente
 a vontade de tentar algo diferente. Como exemplos, temos o __MarlinKimbra__, um fork do firmware __Marlin__; a
 suíte de escritório __LibreOffice__, fork da __OpenOffice__; e a impressora 3D __Graber i3__, fork da _Prusa
-i3_ versão 1.  * *Fotogrametria* -- técnica que com muitas amostras de fotos tiradas de vários ângulos de
+i3_ versão 1.
+* *Fotogrametria* -- técnica que com muitas amostras de fotos tiradas de vários ângulos de
 um objeto, consegue inferir sua geometria tridimensional. O Manual de Reconstrução Facial de Cícero Moraes
 explora bastante essa técnica: http://www.ciceromoraes.com.br/ebook/[_http://www.ciceromoraes.com.br/ebook/_] *
 *Fotopolimerização* -- o fenômeno que faz uma substância monomérica entrar em processo de polimerização e
 cura, geralmente passando do estado líquido para o sólido, ao ser atingida por luz de determinada frequência. Usa
-em impressoras SLA e SLA/DLP.  * *Frictionless Innovation* -- fenômeno de pequenas inovações rápidas e graduais
+em impressoras SLA e SLA/DLP.
+* *Frictionless Innovation* -- fenômeno de pequenas inovações rápidas e graduais
 que, acumuladas, se traduzem em uma grande inovação ou progresso de uma tecnologia, principalmente por não contarem
-com o elemento da “propriedade” intelectual bloqueando sua dinâmica.  * *Fuso de esferas* -- atuador linear
+com o elemento da “propriedade” intelectual bloqueando sua dinâmica.
+* *Fuso de esferas* -- atuador linear
 mecânico, geralmente de metal e com sulcos helicoidas por onde esferas de metal rolam, que traduz o movimento de
-rotação que sofre em movimento linear com pouquíssimo atrito.  * *Fuso trapezoidal* -- atuador linear mecânico,
+rotação que sofre em movimento linear com pouquíssimo atrito.
+* *Fuso trapezoidal* -- atuador linear mecânico,
 geralmente de metal e com rosca trapezoidal isósceles com castanha acoplada, que traduz o movimento de rotação
-que sofre em movimento linear com baixo atrito.  * *Fuzzy skin* -- técnica de fatiamento das paredes externas de
+que sofre em movimento linear com baixo atrito.
+* *Fuzzy skin* -- técnica de fatiamento das paredes externas de
 uma peça com perturbações semi-aleatórias de modo a se assemelhar a um contorno felpudo ou rugoso, utilizado
-pelo fatiador Cura.  * *Galvo* -- ou galvanômetro de espelho, é um instrumento eletromecânico para a deflexão
-controlada de feixes de laser, usado em impressoras 3D SLA.  * *G-Code* / *GCode* -- Código alfanumérico usado
+pelo fatiador Cura.
+* *Galvo* -- ou galvanômetro de espelho, é um instrumento eletromecânico para a deflexão
+controlada de feixes de laser, usado em impressoras 3D SLA.
+* *G-Code* / *GCode* -- Código alfanumérico usado
 por CNCs e impressoras 3D para comandos simples de posicionamento, movimentação, configuração e mudança de
-estado dessas máquinas. Este livro usa como convenção a palavra “g-code”, com hífen.  * *Gen7* -- Placa
+estado dessas máquinas. Este livro usa como convenção a palavra “g-code”, com hífen.
+* *Gen7* -- Placa
 eletrônica controladora all-in-one antigamente baseada em Arduino, mas na iteração mais recente baseada em ARM,
-criada para impressoras 3D reprap, com slots para drivers e saídas de potência.  * *Gen7-BR* -- modificação
-brasileira da placa Gen7, feita pelo grupo de estudos reprapbr.  * *Graber* -- sobrenome de Shane Graber, criador
+criada para impressoras 3D reprap, com slots para drivers e saídas de potência.
+* *Gen7-BR* -- modificação
+brasileira da placa Gen7, feita pelo grupo de estudos reprapbr.
+* *Graber* -- sobrenome de Shane Graber, criador
 da impressora 3D __Graber i3__, uma modificação da Prusa i3 usando menos peças impressas e mais cortes de CNC.  *
 *Grbl* -- software livre antigo de CNC, usado como base para grande parte dos firmwares de impressoras 3D populares.
+
 * *HBP* -- Heated Bed Platform, o mesmo que mesa aquecida. Um acrônimo obscuro e totalmente dispensável mas
-que volta e meia adorna as discussões envolvendo impressão 3D.  * *HDPE* -- High Density Polyethylene, ou PEAD
+que volta e meia adorna as discussões envolvendo impressão 3D.
+* *HDPE* -- High Density Polyethylene, ou PEAD
 (Polietileno de Alta Densidade) em português, um plástico seguro para fins alimentícios usado em vasilhas
-de leite e objetos domésticos.  * *Heatbed* ou *Heated bed* -- mesa aquecida, a plataforma onde as peças de
+de leite e objetos domésticos.
+* *Heatbed* ou *Heated bed* -- mesa aquecida, a plataforma onde as peças de
 impressão 3D são fabricadas. O aquecimento serve para controlar a contração do plástico e fazer com que
-permaneça aderido a ela.  * *Heatbreak* -- ver __barreira térmica__.  * *HiPS* -- High Impact Polystyrene,
+permaneça aderido a ela.
+* *Heatbreak* -- ver __barreira térmica__.
+* *HiPS* -- High Impact Polystyrene,
 ou Poliestireno de Alto Impacto, é um plástico de baixo custo que dissolve em D-Limoneno, comumente usado para
-filamentos dissolvíveis de impressão 3D.  * *Hobbed bolt* -- parafuso trator, o parafuso que, conectado pela
-cabeça a uma engrenagem e com dentes laterais, atua como elemento tracionador do extrusor.  * *Holding Torque* --
+filamentos dissolvíveis de impressão 3D.
+* *Hobbed bolt* -- parafuso trator, o parafuso que, conectado pela
+cabeça a uma engrenagem e com dentes laterais, atua como elemento tracionador do extrusor.
+* *Holding Torque* --
 torque de retenção, torque de resistência ao movimento exercido pelo motor energizado quando em posição fixa.
+
 * *Home* ou *Homing* -- movimento de busca da coordenada “zero” das impressoras 3D, levando o eixo da posição
-atual até um extremo em que conecta uma chave de fim de curso (endstop).  * *Hotend* -- o dispositivo aquecido que
-derrete e deposita o plástico da impressão 3D.  * *i3* -- Iteração 3; usada em alguns modelos de impressoras,
-como Prusa e Graber. Segue o mesmo raciocínio da nomenclatura “MK”, ver entrada MK no glossário.  * *Infill*
+atual até um extremo em que conecta uma chave de fim de curso (endstop).
+* *Hotend* -- o dispositivo aquecido que
+derrete e deposita o plástico da impressão 3D.
+* *i3* -- Iteração 3; usada em alguns modelos de impressoras,
+como Prusa e Graber. Segue o mesmo raciocínio da nomenclatura “MK”, ver entrada MK no glossário.
+* *Infill*
 -- preenchimento. A parte da peça impressa interior às paredes, geralmente preenchida com um padrão vazado de
-filetes.  * *Jerk* -- movimento que, traduzido, seria “solavanco” ou “empurrão”, e que denomina a súbita
+filetes.
+* *Jerk* -- movimento que, traduzido, seria “solavanco” ou “empurrão”, e que denomina a súbita
 mudança de direção do carro extrusor. Um ajuste de _jerk_ determina a mínima velocidade em que o extrusor
-tem que estar para a aceleração entrar em ação.  * *Kapton* -- marca mais famosa das fitas de poliimida,
+tem que estar para a aceleração entrar em ação.
+* *Kapton* -- marca mais famosa das fitas de poliimida,
 um filme plástico adesivo resistente ao calor usado para proteger e firmar peças quentes ou promover adesão
-à mesa de impressão.  * *Kisslicer* -- fatiador proprietário multiplataforma cujo desenvolvimento estacionou
-há alguns anos.  * *Kossel* -- um dos modelos mais famosos de reprap estilo __delta__.  * *Lost PLA casting*
--- o processo de cera perdida, mas executado com peças de PLA no lugar da cera.  * *Lost wax casting* -- ver
-_cera perdida._ * *Maker* -- literalmente, __fazedor__; * *MakerLinux* -- nome do pequeno empreendimento do autor
-do livro, em que baseia seus serviços e criações para a comunidade.  * *Malha
-* ** *Aberta e Fechada (controle)*
+à mesa de impressão.
+* *Kisslicer* -- fatiador proprietário multiplataforma cujo desenvolvimento estacionou
+há alguns anos.
+* *Kossel* -- um dos modelos mais famosos de reprap estilo __delta__.
+* *Lost PLA casting*
+-- o processo de cera perdida, mas executado com peças de PLA no lugar da cera.
+* *Lost wax casting* -- ver
+_cera perdida._
+* *Maker* -- literalmente, __fazedor__;
+* *MakerLinux* -- nome do pequeno empreendimento do autor
+do livro, em que baseia seus serviços e criações para a comunidade.
+* *Malha
+
+* *
+* *Aberta e Fechada (controle)*
 -- _Malha aberta_ é um sistema em que a saída (resultado) não exerce qualquer ação sobre o sinal de controle,
 _malha fechada_ é um sistema em que há um ou mais componentes no sistema para verificar (medir) a execução da
-ação e realimentar o circuito com esta medida.  ** *Como representação de uma figura tridimensional* -- uma
+ação e realimentar o circuito com esta medida.  *
+* *Como representação de uma figura tridimensional* -- uma
 _malha poligonal_ é uma coleção de vértices, arestas e faces que definem a forma de um objeto poliédrico no
-espaço tridimensional.  * *Manifold* -- redução de “2-manifold”, que é a propriedade que queremos para
+espaço tridimensional.
+* *Manifold* -- redução de “2-manifold”, que é a propriedade que queremos para
 nossas malhas tridimensionais. Um malha ou objeto manifold é, intuitivamente falando, um objeto viável em 3
-dimensões. Mais detalhes no capítulo de representações de objetos tridimensionais.  * *Mão 3D (projeto)*
+dimensões. Mais detalhes no capítulo de representações de objetos tridimensionais.
+* *Mão 3D (projeto)*
 -- iniciativa acadêmica inspirada no projeto __Enabling the Future__, para conseguir próteses impressas e
-assistência para a população carente. Mais detalhes na história da impressão 3D no Brasil.  * *Marlin* --
+assistência para a população carente. Mais detalhes na história da impressão 3D no Brasil.
+* *Marlin* --
 firmware open-source para arduino mais popular para impressoras 3D reprap, desenvolvido de forma colaborativa.
+
 * *MarlinKimbra* -- _fork_ do Marlin com recursos especiais para impressoras deltas, recentemente renomeado para
-MK4duo.  * *MatterControl* -- fatiador open-source e multiplataforma escrito em .Net da empresa __MatterHackers__.
+MK4duo.
+* *MatterControl* -- fatiador open-source e multiplataforma escrito em .Net da empresa __MatterHackers__.
+
 * *MEK* -- Methyl Ethyl Ketone, ou Metil-Etil-Cetona, também chamada de propanona. É uma _cetona_ semelhante à
-acetona, mas mais forte e menos volátil, usada em preparados como a “solução limpadora da Tigre”.  * *Mesa
+acetona, mas mais forte e menos volátil, usada em preparados como a “solução limpadora da Tigre”.
+* *Mesa
 aquecida* -- a plataforma onde as peças de impressão 3D são fabricadas. O aquecimento serve para controlar
-a contração do plástico e fazer com que permaneça aderido a ela.  * *Micropasso* -- aumento da resolução
+a contração do plástico e fazer com que permaneça aderido a ela.
+* *Micropasso* -- aumento da resolução
 de passos de um motor através de formas de onda especialmente criadas para atingir regiões intermediárias.  *
-*Microstep* -- mesmo que micropasso.  * *Mightyboard* -- placa controladora open-source da primeira geração
-das impressoras 3D da empresa Makerbot.  * *MK* - abreviação de “Mark”, marca. É um prefixo adotado para
+*Microstep* -- mesmo que micropasso.
+* *Mightyboard* -- placa controladora open-source da primeira geração
+das impressoras 3D da empresa Makerbot.
+* *MK* - abreviação de “Mark”, marca. É um prefixo adotado para
 diversas peças open-source de impressora 3D significando algo como “versão” e o mesmo “mark” pode se
 referir a peças diferentes; por exemplo, existe uma _mesa aquecida_ MK2 e um _extrusor_ MK2. Devido ao uso,
 no entanto, alguns termos são usados como sinônimos para certas peças; é raro ver alguém se referindo
 ao extrusor MK2, mas é frequente ver alguém usando como sinônimo do modelo de mesa aquecida. Deste modo,
 colocamos os sinônimos mais comuns, ainda que o uso seja “errado”. O uso de “i” como em “Prusa i3”
-segue o mesmo raciocínio, e nesse caso vem de iteração (não confundir com __interação__).  * *MK2* --
+segue o mesmo raciocínio, e nesse caso vem de iteração (não confundir com __interação__).
+* *MK2* --
 Mark 2, significa qualquer objeto com “versão 2”, mas no contexto de reprap geralmente faz referências às
-mesas aquecidas de fibra de vidro com resistência embutida.  * *MK2B* -- Assim como MK2, a MK2B no contexto de
+mesas aquecidas de fibra de vidro com resistência embutida.
+* *MK2B* -- Assim como MK2, a MK2B no contexto de
 reprap faz referência a uma mesa aquecida de fibra de vidro com resistência, na versão específica preparada
-para voltagens de 12 e 24V.  * *MK3* -- Assim como MK2 e MK2B, no contexto de reprap a referência “MK3”
-diz respeito a uma mesa aquecida de alumínio com resistência embutida.  * *MK7* -- no contexto de reprap,
-quando MK7 é mencionado geralmente se refere a um formato específico de _drive gear_ (pinhão).  * *MK8* --
+para voltagens de 12 e 24V.
+* *MK3* -- Assim como MK2 e MK2B, no contexto de reprap a referência “MK3”
+diz respeito a uma mesa aquecida de alumínio com resistência embutida.
+* *MK7* -- no contexto de reprap,
+quando MK7 é mencionado geralmente se refere a um formato específico de _drive gear_ (pinhão).
+* *MK8* --
 no contexto de reprap, quando MK8 é mencionado geralmente se refere a um formato específico de _drive gear_
-(pinhão).  * *Motor DC* -- qualquer motor que seja alimentado com corrente contínua. Motores de passo são
-motores DC.  * *Motor de passo* -- motor DC sem escovas que divide a rotação em um número de passos iguais
+(pinhão).
+* *Motor DC* -- qualquer motor que seja alimentado com corrente contínua. Motores de passo são
+motores DC.
+* *Motor de passo* -- motor DC sem escovas que divide a rotação em um número de passos iguais
 de rotação. É o tipo de motor mais frequentemente usado em impressoras 3D, especialmente os do tipo bipolar.
+
 * *Motor planetário* -- motor que usa engrenagens “planetárias” (epicíclicas, o centro de uma rodando
 em volta do centro de outra) internamente para conseguir redução da distância e multiplicação do torque.  *
 *Mouse ears* -- estrutura circular adicionada aos cantos de peças a serem impressas para aprimorar sua aderência
-na plataforma de impressão, descartada depois da peça impressa.  * *NC
-* ** *Non-Commercial* -- no âmbito de
+na plataforma de impressão, descartada depois da peça impressa.
+* *NC
+
+* *
+* *Non-Commercial* -- no âmbito de
 licenças de software e hardware, significa licenças de obras que não podem ser usadas para fins comerciais.
-** *Normally Closed* -- no âmbito eletrônico, diz respeito a chaves que em seu estado inativo, representam um
-circuito fechado, abrindo quando acionados.  * *NEMA* -- associação de padrões estadunidense, “National
-Electrical Manufacturers Association” ou “Associação de Fabricantes Elétricos Nacional”.  ** *NEMA17*
--- motor descrito pelos padrões NEMA com 1,7×1,7 polegadas.  * *NO* -- **Normally Open**, ou normalmente
+*
+* *Normally Closed* -- no âmbito eletrônico, diz respeito a chaves que em seu estado inativo, representam um
+circuito fechado, abrindo quando acionados.
+* *NEMA* -- associação de padrões estadunidense, “National
+Electrical Manufacturers Association” ou “Associação de Fabricantes Elétricos Nacional”.  *
+* *NEMA17*
+-- motor descrito pelos padrões NEMA com 1,7×1,7 polegadas.
+* *NO* -- **Normally Open**, ou normalmente
 aberta. No âmbito eletrônico, diz respeito a chaves que em seu estado inativo, representam um circuito aberto,
-fechando quando acionados.  * *Nozzle* -- Bico (do hotend).  * *Nylon* -- designação genérica para uma família
-de termoplásticos feitos de __poliamida__.  * *OBJ* -- formato de arquivo de malha tridimensional da __Wavefront
+fechando quando acionados.
+* *Nozzle* -- Bico (do hotend).
+* *Nylon* -- designação genérica para uma família
+de termoplásticos feitos de __poliamida__.
+* *OBJ* -- formato de arquivo de malha tridimensional da __Wavefront
 technologies__, aberto e por isso muito popular, por vezes usado para compartilhamentos de designs 3D e suportado
-pelos fatiadores em geral.  * *Oozing* -- escorrimento (de plástico derretido).  * *OpenBeam* -- marca de perfis de
-alumínio comumente usados em impressoras 3D delta.  * *OpenSCAD* -- linguagem e software de programação declarativa
+pelos fatiadores em geral.
+* *Oozing* -- escorrimento (de plástico derretido).
+* *OpenBeam* -- marca de perfis de
+alumínio comumente usados em impressoras 3D delta.
+* *OpenSCAD* -- linguagem e software de programação declarativa
 de figuras tridimensionais. Open-source e multiplataforma, https://www.openscad.org/[_https://www.openscad.org_] *
 *Open-Source* -- software, hardware ou design que se enquadre na __Open Source Definition__, com 11 pontos que definem
 obras abertas de livre compartilhamento e modificação: https://opensource.org/osd[_https://opensource.org/osd_] *
 *Open-Source Hardware* -- hardware de design aberto, modificável e público que se enquadre na __Open Source Hardware
-Definition__, https://www.oshwa.org/definition/[_https://www.oshwa.org/definition/_] * *Overhang* -- em português,
+Definition__, https://www.oshwa.org/definition/[_https://www.oshwa.org/definition/_]
+* *Overhang* -- em português,
 __seções pendentes__; são as partes de uma peça tridimensional que não têm material que as sustente abaixo.
+
 * *Padrão de preenchimento* -- perfil geométrico que o preenchimento de uma peça assume quando calculada pelo
-fatiador, como hexagonal, linear ou concêntrico.  * *Parafuso trator* -- o parafuso que, conectado pela cabeça
-a uma engrenagem e com dentes laterais, atua como elemento tracionador do extrusor.  * *Patins* -- colocados em
+fatiador, como hexagonal, linear ou concêntrico.
+* *Parafuso trator* -- o parafuso que, conectado pela cabeça
+a uma engrenagem e com dentes laterais, atua como elemento tracionador do extrusor.
+* *Patins* -- colocados em
 __trilhos__, são bases de rolamentos em guias lineares industriais de alta eficiência utilizados em deltas como
-a __Kossel Mini__.  * *PEAD* -- nome em português do __HDPE__.  * *PEEK* -- termoplástico de alto ponto de
-fusão utilizado em hotends das primeiras repraps.  * *PEI* -- polieterimida, termoplástico de alto ponto de
+a __Kossel Mini__.
+* *PEAD* -- nome em português do __HDPE__.
+* *PEEK* -- termoplástico de alto ponto de
+fusão utilizado em hotends das primeiras repraps.
+* *PEI* -- polieterimida, termoplástico de alto ponto de
 fusão utilizado e coloração âmbas translúcida usada em coberturas adesivas para mesas aquecidas, e também
-como base dos plásticos industriais Ultem.  * *Pellets* -- grãos de plástico cru, usados em filamentadoras para
-produção de filamentos de impressão 3D.  * *Perfil de alumínio* -- ver __extrusão de alumínio__.  * *Pescoço
+como base dos plásticos industriais Ultem.
+* *Pellets* -- grãos de plástico cru, usados em filamentadoras para
+produção de filamentos de impressão 3D.
+* *Perfil de alumínio* -- ver __extrusão de alumínio__.
+* *Pescoço
 dissipador* -- parte do hotend após o bloco aquecedor e o _heatbreak_ (barreira térmica) que tem como função
 impedir que o calor chegue ao topo. Em modelos mais antigos é feito de material mau condutor de calor como PEEK,
 em modelos mais novos é de metal condutor de calor como alumínio com aletas para auxiliar na dissipação.
+
 * *PET* -- polietileno tereftalato, um polímero termoplástico da família dos poliésteres e o plástico
 mais abundante da indústria moderna, usado em garrafas plásticas, fibras de roupas e resinas de engenharia.
+
 * *PETG* -- PET com um radical glicol a mais, propriedade que evita que cristalize ao solidificar e portanto
-o torna viável para ser utilizado em filamentos de impressão 3D.  * *PID* -- Proporcional -- Integral --
-Derivada, um método de controle usado em automação industrial para entradas continuamente moduladas.  * *PLA*
+o torna viável para ser utilizado em filamentos de impressão 3D.
+* *PID* -- Proporcional -- Integral --
+Derivada, um método de controle usado em automação industrial para entradas continuamente moduladas.
+* *PLA*
 -- ácido polilático, um termoplástico orgânico e compostável utilizado em filamentos de impressão 3D.  *
-*Planetary Gears/Motors* -- ver __motor planetário__.  * *Polaseal* -- marca de plásticos para plastificação
-(3/2 poliéster e polietileno) usada em mesas de impressão 3D para facilitar aderência.  * *Poliacetal* --
-__polixoximetileno (POM). Ver Delrin__.  * *Poliamida* -- polímetro termoplástico composto por monômeros
-de amida conectados por ligações peptídicas. É de poliamidas que o nylon é feito.  * *Policarbonato* --
+*Planetary Gears/Motors* -- ver __motor planetário__.
+* *Polaseal* -- marca de plásticos para plastificação
+(3/2 poliéster e polietileno) usada em mesas de impressão 3D para facilitar aderência.
+* *Poliacetal* --
+__polixoximetileno (POM). Ver Delrin__.
+* *Poliamida* -- polímetro termoplástico composto por monômeros
+de amida conectados por ligações peptídicas. É de poliamidas que o nylon é feito.
+* *Policarbonato* --
 polissacarídeo que também é termoplástico, conhecido por sua resistência (usado em escudos à prova de balas),
-transparência e, na impressão 3D como filamento, alta temperatura de extrusão.  * *Poliéster* -- categoria
+transparência e, na impressão 3D como filamento, alta temperatura de extrusão.
+* *Poliéster* -- categoria
 de polímeros com o grupo funcional éster na sua cadeia principal, com seu principal representante sendo o PET,
 às vezes chamado de “o poliéster”. Como materiais, têm geralmente alta tenacidade e módulo de young, baixa
-absorção de umidade e baixa taxa de _warp_ quando sujeitas a impressão 3D.  * *Poliimida* -- ver __Kapton__.
+absorção de umidade e baixa taxa de _warp_ quando sujeitas a impressão 3D.
+* *Poliimida* -- ver __Kapton__.
+
 * *Pololu* -- marca de hardware famosa por seus _drivers A4988_ baratos, usados nas placas controladoras das
-impressoras 3D reprap.  * *POM* -- polioximetileno; ver __Delrin__.  * *Ponte* -- Estrutura impressa que liga duas
-ilhas sem suporte.  * *Preenchimento* -- A parte da peça impressa interior às paredes, geralmente preenchida
-com um padrão vazado de filetes.  * *Printrun* -- a _suite_ de programas open-source a que pertence o _print
-host_ pronterface.  * *Print the Legend* -- Documentário de 2014 da Netflix que procurou apagar o movimento
+impressoras 3D reprap.
+* *POM* -- polioximetileno; ver __Delrin__.
+* *Ponte* -- Estrutura impressa que liga duas
+ilhas sem suporte.
+* *Preenchimento* -- A parte da peça impressa interior às paredes, geralmente preenchida
+com um padrão vazado de filetes.
+* *Printrun* -- a _suite_ de programas open-source a que pertence o _print
+host_ pronterface.
+* *Print the Legend* -- Documentário de 2014 da Netflix que procurou apagar o movimento
 _reprap_ da história, ativamente impedindo que fosse mencionado mesmo que membros aparecessem no vídeo.  *
 *Proprietário* -- adjetivo que se dá a obras digitais, software ou hardware cobertos por licenças restritivas
-de copyright.  * *Pronterface* -- _print host_ open-source multiplataforma popular.  * *Prototipagem rápida*
--- conjunto de técnicas para fabricação rápida de uma peça usando modelagem 3D e impressoras 3D.  * *Prusa*
+de copyright.
+* *Pronterface* -- _print host_ open-source multiplataforma popular.
+* *Prototipagem rápida*
+-- conjunto de técnicas para fabricação rápida de uma peça usando modelagem 3D e impressoras 3D.
+* *Prusa*
 -- sobrenome do criador da popular reprap _Prusa i3_ (e __Prusa Mendel__), e nome de sua firma, Prusa Research.
+
 * *Prusa calculator* -- clássico recurso web disponibilizado pela empresa _Prusa Research_ para cálculo fácil
-de medidas de impressoras 3D.  * *PTFE* -- politetrafluoretileno, de nome comercial Teflon, é um fluropolímero
-hidrofóbico de baixo coeficiente de atrito.  * *Pull-up* -- usado para a caracterização de resistores, um resistor
+de medidas de impressoras 3D.
+* *PTFE* -- politetrafluoretileno, de nome comercial Teflon, é um fluropolímero
+hidrofóbico de baixo coeficiente de atrito.
+* *Pull-up* -- usado para a caracterização de resistores, um resistor
 pull-up é um componente ligado a uma fonte de tensão para garantir que, se esta fonte for desconectada, o nível
 lógico não saltará para alta impedância, ao invés disso permanecendo “ligado” (por isso o “up”).
+
 * *Pull-down* -- usado para a caracterização de resistores, um resistor pull-down é um componente ligado
 a uma fonte de tensão para garantir que, se esta fonte for desconectada, o nível lógico não saltará para
-alta impedância, ao invés disso permanecendo “desligado” (por isso o “down”).  * *PVA* -- álcool
-de polivinila, substância de que são feitos um determinado tipo de filamento solúvel em água.  * *PVAc* --
-acetato de polivinila, a substância-base da cola branca escolar e cola de madeira.  * *PVP* -- conhecida também
+alta impedância, ao invés disso permanecendo “desligado” (por isso o “down”).
+* *PVA* -- álcool
+de polivinila, substância de que são feitos um determinado tipo de filamento solúvel em água.
+* *PVAc* --
+acetato de polivinila, a substância-base da cola branca escolar e cola de madeira.
+* *PVP* -- conhecida também
 como polivinilpirrolidona, polivinilpirrolideno ou ainda povidona, é um polímero solúvel em água formado por
 cadeias de __vinilpirrolidonas__. Com viscosidade newtoniana e excelentes propriedades de umidificação, forma
 facilmente filmes ou películas, e por isso é bastante usado como revestimento ou aditivo de revestimentos. Na
 Impressão 3D, faz parte de pelo menos três técnicas de aderência à mesa: cola bastão, álcool gel e A.Bond,
 podendo ser também usado isoladamente (diluído em água) como uma quarta técnica. Apesar de seu monômero ser
-tóxico, a PVP em forma polimérica é completamente inofensiva.  * *PWM* -- Pulse-Width Modulation, ou modulação
+tóxico, a PVP em forma polimérica é completamente inofensiva.
+* *PWM* -- Pulse-Width Modulation, ou modulação
 por largura de pulso, uma técnica de modulação de ondas usada na eletrônica das repraps para “simular” de
-forma digital intensidades analógicas de potência entregue aos componentes como motores e aquecedores.  * *Raft*
+forma digital intensidades analógicas de potência entregue aos componentes como motores e aquecedores.
+* *Raft*
 -- em português a tradução sendo “balsa”, o _raft_ é uma estrutura de plástico esparso impressa abaixo
 da peça para providenciar uma base firme para a construção. O raft costuma ter o mesmo padrão da estrutura
-de suporte e, como ele, é descartado após a impressão.  * *RAMPS* -- Reprap Arduino Mega Pololu Shield, um
+de suporte e, como ele, é descartado após a impressão.
+* *RAMPS* -- Reprap Arduino Mega Pololu Shield, um
 circuito open-source adicional encaixável no Arduino Mega para que ele possa controlar a potência de dispositivos
-de uma impressora 3D.  * *Repetier Firmware* -- um dos firmwares open-source mais populares para __repraps__,
-com versões para Arduino e ARM.  * *Repetier Host* -- um dos print hosts mais populares, era open-source mas a
+de uma impressora 3D.
+* *Repetier Firmware* -- um dos firmwares open-source mais populares para __repraps__,
+com versões para Arduino e ARM.
+* *Repetier Host* -- um dos print hosts mais populares, era open-source mas a
 partir da versão 1.0 passou a ser somente gratuito, com código fechado. Por baixo, usa os fatiadores open-source
-slic3r ou cura.  * *Repetier Server* -- um print host open-source de impressão 3D web.  * *Reprap, impressora*
+slic3r ou cura.
+* *Repetier Server* -- um print host open-source de impressão 3D web.
+* *Reprap, impressora*
 -- uma impressora open-source que possa fabricar suas próprias peças. O significado mudou com o tempo e hoje é
 comum chamar de reprap qualquer impressora open-source, seja fabricada com peças impressas ou não, e mesmo não
-pertencente ao site do projeto reprap.  * *Reprap, projeto* -- um projeto criado por Vik Olliver, Adrian Bowyer e
+pertencente ao site do projeto reprap.
+* *Reprap, projeto* -- um projeto criado por Vik Olliver, Adrian Bowyer e
 voluntários para aproveitar a queda da patente do extrusor FDM em 2009 e criar todo um ecossistema de impressas
-3D open-source. É a base de praticamente todas as impressoras 3d de baixo custo de hoje em dia.  * *ReprapBR*
+3D open-source. É a base de praticamente todas as impressoras 3d de baixo custo de hoje em dia.
+* *ReprapBR*
 -- grupo e lista de discussão (google groups) formado em 2012 de interessados em eletrônica e desenvolvimento
-colaborativo.  * *Repstrap* -- termo criado pelo projeto reprap para indicar qualquer impressora open-source que
+colaborativo.
+* *Repstrap* -- termo criado pelo projeto reprap para indicar qualquer impressora open-source que
 não tenha partes de plástico replicáveis mas sirva para produzir as peças para uma reprap “legítima”,
 que tem a faculdade de se “replicar” produzindo novas peças plásticas. Essa diferenciação acabou caindo
 em desuso e geralmente se chamam de “repraps” mesmo as impressoras 3D open-source do projeto que não tenham
 (muitas) peças plásticas para se perpetuar. Um bom exemplo de uma “repstrap” seria a graber i3, impressora 3D
 com construção muito próxima à prusa i3, mas que ao invés de usar peças conectoras de plástico impresso,
 usa uma estrutura baseada em cortes de CNC de MDF, acrílico ou alumínio. O nome vem de “bootstrap”, o
-mesmo termo que deu origem ao termo “boot” de computadores pessoais.  * *Retração* -- movimento de retorno
+mesmo termo que deu origem ao termo “boot” de computadores pessoais.
+* *Retração* -- movimento de retorno
 breve do filamento do extrusor para que não fiquem resíduos de escorrimento de plástico derretido na peça.  *
 *Rolamento* -- peça com esferas de metal internas usada para elementos deslizantes e rotatórios em máquinas.
-* *Rostock* -- um dos modelos mais populares de delta do projeto reprap.  * *RUMBA* -- eletrônica de impressão 3D
-open-source _all-in-one_ baseada em Arduino com muitas saídas e proteções.  * *S3G* -- protocolo da _Makerbot_
-equivalente ao G-Code, com o formato de arquivo .x3g sendo sua implementação mais conhecida.  * *Sailfish*
--- firmware open-source usado em impressoras estilo _Makerbot_ (hoje em dia, os clones).  * *Sanguinololu*
+
+* *Rostock* -- um dos modelos mais populares de delta do projeto reprap.
+* *RUMBA* -- eletrônica de impressão 3D
+open-source _all-in-one_ baseada em Arduino com muitas saídas e proteções.
+* *S3G* -- protocolo da _Makerbot_
+equivalente ao G-Code, com o formato de arquivo .x3g sendo sua implementação mais conhecida.
+* *Sailfish*
+-- firmware open-source usado em impressoras estilo _Makerbot_ (hoje em dia, os clones).
+* *Sanguinololu*
 -- eletrônica de impressão 3D open-source all-in-one baseada em Arduino de baixo custo, uma das primeiras a
-surgir. Não mais desenvolvida.  * *Seam* -- termo para _costura_ em inglês, denomina o local em que as duas
-pontas de um filete de plástico derretido depositado se encontram.  * *Servo Motor* -- motor de malha fechada; um
+surgir. Não mais desenvolvida.
+* *Seam* -- termo para _costura_ em inglês, denomina o local em que as duas
+pontas de um filete de plástico derretido depositado se encontram.
+* *Servo Motor* -- motor de malha fechada; um
 dispositivo que produz movimento em resposta a um comando e então regula a velocidade e direção deste movimento em
-resposta à realimentação.  * *Sfact* -- nome novo da antiga suíte de utilitários fatiadores __Skeinforge__. Não
-mais desenvolvida.  * *Shell* -- a “casca externa”, ou as paredes, de uma peça.  * *Simplify3D* -- fatiador
-multiplataforma proprietário conhecido por sua rapidez, riqueza de recursos e suportes personalizados.  * *Skeinforge*
--- antiga suite de utilitários fatiadores em python, usada para CNC e impressão 3D.  * *Skirt* -- “saia”,
+resposta à realimentação.
+* *Sfact* -- nome novo da antiga suíte de utilitários fatiadores __Skeinforge__. Não
+mais desenvolvida.
+* *Shell* -- a “casca externa”, ou as paredes, de uma peça.
+* *Simplify3D* -- fatiador
+multiplataforma proprietário conhecido por sua rapidez, riqueza de recursos e suportes personalizados.
+* *Skeinforge*
+-- antiga suite de utilitários fatiadores em python, usada para CNC e impressão 3D.
+* *Skirt* -- “saia”,
 estrutura de poucos filetes criada em volta de uma peça sendo impressa somente para gastar um pouco de plástico
-inicial e garantir que a impressão comece com filamento no bico.  * *SLA* -- __estereolitografia__.  * *SLA/DLP*
--- modificação da estereolitografia usando um projetor (DLP) ao invés dos galvos.  * *Slic3r* -- fatiador
-open-source multiplataforma com riqueza de recursos, escrito em perl e C++.  * *Slicer* -- “fatiador”,
-em inglês.  * *SLM* -- Selective Laser Melting, uma tecnologia de impressão 3D semelhante a SLS usada com
-metais derretidos por um feixe de laser. Veja também __DMLS__.  * *SLS* -- Selective Laser Sintering, uma
+inicial e garantir que a impressão comece com filamento no bico.
+* *SLA* -- __estereolitografia__.
+* *SLA/DLP*
+-- modificação da estereolitografia usando um projetor (DLP) ao invés dos galvos.
+* *Slic3r* -- fatiador
+open-source multiplataforma com riqueza de recursos, escrito em perl e C++.
+* *Slicer* -- “fatiador”,
+em inglês.
+* *SLM* -- Selective Laser Melting, uma tecnologia de impressão 3D semelhante a SLS usada com
+metais derretidos por um feixe de laser. Veja também __DMLS__.
+* *SLS* -- Selective Laser Sintering, uma
 tecnologia de impressão 3D que envolve sinterização do material (aumentar a temperatura de um pó até perto
 do ponto de derretimento, de modo que as partículas se unam) quando atingido por um feixe de laser, em camadas
-sucessivas.  * *Smoothieboard* -- a eletrônica open-source oficial do projeto smoothieware.  * *Software Livre*
+sucessivas.
+* *Smoothieboard* -- a eletrônica open-source oficial do projeto smoothieware.
+* *Software Livre*
 -- software de computador que obedeça às 4 liberdades de software como definidas pela Free Software Foundation:
 https://www.gnu.org/philosophy/free-sw.pt-br.html[_https://www.gnu.org/philosophy/free-sw.pt-br.html_]. Em
 geral, todo software livre é open-source e vice-versa; são dois nomes pra mesma categoria.  *
@@ -12595,46 +12833,75 @@ acetona, usada como substituta de acetona P.A. (Pureza Analítica) para alisamen
 ABS, por não necessitar de permissão da polícia federal para compra e poder ser comprada em lojas
 de tintas e ferragens. Não é a única do tipo, mas a mais fácil de achar no mercado nacional. Ficha técnica:
 http://www.tigre.com.br/sites/default/files/produtos/ficha-tecnica/54001207.pdf[_http://www.tigre.com.br/sites/default/files/produtos/ficha-tecnica/54001207.pdf_]
-* *Sprinter* -- um dos primeiros firmwares do projeto reprap, hoje não mais desenvolvido.  * *Stepper Motor*
--- __Motor de passo__.  * *Stepstick* -- assim como a Pololu, empresa conhecida pela fabricação de drivers
-de motores baratos, com o diferencial de seus drivers serem open-source.  * *STL* -- formato simples de
+
+* *Sprinter* -- um dos primeiros firmwares do projeto reprap, hoje não mais desenvolvido.
+* *Stepper Motor*
+-- __Motor de passo__.
+* *Stepstick* -- assim como a Pololu, empresa conhecida pela fabricação de drivers
+de motores baratos, com o diferencial de seus drivers serem open-source.
+* *STL* -- formato simples de
 triângulos orientados sem material, cores ou propriedades, em texto ou binário, desenvolvido pela 3D Systems
-para a impressão 3D.  * *Stratasys* -- empresa de S. Scott Crump, inventor da tecnologia FDM e detentora de
-muitas das patentes de impressão 3D da atualidade.  * *Subtrativa (Fabricação / Manufatura)* -- tecnologia
+para a impressão 3D.
+* *Stratasys* -- empresa de S. Scott Crump, inventor da tecnologia FDM e detentora de
+muitas das patentes de impressão 3D da atualidade.
+* *Subtrativa (Fabricação / Manufatura)* -- tecnologia
 que remove material de um objeto inicial para dar-lhe a forma necessária; em contraste a fabricação aditiva
-(impressão 3D).  * *Suco de ABS* -- solução de ABS dissolvido em acetona, usada para reparar peças e melhorar
-aderência à mesa.  * *Suporte* -- estrutura descartável impressa abaixo de certas seções pendentes para dar
-apoio a áreas “flutuantes” da peça enquanto é impressa.  * *Suporte solúvel / dissolvível* -- suporte
+(impressão 3D).
+* *Suco de ABS* -- solução de ABS dissolvido em acetona, usada para reparar peças e melhorar
+aderência à mesa.
+* *Suporte* -- estrutura descartável impressa abaixo de certas seções pendentes para dar
+apoio a áreas “flutuantes” da peça enquanto é impressa.
+* *Suporte solúvel / dissolvível* -- suporte
 feito de filamento especial que quando exposto a um líquido solvente, desmancha e sai facilmente da peça.  *
-*Teflon* -- nome comercial do __PTFE__.  * *Termistor* -- elemento resistivo cuja resistência é diminuída
-pelo aquecimento, usado para medir temperaturas de componentes aquecidos em impressoras 3D.  * *Termopar* --
+*Teflon* -- nome comercial do __PTFE__.
+* *Termistor* -- elemento resistivo cuja resistência é diminuída
+pelo aquecimento, usado para medir temperaturas de componentes aquecidos em impressoras 3D.
+* *Termopar* --
 dispositivo termoelétrico de dois metais conectados gerando uma tensão que cresce em proporção à diferença
 de temperatura. Usado em impressoras 3D para medir temperaturas de componentes aquecidos, geralmente componentes
-de temperaturas maiores que os medidos por termistores.  * *Termorresistência* -- termistor.  * *Thingiverse*
+de temperaturas maiores que os medidos por termistores.
+* *Termorresistência* -- termistor.
+* *Thingiverse*
 -- site da _Makerbot_ (e portanto da Stratasys) de compartilhamento de designs tridimensionais para impressão 3D.
-* *Torque* -- força de torção que resulta em rotação.  * *Trilho* -- elemento deslizante por onde o _patim_
-se move.  * *Tritan* -- termoplástico propício para filamento de impressão 3D concorrente do policarbonato,
-supostamente seguro para fins alimentícios por não conter BPA.  * *Ultem ®9085* -- filamento industrial da
-Stratasys de alto ponto de fusão e retardamento de chamas, baseado em __PEI__.  * *UV
-* ** *UltraVioleta* --
+
+* *Torque* -- força de torção que resulta em rotação.
+* *Trilho* -- elemento deslizante por onde o _patim_
+se move.
+* *Tritan* -- termoplástico propício para filamento de impressão 3D concorrente do policarbonato,
+supostamente seguro para fins alimentícios por não conter BPA.
+* *Ultem ®9085* -- filamento industrial da
+Stratasys de alto ponto de fusão e retardamento de chamas, baseado em __PEI__.
+* *UV
+
+* *
+* *UltraVioleta* --
 faixa do espectro eletromagnético com frequências logo acima da luz visível, em que a energia intrínseca sobe
 o suficiente para que o limite superior já seja radiação ionizante. A Ultravioleta é dividida em faixas UV A
 (315-400nm de comprimento de onda, faixa de trabalho de impressoras 3D SLA e DLP e também onde a radiação causa
 o efeito de fotoenvelhecimento da pele humana), UV B (280nm-315nm, que faz ocorrer as queimaduras solares), UV C
 (100-280nm, bloqueada pela camada de ozônio) e a faixa extrema (até 10nm).
-** **De U-V mapping / mapeamento
+*
+* **De U-V mapping / mapeamento
 U-V**: este termo de modelagem tridimensional refere-se ao mapeamento dos eixos U e V (em contraste a X, Y e Z)
-de um plano colorizado por textura na malha (pele, superfície) de um objeto 3D.  * *Vitamina* -- o projeto reprap
+de um plano colorizado por textura na malha (pele, superfície) de um objeto 3D.
+* *Vitamina* -- o projeto reprap
 denomina de “vitaminas” a qualquer parte não-impressa de uma impressora 3D reprap, como a eletrônica, guias
-lineares, mesa aquecida, etc.  * *Voxel* -- um “pixel volumétrico”, ou volume endereçável por 3 coordenadas
-em um volume cartesiano.  * *Voxelizer* -- fatiador proprietário gratuito que tem por característica distintiva
-o fato de fatiar usando uma etapa intermediária de “voxelização” da peça.  * *Warp* -- nome que se dá
+lineares, mesa aquecida, etc.
+* *Voxel* -- um “pixel volumétrico”, ou volume endereçável por 3 coordenadas
+em um volume cartesiano.
+* *Voxelizer* -- fatiador proprietário gratuito que tem por característica distintiva
+o fato de fatiar usando uma etapa intermediária de “voxelização” da peça.
+* *Warp* -- nome que se dá
 à contração diferencial do plástico impresso quando esfria, e que normalmente causa defeitos de fabricação
-na peça.  * *X3D* -- formato livre de royalties de arquivos tridimensionais de padrão ISO, sucessor do VRML.  *
-*X3G* -- formato de arquivo baseado no protocolo _S3G_ da Makerbot.  * *Youmagine* -- site de compartilhamento
-de designs tridimensionais para impressão “rival” do thingiverse.  * *Z lift* -- breve levantamento do
+na peça.
+* *X3D* -- formato livre de royalties de arquivos tridimensionais de padrão ISO, sucessor do VRML.  *
+*X3G* -- formato de arquivo baseado no protocolo _S3G_ da Makerbot.
+* *Youmagine* -- site de compartilhamento
+de designs tridimensionais para impressão “rival” do thingiverse.
+* *Z lift* -- breve levantamento do
 extrusor que acontece durante uma retração, como recurso adicional pra impedir que filamento escorrido forme
-uma “verruga” no plástico.  * *Z wobble* -- padrão regular de desníveis de camadas conforme se sobe no
+uma “verruga” no plástico.
+* *Z wobble* -- padrão regular de desníveis de camadas conforme se sobe no
 sentido vertical causado por diversos fatores, entre eles diferenças de encaixes dos sulcos da barra roscada em
 diferentes alturas.
 

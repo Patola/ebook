@@ -1894,8 +1894,8 @@ variações, de forma geral entram nas seguintes categorias principais:
 [width="100%",cols="^1s,^2m,2e",frame="topbot",options="header"]
 |====
 | Tipo		| Exemplo					| Descrição
-| Aberta 	| image:image61.png[image,width=141,height=189]	| É possível alcançar a peça impressa diretamente.
-| Fechada	| image:image62.png[image,width=158,height=158]	| A peça fica em uma câmara interna.
+| Aberta 	| image:image61.png[image,width=141,height=189,align="center"]	| É possível alcançar a peça impressa diretamente.
+| Fechada	| image:image62.png[image,width=158,height=158,align="center"]	| A peça fica em uma câmara interna.
 |====
 
 .Material
@@ -1932,11 +1932,11 @@ de sinalização e a utilização em impressoras 3D é bem representada pelas m�
 [width="100%",cols="^1s,^2m,2e",frame="topbot",options="header"]
 |====
 | Tipo		| Exemplo								| Descrição
-| Cartesiana	a| image:image54.jpeg[image,width=138,height=149]			| [small]##Eixos X, Y e Z correspondem ao plano cartesiano.##
-| Delta		a| image:image57.png[image,width=122,height=255]				| [small]##X, Y e Z são transformadas trigonométricas das posições dos três pilares (colunas verticais).##
-| CoreXY 	a| image:reprapxy-pequeno.jpg[reprapxypequeno,width=533,height=400]	| [small]##X e Y são transformadas lineares de acordo com o padrão "CoreXY" de deslocamento. Por ser uma transformação relativamente simples de coordenadas, informalmente costuma ser tratada como cartesiana.##
-| SCARA		a| image:scara.png[scara,width=601,height=710]				| [small]##**S**elective **C**ompliance **A**rticulated **R**obot **A**rm, ou Braço Robótico Articulado de Conformidade Seletiva, é o nome dessa transformação de eixos comumente usada em máquinas industriais "pick and place" e de linha de montagem de veículos.##
-| Polar		a| image:polartheta.png[polartheta,width=466,height=385]			| [small]##Coordenadas polares, ou seja, baseadas em ângulos, são populares nos campos matemáticos, mas em impressoras 3D não são muito práticos, servindo mais como prova de conceito. Alguns modelos de impressora têm apenas um ou dois eixos polares, e os restantes cartesianos.##
+| Cartesiana	a| image:image54.jpeg[image,width=138,height=149,align="center"]			| [small]##Eixos X, Y e Z correspondem ao plano cartesiano.##
+| Delta		a| image:image57.png[image,width=122,height=255,align="center"]				| [small]##X, Y e Z são transformadas trigonométricas das posições dos três pilares (colunas verticais).##
+| CoreXY 	a| image:reprapxy-pequeno.jpg[reprapxypequeno,width=533,height=400,align="center"]	| [small]##X e Y são transformadas lineares de acordo com o padrão "CoreXY" de deslocamento. Por ser uma transformação relativamente simples de coordenadas, informalmente costuma ser tratada como cartesiana.##
+| SCARA		a| image:scara.png[scara,width=601,height=710,align="center"]				| [small]##**S**elective **C**ompliance **A**rticulated **R**obot **A**rm, ou Braço Robótico Articulado de Conformidade Seletiva, é o nome dessa transformação de eixos comumente usada em máquinas industriais "pick and place" e de linha de montagem de veículos.##
+| Polar		a| image:polartheta.png[polartheta,width=466,height=385,align="center"]			| [small]##Coordenadas polares, ou seja, baseadas em ângulos, são populares nos campos matemáticos, mas em impressoras 3D não são muito práticos, servindo mais como prova de conceito. Alguns modelos de impressora têm apenas um ou dois eixos polares, e os restantes cartesianos.##
 |====
 
 Apesar de separarmos as impressoras 3D de mercado nessas cinco categorias, a verdade é que existem tantos sistemas
@@ -2519,8 +2519,8 @@ juntos ou mesmo próximos. A primeira distinção é justamente essa:
 [width="100%",cols="^s,^m,e",frame="topbot",options="header"]
 |====
 | Tipo | Exemplo | Descrição
-| Direct / Monolítico a| image:image81.jpeg[image,width=190,height=190] | Tracionador e hotend acoplados
-| Bowden / Filamento guiado a| image:image82.png[image,width=215,height=185] | tracionador e hotend separados
+| Direct / Monolítico a| image:image81.jpeg[image,width=190,height=190,align="center"] | Tracionador e hotend acoplados
+| Bowden / Filamento guiado a| image:image82.png[image,width=215,height=185,align="center"] | tracionador e hotend separados
 |====
 
 Em impressoras 3d estilo __delta__, no hotend, você tem ainda a estrutura que une os braços chamada de effector:
@@ -2549,11 +2549,11 @@ Mas essa não é a única variação possível do extrusor nas impressoras 3D de
 quanto o hotend também têm seus tipos. Comecemos pelo tracionador, que tem sua classificação dependendo de
 como a engrenagem dentada que tem contato com o filamento recebe força do motor:
 
-[width="100%",cols="^s,^m,e",frame="topbot",options="header"]
+[width="100%",cols="^1s,^1m,2e",frame="topbot",options="header"]
 |====
 | Tipo | Exemplo | Descrição
-| Engrenado ou _Geared_ a| image:image84.jpeg[image,width=206,height=154] | Funciona com a tração transferida por engrenagens
-| __Direct Drive__ a| image:image85.jpeg[image,width=203,height=152] | O pinhão traciona diretamente o filamento
+| Engrenado ou _Geared_ a| image:image84.jpeg[image,width=206,height=154,align="center"] | Funciona com a tração transferida por engrenagens
+| __Direct Drive__ a| image:image85.jpeg[image,width=203,height=152,align="center"] | O pinhão traciona diretamente o filamento
 |====
 
 Um extrusor _engrenado_ tem uma “redução” no movimento, isto é, com o sistema de engrenagens, ele passa
@@ -2573,12 +2573,12 @@ image::image86.jpeg[parafusotratorepinhao,width=642,height=365,title="1. Parafus
 
 Os hotends se dividem, por sua vez, em:
 
-[width="100%",cols="^s,^m,e",frame="topbot",options="header"]
+[width="100%",cols="^1s,^1m,2e",frame="topbot",options="header"]
 |====
 | Tipo | Exemplo | Descrição
-| PEEK + metal a| image:image87.jpeg[image,width=212,height=157] | Plástico resistente a calor e isolante térmico.
-| Metal com PTFE interno a| image:image88.jpeg[image,width=211,height=157] | O hotend é quase inteiramente de metal, mas tem um pequeno tubo interno de PTFE para o filamento.
-| Todo de metal (all-metal) a|  image:image89.png[image,width=212,height=163] | O hotend é de metal, sem o tubo de PTFE.
+| PEEK + metal a| image:image87.jpeg[image,width=212,height=157,align="center"] | Plástico resistente a calor e isolante térmico.
+| Metal com PTFE interno a| image:image88.jpeg[image,width=211,height=157,align="center"] | O hotend é quase inteiramente de metal, mas tem um pequeno tubo interno de PTFE para o filamento.
+| Todo de metal (all-metal) a|  image:image89.png[image,width=212,height=163,align="center"] | O hotend é de metal, sem o tubo de PTFE.
 |====
 
 Os hotends do primeiro tipo -- usando um plástico chamado PEEK (polyether ether ketone, poliéter-éter-cetona)

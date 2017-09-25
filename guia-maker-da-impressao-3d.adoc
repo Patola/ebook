@@ -7269,12 +7269,12 @@ arranhões. Alguns métodos de tratamento usam, ao invés do solvente puro, uma 
 ter controle.  * Como o solvente deve ter também certa volatilidade, o tratamento com *vapor frio* pode ser uma
 opção, ainda que mais lento.  * O acabamento químico deixa a superfície "lisa" e vedada, e *prejudica a
 adesão de tintas e revestimentos* (que se beneficiam de microporos do material para entranharem e se firmarem).
-* O solvente _*nunca escorre ou evapora completamente*_ da peça, portanto o término do contato deve ser feito
+* O solvente __**nunca escorre ou evapora completamente**__ da peça, portanto o término do contato deve ser feito
 antes do ponto ideal de tratamento, para permitir que a peça "descanse" e chegue à forma final. Este tempo de
 descanso varia de acordo com a geometria da peça, o solvente e o método, podendo variar de horas a semanas. Nos
 primeiros minutos de contato a peça geralmente estará bem pegajosa e dependendo do solvente e da penetração,
 flexível, tendo que ser manuseada com extrema delicadeza para não aderir à ferramenta que a estiver suportando.
-* _*É possível exagerar no tratamento da peça*_ e ela terminar não somente pior que antes, com deformações,
+* __**É possível exagerar no tratamento da peça**__ e ela terminar não somente pior que antes, com deformações,
 rachaduras e bolhas. É um incidente que acontece com frequência ao se tentar alisar completamente a peça,
 visto que o solvente continua agindo após a interrupção do banho. É preciso um pouco de treino até encontrar
 o ponto ideal de tratamento com o solvente específico, tanto em tempo quanto em quantidade.
@@ -7285,13 +7285,15 @@ image:image201.png[image,width=642,height=559]
 contato e aderência, além de resistentes aos solventes. Peças de metal como pinças de fundição e pegadores de
 laboratório são adequadas para a manipulação e superfícies como uma malha de arame ou redinha metálica são
 adequadas para o apoio. Todos esses itens precisarão de limpeza após o tratamento, pois partículas do plástico
-dissolvido inevitavelmente aderem e se acumulam em suas superfícies.  * Especialmente se for feito o tratamento com
+dissolvido inevitavelmente aderem e se acumulam em suas superfícies.
+* Especialmente se for feito o tratamento com
 vapor, **proteção adequada é indispensável**. Isso envolve não só proteções de corpo inteiro como luvas de
 nitrilo, macacão de proteção, proteção de cabelo, máscara de gás com filtro para solventes orgânicos, óculos
 e botas de borracha, mas também um ambiente adequado para a emissão de fluidos inflamáveis de forma contida,
 como uma capela química ou um contêiner de construção anti-chamas e resistente a solventes. Recomenda-se ainda
 um plano de emergência para acidentes, como uma fonte de água abundante com um chuveiro próximo ao local e um
-extintor de incêndio de CO₂, o mais apropriado para solventes inflamáveis.  * Se usado o método do vapor por
+extintor de incêndio de CO₂, o mais apropriado para solventes inflamáveis.
+* Se usado o método do vapor por
 aquecimento de líquido, e o recipiente não for completamente vedado, **a fonte de calor não pode ter chama ou
 elemento incandescente exposto**, pois o contato com o vapor pode causar incêndio ou explosões. A acetona, por
 exemplo, tem vapor invisível e mais pesado que o ar; aquecida por baixo estando contida em um recipiente, sobe até
@@ -7299,22 +7301,24 @@ a borda e "entorna" pelos lados, alcançando o elemento aquecedor. Em teste feit
 com 50ml de acetona em uma lata e uma vela abaixo para aquecê-la, o tempo desde o acendimento da chama da vela até
 o conjunto se incendiar foram meros 12 segundos, e as chamas permaneceram por 6 minutos. Nem todos os solventes são
 facilmente inflamáveis como a acetona, mas a precaução é recomendada __sempre__. Fogões/fogareiros elétricos
-com superfície não-incandescente são baratos e suficientes para o caso geral.  * Exceto no caso da solução de
+com superfície não-incandescente são baratos e suficientes para o caso geral.
+* Exceto no caso da solução de
 limpeza e thinner, **todos os solventes aqui listados necessitam de permissão da polícia federal para compra**,
 embora o limite varie (por exemplo, 2l por mês para acetona e 5l por mês para tetraidrofurano). Comprando
 em locais devidamente autorizados como lojas de laboratório, o procedimento costuma ser simples e na hora por
 eles facilitarem. Desconfie de vendas pela internet em sites como __mercadolivre__, pois além do risco de estar
-cometendo um ato ilegal, não existe garantia de procedência.  * Segue a legislação de interesse sobre tais
+cometendo um ato ilegal, não existe garantia de procedência.
+* Segue a legislação de interesse sobre tais
 produtos. Cabe notar que isto não deve ser encarado como aconselhamento legal e sim uma orientação inicial,
-devendo o leitor realizar sua própria pesquisa ou contratar um advogado caso ache necessário: ** *Portaria
-n. 1.274 de 25 de agosto de 2003* -- explica a razão pela quais os produtos químicos abordados são controlados
+devendo o leitor realizar sua própria pesquisa ou contratar um advogado caso ache necessário:
+** **Portaria n. 1.274 de 25 de agosto de 2003** -- explica a razão pela quais os produtos químicos abordados são controlados
 e as provisões para sua comercialização e aquisição. Disponível na integra na página da Polícia Federal em
 http://www.pf.gov.br/servicos-pf/produtos-quimicos/legislacao/PORTARIA1274.pdf/view[_http://www.pf.gov.br/servicos-pf/produtos-quimicos/legislacao/PORTARIA1274.pdf/view_].
-** *Anexos da Portaria 1.274/03* -- material de suporte da Portaria 1.274,
+** **Anexos da Portaria 1.274/03** -- material de suporte da Portaria 1.274,
 com o mais importante para nossos propósitos sendo o **Anexo I**, que lista os
 materiais cuja comercialização e aquisição são controlados e seus respectivos limites. Disponíveis em
 http://www.pf.gov.br/servicos-pf/produtos-quimicos/legislacao/anexos-da-portaria-1274-03[_http://www.pf.gov.br/servicos-pf/produtos-quimicos/legislacao/anexos-da-portaria-1274-03_].
-** *Lei n. 10.357, de 27 de dezembro de 2001* -- Estabelece normas de controle e fiscalização de produtos
+** **Lei n. 10.357, de 27 de dezembro de 2001** -- Estabelece normas de controle e fiscalização de produtos
 químicos que direta ou indiretamente possam ser destinados à elaboração ilícita de substâncias entorpecentes,
 psicotrópicas ou que determinem dependência física ou psíquica, e dá outras providências.  ** Adicionalmente,
 um guia online que facilita o acesso à informação da portaria 1274/03 encontra-se neste endereço:
@@ -7323,15 +7327,12 @@ http://www.dinamicadespachante.com.br/materias.php?cd_secao=56[_http://www.dinam
 Com todos os pontos esclarecidos, o melhor modo de explicarmos de forma efetiva é primeiro listar os diferentes
 solventes e suas particularidades para então descrever os métodos de alisamento.
 
-Notas:
-
-1 --
-__http://web.archive.org/web/20130907052608/http://www.strangespaceblog.com/blog/http://web.archive.org/web/20130907052608/http://www.strangespaceblog.com/blog/2013/2/24/acetone-vapor-bath.html[2013/2/­24/acetone-vapor-bath.html]__.
-Infelizmente o blog de Austin não existe mais, mas o _web archive_ guardou o momento.
-
-2 - He, Y., Xue, G. H., & Fu, J. Z. (2014). Fabrication of low cost soft
-tissue prostheses with the desktop 3D printer. __Scientific reports__,
-__4__. https://www.nature.com/articles/srep06973[_https://www.nature.com/articles/srep06973_]
+[NOTE]
+.Notas:
+====
+. __http://web.archive.org/web/20130907052608/http://www.strangespaceblog.com/blog/http://web.archive.org/web/20130907052608/http://www.strangespaceblog.com/blog/2013/2/24/acetone-vapor-bath.html[2013/2/­24/acetone-vapor-bath.html]__. Infelizmente o blog de Austin não existe mais, mas o _web archive_ guardou o momento.
+. He, Y., Xue, G. H., & Fu, J. Z. (2014). Fabrication of low cost soft tissue prostheses with the desktop 3D printer. __Scientific reports__, __4__. https://www.nature.com/articles/srep06973[_https://www.nature.com/articles/srep06973_]
+====
 
 ==== Acetona
 

@@ -26,10 +26,12 @@ v0.99r2, 17/11/2017
 :ascii-ids:
 :showcomments:
 :stem: latexmath
+:math:
+:mathematical-format: svg
 :gitrepo: https://github.com/Patola/ebook
 :copyright: CC-BY-SA 4.0
 :text-alignment: justify
-:source-highlighter: source-highlight
+:source-highlighter: rouge
 :imagesdir: imagens
 :front-cover-image: image:cover.png[Capa,1350,1909]
 
@@ -4163,23 +4165,23 @@ da corrente máxima.
 O datasheet do driver pode ser encontrado na página da Texas Instruments:
 http://www.ti.com/lit/ds/symlink/drv8825.pdf[_http://www.ti.com/lit/ds/symlink/drv8825.pdf_]
 
-A fórmula da corrente -- chamaremos de _I~max~_ - em função da _V~ref~_ e de _R~S~_ é: +
-stem:[I_{max}=\frac{V_{ref}}{5 \times R_s}] +
-Como sabemos que R~S~ é sempre 0,1, substituímos: +
-stem:[I_{max}=\frac{V_{ref}}{5 \times 0,1}=\frac{V_{ref}}{0,5}=V_{ref} \times 2] +
+A fórmula da corrente -- chamaremos de __I~max~__ -- em função da _V~ref~_ e de _R~S~_ é: +
+latexmath:[I_{max}=\frac{V_{ref}}{5 \times R_s}] +
+Como sabemos que R~S~ é sempre 0,1Ω, substituímos: +
+latexmath:[I_{max}=\frac{V_{ref}}{5 \times 0,1}=\frac{V_{ref}}{0,5}=V_{ref} \times 2] +
 ou, colocando _V~ref~_ em função de _I~max~_: +
-stem:[V_{ref}=\frac{I_{max}}{2}] +
+latexmath:[V_{ref}=\frac{I_{max}}{2}] +
 Em outras palavras: se o DRV8825 está ligado a um motor que aceita corrente máxima de 1,5A,
 a tensão medida em V~ref~ deve ser: +
-stem:[V_{ref}=\frac{1,5}{2}=0,75V]
+latexmath:[V_{ref}=\frac{1,5}{2}=0,75V]
 
 .A4988
 O datasheet do driver é encontrado na página da Allegro:
 http://www.allegromicro.com/\~/media/Files/Datasheets/A4988-Datasheet.ashx[__http://__www.allegromicro.com/~/media/Files/Datasheets/A4988-Datasheet.ashx]. O que procuramos é: +
-stem:[I_{max}=\frac{V_{ref}}{8 \times R_{S}}] +
-O que equivale a stem:[V_{ref}=I_{max} \times 8 \times R_{S}]. +
-No caso de usarmos um motor com corrente máxima de 1,2A e o nosso driver acima com R~S~ de 0,1Ω, a fórmula fica: +
-stem:[V_{ref}=1,2 \times 8 \times 0,1 = 0,96V]
+latexmath:[I_{max}=\frac{V_{ref}}{8 \times R_{S}}] +
+O que equivale a latexmath:[V_{ref}=I_{max} \times 8 \times R_{S}]. +
+No caso de usarmos um motor com corrente máxima de 1,2A e o nosso driver acima com R~S~ de 0,1Ω, a fórmula fica: +
+latexmath:[V_{ref}=1,2 \times 8 \times 0,1 = 0,96V]
 
 Como colaboração de _André Ruiz_ do grupo ReprapBR, temos a seguinte tabela para consulta rápida de DRV8825
 e A4988:
@@ -5382,14 +5384,15 @@ em sua forma monomérica, é bastante tóxico ao ser humano, mas na forma polim�
 Embora as características variem de acordo com o material, os polímeros costumam apresentar as seguintes
 propriedades:
 
-* *Resistência a produtos químicos* -- o arranjo em cadeia confere proteção a muitos reagentes comuns.  *
-Isolamento térmico e elétrico -- a estrutura do polímero favorece espaços vazios e costuma ter indisponibilidade
-de elétrons móveis, o que facilita o isolamento térmico e elétrico.  * Leveza -- os mesmos espaços vazios
-costumam fazer dos polímeros materiais relativamente leves.  * Facilidade de processamento e usinagem -- o fato
+* *Resistência a produtos químicos* -- o arranjo em cadeia confere proteção a muitos reagentes comuns.
+* *Isolamento* térmico e elétrico -- a estrutura do polímero favorece espaços vazios e costuma ter indisponibilidade
+de elétrons móveis, o que facilita o isolamento térmico e elétrico.
+* *Leveza* -- os mesmos espaços vazios
+costumam fazer dos polímeros materiais relativamente leves.
+* Facilidade de processamento e *usinagem* -- o fato
 de serem facilmente arranjados em fibras e de as cadeias poliméricas serem bastante manuseáveis por processos
 mecânicos e térmicos confere a eles posição predominante na indústria.
-* **Têm uma variedade muito grande de
-propriedades e cores**, derivando tanto das propriedades dos monômeros quanto das cadeias poliméricas e suas formas.
+* **Têm uma variedade muito grande de propriedades e cores**, derivando tanto das propriedades dos monômeros quanto das cadeias poliméricas e suas formas.
 
 De todos os polímeros naturais ou artificiais, os plásticos são os que mais nos interessam. São uma categoria
 de polímeros extremamente numerosa e variada e útil, e são definidos como materiais poliméricos orgânicos
@@ -8499,7 +8502,8 @@ cerda dura penetrando mais entre os dentes para remoção dos resíduos. Ligue a
 extrusor, mande um comando de extrusão que dure pelo menos uns 2 minutos, e com o pinhão rodando, use o pincel
 para limpeza. Se fragmentos "teimosos" não saírem, o uso de um pincel com cerdas de metal pode resolver.
 * **Hotend**: os maiores locais de desgaste de um hotend são o bico, o tubo interno e o _heatbreak_ (barreira
-térmica): ** *O bico pode deformar* quando é vítima de muitas operações desajeitadas que o arremetem contra a
+térmica):
+** *O bico pode deformar* quando é vítima de muitas operações desajeitadas que o arremetem contra a
 mesa ou fazem com que colida com objetos. Outra possível causa de deformação do bico, neste caso seu orifício,
 é o uso de filamentos abrasivos para o qual ele não é construído -- o material do bico é latão, um metal
 relativamente mole. Nem sempre tais deformações são visíveis a olho nu, sendo mais facilmente perceptíveis
@@ -8507,7 +8511,8 @@ quando a qualidade de impressão começa a variar. Como é uma peça relativamen
 maioria das impressoras de mercado, recomenda-se a troca quando se suspeitar de deformação. Para o uso com
 filamentos abrasivos como fibra de carbono, sugere-se um bico de aço inoxidável. Ao trocar o bico, se sua
 impressora usa autonivelamento de mesa, pode ser necessário reconfigurar no firmware o _offset_ (deslocamento)
-vertical da altura do bico em relação à sonda.  ** Outro problema que pode acontecer não só com o bico, mas
+vertical da altura do bico em relação à sonda.
+** Outro problema que pode acontecer não só com o bico, mas
 também com o bloco aquecedor, é o *plástico derretido* e carbonizado aderir em suas paredes. Isso por si só
 não costuma causar muito problema se a camada for fina, servindo até como isolante térmico para impedir que
 a temperatura escape, mas pode dificultar a manutenção e manchar impressões. Recomenda-se a limpeza semestral

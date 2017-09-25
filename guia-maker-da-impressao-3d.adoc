@@ -114,7 +114,7 @@ possível de novos _makers_ e curiosos. Vamos imprimir o futuro em 3D!
 copyright de seus próprios autores. Quando a ilustração aparece sem crédito, significa que foi criada pelo
 autor deste livro e se encontra igualmente sob a licença CC-BY-SA.
 - **Este livro tem erros**. Assim como acima de um limite, todo código de computador tem __bugs__, esta obra
-faz todo tipo de afirmação sobre diversos assuntos… e algumas estarão erradas. É virtualmente impossível
+faz todo tipo de afirmação sobre diversos assuntos... e algumas estarão erradas. É virtualmente impossível
 coletar dados de tantas disciplinas diferentes, se embrenhar em tantas cabalas e indústrias e clubes e comunidades,
 buscar os fatos escondidos atrás de opiniões, pesar os fatos conflitantes de perspectivas diferentes, e não cometer
 nenhum equívoco. Equívocos que, com feedback adequado, são corrigidos em versões posteriores do documento. Uma
@@ -124,7 +124,7 @@ correções feitas no documento serão anotadas em seu __Changelog__, no mesmo r
 <<<
 == Agradecimentos
 Este livro teve muitos colaboradores indiretos, que auxiliaram o autor na resolução de dúvidas, sugestão de
-temas, correção de erros e demais contribuições que permitiram que o conteúdo saísse… __amaciado__. Ricardo
+temas, correção de erros e demais contribuições que permitiram que o conteúdo saísse... __amaciado__. Ricardo
 Cavalini do __Makers__, com sua didática pró-ativa e avaliação metódica, exterminou muitos erros pontuais
 em todo o texto. Rubens Medino, outro professor de impressão 3D, aumentou as perspectivas com suas sugestões
 astutas, como a persistência em aprofundar sobre polímeros e G-Code. Alex Borro, com seu canal do youtube e suas
@@ -466,7 +466,7 @@ E o PLA foi só o começo. Outros materiais começaram a aparecer, como os nylon
 filamentos flexíveis, como o italiano Filaflex ou o estadunidense Ninjaflex; os de imitação de materiais,
 como madeira (serragem misturada com PLA), cobre e bronze (também com pó de metal); os fosforescentes; os
 condutores; os demais plásticos usados em injeção -- PEAD, PETG, policarbonato, poliacetal, polipropileno;
-os filamentos dissolvíveis, como PVA e HiPS; os filamentos para fundição, como Filamet Copper… Ninguém fez
+os filamentos dissolvíveis, como PVA e HiPS; os filamentos para fundição, como Filamet Copper... Ninguém fez
 uma contabilidade de quantos materiais diferentes já estão disponíveis para impressoras FDM de baixo custo,
 mas esse número com certeza já ultrapassa uma centena.
 
@@ -1692,7 +1692,7 @@ que aprimoram bastante o workflow de fabricação e não têm equivalentes, ou t
 nos softwares mais complexos e caros. Muitas dessas ferramentas são open-source (meshlab, blender, CloudCompare,
 FreeCAD, etc.) e outras ainda são proprietárias, mas gratuitas (meshmixer, netfabb trial, 3D Builder, etc.),
 representando apenas o custo do tempo de aprendizado. Aprender um pouco de cada pode parecer desperdício de tempo
-mas compensa a longo prazo… E se você deseja trabalhar com a impressão 3D, o longo prazo está implícito.
+mas compensa a longo prazo... E se você deseja trabalhar com a impressão 3D, o longo prazo está implícito.
 * Seja criativo e paciente. Aprenda habilidades extras no seu tempo para complementar o serviço de impressão 3D,
 desde arte de acabamento, pintura, reforço de partes, revestimento, modelagem, embelezamento, ou qualquer outra
 coisa que pode imaginar. Pode ser um passatempo cativante e uma hora se tornar o seu diferencial. As pessoas ainda
@@ -1740,7 +1740,7 @@ oferece seus projetos em uma plataforma dessas.
 
 *Para o lado dos clientes,*
 
-* …, ou, melhor dizendo, __financiadores do projeto__. Esse é o primeiro problema e, apesar de abstrato, até
+* ..., ou, melhor dizendo, __financiadores do projeto__. Esse é o primeiro problema e, apesar de abstrato, até
 filosófico, tem consequências práticas bem pungentes. Os usuários pagantes de um projeto de financiamento
 coletivo dificilmente se enxergam como _investidores_ ou __financiadores__ e os próprios portais envolvidos
 não ajudam nisso. Tudo fica parecendo uma simples compra de produto existente. Não é mencionado o _*risco*_
@@ -2736,7 +2736,7 @@ impressoras 3D FFF, hoje em dia, graças ao projeto RepRap e sua massificação 
 todo tipo de materiais com propriedades diferentes -- dezenas, provavelmente centenas e novos surgindo a
 cada dia de acordo com a criatividade dos pequenos empreendedores. Materiais rígidos, flexíveis, condutores,
 isolantes, fosforescentes, translúcidos, transparentes, metálicos, moldáveis, dissolvíveis, biodegradáveis,
-compostáveis… Até mesmo comestíveis se você levar em conta as modificações nos extrusores de impressoras
+compostáveis... Até mesmo comestíveis se você levar em conta as modificações nos extrusores de impressoras
 FFF para incorporar uma seringa que extrusa material como chocolate ou massa de macarrão!
 
 A solução em impressoras FFF para enriquecer a gama de cores nas impressões, portanto, expandem muito mais
@@ -2754,7 +2754,7 @@ de limitação de co... -- não! Limitação de material.
 
 *Vários extrusores, lado a lado.* É essa a solução. É simples: todos os circuitos e estrutura que você tinha
 para um extrusor, você multiplica. Um motor tracionador para cada novo extrusor, um termistor para cada um deles,
-um cartucho aquecedor, um hotend… E muitas complicações e problemas:
+um cartucho aquecedor, um hotend... E muitas complicações e problemas:
 
 * **Todos os bicos precisam estar perfeitamente alinhados** -- se um bico estiver mais baixo que os outros, ou
 este bico arranha na mesa ou os outros extrudam a alturas maiores, fazendo a impressão falhar ou o bico mais
@@ -5163,9 +5163,7 @@ ajuste de _histerese_ para o modo bang-bang que adiciona um atraso que pode torn
 da _Prusa Research_ tem dicas de o que fazer para evitar descontrole térmico por causas eletrônicas e mecânicas:
 http://help.prusa3d.com/mk2-electronics/thermal-runaway-and-temperature-drops[_http://help.prusa3d.com/mk2-electronics/thermal-runaway-and-temperature-drops_].
 
-=  +
-
-= Extensões e derivações da tecnologia FFF
+=== Extensões e derivações da tecnologia FFF
 
 A este ponto o leitor já deve ter percebido que graças aos firmwares, eletrônicas e projetos disponibilizados
 pelo projeto reprap e seus voluntários, a tecnologia de impressão 3D é bem adaptável. Devido a seus componentes
@@ -5201,7 +5199,7 @@ e montar novamente, tornando o processo bastante manual e propenso a falhas. Uma
 mangueira peristáltica no extrusor. Existem outros problemas ainda, como pastas que solidificam tornando a extrusão
 mais difícil ou parando; pastas que _não_ solidificam resultando em peças que colapsam na mesa de impressão;
 limpeza do conjunto quando usar com comida; entupimento quando se usam pastas grossas (como cerâmica); falta de
-aquecimento, limitando os materiais que se pode utilizar. E por aí vai… Uma alternativa ao extrusor do RichRap
+aquecimento, limitando os materiais que se pode utilizar. E por aí vai... Uma alternativa ao extrusor do RichRap
 que consegue trabalhar com aquecimento e controle de pressão -- mas tem montagem mais difícil - é o __Baricuda
 Extruder__, o extrusor dos pesquisadores da universidade da Pensilvânia que permitiu criar vasos sanguíneos com
 trilhas tridimensionais de açúcar: https://www.thingiverse.com/thing:26343[_https://www.thingiverse.com/thing:26343_]
@@ -5354,11 +5352,10 @@ e https://3dprint.com/93097/bioprinting-3d/[_https://3dprint.com/93097/bioprinti
 5 -- o curso de bioimpressão fala também sobre materiais biológicos e biocompatíveis em impressoras 3D
 comuns, é gratuito se o aluno fizer no tempo reservado e não precisar de diploma. E é barato se quiser não
 só o diploma, mas que fique acessível a qualquer momento. É dado pelo famoso site educacional __FutureLearn__:
-https://www.futurelearn.com/courses/bioprinting/[_https://www.futurelearn.com/courses/bioprinting/_].
+https://www.futurelearn.com/courses/bioprinting/[_https://www.futurelearn.com/courses/bioprinting/_]..
 
-=  +
+.Os Materiais de Impressão 3D FFF
 
-1.  [[os-materiais-de-impressão-3d-fff]] = Os Materiais de Impressão 3D FFF 1.
 == Introdução: polímeros e plásticos
 
 De todos os materiais que encontramos no dia-a-dia, os _polímeros_ são os que nos interessam. O que é um
@@ -5420,7 +5417,7 @@ Pra entender melhor os materiais, antes precisamos aprender sobre as propriedade
 conhecimento é necessário não só para saber critérios para escolher o material para dada aplicação, como
 também para resolver problemas relacionados a essas propriedades.
 
-= *Propriedades* *Térmicas*
+=== Propriedades Térmicas
 
 Os plásticos podem ser moldados em determinada forma e após a moldagem, permanecerem fixos nesta forma. Se dividem
 em dois tipos principais quanto ao comportamento térmico: termofixos (ou thermosets, em inglês) e termoplásticos.
@@ -5444,7 +5441,7 @@ termoplásticos têm uma “pseudo-transição de fase” suave e relacionada à
 do material fica em forma pastosa, “em transição” de sólida para líquida. A temperatura de transição
 vítrea é sempre menor que a temperatura de derretimento.
 
-== *O “Warp”*
+==== *O “Warp”*
 
 O maior problema de todos na impressão 3D está relacionado à temperatura: __warping__. Como a grande maioria dos
 materiais, os plásticos têm coeficiente de expansão térmica positiva, isto é, à medida que sua temperatura
@@ -5484,7 +5481,7 @@ temperatura sofra __hidrólise__, o que faz com que seus filetes poliméricos se
 deixando o material mais fraco e com menor aderência. Além disso, bolhas de ar formadas pela rápida expansão
 em alta temperatura também criam poros que enfraquecem a estrutura.
 
-=== A Solução?
+==== A Solução?
 
 Como dito, a mudança de volume com a temperatura é um fenômeno inevitável. E é mais grave com alguns
 materiais do que em outros; índices como o coeficiente de calor específico e a condutividade térmica farão
@@ -5514,7 +5511,7 @@ sua aderência bem alta, o que garante estabilidade na mesa. Assim, para o ABS, 
 contato direto com o plástico a 110°C, ou 120°C se o vidro for usado pra compensar o decréscimo de temperatura
 que ele causa.
 
-= *Propriedades Químicas*
+=== *Propriedades Químicas*
 
 Uma característica dos plásticos em geral que os faz tão apropriados à civilização moderna é a estabilidade
 química, que ocorre quando um sistema está no seu nível mais baixo de energia. Comparados a outras classes de
@@ -5537,12 +5534,12 @@ dos plásticos. Essas têm especial significado para nós, seres vivos baseados 
 interação direta com eles. Na verdade, é mesmo difícil de separá-las das propriedades químicas: a estabilidade
 química não é também ambiental?
 
-= Propriedades Biológicas
+=== Propriedades Biológicas
 
 Para falar destas propriedades, optamos por dividi-las em 3 categorias. Uma de potenciais danos à saúde, de
 forma mais genérica; outra, de reciclagem e biodegradação. E por mim, vamos falar sobre seu uso alimentar e médico.
 
-== Potenciais danos à saúde
+==== Potenciais danos à saúde
 
 Todos os termoplásticos usados em impressão 3D são já conhecidos da indústria e usados na manufatura
 industrial há décadas -- excetuando talvez o PLA que é mais recente e tem uso mais tímido, mas mesmo assim
@@ -5610,7 +5607,7 @@ que desejam vender impressoras 3D nos EUA de terem uma impressora completamente 
 difícil de resolver, os meios de filtragem convencional como filtros de carbono só funcionam com partículas de no
 mínimo 500nm, não servindo para as partículas ultrafinas (a maioria das coberturas anti-emissões de impressoras 3D
 do mercado^1^⁰ e mesmo alguns projetos “faça você mesmo” não levam isso em consideração^1^^1^). É certamente
-uma demanda de mercado que está custando a ser atendida até no exterior, que dizer então do Brasil… No momento,
+uma demanda de mercado que está custando a ser atendida até no exterior, que dizer então do Brasil... No momento,
 as únicas mitigações parecem ser imprimir em local arejado e não permanecer muito tempo perto da impressora 3D,
 e talvez fazer uma cobertura com adaptador para sugar o ar da impressora (e ainda fica a dúvida de como capturar
 as partículas ultrafinas para evitar que voltem ao ambiente).
@@ -5666,7 +5663,7 @@ http://www.bofaamericas.com/3D-printing-fume-extraction.asp[_http://www.bofaamer
 11 - apenas como referência, o site _3d printing industry_ mostra projetos para ligar um exaustor à impressora:
 https://3dprintingindustry.com/news/3d-printer-exhaust-redirect-noxious-fumes-21300/[_https://3dprintingindustry.com/news/3d-printer-exhaust-redirect-noxious-fumes-21300/_]
 
-== Reciclagem e Biodegradação
+==== Reciclagem e Biodegradação
 
 As palavras _reciclar_ e _biodegradável_ aparecem tanto na linguagem informal que podem parecer significar a mesma
 coisa, ou pelo menos algo muito próximo. Mas não são, e em um certo sentido podem ser vistas até como opostos, ou
@@ -5760,7 +5757,7 @@ permitiriam baratear os insumos e até a substituir outros processos de fabrica�
 se faça necessária (ainda mais considerando que o relativamente baixo desperdício de material já faz da FFF
 ecologicamente superior em relação a outros processos de fabricação^6^).
 
-=== Extrusoras / Filamentadoras Maker: são práticas?
+==== Extrusoras / Filamentadoras Maker: são práticas?
 
 Uma das surpresas de quem começa a comprar carretéis de impressão 3D é um preço: um quilo de plástico de
 impressão 3D que custa 120 reais, por exemplo, pode ser encontrado por 15 reais ou até menos em sua forma bruta de
@@ -5902,7 +5899,7 @@ a todas.
 de impressão 3D e sua relação com o Open-Source pode ser lido na __TechRepublic__:
 http://www.techrepublic.com/article/how-recycled-plastic-for-3d-printing-will-drive-sustainability-and-raise-the-social-conscious-of-business/[_http://www.techrepublic.com/article/how-recycled-plastic-for-3d-printing-will-drive-sustainability-and-raise-the-social-conscious-of-business/_].
 
-== Uso alimentício e médico de impressões 3D
+==== Uso alimentício e médico de impressões 3D
 
 A julgar pela quantidade de designs de copos, pratos, talheres, tampas de garrafas, espremedores, raladores,
 moldes de massas, cubas de gelo, dispensadores e funis de líquido, seaparadores de clara de ovos, fatiadores,
@@ -5938,7 +5935,7 @@ que ponto a impressão 3D FFF serve para esse fim.
 O assunto tem 9 aspectos a considerar: __Material__, __Composição__, __Temperatura__, __Interstícios__,
 __Maquinário__, __Grau e Tipo__, _Protocolos_ e __Lei__. Vamos analisar cada um desses separadamente.
 
-=== Material
+===== Material
 
 Comecemos pela parte fácil: já tivemos uma noção de que há tipos de plásticos diferentes classificados por
 número de reciclagem (são os mais usados industrialmente) e sabemos ainda que alguns desses tipos têm perigos
@@ -5980,7 +5977,7 @@ Essa lista tem virtualmente todas as iterações recentes de materiais de filame
 uso alimentício. No entanto, ela conta somente parte da história. Mesmo com a matéria-prima adequada, a venda
 em filamentos pode não ser.
 
-=== Composição
+===== Composição
 
 E a razão disso é que, dadas as propriedades do material, para poder ser extrusado em impressora 3D sem falhas
 frequentes, com a consistência necessária e na temperatura correta suas propriedades têm que ser “afinadas”
@@ -6009,7 +6006,7 @@ para esse fim_ são adequados. É preciso que os próprios aditivos não interaj
 não gerem calor; um exemplo de uso proibido seria filamento com o corante bastante comum “negro-de-fumo”,
 usado para tonalidades negras e acinzentadas.^4^
 
-=== Temperatura
+===== Temperatura
 
 À primeira vista, falar sobre a _temperatura_ que o plástico aguenta pode parecer uma restrição que se aplica
 somente àqueles que servirão para acondicionar comida ou bebida quentes, mas essa é uma impressão errada. O
@@ -6027,7 +6024,7 @@ esse e outros fatores como intervalo ótimo de crescimento e reprodução de mic
 e 60°C, a mínima temperatura de transição vítrea recomendada para um plástico de uso alimentício é *80°C*
 e quanto maior melhor.
 
-=== Interstícios
+===== Interstícios
 
 Chegamos ao ponto mais crítica, na verdade o Calcanhar de Aquiles da impressão FFF e o fator mais difícil de
 mitigar. Os vãos entre os filamentos, ou seja, as seções recedidas da superfície do plástico onde os filetes
@@ -6049,7 +6046,7 @@ e só funciona com geometria mais grossas e menos rebuscadas de peças.
 
 image:image175.png[image,width=642,height=609]
 
-=== Maquinário
+===== Maquinário
 
 E outro problema que pesa -- embora tenha solução bem mais fácil -- é que as impressoras e suas peças e
 insumos não são _projetadas_ para ter segurança alimentícia. Adesivos para mesa com substâncias tóxicas,
@@ -6067,7 +6064,7 @@ assepsia e sem contaminantes, o uso de outros filamentos no dia-a-dia além dos 
 certamente deixará contaminantes nas seções de derretimento e stress mecânico. Então é importante que a
 impressora seja dedicada somente ao uso com os plásticos adequados.
 
-=== Grau e Tipo
+===== Grau e Tipo
 
 Nem todo contato com alimento é igual. Algumas peças impressas são feitas para ter contato com líquidos,
 outras com sólidos e outras com pastas. Algumas terão contato breve, outras mais longo e outras servirão para
@@ -6100,7 +6097,7 @@ O uso específico determina muito quanto de investimento, e que tipo de investim
 a segurança do plástico. O que nos leva ao próximo tópico, os _protocolos clínicos_ para os testes que você
 pode querer executar nas peças.
 
-=== Protocolos
+===== Protocolos
 
 Dependendo do investimento que se queira fazer na impressão 3D de peças para uso alimentício, até mesmo para
 conseguir garantias e por boa vontade para com os clientes, pode ser importante conhecer os _protocolos clínicos_
@@ -6151,7 +6148,7 @@ sua temperatura de transição vítrea é baixa demais) nem em microondas, e ess
 lidar. Complicações que mostram a principal função desse protocolos: cumprir as regulações para comércio
 de produtos plásticos. Vamos falar da _lei_ envolvendo esses objetos agora.
 
-=== Lei
+===== Lei
 
 Para se poder comercializar qualquer produto que tenha uso alimentício, é necessário seguir as regras da ANVISA
 -- e portanto fazer os protocolos clínicos do produto de acordo com elas. E é aqui que o inchaço da legislação
@@ -6164,8 +6161,8 @@ http://portal.anvisa.gov.br/duvidas-frequentes-materiais-em-contato-com-alimento
 * Outro documento com *perguntas e respostas* frequentes para embalagens encontra-se em
 http://portal.anvisa.gov.br/registros-e-autorizacoes/alimentos/produtos/embalagem[_http://portal.anvisa.gov.br/registros-e-autorizacoes/alimentos/produtos/embalagem_].
 A resposta à pergunta 8 parece indicar que toda nova embalagem impressa em 3D precisaria ser
-registrada na ANVISA: “P: As embalagens de alimento precisam ser registradas na ANVISA? R: (…)
-Já as embalagens obtidas por *novas tecnologias* (…) têm *obrigatoriedade de registro* previamente
+registrada na ANVISA: “P: As embalagens de alimento precisam ser registradas na ANVISA? R: (...)
+Já as embalagens obtidas por *novas tecnologias* (...) têm *obrigatoriedade de registro* previamente
 à sua comercialização.”.  * As **disposições gerais**, Resolução 105/99, uma série de regras
 tratando das composições dos plásticos, da porcentagem máxima dos vários tipos de impurezas e dos
 índices de migração, viscosidade, etc. permitidos. O documento está inteiramente disponível em PDF em
@@ -6201,7 +6198,7 @@ http://www.fao.org/fao-who-codexalimentarius/standards/list-standards/en/[_http:
 É importante ressaltar que esta obra pretende oferece apenas um guia geral para o interessado nesta área sem o
 suficiente para ser aconselhamento legal. O leitor deve utilizar essas informações por sua conta e risco.
 
-=== A incompatibilidade com o Mundo Maker
+===== A incompatibilidade com o Mundo Maker
 
 Ser brasileiro envolve muitos quinhões, um deles é ter que lidar com uma legislação inchada que decide até
 mesmo quanto de sal pode ser servido em bares -- e isso vale para as nossas versões de legislação internacional,
@@ -6227,7 +6224,7 @@ produtores, e mesmo quando têm, são com preços estratosféricos.
 
 Algumas possibilidades de compensações ao problema podem ser contempladas.
 
-=== Soluções e Mitigações
+===== Soluções e Mitigações
 
 É importante reiterar que o apresentado aqui são sugestões sem compromisso. Sendo um campo ainda em movimento,
 é possível até que algumas delas já tenham tido sucesso ou falhado.
@@ -6258,8 +6255,6 @@ usada por um grupo de estudos da Universidade de Waterloo, que foi testada com s
 nanopartículas de prata, processo que inclusive não prejudica a reciclabilidade do PEAD.
 
 image:image177.png[image,width=642,height=443]
-
-[[section-7]] ===
 
 1 -- Efeitos do Trióxido de Antimônio: - Cooper, R. G., & Harrison, A. P. (2009). The exposure to and
 health effects of antimony. __Indian Journal of Occupational and Environmental Medicine__, __13__(1),
@@ -6300,7 +6295,7 @@ um procedimento bem simples com quatro culturas de bactérias em ágar usando um
 em ABS suavizado com acetona e duas de controle, mas tem resultados totalmente inconsistentes. Pode ser visto em
 https://www.youtube.com/watch?v=kuyys1YpAVw[_https://www.youtube.com/watch?v=kuyys1YpAVw_].
 
-=== Uso médico e veterinário
+===== Uso médico e veterinário
 
 A primeira observação pertinente a dizer da impressão 3D _de baixo custo_ é que seu uso em medicina é limitado
 -- e isso não deveria ser uma surpresa, já que até para confecção de objetos para uso alimentício existe
@@ -6355,13 +6350,13 @@ colocando tal material público em seu canal de youtube^7^.
 
 image:image179.png[image,width=642,height=637]
 
-=== Outros usos biológicos
+===== Outros usos biológicos
 
 Como máquina de uso genérico, é difícil descrever todos os usos de uma impressora 3D, mesmo de uma técnica
 com limitações como a FFF. Itens para laboratório como tubos de ensaio e centrífugas, para cultivo de plantas,
 hidropônica e jardinagem, moldes e suportes odontológicos, modelos educativos de órgãos e corpo humano, sapinhos
 de plástico para “dissecação” simulada, armadilhas para mosquito da dengue, modelos de vírus, bactérias,
-DNA e proteínas, alimentadores automáticos de espécimes… Uma passeada nos sítios web de compartilhamento de
+DNA e proteínas, alimentadores automáticos de espécimes... Uma passeada nos sítios web de compartilhamento de
 design mostram centenas de milhares de idéias brilhantes, a grande maioria não só gratuita mas também livre
 para modificar. Qualquer delimitação que puséssemos aqui seria uma injustiça com o campo abordado. O mais
 importante é ter em mente as propriedades dos plásticos, sua biocompatibilidade com a função em questão e a
@@ -6394,7 +6389,7 @@ por Manufatura Aditiva__. São José dos Campos: Universidade Federal de São Pa
 regulação: “ANVISA -- Regulação de dispositivos médicos produzidos por manufatura aditiva no Brasil”,
 https://www.youtube.com/watch?v=B6N_A1VEqy8[_https://www.youtube.com/watch?v=B6N_A1VEqy8_]
 
-= Propriedades Físicas
+=== Propriedades Físicas
 
 A FDM/FFF esteve restrita ao ABS no início e embora a Stratasys, antes do fim de sua patente, oferecesse certa
 gama e “grades” (graduações de propriedades) de materiais, foi com a abertura do mercado de Impressão 3D
@@ -6425,7 +6420,7 @@ com os materiais mais fortes, para aplicações sérias com muita carga necessá
 a resistência à tração. Outras técnicas de impressão 3D, como a estereolitografia, não padecem do mesmo
 problema de fundição imperfeita de camadas, e são isotrópicas.
 
-== Higroscopia e Hidrofilia
+==== Higroscopia e Hidrofilia
 
 A _água_ é bastante relevante na ciências dos plásticos visto que pode ajudar ou atrapalhar no processo, pode
 proibir ou autorizar o contato com outros compostos, pode adentrar e degradar o plástico, e determinar aderência ou
@@ -6433,7 +6428,7 @@ descolamento de tintas e vernizes. Há propriedades associadas a ela que costuma
 de __hidrofobia__, _hidrofilia_ e __higroscopia__. Para explicá-los, vamos tentar primeiro entender a polaridade
 da molécula de água (H₂O).
 
-=== A natureza polar da água
+==== A natureza polar da água
 
 image:image180.png[image,width=642,height=529]
 
@@ -6462,7 +6457,7 @@ Os detergentes usados em sua cozinha utilizam uma propriedade chamada _anfipatia
 em ter uma extremidade polar (como a água) e uma extremidade apolar (como o óleo) e portanto conseguir mediar
 atração com ambos os tipos, permitindo à àgua deslocar os óleos.
 
-=== Higroscopia
+==== Higroscopia
 
 Muitas vezes um material _hidrofílico_ é também __higroscópico__, por isso os dois termos costumam ser confundidos,
 mas não são a mesma coisa. A higroscopia (também conhecida como __higroscopicidade__), que acontece somente
@@ -6493,7 +6488,7 @@ http://www.energyvanguard.com/blog/cool-videos-hydrophilic-hydrophobic-hygroscop
 inglês. Fala sobre hidrofilia, hidrofobia e hidroscopia também:
 http://www.energyvanguard.com/blog/78016/Introduction-to-the-Physics-of-Water-in-Porous-Materials[_http://www.energyvanguard.com/blog/78016/Introduction-to-the-Physics-of-Water-in-Porous-Materials_]
 
-= Filamentos de impressão 3D
+== Filamentos de impressão 3D
 
 Apresenta-se aqui uma lista não-extensiva de materiais diferentes usados como filamentos de impressão 3D com
 suas principais características, procurando destacar vantagens e desvantagens no uso prático.
@@ -6520,7 +6515,7 @@ bastante e mesmo os dopantes e maneiras de se fabricar um material podem levar a
 se adquirir qualquer material para impressão 3D devem-se consultar as informações do fabricante, que incluem
 as temperaturas de extrusão e mesa adequadas.
 
-== ABS
+=== ABS
 
 ABS é o primeiro e principal material usado em impressão 3D, e embora historicamente seu uso apresente uma tendência
 à diminuição pelo aumento da oferta de outros materiais com propriedades mais desejáveis, ele continua forte
@@ -6561,7 +6556,7 @@ O ABS “natural”, sem pigmentos, tem uma cor bege clara, quase branca, e é o
 queimado, liberando monóxido de carbono, cianeto de hidrogênio e em altas temperaturas (acima de 400°C) pode
 liberar butadieno e acrilonitrila (carcinogênicos) e estireno (tóxico).
 
-== PLA
+=== PLA
 
 Ácido Polilático, PLA. Mais que uma alternativa ao ABS, o PLA é bastante comparado a ele por quatro razões:
 ele foi o primeiro plástico de mercado a aparecer como alternativa; tem o preço no varejo quais igual ao do
@@ -6604,7 +6599,7 @@ O sítio web _ecycle_ tem uma bela caracterização do PLA do
 ponto de vista de plásticos de engenharia, mercado e ecologia:
 http://www.ecycle.com.br/component/content/article/37/738-pla-o-plastico-compostavel.html[_http://www.ecycle.com.br/component/content/article/37/738-pla-o-plastico-compostavel.html_]
 
-== PETG
+=== PETG
 
 Era de se esperar que um dos plásticos mais presentes na nossa civilização, o conhecido e barato plástico
 “PET” (polietileno tereftalato) das garrafas de refrigerantes, constasse imediatamente na lista de materiais
@@ -6622,7 +6617,7 @@ próximas do ABS (100-110°C de mesa, 240°C no extrusor).
 
 image:image186.jpeg[image,width=495,height=457]
 
-== Tritan
+=== Tritan
 
 _Tritan_ é um copoliéster de engenharia com alta clareza e transparência, resistência química e a impacto
 e com estabilidade hidrolítica que concorre nos mesmos mercados do PET e policarbonato, inicialmente extrudado
@@ -6633,7 +6628,7 @@ ditas sobre esse tema. É extrudado em temperaturas altas, a recomendada pela Ta
 e 90°C na mesa, mas temperaturas maiores dão melhor acabamento e aderência entre camadas. Assim como o PLA,
 dissolve em tetraidrofurano. Costuma estar disponível na maior parte das vezes na forma natural sem corantes.
 
-== ASA
+=== ASA
 
 Abreviação de Acrilonitrila Estireno Acrilato (__**A**crilonitrile **S**tyrene **A**crylate__), é um plástico
 de composição e mercado semelhante ao ABS, tendo como principais diferenciais menor contração de molde (0,4
@@ -6645,12 +6640,12 @@ denso -- 1,07 g/cm^3^ ao invés de 1,04 do ABS.
 Geralmente extrudado em temperaturas próximas ao ABS, com um mínimo de 240°C no extrusor e 120°C na mesa. Antes
 usado somente em impressoras industriais, já existem vendedores de filamentos do mercado de massa que o fabricam.
 
-== Nylon
+=== Nylon
 
 Nylons, ou poliamidas alifáticas ou semi-aromáticas, são um conjunto de termoplásticos tão presentes na vida
 moderna que seria inevitável sua utilização em impressora 3D. De fato, a utilização é tão universal que
 por felicidade do acaso existem carretéis baratos vendidos com “filamentos” de nylon nos tamanhos ideais
-para impressoras 3D… Mas com finalidade inteiramente diferentes, serem colocada nas hélices de roçadeiras
+para impressoras 3D... Mas com finalidade inteiramente diferentes, serem colocada nas hélices de roçadeiras
 (cortadora de grama) para funcionarem como lâminas. _Hobbyistas_ interessados usaram -- em uma exaptação de
 sucesso! - estes carretéis em suas impressoras 3D e em alguns casos tiveram bons resultados, ainda que com uma
 superfície um tanto rugosa. Apesar de curioso, este uso do material é desaconselhado, pois como a finalidade
@@ -6679,7 +6674,7 @@ procedimentos de segurança). Nylon é bem compatível com cola PVA, fita azul d
 mesa. Recentemente compósitos com nylon (por exemplo, com fibra de carbono) começaram a se tornar populares pela
 reunião das propriedades desejáveis que adquirem, especialmente em resistência mecânica.
 
-== PMMA (acrílico)
+=== PMMA (acrílico)
 
 Em termos de propriedades mecânicas o PMMA -- polymethyl metacrylate / polimetil-metacrilato - lembra o PLA por sua
 rigidez, mas é mais resistente a temperatura, sofre mais warp e apresenta geralmente transparência ou translucidez
@@ -6689,7 +6684,7 @@ contra ~1,24 deste último). Como o ABS, é solúvel em acetona. É extrudado em
 e por sofrer warp, necessita de mesa aquecida a pelo menos 100°C. É bastante difícil de encontrar no Brasil e
 tem a importação bem cara, o que é lamentável pois é um dos poucos filamentos realmente rígidos disponíveis.
 
-== ABS MG94
+=== ABS MG94
 
 Ainda que o ABS “comum”, de mercado, seja extrudável em temperaturas compatíveis com os elementos aquecedores
 de impressoras 3D comuns, a variedade _MG94_ do polímero, sendo considerada de maior qualidade, é uma exceção
@@ -6712,7 +6707,7 @@ variantes mais coloridas e opacas. O policarbonato industrial tem grande varieda
 É conhecido como um dos plásticos que mais libera BPA, como descrito na seção sobre potenciais danos à saúde
 dos plásticos.
 
-== HDPE / PEAD
+=== HDPE / PEAD
 
 Polietileno de alta densidade, HDPE, é um plástico frequentemente usado para itens alimentícios como garrafas de
 leite e outros potes de líquido e é conhecido por ser bastante reciclável, podendo ser derretido e solidificável
@@ -6721,7 +6716,7 @@ tem coeficiente de expansão térmica alto e sofre warp excessivo, e além disso
 precisando de superfícies “diferentes” com celulose como papelão ou cortiça. É extrudado a 250°C, com
 mesa a no mínimo 100°C.
 
-== POM (Poliacetal)
+=== POM (Poliacetal)
 
 O **P**oli**O**xi**M**etileno, também conhecido como poliacetal ou pela marca __Delrin__, é um plástico rígido,
 resistente ao desgaste e de baixo coeficiente de atrito, sendo bastante usado em peças de máquinas. Tem ótima
@@ -6733,7 +6728,7 @@ os filamentos de mercado têm alta variação de temperaturas de extrusão, e as
 com resíduos de formaldeído (formol). Por outro lado, a mesa deve ter a temperatura mais alta possível, acima
 de 120°C se a impressora chegar a isso, e com câmara fechada.
 
-== Ultem 9085 e 1010
+=== Ultem 9085 e 1010
 
 A marca _Ultem_ da Sabic, usada para designar filamentos de polieterimida (PEI) de altíssima temperatura de
 extrusão -- entre 330° e 350°C -- e câmara aquecida a 195°C -, e que têm temperatura de transição vítrea
@@ -6758,7 +6753,7 @@ fabricações. Isso é complicado pelo fato que por causa da alta temperatura, e
 de “recozimento” da peça para diminuir os interstícios e tensões remanescentes entre camadas e chegar à
 sua resistência final.
 
-== Flexíveis
+=== Flexíveis
 
 Um tipo especialmente “infame” de filamento que surgiu com o mercado de massa foram os filamentos
 __flexíveis__. _Infame_ porque são provavelmente o tipo mais difícil de filamento para se usar em uma impressora. O
@@ -6771,7 +6766,7 @@ de impressão para que funcione a contento. Por exemplo, um extrusor que use fil
 elástica gigantesca por causa da maior distância entre o tracionador e a área de derretimento, quase sempre a
 ponto de inviabilizar o uso do flexível.
 
-=== TPE
+==== TPE
 
 TPE, ou TermoPlástico Elastômero, é o nome dado para a classe de copolímeros ou mistura de polímeros
 (como um plástico e uma borracha) que consistem de materiais com propriedades tanto termoplásticas quanto
@@ -6787,7 +6782,7 @@ de elasticidade e flexibilidade que outros TPEs.
 A impressão de todos os TPEs, dados os efeitos de histerese elástica, como apresentar “fiapos” - o efeito
 denominado de “stringing” - durante a impressão, que são removidos no final.
 
-=== TPU
+==== TPU
 
 image:image188.png[image,width=642,height=607]
 
@@ -6798,7 +6793,7 @@ outros TPEs incluindo os PLAs flexíveis, apresentam grande resistência de queb
 solventes e a abrasão. Servem para peças como pneus de carro de controle remoto e peças de articulação. Outra
 diferença que torna os TPUs distinguíveis de outros TPEs é a aparência geralmente mais fosca e menos lisa.
 
-== Imitações de materiais
+=== Imitações de materiais
 
 Certamente é muito importante ter controle sobre a aparência dos objetos impressos especialmente quando têm
 finalidade decorativa. Fabricantes criativos, geralmente se utilizando da receita da mistura de um pó muito fino
@@ -6813,7 +6808,7 @@ para minimizar a abrasão. Se recomenda um bico de 0,6 a 0,8mm para o uso desses
 Note-se também que costumam ser ao mesmo tempo mais densas (ou seja, menos rendimento pelo mesmo peso) e mais
 caras que materiais convencionais.
 
-=== Imitação de Metal
+==== Imitação de Metal
 
 Marca mais conhecida: Colorfabb (Copperfill, Bronzefill e outros). Além de pioneiros, estabeleceram o “padrão”
 para outros fabricantes que fazem os desse tipo. O filamento é PLA com partículas de metal (~30%), tornando-se assim
@@ -6822,7 +6817,7 @@ e para adquirir o tom metálico característico deve ser bastante polida, prefer
 
 image:image189.jpeg[image,width=516,height=397]
 
-=== De metal para fundição / sinterização
+==== De metal para fundição / sinterização
 
 São uma extrapolação dos filamentos de metal. Ao invés de ter uma porcentagem menor de metal, o filamento é
 quase todo metal (88%), com uma minoria de plástico. A empresa _Virtual Foundry_ tem os filamentos Filamet Copper™
@@ -6841,7 +6836,7 @@ processadas, equivalem a uma peça de impressão 3D industrial SLM, caríssima. 
 
 image:image190.jpeg[image,width=642,height=426]
 
-=== Imitação de madeira
+==== Imitação de madeira
 
 Também uma mistura de serragem (40%) bem fina em PLA com agentes ligantes, a imitação de madeira com sua mais
 famosa encarnação sendo a “Laywoo-D3” tem a curiosa propriedade de ter sua cor final variando de acordo
@@ -6850,7 +6845,7 @@ com a temperatura de impressão, que pode ir de 180°C até 240°C. Truques no f
 
 image:image191.jpeg[image,width=385,height=296]
 
-=== Fibra de Carbono
+==== Fibra de Carbono
 
 A Fibra de Carbono é uma estrutura super-resistente usada em carros e aviões. Pó de fibra de carbono é
 misturado a ABS (~20%, existem variedades com PLA) pra lhe conferir maior estabilidade dimensional e resistência
@@ -6862,7 +6857,7 @@ impresso tem uma superfície fosca e ligeiramente rugosa.
 
 image:image192.png[image,width=336,height=347]
 
-== Condutivos
+=== Condutivos
 
 Os filamentos que por projeto conduzem eletricidade pertencem a duas categorias principais: filamentos que
 apresentam uma condutividade mínima para poder servirem para peças “anti-estáticas” que descarregam a carga
@@ -6892,14 +6887,14 @@ temperaturas recomendadas.
 
 image:image193.png[image,width=564,height=445]
 
-== Solúveis
+=== Solúveis
 
 Filamentos de material _solúvel_ têm a finalidade específica de serem usados em extrusores duplos ou triplos. A
 idéia é o filamento servir para as estruturas de suporte que permitem formas complexas, e uma vez impresso,
 ao invés da remoção mecânica desses suportes, o simples banho no solvente adequado permite que ele saia de
 peça de modo limpo e sem stress mecânico.
 
-=== HiPS
+==== HiPS
 
 A sigla significa “poliestireno de alto impacto” e é um filamento relativamente barato que funciona medianamente
 bem com ABS e muito bem com PLA. Imprime em temperaturas de 230 a 250°C. O solvente que remove o HiPS da peça,
@@ -6907,7 +6902,7 @@ no entanto, é um pouco difícil de achar no Brasil: D-Limoneno, ou Limoneno R+.
 limas e encontrado em produtos de limpeza. Para funcionar bem, a concentração precisa ser de 90% ou mais. O
 Limoneno L- vem de limões e não funciona tão bem.
 
-=== PVA
+==== PVA
 
 A sigla “PVA” é dúbia e na verdade usada para duas substâncias diferentes, a base da cola branca (“acetato
 de polivinila”, às vezes colocada como “PVAc” para evitar a ambiguidade) e o usado no filamento solúvel
@@ -6920,7 +6915,7 @@ e propensão à histerese elástica que os TPEs.
 
 image:image194.png[image,width=642,height=435]
 
-=== Infinity Rinse-Away
+==== Infinity Rinse-Away
 
 É um filamento usado exclusivamente em cartuchos proprietários das impressoras da série Cube da 3D Systems. Como o
 PVA, é solúvel em água, mas diferente dele, é feito a partir de polímeros de milho e “compatível” apenas
@@ -6934,7 +6929,7 @@ https://plastics.ulprospector.com/generics/34/c/t/polylactic-acid-pla-properties
 * -
 https://pt.aliexpress.com/item/shibaura-U1-382-Y1-NTC-thermistor-temperature-sensor-up-to-500-Centigrade-made-in-Japan/32770571400.html?spm=2114.16010208.99999999.262.KOPnDJ[_https://pt.aliexpress.com/item/shibaura-U1-382-Y1-NTC-thermistor-temperature-sensor-up-to-500-Centigrade-made-in-Japan/32770571400.html?spm=2114.16010208.99999999.262.KOPnDJ_]
 
-= Acabamento
+== Acabamento
 
 Se as impressoras 3D fossem construtores perfeitos como os replicadores de __Jornada nas Estrelas__, não haveria nem
 sentido em mencionar __acabamento__: afinal, as peças teriam saído prontas, __acabadas__, da máquina. Praticamente
@@ -6943,8 +6938,7 @@ diferentes técnicas de impressão 3D também seguem essa regra. O problema se e
 consiste de tarefas manuais, laboriosas e não automatizáveis -- o que acaba acontecendo, visto que o que é
 automatizável acaba entrando para o fluxo de trabalho da impressão 3D.
 
-== Acabamento é arte -- no pior sentido possível
-da palavra “arte”
+=== Acabamento é arte -- no pior sentido possível da palavra “arte”
 
 Em suma, quando mencionamos _acabamento_ neste contexto, tratamos desta parte avessa à automatização. Seu
 caráter manual e dependente de talento individual tira o caráter tecnológico da tarefa e o coloca mais próximo
@@ -6970,14 +6964,14 @@ muitos dos quais, em seus campos especializados, exigem cursos de proteção e c
 (os vapores solventes são um exemplo). Fique portanto explícita a advertência que, por mais que esta obra dê
 direções gerais de precauções, o leitor deve consultar as referências externas para melhor segurança.
 
-== Ferramentas básicas
+=== Ferramentas básicas
 
 Cada técnica diferente de acabamento pode exigir ferramentas diferentes, mas existe um conjunto básico e comum
 a muitas delas que vale ser sugerido. É importante perceber que não é necessário ter todas as ferramentas
 descritas para conseguir um bom acabamento; no entanto, quanto maior a variedade, mais fácil se tratarão os
 casos difíceis. As mais importantes de todas são as que mitigam o risco dando maior segurança às operações:
 
-=== Proteções
+==== Proteções
 
 Na indústria, tais proteções são tratas como “EPI” (Equipamentos de Proteção Individual). Os mais
 importantes para nossos casos:
@@ -7022,7 +7016,7 @@ especialmente útil para entender políticas de descarte é o “Manual de prepa
 tintas e vernizes, limpeza e descarte de embalagens” da WEG Tinta e Vernizes, disponível em
 http://ecatalog.weg.net/files/wegnet/WEG-manual-de-preparacao-de-tintas-e-vernizes-e-limpeza-de-embalagens-manual-portugues-br.pdf[_http://ecatalog.weg.net/files/wegnet/WEG-manual-de-preparacao-de-tintas-e-vernizes-e-limpeza-de-embalagens-manual-portugues-br.pdf_].
 
-1.  [[section-9]] === + [[cortantes]] === Cortantes
+==== Cortantes
 
 As ferramentas de corte são primordialmente usadas de duas maneiras: para remover arestas, fiapos e imperfeições,
 e para remover estruturas de suporte e __raft__, isto é, partes do plástico que foram impressas apenas para
@@ -7058,7 +7052,7 @@ prenda a peça com firmeza para ser trabalhada.
 
 image:image195.png[image,width=642,height=726]
 
-=== De lixamento ou desbastamento
+==== De lixamento ou desbastamento
 
 O lixamento de peças é talvez o tipo de acabamento _de aparência_ mais básico e representativo da esfera de
 impressão 3D. Básico porque representa um mínimo que se espera de pós-processamento das peças para exposição,
@@ -7141,7 +7135,7 @@ para trabalhos pesados: https://www.thingiverse.com/thing:99091[_https://www.thi
 3 -- O blog fazedores - de novo - tem ótimas dicas sobre como trabalhar com a microrretífica:
 http://blog.fazedores.com/dremel-uma-ferramenta-que-todo-fazedor-precisa-conhecer/[_http://blog.fazedores.com/dremel-uma-ferramenta-que-todo-fazedor-precisa-conhecer/_]
 
-=== Térmicas
+==== Térmicas
 
 Não poderiam faltar as ferramentas térmicas, visto que como o próprio processo de impressão 3D usa temperaturas
 altas, o acabamento também as acaba exigindo.
@@ -7242,7 +7236,9 @@ e elementos abrasivos, como pedrinhas ou lascas. Depois de alguns minutos a pouc
 torna a peça reluzente e agradável. O youtuber “Barnacules Nerdgasm” fez um vídeo mostrando o processo e o
 antes e depois: https://www.youtube.com/watch?v=nDoYO22103Q[_https://www.youtube.com/watch?v=nDoYO22103Q_]. Existem
 aparelhos de tamboreamento assim como detergentes e grãos abrasivos com preços baixos em sites de artesanato
-e joalheria.  1.  [[acabamento-químico-solventes]] == Acabamento químico: solventes
+e joalheria.
+
+=== Acabamento químico: solventes
 
 Acabamentos com contato mecânico com a peça, como o desbastamento, têm utilidade limitada. Funcionam bem em
 superfícies bem suportadas e definidas, mas uma das principais vantagens da impressão 3D em relação a outros
@@ -7338,7 +7334,7 @@ Infelizmente o blog de Austin não existe mais, mas o _web archive_ guardou o mo
 tissue prostheses with the desktop 3D printer. __Scientific reports__,
 __4__. https://www.nature.com/articles/srep06973[_https://www.nature.com/articles/srep06973_]
 
-=== Acetona
+==== Acetona
 
 image:image202.png[image,width=642,height=444]
 
@@ -7404,7 +7400,7 @@ Notas:
 que a acetona pode ter é disponibilizado pelo departamento de saúde dos EUA no endereço:
 https://www.atsdr.cdc.gov/toxprofiles/tp21.pdf[_https://www.atsdr.cdc.gov/toxprofiles/tp21.pdf_]
 
-=== Clorofórmio
+==== Clorofórmio
 
 image:image204.png[image,width=642,height=440]
 
@@ -7460,7 +7456,7 @@ Acesso em 15 de julho de 2017.
 <http://brasilescola.uol.com.br/quimica/compostos-organoclorados.htm[_http://brasilescola.uol.com.br/quimica/compostos-organoclorados.htm_]>.
 Acesso em 15 de julho de 2017.
 
-=== Diclorometano
+==== Diclorometano
 
 image:image205.png[image,width=642,height=352]
 
@@ -7522,7 +7518,7 @@ Notas:
 1 -- Ficha de Informação:
 http://sistemasinter.cetesb.sp.gov.br/produtos/ficha_completa1.asp?consulta=TETRAHIDROFURANO[_http://sistemasinter.cetesb.sp.gov.br/produtos/ficha_completa1.asp?consulta=TETRAHIDROFURANO_]
 
-=== Metil-Etil-Cetona (MEK)
+==== Metil-Etil-Cetona (MEK)
 
 image:image207.png[image,width=634,height=410]
 
@@ -7546,8 +7542,9 @@ maior controle.  * Ação mais forte e rápida
 *Desvantagens:*
 
 * Preço maior que a acetona.  * Necesside de permissão da Polícia Federal e limite de 2l por mês.  * Ação mais
-forte e rápida pode degradar a peça.  * Baixa volatilidade fará com que os métodos a frio não funcionem bem.  1.
-=== Solução limpadora
+forte e rápida pode degradar a peça.  * Baixa volatilidade fará com que os métodos a frio não funcionem bem.
+
+==== Solução limpadora
 
 Acetona e MEK são produtos extremamente necessários em alguns campos de trabalho -- solventes que podem ser
 usados para todo tipo de preparado e limpeza - e a burocracia e taxas extras para obter tais produtos seriam
@@ -7592,7 +7589,7 @@ http://www.pulvitec.com.br/produto/solucao-limpadora-polytubes[_http://www.pulvi
 3 -
 _http://assets.production.amanco.com.br.s3.amazonaws.com/uploads/gallery_asset/file/54/FISPQhttp://assets.production.amanco.com.br.s3.amazonaws.com/uploads/gallery_asset/file/54/FISPQ_Solu__o_Limpadora.pdf[­_Solu__o_Limpadora.pdf]_
 
-=== Compostos não recomendados para o acabamento químico
+==== Compostos não recomendados para o acabamento químico
 
 Assim como passamos uma lista de compostos que podem ser usados para o acabamento químico, há também aqueles
 compostos que, embora disponíveis no mercado e anedoticamente utilizados para esse fim, são inadequados ou até
@@ -7623,13 +7620,13 @@ Notas:
 1 - Kalia, S., & Avérous, L. (Eds.). (2011). _Biopolymers: biomedical and environmental applications_ (Vol. 70). John
 Wiley & Sons.
 
-== Acabamento químico: métodos
+=== Acabamento químico: métodos
 
 Listados os materiais de que podemos dispôr e suas particularidades, o passo seguinte é enumerar os métodos
 que usaremos com eles. Começamos pelo mais básico e aumentamos a sofisticação, além de dizer as vantagens e
 desvantagens de cada um.
 
-=== Imersão
+==== Imersão
 
 O método mais simples possível de tratar uma peça fabricada por uma impressora 3D FFF é submergi-la no solvente,
 e as desvantagens são óbvias para qualquer um que já mergulhou um cubo de açúcar ou um cristal de sal em água,
@@ -7662,7 +7659,9 @@ e as proteções.
 equipamentos e instrumentos com esse fim.  * Utiliza uma grande quantidade de solvente, o que além de dispendioso
 torna seu uso crítico visto que têm limites mensais regulados pela lei.  * Lida com pressões mecânicas
 de convecção e efeitos de flutuação que podem distorcer a peça.  * Em muitos casos atinge os corantes e
-“desbota” a peça.  1.  [[imersão-do-solvente-diluído-em-água]] === Imersão do Solvente Diluído em Água
+“desbota” a peça.
+
+==== Imersão do Solvente Diluído em Água
 
 Um dos meios de atacar alguns dos pontos do método anterior é diluir o solvente que usaremos em algum outro
 líquido inerte para o plástico cuja disponibilidade seja abundante e custo pequeno -- o melhor candidato sendo,
@@ -7683,7 +7682,9 @@ ação mais lenta.
 
 * Necessita de testes caso a caso, pois a água pode degradar o material.  * Lida com pressões mecânicas de
 convecção e efeitos de flutuação.  * Precisa que o solvente seja miscível com água, descartando clorofórmio
-e diclorometano.  1.  [[aplicação-direta-com-caneta-ou-pincel]] === Aplicação direta com caneta ou pincel
+e diclorometano.
+
+==== Aplicação direta com caneta ou pincel
 
 Um caso ligeiramente diferente ocorre quando se quer tratar apenas partes ou seções mais grosseiras da peça,
 ou ainda se deseja usar o solvente como “cola” de duas partes do mesmo plástico, ou mesmo se deseja abdicar
@@ -7735,8 +7736,9 @@ resultando em baixo risco.
 * Dependendo da combinação de aplicador, solvente e plástico, pode desbotar a coloração.  * Se forem usados
 pincéis, eles terão vida curta e necessitarão ser constantemente trocados.  * Com seringas e borrifadores, o
 solvente aplicado pode não ter o efeito desejado.  * Depende de o aplicador alcançar a parte da peça que precisa
-de tratamento; em formas complexas, isso pode ser impossível.  1.  [[aplicação-com-vapor-frio-de-solvente]]
-=== Aplicação com vapor frio de solvente
+de tratamento; em formas complexas, isso pode ser impossível.
+
+==== Aplicação com vapor frio de solvente
 
 A encarnação mais comum deste método é o uso de uma lata média ou grande com papel absorvente preso nas paredes
 internas por pequenos ímãs, ou recipiente de vidro com espuma colada nas paredes. Embebe-se o papel absorvente
@@ -7758,8 +7760,9 @@ por isso menos riscos.  * Utiliza pouco solvente -- somente o essencial para emb
 o tratamento, e o método não permite boa averiguação do progresso. Levantamento do recipiente para averiguação
 da peça faz o vapor frio escapar, prejudicando o tratamento.  * O tempo de tratamento demorado pode ser um revés.
 * O vapor frio, especialmente para os solventes de PLA, normalmente não é tão efetivo quanto o aquecido.  * Como
-há certo contato com o líquido e ainda o vapor no ambiente, é necessário o uso das proteções adequadas.  1.
-=== Banho de Vapor Aquecido
+há certo contato com o líquido e ainda o vapor no ambiente, é necessário o uso das proteções adequadas.
+
+==== Banho de Vapor Aquecido
 
 Como dito no histórico de tratamento de peças, esse foi o método que marcou uma mudança efetiva no fluxo de
 trabalho de acabamento. Seus resultados são os melhores de todos os métodos aqui descritos, com preservação e
@@ -7776,44 +7779,51 @@ para máxima segurança.
 
 * Antes de iniciar o tratamento químico, a peça deve ter seus suportes e raft **removidos**, ter os defeitos de
 impressão mais aparentes *removidos* e principalmente a superfície *lixada* nas partes que deverão ficar mais
-lisas. A peça não deve estar úmida.  * Durante o tratamento, os fiapos menores serão completamente *dissolvidos*
+lisas. A peça não deve estar úmida.
+* Durante o tratamento, os fiapos menores serão completamente *dissolvidos*
 pelo vapor e o pó do lixamento e a superfície esbranquiçada do processo serão também atacados de forma a tomar
-um contorno *liso* e **brilhante**.  * Veste-se a *proteção* adequada, incluindo a máscara de gás com filtro
-para vapores orgânicos, o jalevo e as luvas de nitrilo.  * Coloca-se o *fogareiro elétrico* dentro do ambiente
+um contorno *liso* e **brilhante**.
+* Veste-se a *proteção* adequada, incluindo a máscara de gás com filtro
+para vapores orgânicos, o jalevo e as luvas de nitrilo.
+* Coloca-se o *fogareiro elétrico* dentro do ambiente
 protegido e ventilado e se assenta o recipiente de tratamento, como um **béquer**, acima de sua espiral aquecedora.
 * Ao invés do fogareiro elétrico, para testar o método pode-se usar a *mesa aquecida* da impressora regulada para
 uns 100°C, mas atente-se ao leitor que a mesa tem fios relativamente expostos e risco maior de faíscas, incêndios
 e explosão. O vapor de solvente escapando do recipiente também pode acabar agindo nas peças da impressora,
 especialmente acrílico que dissolve facilmente. Em operações do dia-a-dia, é desejável separar o ambiente
-de acabamento do ambiente de impressão.  * Coloca-se uma *base* para que a peça *não entre em contato com o
-líquido* (caso contrário ela sofrerá deformação quase imediata), e que tenha **pequena área de contato**,
-como uma rede metálica.  * Derrama-se um pouco de solvente no recipiente -- geralmente *1 a 2mm de nível de
-líquido* são suficientes para durar por uns 5 minutos -- e por fim se **coloca a peça**.  * Pode-se colocar
+de acabamento do ambiente de impressão.
+* Coloca-se uma *base* para que a peça **não entre em contato com o líquido** (caso contrário ela sofrerá deformação quase imediata), e que tenha **pequena área de contato**,
+como uma rede metálica.
+* Derrama-se um pouco de solvente no recipiente -- geralmente **1 a 2mm de nível de líquido** são suficientes para durar por uns 5 minutos -- e por fim se **coloca a peça**.
+* Pode-se colocar
 algo no recipiente para dificultar a saída do vapor, como uma *tampa* ou uma **cobertura de papel alumínio**,
 tomando o cuidado de *não ser algo que o vede* pois a pressão interna tende a aumentar com o aquecimento.  *
 Liga-se o fogareiro elétrico na **temperatura baixa**. Esse ajuste deixa a espiral aquecida entre 80° e 120°C
 dependendo do modelo, e essa temperatura determinará a **velocidade de evaporação**. Lembrando a física básica,
 durante o processo de transição de fase (líquido para gasoso), a substância permanece na mesma temperatura,
-que é sua temperatura de ebulição.  * O *tempo de exposição* ótimo depende de quão lisa se deseja que a
-peça torne, da temperatura do fogareiro, do solvente e do tamanho, geralmente sendo de *alguns segundos* a *poucos
-minutos* a partir do momento em que o líquido começa a borbulhar.  * Uma melhor qualidade é obtida expondo a
+que é sua temperatura de ebulição.
+* O *tempo de exposição* ótimo depende de quão lisa se deseja que a
+peça torne, da temperatura do fogareiro, do solvente e do tamanho, geralmente sendo de *alguns segundos* a **poucos minutos*
+a partir do momento em que o líquido começa a borbulhar.
+* Uma melhor qualidade é obtida expondo a
 peça ao vapor mais de uma vez com intervalos em que descansa em ambiente seco. Assim, o plástico dissolvido tem
 tempo de se acomodar no contorno da peça. Isso também ajuda a evitar superexposição. Claro, isso gera um novo
 problema: o vapor não vai “esperar” a peça secar pra se dissipar e submetê-la a várias passadas pode ser
 um desperdício. Um jeito de amenizar esse problema, otimizando a utilização do solvente evaporado, é aguardar
 a impressão de uma certa quantidade de peças para tratá-las em lote, e deixá-las algumas horas secando para as
-passadas subsequentes.  * Uma alternativa a deixar a peça dentro do béquer desde o início é usar um instrumento
+passadas subsequentes.
+* Uma alternativa a deixar a peça dentro do béquer desde o início é usar um instrumento
 dedicado de pequena superfície de contato, como um **pegador de laboratório**, ligar o fogareiro e expor a peça
 pelo tempo suficiente para tratamento dentro do béquer. Esse método permite uma suavização personalizada e é
 especialmente recomendado pra peças altas, visto que o vapor tende a se acumular e ter ação muito maior na parte
 inferior do béquer. No entanto o risco de o plástico aderir no pegador é alto e a manipulação direta da peça
-envolve mais contato com o vapor aquecido e **risco bem maior**.  * Antes de chegar ao ponto desejado, *desliga-se
-o fogareiro e se aguarda* que o líquido pare de borbulhar. Pode-se esperar que o vapor se dissipe completamente ou
-se retirar a peça do béquer com instrumentos adequados e luvas para deixar secar em uma superfície adequada.  *
-Uma boa superfície para a peça secar é *papel alumínio amassado* de forma que suas rugas façam com que a peça
+envolve mais contato com o vapor aquecido e **risco bem maior**.
+* Antes de chegar ao ponto desejado, **desliga-se o fogareiro e se aguarda** que o líquido pare de borbulhar. Pode-se esperar que o vapor se dissipe completamente ou
+se retirar a peça do béquer com instrumentos adequados e luvas para deixar secar em uma superfície adequada.
+* Uma boa superfície para a peça secar é *papel alumínio amassado* de forma que suas rugas façam com que a peça
 tenha contato mínimo. Assim, o efeito de aderência do plástico amolecido será minimizado. Durante a secagem,
-a peça deve ficar longe de poeira ou resíduos, pois esses tendem a aderir facilmente à sua superfície.  * O
-béquer, base e pegador e quaisquer outros itens com contato com o vapor devem ser limpos depois do procedimento,
+a peça deve ficar longe de poeira ou resíduos, pois esses tendem a aderir facilmente à sua superfície.
+* O béquer, base e pegador e quaisquer outros itens com contato com o vapor devem ser limpos depois do procedimento,
 pois tenderão a acumular plástico dissolvido e outros resíduos.
 
 image:image210.jpeg[image,width=642,height=338]
@@ -7832,9 +7842,9 @@ evitável. Se o desejado for uma superfície fosca ou texturizada, o banho de va
 * Tem maiores riscos por envolver fonte de calor e vapores aquecidos (que se expandem mais rapidamente e sendo
 mais pesados que o ar, podem circundar o recipiente e “derramar” dele). Usar as proteções é indispensável.
 * Deixa a peça flexível e pegajosa por alguns minutos. É preciso ter cuidado com o contato com ela para não
-arruinar sua superfície, e mesmo na hora da secagem é preciso deixá-la em lugar sem poeira e resíduos.  1.
-=== Nebulizador / umidificador / vaporizador / Aparato
-“Maker”
+arruinar sua superfície, e mesmo na hora da secagem é preciso deixá-la em lugar sem poeira e resíduos.
+
+==== Nebulizador / umidificador / vaporizador / Aparato “Maker”
 
 Uma idéia que necessariamente passa pela mente de muita gente é: o procedimento de aplicação de solvente
 é caro, desajeitado, perigoso e relativamente sem muito controle. Ao mesmo tempo, existem várias máquinas de
@@ -7852,19 +7862,21 @@ observar são:
 de plástico. Percebe o conflito? Como acontece no mercado de massa por desinteresse dos consumidores, geralmente o
 plástico de que é feito a máquina nem mesmo é discriminado. Se for polipropileno, indicado em alguns modelos da
 marca _Mondial_ por exemplo, o risco é menor, mas ainda assim presente, pois não há garantia que as outras partes,
-especialmente as elétricas, serão tolerantes e se comportarão como o desejado com o solvente.  * *Os aparelhos
-de mercado não são construídos pra tratar objetos* e por isso não têm câmara vedada e espaçosa como seria
+especialmente as elétricas, serão tolerantes e se comportarão como o desejado com o solvente.
+* **Os aparelhos de mercado não são construídos pra tratar objetos** e por isso não têm câmara vedada e espaçosa como seria
 desejável, sendo construídas para dissipar o vapor no caso dos vaporizadores e umidificadores, e direcioná-lo no
 caso dos nebulizadores. O que isso significa é que mesmo que o aparelho seja usável para o propósito de acabamento,
-terá que sofrer consideráveis modificações estruturais.  * Nebulizadores, umidificadores e grande parte dos
+terá que sofrer consideráveis modificações estruturais.
+* Nebulizadores, umidificadores e grande parte dos
 vaporizadores usam o método *ultrassônico* para dispersar as moléculas do líquido, o que gera um *vapor frio*
 que pode não ser o que queremos, já que o vapor aquecido tem efetividade tão maior no acabamento. Por outro lado,
-o fato de usar ultrassom ao invés de aquecimento torna o método mais seguro.  * Listados todos os motivos anteriores,
+o fato de usar ultrassom ao invés de aquecimento torna o método mais seguro.
+* Listados todos os motivos anteriores,
 os testes necessários, possíveis perdas ou acidentes, o mais seguro seria buscar informações de _makers_ que já
-trilharam esse caminho e modificaram um desses aparelhos, mas… _Não se encontram_ receitas desse tipo. Portanto
+trilharam esse caminho e modificaram um desses aparelhos, mas... _Não se encontram_ receitas desse tipo. Portanto
 mesmo que o modelo específico a ser modificado fosse extremamente popular no mundo inteiro de modo à receita
-ser aplicável no Brasil, esse é um caminho ainda não desbravado e por isso mesmo bastante arriscado.  * Por
-tudo isso, ainda que seja potencialmente um trabalho maior, caso o leitor se interesse em construir um dispositivo
+ser aplicável no Brasil, esse é um caminho ainda não desbravado e por isso mesmo bastante arriscado.
+* Por tudo isso, ainda que seja potencialmente um trabalho maior, caso o leitor se interesse em construir um dispositivo
 para esse fim, o sugerido é uma das **receitas de máquinas “a partir do zero”**, sempre lembrando que ainda
 que tenha um componente lúdico e que valha a pena fazer também para “crescimento pessoal”, geralmente toma
 um tempo que pode representar uma grande economia se ao invés do projeto for comprada uma solução pronta para
@@ -7872,7 +7884,8 @@ uso. Ainda assim, essa solução permite o uso da criatividade menos confinada e
 para o acabamento, como medição de temperatura e ventoinha para maior fluxo de ar, e recursos preciosos como
 plataforma anti-aderente para evitar este efeito da peça úmida de solvente. _Observação conveniente:_ ventoinhas
 são geralmente feitas de poliamida ou poliimida reforçada com fibra de vidro, compostos resistentes aos solventes
-que listamos.  * Havendo disposição e tempo, a receita “Maker” mais popular na web descreve um aparato que
+que listamos.
+* Havendo disposição e tempo, a receita “Maker” mais popular na web descreve um aparato que
 usa partes de um mini-umidificador ultrassônico portátil (dos que difundem vapor no ambiente, pouco maior que
 uma lata de refrigerante) e itens de prateleira como jarro de vidro, tubos de polietileno, lata de tinta vazia,
 conectores de rosca e bombinhas de ar. Opcionalmente permite controle por timer, constando também nas instruções.
@@ -7889,8 +7902,9 @@ em série.  * Itens de mercado de massa, com elementos e peças de reposição f
 
 * Tempo, disposição e estudos necessários para se construir tal aparato. Caso seja para uma empresa de impressão
 3D média ou grande, pode exigir um profissional dedicado para operação, manutenção e reparos.  * Fragilidade
-da solução, que não tem garantias de funcionamento e riscos grandes associados à construção interna.  1.
-=== Máquinas especializadas
+da solução, que não tem garantias de funcionamento e riscos grandes associados à construção interna.
+
+==== Máquinas especializadas
 
 Ora, recomendamos aparelhos especializados para o tratamento químico se a disposição para construir um for baixa,
 mas _qual_ aparelho? No momento de publicação deste livro não há nenhuma comercializada no Brasil, mas existe
@@ -7954,7 +7968,7 @@ seja o mais conhecido, os outros solventes e seus plásticos também funcionam -
 contato tão próximo com eles em tarefa de revestimento, colagem e pintura tornar essas operações muitíssimos
 mais perigosas.
 
-== Acabamento térmico -- recozimento (__annealing__)
+=== Acabamento térmico -- recozimento (__annealing__)
 
 Quando uma peça de impressão 3D é fabricada, o processo todo submete o material a várias tensões localizadas
 dado principalmente às diferenças de temperaturas entre os vários pontos em que o filamento é depositado. Muitas
@@ -8009,7 +8023,7 @@ O estudo não parece ter resultado em artigo acadêmico, carecendo por isso de c
 
 2 - https://www.youtube.com/watch?v=CZX8eHC7fws[_https://www.youtube.com/watch?v=CZX8eHC7fws_]
 
-== Pintura
+=== Pintura
 
 Tratando de impressão 3D FFF, pintura surge como um assunto inevitável, até pela limitação da tecnologia
 em fabricar com cores diversas. Se por um lado é v[[FEITO_pintura]]erdade que existem muitas peças em que a
@@ -8029,8 +8043,7 @@ e em sua formulação podem ser encontrados:
 * **Aglutinantes**: a resina, também conhecida por ligante ou veículo, é o componente que vai formar o filme
 seco e o único cuja presença é obrigatória. É classificada de acordo com o mecanismo de cura, sendo os quatro
 mais comuns a __evaporação__, _reticulação_ cruzada, _polimerização_ e __coalescência__.
-* **Corantes ou
-pigmentos**: em forma de pó, são envoltos pela resina (líquida) e são os encarregados de dar cor à peça.
+* **Corantes ou pigmentos**: em forma de pó, são envoltos pela resina (líquida) e são os encarregados de dar cor à peça.
 * **Cargas**: em forma de pó, são também envoltos pela resina, encarregando-se de melhorar as propriedades
 físicas e condicionar o aspecto final.
 * **Solventes**: regulam a viscosidade do produto ao método de aplicação
@@ -8045,7 +8058,7 @@ melhoram o tato e orientam partículas metálicas -- como sais de alumínio.
 Uma fórmula contendo estes compostos forma uma _suspensão_ dos pigmentos e cargas na resina -- sendo insolúveis
 nela -, ao mesmo tempo em que esta resina está em solução com o solvente.
 
-=== Molhabilidade
+==== Molhabilidade
 
 De modo geral, os plásticos de impressão 3D não têm condições ideais para a fixação de tintas, adesivos
 e metalização, devido a suas superfícies quimicamente inertes ou com baixa energia superficial. A aderência
@@ -8126,7 +8139,7 @@ http://abflexo.org.br/artigo-tecnico/tensao-superficial-em-substratos-plasticos[
 4 -- A tabela deste livro foi baseada nesta referência, com algumas modificações e seleções:
 http://www.tstar.com/blog/bid/33845/surface-energy-of-plastics[_http://www.tstar.com/blog/bid/33845/surface-energy-of-plastics_]
 
-=== A prática: tintas
+==== A prática: tintas
 
 Sabendo a composição e os princípios de aderência das tintas, podemos aprender quais usar. Existem diversos
 tipos de tintas no mercado, mas nem todas são propícias para usar com plástico.
@@ -8134,14 +8147,16 @@ tipos de tintas no mercado, mas nem todas são propícias para usar com plástic
 * *Tintas de PVA* ou látex PVA são as mais baratas que se pode usar. São à base d’água, e embora sejam
 fáceis de aplicar até no plástico cru, não têm muita retenção -- podendo ser limpadas facilmente com pano
 úmido. São geralmente foscas e secam rapidamente após a aplicação. Não são adequadas para peças expostas ao
-tempo ou umidade.  * *Tinta acrílica* é o plástico acrílico (PMMA) com solvente; é também à base d’água e
+tempo ou umidade.
+* *Tinta acrílica* é o plástico acrílico (PMMA) com solvente; é também à base d’água e
 tem o aspecto semelhante à PVA, um pouco mais brilhante e forte em geral, embora exista a variedade fosca. Demora
 mais pra secar e se torna impermeável
 * **Tinta “PU” (poliuretano) ou epóxi**. Bicomponentes, são também
 chamadas de _tintas automotivas_ por serem comumente utilizadas em automóveis. São geralmente mais viscosas e
 não solúveis em água, também fazendo um bom trabalho de preenchimento, e dependem do catalisador para secar
 completamente. Uma vez seca, proporciona também ótima proteção à peça. Sua flexibilidade natural as protege
-de rachamentos.  * *Tinta poliéster* tem um aspecto brilhante, por vezes até metálico, mas é fina (não servindo
+de rachamentos.
+* *Tinta poliéster* tem um aspecto brilhante, por vezes até metálico, mas é fina (não servindo
 para cobrir imperfeições) e não resiste muito ao descascamento, necessitando de verniz ou laca aplicado após
 a pintura.
 * **Tinta automotiva spray**. Geralmente é tinta acrílica em aerossol para aplicação rápida.
@@ -8150,7 +8165,7 @@ Outros tipos de tinta -- como esmalte, guache, tinta a óleo e tinta de tecido -
 para o uso com plásticos de impressão 3D. Uma exceção pode ser o uso de esmalte de unha com pincel fino para
 desenhar detalhes na peça.
 
-=== Revestimento, coberturas e auxiliares
+==== Revestimento, coberturas e auxiliares
 
 Além das tintas, a tarefa de pintura costuma pedir por alguns compostos que auxiliam o acabamento e melhoram a
 aparência e textura da peça, além de protegê-la de fatores ambientais:
@@ -8160,21 +8175,24 @@ mas que tem a propriedade de ser bem aderente ao plástico e à tinta. Funciona 
 de adesão (“priming”) entre a superfície e a tinta da cor que se deseja, aplicado portanto antes da tinta.
 * **Primer filler**. É uma variedade de _primer_ que além de facilitar a adesão da tinta, é espesso e pastoso,
 cobrindo imperfeições e reentrâncias e funcionando como um elemento de suavização da superfície. O tipo de
-primer filler mais comum é o de poliuretano (“PU”).  * *Massas corretivas* são auxiliares ao primer com
+primer filler mais comum é o de poliuretano (“PU”).
+* *Massas corretivas* são auxiliares ao primer com
 a função especificamente de corrigir riscos e imperfeições, como o primer filler. São colocadas antes do
 primer. Algumas marcas famosas são Tamiya Putty e Massa para pequenas correções Lazzudur Alto Sólidos. São
 também muito usadas por plastimodelistas e podem até ser modeladas para desenhar alguns detalhes. Uma solução
-substituta para a mesma tarefa pode ser utilizar massa corrida PVA epóxi bicomponente.  * *Selantes* são compostos
+substituta para a mesma tarefa pode ser utilizar massa corrida PVA epóxi bicomponente.
+* *Selantes* são compostos
 que impermeabilizarão / selarão a peça pintada, usadas após a secagem da tinta. Alguns exemplos são goma laca
 incolor (totalmente transparente, e pode ser usada para fixar glitters e purpurinas), goma laca indiana (solúvel
 em álcool e com acabamento amarelado) e goma laca purificada (acabamento e fixação de glitter). Existem lacas
-brilhantes e foscas.  * *Betumes* são revestimentos usados para dar acabamento envelhecido.  * *Vernizes* são
-películas de acabamento, não necessariamente com propriedade selante. Alguns vernizes podem ser coloridos para
+brilhantes e foscas.
+* *Betumes* são revestimentos usados para dar acabamento envelhecido.
+* *Vernizes* são películas de acabamento, não necessariamente com propriedade selante. Alguns vernizes podem ser coloridos para
 complementar as tintas que cobrem. Existem vernizes brilhantes, texturizados e foscos.
-* **Revestimento próprio
-para impressão 3D**. A conhecida empresa _Smooth-On_ tem um composto chamado **XTC-3D**, feito especialmente para
+* **Revestimento próprio para impressão 3D**. A conhecida empresa _Smooth-On_ tem um composto chamado **XTC-3D**, feito especialmente para
 revestir peças impressas em FFF dando um acabamento brilhante e alisado. Resina de fibra de vidro epóxi pode
-substituir a XTC-3D que não é vendida no Brasil.  * *Líquido Jet* é um líquido à base de acetona utilizado
+substituir a XTC-3D que não é vendida no Brasil.
+* *Líquido Jet* é um líquido à base de acetona utilizado
 no meio odontológico que pode ao mesmo tempo ter uma ação alisadora em plásticos como ABS e de revestimento
 por ter também base acrílica.
 
@@ -8184,7 +8202,7 @@ que partes móveis se articulem. Pode ser necessário evitar a aplicação deles
 então modelá-la antecipadamente mais fina para compensar o volume a mais gasto. Um dos jeitos de fazer isso é
 a “compensação horizontal”, que veremos no capítulo de fatiamento.
 
-=== Nitrocelulose vs. Poliuretano
+==== Nitrocelulose vs. Poliuretano
 
 Na escolha de auxiliares para o acabamento, é comum se encontrarem compostos à base de duas substâncias diferentes:
 _nitrocelulose_ e __poliuretano__. Vale a pena vê-los em mais detalhes:
@@ -8215,7 +8233,7 @@ http://www.poliuretanos.com.br/livro/livro.htm[_http://www.poliuretanos.com.br/l
 toda a gama de revestimentos de proteção, temos a listagem do site especializados em tintas anticorrosivas:
 http://www.tintasanticorrosivas.com.br/informacoes-tecnicas/tintas-anticorrosivas/[_http://www.tintasanticorrosivas.com.br/informacoes-tecnicas/tintas-anticorrosivas/_].
 
-=== Aplicação das tintas e revestimentos
+==== Aplicação das tintas e revestimentos
 
 As tintas e compostos auxiliares precisam ser aplicados na peça, e os dois modos principais de o fazer são com
 um instrumento de contato como pincel ou brocha, ou borrifação como spray (aerossol) ou aerógrafo. Mas antes
@@ -8269,15 +8287,18 @@ massa dura de cerdas que praticamente não tem mais utilidade. Ainda que seja um
 do pincel faz parte das boas práticas de acabamento e estende sua vida útil. A seguir algumas sugestões:
 
 * Remova o excesso de tinta ou revestimento com pano ou papel absorvente, na direção da virola até a ponta --
-tendo o cuidado de não puxar as cerdas. Ajuda também passar o pincel em uma superfície que absorva o excesso.  *
-Com o excesso removido, mergulhe no solvente ou diluente (thinner) apropriado para o produto que está usando. Acetona
+tendo o cuidado de não puxar as cerdas. Ajuda também passar o pincel em uma superfície que absorva o excesso.
+* Com o excesso removido, mergulhe no solvente ou diluente (thinner) apropriado para o produto que está usando. Acetona
 ou thinner para produtos acrílicos ou poliuretano, álcool para goma laca e para produtos à base d’água, água
-_morna_ com um ou dois pingos de detergente para quebrar a tensão superficial.  * Novamente passe o pano seco ou
+_morna_ com um ou dois pingos de detergente para quebrar a tensão superficial.
+* Novamente passe o pano seco ou
 papel absorvente no pincel da virola até as pontas, de modo a secá-lo completamente. É útil também embrulhar as
-cerdas no papel absorvente para mantê-las secas.  * Se o volume de pintura é considerável e a variedade de cores
+cerdas no papel absorvente para mantê-las secas.
+* Se o volume de pintura é considerável e a variedade de cores
 utilizada é grande, vale a pena utilizar o mesmo pincel sempre para o mesmo material e coloração. Ainda que sejam
 às vezes imperceptíveis, resíduos da coloração anterior podem contaminar a pintura e piorar consideravelmente o
-aspecto da peça.  * Pincéis no fim da vida útil podem ser utilizados para os produtos de aderência como _primer_
+aspecto da peça.
+* Pincéis no fim da vida útil podem ser utilizados para os produtos de aderência como _primer_
 e __primer filler__, visto que neles a coloração não é importante.
 
 _*Spray*_ -- uma alternativa ao uso dos pincéis são as tintas em aerossol (spray), especialmente por aderirem
@@ -8302,12 +8323,14 @@ aerógrafos em impressão 3D:
 ou tempo de trabalho contínuo, que se supõe ser o da maioria dos casos da pintura de peças, o compressor de
 ar portátil ou mini-compressor^2^, que costuma custar entre 40 e 60 dólares, é recomendado pela praticidade e
 preço. O compressor de ar fixo é mais poderoso e pode trabalhar continuamente por várias horas mas vai custar
-mais de 150 dólares.  * Existem vários tipos de “canetas” de aerógrafo, citadas nas referências^3^. Para
+mais de 150 dólares.
+* Existem vários tipos de “canetas” de aerógrafo, citadas nas referências^3^. Para
 praticidade, o recomendado para uso com peças de impressão 3D é o aerógrafo de gravidade de mistura interna
 e de dupla ação, com abertura de 0,3mm. Esse tipo de aerógrafo permite o controle da pressão da “mistura”
 de líquido e água que será borrifada assim como a abertura do facho, potencializando controle fino da pintura
 ou revestimento que se aplique. Com esse controle, o aerógrafo pode ser usado tanto em fachos finos para detalhes
-de desenho na peça quanto em fachos largos para cobertura de tinta ou revestimento.  * A parte mais sensível do
+de desenho na peça quanto em fachos largos para cobertura de tinta ou revestimento.
+* A parte mais sensível do
 uso de aerógrafo é acertar as proporções de diluição da mistura com thinner que vai no recipiente acima da
 caneta. Uma proporção muito grossa fará o facho ser irregular, expelir perdigotos ou até entupir; uma proporção
 muito rala fará o facho ser fraco e não aderir corretamente à superfície. A consistência e diluição ideais
@@ -8348,7 +8371,7 @@ a importante lição de sempre limpar o aerógrafo depois de cada uso, pois o l�
 dentro da agulha de aplicação e aí a limpeza pode ser bastante complicada ou até impossível, com a caneta
 tendo que ser substituída em alguns casos.
 
-== Manutenção e Cuidados com a Impressora 3D
+=== Manutenção e Cuidados com a Impressora 3D
 
 Sendo um aparelho que em sua operação normal lida com tantas forças mecânicas, térmicas e até químicas, é
 esperado que a impressora 3D sofra considerável desgaste com o uso, comprometendo seu funcionamento e precisão e
@@ -8362,14 +8385,13 @@ as particularidades de certos modelos, pode ser que não se apliquem ou precisem
 a lubrificação de um componente pode exigir um tipo de óleo diferente, ou partes como o _hotend_ podem não ser
 facilmente desmontáveis para limpeza, sofrendo mais desgaste com a tentativa de manutenção que com o uso cotidiano.
 
-=== Componentes mecânicos
+==== Componentes mecânicos
 
 * **Parafusos e porcas**: Em impressoras 3D reprap como _graber_ e __prusa__, os parafusos podem afrouxar
 um pouco quando submetidos a muita pressão estrutural ou vibrações, especialmente em peças móveis como
 extrusor ou suportes do carro X. Recomenda-se apertar tais parafusos com periodicidade anual. Caso a carcaça
 seja de acrílico é preciso especial cuidado no aperto pois este material tem tendência a rachar.
-* **Motor e
-correia**: Ainda em relação aos parafusos em _graber_ e __prusa__, os mais propensos a folga são os que esticam
+* **Motor e correia**: Ainda em relação aos parafusos em _graber_ e __prusa__, os mais propensos a folga são os que esticam
 a correia dos carros X e Y. Em ambos os casos, antes de se apertar os parafusos deve-se afrouxá-los o máximo sem
 removê-los; então, deslizar o motor para deixar a correia o mais esticada possível, para só então apertá-los.
 * **Rolamentos e barras lisas**: Uma das partes mais delicadas e propensas a desgaste estrutural da impressora são
@@ -8381,8 +8403,7 @@ causar isso. Se tais irregularidades forem percebidas, recomenda-se desmontar o 
 do problema. Se as barras tiverem entortado levemente, recomenda-se trocá-las, visto que a correção nunca
 fica perfeita. Caso o problema seja nos rolamentos, é mais barato colocar novos. Sendo falta de paralelismo,
 geralmente remontar o conjunto tomando cuidado de acertar os encaixes já resolve o problema.
-* **Buchas**:
-No caso de buchas de bronze ou __drylin__, o desgaste é esperado dado o contato constante com a barra lisa, e a
+* **Buchas**: No caso de buchas de bronze ou __drylin__, o desgaste é esperado dado o contato constante com a barra lisa, e a
 vida útil de tais componentes é necessariamente limitada. O carro deve ser deslizado no eixo procurando-se fazer
 um pouco de força no sentido transversal, de modo a procurar detectar alguma folga. Se houver folga no carro, é
 sinal que as buchas esgotaram sua vida útil e precisam ser trocadas. Recomenda-se fazer a verificação a cada
@@ -8423,7 +8444,8 @@ tipicamente o eixo Z não se move enquanto cada camada está sendo impressa, som
 usa o autonivelamento em mesa desnivelada, cada camada é impressa inclinada, e o eixo Z permanece em constante
 movimento, desgastando consideravelmente mais o fuso ou barra roscada (isso não é verdade para alguns modelos
 de impressora, como a brasileira Sethi S3 que ao invés de corrigir por cálculos, inclina mecanicamente a mesa,
-evitando tal desgaste).  + A técnica de nivelamento mecânico de mesa mais frequente é o ajuste fino de seus
+evitando tal desgaste). +
+A técnica de nivelamento mecânico de mesa mais frequente é o ajuste fino de seus
 cantos usando parafusos. As mesas de impressão são quase sempre sustentadas por molas -- que servem como
 dispositivos de segurança para que o hotend não “afunde” na mesa e se quebre -- e essas molas têm um
 parafuso que serve de anteparo, girando sua rosca para aumentar ou diminuir a altura do canto. Esse ajuste é
@@ -8468,40 +8490,47 @@ a temperatura escape, mas pode dificultar a manutenção e manchar impressões. 
 do bico e do bloco aquecedor, que pode ser feita desmontando-se o hotend e colocando os elementos mergulhados em
 solvente por algumas horas, com subsequente lixamento do plástico remanescente. O procedimento é semelhante ao
 utilizado para quando há eventual *entupimento do hotend* com plástico derretido, ilustrado no canal de youtube
-do autor: https://www.youtube.com/watch?v=NZ1dRB3ZXNc[_https://www.youtube.com/watch?v=NZ1dRB3ZXNc_] ** Em hotends
-com tubinho de **PTFE interno**, é muito comum que o tubo de PTFE degrade, carbonize ou arranhe, os sintomas
+do autor: https://www.youtube.com/watch?v=NZ1dRB3ZXNc[_https://www.youtube.com/watch?v=NZ1dRB3ZXNc_]
+** Em hotends com tubinho de **PTFE interno**, é muito comum que o tubo de PTFE degrade, carbonize ou arranhe, os sintomas
 disto sendo uma perceptível diminuição da qualidade de extrusão e entupimentos frequentes. Deve-se desmontar
 o hotend e remover o tubo para verificação. A troca deste tubo é simples e barata, a desmontagem e montagem
-do hotend sendo a parte mais trabalhosa.  ** Em hotends __*all-metal*__, se o tubo interno de metal arranhar,
+do hotend sendo a parte mais trabalhosa.
+** Em hotends __*all-metal*__, se o tubo interno de metal arranhar,
 é necessário substituí-lo. Soluções caseiras como uso de broca não funcionam, visto que essa parte interna
-precisa de polimento especial para funcionar bem com o plástico derretido.  ** O __*heatbreak*__, apesar de ser
+precisa de polimento especial para funcionar bem com o plástico derretido.
+** O __*heatbreak*__, apesar de ser
 uma peça feita com duríssimo aço inoxidável, é uma peça bastante fina que, com alguma pressão mecânica,
 pode deformar ou se dobrar, e tentativas de endireitá-la não funcionam. É outra peça que, se estragada, deve-se
-trocar. Para evitar problemas com o heatbreak, evite bater o hotend contra a mesa.  ** Como se pode ver, partes
-diferentes do hotend exigem trocas, mas as *peças individuais* podem ser difíceis de achar ou até, dependendo do
-modelo, indivisíveis do conjunto. Nesse caso, o único jeito é realmente a substituição do hotend inteiro.  *
-**Limpeza (geral)**: ** Antes, uma precaução: evite umidade perto de circuitos eletrônicos, peças térmicas ou
-metálicas, mesmo com pano úmido. Gotas podem levar a curtos e corrosão.  ** Se a mesa aquecida usar **vidro**,
+trocar. Para evitar problemas com o heatbreak, evite bater o hotend contra a mesa.
+** Como se pode ver, partes diferentes do hotend exigem trocas, mas as *peças individuais* podem ser difíceis de achar ou até, dependendo do
+modelo, indivisíveis do conjunto. Nesse caso, o único jeito é realmente a substituição do hotend inteiro.
+* **Limpeza (geral)**:
+** Antes, uma precaução: evite umidade perto de circuitos eletrônicos, peças térmicas ou
+metálicas, mesmo com pano úmido. Gotas podem levar a curtos e corrosão.
+** Se a mesa aquecida usar **vidro**,
 remova-o para limpar separadamente. É importante que tanto o vidro quanto a mesa estejam bem polidos; partículas
 de poeira ou plástico podem interromper o contato do vidro com a mesa, criando um pequeno vão com ar que funciona
 como isolante térmico e portanto prejudicando o processo de impressão. É preciso ainda ter especial cuidado
-com mesas aquecidas que têm **contatos expostos**, como as mesas “MK2B” presentes em repraps.  ** Se sua
-impressora 3D tem **fundo fechado**, a acumulação de sujeira e detritos de impressão nessa parte é perigosa
+com mesas aquecidas que têm **contatos expostos**, como as mesas “MK2B” presentes em repraps.
+** Se sua impressora 3D tem **fundo fechado**, a acumulação de sujeira e detritos de impressão nessa parte é perigosa
 para o funcionamento da impressora. Se for muito difícil remover tais detritos com pano, use um mini-aspirador,
-do tipo que se usa em automóveis, para limpá-los.  ** Impressoras que têm a *carcaça de metal* a têm revestida
+do tipo que se usa em automóveis, para limpá-los.
+** Impressoras que têm a *carcaça de metal* a têm revestida
 por proteção, de modo que passar um pano levemente úmido com sabão é efetivo para limpá-la, com uma escova
 de dentes usada para as frestas que acumulam mais sujeira. Algumas receitas caseiras como fazer uma pasta de
 bicarbonato de sódio e água para passar no metal, neutralizando o pH e deixando-o brilhante, podem funcionar bem.
 ** Em impressoras 3D de **MDF ou acrílico**, cuidado com a utilização de álcool isopropílico. Ele mancha,
-penetra no MDF e o amolece, e causa rachaduras no acrílico.  *** No caso do *acrílico* um pano de microfibra
+penetra no MDF e o amolece, e causa rachaduras no acrílico.
+*** No caso do *acrílico* um pano de microfibra
 úmido com sabão costuma ser suficiente para limpar; um acabamento melhor pode ser obtido utilizando-se cera
-lustra-móveis incolor. A microfibra tem a desejável propriedade de não soltar fiapos.  *** O *MDF* absorve
-umidade rapidamente e se não tiver uma camada protetora, tende a inchar e se degradar por causa disso. Para a
+lustra-móveis incolor. A microfibra tem a desejável propriedade de não soltar fiapos.
+*** O *MDF* absorve umidade rapidamente e se não tiver uma camada protetora, tende a inchar e se degradar por causa disso. Para a
 limpeza, um pano seco deve ser utilizado, ou no máximo um pano de microfibra com algumas poucas gotas de água
 com sabão para limpeza mais pesada. Nunca use produtos pesados como querosene ou thinner no material. Recomenda-se
 fortemente que se proteja a carcaça de impressoras de MDF com vernizes ou lacas impermeáveis para estender sua vida
-útil. Recomenda-se o revestimento nas peças antes da montagem, ainda que isso dificulte um pouco os encaixes.  1.
-=== Componentes eletrônicos
+útil. Recomenda-se o revestimento nas peças antes da montagem, ainda que isso dificulte um pouco os encaixes.
+
+==== Componentes eletrônicos
 
 * *Drivers* e **Motores**: é sempre bom fazer uma verificação nos motores, ver se eles não estão perdendo passo
 ou superaquecendo durante as impressões. As perdas de passo são visíveis pelo desalinhamento da peça quando nos
@@ -8515,9 +8544,9 @@ medição semestral ou anual da corrente dos drivers para garantir a vida útil 
 partículas de poeira, cabos com contatos frágeis, chips que estejam esquentando e outros potenciais causadores de
 problemas leva pouco tempo e pode prevenir muitas dores de cabeça. Uma passagem de pincel ou pano de microfibra
 com álcool isopropílico são recomendados para remover sujeira e se houver problemas de dissipação térmica,
-dissipadores de alumínio e ventoinhas de gabinete (ligadas nos 12V da fonte) ajudam bastante.  * *Fios* e **Cabos**:
-são um componente especialmente pernicioso nas __repraps__, visto suas receitas de montagem costumem ser bem
-detalhadas, explicativas e abrangentes… Exceto na parte de cabeamento. Ensinam o que ligar e onde, mas nem mesmo
+dissipadores de alumínio e ventoinhas de gabinete (ligadas nos 12V da fonte) ajudam bastante.
+* *Fios* e **Cabos**: são um componente especialmente pernicioso nas __repraps__, visto suas receitas de montagem costumem ser bem
+detalhadas, explicativas e abrangentes... Exceto na parte de cabeamento. Ensinam o que ligar e onde, mas nem mesmo
 tamanho de cabos passam -- e é comum ver impressoras com cabos diversos de tamanho curto ou longo demais, assim
 como desorganizados como se fossem uma “maçaroca” de fios que além de ser perigosa e ineficiente, torna bastante
 trabalhosa a manutenção de um aparelho que devia ser justamente muito fácil de mexer e arrumar.  + Se você “se
@@ -8541,7 +8570,7 @@ desconectar os fios, mas são mais difíceis de achar.
 
 image:image219.jpeg[image,width=642,height=239]
 
-=== Lubrificação
+==== Lubrificação
 
 Ao desavisado, pode parecer que qualquer lubrificação de peças de máquinas é um problema trivial e basta usar
 um óleo qualquer comprado em lojas de ferramentas para tê-lo resolvido. Esta aparência, no entanto, está muito
@@ -8565,9 +8594,11 @@ oxigênio; * Evitar a formação de sujeira;
 
 E em especial, as graxas, por serem mais espessas, costumam cumprir as seguintes funções adicionais:
 
-* Absorver e dissipar o calor gerado pelo contato das superfícies; * Impedir a saída de lubrificantes e a
-entrada de partículas estranhas; * Amortecer o choque de dentes de engrenagens ou outras peças de impacto; *
-Amenizar/amortecer as folgas ou interstícios da geometria do mecanismo.
+* Absorver e dissipar o calor gerado pelo contato das superfícies;
+* Impedir a saída de lubrificantes e a
+entrada de partículas estranhas;
+* Amortecer o choque de dentes de engrenagens ou outras peças de impacto;
+* Amenizar/amortecer as folgas ou interstícios da geometria do mecanismo.
 
 Existem ainda _lubrificantes sólidos_ como grafite ou PTFE (Teflon), que dão uma lubrificação seca às peças.
 
@@ -8627,12 +8658,12 @@ geral não é muito adequado para as peças das impressoras 3D por não aderir b
 e acabar se tornando ele mesmo um resíduo. Além disso, faz com que necessite de constante necessidade de
 reaplicação, e pode, como no caso das barras roscadas, acabar gerando desgaste mecânico adicional nelas. Apesar
 de poder haver impressoras mais robustas com necessidades mais específicas que tolerem melhor o grafite, quando
-for o caso isso certamente será claro e constará no manual de manutenção.  * *Óleos vegetais* domésticos como
+for o caso isso certamente será claro e constará no manual de manutenção.
+* *Óleos vegetais* domésticos como
 canola eventualmente aparecem como proposições “maker” devido ao seu baixo preço e alta disponibilidade,
 mas têm incompatibilidades com metais e substâncias orgânicas que são detrimentais ao funcionamento de
-máquinas, com resíduos como a glicerina que são potencialmente perniciosos.  * *Desengripantes como WD-40*
-**não são lubrificantes**, ao invés disso sendo compostos feitos para _remover_ resíduos de poeira, ferrugem
-ou de lubrificantes anteriores. A sigla “WD” significa “Water Displacing”, ou “Deslocamento de Água”,
+máquinas, com resíduos como a glicerina que são potencialmente perniciosos.
+* *Desengripantes como WD-40* **não são lubrificantes**, ao invés disso sendo compostos feitos para _remover_ resíduos de poeira, ferrugem ou de lubrificantes anteriores. A sigla “WD” significa “Water Displacing”, ou “Deslocamento de Água”,
 por seu uso principal como solvente ou remover de ferrugem. Uso nas peças de impressora leva a ressecamento de
 sua lubrificação, formação de “pelotas” de sujeira, aumento do atrito e desgaste, e remove a lubrificação
 interna dos rolamentos.
@@ -8650,7 +8681,7 @@ http://www.dolphingrupo.com.br/blog/20-08-15/lubrificar-máquinas-é-preciso-mas
 em mente no entanto que alguns dos compostos sugeridos na página podem ser difíceis de encontrar no Brasil:
 http://reprap.org/wiki/Lubrication[_http://reprap.org/wiki/Lubrication_]
 
-=== O Pesadelo: Calibração de uma delta
+==== O Pesadelo: Calibração de uma delta
 
 Quando se procura saber mais sobre as impressoras estilo __delta__, seja para comprar ou para montar, as respostas
 em fóruns podem assustar o interessado. Há um determinado aspecto das deltas que é unanimamente vilificado: sua
@@ -8674,7 +8705,8 @@ não há valores “padrão” em que se basear exceto para alguns poucos modelo
 “pontos livres” cujo posicionamento durante a montagem não é exato, como a altura de onde se prende o endstop
 no poste. Assim, a maioria das construções de deltas exige uma etapa posterior de mensuração das distâncias
 resultantes, e mesmo essas medidas são difíceis de fazer (pela geometria das peças aliada às limitações dos
-instrumentos), portanto propensas a erros consideráveis.  * *Indireção das medidas* -- muitas medidas não são
+instrumentos), portanto propensas a erros consideráveis.
+* *Indireção das medidas* -- muitas medidas não são
 usadas diretamente e portanto não podem ser verificadas diretamente; entram em um cálculo ou combinação com
 outras e não podem ser aferidas de maneira simples. Isso transforma um problema de uma variável em um sistema
 de múltiplas equações, com variáveis difíceis de isolar. Como exemplos, temos as coordenadas X-Y-Z --
@@ -8864,7 +8896,7 @@ os outros dois: *** G28 + G1 X64.95 Y-37.5 Z20 *** G28 + G1 X0 Y75 Z20 ** Perceb
 Y-37.5 Z15 ; continua acima da mesa + G1 X-64.95 Y-37.5 Z10 ; continua acima da mesa + G1 X-64.95 Y-37.5 Z8 ;
 continua acima da mesa + G1 X-64.95 Y-37.5 Z4 ; toca na mesa ** Redefinimos a DELTA_HEIGHT então para 4 mm menor,
 já que é o Z encontrado. 200 -- 4 = 196mm. Se o Z encontrado fosse negativo, adicionaríamos o número.  ***
-M665 H196.00 + M500 ; grava na EEPROM ou config.txt ** De novo, mandamos pela USB os comandos para as coordenadas
+M665 H196.00 + M500 ; grava na EEPROM ou config....txt ** De novo, mandamos pela USB os comandos para as coordenadas
 do triângulo, mas dessa vez já para o ponto zero (encostado na mesa): *** G28 + G1 X-64.95 Y-37.5 Z0 *** G28 +
 G1 X64.95 Y-37.5 Z0 *** G28 + G1 X0 Y75 Z0 ** Como o ponto _*a*_ é o nosso ponto mais baixo, ele deve tocar na
 mesa e os outros ficarão acima. Um resultado possível colocando em cada ponto e medindo a distância bico-mesa
@@ -8874,9 +8906,9 @@ image:image230.png[image,width=642,height=382]
 
 * Medimos uma diferença de Z de 0.3mm pra *b* e 0,4mm pra **c**. Mas precisamos saber a altura em que o centro
 (0,0) está para poder inferir a altura relativa de cada ponto. Para isso, basta tirar a média aritmética das
-alturas (0+0.3+0.4)/3 = 0.233... Isso significa que o centro está em (0,0,0.233…), o ponto _*a*_ está 0.233 mais
-baixo que o centro, o ponto _*b*_ está 0,066… mais alto que o centro e o ponto _*c*_ está 0,166… mais alto
-que o centro. Podemos usar agora a proporção do dobro: o deslocamento da torre *B* será 0,0666…×2 = 0.13 mm
+alturas (0+0.3+0.4)/3 = 0.233... Isso significa que o centro está em (0,0,0.233...), o ponto _*a*_ está 0.233 mais
+baixo que o centro, o ponto _*b*_ está 0,066... mais alto que o centro e o ponto _*c*_ está 0,166... mais alto
+que o centro. Podemos usar agora a proporção do dobro: o deslocamento da torre *B* será 0,0666...×2 = 0.13 mm
 (arredondado) e o deslocamento da torre *C* será 0.1666...×2, ou seja, 0.33 arredondado. Redefinimos o nosso
 DELTA_HEIGHT para refletir o Z do centro da mesa com M665 e colocamos os modificadores das torres A, B e C pelo
 comando M666. O novo DELTA_HEIGHT será 0.23 mm acima, ou seja, menor: ** M665 H195.77 ; redefine DELTA_HEIGHT para
@@ -9164,7 +9196,7 @@ precisam realizar _muitas_ manipulações e operações matemáticas em cima des
 precisam fazer em “tempo real”. Também há o fator que o formato STL foi inventado na década de 80, em que o
 processamento disponível era muito mais lento que o atual. Novos formatos para impressão 3D, como o AMF e o 3MF,
 levaram isso em conta permitindo muito mais informação que o STL, como diferentes objetos (“constelações”),
-cores, materiais, unidades, polígonos ao invés de apenas triângulos… No entanto, ainda trabalham com _malhas_
+cores, materiais, unidades, polígonos ao invés de apenas triângulos... No entanto, ainda trabalham com _malhas_
 e não incorporaram modelagem sólida nem curvas no formato.
 
 Trabalhar com malhas poligonais tem reveses maiores do que apenas não ter curvas ou informação de sólidos. A
@@ -10172,7 +10204,7 @@ Uma vez importada a figura tridimensional, ela aparecerá por _default_ no centr
 figuras, o software pode preguiçosamente dispô-las no centro sobrepondo as anteriores, ou pode rearranjá-las na
 mesa. Esse comportamento é configurável (**Slic3r**: File → Preferences → Auto-center parts; **Simplify3D**:
 Tools → Options → Models → Automatically center and arrange imported models; **Cura**: Preferences → Configure
-Cura… → General → Ensure models are kept apart _e_ Automatically drop models to the build plate) e tanto
+Cura... → General → Ensure models are kept apart _e_ Automatically drop models to the build plate) e tanto
 Simplify3D quanto Slic3r ainda disponibilizam um botão de arranjo instantâneo caso você tenha “bagunçado”
 a mesa.
 
@@ -10358,7 +10390,7 @@ image:image321.png[image,width=613,height=346]
 
 Um recurso que todos os fatiadores oferecem, mas de formas diferentes, é a possibilidade de o usuário escolher
 como quer que as peças da mesa sejam impressas, quando há várias: todas ao mesmo tempo (a primeira camada de
-todas elas, então a segunda camada de todas, etc…) ou uma de cada vez. O primeiro modo é chamado de _impressão
+todas elas, então a segunda camada de todas, etc...) ou uma de cada vez. O primeiro modo é chamado de _impressão
 contínua_ e o segundo caso de __impressão sequencial__.
 
 Se a idéia é simples, por que os fatiadores a tratam de forma diferente? Ora, temos que nos lembrar que fatiadores
@@ -10461,7 +10493,7 @@ https://www.simplify3d.com/support/articles/multi-part-printing/[_https://www.si
 neles, a seguir: https://github.com/alexrj/Slic3r/issues/3739[_https://github.com/alexrj/Slic3r/issues/3739_]
 e https://github.com/Ultimaker/Cura/issues/1493[_https://github.com/Ultimaker/Cura/issues/1493_].
 
-== Outra camada de configurações…
+== Outra camada de configurações...
 
 ...ou configurações de camada? Pois agora que terminamos a __base__, o mínimo que uma impressora precisa para
 começar a funcionar, precisamos saber como fazer uma impressão viável (isto é, que chegue à peça final sem
@@ -11532,7 +11564,7 @@ image:image401.png[image,width=507,height=469]
 
 O valor de compensação horizontal é obtido pragmaticamente para o bico e filamento estimando-se a diferença
 entre encaixes. A compensação horizontal negativa funciona bem para o caso dos encaixes, mas a positiva também
-é útil para, por exemplo, letras finas que não aparecem…
+é útil para, por exemplo, letras finas que não aparecem...
 
 image:image402.png[image,width=619,height=518]
 

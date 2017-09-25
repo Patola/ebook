@@ -6920,13 +6920,13 @@ image:image194.png[image,width=642,height=435]
 PVA, é solúvel em água, mas diferente dele, é feito a partir de polímeros de milho e "compatível" apenas
 com PLA e Nylon.
 
-Referências:
-
-* (PLA) -
+[NOTE]
+.Referências:
+====
+. (PLA) -
 https://plastics.ulprospector.com/generics/34/c/t/polylactic-acid-pla-properties-processing[_https://plastics.ulprospector.com/generics/34/c/t/polylactic-acid-pla-properties-processing_]
-
-* -
-https://pt.aliexpress.com/item/shibaura-U1-382-Y1-NTC-thermistor-temperature-sensor-up-to-500-Centigrade-made-in-Japan/32770571400.html?spm=2114.16010208.99999999.262.KOPnDJ[_https://pt.aliexpress.com/item/shibaura-U1-382-Y1-NTC-thermistor-temperature-sensor-up-to-500-Centigrade-made-in-Japan/32770571400.html?spm=2114.16010208.99999999.262.KOPnDJ_]
+. https://pt.aliexpress.com/item/shibaura-U1-382-Y1-NTC-thermistor-temperature-sensor-up-to-500-Centigrade-made-in-Japan/32770571400.html?spm=2114.16010208.99999999.262.KOPnDJ[_https://pt.aliexpress.com/item/shibaura-U1-382-Y1-NTC-thermistor-temperature-sensor-up-to-500-Centigrade-made-in-Japan/32770571400.html?spm=2114.16010208.99999999.262.KOPnDJ_]
+====
 
 == Acabamento
 
@@ -6978,8 +6978,8 @@ importantes para nossos casos:
 * *Máscara de poeira* -- usada por profissionais de marcenaria, útil para quando se removem suportes e lascas
 das peças impressas e também nas ocasiões em que se faz desbastamento e lixamento. As poeiras de plástico
 são quimicamente resistentes e podem trazer obstruções do trato respiratório. Note-se que a máscara precisa
-estar justa e sem vãos e não protege contra vapores químicos nem nanopartículas.  * *Luva de kevlar* / *de
-aço com 4 fios* -- ainda que aja variados tipos de luvas protetoras para o trabalho com ferramentas cortantes
+estar justa e sem vãos e não protege contra vapores químicos nem nanopartículas.
+* *Luva de kevlar* / *de aço com 4 fios* -- ainda que aja variados tipos de luvas protetoras para o trabalho com ferramentas cortantes
 ou desbastamento, essas são as que sugerimos baseadas no equilíbrio entre sensibilidade e proteção. Ajudam a
 evitar os cortes por partes pontiagudas ou afiadas. São vendidas em tamanhos diferentes, é importante comprar
 do tamanho certo porque luvas largas demais podem deixar os instrumentos escaparem e prejudicar a sensibilidade, e
@@ -6989,14 +6989,14 @@ pareça um exagero, ela não é um insumo muito caro (algumas dezenas de reais) 
 de acabamento, como pintura e revestimento das peças e, claro, o acabamento químico com vapores solventes. Os
 melhores modelos são os que ao invés de terem óculos de proteção separado são uma peça só que cobre o
 rosto, como se fosse um capacete de astronauta: dão ótima visibilidade. Os filtros usados são filtros comuns
-contra vapores orgânicos usados por pintores, que devem ser trocados a cada 6 meses.  * *Exaustor / ventilador*
--- para ajudar a remover ou arejar os vapores químicos, solventes e nanopartículas; evitar ar parado.  * *Óculos
-de segurança* -- óculos de plástico resistente próprios para evitar que os olhos sejam afetados pelos vapores
-e líquidos. Os mais recomendados são o que vedam a entrada de vapores.  * *Luvas de nitrilo descartáveis* -- as
-conhecidas "luvas azuis" que aparecem em seriados médicos são luvas de borracha resistentes a punção e a
+contra vapores orgânicos usados por pintores, que devem ser trocados a cada 6 meses.
+* *Exaustor / ventilador* -- para ajudar a remover ou arejar os vapores químicos, solventes e nanopartículas; evitar ar parado.
+* *Óculos de segurança* -- óculos de plástico resistente próprios para evitar que os olhos sejam afetados pelos vapores
+e líquidos. Os mais recomendados são o que vedam a entrada de vapores.
+* *Luvas de nitrilo descartáveis* -- as conhecidas "luvas azuis" que aparecem em seriados médicos são luvas de borracha resistentes a punção e a
 vapores e solventes como os tipicamente usados em pintura e acabamento químico. Após o uso, devem ser embaladas
-para descarte^1^. As luvas de látex comuns são mais baratas mas oferecem maior risco.  * *Jaleco* ou *Macacão
-de proteção química* complementam o conjunto quando se usa a máscara de gás, junto a protetores de cabelo ou
+para descarte^1^. As luvas de látex comuns são mais baratas mas oferecem maior risco.
+* *Jaleco* ou *Macacão de proteção química* complementam o conjunto quando se usa a máscara de gás, junto a protetores de cabelo ou
 capacetes que evitam que os líquidos e gases contaminem o corpo. Essas roupas devem idealmente ser confortáveis e
 folgadas para minimizar rasgões e puxões do tecido. Após o uso, devem ser imediatamente colocadas para limpeza.
 * *Sapatos ou botas* com sola de borracha ou outro material antiderrapante.
@@ -7023,11 +7023,12 @@ apoiar seções da peça (mais detalhes sobre o suporte você terá na seção d
 ferramentas elétricas e industriais de corte porque além do excesso de opções, fogem ao escopo do livro.
 
 * *Alicate de corte diagonal* -- serve para tirar fiapos, cortar seções finas e aparar arestas. Tem uma seção
-mais chata de bico que pode ser encostada na peça para cortar com segurança as imperfeições.  * *Alicate para
-cutículas* -- é equivalente ao alicate de corte diagonal, mas bem menor. Serve para seções mais frágeis da
+mais chata de bico que pode ser encostada na peça para cortar com segurança as imperfeições.
+* *Alicate para cutículas* -- é equivalente ao alicate de corte diagonal, mas bem menor. Serve para seções mais frágeis da
 peça ou trabalho de detalhes. Aconselha-se comprar os modelos com haste de plástico por serem mais resistentes.
 * *Alicate de corte rente* -- tem o bico chato, sem seção funda, e tamanho geralmente menor que o de corte
-diagonal. Consegue penetrar mais nos detalhes.  * *Alicate de corte turquesa* -- a seção cortante deste alicate é
+diagonal. Consegue penetrar mais nos detalhes.
+* *Alicate de corte turquesa* -- a seção cortante deste alicate é
 frontal e não lateral. É usado quando a geometria da seção a ser aparada dificulta o cabo no sentido do corte.
 * *Navalha* / *estilete* -- tanto um quanto o outro são úteis na retirada de fiapos, bolhas e imperfeições
 do plástico, mas são instrumentos de uso mais perigoso que alicates por seu fio afiado. Não se deve usá-los
@@ -7035,17 +7036,21 @@ do plástico, mas são instrumentos de uso mais perigoso que alicates por seu fi
 * *Rebarbadora manual* -- é um substituto seguro e muito mais ágil do estilete para alguns casos particulares,
 como apara rápida de cantos. Tem um fio da lâmina que gira no eixo da manopla do instrumento acompanhando o
 contorno do corte, podendo ser guiado pelo dedão pelo lado rotundo; geralmente é comprado com várias lâminas
-facilmente substituíveis.  1.  [[alicates]] === Alicates
+facilmente substituíveis.
+
+==== Alicates
 
 * *Alicate universal* -- o alicate de bico grosso serrilhado e meia-lua de corte que é comum em todo lugar. Não
 é especialmente útil na impressão 3D, mas dado que é facílimo de encontrar e tem várias utilidades, pode
-servir para firmar peça, arrancar suportes de seção maiores e até cortar arestas.  * *Alicate de bico fino ou
-meia-cana* -- disponível em modelos diferentes, o alicate de bico fino costuma ser mais útil na impressão 3D por
+servir para firmar peça, arrancar suportes de seção maiores e até cortar arestas.
+* *Alicate de bico fino ou meia-cana* -- disponível em modelos diferentes, o alicate de bico fino costuma ser mais útil na impressão 3D por
 entrar facilmente nas reentrâncias, permitindo o alcance fácil das partes mais bloqueadas e a aplicação de força
 localizada com um leve girar do instrumento. Pode ainda fazer as vezes de pinça para puxar filamento quente do bico
-ou remover sujeiras do início de impressão.  * *Alicate de bico curvo* -- é um modelo especial de alicate de
+ou remover sujeiras do início de impressão.
+* *Alicate de bico curvo* -- é um modelo especial de alicate de
 bico fino em que o bico começa reto mas faz uma curva de 90°. Utíl para reentrâncias mais difíceis em que os
-alicates finos comuns não conseguem penetrar.  * *Alicate de pressão* -- é um tipo de alicate regulável que
+alicates finos comuns não conseguem penetrar.
+* *Alicate de pressão* -- é um tipo de alicate regulável que
 pode ser _fixado_ numa mordedura específica de modo que, com a ajuda de uma mola que faz pressão na abertura,
 prenda a peça com firmeza para ser trabalhada.
 
@@ -7068,13 +7073,14 @@ número, maior o grão, indo de 16 a 3000 e sendo padronizado pela ISO 6344. Uma
 exemplo -- é mais grossa, servindo pra fazer desbastamento inicial da peça; uma de número maior, como 400, serve
 para detalhes mais finos ou polimento. Esse é o intervalo sugerido por esta obra. Como o plástico é um material
 geralmente fácil de tratar, os tipos de lixas comerciais comuns -- para madeira, massa e metal -- não farão
-diferença. As lixas geralmente são itens descartáveis, que se inutilizam gradualmente com o uso.  + Um tipo de lixa
-especial e recomendado é a __*lixa d’água*__. É uma lixa com papel, grão e cola resistentes a água para que o
+diferença. As lixas geralmente são itens descartáveis, que se inutilizam gradualmente com o uso. +
+Um tipo de lixa
+especial e recomendado é a __**lixa d’água**__. É uma lixa com papel, grão e cola resistentes a água para que o
 processo de desbastamento possa ser feito embaixo de um jato d’água ou até submerso, fazendo com que o líquido
 ajude a carregar a poeira e detritos e impeça que o material aqueça demasiadamente. É especialmente útil para
 o PLA que é um plástico de baixa transição vítrea, e portanto propenso a se tornar pastoso por aquecimento
-com a fricção quando se usa lixa comum. A contrapartida da lixa d’água é que se desgasta mais rapidamente.
-+ Uma dica de artesãos para o trabalho com lixas é começar pela de menor grana e ir aumentando em não mais que
+com a fricção quando se usa lixa comum. A contrapartida da lixa d’água é que se desgasta mais rapidamente. +
+Uma dica de artesãos para o trabalho com lixas é começar pela de menor grana e ir aumentando em não mais que
 50% a cada iteração do trabalho. Por exemplo, começando com uma de 60, não utilizar logo depois uma de 100,
 mas de 90 ou 80. Esse é um jeito de o grão mais fino conseguir remover o risco deixado pelo grão mais grosso.
 * *Limas* -- por vezes confundidas com as lixas, as limas são ferramentas formadas por uma haste dura de aço
@@ -7085,10 +7091,12 @@ de peças de plástico impressas em 3D. Geralmente são classificadas como "bast
 destinada a remoção de grande quantidade de material), "de segundo corte" (aplainamento ou ajuste de
 superfícies para a forma desejada) e "murças" (mais finas, para detalhes e polimento). Recomenda-se para o
 trabalho de impressão 3D uma lima bastarda e um conjunto de murças de 14cm de diferentes formatos, tudo isto
-facilmente encontrável em lojas de ferramentas.  * *Escovas de aço (e outros metais)* -- são instrumentos
-semelhantes a uma escova de dentes mas com cerdas de metal. Sua abrasividade é grande e correspondem a uma lixa
+facilmente encontrável em lojas de ferramentas.
+* **Escovas de aço (e outros metais)** -- são instrumentos semelhantes a uma escova de dentes mas com cerdas de metal. Sua abrasividade é grande e correspondem a uma lixa
 com grana baixa. Podem ser usada também para remover poeira e detritos de seções rebuscadas, pois suas cerdas
-penetram onde outros instrumentos não conseguem.  1.  [[rotatórias]] === Rotatórias
+penetram onde outros instrumentos não conseguem.
+
+==== Rotatórias
 
 Ferramentas motorizadas são um alívio de produtividade à tarefa cansativa de desbastamento. É o caso das
 ferramentas rotatórias de desbastamento e polimento. São indispensáveis para trabalhos intensos, repetitivos ou
@@ -7099,7 +7107,8 @@ das luvas de proteção e da máscara de poeira!_
 basicamente 3 tipos de brocas^1^: para metais, paredes e madeira, essa última geralmente com uma adaga no meio que
 serve de guia. A mais adequada para se usar para fazer furos em plástico é a para madeira, mas nosso interesse é
 desbastamento. Nesse caso existem hastes especiais para polimento que encaixam no mandril da furadeira e permitem
-várias conjuntos de lixas e escovas.^2^ * *Microrretífica* -- também conhecida pelo nome da marca mais famosa no
+várias conjuntos de lixas e escovas^2^.
+* *Microrretífica* -- também conhecida pelo nome da marca mais famosa no
 exterior, __Dremel__, a microrretífica é um instrumento rotatório menor que a furadeira que já costuma vir com
 uma maleta de acessórios, incluindo várias pontas para polimento^3^. Tem rotação mais rápida que a furadeira,
 mas menor torque. Uma modificação que se aconselha usar na microrretífica que a faz muito mais útil para
@@ -7119,20 +7128,20 @@ uso indicado, algumas pessoas usam a haste flexível para tratar o plástico sub
 Cabe notar que a microrretífica tem também pontas cortantes e de perfuração, servindo para outras tarefas
 de acabamento.
 
-Notas:
-
-1 -- O blog _fazedores_ tem um guia explicando os diferentes tipos de broca e quando usá-las:
+[NOTE]
+.Notas:
+====
+. O blog _fazedores_ tem um guia explicando os diferentes tipos de broca e quando usá-las:
 http://blog.fazedores.com/como-escolher-a-broca-certa-para-cada-trabalho/[_http://blog.fazedores.com/como-escolher-a-broca-certa-para-cada-trabalho/_]
-
-2 -- Incidentalmente, furadeiras e microrretíficas são dois dos alvos preferidos de _makers_ criativos
+. Incidentalmente, furadeiras e microrretíficas são dois dos alvos preferidos de _makers_ criativos
 que adoram explorar o potencial de uma ferramenta rotatória de alto torque. Existem adaptadores que a
 transformam em vários outros instrumentos: centrífuga de laboratório, misturador de bebidas, moedor de
 café, enrolador de barbante e até, claro, existem adaptadores impressos para polimento com a furadeira:
 https://www.thingiverse.com/thing:2115708[_https://www.thingiverse.com/thing:2115708_]. Ou este gigante aqui,
 para trabalhos pesados: https://www.thingiverse.com/thing:99091[_https://www.thingiverse.com/thing:99091_]
-
-3 -- O blog fazedores - de novo - tem ótimas dicas sobre como trabalhar com a microrretífica:
+. O blog fazedores - de novo - tem ótimas dicas sobre como trabalhar com a microrretífica:
 http://blog.fazedores.com/dremel-uma-ferramenta-que-todo-fazedor-precisa-conhecer/[_http://blog.fazedores.com/dremel-uma-ferramenta-que-todo-fazedor-precisa-conhecer/_]
+====
 
 ==== Térmicas
 
@@ -7149,17 +7158,21 @@ quente pode reduzir ou até eliminar as linhas de camadas das peças; mas é uma
 especialmente porque o sopro pode acabar gerando deformação no plástico quente e destruir detalhes mais frágeis.
 ** **Facilitar insertos e encaixes**. Quando se imprime uma peça que deve receber um inserto (como um parafuso)
 e foi impressa bem justa, aquecê-la com a pistola pode amaciar o plástico o suficiente para encaixá-lo no lugar
-e deixar firme.  ** *Dobrar ou remodelar peças impressas.* Como a tala impressa que vimos nos usos biológicos, o
+e deixar firme.
+** *Dobrar ou remodelar peças impressas.* Como a tala impressa que vimos nos usos biológicos, o
 calor pode ser usado em partes grandes da peça para deixar o plástico mole e mudar seus ângulos e conformação;
 por exemplo, uma mão pode ser impressa aberta mas aquecida e colocada manualmente com os dedos fazendo sinal de
-"vitória".  ** *Escrever uma assinatura ou logotipo.* Com o plástico aquecido, uma ferramenta de punção
-ou corte pode deixar um sulco característico na peça.  + É preciso "pegar o jeito" com a pistola, portanto
+"vitória".
+** *Escrever uma assinatura ou logotipo.* Com o plástico aquecido, uma ferramenta de punção
+ou corte pode deixar um sulco característico na peça.  +
+É preciso "pegar o jeito" com a pistola, portanto
 é aconselhado ao leitor que pratique com peças velhas ou falhas. O ABS quando aquecido tem uma consistência
 pastosa bem moldável, e permanece assim por cerca de um minuto até endurecer. O PLA muda de consistência mais
-rapidamente, ficando bem menos viscoso e também retendo a temperatura por mais tempo por seu alto calor específico.
-+ Pode não ser muito intuitivo perceber que usar a pistola para colar partes de plástico não costuma dar muito
+rapidamente, ficando bem menos viscoso e também retendo a temperatura por mais tempo por seu alto calor específico.+
+Pode não ser muito intuitivo perceber que usar a pistola para colar partes de plástico não costuma dar muito
 certo. Quando se torna quente o suficiente pra ter poder adesivo, o plástico (seja ABS, PLA ou qualquer outro)
-já se liquefez e deformou.  * *Retouch3D* -- Este item foi colocado aqui não porque se espera que o leitor
+já se liquefez e deformou.
+* *Retouch3D* -- Este item foi colocado aqui não porque se espera que o leitor
 tenha ou adquira a ferramenta específica, e sim porque ele passa uma idéia muito prática de como uma categoria
 de ferramentas térmicas pode ajudar no acabamento. Retouch3D é uma ferramenta eletrônica de mão com pontas de
 metal intercambiáveis que permite alisar superfícies, ajustar detalhes, remover suportes, consertar contornos e
@@ -7169,20 +7182,20 @@ no kickstarter e hoje tem a venda internacional por http://www.retouch3d.com/[_h
 
 image:image197.png[image,width=642,height=391]
 
-* *Ferro de solda velho* -- Um ferro de solda está entre as ferramentas térmicas mais baratas que se pode comprar,
+* **Ferro de solda velho** -- Um ferro de solda está entre as ferramentas térmicas mais baratas que se pode comprar,
 especialmente um ferro de baixa potência como de 20 ou 30W. É um substituto razoável para fazer um trabalho
 parecido ao Retouch3D, mas peca pela temperatura excessiva (o que faz com que espalhar ou deformar o plástico
 acabe acontecendo mais) e a falta de ponteiras específicas para o trabalho de artesanato. Além disso, caso se
 opte por usá-lo, praticamente se inviabiliza para seu uso original com solda, pois vai acumulando plástico
-carbonizado que lentamente adere à ponta.  * *Gotejador de cera* -- Esse nome estranho -- em inglês, _wax
-carver_ -- é de um dispositivo bem conhecido dos odontologistas, usado para fazer moldes de cera para próteses
+carbonizado que lentamente adere à ponta.
+* **Gotejador de cera** -- Esse nome estranho -- em inglês, _wax carver_ -- é de um dispositivo bem conhecido dos odontologistas, usado para fazer moldes de cera para próteses
 dentárias. O que se ressalta dele no entanto é que tem características muito próximas às do Retouch3D, desde
 o formato das pontas intercambiáveis quanto a faixa de temperatura de trabalho (ainda que um pouco menor) e ainda
 o fato de usar metal que não "gruda" no plástico. Além disso, o gotejador com duas pontas independentes
 e temperatura regulável custa aproximadamente metade do preço do Retouch3D. É um substituto competente
 para a tarefa. O autor ilustra seu uso com um modelo chinês de gotejador adquirido por menos de 50 dólares:
-https://www.youtube.com/watch?v=4f4aPmjVoK4[_https://www.youtube.com/watch?v=4f4aPmjVoK4_].  * *Forno elétrico*
--- esse item tão comum na cozinha é valioso para muitas tarefas relacionadas ao acabamento. Por exemplo, é
+https://www.youtube.com/watch?v=4f4aPmjVoK4[_https://www.youtube.com/watch?v=4f4aPmjVoK4_].
+* *Forno elétrico* -- esse item tão comum na cozinha é valioso para muitas tarefas relacionadas ao acabamento. Por exemplo, é
 útil para, quando usado em baixa temperatura, tirar a umidade de filamentos antes das impressões. E pode ser
 usado para amolecer as peças para remoldagem, para melhorar a superfície e fazer recozimento (annealing), que
 falaremos logo à frente. Para a impressão 3D o ideal é um forno elétrico de volume médio com regulação PID
@@ -7190,14 +7203,17 @@ de temperatura. A resistência nunca deve tocar a peça. Deve também ser dedica
 plástico o impregnarão e deixarão impropício para uso alimentício. Além disso, existem as precauções de
 segurança necessárias como uso em ambiente isolado, arejado e protegido pois há perigo de incêndio e emissão
 de fumaça tóxica. A recomendação também serve apenas para fornos elétricos, não se estendendo a fornos de
-microondas que via de regra não são úteis para este fim.  * *Ferramenta de metal aquecida* -- No iníco e na
+microondas que via de regra não são úteis para este fim.
+* *Ferramenta de metal aquecida* -- No iníco e na
 falta de verba para ferramentas mais adequadas, mesmo uma ferramenta com ponta de metal pode ser útil. Aquecendo-se
 a ponta de um pequeno canivete de cabo de madeira com algo que não use chama -- por exemplo, tocando no ferro de
 solda ou usando a pistola de vapor -- o metal fica acima da temperatura de derretimento do plástico, e pode ser
 usado por alguns segundos para reparar ou remover seções resistentes. De novo, as precauções com segurança
 são bastante necessárias aqui; uma ferramenta com cabo de metal se aquecerá por inteira e pode queimar a mão;
 uma ferramenta com cabo de plástico pode derretê-lo; colocar uma ponta de metal direto na chama causará oxidação
-no metal e pode inutilizá-lo.  1.  [[outras]] === Outras
+no metal e pode inutilizá-lo.
+
+==== Outras
 
 * *Morsa* / *Torno / Sargento* -- Ferramentas de fixação são necessárias para permitir que o acabamento seja
 feito na peça sem que ela escape, para imobilizá-la em posições diferentes, para colar partes em contato ou
@@ -8553,7 +8569,7 @@ partículas de poeira, cabos com contatos frágeis, chips que estejam esquentand
 problemas leva pouco tempo e pode prevenir muitas dores de cabeça. Uma passagem de pincel ou pano de microfibra
 com álcool isopropílico são recomendados para remover sujeira e se houver problemas de dissipação térmica,
 dissipadores de alumínio e ventoinhas de gabinete (ligadas nos 12V da fonte) ajudam bastante.
-* *Fios* e **Cabos**: são um componente especialmente pernicioso nas __repraps__, visto suas receitas de montagem costumem ser bem
+* *Fios* e **Cabos**: são um componente especialmente pernicioso nas __repraps__, visto que suas receitas de montagem costumam ser bem
 detalhadas, explicativas e abrangentes... Exceto na parte de cabeamento. Ensinam o que ligar e onde, mas nem mesmo
 tamanho de cabos passam -- e é comum ver impressoras com cabos diversos de tamanho curto ou longo demais, assim
 como desorganizados como se fossem uma "maçaroca" de fios que além de ser perigosa e ineficiente, torna bastante

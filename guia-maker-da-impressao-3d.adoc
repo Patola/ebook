@@ -28,7 +28,7 @@ v0.99r2, 17/11/2017
 :gitrepo: https://github.com/Patola/ebook
 :copyright: CC-BY-SA 4.0
 :text-alignment: justify
-:source-highlighter: rouge
+:source-highlighter: source-highlight
 :imagesdir: imagens
 :front-cover-image: image:cover.png[Capa,1350,1909]
 
@@ -5247,9 +5247,7 @@ sermão contra as patentes e outros bloqueios em geral.
 2 -- https://www.cube3dfree.com/[_https://www.cube3dfree.com/_]. Parabéns aos empreendedores que trabalham para
 melhorar a vida das pessoas!
 
-==  +
-
-== A BioImpressão 3D
+=== A BioImpressão 3D
 
 A impressora 3D FFF nada mais é que um braço robótico que movimenta um cursor em coordenadas arbitrárias de
 um volume tridimensional, este cursor tendo o extrusor que conhecemos, seja o extrusor de plástico, a seringa
@@ -5297,7 +5295,7 @@ aquecimento e trabalhando com água e açúcar constrói um arcabouço biodegrad
 pelos processos celulares da cultura com que é envolto para a formação e desenvolvimento de vasos e capilares,
 e só isso já representa um salto de possibilidades em relação ao que se tinha antes.
 
-=== Biotinta
+==== Biotinta
 
 O material que se usa em uma bioimpressora 3D tem o nome em inglês de **BioInk**, ou *Biotinta* em português. Não
 somente por analogia com a tinta utilizada em impressoras 2D de escritório, mas pode-se dizer que o nome “pegou”
@@ -7342,7 +7340,7 @@ O solvente mais utilizado e documentado de todos é, sem dúvida nenhuma, a acet
 ou dimetil cetona. É o composto da classe das _cetonas_ mais simples, na forma de um líquido incolor de odor
 característico e frutado. É massivamente produzida pela indústria para uma enorme variedade de cenários, desde
 reação para criação de outros produtos químicos até para inclusão em produtos como removedor de esmalte e
-__thinner__s de tinta. Sendo um composto produzido pelo próprio organismo e tendo via metabólica de eliminação,
+_thinners_ de tinta. Sendo um composto produzido pelo próprio organismo e tendo via metabólica de eliminação,
 sua capacidade tóxica é baixa, tendo toxicidade aguda e crônica baixas se ingerida ou inalada. Não há estudos
 que lhe atribuam efeitos carcinogênico, mutagênico ou neurotóxico. É até mesmo usada em baixa quantidade em
 alguns alimentos e bebidas, por ser “geralmente reconhecida como segura”. Por outro lado, o contato da acetona
@@ -9692,7 +9690,7 @@ proprietárias, restritivas e controladoras, para estender o poder sobre os prof
 -- pode se tornar impossível exercer aquela profissão sem o aval da fabricante, um poder inadmissível que
 muitos entregam sem hesitação (condenando junto os colegas de profissão, pelo efeito de rebanho).
 
-= Aprendendo a fatiar
+== Aprendendo a fatiar
 
 Comecemos por ver os primeiros parâmetros, os mais básicos que precisaremos, para configurar a nossa impressão
 em um fatiador de mercado. O assistente de configuração do fatiador __Slic3r__, especificamente, pede justamente

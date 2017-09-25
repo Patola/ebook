@@ -28,7 +28,7 @@ v0.99r2, 17/11/2017
 :gitrepo: https://github.com/Patola/ebook
 :copyright: CC-BY-SA 4.0
 :text-alignment: justify
-:source-highlighter: source-highlight
+:source-highlighter: rouge
 :imagesdir: imagens
 :front-cover-image: image:cover.png[Capa,1350,1909]
 
@@ -3984,7 +3984,7 @@ interessados e hobbyistas, especialmente fora dos EUA, tal empreendimento era co
 lembrar que os sites chineses de eletrônicos em 2010-2011 ainda não tinham pegado a tração que têm hoje. Essa
 tração veio, inclusive, do outro projeto open-source de sucesso.
 
-.O Arduino Salvou a Impressão 3D Open-Source
+==== O Arduino Salvou a Impressão 3D Open-Source
 
 Em outubro de 2010, o projeto Arduino lançou o __Arduino Mega__. Com o mesmo poder computacional do Arduino Uno,
 mas mais memória e pinos (8 kiB de RAM ao invés de 2, 128 KiB de flash ao invés de 32, 54 pinos digitais ao
@@ -4029,7 +4029,7 @@ for 12V, ou se a corrente for sujeita a interferências, esse diodo deve ser rem
 [[diagramadasligacoesdaramps]]
 image:image132.png[image,width=586,height=836,align="center",title="Esquema de ligação dos fios da RAMPS 1.4 do site da reprap, traduzido para português. O 'SDRAMPS' na figura (um leitor de cartão SD) raramente é utilizado; normalmente se colocam nesses conectores e na fileira logo em frente um adaptador para ligação a um display LCD que já vem com leitor de SD embutido. Fonte da figura: reprap.org"]
 
-.O que um controlador de impressão 3D deve ter
+==== O que um controlador de impressão 3D deve ter
 
 Baseado no desenho esquemático das conexões da RAMPS, essa é uma informação que já podemos inferir. Basicamente,
 os seguintes componentes são necessários (a lista não é exaustiva):
@@ -4094,7 +4094,7 @@ gráfica elegante e até controles por toque.
 [[controladoresdelcd]]
 image::image133.png[image,width=642,height=375,align="center",title="Controladores de LCD comumente encontrados em repraps. À esquerda, o Smart Controller, que tem ainda um 'buzzer' para bipes, um botão giratório pressionável e um minibotão para reset. Perceba ainda que a ligação à RAMPS é feita através de um adaptador. À direita o 'Full Graphics' Smart Controller, maior e mais ‘quadrado’. Fonte: reprap.org"]
 
-.Um pouco mais sobre os drivers da RAMPS
+==== Um pouco mais sobre os drivers da RAMPS
 
 Passamos sobre o funcionamento dos _drivers_ ao explicarmos motores de passo, mas é necessário também aprender a
 lidar com eles na prática, inclusive torná-los prontos pra uso. Drivers que já são integrados na própria placa
@@ -4208,7 +4208,7 @@ que os usados em Arduinos de 8 bits conseguirão aproveitar tais vantagens. Uma 
 recurso frequentemente anunciado de ser “silencioso”; isso é algo que se obtém deixando as frequências de
 trabalho fora do espectro audível (maior que 20 kHz, embora acima de 17 KHz já seja normalmente suficiente).
 
-=== Ajustando manualmente a V~ref~ dos drivers
+===== Ajustando manualmente a V~ref~ dos drivers
 
 Uma vez que a RAMPS esteja montada, com os motores ligados, os drivers encaixados e o firmware carregado, deve-se
 ligá-la e pelo LCD ou por algum print host, tentar fazer os motores girarem. Os motores não precisam estar ligados
@@ -4236,7 +4236,7 @@ adquirir. Uma alternativa é imprimir em PLA uma substituta.
 [[driveralignerpatola]]
 image::image139.png[image,width=642,height=475,title="Ferramenta plástica impressa para alinhamento do potenciômetro (trimpot) -- versões em fenda e em philips, com cabo fino ou cabo grosso para maior firmeza, disponibilizado pelo autor deste livro. Baixável em https://www.thingiverse.com/thing:1080946"]
 
-=== Modo de decaimento: quando e como ajustar
+===== Modo de decaimento: quando e como ajustar
 
 **Modos de decaimento** de passos são os mesmos que vimos ao tratar de motores de passo: modo rápido (__fast
 decay mode__), modo lento (__slow decay mode__) e modo misto (__mixed decay mode__).
@@ -4295,7 +4295,7 @@ misto. Ligando-se o pino a Vcc, ele passa a atuar em modo de decaimento rápido.
 [[gambiarrapinodecay]]
 image::image140.jpeg[image,width=509,height=417,title="Pino 'DECAY' de um driver DRV8825 ligado ao pino M2 para receber 5V e deixar selecionado o modo de decaimento rápido ('fast decay'). Fonte: http://www.morgan3dp.com/stepstuck-revisited-drv8825/"]
 
-=== Visão retroativa é 20/20: os defeitos da RAMPS
+==== Visão retroativa é 20/20: os defeitos da RAMPS
 
 Não há dúvidas que para sua época a RAMPS solucionou um bocado de problemas de forma genial, de custo a formas
 de controle. No entanto, olhar para o passado de forma crítica sempre é mais fácil que, no presente, prever o
@@ -4348,7 +4348,7 @@ temos controladores muito mais sofisticados, com telas coloridas e capacidade at
 [[problemasramps1]]
 image::image141.png[image,width=642,height=448,title="Alguns dos problemas descritos. *1* - conector de ventoinha ou extrusor (D9); *2* - termofusíveis; *3* - conectores simétricos, sem indicação de orientação; *4* - pinos de motores estreitos; *5* - pinos de endstops sem orientação clara e sem proteção contra inversão."]
 
-=== Outros controladores de impressão: a ascensão dos ARM
+==== Outros controladores de impressão: a ascensão dos ARM
 
 Apesar de todos defeitos da RAMPS, sua popularidade continua alta e o preço de um conjunto completo com arduino,
 LCD e drivers é quase imbatível comparado a outras eletrônicas. E pra sedimentar ainda mais essa dominação
@@ -4465,7 +4465,8 @@ programação de microcontroladores. Para fazer um led piscar, nada de usar um J
 flags e fusos de um IDE pesado e cheio de menus, de ficar o dia inteiro lendo o manual da plaquinha. Ao invés
 disso, basta apertar um botão:
 
-image:image144.png[image,width=642,height=509]
+[[screenshotarduino1]]
+image::image144.png[image,width=642,height=509,align="center",title="A IDE Arduino com um programa para piscar o LED embutido da plaquinha microcontroladora. Pressionando o botão da setinha (em amarelo), o programa é enviado pela USB e imediatamente começa a executar."]
 
 Já dissemos que a história da reprap é entremeada com a do Arduino, e isso se estende ao IDE. IDE que foi e
 continua sendo um alvo predileto de reclamação por profissionais que mexem com embarcados, dada sua simplicidade:
@@ -4473,7 +4474,8 @@ dizem não ter recursos avançados de edição, de não oferecer completação d
 de implementação e, sobretudo, de não ser propícia para programas complexos de vários módulos e cabeçalhos,
 capotando sob seus próprios defeitos após as primeiras centenas de linhas de código.
 
-image:image145.png[image,width=642,height=475]
+[[screenshotarduino2]]
+image::image145.png[image,width=642,height=475,align="center",title="O firmware Marlin no momento da publicação, com 231 arquivos e 88 mil linhas de código. Algo impossível de acontecer, segundo os detratores da IDE e do microcontrolador Arduino."]
 
 Tais acusações não são totalmente desprovidas de mérito: a simplicidade do IDE Arduino realmente pesa contra a
 escrita de código muito complexo. O fator faltante aqui foi considerar o peso do ecossistema open-source: muitas
@@ -4512,7 +4514,7 @@ O __*Smoothieware*__, firmware mais utilizado em ARM, foi criado em 2012 a parti
 é mantido por uma empresa com desenvolvedores contratados, mas aceitando contribuição comunitária. Licenciado
 sob a versão 3 da GPL.
 
-=== Configuração do firmware: o legado de desenvolvedores
+===== Configuração do firmware: o legado de desenvolvedores
 
 O firmware vai carregar consigo a informação de toda a parte mecânica da máquina, que peças funcionam e como,
 e quais recursos estão ativados. Por exemplo, é no firmware que se configura quantos extrusores a impressora tem,
@@ -4526,60 +4528,53 @@ centralizam a configuração em um único arquivo de cabeçalho, que passa a fun
 configuração, e com comentários dizendo o que significa cada uma das configurações. Este arquivo tem o nome de
 **Configuration.h**. Por exemplo, no Marlin, para definir a linguagem mostrada nos LCDs, você tem uma seção assim:
 
+[source,c++]
+----------
 //
-
 // LCD LANGUAGE
-
 //
-
 // Here you may choose the language used by Marlin on the LCD menus, the following
-
 // list of languages are available:
-
 // en, an, bg, ca, cn, cz, de, el, el-gr, es, eu, fi, fr, gl, hr, it,
-
 // kana, kana_utf8, nl, pl, pt, pt_utf8, pt-br, pt-br_utf8, ru, tr, uk, test
-
 //
-
-// :\{ 'en':'English', 'an':'Aragonese', 'bg':'Bulgarian', 'ca':'Catalan', 'cn':'Chinese', 'cz':'Czech', 'de':'German',
-'el':'Greek', 'el-gr':'Greek (Greece)', 'es':'Spanish', 'eu':'Basque-Euskera', 'fi':'Finnish', 'fr':'French',
-'gl':'Galician', 'hr':'Croatian', 'it':'Italian', 'kana':'Japanese', 'kana_utf8':'Japanese (UTF8)', 'nl':'Dutch',
-'pl':'Polish', 'pt':'Portuguese', 'pt-br':'Portuguese (Brazilian)', 'pt-br_utf8':'Portuguese (Brazilian UTF8)',
-'pt_utf8':'Portuguese (UTF8)', 'ru':'Russian', 'tr':'Turkish', 'uk':'Ukrainian', 'test':'TEST' }
-
+// :\{ 'en':'English', 'an':'Aragonese', 'bg':'Bulgarian', 'ca':'Catalan', 'cn':'Chinese', 'cz':'Czech', 'de':'German', 'el':'Greek', 'el-gr':'Greek (Greece)', 'es':'Spanish', 'eu':'Basque-Euskera', 'fi':'Finnish', 'fr':'French', 'gl':'Galician', 'hr':'Croatian', 'it':'Italian', 'kana':'Japanese', 'kana_utf8':'Japanese (UTF8)', 'nl':'Dutch', 'pl':'Polish', 'pt':'Portuguese', 'pt-br':'Portuguese (Brazilian)', 'pt-br_utf8':'Portuguese (Brazilian UTF8)', 'pt_utf8':'Portuguese (UTF8)', 'ru':'Russian', 'tr':'Turkish', 'uk':'Ukrainian', 'test':'TEST' }
 //
-
 #define LCD_LANGUAGE en
+----------
 
-As linhas em azul são “comentários” de código em inglês dizendo os valores possíveis para as configurações e
-a linha em roxo é o valor usado. Se quisermos mudar o valor de “en” (inglês) para pt-br (português brasileiro),
-basta mudar a linha para:
+As linhas em cinza são “comentários” de código em inglês dizendo os valores possíveis para as configurações e
+a linha colorida é a definição (#define) de um valor - a linguagem usada no LCD. Se quisermos mudar o valor de “en” (inglês) para pt-br (português brasileiro), basta mudar a linha para:
 
+[source,c++]
+----------
 #define LCD_LANGUAGE pt-br
+----------
 
 Até aí, não parece muito difícil. No entanto, algumas configurações serão bem difíceis de entender para
 o usuário novato e o fato de serem em inglês também não ajuda; algumas descrições pedem que sejam vistas
 referências em outros arquivos e, por fim, para mudar esses valores o usuário deve abrir o arquivo de projeto
 do firmware no IDE Arduino e, depois de mudar o que precisa, compilar e subir para o microcontrolador ligado à USB.
 
-image:image146.png[image,width=642,height=490]
+[scrreenshotconfighmarlin1]
+image::image146.png[image,width=642,height=490,align="center",title="A configuração do Marlin. Ela é feita editando dois arquivos: o `Configuration.h` para o básico e o `Configuration_adv.h` para ajustes mais avançados. O manual de configuração fica em http://marlinfw.org/docs/configuration/configuration.html"]
 
-O _Repetier Firmware_ funciona de forma semelhante ao Marlin: ele usa um único arquivo Configuration.h que o usuário
+O _Repetier Firmware_ funciona de forma semelhante ao Marlin: ele usa um único arquivo `Configuration.h` que o usuário
 deve editar para configurar a sua impressora. No entanto, a Hot-World GmbH procurou atingir um público mais leigo
 e tem, na página oficial do firmware, um configurador web que permite que ao invés de editar o cabeçalho, o
 usuário configure toda a placa usando o navegador, e no fim baixe o IDE Arduino inteiro com o projeto incluído
 e configurado. Ele ainda tem que conectar a placa da USB, mandar compilar e subir o firmware para a placa, mas de
 forma bem menos propensa a erros.
 
-image:image147.png[image,width=642,height=569]
+[screenshotrepetierconfigweb1]
+image::image147.png[image,width=642,height=569,align="center",title="A interface web para configurar a versão 0.92 do Repetier Firmware, disponível em https://www.repetier.com/firmware/v092/. Note que cada campo tem seleções e ajuda sobre o significado da configuração."]
 
 Outros firmwares tratam a questão da dificuldade de mexer com estes ajustes de máquina com estratégias diversas. O
 __Teacup__, por exemplo, vem com um programa configurador gráfico em python; o _Smoothieware_ permite que a
-configuração seja toda feita colocando um arquivo-texto de nome config no cartão SD do microcontrolador com
+configuração seja toda feita colocando um arquivo-texto de nome `config` no cartão SD do microcontrolador com
 os ajustes.
 
-=== A EEPROM
+===== A EEPROM
 
 Um dos recursos disponíveis nos controladores baseados em arduino e que também se pode ativar ou desativar pela
 configuração do firmware é a __*EEPROM*__. Este é um tipo de memória não-volátil (isto é, não é perdida
@@ -4593,22 +4588,30 @@ por os valores de uma compilação nova não estarem sendo usados.
 Os _defaults_ mudam de acordo com o firmware. No Marlin, a configuração default tem a EEPROM desativada, e ela
 é ativada mudando a linha
 
+[source,c++]
+----------
 //#define EEPROM_SETTINGS
-
+----------
 para
-
+[source,c++]
+----------
 #define EEPROM_SETTINGS
+----------
 
 ou, em outras palavras, tirar o “//” do começo da linha. A isso se chama _descomentar_ uma linha de código,
 isto é, deixá-la ativa. No IDE arduino, as cores da linha mudam entre comentada e descomentada.
 
 No Repetier firmware, o default é EEPROM ativada. Para desativá-la, deve-se mudar a linha
 
+[source,c++]
+----------
 #define EEPROM_MODE 2
-
+----------
 para
-
+[source,c++]
+----------
 #define EEPROM_MODE 0
+----------
 
 Quando se quiser habilitá-la de novo, pode-se mudar o EEPROM_MODE para um número diferente de zero; colocando-se
 um número não usado anteriormente, o firmware na primeira execução re-popula a EEPROM com os valores internos.
@@ -4630,7 +4633,8 @@ de parafusos de saída, um para o terra e outro para a fase (a tensão positiva,
 ainda um parafuso de ajuste de tensão (**V ADJ**), ventoinha interna com aberturas para refrigeração e seletor
 lateral 127V/220V de entrada.
 
-image:image148.png[image,width=642,height=409]
+[[diagramafontetensao1]]
+image::image148.png[image,width=642,height=409,align="center",title="Uma fonte de tensão industrial de mercado e o tipo de ligações que geralmente apresenta. A fonte ilustrada tem duas saídas de tensão positiva (vermelhas) e duas de tensão negativa (negras), mas é comum fontes com três ou até quatro de cada tipo. A conexão à impressora 3D geralmente é direta no controlador - na RAMPS, por exemplo, ligaríamos os quatro cabos nas vias de 5A e 11A pelo conector MODU verde. As cores mostradas nos fios de terra, neutro e fase da figura correspondem às cores mais usadas em fios de tomadas brasileiras."]
 
 O nome de fonte “industrial” se deve à sua utilização como componente genérico de equipamentos da indústria
 (compare com as fontes de tensão como as de laptop, que também são fontes chaveadas mas “fechadas” e com

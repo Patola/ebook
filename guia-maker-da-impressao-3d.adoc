@@ -33,6 +33,7 @@ v0.99r2, 17/11/2017
 :text-alignment: justify
 :source-highlighter: rouge
 :imagesdir: imagens
+:imagesoutdir: img
 :front-cover-image: image:cover.png[Capa,1350,1909]
 
 IMPORTANT: A versão mais atual deste livro estará sempre disponível no endereço:
@@ -4296,7 +4297,7 @@ http://hydraraptor.blogspot.com.br/2012/04/stepstuck.html[_http://hydraraptor.bl
 misto. Ligando-se o pino a Vcc, ele passa a atuar em modo de decaimento rápido.
 
 [[gambiarrapinodecay]]
-image::image140.jpeg[image,width=509,height=417,title="Pino 'DECAY' de um driver DRV8825 ligado ao pino M2 para receber 5V e deixar selecionado o modo de decaimento rápido ('fast decay'). Fonte: http://www.morgan3dp.com/stepstuck-revisited-drv8825/"]
+image::image140.jpeg[image,width=509,height=417,align="center",title="Pino 'DECAY' de um driver DRV8825 ligado ao pino M2 para receber 5V e deixar selecionado o modo de decaimento rápido ('fast decay'). Fonte: http://www.morgan3dp.com/stepstuck-revisited-drv8825/"]
 
 ==== Visão retroativa é 20/20: os defeitos da RAMPS
 
@@ -4314,7 +4315,7 @@ prontas pelo preço e simplesmente removem esses termofusíveis, trocando por fu
 mesmo fazendo simplesmente a conexão direta. A versão 1.4.2 da RAMPS os troca por fusíveis de automóveis.
 * *Incapacidade para 24V* -- a ausência de um componente que possa energizar o arduino em 24V, o projeto original
 com capacitores eletrolíticos de 16V e o já citado termofusível MFR 1100 são grandes impeditivos para se usar
-sem modificaçÕes a RAMPS em 24V, uma opção de fonte cada vez mais popular devido ao melhor aproveitamento
+sem modificações a RAMPS em 24V, uma opção de fonte cada vez mais popular devido ao melhor aproveitamento
 de potência. O problema dos capacitores tem sido resolvido com a maioria dos vendedores, mesmo os chineses de
 baixo custo, já vendendo a placa com capacitores de 35V, mas ainda é preciso ter tal critério para escolher
 o produto.
@@ -4328,8 +4329,7 @@ pode fazer a placa queimar.
 outra de até 11A; o conector MODU verde de 4 vias onde a energia delas é ligada, no entanto, é projetado para um
 máximo de **10A**. Ainda que geralmente 11A esteja dentro da "margem de erro" do conector, não são raros os
 casos em que este conector "derrete" por superaquecimento.
-* *Pinos de conexão dos motores muito estreitos*
--- existem variações de diferentes espessuras dos conectores de motores bipolares. Com o estreito espaçamento
+* *Pinos de conexão dos motores muito estreitos* -- existem variações de diferentes espessuras dos conectores de motores bipolares. Com o estreito espaçamento
 e disposição dos conectores na placa, alguns conectores simplesmente não se encaixam se não forem lixados ou
 cortados. Esse problema é especialmente contundente nas duas conexões em paralelo para os motores do eixo Z.
 * *Conector superdimensionado para ventoinha* -- a RAMPS tem apenas um conector para ventoinha microcontrolável
@@ -4349,7 +4349,7 @@ ou wifi e outros problemas semelhantes são decorrentes do baixo custo e da ṕo
 temos controladores muito mais sofisticados, com telas coloridas e capacidade até de fatiar diretamente peças 3D.
 
 [[problemasramps1]]
-image::image141.png[image,width=642,height=448,title="Alguns dos problemas descritos. *1* - conector de ventoinha ou extrusor (D9); *2* - termofusíveis; *3* - conectores simétricos, sem indicação de orientação; *4* - pinos de motores estreitos; *5* - pinos de endstops sem orientação clara e sem proteção contra inversão."]
+image::image141.png[image,width=642,height=448,align="center",title="Alguns dos problemas descritos. *1* - conector de ventoinha ou extrusor (D9); *2* - termofusíveis; *3* - conectores simétricos, sem indicação de orientação; *4* - pinos de motores estreitos; *5* - pinos de endstops sem orientação clara e sem proteção contra inversão."]
 
 ==== Outros controladores de impressão: a ascensão dos ARM
 
@@ -4404,15 +4404,14 @@ porque apesar de baseadas em design open-source não liberaram os fontes de seus
 em uma situação de antagonismo com a comunidade e revendedores da Smoothieboard.
 
 [[smoothieboardemkssbase]]
-image::image142.png[image,width=642,height=326,title="À esquerda, a Smoothieboard original, open source. À direita, a clone chinesa compatível e proprietária MKS Sbase v1.3. A smoothieboard usa drivers soldados à placa do tipo A5984, a MK Sbase usa DRV8825; ambos têm divisões de até 32 micropassos"]
+image::image142.png[image,width=642,height=326,align="center",title="À esquerda, a Smoothieboard original, open source. À direita, a clone chinesa compatível e proprietária MKS Sbase v1.3. A smoothieboard usa drivers soldados à placa do tipo A5984, a MK Sbase usa DRV8825; ambos têm divisões de até 32 micropassos"]
 
-Maiores referências sobre outros controladores, especialmente os baseados em ARM, podem ser encontradas nos
-seguintes endereços online:
-
+[NOTE]
+.Maiores referências sobre outros controladores, especialmente os baseados em ARM, podem ser encontradas nos seguintes endereços online:
+====
 * http://reprap.org/wiki/List_of_electronics[_http://reprap.org/wiki/List_of_electronics_]
 -- a lista básica dos microcontroladores do projeto reprap e suas características.
-*
-http://reprap.org/wiki/Comparison_of_Electronics[_http://reprap.org/wiki/Comparison_of_Electronics_]
+* http://reprap.org/wiki/Comparison_of_Electronics[_http://reprap.org/wiki/Comparison_of_Electronics_]
 -- uma tabela comparativa de tais controladores.
 * Controlador open-source Duet:
 http://www.reprap.org/wiki/Duet[_http://www.reprap.org/wiki/Duet_] e https://www.duet3d.com/[_https://www.duet3d.com/_]
@@ -4431,6 +4430,7 @@ encontra não no firmware mas nas conexões físicas e drivers, uma boa maneira 
 ser trocar o Arduino -- e colocar um microcontrolador que encaixe perfeitamente na RAMPS comum, reusando
 as conexões. Essa é a idéia do controlador "Re-ARM" da Panucatt, que roda o _Smoothieware_ e oferece
 pinos compatíveis com 5V, um microcontrolador de 32 bits de 100 MHz e várias opções de conectividade.
+====
 
 [[screenshotrearm]]
 image::image143.png[image,width=642,height=421,title="O &quot;Re-ARM&quot;, um microcontrolador que pode substituir o Arduino Mega do seu conjunto RAMPS + Arduino. Disponível em http://www.panucatt.com/Re_ARM_for_RAMPS_p/ra1768.htm"]
@@ -4619,7 +4619,7 @@ para
 Quando se quiser habilitá-la de novo, pode-se mudar o EEPROM_MODE para um número diferente de zero; colocando-se
 um número não usado anteriormente, o firmware na primeira execução re-popula a EEPROM com os valores internos.
 
-== Alimentação
+=== Alimentação
 
 A impressora 3D, como todos os dispositivos eletrônicos microcontrolados, precisa ser alimentada com uma fonte
 de tensão constante para o seu funcionamento. As tomadas domésticas oferecem tensão alternada (127V AC ou 220V
@@ -4662,17 +4662,18 @@ para a fonte, de modo que um trabalho de impressão pode ligar a impressora ante
 tendo grande economia de energia. E de bônus, a fonte ainda disponibiliza uma trilha de sinal de 5VSb (+5V Standby,
 ou +5V de repouso) que pode ser usada para energizar um raspberry pi mesmo com o resto desligado.^3^
 
-image:image149.png[image,width=642,height=360]
+[[fonteindustrialeatx]]
+image::image149.png[image,width=642,height=360,align="center",title="Uma fonte industrial de 12V e 30A (1) e uma fonte ATX de PC (2), as opções mais frequentes para prover a energia para impressoras 3D."]
 
-Notas:
-
-1 -- Novamente, o professor Newton C. Braga reitera seu papel como uma das maiores
+[NOTE]
+.Notas:
+====
+. Novamente, o professor Newton C. Braga reitera seu papel como uma das maiores
 autoridades brasileiras sobre eletrônica com seu curto porém abrangente artigo sobre fontes industriais:
 http://www.newtoncbraga.com.br/index.php/automacao-industrial/6354-art1140[_http://www.newtoncbraga.com.br/index.php/automacao-industrial/6354-art1140_]
 e ainda o artigo sobre como funcionam fontes chaveadas:
 http://www.newtoncbraga.com.br/index.php/como-funciona/8397-como-funcionam-as-fontes-chaveadas-art1448[_http://www.newtoncbraga.com.br/index.php/como-funciona/8397-como-funcionam-as-fontes-chaveadas-art1448_]
-
-2 -- A parte de modificação de fonte de PC é perigosa para amadores em eletrônica. Muitos tutoriais
+.  A parte de modificação de fonte de PC é perigosa para amadores em eletrônica. Muitos tutoriais
 mostram a modificação feita de qualquer modo e sem as proteções necessárias ou até usando cabos finos
 e expondo o dispositivo a superaquecimento. Além disso, a não ser que se tenham realmente fontes de PC
 sobrando sem uso ou se necessite da facilidade do PS_ON, economicamente não compensa: uma fonte industrial
@@ -4682,16 +4683,15 @@ potência -- por exemplo, para substituir a fonte industrial de 360W é recomend
 PC de pelo menos 600W de pico ou 500W contínua e eficiência de pelo menos 80 Plus Bronze. Dito isto, um
 tutorial que mostra de forma correta como fazer essa modificação pode ser visto no youtube, em inglês:
 https://www.youtube.com/watch?v=3X7pJOU4RiA[_https://www.youtube.com/watch?v=3X7pJOU4RiA_]
-
-3 -- O __Octoprint__, um print host controlável pela web que roda bem até em raspberry pis, tem nas
+. O __Octoprint__, um print host controlável pela web que roda bem até em raspberry pis, tem nas
 instruções de seu wiki o procedimento para tornar a energia da impressora controlável pelo software:
 https://github.com/foosel/OctoPrint/wiki/Control-your-printer's-ATX-PSU-through-a-RAMPS-board-using-OctoPrint[_https://github.com/foosel/OctoPrint/wiki/Control-your-printer%27s-ATX-PSU-through-a-RAMPS-board-using-OctoPrint_]
-
-4 -- Um artigo escrito em inglês pelo brasileiro Ítalo Soares faz considerações sobre o
+. Um artigo escrito em inglês pelo brasileiro Ítalo Soares faz considerações sobre o
 consumo de energia das fontes chaveadas e tem recomendações para fontes industriais e de PC:
 https://3dprinterchat.com/2017/03/3d-printer-power-supply/[_https://3dprinterchat.com/2017/03/3d-printer-power-supply/_]
+====
 
-=== Fitas de Led
+==== Fitas de Led
 
 O que pode parecer meramente um capricho ou ornamento à primeira vista, as cada vez mais populares _fitas de led_
 colocadas nas carcaças das impressoras 3D podem ser importantes, e até essenciais, não só para iluminar a
@@ -4715,121 +4715,119 @@ três pinos R, G e B que receberão uma tensão variável de 0 a 12V para a inte
 e um de Vcc (tensão de referência -- 12V). Lembrando que esses pinos terão que receber potência, então um
 circuito adicional será necessário.
 
-image:image150.jpeg[image,width=642,height=388]
+[[fitasdeled1]]
+image::image150.jpeg[image,width=642,height=388,align="center",title="Esquerda: uma das inúmeras soluções para iluminação com LEDs de uma impressora 3D - uma prusa i3, no caso. Direita: uma das fitas de LED que se encontram no mercado. Fonte: http://www.instructables.com/id/How-to-light-up-your-3D-Printer/"]
 
 O próximo passo é escolher os pinos da RAMPS (ou do seu controlador) que controlarão cada uma das
 cores. Escolheremos pinos "analógicos" do Arduino (lembrando que não são analógicos "de verdade" mas
 PWM). Uma das fileiras pouco utilizadas do Arduino é a dos __servos__: podemos escolher o três pinos D4, D5 e
 D6 em seguida para ser R, G e B, conforme o usuário _LVMJohnson_ do Instructables fez.
 
-image:image151.png[image,width=642,height=556]
+[[esqeletricofitasdeled1]]
+image::image151.png[image,width=642,height=556,align="center",title="Esquema elétrico dos pinos da RAMPS, com transistores NPN para amplificar o sinal do microcontrolador para baixa potência. Fosse um led de maior potência, usaríamos outros componentes como MOSFETs, relés ou até placas de controle dedicadas. Os 12V da figura devem ser conectados à fonte. Fonte do esquema e do tutorial em inglês: http://www.instructables.com/id/3D-Printer-RGB-LED-Feedback/"]
 
 Somente estas ligações já seriam suficientes para ter os LEDs controláveis por g-code: o comando M42 envia um
 PWM de intensidade no parâmetro S para o pino no parâmetro P:
 
+[source,gcode]
+----------
 M42 P4 S128 ; liga o pino vermelho (4) com intensidade 50% (128 -- de 0 a 255)
-
 M42 P5 S255 ; liga o pino verde (5) com intensidade 100%
+----------
 
 E podemos criar g-codes de início e finalização com mudanças de cores em cada etapa: aquecimento do extrusor,
 aquecimento da mesa, priming, troca de extrusor, final da impressão. Uma dica útil é antes de mudar a cor,
 usar o comando M400 que serve para terminar qualquer movimento que a impressora esteja fazendo, antes de mudar a
 cor. Exemplo de um G-Code inicial, baseado no tutorial de Tom Sanladerer^3^:
 
+[source,gcode]
+----------
 M42 P4 S255 ; pino vermelho em máxima intensidade
-
 M42 P5 S255 ; pino verde em máxima intensidade; a luz resultará amarela.
-
 M42 P6 S0 ; pino azul desligado
-
 G28 W ; faz o procedimento de _homing_ sem autonivelamento
-
 M400 ; espera o _homing_ acabar.
-
 M42 P5 S0 ; desliga o led verde; a luz ficará vermelha.
-
 M190 S120 ; ajusta a temperatura da mesa para 120 e espera chegar nesse valor.
-
 M42 P6 S255 ; liga o led azul; púrpura indica que a mesa terminou o aquecimento.
-
 M109 S240 ; ajusta a temperatura do _hotend_ em 240 e espera chegar nesse valor.
-
 M42 P5 S255 ; liga o led verde; luz branca indica que a impressão iniciará.
+----------
 
 No Smoothieware, as fitas de led podem também serem controladas com pinos arbitrários da placa. Por exemplo,
 os pinos PWM de designação P1.23, P1.24 e P1.26 estão geralmente disponíveis^4^, então podemos utilizá-los
-para os componentes R, G e B. O módulo _*Switch*_ do smoothie, que permite definir comandos G-Code arbitrários
+para os componentes R, G e B. O módulo __**Switch**__ do smoothie, que permite definir comandos G-Code arbitrários
 para pinos específicos, será usado para isso. Por exemplo, para definir o vermelho, podemos colocar isso no
 arquivo de configuração:
 
+[source,conf]
+----------
 switch.red.enable # o nome ("red") depois do comando _switch_
-\# é criado no momento, não pré-definido.
+                  # é criado no momento, não pré-definido.
 switch.red.output_pin 1.23 # Pino P1.23 para led vermelho
 switch.red.output_type pwm # poderia ser hwpwm (pwm de hardware)
-\# também -- mais apropriado para servos
+                           # também -- mais apropriado para servos
 switch.red.startup_value 127 # 0 a 255
 switch.red.input_on_command M151 # comando inexistente na especificação
-\# reprap, pontos vamos usar para controlar
-\# esse led
+                                 # reprap, pontos vamos usar para controlar
+                                 # esse led
+----------
 
 Depois de definido isso na configuração, o seguinte G-Code poderá ser usado para ajustar a intensidade de vermelho:
 
+[source,gcode]
 M151 S255 ; ajusta para a intensidade máxima
 
-Notas:
-
-1 -- Isso não é totalmente verdade; algumas placas tudo-em-um, como a __Azteeg X3__, oferecem saídas de baixa
+[NOTE]
+.Notas:
+====
+. Isso não é totalmente verdade; algumas placas tudo-em-um, como a __Azteeg X3__, oferecem saídas de baixa
 potência que podem ser usadas para controlar e energizar LEDs, mas normalmente usadas para leds de status de displays.
-
-2 -- O Marlin permite definir, no Configuration.h, os pinos usados para R, G e B, para que ao invés de se usar
+. O Marlin permite definir, no Configuration.h, os pinos usados para R, G e B, para que ao invés de se usar
 o comando M42 para acionamento direto, se use o comando específico para cor RGB do padrão reprap, o M150. Basta
 descomentar e mudar as linhas do Configuration.h. Onde se encontra:
-
++
+[source,cpp]
+----------
 // Support for an RGB LED using 3 separate pins with optional PWM
-
 //#define RGB_LED
-
 #if ENABLED(RGB_LED)
-
-#define RGB_LED_R_PIN 34
-
-#define RGB_LED_G_PIN 43
-
-#define RGB_LED_B_PIN 35
-
+  #define RGB_LED_R_PIN 34
+  #define RGB_LED_G_PIN 43
+  #define RGB_LED_B_PIN 35
 #endif
-
+----------
++
 Descomente-se o #define e se confiure os pinos. No nosso caso, pinos 4, 5 e 6:
-
++
+[source,cpp]
+----------
 // Support for an RGB LED using 3 separate pins with optional PWM
-
 #define RGB_LED
-
 #if ENABLED(RGB_LED)
-
-#define RGB_LED_R_PIN 4
-
-#define RGB_LED_G_PIN 5
-
-#define RGB_LED_B_PIN 6
-
+  #define RGB_LED_R_PIN 4
+  #define RGB_LED_G_PIN 5
+  #define RGB_LED_B_PIN 6
 #endif
-
+----------
++
 E aí a cor do led se acertaria desse modo:
-
++
+[source,gcode]
+----------
 M150 R255 U255 B0 ; R é o led vermelho, U é o verde e B é o azul
-
-3 - Cada um dos tutoriais aqui listados faz a iluminação de forma diferente. Pode ser
+----------
++
+. Cada um dos tutoriais aqui listados faz a iluminação de forma diferente. Pode ser
 interessante ver todos caso deseje escolher bem. O tutorial do Tom pode ser visto em
 https://www.youtube.com/watch?v=fb3hrjEiE3s[_https://www.youtube.com/watch?v=fb3hrjEiE3s_]
-
-4 -- Lista de pinos PWM da smoothieboard: http://smoothieware.org/pwm-capable[_http://smoothieware.org/pwm-capable_]
-
-5 -- Mais detalhes na documentação do módulo _switch_ do smoothieware, um jeito extremamente
+. Lista de pinos PWM da smoothieboard: http://smoothieware.org/pwm-capable[_http://smoothieware.org/pwm-capable_]
+. Mais detalhes na documentação do módulo _switch_ do smoothieware, um jeito extremamente
 poderoso de mudar o comportamento do firmware sem ter que mexer em seu código-fonte:
 http://smoothieware.org/switch[_http://smoothieware.org/switch_]
+====
 
-=== A insaciável mesa aquecida
+==== A insaciável mesa aquecida
 
 A RAMPS tem um trilho para 5A e um trilho para 11A exclusivo para a saída D8, usada pela mesa aquecida, e
 apesar de não ser o único controlador de impressão, esse é um padrão frequente das eletrônicas. E embora
@@ -4908,7 +4906,7 @@ image:image155.png[image,width=642,height=578]
 Outros problemas se acumulam nessa abordagem, como os efeitos indutivos do campo eletromagnético gerado, então
 não é uma boa idéia. Uma abordagem mais fina é preferida e vamos explicar como funciona.
 
-=== Alimentação no firmware -- PWM e PID
+==== Alimentação no firmware -- PWM e PID
 
 Tanto a mesa quanto qualquer outro elemento aquecedor da impressora 3D, nos firmwares, irá funcionar com modulação
 de pulso por largura ou PWM, que já vimos como funciona. Então teremos na verdade a opção de não só ligar
@@ -5015,7 +5013,7 @@ especialmente as que envolvem equilíbrio contínuo, e regulando grandezas como 
 nível e deslocamento. Os números K~p~, K~i~ e K~d~ são empíricos, isto é, obtidos por experimentação,
 e muito dependentes das características dos elementos aquecedores, da potência aplicada e outros fatores.
 
-=== PID TUNING
+==== PID TUNING
 
 Os firmwares de mercado já vêm com valores default para K~p~, K~i~ e K~d~ que funcionam razoavelmente, mas não
 são ótimos. O ideal é que possamos descobrir os valores mais apropriados para o nosso hardware. Felizmente,
@@ -5083,8 +5081,7 @@ para aumentar a tolerância temporariamente para o processo completar. No Marlin
 PID_FUNCTIONAL_RANGE, por default em 10 graus, pode ser aumentada para o processo completar mesmo com overshoots
 grandes (o que costuma acontecer ao se usar SSR).
 
-=== Prevenindo acidentes: a proteção contra
-descontrole térmico
+==== Prevenindo acidentes: a proteção contra descontrole térmico
 
 O perigo de superaquecimento sempre existe nas impressoras 3D, então é útil pensar em todos os cenários que
 podem acontecer para tentar evitá-los ao máximo. É o termistor que nos dá a temperatura para sabermos se ainda
@@ -5250,7 +5247,7 @@ sermão contra as patentes e outros bloqueios em geral.
 2 -- https://www.cube3dfree.com/[_https://www.cube3dfree.com/_]. Parabéns aos empreendedores que trabalham para
 melhorar a vida das pessoas!
 
-=== A BioImpressão 3D
+==== A BioImpressão 3D
 
 A impressora 3D FFF nada mais é que um braço robótico que movimenta um cursor em coordenadas arbitrárias de
 um volume tridimensional, este cursor tendo o extrusor que conhecemos, seja o extrusor de plástico, a seringa
@@ -5298,7 +5295,7 @@ aquecimento e trabalhando com água e açúcar constrói um arcabouço biodegrad
 pelos processos celulares da cultura com que é envolto para a formação e desenvolvimento de vasos e capilares,
 e só isso já representa um salto de possibilidades em relação ao que se tinha antes.
 
-==== Biotinta
+===== Biotinta
 
 O material que se usa em uma bioimpressora 3D tem o nome em inglês de **BioInk**, ou *Biotinta* em português. Não
 somente por analogia com a tinta utilizada em impressoras 2D de escritório, mas pode-se dizer que o nome "pegou"
@@ -5355,9 +5352,9 @@ comuns, é gratuito se o aluno fizer no tempo reservado e não precisar de diplo
 só o diploma, mas que fique acessível a qualquer momento. É dado pelo famoso site educacional __FutureLearn__:
 https://www.futurelearn.com/courses/bioprinting/[_https://www.futurelearn.com/courses/bioprinting/_]..
 
-.Os Materiais de Impressão 3D FFF
+== Os Materiais de Impressão 3D FFF
 
-== Introdução: polímeros e plásticos
+=== Introdução: polímeros e plásticos
 
 De todos os materiais que encontramos no dia-a-dia, os _polímeros_ são os que nos interessam. O que é um
 polímero? Muitos dos materiais que conhecemos, como a água (H₂O), o sal (NaCl) e acetona (C₃H₆O) são

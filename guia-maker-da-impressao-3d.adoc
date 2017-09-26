@@ -44,6 +44,8 @@ NOTE: Por favor, ao mencioná-lo, cite este endereço para baixar o livro (e se 
 errada de motivações e objetivos. O livro é _livre_ (open-source), licença CC-BY-SA, diferente em escopo e
 propósitos de algo meramente gratuito.
 
+:toc:
+
 = Prefácio
 O conhecimento necessário para escrever este livro não surgiu somente da mente do autor. Surgiu, antes, das mentes agregadas
 de vários indivíduos brilhantes e laboriosos que, por vezes camuflados sob pseudônimos irônicos de internet,

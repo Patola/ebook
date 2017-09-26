@@ -5445,7 +5445,8 @@ acontece porque com este aquecimento, ligações cruzadas acontecem nas cadeias 
 essas irreversíveis. Tentativas de reaquecimento somente levarão à degradação e desintegração do plástico.
 * Os _*termoplásticos*_ são os plásticos que podem ser novamente derretidos para um estado moldável, pois
 nenhuma nova ligação química acontece na transição de estado, e são eles que utilizamos na impressão
-3D FFF.  * Alternativamente, algumas vezes se encontram como um terceiro tipo os plásticos _*elastômeros*_ (ou
+3D FFF.
+* Alternativamente, algumas vezes se encontram como um terceiro tipo os plásticos _*elastômeros*_ (ou
 borrachas). São plásticos com estruturas similares aos termorrígidos, mas com número bem menor de ligações
 cruzadas e alta elasticidade.
 
@@ -5486,7 +5487,8 @@ ao descolamento da peça da superfície. Ainda outro exemplo: duas áreas contí
 espontaneamente por as duas esfriarem de tal modo que a força de contração nelas "puxa" os átomos para
 seus respectivos centros de massa. Esse último fenômeno ganhou o apelido de __delaminação__.
 
-image::image166.jpeg[image,width=572,height=378]
+[[warpedelaminacao]]
+image::image166.jpeg[image,width=572,height=378,align="center",title="Warp e &quot;delaminação&quot; ocorridos em um objeto após impressão"]
 
 Para arrematar, plásticos mais resistentes ao calor (como policarbonato e ABS) terão temperatura de transição
 vítrea maior, o que quer dizer que têm um intervalo maior de temperaturas em que ficam no estado sólido. É o
@@ -5514,7 +5516,8 @@ tem temperatura de transição vítrea começando em 105°C, por exemplo, 85°C 
 a diferença de temperaturas entre várias da peça fica sempre mínimo, e uma vez a impressão termine, basta
 abaixar a temperatura vagarosamente para a peça estabilizar.
 
-image::image167.png[image,width=642,height=352]
+[[caseembarcadowarp]]
+image::image167.png[image,width=642,height=352,align="center",title="À esquerda: objeto (case para embarcado) impresso em uma impressora 3D aberta, tendo sofrido bastante &quot;warp&quot;. À direita: o mesmo objeto impresso em impressora 3D fechada com temperatura controlada."]
 
 Nas impressoras RepRap, em que o baixo custo é um imperativo, a câmara aquecida, um componente que é tipicamente
 dispendioso para construir e consumidor de muita energia, foi substituído pela __mesa aquecida__. Além de gastar
@@ -5597,7 +5600,8 @@ várias impressoras, com e sem cobertura. Os emitidos em maior quantidade foram 
 e imitação de madeira (de 2 a 180 µg/min), estireno do ABS e HiPS (de 10 a 110µg/min) e lactida (um derivado
 irritante do ácido lático) do PLA (de 4 a 5 µg/min),
 
-image::image168.png[image,width=611,height=372]
+[[graficoemissaovocs]]
+image::image168.png[image,width=611,height=372,align="center",title="Estimativas de taxas de emissão para os VOCs de maior concentração e também a soma dos 10 VOCs mais detectáveis (∑VOC) resultantes da combinação de 16 impressoras e filamentos. A figura está dividida em (a) baixos emissores, com E∑VOC < 40 μg/min, e (b) altos emissores, com E∑VOC > 40 μg/min, para clareza visual. Note que embora não haja barras de erro, a incerteza de cada VOC individual é de ~36% de acordo com a informação de suporte."]
 
 **Poeira do plástico**: plásticos soltam partículas como a maioria dos materiais e um perigo normalmente
 negligenciado por operadores de impressoras 3D é o perigo de partículas sólidas com potencial irritante flutuando
@@ -5629,56 +5633,26 @@ as únicas mitigações parecem ser imprimir em local arejado e não permanecer 
 e talvez fazer uma cobertura com adaptador para sugar o ar da impressora (e ainda fica a dúvida de como capturar
 as partículas ultrafinas para evitar que voltem ao ambiente).
 
-Notas:
-
-1 -
-http://www.ecycle.com.br/component/content/article/35-atitude/1073-conheca-os-perigos-da-dioxina-e-como-preveni-los.html[_http://www.ecycle.com.br/component/content/article/35-atitude/1073-conheca-os-perigos-da-dioxina-e-como-preveni-los.html_]
-
-2 -
-https://www.niehs.nih.gov/health/topics/agents/sya-bpa/index.cfm[_https://www.niehs.nih.gov/health/topics/agents/sya-bpa/index.cfm_]
-
-3 -
-http://factsaboutbpa.org/what-does-us-government-research-tell-us-about-bpa[_http://factsaboutbpa.org/what-does-us-government-research-tell-us-about-bpa_]
--- a página é na verdade um apanhado de fatos sobre o BPA com links para órgãos do governo estadunidense. O
-leitor nos perdoe pela falta de estudos nacionais.
-
-4 -- __http://www.popsci.com/bpa-free-plastic-bad-for-human-health#page-2__. É interessante também
-ler a reportagem que trata das batalhas jurídicas envoltas nas acusações de danos do Tritan:
-http://www.npr.org/sections/health-shots/2015/02/16/385747786/beyond-bpa-court-battle-reveals-a-shift-in-debate-over-plastic-safety[_http://www.npr.org/sections/health-shots/2015/02/16/385747786/beyond-bpa-court-battle-reveals-a-shift-in-debate-over-plastic-safety_]
-
-5 -
-https://opensource.com/article/17/5/open-source-3d-printing-filament[_https://opensource.com/article/17/5/open-source-3d-printing-filament_]
--- tais iniciativas devem sempre ser incentivadas através de escolha de consumo consciente e contínua cobrança
-dos produtores por transparência.
-
-6 - Azimi, P., Zhao, D., Pouzet, C., Crain, N. E., & Stephens, B. (2016). Emissions of ultrafine
-particles and volatile organic compounds from commercially available desktop three-dimensional printers
-with multiple filaments. __Environmental science & technology__, __50__(3), 1260-1268. Disponível em
-http://pubs.acs.org/doi/full/10.1021/acs.est.5b04983[_http://pubs.acs.org/doi/full/10.1021/acs.est.5b04983_],
-A informação de suporte está em
-http://pubs.acs.org/doi/suppl/10.1021/acs.est.5b04983/suppl_file/es5b04983_si_001.pdf[_http://pubs.acs.org/doi/suppl/10.1021/acs.est.5b04983/suppl_file/es5b04983_si_001.pdf_].
-
-7 -- Embora haja referências breves na internet em português sobre perigos da poeira como
-http://www.ehow.com.br/perigos-particulas-madeira-sobre_125562/[_http://www.ehow.com.br/perigos-particulas-madeira-sobre_125562/_],
-as mais completas e informativas estão em inglês, como esta australiana de uma associação madeireira:
-http://www.fwwa.org.au/Art005_WoodDust_c1.pdf[_http://www.fwwa.org.au/Art005_WoodDust_c1.pdf_]
-
-8 -
-http://built-envi.com/portfolio/ultrafine-particle-emissions-from-3d-printers/[_http://built-envi.com/portfolio/ultrafine-particle-emissions-from-3d-printers/_]
-tem uma apresentação amigável do artigo, que é: Stephens, B., Azimi, P., Orch, Z. E., & Ramos,
-T. (2013). Ultrafine particle emissions from desktop 3D printers. _Atmospheric Environment,_ __79__,
-334-339. doi:10.1016/j.atmosenv.2013.06.050 e uma nova análise com recomendações foi feita recentemente em
-http://ulchemicalsafety.org/initiative/3d-safety-science-proceedings/[_http://ulchemicalsafety.org/initiative/3d-safety-science-proceedings/_]
-(PDF em inglês, 24 páginas)
-
-9 - http://www.google.co.uk/patents/US6722872[_http://www.google.co.uk/patents/US6722872_]
-
-10 -- No momento da publicação deste livro, a única solução comercial
-que achamos que leva em consideração as partículas ultrafinas é esta:
-http://www.bofaamericas.com/3D-printing-fume-extraction.asp[_http://www.bofaamericas.com/3D-printing-fume-extraction.asp_]
-
-11 - apenas como referência, o site _3d printing industry_ mostra projetos para ligar um exaustor à impressora:
-https://3dprintingindustry.com/news/3d-printer-exhaust-redirect-noxious-fumes-21300/[_https://3dprintingindustry.com/news/3d-printer-exhaust-redirect-noxious-fumes-21300/_]
+[NOTE]
+.Notas:
+====
+. http://www.ecycle.com.br/component/content/article/35-atitude/1073-conheca-os-perigos-da-dioxina-e-como-preveni-los.html
+. https://www.niehs.nih.gov/health/topics/agents/sya-bpa/index.cfm
+. http://factsaboutbpa.org/what-does-us-government-research-tell-us-about-bpa -- a página é na verdade um apanhado de fatos sobre o BPA com links para órgãos do governo estadunidense. O leitor nos perdoe pela falta de estudos nacionais.
+. http://www.popsci.com/bpa-free-plastic-bad-for-human-health#page-2 . É interessante também
+ler a reportagem que trata das batalhas jurídicas envoltas nas acusações de danos do Tritan: http://www.npr.org/sections/health-shots/2015/02/16/385747786/beyond-bpa-court-battle-reveals-a-shift-in-debate-over-plastic-safety
+. https://opensource.com/article/17/5/open-source-3d-printing-filament -- tais iniciativas devem sempre ser incentivadas através de escolha de consumo consciente e contínua cobrança dos produtores por transparência.
+. Azimi, P., Zhao, D., Pouzet, C., Crain, N. E., & Stephens, B. (2016). Emissions of ultrafine particles and volatile organic compounds from commercially available desktop three-dimensional printers with multiple filaments. __Environmental science & technology__, __50__(3), 1260-1268. Disponível em http://pubs.acs.org/doi/full/10.1021/acs.est.5b04983,
+A informação de suporte está em http://pubs.acs.org/doi/suppl/10.1021/acs.est.5b04983/suppl_file/es5b04983_si_001.pdf
+. Embora haja referências breves na internet em português sobre perigos da poeira como
+http://www.ehow.com.br/perigos-particulas-madeira-sobre_125562/, as mais completas e informativas estão em inglês, como esta australiana de uma associação madeireira: http://www.fwwa.org.au/Art005_WoodDust_c1.pdf
+. http://built-envi.com/portfolio/ultrafine-particle-emissions-from-3d-printers/ --
+há uma apresentação amigável do artigo, que é: Stephens, B., Azimi, P., Orch, Z. E., & Ramos, T. (2013). Ultrafine particle emissions from desktop 3D printers. _Atmospheric Environment,_ __79__, 334-339. doi:10.1016/j.atmosenv.2013.06.050 e uma nova análise com recomendações foi feita recentemente em http://ulchemicalsafety.org/initiative/3d-safety-science-proceedings/ (PDF em inglês, 24 páginas)
+. http://www.google.co.uk/patents/US6722872[_http://www.google.co.uk/patents/US6722872_]
+. No momento da publicação deste livro, a única solução comercial que achamos que leva em consideração as partículas ultrafinas é esta: http://www.bofaamericas.com/3D-printing-fume-extraction.asp
+. Apenas como referência, o site _3d printing industry_ mostra projetos para ligar um exaustor à impressora:
+https://3dprintingindustry.com/news/3d-printer-exhaust-redirect-noxious-fumes-21300/
+====
 
 ==== Reciclagem e Biodegradação
 
@@ -5714,8 +5688,7 @@ estritamente o mesmo. É o material que pode sofrer degradação por ação do o
 para acelerar o processo. Essa degradação não é completa, levando somente à fragmentação do plástico,
 sem facilitar seu retorno a cadeias naturais e deixando mais difícil de tratar, visto que é perdido como poeira.
 * **Hidrodegradável**: material que pode ser degradado por ação da água (hidrólise).
-* **Fotodegradável**:
-material que pode ser degradado por ação da luz.
+* **Fotodegradável**: material que pode ser degradado por ação da luz.
 * **Termodegradável**: material que pode ser degradado por ação
 do calor.
 * **Biodegradável**: material que pode sofrer degradação por atividade biológica de ocorrência natural
@@ -5729,8 +5702,8 @@ a compostabilidade significa que o material biodegrada facilmente e pode ser tam
 **Repolpável**: adjetivo usado geralmente para fitas e adesivos que são naturalmente absorvidos pela superfície
 de aderência.
 * **Bioplásticos**: a palavra é usada para designar os plásticos de duas categorias distintas^2^:
-** Polímeros feitos ao todo ou em parte de **fontes renováveis**, sejam biodegradáveis ou não; ou ** Polímeros
-**biodegradáveis**, seja de fonte renovável ou fonte fóssil.
+** Polímeros feitos ao todo ou em parte de **fontes renováveis**, sejam biodegradáveis ou não; ou
+** Polímeros **biodegradáveis**, seja de fonte renovável ou fonte fóssil.
 
 A riqueza de termos do assunto mostra a diversidade de conceitos com o que lidar. Fica mais fácil citar
 exemplos. O ABS não é de fonte renovável (vem do petróleo) e também não é biodegradável, ou seja, não é um
@@ -5740,13 +5713,9 @@ impressões 3D feitas com eles podem ser moídas e o plástico reutilizado no me
 claro, é ser novamente derretido e virar filamento para impressão. O processo passa pelas seguintes etapas^3^:
 
 * *Coleta* e **separação**: a separação dos resíduos de acordo com o seu material.
-* **Revalorização**:
-é a fase na qual o material já separado passa por um processo que faz com que ele volte a ser matéria-prima,
+* **Revalorização**: é a fase na qual o material já separado passa por um processo que faz com que ele volte a ser matéria-prima,
 envolvendo também limpeza e eliminação de resíduos.
-* **Transformação**: fase em que o material transformado
-em matéria-prima volte a ser produto. Pode ser **química**, *energética* ou **mecânica**, no caso dos filamentos
-de impressão 3D ela é mecânica (trituração do plástico para pequenos flocos), e necessita ainda de mistura
-com uma porcentagem (geralmente entre 10 a 60%) de plástico não-reciclado do mesmo tipo para assegurar a qualidade
+* **Transformação**: fase em que o material transformado em matéria-prima volte a ser produto. Pode ser **química**, *energética* ou **mecânica**, no caso dos filamentos de impressão 3D ela é mecânica (trituração do plástico para pequenos flocos), e necessita ainda de mistura com uma porcentagem (geralmente entre 10 a 60%) de plástico não-reciclado do mesmo tipo para assegurar a qualidade
 do filamento resultante.
 
 Nesse processo, empresas com fins lucrativo são essenciais, pois permitem que essas etapas adquiram economia
@@ -5755,14 +5724,16 @@ também empresas especializadas em reaproveitamento para impressão 3D, no Brasi
 que comercializa filamentos reciclados e no futuro pretende expandir suas operações com pontos de arrecadação
 para partes de impressão 3D descartadas.
 
-image::image169.png[image,width=642,height=189]
+[[reciclagemprintegreen3d]]
+image::image169.png[image,width=642,height=189,align="center",title="Explicação do processo na página da PrintGreen3D. A página da empresa com mais informações é http://www.printgreen3d.com.br."]
 
 Existe, entretanto, um porém. Em todas essas etapas, existe uma crítica, que é a de separação. Esse processo pode
 ser bem complexo e caro, ainda mais se forem usados muitos tipos diferentes. Em um mundo ideal, esses plásticos
 já viriam separados. De fato, a separação prévia dos plásticos por tipo é tão importante que já existe
 há anos a classificação de reciclagem de plásticos, que você já deve ter reparado em utensílios que tenha usado:
 
-image::image170.jpeg[image,width=642,height=487]
+[[tabelasimbolosplastico]]
+image::image170.jpeg[image,width=642,height=487,align="center",title="Tabela dos símbolos para reciclagem de plásticos, de 1 a 7. São usados para orientar a separação pelos catadores de plástico. A legenda com abreviação corresponde ao tipo de plástico, mas geralmente o logotipo aparece somente com o número. São eles: 1 – PET, polietileno tereftalato, como nas garrafas de refrigerante; 2 – Polietileno de Alta Densidade; 3 – PVC, usado em canos; 4 – Polietileno de Baixa Densidade, usados em sacolas de supermercado; 5 – Polipropileno, itens alimentícios e seringas; 6 – Poliestireno, geralmente em frascos e potes; 7 – outros, incluindo ABS. Fonte: http://www.greenme.com.br."]
 
 A separação de plásticos é uma necessidade no Brasil, essencial para a viabilidade da reciclagem visto que
 o processo de separação automatizado é caríssimo^5^. O problema é que classificação ilustrada é usada em
@@ -5789,7 +5760,8 @@ em uma impressora FFF?
 
 Pra visualizar um pouco melhor, vamos ver como é o plano básico de uma extrusora de filamento.
 
-image::image171.png[image,width=642,height=445]
+[[planofilamentadora]]
+image::image171.png[image,width=642,height=445,align="center",title="O plano mais elementar possível de uma filamentadora doméstica. Por simplicidade, muitos componentes não são mostrados, como o sistema de resfriamento, o controlador de temperatura, fonte de energia, etc."]
 
 A maioria das filamentadoras domésticas comercializadas hoje em dia seguem tal esquema: têm um funil ou cuba em
 que os grãos de plástico são colocados. Os grãos entram no tambor, que tem um parafuso de rosca movimentado
@@ -5822,7 +5794,8 @@ E sensores, são desejáveis vários sensores para controlar o processo. Não h�
 que o diâmetro fique uniforme, e existem medidores de diâmetro que podem dizer se está dentro do intervalo
 de tolerância.
 
-image::image172.png[image,width=642,height=384]
+[[diagramafilamentadoraopensource]]
+image::image172.png[image,width=642,height=384,align="center",title="Diagrama de controle da filamentadora doméstica open-source da open electronics, com vários sensores e controladores. Fonte: https://www.open-electronics.org/an-open-source-filament-extruder-for-3d-printer/"]
 
 E as etapas que dizemos ainda estão no âmbito __Maker__. No industrial, com suas complexas estruturas de controle
 e necessidade de volume e velocidade de extrusão, a situação é proporcionalmente mais cara e complicada^7^.
@@ -5845,7 +5818,8 @@ extrusores modificados de impressoras 3D que aceitam grãos de plástico ao inv�
 mas se o uso da filamentadora doméstica já é contingente, imagine uma pesada mini-filamentadora no carro da
 impressora que nem a operação de retração do filamento poderá executar^8^.
 
-image::image173.png[image,width=642,height=320]
+[[fotosfilabotefelfil]]
+image::image173.png[image,width=642,height=320,align="center",title="À esquerda: filamentadora Filabot, apresentada no Guia de Reciclagem de Plásticos de Impressão 3D da Adafruit - https://learn.adafruit.com/diy-3d-printing-filament/ À direita: filamentadora open-source Felfil, https://felfil.com/diy-filament-extruder/"]
 
 Existem outros recursos interessantes online, em especial a __appropedia__, a enciclopédia de ecologia e
 sustentabilidade que faz parte das recomendações do Dr. Joshua Pearce e muitos modelos de filamentadoras,
@@ -5856,9 +5830,10 @@ estarem interessadas em vender estes equipamentos, mas é questão de tempo; pod
 como _mercadolivre_ ou classificados como __olx__. Não costuma compensar encomendá-los da China, visto que são
 equipamentos pesados, de frete caro.
 
-Notas:
-
-1 -- Um dos cenários mais interessantes onde ocorre conflitos de métodos e tradições entre o meio _maker_ e o
+[NOTE]
+.Notas:
+====
+.  Um dos cenários mais interessantes onde ocorre conflitos de métodos e tradições entre o meio _maker_ e o
 industrial é o das normas. No meio industrial, devido à economia de escala, muito dinheiro costuma estar envolvido e
 poucos participantes, de modo que as normas são criadas por comitês únicos que não veem problemas em cobrar para
 o acesso a elas mesmo quando é muita pouca informação que oferecem. No meio _maker_ há participantes de todos os
@@ -5875,46 +5850,34 @@ dos padrões industriais: €44,00 pela EN 12432 em http://www.en-standard.eu/[_
 US$ 40,00 pela ASTM D6400-12 em http://www.astm.org/[_http://www.astm.org_] e R$ 24,75 pela NBR
 15448-1 e mais R$ 24,75 pela NBR 15448-2, sendo que a NBR15448-1 é um PDF com apenas duas páginas
 de informação útil -- e essa informação é apenas de __terminologia__, um pequeno dicionário de termos usados:
-https://www.target.com.br/produtos/normas-tecnicas/40321/nbr15448-1-embalagens-plasticas-degradaveis-e-ou-renovaveis-parte-1-terminologia[_https://www.target.com.br/produtos/normas-tecnicas/40321/nbr15448-1-embalagens-plasticas-degradaveis-e-ou-renovaveis-parte-1-terminologia_].
-Esperemos que esse mercado sofra uma abertura necessária que permita a indivíduos e organizações trazerem
+https://www.target.com.br/produtos/normas-tecnicas/40321/nbr15448-1-embalagens-plasticas-degradaveis-e-ou-renovaveis-parte-1-terminologia[_https://www.target.com.br/produtos/normas-tecnicas/40321/nbr15448-1-embalagens-plasticas-degradaveis-e-ou-renovaveis-parte-1-terminologia_]. Esperemos que esse mercado sofra uma abertura necessária que permita a indivíduos e organizações trazerem
 padrões concorrentes para diminuir as barreiras ao conhecimento.
-
-2 -- Apresentação da BASF sobre plásticos biodegradáveis e compostáveis:
+. Apresentação da BASF sobre plásticos biodegradáveis e compostáveis:
 http://www.simpesc.org.br/wp-content/uploads/arquivos/472518185f.pdf[_http://www.simpesc.org.br/wp-content/uploads/arquivos/472518185f.pdf_]
-
-3 -
-http://www.ecycle.com.br/component/content/article/35/711-plasticos-como-se-da-a-reciclagem-e-no-que-se-transformam.html[_http://www.ecycle.com.br/component/content/article/35/711-plasticos-como-se-da-a-reciclagem-e-no-que-se-transformam.html_]
-
-4 -
-https://www.greenme.com.br/consumir/reutilizacao-e-reciclagem/917-entenda-o-que-significam-os-codigos-de-reciclagem[_https://www.greenme.com.br/consumir/reutilizacao-e-reciclagem/917-entenda-o-que-significam-os-codigos-de-reciclagem_]
-
-5 - CETEA, I. (2008). Reciclagem de materiais plásticos: a importância da identificação
+. http://www.ecycle.com.br/component/content/article/35/711-plasticos-como-se-da-a-reciclagem-e-no-que-se-transformam.html[_http://www.ecycle.com.br/component/content/article/35/711-plasticos-como-se-da-a-reciclagem-e-no-que-se-transformam.html_]
+. https://www.greenme.com.br/consumir/reutilizacao-e-reciclagem/917-entenda-o-que-significam-os-codigos-de-reciclagem[_https://www.greenme.com.br/consumir/reutilizacao-e-reciclagem/917-entenda-o-que-significam-os-codigos-de-reciclagem_]
+. CETEA, I. (2008). Reciclagem de materiais plásticos: a importância da identificação
 correta. __Polímeros: Ciência e Tecnologia__, __18__(2), 119-125. Disponível em
 http://www.scielo.br/pdf/po/v18n2/a08v18n2.pdf[_http://www.scielo.br/pdf/po/v18n2/a08v18n2.pdf_]
-
-6 -- A questão da superioridade ecológica das variadas tecnologias de impressão 3D é
+. A questão da superioridade ecológica das variadas tecnologias de impressão 3D é
 controversa, mas pelo menos em determinados pontos e técnicas a vantagem é clara. Um artigo
 bastante abrangente do site _engineering_ explora esse tema, citando inclusive trabalhos do Dr. Joshua
 Pearce, e também falando do problema da classificação "outros" (número 7) para plásticos de impressão 3D:
-http://www.engineering.com/3DPrinting/3DPrintingArticles/ArticleID/13224/How-Green-Is-3D-Printing.aspx[_http://www.engineering.com/3DPrinting/3DPrintingArticles/ArticleID/13224/How-Green-Is-3D-Printing.aspx_].
-É de se notar também que a reutilização de plástico para impressão 3D
+http://www.engineering.com/3DPrinting/3DPrintingArticles/ArticleID/13224/How-Green-Is-3D-Printing.aspx[_http://www.engineering.com/3DPrinting/3DPrintingArticles/ArticleID/13224/How-Green-Is-3D-Printing.aspx_]. É de se notar também que a reutilização de plástico para impressão 3D
 é um método _mais_ ecológico que a reciclagem de plástico convencional!
 http://www.3ders.org/articles/20140304-turning-old-plastic-into-3d-printer-filament-is-greener-than-conventional-recycling.html[_http://www.3ders.org/articles/20140304-turning-old-plastic-into-3d-printer-filament-is-greener-than-conventional-recycling.html_]
-
-7 -- A filamentos3dbrasil fez um "tour" de suas instalações mostrando a planta e os equipamentos que produzem
+. A filamentos3dbrasil fez um "tour" de suas instalações mostrando a planta e os equipamentos que produzem
 os filamentos no Youtube: https://www.youtube.com/watch?v=3vKU-bmJECY[_https://www.youtube.com/watch?v=3vKU-bmJECY_]
-
-8 -- Fica a cargo do leitor decidir se confia na viabilidade de tal dispositivo. Seu
+. Fica a cargo do leitor decidir se confia na viabilidade de tal dispositivo. Seu
 uso pode ser ilustrado no vídeo de youtube (que tem as fontes e informações listadas):
 https://www.youtube.com/watch?v=tGnBIMADotA[_https://www.youtube.com/watch?v=tGnBIMADotA_]
-
-9 -- http://www.appropedia.org/Recyclebot[_http://www.appropedia.org/Recyclebot_]. O leitor é encorajado a buscar
+. http://www.appropedia.org/Recyclebot[_http://www.appropedia.org/Recyclebot_]. O leitor é encorajado a buscar
 a receita de outras filamentadoras open-source na internet, pois existem muitas e não é possível fazer justiça
 a todas.
-
-10 -- Um texto bastante elaborado e reflexivo sobre o assunto da reciclagem de plástico
+. Um texto bastante elaborado e reflexivo sobre o assunto da reciclagem de plástico
 de impressão 3D e sua relação com o Open-Source pode ser lido na __TechRepublic__:
 http://www.techrepublic.com/article/how-recycled-plastic-for-3d-printing-will-drive-sustainability-and-raise-the-social-conscious-of-business/[_http://www.techrepublic.com/article/how-recycled-plastic-for-3d-printing-will-drive-sustainability-and-raise-the-social-conscious-of-business/_].
+====
 
 ==== Uso alimentício e médico de impressões 3D
 
@@ -6053,7 +6016,7 @@ são daninhos de três maneiras
 limpeza ou lavagem do item. O resultado serão fungos, bactérias e outros organismos patológicos que oferecem
 alto risco de contaminação em usos posteriores da peça.
 
-image::image174.png[image,width=642,height=466]
+image::image174.png[image,width=642,height=466,align="center",title="Os vãos entre as camadas do processo de FDM são um problema de difícil solução. Nota: os &quot;microorganismos&quot; não estão em forma e escala realistas."]
 
 Os banhos alisadores com vapores solventes -- que funcionam razoavelmente bem para eliminar esses vãos e selar
 a peça quando são controlados -- não são seguros para usar nos plásticos para fins alimentícios pois podem
@@ -6061,7 +6024,8 @@ deixar resíduos tóxicos (embora se possa imaginar que tendo um método com exa
 destes resíduos, se chegue a um patamar aceitável). Lixamento da peça para eliminar vãos requer trabalho manual
 e só funciona com geometria mais grossas e menos rebuscadas de peças.
 
-image::image175.png[image,width=642,height=609]
+[[vaosentrecamadasdesenho]]
+image::image175.png[image,width=642,height=609,align="center",title="Os sulcos entre as camadas de plástico de impressão 3D FFF são alojamentos ótimos para bactérias, especialmente se tiverem restos de comida ou materiais orgânicos. Alguns tratamentos com vapores de solventes de pouca toxicidade como acetona conseguem nivelar e selar esses vãos, mas via de regra não funcionam para os plásticos de nível alimentício, pois esses são por função resistentes quimicamente. Vale lembrar ainda que mesmo o plástico &quot;selado&quot; tem rugosidades, e outros tipos de análises, que irão medir inclusive as diferenças topológicas, são necessários pra determinar se a superfície lisa acumularia ou não microorganismos. A foto é de uma peça em ABS preto, que não é segura para fins alimentícios."]
 
 ===== Maquinário
 
@@ -6106,8 +6070,7 @@ do plástico.
 * **Contaminação mecânica**. Pêlos, unhas, sujeira, tecidos, farpas de madeira, plástico ou
 metal que acabam no alimento. Não há diferença nesse sentido da impressão 3D para outros meios, e o máximo
 com que devemos preocupar é a geometria do objeto não facilitar este tipo de ocorrência.
-* **Contaminação
-biológica**. Microorganismos daninhos passados para a comida, como protozoários, vírus, parasitas nematóides
+* **Contaminação biológica**. Microorganismos daninhos passados para a comida, como protozoários, vírus, parasitas nematóides
 e fungos.
 
 O uso específico determina muito quanto de investimento, e que tipo de investimento, você deve fazer em assegurar
@@ -6180,21 +6143,24 @@ http://portal.anvisa.gov.br/registros-e-autorizacoes/alimentos/produtos/embalage
 A resposta à pergunta 8 parece indicar que toda nova embalagem impressa em 3D precisaria ser
 registrada na ANVISA: "P: As embalagens de alimento precisam ser registradas na ANVISA? R: (...)
 Já as embalagens obtidas por *novas tecnologias* (...) têm *obrigatoriedade de registro* previamente
-à sua comercialização.".  * As **disposições gerais**, Resolução 105/99, uma série de regras
+à sua comercialização.".
+* As **disposições gerais**, Resolução 105/99, uma série de regras
 tratando das composições dos plásticos, da porcentagem máxima dos vários tipos de impurezas e dos
 índices de migração, viscosidade, etc. permitidos. O documento está inteiramente disponível em PDF em
 http://www.camara.gov.br/sileg/integras/713686.pdf[_http://www.camara.gov.br/sileg/integras/713686.pdf_] (9
 páginas). Perceba que esse documento ainda se refere a *27 outros documentos* com maior detalhamento das regras,
 resoluções GMC números 30/92, 36/92, 56/92, 16/93, 28/93, 47/93, 86/93, 87/93, 95/94, 05/95, 10/95, 11/95, 13/97,
 14/97, 15/97, 32/97, 33/97,34/97, 36/97, 52/97 e 53/97, 9/99, 10/99, 11/99, 12/99, 13/99 e 14/99. Essas resoluções
-podem ser encontradas a partir do portal MercoSul, http://www.mercosur.int/[_http://www.mercosur.int_].  * A **lista
-positiva de monômeros**, resolução RDC 56/12, lista os materiais permitidos para os polímeros plásticos a partir
+podem ser encontradas a partir do portal MercoSul, http://www.mercosur.int/[_http://www.mercosur.int_].
+* A **lista positiva de monômeros**, resolução RDC 56/12, lista os materiais permitidos para os polímeros plásticos a partir
 de suas unidades constituintes. Assim, deve-se procurar por "etileno" na parte I do documento se se deseja utilizar
 "polietileno", por exemplo. Polímeros específicos também são indicados na parte II. A resolução foi publicada
 no Diário Oficial da União em 21 de novembro de 2012, páginas 66 a 77 e está disponível em PDF por página:
 http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&pagina=66&data=21/11/2012[_http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&pagina=66&data=21/11/2012_].
 Como exemplo, o ácido lático, monômero do PLA, aparece na página 70 como "ácido láctico" e "sem
-restrições".  * De particular interesse ainda são: ** A resolução RDC 17/08 - *aditivos* para materiais
+restrições".
+* De particular interesse ainda são:
+** A resolução RDC 17/08 - *aditivos* para materiais
 plásticos, uma lista positiva como a da RDC 56/12 mas para aditivos com seus limites, disponível como HTML e PDF em:
 https://www.diariodasleis.com.br/busca/exibelink.php?numlink=1-9-34-2008-03-17-17[_https://www.diariodasleis.com.br/busca/exibelink.php?numlink=1-9-34-2008-03-17-17_]
 ** A resolução RDC 52/10 dá as
@@ -6251,8 +6217,8 @@ industriais para plásticos no ramo alimentício poderiam explorar o mercado de 
 para produtos, até talvez uma parceria com os _sites_ de impressão sob demanda. Com preços populares, poderiam
 intermediar a impressão 3D de itens alimentícios e ganhar pelo volume, ao invés da margem de um serviço de
 longa duração. Poderiam ter protocolos padronizados e até um catálogo de formas prontas para o cliente que
-desejasse um preço menor de um design e material já certificados.  * *Base de dados pública de protocolos*
--- pessoas, entidades e empresas que já precisaram fazer testes relacionados ao uso alimentício poderiam deixar
+desejasse um preço menor de um design e material já certificados.
+* *Base de dados pública de protocolos* -- pessoas, entidades e empresas que já precisaram fazer testes relacionados ao uso alimentício poderiam deixar
 disponíveis seus protocolos e documentação das situações em que foram usados, para evitar retrabalho de outros.
 * *Revestimentos no item* -- embora em objetos que necessitem de encaixe ou dimensões precisas a espessura de um
 revestimento típico possa ter que ser compensada, existem no mercado diversas soluções que podem ser usadas com
@@ -6263,7 +6229,8 @@ de impressão 3D mais porosos que o possam absorver. Um problema dos revestiment
 aderência ao material, se seu uso compreender fricção ou outros tipos de stress mecânico o revestimento pode
 se soltar e deixar exposto o material original.
 
-image::image176.jpeg[image,width=612,height=508]
+[[revestimentoalimenticioredelease]]
+image::image176.jpeg[image,width=612,height=508,align="center",title="Platina Semi-Cristal Para Moldes Alimentícios e Artefatos Atóxicos da Redelease, uma das opções nacionais para revestimento dos plásticos. Fonte: http://www.redelease.com.br/lojavirtual/produtos/borrachas-de-silicone/para-moldes-e-formas/borracha-de-silicone-para-moldes-alimenticios-1-100-kg-c-catalisador-1163.html"]
 
 * *Materiais especiais* -- embora somente o material de impressão 3D ser compatível com o contato alimentício
 não seja suficiente para garantir o uso alimentício do objeto impresso, existe uma estratégia que é promissora
@@ -6271,46 +6238,41 @@ como solução neste campo, que é um plástico alimentício com antimicrobianos
 usada por um grupo de estudos da Universidade de Waterloo, que foi testada com sucesso usando PEAD extrudado com
 nanopartículas de prata, processo que inclusive não prejudica a reciclabilidade do PEAD.
 
-image::image177.png[image,width=642,height=443]
+[[peadcomnanoparticulas]]
+image::image177.png[image,width=642,height=443,align="center",title="Apresentação do filamento de PEAD com nanopartículas de prata para uso alimentício da Universidade de Waterloo, em Ontario, Canadá. O vídeo inteiro pode ser visto em https://www.youtube.com/watch?v=9A-XwD9qWZE"]
 
-1 -- Efeitos do Trióxido de Antimônio: - Cooper, R. G., & Harrison, A. P. (2009). The exposure to and
+[NOTE]
+.Referências:
+====
+. Efeitos do Trióxido de Antimônio: Cooper, R. G., & Harrison, A. P. (2009). The exposure to and
 health effects of antimony. __Indian Journal of Occupational and Environmental Medicine__, __13__(1),
 3--10. http://doi.org/10.4103/0019-5278.50716 Disponível para leitura online (texto completo) em
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2822166/[_https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2822166/_].
-
-1 - Eastman/Tritan:
+. Eastman/Tritan:
 http://www.innovationlab.eastman.com/stories/home-is-where-your-housewares-are[_http://www.innovationlab.eastman.com/stories/home-is-where-your-housewares-are_]
-
-3 -- Ao leitor curioso, existe uma referência muito boa sobre
+. Ao leitor curioso, existe uma referência muito boa sobre
 os aditivos usados em plásticos no portal "Tudo Sobre Plásticos":
 http://www.tudosobreplasticos.com/aditivos/aditivos.asp[_http://www.tudosobreplasticos.com/aditivos/aditivos.asp_]
 A complexidade e variedade do assunto são amplas demais para tratarmos nessa obra.
-
-4 -- O negro-de-fumo é um aditivo/corante interessante para ter uma noção do que é adicionado aos
+. O negro-de-fumo é um aditivo/corante interessante para ter uma noção do que é adicionado aos
 plásticos, visto que é basicamente carbono / fuligem. Um bom texto sobre esse composto pode ser lido em
 http://www.tudosobreplasticos.com/pigmentos/negrodefumo.asp[_http://www.tudosobreplasticos.com/pigmentos/negrodefumo.asp_].
-
-5 -- Muitas vezes a preocupação com os metais da impressora 3D é tida como excessiva. Existem máquinas usadas
+. Muitas vezes a preocupação com os metais da impressora 3D é tida como excessiva. Existem máquinas usadas
 na indústria e comércio que usam alumínio como o hotend e até latão e têm contato direto com alimentos,
 como dispensadores de pastas, sem efeitos nocivos.
-
-6 -- Bórax:
+. Bórax:
 https://crunchybetty.com/getting-to-the-bottom-of-borax-is-it-safe-or-not/[_https://crunchybetty.com/getting-to-the-bottom-of-borax-is-it-safe-or-not/_]
-
-7 -- Falaremos do tetraidrofurano mais à frente, mas é um composto de laboratório que, como a acetona, deve
+. Falaremos do tetraidrofurano mais à frente, mas é um composto de laboratório que, como a acetona, deve
 ser lidado da maneira correta, com equipamento de proteção e em condições adequadas. Um dos perigos deste
 composto é ser altamente explosivo. Não entenda o leitor como sugestão para que faça o teste sem preparações.
-
-8 -
-http://www.splabor.com.br/blog/meio-de-cultura-2/meio-de-cultura-identificacao-e-cultivo-de-microorganismos/[_http://www.splabor.com.br/blog/meio-de-cultura-2/meio-de-cultura-identificacao-e-cultivo-de-microorganismos/_]
-
-9 -- O exemplo é da Universidade de Cornell, nos EUA; não serve para a legislação brasileira -
+. http://www.splabor.com.br/blog/meio-de-cultura-2/meio-de-cultura-identificacao-e-cultivo-de-microorganismos/[_http://www.splabor.com.br/blog/meio-de-cultura-2/meio-de-cultura-identificacao-e-cultivo-de-microorganismos/_]
+. O exemplo é da Universidade de Cornell, nos EUA; não serve para a legislação brasileira -
 https://confluence.cornell.edu/display/FOODSAFETY/Cornell+Food+Safety+and+MQIP+Lab+Protocols[_https://confluence.cornell.edu/display/FOODSAFETY/Cornell+Food+Safety+and+MQIP+Lab+Protocols_]
-
-10 -- Um exemplo pode ser visto no canal __3D Printing Professor__, em inglês. O apresentador tenta executar
+. Um exemplo pode ser visto no canal __3D Printing Professor__, em inglês. O apresentador tenta executar
 um procedimento bem simples com quatro culturas de bactérias em ágar usando uma impressão em ABS, uma outra
 em ABS suavizado com acetona e duas de controle, mas tem resultados totalmente inconsistentes. Pode ser visto em
 https://www.youtube.com/watch?v=kuyys1YpAVw[_https://www.youtube.com/watch?v=kuyys1YpAVw_].
+====
 
 ===== Uso médico e veterinário
 
@@ -6351,7 +6313,8 @@ odontológicas) e trabalhos de Cícero Moraes, Paulo Miamoto Dias e seus associa
 de softwares para ajudar nessas tarefas também é importante, e além do brasileiro _Invesalius_ já mencionado,
 existe ainda o também open-source e multiplataforma _Slicer_ de reconstrução digital.
 
-image::image178.png[image,width=615,height=419]
+[[slic3rnaoslic3ropensurce]]
+image::image178.png[image,width=615,height=419,align="center",title="Slicer, software de processamento e visualização de imagens médicas (não é o fatiador slic3r). Baixável de https://www.slicer.org/."]
 
 E tais fronteiras se expandem a cada dia, em garagens e universidades, procurando aprimorar a saúde e qualidade
 de vida das pessoas através da tecnologia e pensamento "fora da caixa". Por exemplo, por que não aproveitar
@@ -6365,7 +6328,8 @@ complexa quanto a que já vimos relacionada a alimentos. Em especial, o grupo de
 __Biomecânica e Forense UNIFESP__, procura dialogar com os setores da sociedade que regulam tais dispositivos,
 colocando tal material público em seu canal de youtube^7^.
 
-image::image179.png[image,width=642,height=637]
+[[taladaanacano]]
+image::image179.png[image,width=642,height=637,align="center",title="Tala modelada como uma peça chata, colocada em água quente para amolecer e moldada em torno da mão do paciente, ficando com a forma definitiva. Como a temperatura de transição vítrea do PLA é baixa, o paciente não se queima, e sendo o PLA biocompatível, não terá irritações com o uso desde que aditivos e corantes também não o sejam. Foto de Ana Cano, publicada com permissão."]
 
 ===== Outros usos biológicos
 
@@ -6379,32 +6343,26 @@ para modificar. Qualquer delimitação que puséssemos aqui seria uma injustiça
 importante é ter em mente as propriedades dos plásticos, sua biocompatibilidade com a função em questão e a
 legislação que pode ser necessária para sua produção comercial.
 
-Notas:
-
-1 -- Ainda que a _wikipedia_ seja às vezes contestada como fonte oficial de referências, ela se mostra excelente
+[NOTE]
+.Notas:
+====
+. Ainda que a _wikipedia_ seja às vezes contestada como fonte oficial de referências, ela se mostra excelente
 para reunir definições distintas de áreas diferentes de forma harmoniosa. Em nosso caso, a wikipedia em inglês
 serviu de fonte: https://en.wikipedia.org/wiki/Biocompatibility[_https://en.wikipedia.org/wiki/Biocompatibility_]
-
-2 -
-https://www.fda.gov/downloads/medicaldevices/deviceregulationandguidance/guidancedocuments/ucm348890.pdf[_https://www.fda.gov/downloads/medicaldevices/deviceregulationandguidance/­guidancedocuments/ucm348890.pdf_]
-
-3 -
-http://3dprintingindustry.com/news/widespread-use-3d-printed-models-keeps-lowering-barriers-complex-surgeries-31987/[_http://3dprintingindustry.com/news/widespread-use-3d-printed-models-keeps-lowering-barriers-complex-surgeries-31987/_]
-
-4 - Bogu, V. P., Ravi Kumar, Y., & Asit Kumar, K. (2016). 3D Printed, Customized Cranial
+. https://www.fda.gov/downloads/medicaldevices/deviceregulationandguidance/guidancedocuments/ucm348890.pdf[_https://www.fda.gov/downloads/medicaldevices/deviceregulationandguidance/­guidancedocuments/ucm348890.pdf_]
+. http://3dprintingindustry.com/news/widespread-use-3d-printed-models-keeps-lowering-barriers-complex-surgeries-31987/[_http://3dprintingindustry.com/news/widespread-use-3d-printed-models-keeps-lowering-barriers-complex-surgeries-31987/_]
+. Bogu, V. P., Ravi Kumar, Y., & Asit Kumar, K. (2016). 3D Printed, Customized Cranial
 Implant for Surgical Planning. __Journal of The Institution of Engineers (India): Series C__. -
 https://www.researchgate.net/publication/303975801_3D_Printed_Customized_Cranial_Implant_for_Surgical_Planning[_https://www.researchgate.net/publication/303975801_3D_Printed_Customized_Cranial_­Implant_for_Surgical_Planning_]
-
-5 - Ventola, C. L. (2014). Medical applications for 3D printing: current
+. Ventola, C. L. (2014). Medical applications for 3D printing: current
 and projected uses. __Pharmacy and Therapeutics__, __39__(10), 704. -
 _https://www.ncbi.nlm.nih.gov/pmc/articles/https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4189697/[­PMC4189697/]_
-
-6 - Cano, A. P. D. __Parametrização e Produção de Órtese Termomoldável para Imobilização de Punho Produzida
+. Cano, A. P. D. __Parametrização e Produção de Órtese Termomoldável para Imobilização de Punho Produzida
 por Manufatura Aditiva__. São José dos Campos: Universidade Federal de São Paulo, 2017. 94 p.
-
-7 -- Um dos vídeos mais representativo dessa busca é o que fala explicitamente sobre desafios de
+. Um dos vídeos mais representativo dessa busca é o que fala explicitamente sobre desafios de
 regulação: "ANVISA -- Regulação de dispositivos médicos produzidos por manufatura aditiva no Brasil",
 https://www.youtube.com/watch?v=B6N_A1VEqy8[_https://www.youtube.com/watch?v=B6N_A1VEqy8_]
+====
 
 === Propriedades Físicas
 
@@ -6447,7 +6405,8 @@ da molécula de água (H₂O).
 
 ==== A natureza polar da água
 
-image::image180.png[image,width=642,height=529]
+[[h2opolaridade]]
+image::image180.png[image,width=642,height=529,align="center",title="Dois hidrogênios e um oxigênio unidos por ligação covalente; cada hidrogênio compartilha seu elétron com o oxigênio e todos completam suas camadas de valência deste modo. Mas o oxigênio exerce maior atração neste elétron compartilhado e, por conseguinte, o lado em que ele está fica ligeiramente negativo (vermelho), e os dos hidrogênios ficam levemente positivos (azul). Como a molécula de oxigênio faz um &quot;V&quot; com os hidrogênios, isso significa que temos extremidades da molécula com polaridades diferentes - a molécula é &quot;polar&quot;. A polaridade é expressível por diversos índices, um dos mais frequentes sendo o momento de dipolo -1,8456 D (debyes)."]
 
 Essa aparente inócua propriedade da água, associada com sua geometria peculiar de polaridade em forma de V, gera
 toda uma variedade de propriedades macroscópicas interessantes. A primeira é a disposição que as moléculas
@@ -6457,7 +6416,8 @@ cada molécula de água tende a atrair e orientar em posições específicas qua
 em torno de si (duas com o hidrogênio virado para seu oxigênio, e mais uma para cada um dos dois hidrogênios,
 com o oxigênio orientado na direção deles). O arranjo resultante pode ser visto na figura seguinte.
 
-image::image181.png[image,width=642,height=353]
+[[arranjoidealagua]]
+image::image181.png[image,width=642,height=353,align="center",title="O arranjo &quot;ideal&quot; de moléculas de água no espaço, com cada esfera vermelha simbolizando uma molécula e os tubos cinza sendo pontes de hidrogênio. Veja que cada esfera se liga a quatro outras, exceto as da borda da estrutura que se ligam a três."]
 
 A polaridade peculiar da água e o fato de suas moléculas se atraírem e estruturarem dessa maneira colabora
 em uma série de propriedades interessantes, desde ser líquida em temperaturas mais altas até sua tensão
@@ -6468,7 +6428,8 @@ Quando a água atrai *mais a si mesma* que ao material em questão, ela tende a 
 é _*hidrofóbico*_ (tem "medo de água"). No segundo caso o material é _*hidrofílico*_ (tem "afinidade
 com água").
 
-image::image182.png[image,width=642,height=331]
+[[hidrofobiahidrofilia]]
+image::image182.png[image,width=642,height=331,align="center",title="Instâncias diferentes de materiais hidrofóbicos (esquerda) e materiais hidrofílicos (direita). O óleo é hidrofóbico por ser composto *apolar* e não ter afinidade química com a água."]
 
 Os detergentes usados em sua cozinha utilizam uma propriedade chamada _anfipatia_ ou _anfifilia_ que consiste
 em ter uma extremidade polar (como a água) e uma extremidade apolar (como o óleo) e portanto conseguir mediar
@@ -6484,7 +6445,8 @@ de fazer moléculas (de água, no caso) aderirem na superfície é chamado de _*
 costuma ser confundindo com a __absorção__, um fenômeno distinto em que o fluido é dissolvido "dentro" do
 material. Reiterando: tanto a higroscopia quanto a adsorção tratam somente da __superfície__.
 
-image::image183.png[image,width=642,height=345]
+[[explicandohigroscopia]]
+image::image183.png[image,width=642,height=345,align="center",title="A higroscopia acontece quando o material atrai moléculas de água do ar para aderência em sua superfície."]
 
 Muitos materiais de impressão 3D como PLA e Nylon são bastante higroscópicos, e como o contato com água acaba
 contribuindo para a degradação do polímero, torna-se necessário acondicionamento adequado do carretel em lugar
@@ -6496,14 +6458,15 @@ absorve (dilui) a água que atrai, como no caso do sal de cozinha, essa propried
 Alguns materiais de impressão 3D como _nylon_ e _PETG_ podem não aparentar, mas além de serem higroscópicos
 são porosos. A porosidade potencializa a higroscopia, por isso especial cuidado deve ser tomado com eles.
 
-Referências:
-
-- Vídeos educativos com materiais hidrofóbicos, hidrofílicos e higroscópicos:
+[NOTE]
+.Referências:
+====
+* Vídeos educativos com materiais hidrofóbicos, hidrofílicos e higroscópicos:
 http://www.energyvanguard.com/blog/cool-videos-hydrophilic-hydrophobic-hygroscopic-materials[_http://www.energyvanguard.com/blog/cool-videos-hydrophilic-hydrophobic-hygroscopic-materials_]
-
-- Introdução à física da água em materiais porosos, em
+* Introdução à física da água em materiais porosos, em
 inglês. Fala sobre hidrofilia, hidrofobia e hidroscopia também:
 http://www.energyvanguard.com/blog/78016/Introduction-to-the-Physics-of-Water-in-Porous-Materials[_http://www.energyvanguard.com/blog/78016/Introduction-to-the-Physics-of-Water-in-Porous-Materials_]
+====
 
 == Filamentos de impressão 3D
 
@@ -6553,7 +6516,8 @@ que se tenha um líquido que funciona como uma "cola" - a acetona é extremament
 e minutos ou até segundos depois de se aplicar este líquido em uma superfície, ele solidifica inteiramente. Isso
 é uma prática tão frequente que a solução ganhou o nome de "suco de ABS".
 
-image::image184.jpeg[image,width=528,height=319]
+[[absacetonado1]]
+image::image184.jpeg[image,width=528,height=319,align="center",title="A mesma peça de ABS (chaveiro Marvin), antes e depois de um banho de vapor de acetona."]
 
 Na impressão cotidiana, as temperaturas mais comuns para o ABS ficam entre 230 a 240°C no extrusor com alguns
 _grades_ industriais como MG94 sendo impressos a 270°C (o que lhe confere maior força de aderência entre

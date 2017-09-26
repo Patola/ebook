@@ -3,4 +3,4 @@ Livro de Impressão 3D em português, escrito usando a linguagem markup asciidoc
 
 No momento o repositório *não está pronto para uso*. O arquivo-texto do livro ainda está sendo modificado para seguir o documento .odt. Em especial as legendas das imagens terão que ser todas refeitas.
 
-Para a conversão do .adoc para qualquer formato, devem-se usar os flags -a stem (para permitir extensão STEM) e -r asciidoctor-mathematical (para permitir a transformação das fórmulas latex em figuras embutidas).
+Para a conversão do .adoc para qualquer formato, devem-se usar os flags -a stem (para permitir extensão STEM) e -r asciidoctor-mathematical (para permitir a transformação das fórmulas latex em figuras embutidas). A minha instalação do asciidoctor está um pouco diferente pois eu criei um lexer pro realçador de sintaxe "rouge" para o G-Code usado no documento (e mandei um pull request pro software), e no caso do asciidoctor-mathematical fiz uma pequena mudança no código pra figura aparecer duas vezes maior (a fórmula aparecia em letras minúsculas). Em tempo, meu PR será aceito e vou ver se envio um patch para o asciidoctor-mathematical também.

@@ -37,7 +37,7 @@ v0.99r2, 17/11/2017
 :front-cover-image: image:cover.png[Capa,1350,1909]
 
 IMPORTANT: A versão mais atual deste livro estará sempre disponível no endereço:
-http://www.makerlinux.com.br/ebook/[http://www.makerlinux.com.br/ebook/]
+http://www.makerlinux.com.br/ebook[http://www.makerlinux.com.br/ebook]
 
 NOTE: Por favor, ao mencioná-lo, cite este endereço para baixar o livro (e se possível fazer doações). Não
 é obrigatório mas seria uma gentileza. E preferivelmente não diga que o livro é "free": passa a idéia
@@ -5643,15 +5643,15 @@ as partículas ultrafinas para evitar que voltem ao ambiente).
 ====
 . http://www.ecycle.com.br/component/content/article/35-atitude/1073-conheca-os-perigos-da-dioxina-e-como-preveni-los.html
 . https://www.niehs.nih.gov/health/topics/agents/sya-bpa/index.cfm
-. http://factsaboutbpa.org/what-does-us-government-research-tell-us-about-bpa -- a página é na verdade um apanhado de fatos sobre o BPA com links para órgãos do governo estadunidense. Infelizmente, parece que não há equivalente nacionnal em termos de informação.
+. http://factsaboutbpa.org/what-does-us-government-research-tell-us-about-bpa[_http://factsaboutbpa.org/what-does-us-government-research-tell-us-about-bpa_] -- a página é na verdade um apanhado de fatos sobre o BPA com links para órgãos do governo estadunidense. Infelizmente, parece que não há equivalente nacionnal em termos de informação.
 . http://www.popsci.com/bpa-free-plastic-bad-for-human-health#page-2 . É interessante também
 ler a reportagem que trata das batalhas jurídicas envoltas nas acusações de danos do Tritan: http://www.npr.org/sections/health-shots/2015/02/16/385747786/beyond-bpa-court-battle-reveals-a-shift-in-debate-over-plastic-safety
-. https://opensource.com/article/17/5/open-source-3d-printing-filament -- tais iniciativas devem sempre ser incentivadas através de escolha de consumo consciente e contínua cobrança dos produtores por transparência.
+. https://opensource.com/article/17/5/open-source-3d-printing-filament[_https://opensource.com/article/17/5/open-source-3d-printing-filament_] -- tais iniciativas devem sempre ser incentivadas através de escolha de consumo consciente e contínua cobrança dos produtores por transparência.
 . Azimi, P., Zhao, D., Pouzet, C., Crain, N. E., & Stephens, B. (2016). Emissions of ultrafine particles and volatile organic compounds from commercially available desktop three-dimensional printers with multiple filaments. __Environmental science & technology__, __50__(3), 1260-1268. Disponível em http://pubs.acs.org/doi/full/10.1021/acs.est.5b04983,
 A informação de suporte está em http://pubs.acs.org/doi/suppl/10.1021/acs.est.5b04983/suppl_file/es5b04983_si_001.pdf
 . Embora haja referências breves na internet em português sobre perigos da poeira como
 http://www.ehow.com.br/perigos-particulas-madeira-sobre_125562/, as mais completas e informativas estão em inglês, como esta australiana de uma associação madeireira: http://www.fwwa.org.au/Art005_WoodDust_c1.pdf
-. http://built-envi.com/portfolio/ultrafine-particle-emissions-from-3d-printers/ --
+. http://built-envi.com/portfolio/ultrafine-particle-emissions-from-3d-printers/[_http://built-envi.com/portfolio/ultrafine-particle-emissions-from-3d-printers/_] --
 há uma apresentação amigável do artigo, que é: Stephens, B., Azimi, P., Orch, Z. E., & Ramos, T. (2013). Ultrafine particle emissions from desktop 3D printers. _Atmospheric Environment,_ __79__, 334-339. doi:10.1016/j.atmosenv.2013.06.050 e uma nova análise com recomendações foi feita recentemente em http://ulchemicalsafety.org/initiative/3d-safety-science-proceedings/ (PDF em inglês, 24 páginas)
 . http://www.google.co.uk/patents/US6722872[_http://www.google.co.uk/patents/US6722872_]
 . No momento da publicação deste livro, a única solução comercial que achamos que leva em consideração as partículas ultrafinas é esta: http://www.bofaamericas.com/3D-printing-fume-extraction.asp
@@ -9324,23 +9324,24 @@ conhecermos bem as formas de representação usada para garantirmos reprodução
 assim como para poder impedir erros comuns que ocorrem de problemas inerentes ao formato.
 
 === A representação tridimensional de objetos
-==== Coordenadas
 
+.Coordenadas
 Assim como usamos as coordenadas cartesianas para visualizar figuras e gráficos de *duas dimensões* (largura
 e altura, comumente chamadas de "X" e "Y"), a representação universal de distâncias e dimensões de
 objetos tridimensionais é o **plano cartesiano tridimensional**, em que o eixo X corresponderá à largura, o Y
 à profundidade e o Z à altura. As unidades desses eixos podem ser arbitrárias (mm, polegadas, etc.) ou mesmo
 não haver (serem simplesmente "pontos" determinados sem correspondentes no mundo real)
 
-image::image233.png[image,width=642,height=405]
+[[planoscartesianoseixos]]
+image::image233.png[image,width=642,height=405,align="center",title="À esquerda: Plano cartesiano bidimensional, com o eixo &quot;X&quot; representando a largura e Y a altura. Qualquer localização neste plano pode ser dada pelos números graduados nos eixos. À direita: Plano cartesiano tridimensional, isto é, com eixos X (largura), Y (profundidade) e Z (altura) ilustrados"]
 
 Na impressão 3D FFF, as coordenadas tridimensionais correspondem aos seguintes arranjos em relação à estrutura
 da impressora:
 
-image::image234.png[image,width=642,height=509]
+[[sethi3dedeltaeixos]]
+image::image234.png[image,width=642,height=509,align="center",title="À esquerda: Uma Sethi3D AiP A3 com os eixos X, Y e Z representados, bem como sua origem (0,0,0) no canto da mesa. À direita: Uma Kossel Mini com os eixos X, Y e Z representados. Nas deltas, a origem costuma ser no centro da mesa."]
 
-== Representações de formas tridimensionais
-
+.Representações de formas tridimensionais
 No plano tridimensional, no entanto, existem dois modos principais de se representar cada objeto do mundo real:
 
 * **Sólido**: é a representação dos objetos pelo volume que ele ocupa, utilizando de primitivas igualmente
@@ -9362,9 +9363,10 @@ simples de programar e computacionalmente eficiente. Muitos programas portanto f
 converter superfícies para sólidos, exige análise topológica e bastante heurística e é por isso mesmo não
 só complexa para programar como computacionalmente demorada.
 
-image::image235.png[image,width=642,height=355]
+[[cubofechadoeaberto]]
+image::image235.png[image,width=642,height=355,align="center",title="À esquerda: Um cubo modelado no Blender, software 3D open-source de edição de malhas (superfícies poligonais). À direita: O mesmo cubo com um de seus quadrados componentes removidos. Esta forma aberta não equivale a nada que exista no mundo real, que não tem paredes infinitamente finas."]
 
-image::image236.png[image,width=587,height=435]
+image::image236.png[image,width=587,height=435,align="center",title="O FreeCAD é um (excelente) software open-source que lida tanto com sólidos quanto superfícies. A caixa da esquerda é uma malha e a da direita um sólido. Visualmente, no entanto, não há diferença."]
 
 Tanto para sólidos quanto para superfícies, no entanto, existem outras subdivisões:
 
@@ -9393,7 +9395,8 @@ milímetros. Pra arrematar, o formato não tem designadores pra objetos diferent
 várias peças, verá que elas se movem juntas -- pois são consideradas uma entidade única. Muitos desses
 softwares por isso mesmo oferecem a função de "identificar e separar partes" pra facilitar o manuseamento.
 
-image::image237.png[image,width=373,height=367]
+[[cubotriangulado]]
+image::image237.png[image,width=373,height=367,align="center",title="O nosso cubo do Blender, aquele que era formado de quadrados, quando exportado para STL e importado novamente, foi &quot;redividido&quot; em triângulos, porque o formato STL só usa triângulos."]
 
 Toda essa simplicidade exigida tem uma razão. Os softwares que usaremos para enviar as formas para a impressora
 precisam realizar _muitas_ manipulações e operações matemáticas em cima dessas formas, e muitas vezes as
@@ -9446,7 +9449,8 @@ https://3dprintingindustry.com/news/deliberate-mistakes-key-protecting-3d-printe
 - cabe notar que a nomenclatura usada é equivocada: cópia não-autorizada de "propriedade" intelectual não
 pode ser chamada de __roubo__, pois __não há subtração__.
 
-image::image238.png[image,width=517,height=412]
+[[pecasimplescomerros]]
+image::image238.png[image,width=517,height=412,align="center",title="Uma exceção à regra geral de &quot;malha orgânica e complexa tendo mais erros&quot;. Esta peça mecânica extremamente simples, modelada no software Sketchup, tem erros suficientes de malha para ser irresolvível e dar dores de cabeça ao profissional que aceitasse imprimi-la. Pode ser baixada para &quot;apreciação&quot; em https://www.thingiverse.com/thing:793491"]
 
 == Operações booleanas
 
@@ -9455,7 +9459,8 @@ booleanas__. São modificações que você exerce tendo dois ou mais sólidos ou
 malha ou sólido como resultado. São três as operações básicas (é possível ter operações derivadas),
 ilustradas aqui no software OpenSCAD com a única mudança sendo no nome da função:
 
-image::image239.png[image,width=642,height=372]
+[[booleanuniaoousoma]]
+image::image239.png[image,width=642,height=372,align="center",title="**UNIÃO OU SOMA**: as duas ou mais formas são &quot;fundidas&quot; resultando em uma forma única. No caso de malhas, a superfície é recalculada e as partes &quot;internas&quot; não são preservadas. Se uma parte estiver dentro da outra, o resultado é a parte maior. Se as duas partes estiverem separadas, o resultado é um único objeto com volumes separados."]
 
 image::image240.png[image,width=642,height=328]
 

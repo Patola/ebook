@@ -8784,7 +8784,7 @@ instrumentos), portanto propensas a erros consideráveis.
 usadas diretamente e portanto não podem ser verificadas diretamente; entram em um cálculo ou combinação com
 outras e não podem ser aferidas de maneira simples. Isso transforma um problema de uma variável em um sistema
 de múltiplas equações, com variáveis difíceis de isolar. Como exemplos, temos as coordenadas X-Y-Z --
-calculadas pelas posições dos braços nos pilares - e o DELTA_RADIUS, a principal medida de uma delta, calculado
+calculadas pelas posições dos braços nos pilares - e o `DELTA_RADIUS`, a principal medida de uma delta, calculado
 a partir de outras três medidas. **Isso também dificulta bastante o entendimento intuitivo dessas medidas**,
 de modo que fica difícil "abstrair" o que pode estar dando errado.
 * *Falta de ponto de referência* -- Três pontos no espaço tridimensional têm um único plano passando por eles; os três endstops de uma delta,
@@ -8882,20 +8882,20 @@ image::image225.png[image,width=642,height=427]
 
 As medidas são quase todas horizontais, _delta_diagonal_rod_ sendo a única na diagonal:
 
-* *DELTA_DIAGONAL_ROD* (o comprimento do braço da delta) está no arquivo Marlin.ino nas versões antigas e
-no Configuration.h nas versões novas do Marlin. Também tem o nome de *DELTA_DIAGONAL_ROD* no Configuration.h
-do Repetier, e no smoothieware se chama **arm_length**. Outro nome com que é referenciado é __**diagonal rod length**__.
-No comando `M665`, é o parâmetro **L**.
-* **DELTA_RADIUS**, a distância horizontal do parafuso do
+* `DELTA_DIAGONAL_ROD` (o comprimento do braço da delta) está no arquivo Marlin.ino nas versões antigas e
+no Configuration.h nas versões novas do Marlin. Também tem o nome de `DELTA_DIAGONAL_ROD` no Configuration.h
+do Repetier, e no smoothieware se chama `arm_length`. Outro nome com que é referenciado é `diagonal rod length`.
+No comando `M665`, é o parâmetro `L`.
+* `DELTA_RADIUS`, a distância horizontal do parafuso do
 braço no effector até o outro parafuso do braço no carro do trilho, é chamada de arm_radius no smoothieware
-ou ainda tratada como __*horizontal radius when centered*__. O Repetier chama essa medida de **ROD_RADIUS**, mas
+ou ainda tratada como __*horizontal radius when centered*__. O Repetier chama essa medida de `ROD_RADIUS`, mas
 não configura seu valor. No Marlin antigo, ele não necessariamente era medido: podia ser calculado com a seguinte
 expressão: +
-**DELTA_RADIUS = DELTA_SMOOTH_ROD_OFFSET -- DELTA_EFFECTOR_OFFSET -- DELTA_CARRIAGE_OFFSET**. +
-No comando **M665**, é o parâmetro **R**.
-* **DELTA_SMOOTH_ROD_OFFSET**, valor não usado mais pelas novas
+`DELTA_RADIUS = DELTA_SMOOTH_ROD_OFFSET -- DELTA_EFFECTOR_OFFSET -- DELTA_CARRIAGE_OFFSET` +
+No comando `M665`, é o parâmetro `R`.
+* `DELTA_SMOOTH_ROD_OFFSET`, valor não usado mais pelas novas
 versões do Marlin, mede a distância horizontal do centro da mesa até o centro da torre. No Repetier, ele tem
-o nome de **PRINTER_RADIUS**, e não é usado no Smoothieware. Como pode não ser usado -- não prejudicaria as
+o nome de `PRINTER_RADIUS`, e não é usado no Smoothieware. Como pode não ser usado -- não prejudicaria as
 transformações? Na verdade, se for ignorado o tamanho do effector e se considerá-lo como um ponto, os cálculos
 da delta são basicamente os mesmos, mudando apenas o tamanho da área de impressão horizontal; então, como esse
 dado é apenas o arm_radius com espaçamentos e o tamanho da mesa já é gerenciado pelo fatiador, o smoothieware
@@ -8909,14 +8909,15 @@ todo o procedimento, ela será usada pelo _firmware_ para chegar à coordenada Z
 configurado. Um dos jeitos de medir é usar uma régua perpendicular à mesa e deixar os três braços no ponto
 mais alto (depois de um `G28`), e então fazer a medição; outro jeito é configurar uma altura maior no firmware,
 fazer homing, e então, no LCD ou pela USB, fazer a altura baixar até que o hotend toque a mesa, pegar o valor de
-deslocamento / diferença que aparece no LCD (o G-Code M114 relata a posição se for pela USB) e corrigir o valor
+deslocamento / diferença que aparece no LCD (o G-Code `M114` relata a posição se for pela USB) e corrigir o valor
 do firmware de acordo.  +
-Por exemplo, se coloca no firmware (`Configuration.h`, recompilação e regravação do
-arduino):
+Por exemplo, se coloca no firmware (`Configuration.h`, recompilação e regravação do arduino):
++
 [source,cpp]
 ----------
 #define DELTA_HEIGHT 250.00
 ----------
++
 Sabendo que 250 mm é maior que o valor que se vai medir. Então se
 liga a impressora e se faz __homing__. Navega-se pelos menus do LCD e se vai movendo o eixo Z até que o hotend
 toque na mesa. Tocando na mesa, vê-se uma posição Z de 61.5. Isso quer dizer que a altura dela na verdade é

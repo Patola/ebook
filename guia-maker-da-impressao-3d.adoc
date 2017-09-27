@@ -4027,7 +4027,7 @@ RAMPS, e como a RAMPS se conecta à energia (e em duas conexões de 12 V, uma qu
 que leva até 5A para todo o resto da impressora). Um detalhe importante é que como é a RAMPS que vai gerenciar
 a alta potência do conjunto, é ela que se liga à fonte, não o Arduino Mega em que está conectada. Através de
 um diodo no meio do slot de driver do eixo X, o diodo D1, a alimentação é repassado para o Arduino, de modo que
-ele é ligado em conjunto com o resto da impressora. Se a tensão[[FEITO_ramps]] a ser usada pelo conjunto não
+ele é ligado em conjunto com o resto da impressora. Se a tensão a ser usada pelo conjunto não
 for 12V, ou se a corrente for sujeita a interferências, esse diodo deve ser removido e a conexão deixada em aberto.
 
 [[diagramadasligacoesdaramps]]
@@ -8087,13 +8087,14 @@ image::image214.png[image,width=564,height=459,align="center",title="Recozimento
 O estudo não parece ter resultado em artigo acadêmico, carecendo por isso de citação formal.
 . https://www.youtube.com/watch?v=CZX8eHC7fws[_https://www.youtube.com/watch?v=CZX8eHC7fws_]
 ====
+
 === Pintura
 
 Tratando de impressão 3D FFF, pintura surge como um assunto inevitável, até pela limitação da tecnologia
-em fabricar com cores diversas. Se por um lado é v[[FEITO_pintura]]erdade que existem muitas peças em que a
+em fabricar com cores diversas. Se por um lado é verdade que existem muitas peças em que a
 pintura é irrelevante, o fato é que para muitas ela é parte da função e para outras ela se apresenta como uma
 indispensável vantagem de acabamento. Além disso a pintura pode atuar como reforço, proteção, revestimento e
-para omissão dos incômodos e aparentes rel[[porosidade]]evos de camada e serrilhamentos que aparecem nas peças
+para omissão dos incômodos e aparentes relevos de camada e serrilhamentos que aparecem nas peças
 (função que compartilham com as massas de preenchimento, que por conveniência trataremos em conjunto).
 
 E para podermos entender como a pintura funciona, vale a pena aprendermos um pouco por trás da ciência de
@@ -8133,7 +8134,8 @@ meio externo. Esse filme faz com que o movimento de um objeto seja mais difícil
 que quando ele está completamente submerso. A força necessária para romper um filme de 1cm de comprimento é
 chamada de tensão superficial e medida em dinas (10^-5^ N) por centímetro.
 
-image::image215.png[image,width=642,height=386]
+[[molhabilidadboaeruim]]
+image::image215.png[image,width=642,height=386,align="center",title="As diferentes molhabilidades das superfícies. Próxima de 0°, a molhabilidade é quase perfeita. Até 90° é considerada boa. Acima disso, é ruim."]
 
 Para um líquido formar uma superfície uniforme sobre um sólido -- o efeito que desejamos ao aplicar nele
 a tinta -, é necessário que sua tensão superficial seja inferior às forças adesivas entre o líquido e o
@@ -8149,9 +8151,9 @@ forças adesivas entre a tinta e o plástico (30 dinas/cm).^3^
 Segue uma tabela^4^ de tensões superficiais e ângulos de contato de plásticos utilizados em impressão 3D e
 utensílios de dia-a-dia.
 
-[cols=",,,",]
+[cols=",,,",frame="topbot",options="header"]
 |==========================================================================================
-|*Abreviação*				|*Polímero*					|*Energia de Superfície em dinas/cm*	|*Ângulo de contato (graus)*
+|Abreviação				|Polímero					|Energia de Superfície em dinas/cm	|Ângulo de contato (graus)
 |					|Nylon 6/6 (poliexametileno adipamida)		|46					|
 |PC					|Policarbonato					|46					|75
 |					|Nylon-6 ou Poliamida				|6					|38
@@ -8189,18 +8191,17 @@ de modo a criar condições para a ancoragem de tintas, adesivos e outros revest
 pode até ser usado "amadoristicamente" com peças de ABS, passando bem rapidamente um maçarico sobre sua
 superfície para polarizá-la, e logo depois o pintar.
 
-1 -
-http://www.ebah.com.br/content/ABAAAgjicAH/pintura-pecas-plasticos[_http://www.ebah.com.br/content/ABAAAgjicAH/pintura-pecas-plasticos_]
-
-2 -
-_http://www.revistatecnologiagrafica.com.br/index.php?option=com_content&id=1481:tratamenhttp://www.revistatecnologiagrafica.com.br/index.php?option=com_content&id=1481:tratamento-superficial-de-filmes-plasticos&Itemid=183[­to-superficial-de-filmes-plasticos&Itemid=183]_
-
-3 -- Uma explicação mais detalhada das forças de coesão e adesão de um líquido
+[NOTE]
+.Notas:
+====
+. http://www.ebah.com.br/content/ABAAAgjicAH/pintura-pecas-plasticos[_http://www.ebah.com.br/content/ABAAAgjicAH/pintura-pecas-plasticos_]
+. http://www.revistatecnologiagrafica.com.br/index.php?option=com_content&id=1481\:tratamen­to-superficial-de-filmes-plasticos&Itemid=183[_http://www.revistatecnologiagrafica.com.br/index.php?option=com_content&id=1481:tratamen­to-superficial-de-filmes-plasticos&Itemid=183_]
+. Uma explicação mais detalhada das forças de coesão e adesão de um líquido
 em um substrato plástico pode ser obtida neste excelente artigo em português:
 http://abflexo.org.br/artigo-tecnico/tensao-superficial-em-substratos-plasticos[_http://abflexo.org.br/artigo-tecnico/tensao-superficial-em-substratos-plasticos_].
-
-4 -- A tabela deste livro foi baseada nesta referência, com algumas modificações e seleções:
+. A tabela deste livro foi baseada nesta referência, com algumas modificações e seleções:
 http://www.tstar.com/blog/bid/33845/surface-energy-of-plastics[_http://www.tstar.com/blog/bid/33845/surface-energy-of-plastics_]
+====
 
 ==== A prática: tintas
 
@@ -8331,7 +8332,7 @@ revestimentos e proteções. Para conveniência e brevidade, trataremos apenas d
 lembrança que o espírito _maker_ criativo pode utilizar sempre de ferramentas de outras áreas em um processo
 de "exaptação". E como sempre, referências adicionais são dadas para leitura complementar sobre o assunto^1^.
 
-_*Demãos*_ -- o processo de pintura quase nunca é imediato -- exige paciência, treino e método, não apenas no
+__**Demãos**__ -- o processo de pintura quase nunca é imediato -- exige paciência, treino e método, não apenas no
 momento da aplicação, mas também na _estratégia_ de aplicação de tintas e revestimentos. Na quase totalidade
 das vezes, apenas aplicar o líquido no material nunca dá o efeito desejado: ao secar, a cor pode enfraquecer,
 ou o líquido pode adentrar no poro e deixar seções sem cor, ou simplesmente ser insuficiente para trazer a
@@ -8345,7 +8346,7 @@ os de pintura exigem 3 a 5 demãs para máxima qualidade e algumas poucas horas 
 enquanto que os de revestimento, especialmente os mais grossos, costumam pedir de 1 a 2 dias e no máximo 2 demãos,
 sendo isso apenas uma regra geral com consideráveis exceções.
 
-_*Limpeza do pincel*_ -- nada mais frustrante que pegar o pincel para cobrir sua peça e somente encontrar uma
+__**Limpeza do pincel**__ -- nada mais frustrante que pegar o pincel para cobrir sua peça e somente encontrar uma
 massa dura de cerdas que praticamente não tem mais utilidade. Ainda que seja um insumo descartável, a limpeza
 do pincel faz parte das boas práticas de acabamento e estende sua vida útil. A seguir algumas sugestões:
 
@@ -8364,7 +8365,7 @@ aspecto da peça.
 * Pincéis no fim da vida útil podem ser utilizados para os produtos de aderência como _primer_
 e __primer filler__, visto que neles a coloração não é importante.
 
-_*Spray*_ -- uma alternativa ao uso dos pincéis são as tintas em aerossol (spray), especialmente por aderirem
+__**Spray**__ -- uma alternativa ao uso dos pincéis são as tintas em aerossol (spray), especialmente por aderirem
 e entranharem mais facilmente às superfícies serrilhadas das impressões 3D. Outra vantagem é que sua natureza
 descartável significa que não precisam de limpeza. Por outro lado, os aerossóis servem apenas para áreas
 grandes de pintura (até porque precisam de certa distância da peça -- geralmente uns 30 cm ou mais) e embora
@@ -8399,21 +8400,21 @@ caneta. Uma proporção muito grossa fará o facho ser irregular, expelir perdig
 muito rala fará o facho ser fraco e não aderir corretamente à superfície. A consistência e diluição ideais
 variam de acordo com tinta e fabricante e são obtidas por um processo de experiência, tentativa e erro^4^.
 
-image::image216.jpeg[image,width=642,height=356]
+[[aerografoophirdegravidade]]
+image::image216.jpeg[image,width=642,height=356,align="center",title="Um aerógrafo da marca Ophir, de gravidade (com o copinho na parte de cima) e dupla ação, com mini-compressor acoplado. Esse modelo sai a cerca de 54 dólares no sítio chinês aliexpress, http://alixp.rs/oiyza"]
 
-*Notas:*
-
-*1* -- Um excelente e completo artigo de artesanato sobre
+[NOTE]
+.Notas:
+====
+. Um excelente e completo artigo de artesanato sobre
 pincéis pode ser encontrado na página especializada __Cozinha da Pintura__:
 http://www.cozinhadapintura.com/2011/11/pinceis.html[_http://www.cozinhadapintura.com/2011/11/pinceis.html_]. Outra
 referência boa em duas partes, dessa vez sobre materiais das cerdas, é no portal de artesanato __FazFácil__:
 http://www.fazfacil.com.br/artesanato/pinceis-artisticos-tipos/[_http://www.fazfacil.com.br/artesanato/pinceis-artisticos-tipos/_]
-
-*2* -- É útil saber a diferença prática entre usar um compressor de ar
+. É útil saber a diferença prática entre usar um compressor de ar
 fixo e um compressor de ar portátil, explicada pelo canal "Tom Plasti":
 https://www.youtube.com/watch?v=SC4R3Vjl7Bs[_https://www.youtube.com/watch?v=SC4R3Vjl7Bs_].
-
-*3* -- O _Schnauzer Site de Plastimodelismo_ tem uma matéria bem detalhada sobre aerógrafos,
+. O _Schnauzer Site de Plastimodelismo_ tem uma matéria bem detalhada sobre aerógrafos,
 com uma seção ilustrada especialmente útil sendo a que detalha os tipos de equipamentos:
 http://www.spmodelismo.com.br/material/aerografo/tipos.php[_http://www.spmodelismo.com.br/material/aerografo/tipos.php_].
 Como muitas das técnicas para o uso do aparelho são melhor compreendidas visualmente,
@@ -8425,14 +8426,14 @@ https://www.youtube.com/watch?v=rfICHkdKUsg[_https://www.youtube.com/watch?v=rfI
 canal _Kaka Craft_ tem uma ótima avaliação de como e quando usar aerógrafo e a comparação de
 seus resultados com o do pincel, "Pincel x Aerógrafo (+compressor de ar). Qual o melhor?", em
 https://www.youtube.com/watch?v=j9KNcGb9Fh4[_https://www.youtube.com/watch?v=j9KNcGb9Fh4_].
-
-*4* -- Já foi dito que experiência é o tipo de sabedoria mais difícil de ensinar. Um exemplo
+. Já foi dito que experiência é o tipo de sabedoria mais difícil de ensinar. Um exemplo
 utilizando tinta acrílica, e com várias dicas de como procurar a diluição ideal para cada tinta com um
 método auto-corretivo, vendo a resposta visual de cada borrifação, é dada pelo canal "Tom Plasti":
 https://www.youtube.com/watch?v=ueS7W5AJOJA[_https://www.youtube.com/watch?v=ueS7W5AJOJA_]. O vídeo levanta ainda
 a importante lição de sempre limpar o aerógrafo depois de cada uso, pois o líquido pode curar ou endurecer
 dentro da agulha de aplicação e aí a limpeza pode ser bastante complicada ou até impossível, com a caneta
 tendo que ser substituída em alguns casos.
+====
 
 === Manutenção e Cuidados com a Impressora 3D
 
@@ -8493,7 +8494,8 @@ colocada entre os dois motores para nivelamento. Coloca-se no carro X um _relóg
 e então se gira um ou outro motor para abaixar ou levantar cada eixo, até que se os deixe paralelos -- isto é,
 em todo lugar que o relógio comparador tocar na superfície pela extensão do carro X, dará a mesma medida.
 
-image::image217.png[image,width=634,height=343]
+[[suportepararelogiocomparador]]
+image::image217.png[image,width=634,height=343,align="center",title="O autor disponibilizou dois modelos de suporte para relógio comparador no thingiverse, um para prusa e outro para Sethi3d AiP: https://www.thingiverse.com/thing:385846 e https://www.thingiverse.com/thing:38569 - podendo ser usados para o nivelamento dos eixos."]
 
 Conformações diferentes de eixos -- por exemplo, que toquem um elemento paralelo, ao invés da mesa de impressão
 -- exigirão estratégias diferentes, mas que podem ser inferidas a partir da mostrada. No caso ilustrado,
@@ -8519,7 +8521,8 @@ espessura entre a ponta do hotend e a mesa -- geralmente um cartão de visitas. 
 agilidade desse procedimento, como o uso de porcas borboleta ao invés de porcas comuns para poderem ser ajustadas
 com a mão, ou mesmo designs impressos de sites de impressão 3D.
 
-image::image218.jpeg[image,width=642,height=216]
+[[bedlevelingkits]]
+image::image218.jpeg[image,width=642,height=216,align="center",title="Buscando por "bed leveling kit" no thingiverse, encontram-se vários designs úteis de diferentes níveis de sofisticação para auxiliar na tarefa de nivelamento de mesa manual. A maioria deles consiste de botões rotatórios para ajustes rápidos do nível dos cantos."]
 
 * **Empenamento da mesa**: problema especialmente comum em mesas grandes, pode ocorrer de, ao se tentar
 nivelar uma mesa de impressão, perceber que não é a inclinação o problema, e sim a superfície não ser
@@ -8560,11 +8563,11 @@ do autor: https://www.youtube.com/watch?v=NZ1dRB3ZXNc[_https://www.youtube.com/w
 disto sendo uma perceptível diminuição da qualidade de extrusão e entupimentos frequentes. Deve-se desmontar
 o hotend e remover o tubo para verificação. A troca deste tubo é simples e barata, a desmontagem e montagem
 do hotend sendo a parte mais trabalhosa.
-** Em hotends __*all-metal*__, se o tubo interno de metal arranhar,
+** Em hotends __**all-metal**__, se o tubo interno de metal arranhar,
 é necessário substituí-lo. Soluções caseiras como uso de broca não funcionam, visto que essa parte interna
 precisa de polimento especial para funcionar bem com o plástico derretido.
-** O __*heatbreak*__, apesar de ser
-uma peça feita com duríssimo aço inoxidável, é uma peça bastante fina que, com alguma pressão mecânica,
+** O __**heatbreak**__, apesar de ser
+uma peça feita com duríssimo aço inoxidável, é também bastante fina e, com alguma pressão mecânica,
 pode deformar ou se dobrar, e tentativas de endireitá-la não funcionam. É outra peça que, se estragada, deve-se
 trocar. Para evitar problemas com o heatbreak, evite bater o hotend contra a mesa.
 ** Como se pode ver, partes diferentes do hotend exigem trocas, mas as *peças individuais* podem ser difíceis de achar ou até, dependendo do
@@ -8633,7 +8636,8 @@ como os de mesa aquecida e extrusor, mas sua colocação precisa ser bem planeja
 cada elo da lagarta tem uma pequena portinhola que permite que a lagarta seja removida e recolocada sem precisar
 desconectar os fios, mas são mais difíceis de achar.
 
-image::image219.jpeg[image,width=642,height=239]
+[[organizacaofiosecabos1]]
+image::image219.jpeg[image,width=642,height=239,align="center",title="Alguns modelos de aparatos que ajudam a organização de fios e cabos. 1: tira enforca-gato. 2: espiral organizadora. 3: malha náutica. 4: lagarta porta-cabos. Essas sugestões não são exaustivas - alguns makers e até fabricantes utilizam tubos termo-retráteis para organizar seus cabos, por exemplo."]
 
 ==== Lubrificação
 
@@ -8653,9 +8657,12 @@ desejadas. Como se pode inferir pela descrição, as graxas geralmente serão ma
 diferentes de óleos e ainda mais tipos diferentes de graxas, mas para nossas finalidades o mais adequado é manter
 o assunto simplificado. Lubrificantes em geral servem para^2^:
 
-* Converter em atrito sólido para atrito líquido, reduzindo a perda de energia; * Reduzir o contato entre
-as superfícies e assim o desgaste; * Proteger as superfícies contra substâncias corrosivas como ácidos ou
-oxigênio; * Evitar a formação de sujeira;
+* Converter em atrito sólido para atrito líquido, reduzindo a perda de energia;
+* Reduzir o contato entre
+as superfícies e assim o desgaste;
+* Proteger as superfícies contra substâncias corrosivas como ácidos ou
+oxigênio;
+* Evitar a formação de sujeira;
 
 E em especial, as graxas, por serem mais espessas, costumam cumprir as seguintes funções adicionais:
 
@@ -8733,18 +8740,18 @@ por seu uso principal como solvente ou remover de ferrugem. Uso nas peças de im
 sua lubrificação, formação de "pelotas" de sujeira, aumento do atrito e desgaste, e remove a lubrificação
 interna dos rolamentos.
 
-Notas:
-
-1 - http://www.machinerylubrication.com/Read/923/grease-oil[_http://www.machinerylubrication.com/Read/923/grease-oil_]
+[NOTE]
+.Notas:
+====
+. http://www.machinerylubrication.com/Read/923/grease-oil[_http://www.machinerylubrication.com/Read/923/grease-oil_]
 -- texto bem explicado e curto, em inglês, sobre quando usar graxa e quando usar óleo.
-
-2 -- Em português:
+. Em português:
 http://www.dolphingrupo.com.br/blog/20-08-15/lubrificar-máquinas-é-preciso[_http://www.dolphingrupo.com.br/blog/20-08-15/lubrificar-m%C3%A1quinas-%C3%A9-preciso_]
 http://www.dolphingrupo.com.br/blog/20-08-15/lubrificar-máquinas-é-preciso-mas-é-melhor-usar-graxa-ou-óleo[_-mas-%C3%A9-melhor-usar-graxa-ou-%C3%B3leo_]
-
-3 -- Como sempre, o wiki do projeto reprap -- em inglês - tem informações úteis sobre o assunto. Tenha
+. Como sempre, o wiki do projeto reprap -- em inglês - tem informações úteis sobre o assunto. Tenha
 em mente no entanto que alguns dos compostos sugeridos na página podem ser difíceis de encontrar no Brasil:
 http://reprap.org/wiki/Lubrication[_http://reprap.org/wiki/Lubrication_]
+====
 
 ==== O Pesadelo: Calibração de uma delta
 
@@ -8764,7 +8771,9 @@ raramente idênticas. Nas deltas de mercado, a variabilidade é maior, em parte 
 diferença de custo. Os dois modelos mais famosos, Kossel e Rostock, têm muitas derivações diferentes de variados
 tamanhos e compleições, e cada fabricante toma liberdades em suas medidas que as diferenciam ainda mais. Assim,
 não há valores "padrão" em que se basear exceto para alguns poucos modelos comerciais de maior sucesso.
-+ image:image220.jpeg[image,width=568,height=422]
+
+[[delta1impressoratiko1]]
+image::image220.jpeg[image,width=568,height=422,align="center",title="Tiko, impressora financiada no Kickstarter cujo maior diferencial é o corpo de uma peça só usinada (&quot;unibody&quot;), evitando os problemas de assimetria e medidas (fonte: kickstarter.com)"]
 
 * *Dificuldade de obtenção das medidas* -- em cima do fator de despadronização, as deltas em sua montagem têm
 "pontos livres" cujo posicionamento durante a montagem não é exato, como a altura de onde se prende o endstop
@@ -8777,8 +8786,8 @@ outras e não podem ser aferidas de maneira simples. Isso transforma um problema
 de múltiplas equações, com variáveis difíceis de isolar. Como exemplos, temos as coordenadas X-Y-Z --
 calculadas pelas posições dos braços nos pilares - e o DELTA_RADIUS, a principal medida de uma delta, calculado
 a partir de outras três medidas. **Isso também dificulta bastante o entendimento intuitivo dessas medidas**,
-de modo que fica difícil "abstrair" o que pode estar dando errado.  * *Falta de ponto de referência* --
-Três pontos no espaço tridimensional têm um único plano passando por eles; os três endstops de uma delta,
+de modo que fica difícil "abstrair" o que pode estar dando errado.
+* *Falta de ponto de referência* -- Três pontos no espaço tridimensional têm um único plano passando por eles; os três endstops de uma delta,
 no topo da carcaça, definem o plano de inclinação das impressões. Numa construção ideal, a altura deles nos
 postes seria perfeitamente simétrica e definiriam um plano completamente horizontal. Na vida real, os endstops
 estarão em alturas diferentes e a inclinação do plano terá que ser aferida para correção; entretanto, o
@@ -8788,33 +8797,43 @@ que ser encontradas simultaneamente ao valor da concavidade ou convexidade resul
 dos eixos -- que também deve ser corrigido para resultar em um plano. Essa é a maior armadilha das deltas e a
 razão de sua calibração ser demorada: qualquer que seja o método usado, são necessárias várias iterações
 de aproximações sucessivas até se estabelecer um ponto de referência com precisão razoável. As variáveis
-que queremos achar são: 1.  *Medidas iniciais* aproximadas dos elementos de interesse. Vamos medir partes da
+que queremos achar são:
+. *Medidas iniciais* aproximadas dos elementos de interesse. Vamos medir partes da
 delta que permitirão ao firmware fazer as transformações de eixos (A, B, C) para (X, Y, Z) usando cálculos
 trigonométricos. Essas medidas têm diferentes nomenclaturas em diferentes firmwares, vamos listar dos três
-mais conhecidos.  2.  *Distância do bico* (na sua posição mais alta) **à mesa**. Vamos chamar de __*h*__. (de
+mais conhecidos.
+. *Distância do bico* (na sua posição mais alta) **à mesa**. Vamos chamar de __*h*__. (de
 __height__, _*altura*_ em inglês). No Marlin, ele é o ajuste **DELTA_HEIGHT**, no Repetier *Z_MAX_LENGTH* e no
 Smoothieware **gamma_max**. Por ser relativamente fácil de obter, fácil de corrigir, e portanto fácil de iterar
-em uma delta comum com endstops máximos, será a nossa "âncora" para medidas.  3.  *Deslocamento* (offset) *de
+em uma delta comum com endstops máximos, será a nossa "âncora" para medidas.
+. *Deslocamento* (offset) *de
 cada endstop de cada torre* (inclinação do plano). Se as torres são A, B e C, vamos chamá-los de D~A~, D~B~ e D~C~.
-
++
+[[delta1torresabc]]
 image::image221.png[image,width=642,height=551,title="Visão de cima de uma delta, sendo ressaltadas as torres A, B e C (perceba que estão em sentido anti-horário) e as coordenadas X e Y, com a origem (0,0) no centro da mesa. A coordenada Z é a altura. A equivalência entre A, B e C e X, Y e Z é importante para as transformações trigonométricas que mapeiam coordenadas das torres em coordenadas cartesianas. Ressalte-se que a sequência ABC começa do canto inferior esquerdo e vai no sentido anti-horário. Dependendo da documentação consultada, tais torres podem aparecer como Alpha, Beta, Gamma ou mesmo X, Y e Z (causando confusão com os eixos cartesianos)."]
-
-image::image222.png[image,width=642,height=424]
-
-1.  **Concavidade**. Essa pode ser a parte mais difícil de ser compreendida, e se traduz no seguinte: quando as
++
+[[delta1tresendstops]]
+image::image222.png[image,width=642,height=424,align="center",title="Em uma delta ideal com simetria total e medias exatas, os três endstops superiores estariam em um plano perfeitamente horizontal, mas na prática terão um desnível/deslocamento, geralmente por volta dos décimos de milímetros."]
++
+. **Concavidade**. Essa pode ser a parte mais difícil de ser compreendida, e se traduz no seguinte: quando as
 medidas dos componentes estão erradas, a transformação trigonométrica de coordenadas nos pilares A, B e C para
 X, Y e Z tem o sintoma de transformar um plano em uma seção convexa ou côncava. Quer dizer, se você mandar o
 extrusor desenhar um quadrado num plano de altura específica, ao invés disso você terá como se fosse um quadrado
-desenhado na superfície de uma esfera.  2.  **Distância angular entre as torres**. Na verdade _não usaremos_
+desenhado na superfície de uma esfera.
+. **Distância angular entre as torres**. Na verdade _não usaremos_
 essas variáveis. As deltas têm três torres, e embora idealmente os ângulos delas devessem ser exatamente iguais
 (3 ângulos de 120°), na fabricação ou montagem pode haver alguma irregularidade. Adicionalmente, alguns modelos
 de delta podem adotar ângulos diferentes -- por exemplo, dois ângulos de 130° e um de 100°. Mas esse caso
 é tão raro, e as irregularidades de montagem quando existem são tão diminutas, que não interferem em nada na
 qualidade de impressão nas grandezas em que vamos trabalhar. De qualquer jeito, firmwares como Marlin e Repetier
-têm ajustes especiais para tratar esses casos -- não abordados aqui.  3.  **Inclinação da mesa**. Assim como
+têm ajustes especiais para tratar esses casos -- não abordados aqui.
+. **Inclinação da mesa**. Assim como
 o plano dos endstops, a mesa pode ter uma inclinação não visível a olho nu. Essa inclinação complicaria pois
 seria composta com o plano dos endstops. Ao invés de medi-la e tentar corrigi-la, é possível _não usá-la_
-sem perder precisão, de modo explicado a seguir.  + image:image223.png[image,width=618,height=512]
+sem perder precisão, de modo explicado a seguir.
++
+[[delta1tresfontesdeerros]]
+image::image223.png[image,width=618,height=512,align="center",title="Três das maiores fontes de erros e assimetria da construção de uma delta."]
 
 * Entendido que vamos tirar as medidas apenas para os itens **1, 2 e 3**, a idéia é __começar com tudo mecanicamente
 acertado e uniforme__, ou pelo menos o mais uniforme praticável: _simetria_ é mais importante que _precisão_
@@ -8826,92 +8845,112 @@ o mesmo nível. Deste modo se elimina a preocupação da inclinação da mesa da
 impresso, deve ter sido impresso em uma impressora 3D bem calibrada, para não apresentar assimetria radial. As
 correias devem estar perfeitamente esticadas, sem nenhuma folga. Os motores dos eixos devem ser do mesmo tamanho e
 se possível mesma marca e fabricante. Autonivelamento de mesa deve estar desligado (podendo ser religado depois da
-calibração).  * O EEPROM do microcontrolador (no caso do Repetier e Marlin, que usam arduino) deve estar ligado,
+calibração).
+* O EEPROM do microcontrolador (no caso do Repetier e Marlin, que usam arduino) deve estar ligado,
 para que a correção de deslocamento seja gravada nela. É possível fazer os ajustes com a EEPROM desligada,
-mas os valores serão perdidos quando a impressora for desligada.  * Dois comandos em G-Code farão a correção:
-o *M666* faz a correção dos endstops. O *M665* faz a correção da concavidade.  * O número de passos por mm do
+mas os valores serão perdidos quando a impressora for desligada.
+* Dois comandos em G-Code farão a correção:
+o `M666` faz a correção dos endstops. O `M665` faz a correção da concavidade.
+* O número de passos por mm do
 firmware nas torres deve ser colocado a partir das peças usadas na delta, não pela mensuração da distância
 percorrida. Como para o caso das impressoras cartesianas, use a _prusa calculator_ para calcular os números de
 acordo com as peças.
 
-image::image224.png[image,width=642,height=530]
+[[delta1prusacalculator]]
+image::image224.png[image,width=642,height=530,align="center",title="Prusa calculator. Exemplo do cálculo dos E-steps por mm com correia GT2 (2mm), polia de 20 dentes e passo do driver em 1/32."]
 
 Um exemplo seria o caso ilustrado na figura. Julgando que o motor do extrusor já foi medido e é de 760 passos
-por mm, a linha do Configuration.h no Marlin seria:
+por mm, a linha do `Configuration.h` no Marlin seria:
 
+[source,cpp]
+----------
 #define DEFAULT_AXIS_STEPS_PER_UNIT \{ 160, 160, 160, 760 } // 160.00 obtido da prusa calculator pros eixos
+----------
 
-Outros requisitos são: os endstops devem estar todos disparando quando tocados (G-Code M119 para verificar)
-e portanto o comando G28 deve estar funcionando e os motores devem se mover na direção certa.
+Outros requisitos são: os endstops devem estar todos disparando quando tocados (G-Code `M119` para verificar)
+e portanto o comando `G28` deve estar funcionando e os motores devem se mover na direção certa.
 
 * *Medidas para a transformação inicial.* Essa seção pode parecer confusa, pois cada firmware usa uma
 nomenclatura diferente. Erros nessas medidas são os responsáveis pelo abaulamento (convexidade ou concavidade)
 da impressão. As medidas tiradas supõem que as três torres da delta são idênticas e uniformemente espaçadas,
 logo só se mede uma torre. Meça com uma régua e não se preocupe muito com valores exatos -- essas mesmas
 medidas serão corrigidas na frente. Os principais elementos de interesse aparecem na figura. A nomenclatura usada
-é a do Marlin atigo (antes da versão 1.1.0). Essas medidas são também as que o G-Code *M665* usa como parâmetros.
+é a do Marlin atigo (antes da versão 1.1.0). Essas medidas são também as que o G-Code `M665` usa como parâmetros.
 
+[[delta1partesamedir]]
 image::image225.png[image,width=642,height=427]
 
 As medidas são quase todas horizontais, _delta_diagonal_rod_ sendo a única na diagonal:
 
 * *DELTA_DIAGONAL_ROD* (o comprimento do braço da delta) está no arquivo Marlin.ino nas versões antigas e
 no Configuration.h nas versões novas do Marlin. Também tem o nome de *DELTA_DIAGONAL_ROD* no Configuration.h
-do Repetier, e no smoothieware se chama **arm_length**. Outro nome com que é referenciado é __*diagonal rod
-length*__. No comando **M665**, é o parâmetro **L**.
+do Repetier, e no smoothieware se chama **arm_length**. Outro nome com que é referenciado é __**diagonal rod length**__.
+No comando `M665`, é o parâmetro **L**.
 * **DELTA_RADIUS**, a distância horizontal do parafuso do
 braço no effector até o outro parafuso do braço no carro do trilho, é chamada de arm_radius no smoothieware
 ou ainda tratada como __*horizontal radius when centered*__. O Repetier chama essa medida de **ROD_RADIUS**, mas
 não configura seu valor. No Marlin antigo, ele não necessariamente era medido: podia ser calculado com a seguinte
-expressão: + **DELTA_RADIUS = DELTA_SMOOTH_ROD_OFFSET -- DELTA_EFFECTOR_OFFSET -- DELTA_CARRIAGE_OFFSET**. No
-comando **M665**, é o parâmetro **R**.
+expressão: +
+**DELTA_RADIUS = DELTA_SMOOTH_ROD_OFFSET -- DELTA_EFFECTOR_OFFSET -- DELTA_CARRIAGE_OFFSET**. +
+No comando **M665**, é o parâmetro **R**.
 * **DELTA_SMOOTH_ROD_OFFSET**, valor não usado mais pelas novas
 versões do Marlin, mede a distância horizontal do centro da mesa até o centro da torre. No Repetier, ele tem
 o nome de **PRINTER_RADIUS**, e não é usado no Smoothieware. Como pode não ser usado -- não prejudicaria as
 transformações? Na verdade, se for ignorado o tamanho do effector e se considerá-lo como um ponto, os cálculos
 da delta são basicamente os mesmos, mudando apenas o tamanho da área de impressão horizontal; então, como esse
 dado é apenas o arm_radius com espaçamentos e o tamanho da mesa já é gerenciado pelo fatiador, o smoothieware
-se isenta de usá-lo. O comando M665 também não mexe neste valor.  + Com esses três dados colocados no firmware
-ou arquivo de configuração, já é desejável aferir a altura do bico.
+se isenta de usá-lo. O comando M665 também não mexe neste valor.
 
-* A *altura do bico* (parâmetro H do G-Code M665) servirá primariamente como referência para evitar que o hotend
-afunde na mesa e _precisará ser refeita e regravada no firmware/EEPROM_ a cada nova iteração de medidas. Após
+Com esses três dados colocados no firmwareou arquivo de configuração, já é desejável aferir a altura do bico.
+
+* A *altura do bico* (parâmetro H do G-Code `M665`) servirá primariamente como referência para evitar que o hotend
+afunde na mesa e __precisará ser refeita e regravada no firmware/EEPROM__ a cada nova iteração de medidas. Após
 todo o procedimento, ela será usada pelo _firmware_ para chegar à coordenada Z zero sem autonivelamento de mesa
 configurado. Um dos jeitos de medir é usar uma régua perpendicular à mesa e deixar os três braços no ponto
-mais alto (depois de um G28), e então fazer a medição; outro jeito é configurar uma altura maior no firmware,
+mais alto (depois de um `G28`), e então fazer a medição; outro jeito é configurar uma altura maior no firmware,
 fazer homing, e então, no LCD ou pela USB, fazer a altura baixar até que o hotend toque a mesa, pegar o valor de
 deslocamento / diferença que aparece no LCD (o G-Code M114 relata a posição se for pela USB) e corrigir o valor
-do firmware de acordo.  + Por exemplo, se coloca no firmware (Configuration.h, recompilação e regravação do
-arduino): #define DELTA_HEIGHT 250.00 -- sabendo que 250 mm é maior que o valor que se vai medir - e então se
+do firmware de acordo.  +
+Por exemplo, se coloca no firmware (`Configuration.h`, recompilação e regravação do
+arduino):
+[source,cpp]
+----------
+#define DELTA_HEIGHT 250.00
+----------
+Sabendo que 250 mm é maior que o valor que se vai medir. Então se
 liga a impressora e se faz __homing__. Navega-se pelos menus do LCD e se vai movendo o eixo Z até que o hotend
 toque na mesa. Tocando na mesa, vê-se uma posição Z de 61.5. Isso quer dizer que a altura dela na verdade é
-250 - 61.5mm, ou seja, 188.5mm. Muda-se então no firmware para #define DELTA_HEIGHT 188.50. Alternativamente,
-o valor pode ser ajustado dinamicamente por G-Code com o comando M665 H188.50.  * Agora vem a parte crítica:
+250 - 61.5mm, ou seja, 188.5mm. Muda-se então no firmware para [source,cpp]##define DELTA_HEIGHT 188.50#. Alternativamente,
+o valor pode ser ajustado dinamicamente por G-Code com o comando `M665 H188.50`.
+* Agora vem a parte crítica:
 sabemos que temos dois ajustes pra fazer -- o primeiro é a __inclinação dos endstops__, e pra esses por
 enquanto nem medidas temos. O segundo é o __abaulamento__, que estará perto das medidas reais, pois fizemos
-aferição inicial da DELTA_DIAGONAL_ROD e demais variáveis. No entanto, essas medidas ainda terão erros e o
-plano deve apresentar uma leve curvatura. Por qual dos dois começar? Os erros de um não vão prejudicar o outro?
-+ A resposta para esse dilema é se aproveitar de uma propriedade geométrica dessas estruturas. Mesmo o plano
+aferição inicial da `DELTA_DIAGONAL_ROD` e demais variáveis. No entanto, essas medidas ainda terão erros e o
+plano deve apresentar uma leve curvatura. Por qual dos dois começar? Os erros de um não vão prejudicar o outro? +
+A resposta para esse dilema é se aproveitar de uma propriedade geométrica dessas estruturas. Mesmo o plano
 abaulado com maior erro ainda será simétrico com as quinas, pois ele se utiliza da propriedade de as medidas das
 três torres serem exatamente iguais. Por outro lado, a inclinação dos endstops vem justamente da diferença
 de altura deles em cada torre, e será assimétrico por torre. Um *triângulo equilátero* com centro na origem
 e com os vértices na *direção das torres* terá cada um de seus vértices exatamente na mesma altura!
 
-image::image226.png[image,width=642,height=408]
+[[delta1pontosequidistantes]]
+image::image226.png[image,width=642,height=408,align="center",title="Os pontos equidistantes 1, 2 e 3 da ilustração, mesmo com erro de abaulamento, por serem simétricos às torres estarão exatamente na mesma altura. Aqui desenhado sem erro de inclinação, para visualização distinta do assunto."]
 
 * E o melhor tamanho para tal triângulo é tal que seus vértices fiquem a meia distância entre a posição (X,Y)
 do endstop e o centro da mesa, porque aí teremos uma proporção simples (metade) para saber o deslocamento /
 erro do endstop:
 
-image::image227.png[image,width=642,height=336]
+[[delta1metadedadistancia]]
+image::image227.png[image,width=642,height=336,align="center",title="Se &quot;2a&quot; é a distância do centro até o endstop, &quot;a&quot; é metade dessa distância. Uma inclinação &quot;b&quot; detectada no triângulo vermelho será equivalente a uma inclinação &quot;2b&quot; nas coordenadas (X,Y) do endstop."]
 
 * Quanto vale _2a_ neste caso? Oras, é um valor que já medimos: **DELTA RADIUS + DELTA_EFFECTOR_OFFSET**! Basta
-portanto pegar este valor e dividir por 2, para saber o tamanho _a_ da mediana do triângulo vermelho!  * Poupado
-o trabalho de calcular os três pontos do triângulo equilátero, eles são, em (X,Y), relativos a um tamanho de
+portanto pegar este valor e dividir por 2, para saber o tamanho _a_ da mediana do triângulo vermelho!
+* Poupado o trabalho de calcular os três pontos do triângulo equilátero, eles são, em (X,Y), relativos a um tamanho de
 mediana __a__: (0,__a__), (-0.866×__a__, -0.5×__a__) e (0.866×__a__, -0.5×__a__). Essas medidas são tiradas
 das propriedades do triângulo equilátero.^2^
 
-image::image228.png[image,width=642,height=459]
+[[delta1triequilatero]]
+image::image228.png[image,width=642,height=459,align="center",title="Medidas do triângulo equilátero que iremos usar para medir deslocamentos dos endstops. Por exemplo: se a distância do centro da mesa até a torre é de **150mm**, &quot;a&quot; valerá 75mm, e as coordenadas serão (0, 75), (-64.95, -37.5), (64.95, -37.5). Apesar de o padrão numérico brasileiro usar vírgulas em númers fracionários, pontos foram usados para evitar confusões com as coordenadas."]
 
 * Agora, tendo os pontos do triângulo e entendendo que o que vamos fazer é descobrir a inclinação do plano dos
 endstops, é bom saber que existem jeitos distinto de lidar com as medidas a ser coletadas. Fazer a movimentação
@@ -8920,134 +8959,223 @@ também permitem controle pela USB através de um print host (enviando comandos 
 mostrada. Como alguns comandos serão repetidos várias vezes, nessa hora vale a pena conhecer bem o print host
 usado pra ver se suporta _macros_ ou _atalhos_ -- scripts simples facilmente acessíveis para operações repetitivas.
 
-image::image229.png[image,width=642,height=340]
+[[delta1pronterfacemacros]]
+image::image229.png[image,width=642,height=340,align="center",title="O Print Host Pronterface permite configurar macros, o que evita ter que teclar o mesmo comando várias vezes. Outros print hosts têm recursos ainda mais avançados, como parâmetros a passar."]
 
 * Eis o que vamos fazer: vamos posicionar o bico do hotend nos três pontos do triângulo na coordenada zero
 (encostados na mesa). Em cada um desses pontos vamos, com uma régua ou paquímetro, medir a diferença. Após
 conseguir esses números, vamos colocá-los como correções das torres no firmware e refazer os testes, vendo
-se ficaram nivelados. Mas há algumas observações a tomar: ** Se o plano dos endstops está inclinado, é
-quase certo que **um dos pontos estará numa coordenada "abaixo da mesa"**, ou seja, o hotend vai **bater na
-plataforma de impressão**. Isso pode, claro, estragar o bico ou a mesa, e infelizmente a maioria das receitas
+se ficaram nivelados. Mas há algumas observações a tomar:
+** Se o plano dos endstops está inclinado, é
+quase certo que **um dos pontos estará numa coordenada "abaixo da mesa"**, ou seja, o hotend vai **bater na plataforma de impressão**.
+Isso pode, claro, estragar o bico ou a mesa, e infelizmente a maioria das receitas
 de calibração de delta não avisa desse risco. Para evitar que isso aconteça, use primeiro uma coordenada Z
-(parâmetro "Z__número__" no G-Code) alta, como Z20 (20mm acima da mesa) só para determinar de olho, nesse
+(parâmetro "Z__número__" no G-Code) alta, como `Z20` (20mm acima da mesa) só para determinar de olho, nesse
 plano, qual é o ponto do triângulo mais baixo. Uma vez determinado e medido, fica fácil ir diminuindo o Z
 gradativamente de modo que o bico nunca colida na mesa. Assim que tal ponto mínimo for achado, é recomendado
-atualizar a DELTA_HEIGHT no firmware para refletir isso. Por exemplo: se o ponto *3* do triângulo é o mais
+atualizar a `DELTA_HEIGHT` no firmware para refletir isso. Por exemplo: se o ponto *3* do triângulo é o mais
 baixo, e se quando ele encosta na mesa o firmware acusa a coordenada Z "1.6", isso significa que a altura da
-impressora está especificada 1.6 mm a mais do que alcançável. Se DELTA_HEIGHT for 240 (por exemplo), deve-se
-baixá-la para 238.4 (que ainda não será o valor real, só obtido no final de todas as calibrações).  + Pode
-acontecer ainda que a coordenada Z em que o hotend encostaria na mesa seria negativa e o firmware não permite que
+impressora está especificada 1.6 mm a mais do que alcançável. Se `DELTA_HEIGHT` for 240 (por exemplo), deve-se
+baixá-la para 238.4 (que ainda não será o valor real, só obtido no final de todas as calibrações).  +
+Pode acontecer ainda que a coordenada Z em que o hotend encostaria na mesa seria negativa e o firmware não permite que
 o hotend se desloque em uma coordenada dessas. Se for este o caso, no Marlin e Repetier deve-se mudar a definição
-de *Z_MIN_POS* para um número negativo (e.g. -20) no **Configuration.h**. No Smoothieware, não é necessário.
-** Para evitar maiores riscos, faremos que o hotend tente um ponto, _*volte ao topo da impressora com homing*_
+de *Z_MIN_POS* para um número negativo (e.g. -20) no `Configuration.h`. No Smoothieware, não é necessário.
+** Para evitar maiores riscos, faremos que o hotend tente um ponto, __**volte ao topo da impressora com homing**__
 e só então tente outro ponto. O movimento lateral entre os pontos poderia raspar na mesa, por causa do erro de
-abaulamento ainda presente.  ** Dependendo de como a delta é montada, para a inclinação do plano dos endstops
+abaulamento ainda presente.
+** Dependendo de como a delta é montada, para a inclinação do plano dos endstops
 o leitor pode optar por **mexer fisicamente nos endstops da impressora**, movendo-os mais para cima ou para
 baixo na torre, ou informar esta correção no firmware, para que ele compense. A solução aqui descrita é a
-última, *realizar a correção nos parâmetros* sem mudar fisicamente nada.  ** G-Codes usados: *** *M665* --
-ajustar configuração de abaulamento + Parâmetros: **** L__número__ -- DELTA_DIAGONAL_ROD **** R__número__
--- DELTA_RADIUS **** H__número__ -- DELTA_HEIGHT *** *M666* -- ajustar configuração de desnível (plano
-dos endstops)^3^ + Parâmetros: **** X__número__ -- deslocamento na torre A, negativo para baixo, positivo
-para cima.  **** Y__número__ -- deslocamento na torre B.  **** Z__número__ -- deslocamento na torre C.  *
-Vamos então começar o procedimento.  ** Vamos considerar que tiramos as seguintes medidas para a impressora: ***
-DELTA_HEIGHT é 200mm. Na prática, raramente será tão exata.  *** (DELTA_RADIUS + DELTA_EFFECTOR_OFFSET), ou
-seja, a distância horizontal do centro da mesa até o endstop, é **150mm**. As coordenadas do nosso triângulo,
-portanto, serão _*a*_ (-64.95, -37.5), _*b*_ (64.95, -37.5) e _*c*_ (0, 75). Os pontos foram nomeados de acordo
-com a torre perto da qual estão (A, B, C).  ** Primeiramente, ligamos a impressora na USB, disparamos nosso print
+última, *realizar a correção nos parâmetros* sem mudar fisicamente nada.
+** G-Codes usados:
+*** *M665* -- ajustar configuração de abaulamento +
+Parâmetros:
+**** `L__número__` -- `DELTA_DIAGONAL_ROD`
+**** `R__número__` -- `DELTA_RADIUS`
+**** `H__número__` -- `DELTA_HEIGHT`
+*** *M666* -- ajustar configuração de desnível (plano dos endstops)^3^ +
+Parâmetros:
+**** `X__número__` -- deslocamento na torre A, negativo para baixo, positivo
+para cima.
+**** `Y__número__` -- deslocamento na torre B.
+**** `Z__número__` -- deslocamento na torre C.
+* Vamos então começar o procedimento.
+** Vamos considerar que tiramos as seguintes medidas para a impressora:
+*** `DELTA_HEIGHT` é 200mm. Na prática, raramente será tão exata.
+*** (`DELTA_RADIUS` + `DELTA_EFFECTOR_OFFSET`), ou seja, a distância horizontal do centro da mesa até o endstop, é **150mm**. As coordenadas do nosso triângulo,
+portanto, serão _**a**_ (-64.95, -37.5), _**b**_ (64.95, -37.5) e _**c**_ (0, 75). Os pontos foram nomeados de acordo
+com a torre perto da qual estão (A, B, C).
+** Primeiramente, ligamos a impressora na USB, disparamos nosso print
 host predileto e enviamos o comando de _homing_ e então o comando para ir no primeiro ponto, na coordenada Z 20
-(20mm acima da mesa) para não termos riscos de bater nela: *** G28 + G1 X-64.95 Y-37.5 Z20 ** Repetimos para
-os outros dois: *** G28 + G1 X64.95 Y-37.5 Z20 *** G28 + G1 X0 Y75 Z20 ** Percebemos que de olho o ponto _*a*_
-(-64.95, -37.5) é o mais baixo de todos. Lentamente, abaixamos a até que toque na mesa: *** G28 + G1 X-64.95
-Y-37.5 Z15 ; continua acima da mesa + G1 X-64.95 Y-37.5 Z10 ; continua acima da mesa + G1 X-64.95 Y-37.5 Z8 ;
-continua acima da mesa + G1 X-64.95 Y-37.5 Z4 ; toca na mesa ** Redefinimos a DELTA_HEIGHT então para 4 mm menor,
-já que é o Z encontrado. 200 -- 4 = 196mm. Se o Z encontrado fosse negativo, adicionaríamos o número.  ***
-M665 H196.00 + M500 ; grava na EEPROM ou config....txt ** De novo, mandamos pela USB os comandos para as coordenadas
-do triângulo, mas dessa vez já para o ponto zero (encostado na mesa): *** G28 + G1 X-64.95 Y-37.5 Z0 *** G28 +
-G1 X64.95 Y-37.5 Z0 *** G28 + G1 X0 Y75 Z0 ** Como o ponto _*a*_ é o nosso ponto mais baixo, ele deve tocar na
+(20mm acima da mesa) para não termos riscos de bater nela: +
+[source,gcode]
+----------
+G28
+G1 X-64.95 Y-37.5 Z20
+----------
+ ** Repetimos para os outros dois:
+[source,gcode]
+----------
+G28
+G1 X64.95 Y-37.5 Z20
+G28
+G1 X0 Y75 Z20
+----------
+** Percebemos que de olho o ponto __**a**__ (-64.95, -37.5) é o mais baixo de todos. Lentamente, abaixamos a até que toque na mesa:
+[source,gcode]
+----------
+G28
+G1 X-64.95 Y-37.5 Z15 ; continua acima da mesa
+G1 X-64.95 Y-37.5 Z10 ; continua acima da mesa
+G1 X-64.95 Y-37.5 Z8 ; continua acima da mesa
+G1 X-64.95 Y-37.5 Z4 ; toca na mesa
+----------
+
+** Redefinimos a `DELTA_HEIGHT` então para 4 mm menor, já que é o Z encontrado. 200 - 4 = 196mm. Se o Z encontrado fosse negativo, adicionaríamos o número.
+[source,gcode]
+----------
+M665 H196.00
+M500 ; grava na EEPROM ou config.txt
+----------
+** De novo, mandamos pela USB os comandos para as coordenadas
+do triângulo, mas dessa vez já para o ponto zero (encostado na mesa):
+[source,gcode]
+----------
+G28
+G1 X-64.95 Y-37.5 Z0
+G28
+G1 X64.95 Y-37.5 Z0
+G28
+G1 X0 Y75 Z0
+----------
+** Como o ponto _*a*_ é o nosso ponto mais baixo, ele deve tocar na
 mesa e os outros ficarão acima. Um resultado possível colocando em cada ponto e medindo a distância bico-mesa
 com paquímetro ou régua:
 
-image::image230.png[image,width=642,height=382]
+[[delta1planoinclinado]]
+image::image230.png[image,width=642,height=382,align="center",title="Nossas medidas colocaram o ponto *a* encostado na mesa (como esperado) e os pontos *b* e *c* tiveram uma distância de 0,3mm e 0,4mm respectivamente."]
 
-* Medimos uma diferença de Z de 0.3mm pra *b* e 0,4mm pra **c**. Mas precisamos saber a altura em que o centro
+** Medimos uma diferença de Z de 0.3mm pra *b* e 0,4mm pra **c**. Mas precisamos saber a altura em que o centro
 (0,0) está para poder inferir a altura relativa de cada ponto. Para isso, basta tirar a média aritmética das
-alturas (0+0.3+0.4)/3 = 0.233... Isso significa que o centro está em (0,0,0.233...), o ponto _*a*_ está 0.233 mais
-baixo que o centro, o ponto _*b*_ está 0,066... mais alto que o centro e o ponto _*c*_ está 0,166... mais alto
+alturas (0+0.3+0.4)/3 = 0.233... Isso significa que o centro está em (0,0,0.233...), o ponto __**a**__ está 0.233 mais
+baixo que o centro, o ponto __**b**__ está 0,066... mais alto que o centro e o ponto __**c**__ está 0,166... mais alto
 que o centro. Podemos usar agora a proporção do dobro: o deslocamento da torre *B* será 0,0666...×2 = 0.13 mm
 (arredondado) e o deslocamento da torre *C* será 0.1666...×2, ou seja, 0.33 arredondado. Redefinimos o nosso
-DELTA_HEIGHT para refletir o Z do centro da mesa com M665 e colocamos os modificadores das torres A, B e C pelo
-comando M666. O novo DELTA_HEIGHT será 0.23 mm acima, ou seja, menor: ** M665 H195.77 ; redefine DELTA_HEIGHT para
-o centro ficar com Z=0 + M666 X+0.23 Y-0.13 Z-0.33 ; colocam-se os deslocamentos + M500 ; grava na EEPROM/config *
-Uma estratégia alternativa que envolve não redefinir o DELTA_HEIGHT seria simplesmente deixar a torre "A",
-a mais baixa encontrada, como zero, e compensar nos outros deslocamentos. Assim: ** M666 X0 Y-0.36 Z-0.56 ;
-deslocamentos compensados com A em 0 + M500 ; grava na EEPROM/config * Mandamos o hotend novamente para as três
-coordenadas, para ver se a correção saiu como esperado: ** G28 + G1 X-64.95 Y-37.5 Z0.2 ; continua acima da mesa +
-G1 X-64.95 Y-37.5 Z0 ; tocou a mesa ** G28 + G1 X64.95 Y-37.5 Z0.2 ; continua acima da mesa + G1 X64.95 Y-37.5 Z0 ;
-tocou a mesa ** G28 + G1 X0 Y75 Z0.2 ; continua acima da mesa + G1 X0 Y75 Z0 ; tocou a mesa.  * O hotend deve ter
-encostado na mesa nos três casos. A inclinação foi corrigida, fica faltando o abaulamento. Caso não tenha dado
-certo, reefetue as medidas e repita o procedimento.  * Agora vamos consertar o abaulamento. Para isso, o ponto que
-vamos precisar é o ponto central da mesa. Com o abaulamento, ele não estará no mesmo plano de __*a*__, _*b*_
-e __*c*__. Ele estará ou abaixo -- caso tenhamos uma deformação convexa -- ou acima -- caso tenhamos uma
+`DELTA_HEIGHT` para refletir o Z do centro da mesa com `M665` e colocamos os modificadores das torres A, B e C pelo
+comando `M666`. O novo `DELTA_HEIGHT` será 0.23 mm acima, ou seja, menor:
+[source,gcode]
+----------
+M665 H195.77 ; redefine DELTA_HEIGHT para o centro ficar com Z=0
+M666 X+0.23 Y-0.13 Z-0.33 ; colocam-se os deslocamentos
+M500 ; grava na EEPROM/config
+----------
+** Uma estratégia alternativa que envolve não redefinir o `DELTA_HEIGHT` seria simplesmente deixar a torre **A**,
+a mais baixa encontrada, como zero, e compensar nos outros deslocamentos. Assim:
+[source,gcode]
+----------
+M666 X0 Y-0.36 Z-0.56 ; deslocamentos compensados com A em 0
+M500 ; grava na EEPROM/config
+----------
+** Mandamos o hotend novamente para as três coordenadas, para ver se a correção saiu como esperado:
+[source,gcode]
+----------
+G28
+G1 X-64.95 Y-37.5 Z0.2 ; continua acima da mesa
+G1 X-64.95 Y-37.5 Z0 ; tocou a mesa
+G28
+G1 X64.95 Y-37.5 Z0.2 ; continua acima da mesa
+G1 X64.95 Y-37.5 Z0 ; tocou a mesa
+G28
+G1 X0 Y75 Z0.2 ; continua acima da mesa
+G1 X0 Y75 Z0 ; tocou a mesa.
+----------
+
+** O hotend deve ter encostado na mesa nos três casos. A inclinação foi corrigida, fica faltando o abaulamento. Caso não tenha dado
+certo, reefetue as medidas e repita o procedimento.
+** Agora vamos consertar o abaulamento. Para isso, o ponto que
+vamos precisar é o ponto central da mesa. Com o abaulamento, ele não estará no mesmo plano de __**a**__, __**b**__
+e __**c**__. Ele estará ou abaixo -- caso tenhamos uma deformação convexa -- ou acima -- caso tenhamos uma
 deformação côncava. No caso de estar abaixo, se mandarmos o hotend para a coordenada (0,0,0) ele vai colidir com
-a mesa, então como no caso anterior vamos colocar a uma altura arbitrária por segurança: ** G28 + G1 X0 Y0 Z20 *
-Colocamos "Z20" para o hotend ficar a 20mm acima da mesa. Então calculamos essa diferença, medindo a altura a
-que o hotend realmente ficou.  * Digamos que o hotend parou a 18,4mm acima da mesa. Isso quer dizer que ele parou
+a mesa, então como no caso anterior vamos colocar a uma altura arbitrária por segurança:
+[source,gcode]
+----------
+G28
+G1 X0 Y0 Z20
+----------
+** Colocamos "Z20" para o hotend ficar a 20mm acima da mesa. Então calculamos essa diferença, medindo a altura a
+que o hotend realmente ficou.
+** Digamos que o hotend parou a 18,4mm acima da mesa. Isso quer dizer que ele parou
 1,6mm (20-18,4) abaixo do plano dos endstops. Se tivesse parado a 21,4 acima da mesa, ele teria parado _-1,4mm_
 (20-21,4) _abaixo_ do plano dos endstops, ou melhor dizendo, 1,4mm _acima_ do plano dos endstops. Conforme a figura:
 
+[[delta1planorecalculado]]
 image::image231.png[image,width=642,height=349]
 
-* Apesar de DELTA_RADIUS ser uma grandeza na horizontal e termos medido um deslocamento vertical, a relação
-trigonométrica entre as duas faz com que esse deslocamento possa ser adicionado ou diminuído de DELTA_RADIUS, para
+* Apesar de `DELTA_RADIUS` ser uma grandeza na horizontal e termos medido um deslocamento vertical, a relação
+trigonométrica entre as duas faz com que esse deslocamento possa ser adicionado ou diminuído de `DELTA_RADIUS`, para
 que o ponto centra fique no mesmo plano. Essa conta pode ser feita em etapas, por exemplo, supondo que medimos 1,6mm
-_abaixo_ do plano dos endstops, e que o DELTA_RADIUS medido com régua foi cadastrado como __110mm__. Precisamos
-_diminuir_ DELTA_RADIUS de 1,6mm e 110-1,6 = 108,4. Vamos diminuir um pouco menos, para 108.6. Lembrando que *M665
-R__número__* ajusta DELTA_RADIUS: ** M666 R108.6 ; ajusta DELTA_RADIUS + M500 ; grava no firmware / config + G28 ;
-homing + G1 X0 Y0 Z10 ; margem de segurança, para não batermos na mesa. + G1 X0 Y0 Z5 ; margem de segurança,
-ainda estamos longe + G1 X0 Y0 Z1 ; ainda não encostou + G1 X0 Y0 Z0.1 ; encostou na mesa. Estamos acima do
-plano. + M666 R108.5 ; diminuímos DELTA_RADIUS de um décimo de milímetro + M500 ; gravamos no firmware + G28 ;
-homing para zerar às posições + G1 X0 Y0 Z0.1 ; não encostou na mesa, mas ficou bem próximo. + G1 X0 Y0 Z0 ;
-o hotend encostou na mesa. Calibramos DELTA_RADIUS!  * Terminou? Não. Ajustamos DELTA_RADIUS mas um valor ainda
-pode estar errado, o DELTA_DIAGONAL_ROD. O sintoma de um DELTA_DIAGONAL_ROD errado (ele é o tamanho do braço,
-lembre-se) são distâncias horizontais erradas na mesma proporção que ele. Se o DELTA_DIAGONAL_ROD estiver duas
+_abaixo_ do plano dos endstops, e que o `DELTA_RADIUS` medido com régua foi cadastrado como __110mm__. Precisamos
+_diminuir_ `DELTA_RADIUS` de 1,6mm e 110-1,6 = 108,4. Vamos diminuir um pouco menos, para 108.6. Lembrando que `M665
+R__número__` ajusta `DELTA_RADIUS`:
+[source,gcode]
+----------
+M666 R108.6 ; ajusta DELTA_RADIUS
+M500 ; grava no firmware / config
+G28 ; homing
+G1 X0 Y0 Z10 ; margem de segurança, para não batermos na mesa.
+G1 X0 Y0 Z5 ; margem de segurança, ainda estamos longe
+G1 X0 Y0 Z1 ; ainda não encostou
+G1 X0 Y0 Z0.1 ; encostou na mesa. Estamos acima do plano.
+M666 R108.5 ; diminuímos DELTA_RADIUS de um décimo de milímetro
+M500 ; gravamos no firmware
+G28 ; homing para zerar às posições
+G1 X0 Y0 Z0.1 ; não encostou na mesa, mas ficou bem próximo.
+G1 X0 Y0 Z0 ; o hotend encostou na mesa. Calibramos DELTA_RADIUS!
+----------
+** Terminou? Não. Ajustamos `DELTA_RADIUS` mas um valor ainda
+pode estar errado, o `DELTA_DIAGONAL_ROD`. O sintoma de um `DELTA_DIAGONAL_ROD` errado (ele é o tamanho do braço,
+lembre-se) são distâncias horizontais erradas na mesma proporção que ele. Se o `DELTA_DIAGONAL_ROD` estiver duas
 vezes menor que o real, por exemplo, e você mandar imprimir um quadrado de uma camada de altura, ele imprimirá o
-quadrado com arestas da metade do tamanho desejado.  + image:image232.png[image,width=618,height=602]
-* Esse fator nos dá a receita para achar o erro do DELTA_DIAGONAL_ROD: o meio mais simples é, se a impressora
+quadrado com arestas da metade do tamanho desejado.
+
+[[delta1medidasdobradas]]
+image::image232.png[image,width=618,height=602,align="center",title="(a) medidas &quot;ideais&quot;; (b) braço com o dobro do tamanho. Neste caso, um movimento de um pilar se traduz em um movimento no plano XY duas vezes maior (2y), mas o movimento em Z não muda a escala (imagine os três pilares descendo juntos, eles percorrerão a mesma distância de antes). Portanto, se você informa ao firmware um DELTA_DIAGONAL_ROD duas vezes maior do que o real, a distância realmente percorrida será duas vezes menor."]
+
+** Esse fator nos dá a receita para achar o erro do `DELTA_DIAGONAL_ROD`: o meio mais simples é, se a impressora
 estiver com o extrusor funcionando, fazer ela imprimir um quadrado chato de tamanho conhecido -- digamos, _100mm x
 100mm_ de lado e 1mm de altura. Mede-se o lado impresso, suponhamos que tenha dado _96mm_ de lado. Isso quer dizer
-que ele precisa ser 100 / 94 = 1,041666... vezes maior. Digamos, ainda, que o DELTA_DIAGONAL_ROD cadastrado seja
+que ele precisa ser 100 / 94 = 1,041666... vezes maior. Digamos, ainda, que o `DELTA_DIAGONAL_ROD` cadastrado seja
 _240mm_ (pode-se usar o comando M666 sem parâmetros para saber). Multiplica-se 240 por 1,041666..., chegando-se
-a 250mm. G-Code: **M666 L250**. Seguindo de um comando *M500* para gravar os ajustes, nossa calibração da delta
-estaria finalizada^4^.  * Se sua impressora não estiver ainda com o hotend ou tracionador funcionais, você pode
-mandar imprimir sem filamento -- o que se chama de "dry run", ou execução seca -- e ir seguindo a trajetória
+a 250mm. G-Code: `M666 L250`. Seguindo de um comando `M500` para gravar os ajustes, nossa calibração da delta
+estaria finalizada^4^.
+** Se sua impressora não estiver ainda com o hotend ou tracionador funcionais, você pode
+mandar imprimir sem filamento -- o que se chama de "dry run", ou __execução seca__ -- e ir seguindo a trajetória
 do hotend com um lápis ou caneta. Algumas pessoas vão além e ao invés de colocar um hotend funcionado, deixam
 uma caneta presa no extrusor e mandam imprimir: a primeira camada será desenhada na base (colocando-se um papel
 preso a ela).
 
-Notas:
-
-1 -- O endereço clássico com instruções sem figuras e bem resumidas, em inglês, de como
+[NOTE]
+.Notas:
+====
+. O endereço clássico com instruções sem figuras e bem resumidas, em inglês, de como
 calibrar uma delta: __http://minow.blogspot.com.br/index.html#4918805519571907051__. Outro
 endereço que passa uma receita mais bem explicada, também é inglês, é este:
 http://cdr2.com/delta-calibration.html[_http://cdr2.com/delta-calibration.html_]
-
-2 -- O venerado site matemático _wolfram alpha_ tem os detalhes para os interessados (em inglês):
+. O venerado site matemático _wolfram alpha_ tem os detalhes para os interessados (em inglês):
 http://mathworld.wolfram.com/EquilateralTriangle.html[_http://mathworld.wolfram.com/EquilateralTriangle.html_]
-
-3 -- O firmware _Repetier_ tem um comportamento diferente de Marlin e Smoothieware, com deslocamentos positivos
+. O firmware _Repetier_ tem um comportamento diferente de Marlin e Smoothieware, com deslocamentos positivos
 para baixo, e pelo menos em algumas versões o uso de passos de motor ao invés de mm. Para encontrar o valor
 em passos, multiplique pelo valor encontrado pela calculadora prusa para os passos do motor por mm, por exemplo:
 0,3mm × 160 passos por mm = 48 passos. Caso o comando não funcione adequadamente, pode ser necessário partir
 para o ajuste pelos menus do LCD.
-
-4 -- A receita que passamos serve para os três principais firmwares: Marlin, Repetier e Smoothieware. No entanto,
+. A receita que passamos serve para os três principais firmwares: Marlin, Repetier e Smoothieware. No entanto,
 a receita do site do Smoothieware sugere um expediente um pouco diferente, que usa além dos explicados o G-Code M306
 (ausente no Marlin e Repetier), que reseta a posição zero da impressora para a coordenada atual. A calibração
 pelo smoothieware está descrita de forma sucinta na seção "Manual Calibration" de seu tutorial de delta:
 http://smoothieware.org/delta[_http://smoothieware.org/delta_]
+====
 
-1.  [[section-10]] === + [[calibração-automática-de-delta-com-g33-marlin-somente]] === Calibração automática
-de delta com G33 (Marlin somente)
+==== Calibração automática de delta com G33 (Marlin somente)
 
 Depois de toda esta via crúcis que é a calibração de uma delta, o leitor pode se estar perguntando se __não
 existe jeito mais fácil__! Em especial, em diversos momentos da calibração foi necessário tomar medidas da
@@ -9067,125 +9195,123 @@ devem ter sido configurados com exatidão, preferencialmente usando a __prusa ca
 
 E cabem as seguintes observações sobre o método:
 
-* Os valores obtidos são: ** DELTA_HEIGHT (Height:__número__) ** Deslocamento da Torre A (Ex:__±número__)
-** Deslocamento da Torre B (Ey:__±número__) ** Deslocamento da Torre C (Ez:__±número__) ** DELTA_RADIUS
-(Radius:número) ** Desvio-padrão da iteração (uma medida que diz a precisão obtida, quanto menor melhor)
-** (opcional) desvios de ângulos das torres A, B e C (Tx, Ty e Tz).  * Ele calcula quase todas as variáveis
-restantes, _menos_ o DELTA_DIAGONAL_ROD, o tamanho do braço, já que seu erro não é medido verticalmente e
+* Os valores obtidos são:
+** `DELTA_HEIGHT` (`Height:__número__`)
+** Deslocamento da Torre A (`Ex:__±número__`)
+** Deslocamento da Torre B (`Ey:__±número__`)
+** Deslocamento da Torre C (`Ez:__±número__`)
+** `DELTA_RADIUS` (`Radius:número`)
+** Desvio-padrão da iteração (uma medida que diz a precisão obtida, quanto menor melhor)
+** (opcional) desvios de ângulos das torres **A**, **B** e **C** (`Tx`, `Ty` e `Tz`).
+* Ele calcula quase todas as variáveis restantes, _menos_ o `DELTA_DIAGONAL_ROD`, o tamanho do braço, já que seu erro não é medido verticalmente e
 sim horizontalmente, fora das capacidades da sonda Z. Isso quer dizer que no final da calibração automática
-ainda será necessário imprimir um quadrado de testes para a correção da medida no firmware.  * Uma benesse é
+ainda será necessário imprimir um quadrado de testes para a correção da medida no firmware.
+* Uma benesse é
 que se as torres não estiverem em ângulos perfeitos de 120° uma da outra, ele consegue também detectar esta
 disparidade. Mas como essa é uma imprecisão rara na construção de deltas, aconselhamos a deixar desligada
-tal detecção.  * O algoritmo tem precisão arbitrária, que pode ser configurada em número de iterações ou
-desvio padrão mínimo.  * O comando ajusta as correções na memória mas não grava na EEPROM. É preciso se
-lembrar de executar o G-Code M500 no final do procedimento.
+tal detecção.
+* O algoritmo tem precisão arbitrária, que pode ser configurada em número de iterações ou
+desvio padrão mínimo.
+* O comando ajusta as correções na memória mas não grava na EEPROM. É preciso se
+lembrar de executar o G-Code `M500` no final do procedimento.
 
 Consideradas todas essas observações, depois de um G28, o comando para a autocalibração de delta é o
-**G33**. Ele calcula automaticamente um quadrado na mesa que ocupa a maioria de sua área. O comando aceita os
+`G33`. Ele calcula automaticamente um quadrado na mesa que ocupa a maioria de sua área. O comando aceita os
 seguintes parâmetros:
 
-* *Pnúmero* -- número de pontos de sondagem da aresta do quadrado.  ** *P1* -- sonda apenas o centro da mesa e
-infere a altura.  ** *P2* -- sonda um quadrado 2x2 ** *P3* a *P7* -- sonda quadrados 3x3, 4x4 etc. É necessário
+* *Pnúmero* -- número de pontos de sondagem da aresta do quadrado.
+** *P1* -- sonda apenas o centro da mesa e
+infere a altura.
+** *P2* -- sonda um quadrado 2x2
+** *P3* a *P7* -- sonda quadrados 3x3, 4x4 etc. É necessário
 no mínimo P3 para ele medir as imprecisões de ângulos das torres.
 * **T0**/**T1**: Com 0, não calibra os
-ângulos das torres. Com 1, calibra tais ângulos. Aconselha-se T0. O default é T1 para P>2.  * *C__número__*
--- calibra para uma dada precisão; por exemplo, C0.03 calcula para que o desvio padrão seja no máximo de 0,03mm,
-levando tantas iterações quanto necessárias.  * *F__número__* -- força pelo menos _número_ iterações serem
-executadas antes de sair do procedimento.  * *V__número__* -- modo de execução: ** *V0* -- Modo _dry-run_
-(execução a seco). Apenas relata os ajustes, mas não configura.  ** *V1* -- Relata os ajustes.  ** *V2* --
-Relata os ajustes e os resultados que obtém da sonda Z.
+ângulos das torres. Com 1, calibra tais ângulos. Aconselha-se T0. O default é T1 para P>2.
+* *C__número__* -- calibra para uma dada precisão; por exemplo, C0.03 calcula para que o desvio padrão seja no máximo de 0,03mm,
+levando tantas iterações quanto necessárias.
+* *F__número__* -- força pelo menos _número_ iterações serem
+executadas antes de sair do procedimento.
+* *V__número__* -- modo de execução:
+** *V0* -- Modo _dry-run_ (execução a seco). Apenas relata os ajustes, mas não configura.
+** *V1* -- Relata os ajustes.
+** *V2* -- Relata os ajustes e os resultados que obtém da sonda Z.
 * **E0**/**E1**: Usado no caso de sonda Z retrátil. Com 0
 (default), não recolhe nem estende a sonda. Com 1, recolhe e estende a sonda a cada medição.
 
-Exemplos de execução do comando. Saída do comando mostrada em verde:
+Exemplos de execução do comando:
 
 G33 P4 C0.05 T0 ; sonda 16 pontos (4×4) e pára quando um desvio-padrão
-
-; de 0,05mm é alcançado. Calibra DELTA_HEIGHT, endstops
-
-; e DELTA_RADIUS, não calibra ângulos das torres.
-
+[source,gcode]
+----------
+G33 P4 C0.05 T0 ; sonda 16 pontos (4×4) e pára quando um desvio-padrão
+                ; de 0,05mm é alcançado. Calibra DELTA_HEIGHT, endstops
+                ; e DELTA_RADIUS, não calibra ângulos das torres.
+----------
+Com a saída:
+[source]
+----------
 G33 Auto Calibrate
-
 Checking... AC
-
-.Height:297.78 Ex:+0.00 Ey:+0.00 Ez:+0.00 Radius:100.00
-
-Iteration : 01 std dev:0.317
-
-.Height:297.65 Ex:-0.15 Ey:-0.16 Ez:+0.00 Radius:100.80
-
-Iteration : 02 std dev:0.059
-
-.Height:297.66 Ex:-0.17 Ey:-0.13 Ez:+0.00 Radius:100.91
-
-Calibration OK std dev:0.042
-
-.Height:297.66 Ex:-0.17 Ey:-0.13 Ez:+0.00 Radius:100.91
-
+.Height:297.78    Ex:+0.00  Ey:+0.00  Ez:+0.00    Radius:100.00
+Iteration : 01                                    std dev:0.317
+.Height:297.65    Ex:-0.15  Ey:-0.16  Ez:+0.00    Radius:100.80
+Iteration : 02                                    std dev:0.059
+.Height:297.66    Ex:-0.17  Ey:-0.13  Ez:+0.00    Radius:100.91
+Calibration OK                                    std dev:0.042
+.Height:297.66    Ex:-0.17  Ey:-0.13  Ez:+0.00    Radius:100.91
 Save with M500 and/or copy to Configuration.h
+----------
 
 Ou ainda:
 
+[source,gcode]
+----------
 G33 ; calibra com ajustes default
-
+----------
+Saída:
+[source]
+----------
 G33 Auto Calibrate
-
 Checking... AC
-
-.Height:297.77 Ex:+0.00 Ey:+0.00 Ez:+0.00 Radius:100.00
-
-.Tower angle : Tx:+0.00 Ty:+0.00 Tz:+0.00
-
-Iteration : 01 std dev:0.306
-
-.Height:297.65 Ex:-0.15 Ey:-0.14 Ez:+0.00 Radius:100.77
-
-.Tower angle : Tx:-0.02 Ty:+0.11 Tz:+0.00
-
-Iteration : 02 std dev:0.049
-
-.Height:297.67 Ex:-0.12 Ey:-0.12 Ez:+0.00 Radius:100.87
-
-.Tower angle : Tx:-0.03 Ty:+0.20 Tz:+0.00
-
-Iteration : 03 std dev:0.033
-
-.Height:297.69 Ex:-0.10 Ey:-0.12 Ez:+0.00 Radius:100.91
-
-.Tower angle : Tx:-0.03 Ty:+0.25 Tz:+0.00
-
-Iteration : 04 std dev:0.031
-
-.Height:297.69 Ex:-0.07 Ey:-0.11 Ez:+0.00 Radius:100.92
-
-.Tower angle : Tx:-0.03 Ty:+0.30 Tz:+0.00
-
-Calibration OK rolling back.
-
-.Height:297.69 Ex:-0.10 Ey:-0.12 Ez:+0.00 Radius:100.91
-
-.Tower angle : Tx:-0.03 Ty:+0.25 Tz:+0.00
-
+.Height:297.77    Ex:+0.00  Ey:+0.00  Ez:+0.00    Radius:100.00
+.Tower angle :    Tx:+0.00  Ty:+0.00  Tz:+0.00
+Iteration : 01                                    std dev:0.306
+.Height:297.65    Ex:-0.15  Ey:-0.14  Ez:+0.00    Radius:100.77
+.Tower angle :    Tx:-0.02  Ty:+0.11  Tz:+0.00
+Iteration : 02                                    std dev:0.049
+.Height:297.67    Ex:-0.12  Ey:-0.12  Ez:+0.00    Radius:100.87
+.Tower angle :    Tx:-0.03  Ty:+0.20  Tz:+0.00
+Iteration : 03                                    std dev:0.033
+.Height:297.69    Ex:-0.10  Ey:-0.12  Ez:+0.00    Radius:100.91
+.Tower angle :    Tx:-0.03  Ty:+0.25  Tz:+0.00
+Iteration : 04                                    std dev:0.031
+.Height:297.69    Ex:-0.07  Ey:-0.11  Ez:+0.00    Radius:100.92
+.Tower angle :    Tx:-0.03  Ty:+0.30  Tz:+0.00
+Calibration OK                                    rolling back.
+.Height:297.69    Ex:-0.10  Ey:-0.12  Ez:+0.00    Radius:100.91
+.Tower angle :    Tx:-0.03  Ty:+0.25  Tz:+0.00
 Save with M500 and/or copy to Configuration.h
+----------
 
-Salve então com o comando M500 e não se esqueça de depois disso imprimir o quadrado e corrigir o DELTA_DIAGONAL_ROD
+Salve então com o comando M500 e não se esqueça de depois disso imprimir o quadrado e corrigir o `DELTA_DIAGONAL_ROD`
 de acordo, como na calibração manual!
 
-Notas:
-
-1 -- O Repetier Firmware implementa um comando "G33" mas tem funcionalidade bem diferente -- serve para
+[NOTE]
+.Nota:
+====
+. O Repetier Firmware implementa um comando "G33" mas tem funcionalidade bem diferente -- serve para
 "distortion correction" de mesa, um autonivelamento mais sofisticado equivalente ao _mesh leveling_ do Marlin.
+====
 
-Malhas
+== Malhas
 
 Na Impressão 3D usamos a representação digital de objetos em 3 dimensões e a submetemos por vários filtros
 até termos aquela série de instruções que a máquina vai executar ao fabricar o objeto. Será necessário
 conhecermos bem as formas de representação usada para garantirmos reprodução precisa do objeto que queremos,
 assim como para poder impedir erros comuns que ocorrem de problemas inerentes ao formato.
 
-1.  [[a-representação-tridimensional-de-objetos]] = A representação tridimensional de objetos 1.  [[coordenadas]]
-== Coordenadas
+=== A representação tridimensional de objetos
+==== Coordenadas
 
 Assim como usamos as coordenadas cartesianas para visualizar figuras e gráficos de *duas dimensões* (largura
 e altura, comumente chamadas de "X" e "Y"), a representação universal de distâncias e dimensões de
@@ -10542,7 +10668,7 @@ nesses fatiadores!^4^
 
 Notas:
 
-[[FEITO_disposicao]]1 -- Ainda assim, é possível editá-lo com um editor de textos comum. Ele se situa em
+. Ainda assim, é possível editá-lo com um editor de textos comum. Ele se situa em
 __cura/resources/definitions__, tem o nome terminado em _.def.json_ e a lista de variáveis com explicação pode
 ser encontrada em https://github.com/Ultimaker/Cura/issues/798[_https://github.com/Ultimaker/Cura/issues/798_]. O
 formato do extrusor é dado pelas variáveis _machine_head_polygon_ e __machine_head_with_fans_polygon__.
@@ -10775,7 +10901,9 @@ podem ajudar bastante. Desde cola branca escolar até produtos feitos especifica
 Spray Cliever e outros), as opções são variadas aqui. É importante verificar a compatibilidade química do
 adesivo considerado com o material que deseja trabalhar.  * *Brim* (bainha) e *Raft* (balsa): são estruturas
 auxiliares que você define no fatiamento e, junto com as outras que apresentaremos, são o tema do próximo
-capítulo.[[FEITO_priming]].  1.  [[estruturas-auxiliares]] == *Estruturas* *auxiliares*
+capítulo.
+
+== *Estruturas* *auxiliares*
 
 Partindo do pressuposto (nem sempre verdadeiro) que a matéria-prima da impressão 3D é barata, nem sempre a peça
 que retiramos da mesa de impressão estará em sua forma final. Dificuldades pragmáticas como aderência à mesa,
@@ -11735,7 +11863,8 @@ https://github.com/manticorp/GcodeArcOptimiser[_https://github.com/manticorp/Gco
 uma versão do interpretador PHP instalada e para ser usado, necessita que um pequeno script seja criado em sua
 pasta (pode ser criado por qualquer editor de textos puro e gravado como "cli.php"):
 
-[cols="",] |============================================================== a| [[FEITO_vimCodeElement1]]<?php
+[cols="",] |============================================================== a|
+<?php
 
 include "functions.php";
 
@@ -12190,7 +12319,7 @@ valem para as coordenadas do extrusor -- ele tem seu próprio status, ajustado p
 
 image::image429.png[image,width=642,height=459]
 
-* [[FEITO_G2_e_G3]]G2 e G3 são comandos de movimentação como G0/G1 mas para arcos, como descritos na seção
+* G2 e G3 são comandos de movimentação como G0/G1 mas para arcos, como descritos na seção
 sobre o problema dos círculos.  * O *G4* é um comando de pausa por tempo. Para uso interativo de G-Code não
 tem realmente utilidade, mas inserido em um arquivo .gcode de impressão pode servir para permitir que um elemento
 esfrie ou aqueça, ou até dar tempo para haver intervenção do operador (apesar que, neste caso, se a máquina

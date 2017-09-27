@@ -6574,7 +6574,8 @@ O PLA não tem boa compatibilidade com colas de cianoacrilato (como "Super Bonde
 posteriormente. Para colar peças com o material colas baseadas em silicone, xileno e poliuretano funcionam melhor,
 como o "Adesivo Flexível Multiuso 3M Scotch® Flex".
 
-image::image185.jpeg[image,width=494,height=422]
+[[plakosselmini]]
+image::image185.jpeg[image,width=494,height=422,align="center",title="Uma peça em PLA sendo impressa em uma impressora delta Kossel Mini com mesa aquecida em 60°C"]
 
 O sítio web _ecycle_ tem uma bela caracterização do PLA do
 ponto de vista de plásticos de engenharia, mercado e ecologia:
@@ -6596,7 +6597,8 @@ curiosamente tem no mercado duas variedades, uma com transição vítrea em 60°
 ao PLA (60°C de mesa, 220°C no extrusor) e tem baixíssimo warp, e uma com certo grau de warp e temperaturas
 próximas do ABS (100-110°C de mesa, 240°C no extrusor).
 
-image::image186.jpeg[image,width=495,height=457]
+[[copopetgtranslucido]]
+image::image186.jpeg[image,width=495,height=457,align="center",title="Copo de PETG impresso, ao lado de uma garrafa PET de refrigerante. Note-se que a peça é apenas decorativa, não se recomenda imprimir itens com fins alimentícios em impressoras 3D comuns."]
 
 === Tritan
 
@@ -6646,7 +6648,8 @@ mas não oferecendo ainda o 6/12 (sendo este comercializado, por exemplo, pela r
 forma mais consistentemente por uma grande faixa de temperaturas e ainda é menos sensível a absorção de água
 que outros nylons (5% de sua densidade em água em 24h, metade dos outros).
 
-image::image187.jpeg[image,width=471,height=427]
+[[npecasnylonrocadeira]]
+image::image187.jpeg[image,width=471,height=427,align="center",title="Copo de PETG impresso, ao lado de uma garrafa PET de refrigerante. Note-se que a peça é apenas decorativa, não se recomenda imprimir itens com fins alimentícios em impressoras 3D comuns."]
 
 Uma vantagem da alta higroscopia do Nylon é ser bastante compatível com tintas e pigmentos, mas por outro
 lado é muito comum impressões com nylon serem arruinadas por causa disso. Uma receita para secar nylons (e que
@@ -6674,7 +6677,7 @@ as altas temperaturas desse _grade_ de ABS permitem uma aderência entre camadas
 superfície com a preservação de detalhes também é notável. É impresso com extrusor em 270°C e temperaturas
 de mesa a 110-120°C.
 
-1.  [[section-8]] == + [[policarbonato]] == Policarbonato
+=== Policarbonato
 
 É um plástico translúcido rígido bastante usado em objetos industriais e até em vidros à prova de bala. É
 extremamente resistente mecanicamente -- principalmente a impacto - e tem também moderada resistência química. Tem
@@ -6765,7 +6768,8 @@ denominado de "stringing" - durante a impressão, que são removidos no final.
 
 ==== TPU
 
-image::image188.png[image,width=642,height=607]
+[[tensordefilamento]]
+image::image188.png[image,width=642,height=607,align="center",title="Uma impressora 3D "reprap" doméstica com algumas adaptações para funcionar com filamentos flexíveis. A peça branca é um &quot;esticador de filamento&quot;, pois se o filamento chega ao extrusor sem tensão de resistência, a chance de &quot;embolar&quot; nos mecanismos aumenta bastante. O tensor de filamento está em https://www.thingiverse.com/thing:692327."]
 
 A sigla significa **T**ermoPlástico **P**oli**u**retano, e embora tecnicamente se enquadrem na categoria de "TPE",
 têm propriedades distintas que os fazem ser tratados de maneira diferente. Semelhantes à borracha -- a própria
@@ -6796,7 +6800,8 @@ para outros fabricantes que fazem os desse tipo. O filamento é PLA com partícu
 3 vezes mais denso que o PLA puro, e sendo impresso nas mesmas temperaturas que o PLA. Ao imprimir, a peça sai fosca
 e para adquirir o tom metálico característico deve ser bastante polida, preferencialmente com uma tamboreadeira.
 
-image::image189.jpeg[image,width=516,height=397]
+[[bronzefillecopperfill]]
+image::image189.jpeg[image,width=516,height=397,align="center",title="Copperfill (esquerda) e bronzefill (direita). As pelotas abaixo são o plástico do filamento em sua cor natural."]
 
 ==== De metal para fundição / sinterização
 
@@ -6815,7 +6820,8 @@ O resultado final, no entanto, impressiona. Afinal, vê-se uma impressora 3D cas
 processadas, equivalem a uma peça de impressão 3D industrial SLM, caríssima. Mas como muita coisa na impressão
 3D, essa ainda é uma das tecnologias que precisa provar seu valor para proliferar em massa.
 
-image::image190.jpeg[image,width=642,height=426]
+[[filametcopperpatola]]
+image::image190.jpeg[image,width=642,height=426,align="center",title="Filamet Copper(tm) em sua forma crua depois de impresso, à esquerda; e depois de passar em processos temporizados para sinterização no forno de mufla, à direita. A forma resultante é metal sólido e conduz eletricidade. Foto do autor."]
 
 ==== Imitação de madeira
 
@@ -6824,7 +6830,8 @@ famosa encarnação sendo a "Laywoo-D3" tem a curiosa propriedade de ter sua cor
 com a temperatura de impressão, que pode ir de 180°C até 240°C. Truques no fatiamento se aproveitando disso
 (iterando temperaturas) podem dar um aspecto bem verossímil de madeira no produto final.
 
-image::image191.jpeg[image,width=385,height=296]
+[[pecalaywood3]]
+image::image191.jpeg[image,width=385,height=296,align="center",title="Peça fabricada com Laywoo-D3"]
 
 ==== Fibra de Carbono
 
@@ -6836,7 +6843,8 @@ com bicos de latão comum pois os destrói rapidamente, devendo ser usados bicos
 até titânio. Devido à própria fibra de carbono, esse filamento é encontrado somente na cor preta e depois de
 impresso tem uma superfície fosca e ligeiramente rugosa.
 
-image::image192.png[image,width=336,height=347]
+[[colorfabbfibradecarbono]]
+image::image192.png[image,width=336,height=347,align="center",title="Colorfabb XT-CF20, um filamento com fibra de carbono."]
 
 === Condutivos
 
@@ -6866,7 +6874,8 @@ uma altura adicional para o bico não raspar na placa.
 Como essa categoria de filamentos não é definida por uma formulação comum, cada fabricante terá suas
 temperaturas recomendadas.
 
-image::image193.png[image,width=564,height=445]
+[[filamentocondutivoblackmagic3d]]
+image::image193.png[image,width=564,height=445,align="center",title="Filamento condutivo com grafeno da Graphene 3D Lab, com resistividade volumétrica anunciada de 0,6Ω/cm³ – fonte: http://filament2print.com/pt/grafeno/653-filamento-conductivo-de-grafeno-175mm.html"]
 
 === Solúveis
 
@@ -6894,7 +6903,8 @@ e sem umidade para não inchar e degradar depois de aberto.
 Outra dificuldade de uso do PVA é que é um filamento extremamente flexível, sofrendo das mesmas limitações
 e propensão à histerese elástica que os TPEs.
 
-image::image194.png[image,width=642,height=435]
+[[filamentopvatranslucido]]
+image::image194.png[image,width=642,height=435,align="center",title="Devido à sua grande capacidade de absorção de água, o PVA é sempre vendido embalado à vácuo para não deteriorar. A coloração bege translúcida lhe é característica."]
 
 ==== Infinity Rinse-Away
 
@@ -6954,7 +6964,7 @@ casos difíceis. As mais importantes de todas são as que mitigam o risco dando 
 
 ==== Proteções
 
-Na indústria, tais proteções são tratas como "EPI" (Equipamentos de Proteção Individual). Os mais
+Na indústria, tais proteções são tratadas com a nomenclatura "EPI" (Equipamentos de Proteção Individual). Os mais
 importantes para nossos casos:
 
 * *Máscara de poeira* -- usada por profissionais de marcenaria, útil para quando se removem suportes e lascas
@@ -6989,13 +6999,15 @@ de fontes de combustão ou elétricas, crianças e animais. É aconselhado tamb�
 para antes e depois das operações e principalmente um procedimento de emergência com atendimento médico e
 hospitalar caso as proteções falhem. Para empresas, tais medidas são obrigatórias sob a legislação vigente.
 
-Notas:
-
-1 -- Ainda que seja inviável tratar todos os usos de insumos químicos na impressão 3D,
+[NOTE]
+.Nota:
+====
+Ainda que seja inviável tratar todos os usos de insumos químicos na impressão 3D,
 geralmente eles têm muito em comum com a indústria de tintas e solventes, e um documento
 especialmente útil para entender políticas de descarte é o "Manual de preparação de
 tintas e vernizes, limpeza e descarte de embalagens" da WEG Tinta e Vernizes, disponível em
 http://ecatalog.weg.net/files/wegnet/WEG-manual-de-preparacao-de-tintas-e-vernizes-e-limpeza-de-embalagens-manual-portugues-br.pdf[_http://ecatalog.weg.net/files/wegnet/WEG-manual-de-preparacao-de-tintas-e-vernizes-e-limpeza-de-embalagens-manual-portugues-br.pdf_].
+====
 
 ==== Cortantes
 
@@ -7036,7 +7048,8 @@ alicates finos comuns não conseguem penetrar.
 pode ser _fixado_ numa mordedura específica de modo que, com a ajuda de uma mola que faz pressão na abertura,
 prenda a peça com firmeza para ser trabalhada.
 
-image::image195.png[image,width=642,height=726]
+[[ummontedealicates]]
+image::image195.png[image,width=642,height=726,align="center",title="Algumas ferramentas de acabamento, principalmente alicates. 1 - alicate de corte rente médio. 2 - alicate de corte rente pequeno. 3 - alicate para cutículas. 4 – alicate de bico chato. 5 – alicate de pressão médio de bico chato. 6 – alicate de corte. 7 – alicate de bico fino pequeno. 8 – alicate de bico curvo pequeno. 9 e 10 – alicates de bico fino médio. 11 e 12 – alicates universais. 13 -  alicate de corte lateral pequeno. 14 – alicate de bico meia-cana pequeno. 15 – alicate de bico chato. 16 – alicate de bico curvo médio. 17 – alicate de bico fino extra-longo. 18 -alicate de unha metálico. 19 – estiletes. 20 – alicate de unha. Foto do autor."]
 
 ==== De lixamento ou desbastamento
 
@@ -7097,7 +7110,8 @@ mas menor torque. Uma modificação que se aconselha usar na microrretífica que
 impressão 3D é a colocação de uma haste flexível extensora que permite à ponta giratória entrar em lugares
 difíceis da peça e o corpo da microrretífica não atrapalhar o acabamento.
 
-image::image196.png[image,width=642,height=504]
+[[microrretificaefuradeira]]
+image::image196.png[image,width=642,height=504,align="center",title="Uma microrretífica (em laranja) com haste extensora flexível com disco desbastadora na ponta e uma furadeira elétrica com hasta para limpeza e polimento. Compare o tamanho com dos discos de polimento."]
 
 Qual usar, a furadeira ou a microrretífica? Em geral a microrretífica se mostra uma melhor opção pro trabalho em
 peças de impressora 3D, pois já vem com grande variedade de pontas e, sendo menor, é mais facilmente manipulada
@@ -7162,7 +7176,8 @@ outras tarefas. Necessita de treino pra usar pois é fácil a ferramenta "espalh
 somente aplainá-lo, mas é sem dúvida útil. Como muitos projetos criativos, começou com financiamento coletivo
 no kickstarter e hoje tem a venda internacional por http://www.retouch3d.com/[_http://www.retouch3d.com_].
 
-image::image197.png[image,width=642,height=391]
+[[retouch3doquefaz]]
+image::image197.png[image,width=642,height=391,align="center",title="Algumas pontas da Retouch3D e o que a ferramenta consegue realizar."]
 
 * **Ferro de solda velho** -- Um ferro de solda está entre as ferramentas térmicas mais baratas que se pode comprar,
 especialmente um ferro de baixa potência como de 20 ou 30W. É um substituto razoável para fazer um trabalho
@@ -7205,19 +7220,22 @@ apoio, e os __sargentos__, ferramentas portáteis que servem para fixação ou c
 caso se tenha pouco espaço de trabalho, é recomendada um morsa articulada de sucção que além de ter liberdades
 de posicionamento é uma ferramenta móvel -- comparada à de bancada que geralmente é afixada com parafusos.
 
-image::image198.jpeg[image,width=642,height=182]
+[[tresmorsas]]
+image::image198.jpeg[image,width=642,height=182,align="center",title="3 morsas (à esquerda) e dois sargentos, instrumentos de fixação muito úteis para acabamento de peças."]
 
 * *Kit de assistentes de soldagem* -- apesar do nome ligado à eletrônica, essas ferramentas que consistem em
 extremidades de metal com formas diversas para criar alavancas, enganchar, mover, limpar, punçar e puxar elementos
 pequenos são ótimas para tratar detalhes minúsculos e partes difíceis de alcançar de peças de impressão 3D.
 
-image::image199.jpeg[image,width=534,height=375]
+[[kitsoldagem]]
+image::image199.jpeg[image,width=534,height=375,align="center",title="Kit de assistentes de soldagem, ou, em inglês, soldering assist kit."]
 
 * *Terceira mão* -- sendo um suporte mais delicado e sofisticado que uma morsa, é muito usado para soldagem,
 mas serve também para imobilizar e suportar peças pequenas rebuscadas para trabalhos complexos. Um kit que
 contenha lupa e iluminação é recomendado.
 
-image::image200.png[image,width=486,height=411]
+[[terceiramao]]
+image::image200.png[image,width=486,height=411,align="center",title="Um dos modelos populares de terceira mão, com duas pinças, iluminação e lupa."]
 
 * *Lupa* -- serve para trabalhar com detalhes pequenos, e existem modelos na forma de óculos ou monóculo que
 evitam ocupar as mãos, servindo para trabalhos em que se a use mais continuamente e não se queira usar a lupa da
@@ -7264,7 +7282,8 @@ também tem chances maiores de interagir com aditivos e corantes do plástico ne
 acetona em forma líquida comumente "desbota" o ABS tratado, enquanto na forma de vapor isso não ocorre --
 pelo contrário, a exposição ao vapor pode retornar a cor de uma peça por remover o aspecto esbranquiçado de
 arranhões. Alguns métodos de tratamento usam, ao invés do solvente puro, uma mistura do solvente com água para
-ter controle.  * Como o solvente deve ter também certa volatilidade, o tratamento com *vapor frio* pode ser uma
+ter controle.
+* Como o solvente deve ter também certa volatilidade, o tratamento com *vapor frio* pode ser uma
 opção, ainda que mais lento.  * O acabamento químico deixa a superfície "lisa" e vedada, e *prejudica a
 adesão de tintas e revestimentos* (que se beneficiam de microporos do material para entranharem e se firmarem).
 * O solvente __**nunca escorre ou evapora completamente**__ da peça, portanto o término do contato deve ser feito
@@ -7277,7 +7296,8 @@ rachaduras e bolhas. É um incidente que acontece com frequência ao se tentar a
 visto que o solvente continua agindo após a interrupção do banho. É preciso um pouco de treino até encontrar
 o ponto ideal de tratamento com o solvente específico, tanto em tempo quanto em quantidade.
 
-image::image201.png[image,width=642,height=559]
+[[pecaplacloroformioarruinada]]
+image::image201.png[image,width=642,height=559,align="center",title="Peça de PLA sobretratada com clorofórmio. A peça inicialmente teve ótimo alisamento da superfície, mas começou a apresentar bolhas e a deformar. A seção fina que ligava o cilindro do topo à base sucumbiu, e ao secar vários fragmentos desabaram."]
 
 * Devido ao ponto anterior, as ferramentas para manuseamento e apoio da peça devem ser finas para minimizar o
 contato e aderência, além de resistentes aos solventes. Peças de metal como pinças de fundição e pegadores de
@@ -7334,7 +7354,8 @@ solventes e suas particularidades para então descrever os métodos de alisament
 
 ==== Acetona
 
-image::image202.png[image,width=642,height=444]
+[[moleculaacetona]]
+image::image202.png[image,width=642,height=444,align="center",title="A molécula de acetona e a direção de sua polaridade, medida com o momento de dipolo de 2,91D. Todas as moléculas desta seção (arquivos públicos SDF) obtidas do banco de informações http://webbook.nist.gov/cgi/cbook.cgi"]
 
 O solvente mais utilizado e documentado de todos é, sem dúvida nenhuma, a acetona, também chamada de propanona
 ou dimetil cetona. É o composto da classe das _cetonas_ mais simples, na forma de um líquido incolor de odor
@@ -7380,27 +7401,33 @@ a forma como a acetona age com o PLA usado dependerá de muitos fatores pertinen
 revés muito grande, entretanto, é que na maioria desses casos, a ação de alisamento aparente mostra seus
 problemas a médio ou longo prazo, com o aparecimento de fissuras, rachaduras, desbotamentos e fragmentação da peça.
 
-image::image203.png[image,width=642,height=457]
+[[yodabudascomacetona]]
+image::image203.png[image,width=642,height=457,align="center",title="Amostras impressas na mesma altura de camada (0.1mm), e tratadas simultaneamente com vapor de acetona 4 anos atrás. A da esquerda, impressa em PLA branco e no primeiro dia se tornando lisa e reluzente, deteriorou totalmente e não pôde sequer ser removida do local para limpeza. A peça central, impressa em PLA azul, praticamente não sofreu mudanças: poderíamos usar esse PLA para fabricar peças resistentes a acetona. A da direita foi impressa em ABS como controle, e continua brilhante e lisa como em seu primeiro dia."]
 
 *Vantagens:*
 
-* Alta disponibilidade em lojas de laboratório.  * Baixo preço.  * Bastante volátil, o que faz com que a peça
-seque rapidamente após a aplicação.
+* Alta disponibilidade em lojas de laboratório.
+* Baixo preço.
+* Bastante volátil, o que faz com que a peça seque rapidamente após a aplicação.
 
 *Desvantagens:*
 
-* Necessidade de permissão da polícia federal e limite de 2l por mês.  * Inflamável.  * Não raramente interage
-com corantes do plástico e os "desbota".  * Levemente tóxica.
+* Necessidade de permissão da polícia federal e limite de 2l por mês.
+* Inflamável.
+* Não raramente interage com corantes do plástico e os "desbota".
+* Levemente tóxica.
 
-Notas:
-
-1 -- Um documento de 276 páginas (em inglês) listando praticamente todos os efeitos tóxicos
+[NOTE]
+.Notas:
+====
+. Um documento de 276 páginas (em inglês) listando praticamente todos os efeitos tóxicos
 que a acetona pode ter é disponibilizado pelo departamento de saúde dos EUA no endereço:
 https://www.atsdr.cdc.gov/toxprofiles/tp21.pdf[_https://www.atsdr.cdc.gov/toxprofiles/tp21.pdf_]
-
+====
 ==== Clorofórmio
 
-image::image204.png[image,width=642,height=440]
+[[moleculacloroformio]]
+image::image204.png[image,width=642,height=440,align="center",title="Disposição espacial da molécula de clorofórmio com a direção da polaridade indicada pela seta vermelha. O momento de dipolo do clorofórmio é 1,08 D."]
 
 Pânico! Horror! Indignação! A substância mais conhecida do público leigo pelo "lança-perfume"^1^ ou pelo
 clichê hollywoodiano de ser embebida em um pano e colocada no rosto de uma vítima para incapacitá-la não merece a
@@ -7434,29 +7461,32 @@ costuma interagir com os corantes dos filamentos, preservando sua cor.
 
 *Vantagens:*
 
-* Alta disponibilidade em lojas de laboratório.  * Baixo preço.  * Moderadamente volátil, a peça não demora
-muito para secar.  * Consegue tratar vários plásticos diferentes.  * Ação forte e rápida, alguns segundos
-podem ser suficientes de acordo com a peça.  * Não é inflamável.
+* Alta disponibilidade em lojas de laboratório.
+* Baixo preço.
+* Moderadamente volátil, a peça não demora muito para secar.
+* Consegue tratar vários plásticos diferentes.
+* Ação forte e rápida, alguns segundos podem ser suficientes de acordo com a peça.
+* Não é inflamável.
 
 *Desvantagens:*
 
 * É a substância mais tóxica da lista. É carcinogênica, depressora do sistema nervoso central e exige proteção
-de corpo inteiro com máscara de gás para manipulação.  * Necessidade de permissão da polícia federal e limite
-de 2l por mês.
+de corpo inteiro com máscara de gás para manipulação.
+* Necessidade de permissão da polícia federal e limite de 2l por mês.
 
-Notas:
-
-1 - FOGAÇA, Jennifer Rocha Vargas. "Composição e Aplicações do Clorofórmio"; __Brasil Escola__. Disponível em
-<http://brasilescola.uol.com.br/quimica/composicao-aplicacoes-cloroformio.htm[_http://brasilescola.uol.com.br/quimica/composicao-aplicacoes-cloroformio.htm_]>.
-Acesso em 15 de julho de 2017.
-
-2 - FOGAÇA, Jennifer Rocha Vargas. "Compostos organoclorados"; __Brasil Escola__. Disponível em
-<http://brasilescola.uol.com.br/quimica/compostos-organoclorados.htm[_http://brasilescola.uol.com.br/quimica/compostos-organoclorados.htm_]>.
-Acesso em 15 de julho de 2017.
+[NOTE]
+.Notas:
+====
+. FOGAÇA, Jennifer Rocha Vargas. "Composição e Aplicações do Clorofórmio"; __Brasil Escola__. Disponível em
+<http://brasilescola.uol.com.br/quimica/composicao-aplicacoes-cloroformio.htm[_http://brasilescola.uol.com.br/quimica/composicao-aplicacoes-cloroformio.htm_]>. Acesso em 15 de julho de 2017.
+. FOGAÇA, Jennifer Rocha Vargas. "Compostos organoclorados"; __Brasil Escola__. Disponível em
+<http://brasilescola.uol.com.br/quimica/compostos-organoclorados.htm[_http://brasilescola.uol.com.br/quimica/compostos-organoclorados.htm_]>. Acesso em 15 de julho de 2017.
+====
 
 ==== Diclorometano
 
-image::image205.png[image,width=642,height=352]
+[[moleculadiclorometano]]
+image::image205.png[image,width=642,height=352,align="center",title="Disposição espacial do diclorometano com a direção de sua polaridade, medida pelo momento de dipolo de 1,6D."]
 
 Se o clorofórmio é __triclorometano__, CHCl₃, o diclorometano ou cloreto de metileno é o "irmão menor",
 com apenas dois átomos de cloro -- CH₂Cl₂. Aparece na mesma _Lista II_ de substâncias controladas da
@@ -7470,17 +7500,24 @@ se ter maior controle. O preço é um pouco maior que o clorofórmio por ser pro
 
 *Vantagens:*
 
-* Boa disponibilidade em lojas de laboratório.  * Preço mediano.  * Bem volátil, a peça não demora para secar.
-* Trata os mesmos plásticos do clorofórmio.  * Ação mais lenta e contida que o clorofórmio, podendo ser usado
-com maior controle.  * Menos tóxico que o clorofórmio.  * Não é inflamável nas temperaturas convencionais de
-aplicação com vapor (<100°C) e tem ponto de auto-ignição bem alto.
+* Boa disponibilidade em lojas de laboratório.
+* Preço mediano.
+* Bem volátil, a peça não demora para secar.
+* Trata os mesmos plásticos do clorofórmio.
+* Ação mais lenta e contida que o clorofórmio, podendo ser usado com maior controle.
+* Menos tóxico que o clorofórmio.
+* Não é inflamável nas temperaturas convencionais de aplicação com vapor (<100°C) e tem ponto de auto-ignição bem alto.
 
 *Desvantagens:*
 
-* Preço maior e disponibilidade menor que o clorofórmio.  * Mesma necessidade de proteção do clorofórmio.
-* Necessidade de permissão da Polícia Federal e limite de 2l por mês.  1.  [[tetraidrofurano]] === Tetraidrofurano
+* Preço maior e disponibilidade menor que o clorofórmio.
+* Mesma necessidade de proteção do clorofórmio.
+* Necessidade de permissão da Polícia Federal e limite de 2l por mês.
 
-image::image206.png[image,width=642,height=402]
+==== Tetraidrofurano
+
+[[moleculatetraidrofurano]]
+image::image206.png[image,width=642,height=402,align="center",title="Disposição espacial do tetraidrofurano e a direção de sua polaridade de 1,63D."]
 
 O Tetraidrofurano (às vezes escrito -- incorretamente - "tetrahidrofurano"), THF ou oxolano^1^ é um éter
 heterocíclico incolor, com odor pungente e forte ação solvente, atacado PLA, ABS, ASA, policarbonato e até látex,
@@ -7500,25 +7537,28 @@ que do clorofórmio.
 *Vantagens:*
 
 * Relativa baixa toxicidade, semelhante à da acetona. Seu odor pungente e forte também torna vazamentos facilmente
-perceptíveis, bem mais que as outras substâncias.  * Poder solvente mais lento que do clorofórmio, permitindo
-maior controle.  * Limite de 5l por mês, bem maior que das outras substâncias controladas.  * Trata uma gama
-variada de plásticos, semelhante ao clorofórmio e diclorometano.
+perceptíveis, bem mais que as outras substâncias.
+* Poder solvente mais lento que do clorofórmio, permitindo maior controle.
+* Limite de 5l por mês, bem maior que das outras substâncias controladas.
+* Trata uma gama variada de plásticos, semelhante ao clorofórmio e diclorometano.
 
 *Desvantagens:*
 
-* Preço consideravelmente maior, cerca de 3 vezes o preço da acetona ou até mais.  * Necessidade de permissão
-da Polícia Federal.  * Apesar da mesma toxicidade, riscos maiores que o da acetona, em especial de penetração
-dérmica ou ignição de chamas ou até explosão. Devido a esses riscos, a necessidade de um ambiente com
-contenção de chamas é indispensável.
+* Preço consideravelmente maior, cerca de 3 vezes o preço da acetona ou até mais.
+* Necessidade de permissão da Polícia Federal.
+* Apesar da mesma toxicidade, riscos maiores que o da acetona, em especial de penetração dérmica ou ignição de chamas ou até explosão. Devido a esses riscos, a necessidade de um ambiente com contenção de chamas é indispensável.
 
-Notas:
-
-1 -- Ficha de Informação:
+[NOTE]
+.Notas:
+====
+. Ficha de Informação:
 http://sistemasinter.cetesb.sp.gov.br/produtos/ficha_completa1.asp?consulta=TETRAHIDROFURANO[_http://sistemasinter.cetesb.sp.gov.br/produtos/ficha_completa1.asp?consulta=TETRAHIDROFURANO_]
+====
 
 ==== Metil-Etil-Cetona (MEK)
 
-image::image207.png[image,width=634,height=410]
+[[moleculamek]]
+image::image207.png[image,width=634,height=410,align="center",title="Disposição espacial da metil-etil-cetona e a direção de sua polaridade de 2,76D."]
 
 Se o clorofórmio tem seu irmão mais fraco, o diclorometano, pode-se dizer que a acetona tem uma irmã mais
 forte, visto pela sua enorme polaridade de 2,76D, a metil-etil-cetona, MEK (do inglês __methyl ethyl ketone__)
@@ -7534,13 +7574,17 @@ também os mesmos riscos e embora seja menos volátil, é mais tóxica, e ainda 
 
 *Vantagens:*
 
-* Alta disponibilidade em lojas de laboratório.  * Preço baixo a mediano.  * Baixa volatilidade, o que permite
-maior controle.  * Ação mais forte e rápida
+* Alta disponibilidade em lojas de laboratório.
+* Preço baixo a mediano.
+* Baixa volatilidade, o que permite maior controle.
+* Ação mais forte e rápida
 
 *Desvantagens:*
 
-* Preço maior que a acetona.  * Necesside de permissão da Polícia Federal e limite de 2l por mês.  * Ação mais
-forte e rápida pode degradar a peça.  * Baixa volatilidade fará com que os métodos a frio não funcionem bem.
+* Preço maior que a acetona.
+* Necesside de permissão da Polícia Federal e limite de 2l por mês.
+* Ação mais forte e rápida pode degradar a peça.
+* Baixa volatilidade fará com que os métodos a frio não funcionem bem.
 
 ==== Solução limpadora
 
@@ -7552,7 +7596,8 @@ precisando apenas o comprador ser maior de 18 anos. Desses produtos, o mais impo
 preparadora_ ou _solução limpadora_ de canos e PVC, uma mistura primariamente de acetona e MEK. Discriminamos
 três marcas principais fáceis de encontrar no mercado brasileiro: __Tigre__, _Pulvitec_ e __Amanco__.
 
-image::image208.png[image,width=642,height=374]
+[[solucoeslimpadoras]]
+image::image208.png[image,width=642,height=374,align="center",title="Sendo uma mistura de acetona com MEK e não precisando de permissão da polícia federal, as soluções limpadoras ou preparadoras são uma alternativa popular para o alisamento de peças impressas."]
 
 As três soluções têm uma porcentagem de MEK e acetona variável, mas dentre esses limites:
 
@@ -7567,25 +7612,23 @@ As três soluções têm uma porcentagem de MEK e acetona variável, mas dentre 
 *Vantagens:*
 
 * Alta disponibilidade e facilidade de compra: em lojas de encanamento, materiais de construção e pela internet.
-* Não necessita de permissão da polícia federal, apenas ser maior de 18 anos.  * Preço semelhante ao de frascos
-de acetona e metil-etil-cetona.  * Mistura dos dois solventes, se valendo tanto da força maior da MEK quanto da
-volatilidade da acetona.
+* Não necessita de permissão da polícia federal, apenas ser maior de 18 anos.
+* Preço semelhante ao de frascos de acetona e metil-etil-cetona.
+* Mistura dos dois solventes, se valendo tanto da força maior da MEK quanto da volatilidade da acetona.
 
 *Desvantagens:*
 
-* Só funciona com os mesmos plásticos da acetona e metil-etil-cetona.  * Tem os mesmos perigos e riscos dos
-dois solventes.  * Pode ser difícil achar os frascos maiores de 1l, visto que os de 200ml também são vendidos.
+* Só funciona com os mesmos plásticos da acetona e metil-etil-cetona.
+* Tem os mesmos perigos e riscos dos dois solventes.
+* Pode ser difícil achar os frascos maiores de 1l, visto que os de 200ml também são vendidos.
 
-Notas:
-
-1 -
-http://www.tigre.com.br/sites/default/files/produtos/ficha-de-seguranca/soluaaao-preparadora-tigre--v3--30112015pdf_0.pdf[_http://www.tigre.com.br/sites/default/files/produtos/ficha-de-seguranca/soluaaao-preparadora-tigre--v3--30112015pdf_0.pdf_]
-
-2 -
-http://www.pulvitec.com.br/produto/solucao-limpadora-polytubes[_http://www.pulvitec.com.br/produto/solucao-limpadora-polytubes_]
-
-3 -
-_http://assets.production.amanco.com.br.s3.amazonaws.com/uploads/gallery_asset/file/54/FISPQhttp://assets.production.amanco.com.br.s3.amazonaws.com/uploads/gallery_asset/file/54/FISPQ_Solu__o_Limpadora.pdf[­_Solu__o_Limpadora.pdf]_
+[NOTE]
+.Notas:
+====
+. http://www.tigre.com.br/sites/default/files/produtos/ficha-de-seguranca/soluaaao-preparadora-tigre--v3--30112015pdf_0.pdf[_http://www.tigre.com.br/sites/default/files/produtos/ficha-de-seguranca/soluaaao-preparadora-tigre--v3--30112015pdf_0.pdf_]
+. http://www.pulvitec.com.br/produto/solucao-limpadora-polytubes[_http://www.pulvitec.com.br/produto/solucao-limpadora-polytubes_]
+. http://assets.production.amanco.com.br.s3.amazonaws.com/uploads/gallery_asset/file/54/FISPQ­_Solu__o_Limpadora.pdf
+====
 
 ==== Compostos não recomendados para o acabamento químico
 
@@ -7595,8 +7638,8 @@ perigosos. Apresentamos uma pequena lista de compostos que o leitor deve _evitar
 
 * *Acetona de farmácia* ("removedor de esmaltes"): devido à sua composição com álcool, água e outras
 substâncias que além de inibir o efeito solvente da acetona têm grande potencial de degradar a peça, seu uso
-é totalmente desencorajado.  * *Thinner:* Thinner, ou "diluente" em português, é um composto que serve
-para diminuir a concentração já existente de um composto em uma solução -- _diluindo_ o composto. Contraste
+é totalmente desencorajado.
+* *Thinner:* Thinner, ou "diluente" em português, é um composto que serve para diminuir a concentração já existente de um composto em uma solução -- _diluindo_ o composto. Contraste
 com __solvente__, que é o composto que vai criar a solução, _dissolvendo_ ou _solubilizando_ algo em si. Já
 notamos então estarmos trabalhando com uma categoria de produtos, e não um produto específico, o que complica a
 situação. Thinners são geralmente usados para tintas de diversos tipos, com várias fórmulas diferentes, mas um
@@ -7612,10 +7655,12 @@ desse polímero. Na prática, vê-se que a baixa ação dele em peças de PLA n�
 ponto de ebulição é alto -- 77,1°C -- pode ser que haja confusão entre os que o advogam entre o tratamento
 por calor e o efeito de dissolução da superfície.
 
-Notas:
-
-1 - Kalia, S., & Avérous, L. (Eds.). (2011). _Biopolymers: biomedical and environmental applications_ (Vol. 70). John
+[NOTE]
+.Notas:
+====
+. Kalia, S., & Avérous, L. (Eds.). (2011). _Biopolymers: biomedical and environmental applications_ (Vol. 70). John
 Wiley & Sons.
+====
 
 === Acabamento químico: métodos
 
@@ -7653,10 +7698,10 @@ e as proteções.
 *Desvantagens:*
 
 * Para conseguir resultados razoáveis em todas as situações, exige muito controle, incluindo potencial custo em
-equipamentos e instrumentos com esse fim.  * Utiliza uma grande quantidade de solvente, o que além de dispendioso
-torna seu uso crítico visto que têm limites mensais regulados pela lei.  * Lida com pressões mecânicas
-de convecção e efeitos de flutuação que podem distorcer a peça.  * Em muitos casos atinge os corantes e
-"desbota" a peça.
+equipamentos e instrumentos com esse fim.
+* Utiliza uma grande quantidade de solvente, o que além de dispendioso torna seu uso crítico visto que têm limites mensais regulados pela lei.
+* Lida com pressões mecânicas de convecção e efeitos de flutuação que podem distorcer a peça.
+* Em muitos casos atinge os corantes e "desbota" a peça.
 
 ==== Imersão do Solvente Diluído em Água
 
@@ -7672,14 +7717,15 @@ testes caso a caso para se avaliar a adequação ao material.
 
 *Vantagens:*
 
-* Método simples * Diminui o custo e limites da imersão, diluindo o solvente em água * Maior controle, por ter
-ação mais lenta.
+* Método simples
+* Diminui o custo e limites da imersão, diluindo o solvente em água
+* Maior controle, por ter ação mais lenta.
 
 *Desvantagens:*
 
-* Necessita de testes caso a caso, pois a água pode degradar o material.  * Lida com pressões mecânicas de
-convecção e efeitos de flutuação.  * Precisa que o solvente seja miscível com água, descartando clorofórmio
-e diclorometano.
+* Necessita de testes caso a caso, pois a água pode degradar o material.
+* Lida com pressões mecânicas de convecção e efeitos de flutuação.
+* Precisa que o solvente seja miscível com água, descartando clorofórmio e diclorometano.
 
 ==== Aplicação direta com caneta ou pincel
 
@@ -7690,7 +7736,7 @@ da rapidez do tratamento por inteiro em razão de um mais artístico e artesanal
 importante fazer uns testes com o solvente e o plástico que se deseja tratar antes de partir para uma peça
 final, pois os efeitos podem ser destrutivos para a peça e o pincel. Em especial, a acetona tende a desbotar o
 ABS quando aplicada diretamente na superfície em forma líquida; outros solventes podem ter efeito semelhante,
-ou ainda tornar o plástico tão pegajoso que seja inviável o contato do pincel.
+ou ainda tornar o plástico tão pegajoso que seja inviável o contato do pincel. Um jeito de evitar que a acetona desbote a peça com a aplicação é esquentar a peça antes em forno em temperatura média (60°C) e depois do tratamento com pincel, novamente colocá-la no forno.
 
 Como existem vários aplicadores diferentes, comentamos apenas os mais populares:
 
@@ -7702,15 +7748,13 @@ ou formando uma camada grossa em volta. Mas mesmo a limpeza metódica não garan
 este deve ser visto como um item consumível e renovável, visto que após um número variável de aplicações
 começa a deteriorar e até perder cerdas -- que podem grudar na peça, a arruinando. Nesse caso, então, pode
 ser preferível priorizar pincéis de baixo preço em detrimento dos mais sofisticados.
-* **Seringa / pipeta /
-mini-borrifador**. Método geralmente usado para trabalhos mais esporádicos, consiste em gotejar ou borrifar
+* **Seringa / pipeta / mini-borrifador**. Método geralmente usado para trabalhos mais esporádicos, consiste em gotejar ou borrifar
 em baixo volume e de forma controlada seções da peça com o líquido solvente para atuação local. Haja visto
 que não se toca a peça com o aplicador, é um método que depende inteiramente de o líquido agir com o efeito e
 intensidade desejados, o que nem sempre acontece. Pode ser feito de forma econômica comprando seringas de farmácia
 (que são de polipropileno e, portanto, resistente aos solventes aqui mencionados) e removendo a agulha. Caso
 um borrifador seja usado, é importante verificar que seja de material resistente ao solvente usado.
-* **Caneta
-aplicadora**. Esta é uma nova opção que surgiu em financiamento coletivo e independentemente em certas lojas
+* **Caneta aplicadora**. Esta é uma nova opção que surgiu em financiamento coletivo e independentemente em certas lojas
 de impressão 3D: um dispositivo feito de plástico resistente a solventes (geralmente polipropileno) e com uma
 ponta esponjosa retrátil que quando pressionada se encharca com o solvente do compartimento. O único pequeno
 inconveniente é que a pressão para a ponta se retrair pode prejudicar o tratamento delicado de seções finas,
@@ -7719,21 +7763,23 @@ táctil com a ponta retrátil, inspira considerável melhoria da habilidade de t
 não seja um instrumento caro, no entanto, não se encontra pra vender no Brasil e é necessário importá-lo. Uma
 alternativa barata e artesanal é apresentada no canal de youtube do autor.
 
-image::image209.jpeg[image,width=642,height=303]
+[[canetaacetonaealternativa]]
+image::image209.jpeg[image,width=642,height=303,align="center",title="A caneta de aplicação de acetona (e outros solventes) da Filabot - e a alternativa caseira feita com ponta de hidrocor e seringa de farmácia no canal de youtube &quot;Maker Linux&quot;. O vídeo compara os dois usos e está disponível em https://www.youtube.com/watch?v=Khb9TJXIM20"]
 
 *Vantagens:*
 
-* Permite tratamento localizado de imperfeições.  * Talento nessa forma de artesanato vai pesar bastante na
-forma final da aplicação.  * É útil para outros usos, como colar peças do mesmo plástico.  * Utiliza pouco
-solvente -- somente o essencial para umedecer a superfície com o aplicador.  * Baixa exposição ao solvente,
-resultando em baixo risco.
+* Permite tratamento localizado de imperfeições.
+* Talento nessa forma de artesanato vai pesar bastante na forma final da aplicação.
+* É útil para outros usos, como colar peças do mesmo plástico.
+* Utiliza pouco solvente -- somente o essencial para umedecer a superfície com o aplicador.
+* Baixa exposição ao solvente, resultando em baixo risco.
 
 *Desvantagens:*
 
-* Dependendo da combinação de aplicador, solvente e plástico, pode desbotar a coloração.  * Se forem usados
-pincéis, eles terão vida curta e necessitarão ser constantemente trocados.  * Com seringas e borrifadores, o
-solvente aplicado pode não ter o efeito desejado.  * Depende de o aplicador alcançar a parte da peça que precisa
-de tratamento; em formas complexas, isso pode ser impossível.
+* Dependendo da combinação de aplicador, solvente e plástico, pode desbotar a coloração (evitável com aquecimento).
+* Se forem usados pincéis, eles terão vida curta e necessitarão ser constantemente trocados.
+* Com seringas e borrifadores, o solvente aplicado pode não ter o efeito desejado.
+* Depende de o aplicador alcançar a parte da peça que precisa de tratamento; em formas complexas, isso pode ser impossível.
 
 ==== Aplicação com vapor frio de solvente
 
@@ -7747,17 +7793,19 @@ tetraidrofurano, sendo consideravelmente mais lento quando usado com MEK, clorof
 
 *Vantagens:*
 
-* Não agride nem tende a deformar muito a peça, preservando os contornos e atacando só a superfície.  * É
-um método lento, permitindo por isso maior controle.  * Não envolve aquecimento ou fonte de energia, oferecendo
-por isso menos riscos.  * Utiliza pouco solvente -- somente o essencial para embeber o papel ou espuma.
+* Não agride nem tende a deformar muito a peça, preservando os contornos e atacando só a superfície.
+* É um método lento, permitindo por isso maior controle.
+* Não envolve aquecimento ou fonte de energia, oferecendo por isso menos riscos.
+* Utiliza pouco solvente -- somente o essencial para embeber o papel ou espuma.
 
 *Desvantagens:*
 
 * Como a lata é opaca e mesmo o vidro tem que ser revestido internamente por espuma, a peça não é visível durante
 o tratamento, e o método não permite boa averiguação do progresso. Levantamento do recipiente para averiguação
-da peça faz o vapor frio escapar, prejudicando o tratamento.  * O tempo de tratamento demorado pode ser um revés.
-* O vapor frio, especialmente para os solventes de PLA, normalmente não é tão efetivo quanto o aquecido.  * Como
-há certo contato com o líquido e ainda o vapor no ambiente, é necessário o uso das proteções adequadas.
+da peça faz o vapor frio escapar, prejudicando o tratamento.
+* O tempo de tratamento demorado pode ser um revés.
+* O vapor frio, especialmente para os solventes de PLA, normalmente não é tão efetivo quanto o aquecido.
+* Como há certo contato com o líquido e ainda o vapor no ambiente, é necessário o uso das proteções adequadas.
 
 ==== Banho de Vapor Aquecido
 
@@ -7823,18 +7871,22 @@ a peça deve ficar longe de poeira ou resíduos, pois esses tendem a aderir faci
 * O béquer, base e pegador e quaisquer outros itens com contato com o vapor devem ser limpos depois do procedimento,
 pois tenderão a acumular plástico dissolvido e outros resíduos.
 
-image::image210.jpeg[image,width=642,height=338]
+[[tratamentoplatetraidrofurano]]
+image::image210.jpeg[image,width=642,height=338,align="center",title="Exemplo do tratamento de uma peça de PLA com tetraidrofurano: a peça impressa e lixada, com linhas de impressão aparentes e superfície esbranquiçada, é colocada no béquer dentro de uma capela química com exaustor ligado e então aquecida. Depois de 2 minutos de exposição ao vapor, o fogareiro elétrico é desligado, aguardam-se 5 minutos para o vapor dissipar e se retira a peça e coloca sobre papel alumínio amassado para secar. 30 minutos depois, a peça está seca e pronta para ser usada. É normal que nesse ponto ela ainda esteja um pouco flexível; a secagem completa pode levar dias."]
 
 *Vantagens:*
 
-* O método remove pequenos fiapos, respeita o contorno da peça e dá um acabamento brilhante e alisado.  * É
-um método rápido, podendo ser usado em lote para várias peças passando cada uma por apenas segundos no vapor
-quente do solvente.  * Vê-se claramente a superfície do plástico mudando, o que permite parar quando se acerta
-o ponto.  * Utiliza pouco solvente.
+* O método remove pequenos fiapos, respeita o contorno da peça e dá um acabamento brilhante e alisado.
+* É um método rápido, podendo ser usado em lote para várias peças passando cada uma por apenas segundos no vapor
+quente do solvente.
+* Vê-se claramente a superfície do plástico mudando, o que permite parar quando se acerta
+o ponto.
+* Utiliza pouco solvente.
 
 *Desvantagens:*
 
-* Pode deformar ou prejudicar a peça se for usado por tempo demasiado.  * A superfície brilhante não é
+* Pode deformar ou prejudicar a peça se for usado por tempo demasiado.
+* A superfície brilhante não é
 evitável. Se o desejado for uma superfície fosca ou texturizada, o banho de vapor aquecido não é o melhor método.
 * Tem maiores riscos por envolver fonte de calor e vapores aquecidos (que se expandem mais rapidamente e sendo
 mais pesados que o ar, podem circundar o recipiente e "derramar" dele). Usar as proteções é indispensável.
@@ -7887,7 +7939,8 @@ usa partes de um mini-umidificador ultrassônico portátil (dos que difundem vap
 uma lata de refrigerante) e itens de prateleira como jarro de vidro, tubos de polietileno, lata de tinta vazia,
 conectores de rosca e bombinhas de ar. Opcionalmente permite controle por timer, constando também nas instruções.
 
-image::image211.jpeg[image,width=642,height=262]
+[[ultrasonicmistingpolisher]]
+image::image211.jpeg[image,width=642,height=262,align="center",title="O projeto mais popular de dispositivo aplicador de solvente em impressões 3D é o &quot;Ultrasonic Misting 3D Print Vapor Polisher&quot;, com a receita passo-a-passo para construção no  instructables: http://www.instructables.com/id/Ultrasonic-Misting-3D-Printing-Vapor-Polisher/"]
 
 *Vantagens:*
 
@@ -7909,7 +7962,8 @@ mas _qual_ aparelho? No momento de publicação deste livro não há nenhuma com
 uma criada por financiamento coletivo que virou um produto de verdade comercializado por uma companhia de Taiwan,
 a __Magic Box__.
 
-image::image212.jpeg[image,width=642,height=417]
+[[magicboxskymaker]]
+image::image212.jpeg[image,width=642,height=417,align="center",title="A magicBox, vendida pela companhia Taiwanesa SkyMaker: http://www.sky-tech.com.tw/sky-tech/en/mbox_en.php."]
 
 Ela trabalha com uma câmara hermética em que se põe a peça e um compartimento para o solvente, que é borrifado
 para câmara formando uma névoa que ataca a peça. É também com vapor frio, mas o controle se vê pelos botões
@@ -7927,7 +7981,8 @@ perigoso e tolerado por máquinas, e criar conjugado a ele uma máquina que o ap
 _Polysmooth™_ e da máquina aplicadora __Polysher™__, que usam o solvente de prateleira _álcool isopropílico_
 (isopropanol), que não ataca componentes eletrônicos e é barato e largamente usado pela indústria.
 
-image::image213.png[image,width=591,height=471]
+[[polysmoothepolysher]]
+image::image213.png[image,width=591,height=471,align="center",title="Filamentos PolySmooth^TM^ de várias cores (40 dólares) e o dispositivo tratador Polysher^TM^ (300 dólares) vendidos pela empresa chinesa com filiais no Japão, EUA e Holanda PolyMaker: http://www.polymaker.com/shop/polysmoothpolysher/"]
 
 *Vantagens:*
 
@@ -8022,14 +8077,16 @@ possíveis resíduos ou contaminação nos alimentos assados no mesmo dispositiv
 ultrafinas do processo de extrusão e das substâncias tóxicas presentes no vapor do plástico, toda cautela é
 pouca -- recomenda-se usar um forno dedicado a essa função.
 
-image::image214.png[image,width=564,height=459]
+[[recozimentoabs]]
+image::image214.png[image,width=564,height=459,align="center",title="Recozimento não costuma funcionar para o ABS, com resultados como esse."]
 
-1 --
-https://3dprint.com/3388/study-how-to-make-3d-prints-stronger/[_https://3dprint.com/3388/study-how-to-make-3d-prints-stronger/_].
+[NOTE]
+.Notas:
+====
+. https://3dprint.com/3388/study-how-to-make-3d-prints-stronger/[_https://3dprint.com/3388/study-how-to-make-3d-prints-stronger/_].
 O estudo não parece ter resultado em artigo acadêmico, carecendo por isso de citação formal.
-
-2 - https://www.youtube.com/watch?v=CZX8eHC7fws[_https://www.youtube.com/watch?v=CZX8eHC7fws_]
-
+. https://www.youtube.com/watch?v=CZX8eHC7fws[_https://www.youtube.com/watch?v=CZX8eHC7fws_]
+====
 === Pintura
 
 Tratando de impressão 3D FFF, pintura surge como um assunto inevitável, até pela limitação da tecnologia

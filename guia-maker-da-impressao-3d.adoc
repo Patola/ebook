@@ -2142,8 +2142,9 @@ e pequenas folgas nos encaixes dos eixos se traduzirão em distâncias discerní
 uma série de requisitos para a construção das mesas: o suporte delas precisará ser de material o mais rígido
 possível (com baixo módulo de Young - "grau de elasticidade"), bem equilibrado (geralmente exigindo pelo
 menos duas cantoneiras para sustentação) e com encaixes precisos -- barras roscadas não podem ser usadas,
-serão necessários fusos trapezoidas ou de esferas para tracionar este eixo.  * *Mesa com movimento planar ou
-tridimensional* + Podendo ser considerada mais uma curiosidade que um caso prático, existem impressoras que usam
+serão necessários fusos trapezoidas ou de esferas para tracionar este eixo.
+* **Mesa com movimento planar ou tridimensional** +
+Podendo ser considerada mais uma curiosidade que um caso prático, existem impressoras que usam
 o elemento extrusor completamente fixo enquanto a mesa se move, ou aqueles em que o extrusor se move na vertical
 enquanto a mesa se move na horizontal. Nesses casos o extrusor sustenta um peso relativamente grande para o
 volume da impressora e a velocidade de impressão não é muito grande, não afetando portanto a estabilidade da
@@ -3076,8 +3077,8 @@ traz maior isolamento da alimentação do que a mesa de alumíno resistivo é a 
 ou alumínio) com uma manta de silicone colada. A manta de silicone é uma forma de resistência aquecedora segura,
 bem isolada e de grande variedade de formas, tamanhos e tensões suportadas. Não é tão fina como uma trilha de
 circuito, entretanto, e o volume e peso, ainda que não exagerados, podem ser um ônus em mesas móveis, sendo
-mais recomendadas para mesas aquecidas estáticas ou de movimentação em Z.  * *Mesa de metal com resistência
-impressa em película de poliimida (kapton)* -- solução semelhante à de manta de silicone, com a vantagem de
+mais recomendadas para mesas aquecidas estáticas ou de movimentação em Z.
+* *Mesa de metal com resistência impressa em película de poliimida (kapton)* -- solução semelhante à de manta de silicone, com a vantagem de
 a película usada ser extremamente fina. Infelizmente, os preços das películas sobem estratosfericamente para
 áreas maiores que 10cm x 10cm, tornando-se superiores aos das próprias mesas com resistências embutidas.
 * *Mesa de alumínio acoplada a mesa resistiva* -- consistindo de uma solução "Maker" para medidas de mesa
@@ -3289,8 +3290,8 @@ e se a peça grudar com muita força, basta um banho de água morna com uma gota
 camada de cola e soltar a peça. Outros métodos que podem ser usados de maneira quase idêntica: cola em bastão
 e fita azul.
 * **PLA e ABS, ou majoritariamente ABS, e peças pequenas (< 5cm)**: Neste caso de uso, uma solução
-econômica seria o spray de cabelo direto no vidro. Fácil e direta.  * *PLA e ABS, ou majoritariamente ABS, e peças
-de qualquer tamanho* + Neste caso de uso, o A.Bond no vidro seria uma opção indicada, por suas características
+econômica seria o spray de cabelo direto no vidro. Fácil e direta.
+* **PLA e ABS, ou majoritariamente ABS, e peças de qualquer tamanho**: Neste caso de uso, o A.Bond no vidro seria uma opção indicada, por suas características
 de economia, facilidade de aplicação e de remoção.
 * **PLA, ABS, materiais exóticos e peças muito delicadas**: Sendo este o caso de uso do autor, será dada certa
 _licença poética_ para uma opinião mais subjetiva sobre
@@ -3786,7 +3787,8 @@ passos que são mais frequentes.
 
 * *Motor de ímã permanente* (Ou Motor "PM", de Permanent Magnet) -- é o motor que ilustramos em nossos
 gráficos até agora, com um rotor composto por um ímã permanente no centro. É o mais simples de entender e por
-isso foi o escolhido para apresentarmos os conceitos.  * *Motor de Relutância Variável* -- diferentemente dos
+isso foi o escolhido para apresentarmos os conceitos.
+* *Motor de Relutância Variável* -- diferentemente dos
 motores que vimos até agora que trabalham com atração e repulsão eletromagnética, os motores de __relutância
 variável__, usando __solenóides__, trabalham com outro tipo de grandeza eletromagnética, _linhas de fluxo_ que
 capturam o caminho de __menor relutância__: o motor (que é um núcleo de ferro com extremidades não-magnéticas)
@@ -4067,9 +4069,10 @@ potência são reservadas para isso, permitindo a cada extrusor ter sua própria
 * **Saídas para os motores**. A RAMPS pode controlar até 5 motores independentes. Tipicamente os motores dos eixos X, Y e
 Z mais dois extrusores, E0 e E1. A saída do eixo Z tem dois conectores para que se possam controlar dois motores
 de forma idêntica, levando a contagem total a 6 motores. Outros microcontroladores podem ter mais saídas, como a
-_Azteeg X3 Pro_ que tem 8 saídas de motores.  * *Pinos de entrada para sensores eletrônicos* como __endstops__,
-__termistores__, _sensores de diâmetro de filamento_ e outros componentes.  * *Pinos de saída para dispositivos
-microcontroláveis extras* como servo motor de sonda Z, bloqueador de filamento e outros componentes.
+_Azteeg X3 Pro_ que tem 8 saídas de motores.
+* *Pinos de entrada para sensores eletrônicos* como __endstops__,
+__termistores__, _sensores de diâmetro de filamento_ e outros componentes.
+* *Pinos de saída para dispositivos microcontroláveis extras* como servo motor de sonda Z, bloqueador de filamento e outros componentes.
 * **Drivers de motores, ou slots para drivers**. Os motores de passos precisam de drivers e eles podem estar soldados na placa
 controladora ou, como na RAMPS, encaixáveis em slots. Como são entradas para drivers configuráveis, têm também
 uma fileira de três pares de pinos para configuração dos drivers através de __jumpers__.
@@ -4232,13 +4235,13 @@ terra mais distante do potenciômetro, para evitar curtos acidentais. Alternativ
 pode ser usada no *negativo da fonte* ou das *entradas da RAMPS* também.
 
 [[ajustandovref1]]
-image::image138.png[image,width=642,height=398,title="Procedimento de ajuste de tensão dos drivers em uma RAMPS. Para simplicidade ela é mostrada desconectada e desligada, mas o procedimento deve ser feito a quente com os motores ligados. Usam-se multímetros com as pontas de prova nos lugares indicados e um instrumento de plástico ou cerâmica para girar o potenciômetro e ajustar a tensão. Os valores mostrados nos multímetros correspondem aos exemplos ilustrados anteriormente. Durante o procedimento de ajuste, é aconselhado não deixar a regulação alta por muito tempo pois há perigo de sobreaquecer e queimar os drivers."]
+image::image138.png[image,width=642,height=398,align="center",title="Procedimento de ajuste de tensão dos drivers em uma RAMPS. Para simplicidade ela é mostrada desconectada e desligada, mas o procedimento deve ser feito a quente com os motores ligados. Usam-se multímetros com as pontas de prova nos lugares indicados e um instrumento de plástico ou cerâmica para girar o potenciômetro e ajustar a tensão. Os valores mostrados nos multímetros correspondem aos exemplos ilustrados anteriormente. Durante o procedimento de ajuste, é aconselhado não deixar a regulação alta por muito tempo pois há perigo de sobreaquecer e queimar os drivers."]
 
 *A chave de fenda ou philips de plástico* ("ceramic screwdriver" nos sites de compra) pode ser difícil de
 adquirir. Uma alternativa é imprimir em PLA uma substituta.
 
 [[driveralignerpatola]]
-image::image139.png[image,width=642,height=475,title="Ferramenta plástica impressa para alinhamento do potenciômetro (trimpot) -- versões em fenda e em philips, com cabo fino ou cabo grosso para maior firmeza, disponibilizado pelo autor deste livro. Baixável em https://www.thingiverse.com/thing:1080946"]
+image::image139.png[image,width=642,height=475,align="center",title="Ferramenta plástica impressa para alinhamento do potenciômetro (trimpot) -- versões em fenda e em philips, com cabo fino ou cabo grosso para maior firmeza, disponibilizado pelo autor deste livro. Baixável em https://www.thingiverse.com/thing:1080946"]
 
 ===== Modo de decaimento: quando e como ajustar
 
@@ -5039,9 +5042,11 @@ ser então gravados na EEPROM, colocados no firmware ou no arquivo de configura�
 O comando do autotune, **M303**, leva três parâmetros:
 
 * O elemento aquecedor. Se não for dado, supõe ser o primeiro extrusor, E0. O segundo extrusor é denominado E1
-e a mesa E-1. No Smoothie, a mesa é E1.  * A temperatura-alvo para ele calcular as constantes. Não precisa ser
+e a mesa E-1. No Smoothie, a mesa é E1.
+* A temperatura-alvo para ele calcular as constantes. Não precisa ser
 uma temperatura tão alta quanto as de trabalho, mas é bom que seja próxima. Bons números são 100 graus para
-a mesa aquecida e 180 graus para o extrusor. É dada pelo parâmetro S, como em S100.  * Quantas iterações no
+a mesa aquecida e 180 graus para o extrusor. É dada pelo parâmetro S, como em S100.
+* Quantas iterações no
 máximo até acabar o procedimento. O default é 8, parâmetro C8.
 
 [[pidtuningrepetier]]
@@ -5638,7 +5643,7 @@ as partículas ultrafinas para evitar que voltem ao ambiente).
 ====
 . http://www.ecycle.com.br/component/content/article/35-atitude/1073-conheca-os-perigos-da-dioxina-e-como-preveni-los.html
 . https://www.niehs.nih.gov/health/topics/agents/sya-bpa/index.cfm
-. http://factsaboutbpa.org/what-does-us-government-research-tell-us-about-bpa -- a página é na verdade um apanhado de fatos sobre o BPA com links para órgãos do governo estadunidense. O leitor nos perdoe pela falta de estudos nacionais.
+. http://factsaboutbpa.org/what-does-us-government-research-tell-us-about-bpa -- a página é na verdade um apanhado de fatos sobre o BPA com links para órgãos do governo estadunidense. Infelizmente, parece que não há equivalente nacionnal em termos de informação.
 . http://www.popsci.com/bpa-free-plastic-bad-for-human-health#page-2 . É interessante também
 ler a reportagem que trata das batalhas jurídicas envoltas nas acusações de danos do Tritan: http://www.npr.org/sections/health-shots/2015/02/16/385747786/beyond-bpa-court-battle-reveals-a-shift-in-debate-over-plastic-safety
 . https://opensource.com/article/17/5/open-source-3d-printing-filament -- tais iniciativas devem sempre ser incentivadas através de escolha de consumo consciente e contínua cobrança dos produtores por transparência.
@@ -5682,7 +5687,8 @@ dos plásticos de impressão 3D e surgiu a partir de transformação química so
 restos orgânicos de fauna e flora microscópica por milhões de anos.
 * **Degradável**: um material que seja
 _degradável_ submete-se a uma mudança significativa em sua estrutura química sob circunstâncias ambientais
-específicas, tendo por resultado a perda de algumas propriedades químicas e/ou físicas.  * *Oxidegradável* ou
+específicas, tendo por resultado a perda de algumas propriedades químicas e/ou físicas.
+* *Oxidegradável* ou
 **Oxibiodegradável**: o segundo termo é usado informalmente como sinônimo do primeiro, embora não signifique
 estritamente o mesmo. É o material que pode sofrer degradação por ação do oxigênio, geralmente com um aditivo
 para acelerar o processo. Essa degradação não é completa, levando somente à fragmentação do plástico,
@@ -6012,7 +6018,8 @@ depositados se encontram, são basicamente um problema não resolvido no que con
 são daninhos de três maneiras
 
 * Acumulam e até facilitam aderência dos restos do alimento que a peça acondicionou, que irá apodrecer.
-* São hábitats ideais para microorganismos que se alimentam desses mesmos restos.  * Tornam mais difícil a
+* São hábitats ideais para microorganismos que se alimentam desses mesmos restos.
+* Tornam mais difícil a
 limpeza ou lavagem do item. O resultado serão fungos, bactérias e outros organismos patológicos que oferecem
 alto risco de contaminação em usos posteriores da peça.
 
@@ -6104,12 +6111,14 @@ condições a peça fica, podendo adicionar uma etapa de verificação com micro
 podemos testar 10 peças impressas com refrigerante até o topo em temperatura ambiente por até 8h, com leite quente
 até 40°C no mesmo período, com água gelada, com sumo de limão pelo seu pH baixo (ácido) e com uma solução
 de bicarbonato de sódio pelo seu pH alto (básico). Se nenhum líquido escapar de nenhuma das peças testadas
-na execução do protocolo, podemos ter boa segurança que não acontecerá no uso comum.  * Mas ainda precisamos
+na execução do protocolo, podemos ter boa segurança que não acontecerá no uso comum.
+* Mas ainda precisamos
 testar a *contaminação química* através de um protocolo clínico. Pode ser que o tetraidrofurano deixe resíduos
 tóxicos que não previmos. Isso é um problema, pois protocolos são altamente específicos; é bem difícil achar
 um que sirva para muitas situações. Precisaremos de acompanhamento de um profissional da área química para fazer
 protocolos distintos para tais testes, como verificação de mudança do pH e detecção de resíduos de reação
-do tetraidrofurano como hidratos de clatratos e compostos organometálicos.  * E a *contaminação biológica*
+do tetraidrofurano como hidratos de clatratos e compostos organometálicos.
+* E a *contaminação biológica*
 também precisará ser verificada. Protocolos com meios de cultura coletados do copo depois do uso, com limpeza
 e sem limpeza, com líquidos específicos e deixados em tempos variáveis em repouso e exposição mostrarão
 o potencial de crescimento e reprodução de microorganismos e a chance de que sejam focos de patologias. Tais
@@ -7239,10 +7248,12 @@ image::image200.png[image,width=486,height=411,align="center",title="Um dos mode
 
 * *Lupa* -- serve para trabalhar com detalhes pequenos, e existem modelos na forma de óculos ou monóculo que
 evitam ocupar as mãos, servindo para trabalhos em que se a use mais continuamente e não se queira usar a lupa da
-terceira mão.  * *Pinças* -- existem pinças de todo tipo, com forma de tesoura a iluminadas, mas as de manicure já
+terceira mão.
+* *Pinças* -- existem pinças de todo tipo, com forma de tesoura a iluminadas, mas as de manicure já
 ajudam enormemente na remoção de fiapos e pequenos detalhes do interior das peças. Curvadas ou retas são igualmente
 úteis, mas uma que possa exercer maior força e pegada mais forte são preferíveis para o caso geral. As com ponta
-chata têm maior facilidade de capturar um fiapo de plástico que as pontiagudas.  * *Tamboreamento* -- apesar de
+chata têm maior facilidade de capturar um fiapo de plástico que as pontiagudas.
+* *Tamboreamento* -- apesar de
 ser inviável citar todo e qualquer método industrial de acabamento existente, o _tamboreamento_ (rock tumbler,
 em inglês) é um método útil para peças com geometria mais robusta e com efeito especialmente distinto nos
 materiais que contêm metal em pó, pois permitem ressaltar o brilho, reflexividade e textura metálica. O aparelho
@@ -7284,8 +7295,8 @@ pelo contrário, a exposição ao vapor pode retornar a cor de uma peça por rem
 arranhões. Alguns métodos de tratamento usam, ao invés do solvente puro, uma mistura do solvente com água para
 ter controle.
 * Como o solvente deve ter também certa volatilidade, o tratamento com *vapor frio* pode ser uma
-opção, ainda que mais lento.  * O acabamento químico deixa a superfície "lisa" e vedada, e *prejudica a
-adesão de tintas e revestimentos* (que se beneficiam de microporos do material para entranharem e se firmarem).
+opção, ainda que mais lento.
+* O acabamento químico deixa a superfície "lisa" e vedada, e *prejudica a adesão de tintas e revestimentos* (que se beneficiam de microporos do material para entranharem e se firmarem).
 * O solvente __**nunca escorre ou evapora completamente**__ da peça, portanto o término do contato deve ser feito
 antes do ponto ideal de tratamento, para permitir que a peça "descanse" e chegue à forma final. Este tempo de
 descanso varia de acordo com a geometria da peça, o solvente e o método, podendo variar de horas a semanas. Nos
@@ -9191,7 +9202,8 @@ uma série de ajustes já perfeitamente configurados. Os requisitos são esses:
 deve estar configurado com exatidão, isto é, o firmware deve saber com perfeição a posição do bico.  *
 A mesa tem que já estar perfeitamente horizontal em relação ao quadro da delta, e sem imperfeições como
 abaulamentos ou saliências. A necessidade é de estrutura e não lógica -- usar autonivelamento de mesa para
-emular esta horizontalidade não funcionará.  * Os passos por mm, assim como no caso da calibração da delta,
+emular esta horizontalidade não funcionará.
+* Os passos por mm, assim como no caso da calibração da delta,
 devem ter sido configurados com exatidão, preferencialmente usando a __prusa calculator__.
 
 E cabem as seguintes observações sobre o método:
@@ -9537,9 +9549,12 @@ seria complicado demais tratá-los por essa ótica. Vamos tentar explicar o que 
 mesmo havendo o risco de alguma imprecisão conceitual ou da ira de matemáticos raivosos pedindo nosso enforcamento:
 
 * Tecnicamente falando, você vai querer que seus modelos sejam sempre 2-manifold. Somente esses modelos
-podem ser tratados de forma consistente pelos softwares.  * Isso significa: cada aresta estará conectada a
-exatamente duas faces. 0-manifold e 1-manifold são buracos e cascas abertas.  * Você vai chamar 2-manifold de
-simplesmente _manifold_ e os outros casos de __non-manifold__.  * Esses casos englobam, entre outras, as seguintes
+podem ser tratados de forma consistente pelos softwares.
+* Isso significa: cada aresta estará conectada a
+exatamente duas faces. 0-manifold e 1-manifold são buracos e cascas abertas.
+* Você vai chamar 2-manifold de
+simplesmente _manifold_ e os outros casos de __non-manifold__.
+* Esses casos englobam, entre outras, as seguintes
 situações: ** Faces/arestas/vértices ocupando o mesmo lugar, parcial ou totalmente, espacialmente, que outros,
 sem estarem conectados. Se nosso cubo do Blender fosse realmente 6 quadrados dispostos espacialmente de acordo
 com as faces de um cubo, teríamos um design __non-manifold__, porque cada aresta apareceria duas vezes (uma de
@@ -9725,7 +9740,7 @@ usar o processamento de dispositivos embarcados. Por isso alguns fatiadores, com
 
 image::image258.png[image,width=626,height=475]
 
-== Fluxo de trabalho (workflow) da Impressão 3D
+=== Fluxo de trabalho (workflow) da Impressão 3D
 
 * **Escolha ou obtenção das formas tridimensionais**. Há diversas fontes possíveis para as formas: ** Elas
 podem ser criadas por softwares _*modeladores sólidos*_ -- aplicativos que permitem a modelagem tridimensional e
@@ -9746,27 +9761,33 @@ de aplicativos e jogos, através de "desempacotadores" e conversores automático
 jogo _minecraft_ que tem muitos modelos extraídos para impressão, mas virtualmente qualquer jogo tridimensional
 tem seus modelos conversíveis para as malhas impressas em 3D (e como as formas não são feitas especificamente
 para impressão 3D, podem precisar de alguns ajustes).  ** Personalização e geração de objetos, em sites como
-_thingiverse_ (novamente) ou geradores de "lithopanes" (fotografias bidimensionais em relevo).  * *Conversão*
+_thingiverse_ (novamente) ou geradores de "lithopanes" (fotografias bidimensionais em relevo).
+* *Conversão*
 da forma para um formato que o fatiador entenda. Para malhas simples de uma só cor, STL e OBJ; para malhas com
-cores ou materiais diferentes, AMF ou 3MF; * *Importação* da forma 3D no fatiador, de onde se procede com o
+cores ou materiais diferentes, AMF ou 3MF;
+* *Importação* da forma 3D no fatiador, de onde se procede com o
 **workflow do fatiamento**; * Preparação física da impressora para a operação: inserção do filamento no
-extrusor, colocação do vidro na mesa aquecida, revestimento do vidro com fita ou cola; * *Envio da impressão*
+extrusor, colocação do vidro na mesa aquecida, revestimento do vidro com fita ou cola;
+* *Envio da impressão*
 para a Impressora 3D, seja por um dispositivo intermediário de armazenamento (cartão SD, pendrive -- de onde
 se escolhe o arquivo em um display da impressora), seja por uma conexão entre impressora e computador (wifi,
-ethernet, cabo USB, bluetooth); * A Impressão de uma peça média (5-10cm de altura) em uma FFF tipicamente leva
+ethernet, cabo USB, bluetooth);
+* A Impressão de uma peça média (5-10cm de altura) em uma FFF tipicamente leva
 horas para concluir. Mesmo com essa demora, se recomenda altamente o **acompanhamento presencial das impressões**,
 especialmente se a impressora não tiver segurança industrial de operação, como peças resistentes ao fogo,
-câmara fechada, resistência a impactos mecânicos; * Finalizada a impressão, há uma etapa de **retirada da
-impressão da mesa**, que pode dar algum trabalho; * Retirada a peça, pode haver a necessidade de **remoção de
-estruturas de apoio**, como a bainha, os suportes, o raft; * A peça pode precisar ou se beneficiar de uma etapa
+câmara fechada, resistência a impactos mecânicos;
+* Finalizada a impressão, há uma etapa de **retirada da impressão da mesa**, que pode dar algum trabalho;
+* Retirada a peça, pode haver a necessidade de **remoção de estruturas de apoio**, como a bainha, os suportes, o raft;
+* A peça pode precisar ou se beneficiar de uma etapa
 adicional de **acabamento**: lixagem, remoção de pontas e plástico residual, pequenos reparos; peças divididas
 serão coladas; para alguns plásticos, temos a opção de **acabamento químico**, usando solventes como acetona
-ou clorofórmio; * Opcional: *revestimento* da peça para conferir a ela alguma propriedade como dureza ou brilho;
+ou clorofórmio;
+* Opcional: *revestimento* da peça para conferir a ela alguma propriedade como dureza ou brilho;
 * Opcional: *pintura* da peça para lhe dar cores e "vida".
 
 image::image259.png[image,width=651,height=745]
 
-= E o que é fatiar?
+=== E o que é fatiar?
 
 A etimologia da palavra já revela sua fundamentação: vamos pegar uma forma 3D, orientar em relação a uma
 superfície, e cortá-la em fatias horizontais (seções transversais) bem finas, como se fosse um pão de forma
@@ -9807,7 +9828,8 @@ e código em https://github.com/alexrj/Slic3r[_https://github.com/alexrj/Slic3r_
 "polimento" extra, alguns recursos a mais e cuidado extra com defaults. Anúncio e explicação
 http://www.prusaprinters.org/introducing-slic3r-prusa-edition/[_http://www.prusaprinters.org/introducing-slic3r-prusa-edition/_],
 downloads em https://github.com/prusa3d/Slic3r/releases[_https://github.com/prusa3d/Slic3r/releases_] e código
-em https://github.com/prusa3d/Slic3r/[_https://github.com/prusa3d/Slic3r/_].  * *Cura* -- fatiador open-source
+em https://github.com/prusa3d/Slic3r/[_https://github.com/prusa3d/Slic3r/_].
+* *Cura* -- fatiador open-source
 com duas versões bem diferentes: a antiga, até a versão numerada como 15.04.3, com interface bem simples,
 intuitiva e ágil, assim como fatiamento bem rápido, mas com poucas opções de configuração; e a nova, tendo
 sua interface reescrita e começando da versão 2.1.0, com muito mais opções de configuração e recursos
@@ -9815,18 +9837,21 @@ avançados e únicos, como "penugem" e impressão em arame. Plataformas: Mac OS 
 versões "personalizadas" (forks) do Cura feitos por terceiros, como o "Lulzbot Cura", o "Katana" e
 até uma versão que funciona como fatiador de impressora SLA ao invés de FFF (Cura da CTC Riverside). Sítio
 oficial em https://ultimaker.com/en/products/cura-software[_https://ultimaker.com/en/products/cura-software_],
-código em https://github.com/Ultimaker/Cura[_https://github.com/Ultimaker/Cura_].  * *MatterControl* --
+código em https://github.com/Ultimaker/Cura[_https://github.com/Ultimaker/Cura_].
+* *MatterControl* --
 fatiador open-source escrito em .Net, se ressaltando pelos plug-ins (braille, importação de imagens 2D,
 criação de texto 3D) e pelo workflow bem controlado, permitindo operações em batch, oferecendo alarmes de
 e-mail ou SMS e monitoração remota da impressora. Tem uma quantidade média de opções. Plataformas: Mac
 OS X, Linux, Windows. Sítio web em http://www.mattercontrol.com/[_http://www.mattercontrol.com/_], código em
-https://github.com/MatterHackers/MatterControl[_https://github.com/MatterHackers/MatterControl_].  * *Simplify3D*
+https://github.com/MatterHackers/MatterControl[_https://github.com/MatterHackers/MatterControl_].
+* *Simplify3D*
 -- fatiador proprietário vendido por US$ 150 pela empresa de mesmo nome. Tem muitos recursos avançados e uma
 boa quantidade de opções de configuração, além do workflow bem controlado pelo que chama de "processos"
 e "perfis". Se destacam nele a colocação personalizada de suportes, o fatiamento rápido e para vários
 formatos, o painel de controle da impressora poderoso e com autodetecção de protocolo, a visualização
 seccional das peças e o nivelamento fácil de peças na mesa. Plataformas: Mac OS X, Linux, Windows. Sítio
-web em http://www.simplify3d.com/[_http://www.simplify3d.com_].  * *Kisslicer* -- fatiador _shareware_ já
+web em http://www.simplify3d.com/[_http://www.simplify3d.com_].
+* *Kisslicer* -- fatiador _shareware_ já
 não muito atualizado, caracterizado pelo bom fatiamento de superfície, edição online do g-code, versão para
 raspberry pi e alguns recursos únicos como __seam hiding__. Extrusão dupla ou tripla só é possível na versão
 registrada. Plataformas: Mac OS X, Linux, Windows. Sítio web em http://www.kisslicer.com/[_http://www.kisslicer.com_].
@@ -9839,7 +9864,8 @@ Linux existem mas estão muito defasadas. Sítio web em http://voxelizer.com/wel
 * *CraftUnique Craftware* -- fatiador proprietário gratuito com um visual e workflow bem distintos; tem um número
 médio de configurações ao mesmo tempo em que apresenta recursos bem poderosos, como a _colocação personalizada
 de suportes_ e a visualização simultânea de g-code de seções. Plataformas: Mac OS X, Linux, Windows. Sítio
-web em https://craftunique.com/craftware[_https://craftunique.com/craftware_].  * *Repsnapper* -- apesar de
+web em https://craftunique.com/craftware[_https://craftunique.com/craftware_].
+* *Repsnapper* -- apesar de
 bastante negligenciado, esse fatiador open-source multiplataforma simples continua em desenvolvimento ativo e tem
 alguns recursos interessantes, como uma parte de controle da impressora bem completa com macros e editor de g-code,
 fatiamento para SVG, corte e separação interativa de partes de STL, velocidade separada para Z, fatiamento variável,
@@ -9855,8 +9881,8 @@ acadêmicos. Multiplataforma, mas infelizmente não é open-source, o que é esp
 pois se fosse teria muito apelo pra crescer, conseguindo fazer formas complexas sem perder detalhes
 por interpolação, consegue lidar com extrusão dupla de maneira admirável e tem também um primoroso
 algoritmo de contorno para __warp shield__. Tem duas versões online totalmente usáveis. Sítio web em
-https://members.loria.fr/Sylvain.Lefebvre/icesl/[_https://members.loria.fr/Sylvain.Lefebvre/icesl/_].  * *Raise3D
-IdeaMaker* -- fatiador bem novo, tem aparência e recursos muito parecidos com o Simplify3D (incluido os suportes
+https://members.loria.fr/Sylvain.Lefebvre/icesl/[_https://members.loria.fr/Sylvain.Lefebvre/icesl/_].
+* *Raise3D IdeaMaker* -- fatiador bem novo, tem aparência e recursos muito parecidos com o Simplify3D (incluido os suportes
 manuais) mas é gratuito. Se destaca pela interface limpa e pelo recurso de corte de peças por planos (incluindo
 planos inclinados). Sítio web em https://www.raise3d.com/pages/ideamaker[_https://www.raise3d.com/pages/ideamaker_]
 + Temos ainda softwares que não são fatiadores completos, mas __print hosts__:
@@ -10422,11 +10448,13 @@ somente _deslocar_ lateralmente e para cima/para baixo o ponto de vista (movimen
 __*pan*__). De uma forma mais organizada:
 
 * Slic3r: Botão esquerdo na peça para arrastá-la; botão esquerdo fora das peças para rotacionar o ponto de
-vista; botão direito ou do meio para __pan__.  * Simplify3D: Ctrl + botão esquerdo na peça para arrastá-la;
+vista; botão direito ou do meio para __pan__.
+* Simplify3D: Ctrl + botão esquerdo na peça para arrastá-la;
 botão esquerdo em qualquer lugar para rotacionar o ponto de vista; botão direito para __pan__; o botão do
 meio "reseta" a visualização. Esses atalhos podem ser mudados em Options → Preferences → Mouse/Keyboard
 shortcuts e em especial se aconselha desmarcar o "[ ] Middle mouse button resets view" se você mexe com os
-vários fatiadores, visto que será comum confundir as teclas.  * Cura: Com o modo "translação" selecionado,
+vários fatiadores, visto que será comum confundir as teclas.
+* Cura: Com o modo "translação" selecionado,
 botão esquerdo na peça para arrastá-la; botão direito em qualquer lugar para rotacionar o ponto de vista;
 botão do meio para __pan__.
 
@@ -10475,15 +10503,18 @@ invés de somente um.
 image::image312.png[image,width=642,height=263]
 
 * Na aba *Machine* temos novamente de interesse a possibilidade de ligar ou desligar na configuração default o
-"flip Y" visto na regra da mão direita.  * Na aba *Models* temos o "**Automatically scale to correct unit system
+"flip Y" visto na regra da mão direita.
+* Na aba *Models* temos o "**Automatically scale to correct unit system
 without prompting**". Como vimos, o formato STL não inclui unidades, embora seja assumido o milímetro. Quando
 o Simplify3D importa um objeto e ele é pequeno demais, ele assume que foi gravado em _polegadas_ (inches), que
 são maiores. Normalmente ele mostra uma janela de diálogo ao importar tais peças, mas com essa configuração
 ligada ele transforma a figura automaticamente para polegadas (uma polegada é igual a 25,4 milímetros, ou seja,
-ele aumenta a figura em 2540%).  * Ainda na aba *Models* há a opção para ele dispôr as peças automaticamente
+ele aumenta a figura em 2540%).
+* Ainda na aba *Models* há a opção para ele dispôr as peças automaticamente
 conforme os modelos são importados, **Automatically center and arrange imported models**. Como ele já possui
 o botão *Center and Arrange* na interface principal, desligar essa configuração pode ser útil quando se quer
-"fundir" peças ou posicioná-las livremente.  * Interativamente, o Simplify3D tem dois ótimos atalhos para
+"fundir" peças ou posicioná-las livremente.
+* Interativamente, o Simplify3D tem dois ótimos atalhos para
 manipular posição e rotação; são eles o *Ctrl-T* (drop / largar peça) e *Ctrl-L* (align / alinhar com a mesa).
 ** O *Ctrl-T* analisa a peça e vê onde é a posição mais baixa dela no eixo Z, e alinha essa posição para ter Z=0
 (ou seja, encosta na mesa). Na prática esse modificador serve para "largar" peças de modo que encostem na mesa
@@ -10511,7 +10542,8 @@ a visualização da câmara para focalizar em um objeto quando se o seleciona (s
 * **Ensure models are kept apart**: já mencionada, com ela ligada os modelos são espaçados de forma a não
 colidirem ou se penetrarem.
 * **Automatically drop models to the build plate**: automaticamente deixa os objetos
-importados ao nível da mesa (sem rotacioná-los).  * As três opções seguintes são relacionadas e merecem uma
+importados ao nível da mesa (sem rotacioná-los).
+* As três opções seguintes são relacionadas e merecem uma
 explicação: sendo uma aplicação __OpenGL__, isto é, que se vale de aceleração de hardware para desenhar as
 formas tridimensionais na tela, o Cura em sua inicialização tenta ativar a renderização, mas se não consegue
 (o que pode acontecer por a máquina não ter hardware para isso ou não ter o driver instalado), cai em __modo
@@ -10900,7 +10932,8 @@ a evitar que a mesa se inunde de plástico.
 poliacetal e HDPE podem não funcionar bem nem com os ajustes anteriores. Nessa hora, certos adesivos específicos
 podem ajudar bastante. Desde cola branca escolar até produtos feitos especificamente para impressão 3D (A.Bond,
 Spray Cliever e outros), as opções são variadas aqui. É importante verificar a compatibilidade química do
-adesivo considerado com o material que deseja trabalhar.  * *Brim* (bainha) e *Raft* (balsa): são estruturas
+adesivo considerado com o material que deseja trabalhar.
+* *Brim* (bainha) e *Raft* (balsa): são estruturas
 auxiliares que você define no fatiamento e, junto com as outras que apresentaremos, são o tema do próximo
 capítulo.
 
@@ -11127,11 +11160,14 @@ mais valor ornamental e não contribui muito para melhorar propriedades desejáv
 até padrões diferentes na horizontal e vertical. Alguns casos que são notáveis de padrões são:
 
 * Retilinear ou quadrático: é o que oferece melhor retorno resistência a força vs. rapidez de impressão. É o
-default em virtualmente todos os fatiadores.  * Honeycomb (colméia) ou hexagonal: é tido como um preenchimento que
+default em virtualmente todos os fatiadores.
+* Honeycomb (colméia) ou hexagonal: é tido como um preenchimento que
 oferece uma ótima distribuição de forças, e na natureza aparece em estruturas que precisam disso. Na impressão
 3D, entretanto, os primeiros testes de força feitos com preenchimentos, usando PLA, não encontraram diferenças
-significativas em relação ao retilinear, e ele é impresso consideravelmente mais devagar.  * Triangular é adequado
-para uso com filamentos flexíveis; preserva a elasticidade desejada na parte interna do objeto.  * Concêntrico é
+significativas em relação ao retilinear, e ele é impresso consideravelmente mais devagar.
+* Triangular é adequado
+para uso com filamentos flexíveis; preserva a elasticidade desejada na parte interna do objeto.
+* Concêntrico é
 interessante para uso com filamentos transparentes e translúcidos que precisam preservar a aparência interna suave.
 
 Em uso geral para impressão 3D, o recomendado é usar uma porcentagem de preenchimento entre 10 a 30%, aumentando
@@ -11188,7 +11224,8 @@ laterais são _wall thickness_ (espessura de parede). Do topo e da parte de baix
 fatiador popula o campo de acordo.  + image:image364.png[image,width=618,height=268]
 * **Simplify3D**:
 paredes laterais são __Outline/Perimeter Shells__. Do topo e da barte de baixo são _Top Solid Layers_ e __Bottom
-Solid Layers__. São sempre dados em números de filetes / camadas.  * Outros fatiadores terão suas próprias
+Solid Layers__. São sempre dados em números de filetes / camadas.
+* Outros fatiadores terão suas próprias
 nomenclaturas, mas a partir destes exemplos é possível inferir quais sejam.
 
 image::image365.png[image,width=620,height=504]
@@ -11250,7 +11287,8 @@ A configuração dos fatiadores costuma ser mais do que suficiente para tratar t
 dividem em dois:
 
 * Quando o filamento é realmente *muito* dúctil e propenso a "desabar". Neste caso, haverá uma configuração
-de simplesmente "deixar a ventoinha ligada o tempo todo".  * Quando o filamento é medianamente dúctil, só
+de simplesmente "deixar a ventoinha ligada o tempo todo".
+* Quando o filamento é medianamente dúctil, só
 "desabando" nas partes mais delicadas como pontes e overhangs. Neste caso, basta deixar os ajustes automáticos
 do fatiador em seus valores __default__.
 
@@ -11311,7 +11349,8 @@ ou comparação, entretanto, oferecemos algumas sugestões gerais, que podem ou 
 * Velocidade de perímetro: 60 mm/s * Velocidade de perímetro pequeno: 20 mm/s * Velocidade de primeira camada:
 20% * Velocidade de travel: 100 mm/s * Velocidade de infill: 70 mm/s * Velocidade de pontes: 80 mm/s * Velocidade
 de _overhangs_ (somente no software repsnapper): 20 mm/s * Aceleração: 1000 mm/s^2^ nos eixos X e Y, 3000 mm/s^2^
-para as impressoras 3D mais robustas, especialmente CoreXY e semelhantes.  * Jerk X/Y: 20 mm/s * É importantíssimo
+para as impressoras 3D mais robustas, especialmente CoreXY e semelhantes.
+* Jerk X/Y: 20 mm/s * É importantíssimo
 lembrar que você deve _decidir_ quem cuida de sua aceleração, ou o fatiador ou o firmware! Se as acelerações
 forem configuradas no fatiador, o ideal é aumentar ao máximo no firmware (digamos, 10000 mm/s^2^) para minimizar
 as interferências. O mesmo vale em relação ao _jerk_ e velocidades máximas.
@@ -11386,22 +11425,29 @@ image::image372.png[image,width=539,height=342]
 Algumas estratégias são usadas para diminuir este efeito.
 
 * Deixar o filamento retraído o mínimo possível de tempo é uma delas, e isso se consegue com altas
-velocidade de __travel__.  * _Lift Z_ (levantar o extrusor no eixo Z no movimento de retração, e baixar
+velocidade de __travel__.
+* _Lift Z_ (levantar o extrusor no eixo Z no movimento de retração, e baixar
 novamente quando for para outra ilha de impressão) é bastante usado nas impressoras que têm o eixo Z rápido,
-como as deltas.  * Também é útil conhecer bem as medidas do hotend para colocar somente o mínimo possível
+como as deltas.
+* Também é útil conhecer bem as medidas do hotend para colocar somente o mínimo possível
 dehttp://www.thingiverse.com/search?q=urination&sa= retração que não saia da zona crítica de expansão do
 tubo interno. Um hotend convencional costuma medir entre 50 a 70mm, com a zona aquecida tendo de 10 a 15mm (20mm
-em hotends especializados como o __Volcano__) e o heatbreak cerca de 5mm.  * A _desengrenagem_ ("coasting",
+em hotends especializados como o __Volcano__) e o heatbreak cerca de 5mm.
+* A _desengrenagem_ ("coasting",
 presente no Cura e no Simplify3D) é um recurso que pára o filamento décimos de milímetros antes do término da
 extrusão, deixando o escorrimento completar o filete para então realizar uma retração menor e menos arriscada.
 * O pressure advance (avanço de pressão) do Slic3r é um algoritmo mais avançado e mais difícil de entender e
 calibrar mas que também pode contribuir, prevendo a diminuição súbita de pressão e permitindo o escorrimento para
-extrusão.  * O _autospeed_ já citado, mantendo a pressão constante, minimiza os escorrimentos e a necessidade
-de retração.  * O __combing__, que traduzindo seria algo como "penteamento", é uma estratégia que faz
+extrusão.
+* O _autospeed_ já citado, mantendo a pressão constante, minimiza os escorrimentos e a necessidade
+de retração.
+* O __combing__, que traduzindo seria algo como "penteamento", é uma estratégia que faz
 com que o extrusor ao realizar o _travel_ passe por cima do máximo de área já impressa para purgar o filamento
-escorrido no interior das peças.  * _Wipe before retract_ (esfregar antes de retrair) é uma forma mais comedida
+escorrido no interior das peças.
+* _Wipe before retract_ (esfregar antes de retrair) é uma forma mais comedida
 de combing, fazendo o extrusor se movimentar dentro da seção transversal em que está pra limpar o bico antes
-mesmo de realizar a retração.  * Os firmwares de reprap populares Marlin e Repetier Firmware, assim como o
+mesmo de realizar a retração.
+* Os firmwares de reprap populares Marlin e Repetier Firmware, assim como o
 da Makerbot, o Sailfish, têm um algoritmo de controle de pressão chamando de Pressure Advance, Linear Advance
 ou Quadratic Advance. Esse recurso configurável ajuda no controle de pressão reduzindo problemas nos cantos e
 pontas da peça e são semelhantes ao pressure advance do slic3r. São especialmente importantes para impressoras
@@ -11564,14 +11610,15 @@ image::image386.png[image,width=577,height=139]
 baixa de perímetros (paredes) pode, através do arredondamento, acabar expondo a parte interna da peça. Com
 este ajuste ligado, o fatiador "arredonda pra cima" e coloca paredes a mais para garantir fechamento da peça.
 * *Avoid crossing perimeters* (evitar cruzar perímetros) -- modifica a trajetória do extrusor de modo que ele
-procure ficar tão na parte interna da peça quanto possível, economizando _travels_ e __retrações__.  * *Detect
-thin walls* (detectar paredes finas) -- paredes com espessura próxima da largura de extrusão podem sofrer um
+procure ficar tão na parte interna da peça quanto possível, economizando _travels_ e __retrações__.
+* *Detect thin walls* (detectar paredes finas) -- paredes com espessura próxima da largura de extrusão podem sofrer um
 arredondamento indevido e acabarem mais grossas do que deviam ou ainda com um "espaço" entre duas passadas do
 extrusor. Ligar este ajuste faz o fatiador detectar tal situação e corrigir, tanto preenchendo o espaço quanto,
 quando necessário, realizando passada única. Se ainda assim os espaços aparecerem, um outro jeito de corrigir é
 ir em Print Settings → Advanced, seção __Overlap__, e aumentar o valor (por default é 15%). Overlap significa
 "sobreposição", e é uma porcentagem que diz em quanto o preenchimento "penetra" nas paredes, para não
-ficarem como peças separadas.  * *Detect bridging parameters* (detectar parâmetros de ponte) -- já falamos
+ficarem como peças separadas.
+* *Detect bridging parameters* (detectar parâmetros de ponte) -- já falamos
 das pontes; com este ajuste ligado, o Slic3r analisa a geometria do objeto para saber quando usar as pontes,
 se estiverem ativadas.
 
@@ -11595,8 +11642,12 @@ mas a maioria deles é na aba __Advanced__.
 image::image387.png[image,width=441,height=136] + O ajuste é bastante semelhante ao _detect thin_ walls
 do Slic3r: desligado ("Only use perimeters for thin walls") ou ligado, com a tolerância de sobreposição de
 um perímetro em cima do outro definida. Assim como no Slic3r, se mesmo com esse valor algumas brechas aparecerem,
-você deve ir na aba "Infill" e aumentar o valor do "Outline overlap" (default em 20%).  * *Controle de
-escorrimento* + image:image388.png[image,width=425,height=177] + Este ajuste trata de modificadores
+você deve ir na aba "Infill" e aumentar o valor do "Outline overlap" (default em 20%).
+* *Controle de escorrimento*
++
+image:image388.png[image,width=425,height=177]
++
+Este ajuste trata de modificadores
 para o movimento de retração do final de uma extrusão.  ** O primeiro ajuste, ☑ __*Only retract when crossing
 open spaces*__, faz com que ele só execute a retração se não for passar em alguma parte já impressa do objeto;
 senão, ele conta para essa parte remover qualquer resíduo do bico.  ** O segundo, ☑ __*Force retraction
@@ -11613,11 +11664,13 @@ visto que não estarão à mostra e suas imperfeições não interferem muito. �
 ligado, a exceção seria para filamentos translúcidos e transparentes, em que essas imperfeições podem importar.
 * Note que estes ajustes usam bastante o movimento de "wipe" e por isso o próximo ajuste, "☐ __*Avoid
 crossing outline for travel movements*__", não deve ser ligado, pois faria o fatiador priorizar percursos sem
-passar por partes impressas.  * O Simplify3D tem as configurações bastante organizadas, e as de retração não
+passar por partes impressas.
+* O Simplify3D tem as configurações bastante desorganizadas, e as de retração não
 se resumem a essa. Na aba "others", há mais ajustes, pertinentes ao caso de vários extrusores (tools): +
 image::image389.png[image,width=429,height=157] + São eles a quantidade de filamento a retrair,
 a quantidade adicional a extrudar quando recomeçar (que aconselhamos deixar sempre em zero) e a velocidade da
-retração.  * Por fim, o último lugar onde se configura retração no Simplify3D é na aba "Extruder". Essas
+retração.
+* Por fim, o último lugar onde se configura retração no Simplify3D é na aba "Extruder". Essas
 são as configurações principais de retração: + image:image390.png[image,width=618,height=200]
 ** _*Retraction distance*_ e _*extra restart distance*_ são os mesmos do tool change, mas para o caso geral.
 ** __*Retraction vertical lift*__, também chamado Z-hopping, é levantar brevemente o extrusor quando houver
@@ -11662,12 +11715,13 @@ ajuda uma peça a ter dimensões mais de acordo com o modelo. No momento do fati
 para uma trajetória de filetes, as áreas mais externas da peça podem ser "arredondadas para cima", tornando
 o objeto um ou dois décimos de milímetro mais largo. Se isso estiver acontecendo, vale a pena ligar esta opção,
 que recua o filete mais externo mesmo com ele se sobrepondo ao segundo filete mais externo. Esta opção tem o
-risco de deixar a aparência da peça mais rugosa pelo excesso de filamento na superfície.  * _*Outer Before Inner
-Walls*_ pode ser um jeito de diminuir a rugosidade do ajuste anterior se ela acontece. Basicamente, inverte a ordem
+risco de deixar a aparência da peça mais rugosa pelo excesso de filamento na superfície.
+* _*Outer Before Inner Walls*_ pode ser um jeito de diminuir a rugosidade do ajuste anterior se ela acontece. Basicamente, inverte a ordem
 de construção das paredes de um objeto, que é por default de dentro pra fora, para que seja de fora pra dentro,
 logo o segundo filete, se sobreposto ao mais externo, será depositado em cima da camada externa já solidificada. Por
 outro lado, em seções pendentes, por o filete mais externo ser depositado sem o suporte lateral do filete mais
-interior, ele pode acabar tendo menor qualidade.  * _*Alternate Extra Wall*_ faz em camadas alternadas a parede
+interior, ele pode acabar tendo menor qualidade.
+* _*Alternate Extra Wall*_ faz em camadas alternadas a parede
 ter um filete a mais pra dentro. Este filete ajuda a sustentar o suporte interno, reforçando a peça como um todo.
 
 image::image395.png[image,width=642,height=240]
@@ -11935,8 +11989,8 @@ contrário -- cola e mesa aquecida são fundamentais, não só o arranjo no extr
 de um filamento flexível específico depende de um *equilíbrio delicado de pressão no tracionador* que se for
 baixa, não consegue penetração dos dentes no filamento para tracioná-lo, e se for alta, leva ao ovalamento
 do filamento que gera entupimentos e aumenta a chance de o filamento embolar. O equilíbrio será diferente para
-cada filamento, e alguns extrusores nem mesmo têm ajuste dessa pressão.  * *Embolamento do filamento nos vãos
-logo após o tracionador* são o acidente mais comum nas tentativas de impressão com filamento flexível. Como a
+cada filamento, e alguns extrusores nem mesmo têm ajuste dessa pressão.
+* *Embolamento do filamento nos vãos logo após o tracionador* são o acidente mais comum nas tentativas de impressão com filamento flexível. Como a
 tendência de um fio flexível ao ser impelido para a frente pelo tracionador mas enfrentar resistência mecânica
 é se flexionar ao invés de repassar a tração para a frente, qualquer folga ou reentrância que permite que
 este fio acomode sua forma para a flexão fará com que ele se dobre, e a partir de uma dobra inicial ele já perde
@@ -11948,12 +12002,14 @@ de diâmetro de filamento).
 image::image406.png[image,width=642,height=466]
 
 * *Velocidades altas* compõem a chance de embolamento, pois tracionam maior quantidade de filamento com tendência a
-dobrar numa unidade de tempo, com a mesma resistência mecânica.  * *Mudanças de velocidade, ou seja, acelerações*
+dobrar numa unidade de tempo, com a mesma resistência mecânica.
+* *Mudanças de velocidade, ou seja, acelerações*
 também se compõem ao problema, pois é nos súbitos inícios e términos de tracionamento que os filamentos
 flexíveis mais se curvam, já que ocorre a mudança de pressão rápida. Em especial, as **retrações**, que
 são quando o filamento está em pressão constante para a frente, para ser subitamente parado e esticado para
 trás, para então ser novamente tracionado pra frente, são os eventos com maior chance de embolamento, **mesmo
-que as velocidades envolvidas sejam baixas**.  * *Stringing (fiapos)* são problemas constantes nas impressões com
+que as velocidades envolvidas sejam baixas**.
+* *Stringing (fiapos)* são problemas constantes nas impressões com
 filamento flexível. Isso ocorre tanto por o filamento flexível ter um escorrimento menos controlável quanto por as
 estratégias que melhor mantêm extrusão se contraporem aos mecanismos de controle de fiapos (como a retração).
 * *Subextrusão* é outro problema possível dos filamentos flexíveis __mesmo quando se tem um extrusor adequado
@@ -12032,19 +12088,25 @@ velocidade convencional de 60 mm/s geralmente não vai funcionar a não ser com 
 para filamentos flexíveis, filamentos menos exigentes e formas impressas simples. Não acredite nos fanfarrões de
 facebook que dizem imprimir Ninjaflex nesta velocidade em impressora com bowden! Comece com uma velocidade pequena
 -- digamos, 15 mm/s, ou até mesmo 5mm/s -- imprimindo uma forma simples e vá aumentando à medida que conseguir
-confiança que a impressora dá conta.  * *Aceleração do extrusor* também deve ser colocada em um valor baixo para
-manter a pressão interna mais constante; um valor entre 200 e 500 mm/s^2^ é recomendado.  * *Retração* deve ser
+confiança que a impressora dá conta.
+* *Aceleração do extrusor* também deve ser colocada em um valor baixo para
+manter a pressão interna mais constante; um valor entre 200 e 500 mm/s^2^ é recomendado.
+* *Retração* deve ser
 minimizada. Embora alguns _reprappers_ aconselhem desligá-la totalmente, costuma ser suficiente deixá-la com baixa
 velocidade e pequena distância (digamos, 15 mm/s e 2mm de retração). É importante também impedir um número
 grande de retrações; neste caso, os ajustes de limitar o número por distância do Cura serão bem úteis, com
 20 retrações a cada 10mm sendo o recomendado. Claro que o número de retrações é função da forma impressa,
 então formas vazadas, finas e repletas de ilhas como as _voronoi_ terão probabilidade maior de falhar do que
-peças inteiriças e grossas.  * No Slic3r, usar autospeed, embora aumente o tempo total de impressão, deixa a
+peças inteiriças e grossas.
+* No Slic3r, usar autospeed, embora aumente o tempo total de impressão, deixa a
 pressão dentro do hotend o mais uniforme possível, diminuindo tanto as chances de falha quanto os artefatos de
-impressão, e é altamente recomendada para filamento flexível.  * *Para mitigar o stringing e bolhas, Coasting*
+impressão, e é altamente recomendada para filamento flexível.
+* *Para mitigar o stringing e bolhas, Coasting*
 (Simplify3D e Cura) e *Pressure Advance* (Slic3r) ajudam. Colocar uma *velocidade de percurso* (travel) alta, isto
 é, a velocidade do carro do extrusor quando não está extrudando, também ajuda. E por fim, habilitar o *Z lift*
-(levantamento de Z) quando for necessária uma retração também.  1.  [[dupla-extrusão]] == Dupla extrusão
+(levantamento de Z) quando for necessária uma retração também
+
+=== Dupla extrusão
 
 Finalmente, vamos tratar de um dos ajustes que mais quebram a cabeça dos que tratam com modelos que precisam ser
 impressos em extrusão dupla. Primeiro, vamos revisitar os quatro formatos principais de arquivos para impressão 3D:
@@ -12321,7 +12383,8 @@ valem para as coordenadas do extrusor -- ele tem seu próprio status, ajustado p
 image::image429.png[image,width=642,height=459]
 
 * G2 e G3 são comandos de movimentação como G0/G1 mas para arcos, como descritos na seção
-sobre o problema dos círculos.  * O *G4* é um comando de pausa por tempo. Para uso interativo de G-Code não
+sobre o problema dos círculos.
+* O *G4* é um comando de pausa por tempo. Para uso interativo de G-Code não
 tem realmente utilidade, mas inserido em um arquivo .gcode de impressão pode servir para permitir que um elemento
 esfrie ou aqueça, ou até dar tempo para haver intervenção do operador (apesar que, neste caso, se a máquina
 tiver um painel interativo, serão preferíveis os comandos _M226_ ou __M600__). Parâmetros do G4: ** P__n__
@@ -12330,18 +12393,23 @@ tiver um painel interativo, serão preferíveis os comandos _M226_ ou __M600__).
 *G4 P10000* é equivalente a **G4 S10**.
 
 * G10: comando para retração de firmware, por default não usado pelos fatiadores (que implementam a retração
-usando G1). Usa os ajustes colocados pelo comando __M207__.  * G11: "unretract" (volta da retração) por firmware,
+usando G1). Usa os ajustes colocados pelo comando __M207__.
+* G11: "unretract" (volta da retração) por firmware,
 por default não usado pelos fatiadores (que implementam o unretract usando G1). Usa os ajustes colocados pelo
-comando __M208__.  * G20: passa a interpretar as unidades usadas nos parâmetros como polegadas. A configuração
-é perdida quando a impressora é desligada.  * G21: passa a interpretar as unidades usadas nos parâmetros como
-milímetros. A configuração é perdida quando a impressora é desligada.  * G28: Implementa o __homing__. Quando
+comando __M208__.
+* G20: passa a interpretar as unidades usadas nos parâmetros como polegadas. A configuração
+é perdida quando a impressora é desligada.
+* G21: passa a interpretar as unidades usadas nos parâmetros como
+milímetros. A configuração é perdida quando a impressora é desligada.
+* G28: Implementa o __homing__. Quando
 a impressora 3D é ligada, ela não "sabe" em que coordenadas o extrusor está posicionado. Quando o comando
 G28 é enviado para a impressora 3D cartesiana, ela vai até o _fim de curso_ de cada eixo, deixando no final
 do procedimento o extrusor na coordenada X=0, Y=0, Z=0 -- a "origem". No caso das impressoras 3D delta,
 o G28 leva os braços até o topo de cada torre, terminando com o _effector_ no centro da mesa no plano XY e
 na maior altura alcançável da impressora (Z máximo) -- (0,0,Zmax). De ambos os modos, a impressora passa a
 "saber" em que coordenada está, e se os próximos movimentos do extrusor ou effector forem dados por ela,
-ela continuará tendo esta referência.  + O G28 não necessariamente vai até o fim de curso de _todos_ os
+ela continuará tendo esta referência.  +
+O G28 não necessariamente vai até o fim de curso de _todos_ os
 eixos. Se forem passados parâmetros de eixos, ele vai até o fim de curso dos parâmetros (o valor numérico do
 parâmetro é ignorado). Por exemplo, G28 X0 Y0 vai até o fim de curso do eixo X e Y. É importante notar que
 o comportamento do G28 não é muito padronizado e existem firmwares que podem fazer o _homing_ completo mesmo
@@ -12441,7 +12509,8 @@ Os termos da licença regem que:
 
 *Você tem o direito de:*
 
-* *Compartilhar* -- copiar e redistribuir o material em qualquer mídia ou formato.  * *Adaptar* -- remixar,
+* *Compartilhar* -- copiar e redistribuir o material em qualquer mídia ou formato.
+* *Adaptar* -- remixar,
 transformar e criar a partir do material para qualquer fim, mesmo que comercial.
 
 O licenciante não pode revogar estes direitos desde que você siga os termos da licença, a seguir:
@@ -13078,7 +13147,8 @@ livremente disponível para modificação, distribuição e reuso. Seus principa
 
 * http://www.makerlinux.com.br/[_http://www.makerlinux.com.br_] -- o portal da empresa _Makerlinux_ que
 gerencia com sua esposa, onde procura agregar todas as suas contribuições de forma que sejam facilmente
-encontráveis.  * http://www.thingiverse.com/Patola/designs[_http://www.thingiverse.com/Patola/designs_]
+encontráveis.
+* http://www.thingiverse.com/Patola/designs[_http://www.thingiverse.com/Patola/designs_]
 e https://www.youmagine.com/patola/designs[_https://www.youmagine.com/patola/designs_],
 suas páginas de fisíveis em portais dedicados inteiramente a isso.
 * https://github.com/Patola?tab=repositories[_https://github.com/Patola?tab=repositories_] -- página do portal de desenvolvimento coletivo e controle de versão __github__, por onde

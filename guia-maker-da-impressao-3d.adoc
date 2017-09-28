@@ -9452,7 +9452,7 @@ pode ser chamada de __roubo__, pois __não há subtração__.
 [[pecasimplescomerros]]
 image::image238.png[image,width=517,height=412,align="center",title="Uma exceção à regra geral de &quot;malha orgânica e complexa tendo mais erros&quot;. Esta peça mecânica extremamente simples, modelada no software Sketchup, tem erros suficientes de malha para ser irresolvível e dar dores de cabeça ao profissional que aceitasse imprimi-la. Pode ser baixada para &quot;apreciação&quot; em https://www.thingiverse.com/thing:793491"]
 
-== Operações booleanas
+=== Operações booleanas
 
 Um conceito importante para entender malhas e sólidos e como os problemas podem surgir é o de __operações
 booleanas__. São modificações que você exerce tendo dois ou mais sólidos ou malhas como operandos e uma única
@@ -9462,13 +9462,28 @@ ilustradas aqui no software OpenSCAD com a única mudança sendo no nome da fun�
 [[booleanuniaoousoma]]
 image::image239.png[image,width=642,height=372,align="center",title="**UNIÃO OU SOMA**: as duas ou mais formas são &quot;fundidas&quot; resultando em uma forma única. No caso de malhas, a superfície é recalculada e as partes &quot;internas&quot; não são preservadas. Se uma parte estiver dentro da outra, o resultado é a parte maior. Se as duas partes estiverem separadas, o resultado é um único objeto com volumes separados."]
 
-image::image240.png[image,width=642,height=328]
+[[booleandiferenca]]
+image::image240.png[image,width=642,height=328,align="center",title="**DIFERENÇA**: A primeira forma da operação tem a geometria das formas seguintes &quot;subtraídas&quot; de seu volume. Se as partes estiverem separadas, o resultado é a primeira parte."]
 
-image::image241.png[image,width=642,height=350]
+[[booleanintersecao]]
+image::image241.png[image,width=642,height=350,align="center",title="**INTERSEÇÃO**: A parte onde as formas ocupam o mesmo espaço é retornada. Se as formas não se tocarem, o resultado é vazio. Se uma das formas estiver inteiramente dentro da outra, o resultado é ela mesma."]
 
-1.  [[erros-de-malhas]] == Erros de malhas 1.  [[buracos]] === Buracos
+Cada uma dessas operações envolve cálculos matemáticos e análise topológica que, dependendo das formas envolvidas, pode resultar em formas inválidas, ou seja, com os erros que mencionamos. Não existem algoritmos perfeitos para implementar estas fórmulas que não gerem erro; muitos deles fazem a operação e automaticamente fazem um "pós-processamento" para eliminar os erros surgidos. Isso se reflete nos softwares de modelagem -- o Blender, por exemplo, tem dois algoritmos diferentes embutidos para fazer as mesmas operações booleanas, e ambos ainda geram artefatos em operações com formas mais complexas. Um grande progresso pra esse modelador foi a liberação de um add-on para ele que permite o uso do __cork__, uma implementação de operações booleanas bastante robusta^1^.
 
-image::image242.png[image,width=642,height=417]
+[NOTE]
+.Referências:
+====
+. Notícia do add-on para o Blender: http://www.ciceromoraes.com.br/blog/?p=2907
+====
+
+=== Problemas de malhas
+Uma vez compreendido que podemos ter erros, é necessário saber que tipos de erros, afinal, podemos ter. Alguns deles serão resultado de algoritmos com heurística deficiente e operações topologicamente complexas, outros podem vir já do processo de modelagem ou criação da forma (como modelos digitalizados em 3D), outros serão idiossincrasias matemáticas inevitáveis e muitos virão de simples erro humano.
+
+==== Buracos
+São os mais fáceis de entender e ilustrar, por isso os melhores para introduzir o leitor ao conceito de geometrias impossíveis.
+
+[[macacoburacospreenchidos]]
+image::image242.png[image,width=642,height=417,align="center",title="À esquerda: Uma malha do rosto de um macaco com diversos buracos (faces faltantes). À direita: A mesma malha, depois de passar pelo filtro de reconstrução &quot;Close Holes&quot; do software open-source meshlab. O tamanho default do buraco a fechar (30mm^2^) não fechava o buraco maior; colocando 100mm^2^, a peça foi fechada corretamente. O conserto não é ideal: percebe-se o &quot;afundamento&quot; da parte onde o buraco da sobrancelha foi preenchido."]
 
 Apenas cascas (malhas fechadas) conseguem representar uma estrutura sólida tridimensional. Malhas que estejam
 abertas podem resultar de vários processos diferentes no fluxo de modelagem, desde operações entre superfícies
@@ -9478,13 +9493,14 @@ vezes o procedimento de fechar buracos, se passado com os parâmetros incorretos
 não são relacionadas; neste caso uma reparação mais cuidadosa, com fechamento de seções específicas, pode
 ser necessária. A maioria dos softwares de modelagem e reparo permite tal tratamento.
 
-=== Normais invertidas
+==== Normais invertidas
 
 "Normal" é o nome que se dá, em uma polígono, a um vetor em ângulo reto com sua superfície, apontando
 "para fora". Como explicamos ao falhar de malhas, elas são __orientadas__: se o polígono fosse uma folha de
 papel, ele teria dois lados, um considerado "de dentro" e o outro "de fora".
 
-image::image243.png[image,width=423,height=294]
+[[conceitodenormaisdemalha]]
+image::image243.png[image,width=423,height=294,align="center"]
 
 O problema que pode acontecer nas malhas é que, ao computar qual é o lado "de dentro" e o "de fora", o
 software se confunde, como por exemplo em operações booleanas ou esculpimento de superfícies irregulares. Esse
@@ -9494,14 +9510,15 @@ ter uma forma irresolvível somente por causa das normais invertidas, exigindo i
 que pode precisar selecionar face a face as faces "ruins" e invertê-las. Em objetos típicos com milhares de
 faces e muitas de difícil alcance ou visualização, a tarefa pode ser impraticável. Softwares modeladores costumam
 ter facilitadores visuais para o problema; Blender, por exemplo, permite visualização das normais dos polígonos,
-e tem também o ocultamento de faces invertidas (backface culling) como uma opção falsa/verdadeira. Um algoritmo
+e tem também o ocultamento de faces invertidas (__backface culling__) como uma opção falsa/verdadeira. Um algoritmo
 que costuma resolver grande parte dos problemas é a seleção de uma área ou objeto e executar a função de
 "normalizar" a orientação dos triângulos, o que quer dizer que polígonos adjacentes terão sua orientação
 decidida por "maioria" de acordo com os outros polígonos.
 
-image::image244.png[image,width=642,height=326]
+[[macacofacesinvertidas]]
+image::image244.png[image,width=642,height=326,align="center",title="À esquerda: O ajuste &quot;backface culling&quot; do software Blender ajudando a ver as faces que estão invertidas na malha. À direita: O ajuste de visualização de normais facilitando ver a direção das faces numa malha. Como a malha é formada de muitos polígonos, a alta densidade deles torna a visualização mais difícil. Mas já se nota que as áreas &quot;nuas&quot; em que os vetores não estão saindo das faces."]
 
-=== Faces, arestas e vértices flutuantes
+==== Faces, arestas e vértices flutuantes
 
 Digitalizadores (scanners) tridimensionais são a quase exclusiva fonte deste problema. Seus algoritmos percorrem
 a superfície dos objetos escaneados e inferem pontos, arestas e superfícies, com uma grande porcentagem dessas
@@ -9519,9 +9536,10 @@ sido contagiada/deturpada pela limpeza inadequada dessa nuvem. Nesse caso, o mel
 fonte original da malha para corrigi-la e refazer a inferência, visto que certos erros no início desse processo
 podem tornar impossível a correção posterior.
 
-image::image245.png[image,width=642,height=343]
+[[facesflutuantes]]
+image::image245.png[image,width=642,height=343,align="center",title="À esquerda: Uma das nuvens de pontos capturadas por fotogrametria pelo designer Cícero de Moraes. O software open-source da ilustração é o CloudCompare. À direita: A nuvem de ponto transformada em malha sem a remoção dos &quot;resíduos&quot;. É possível ver com clareza como os erros se ampliam se a limpeza da nuvem não for feita previamente."]
 
-=== Interseções
+==== Interseções
 
 Partes da malha se introjetando ou coincidindo com o espaço interno de seu volume - este é um problema genérico
 que pode ocorrer até mesmo com modelagem sólida (geralmente menos propensa a erros) convertida para malha, embora
@@ -9532,9 +9550,10 @@ de ocorrer em conjunto. Como este costuma ser um erro de modelagem envolvendo au
 mesma), os softwares de conserto tentam "unir" as partes coincidentes com operações booleanas. Com outros
 problemas interferindo na análise da topologia da malha, no entanto, a operação pode falhar.
 
-image::image246.png[image,width=642,height=332]
+[[intersecoesblender]]
+image::image246.png[image,width=642,height=332,align="center",title="À esquerda: Nesta figura a entrada da peça em si mesma é bastante clara e um algoritmo de retopologia a resolveria facilmente. À direita: Este caso é muito mais difícil de tratar: o apêndice que sai do cubo sofre uma inversão de sentido e entra &quot;ao avesso&quot; na peça. Como resolver isso e ter uma forma sólida? É impossível. E na maioria das vezes tais erros não são visualmente perceptíveis."]
 
-=== Non-manifold
+==== Non-manifold
 
 Entramos no espinhoso e complexo campo da teoria da topologia, uma disciplina matemática de nível superior que
 traria exigências excessivas de conhecimento para o tratamento de formas para impressão 3D. A incompreensível
@@ -9560,16 +9579,26 @@ exatamente duas faces. 0-manifold e 1-manifold são buracos e cascas abertas.
 * Você vai chamar 2-manifold de
 simplesmente _manifold_ e os outros casos de __non-manifold__.
 * Esses casos englobam, entre outras, as seguintes
-situações: ** Faces/arestas/vértices ocupando o mesmo lugar, parcial ou totalmente, espacialmente, que outros,
+situações:
+** Faces/arestas/vértices ocupando o mesmo lugar, parcial ou totalmente, espacialmente, que outros,
 sem estarem conectados. Se nosso cubo do Blender fosse realmente 6 quadrados dispostos espacialmente de acordo
 com as faces de um cubo, teríamos um design __non-manifold__, porque cada aresta apareceria duas vezes (uma de
-cada quadrado) e como as arestas do quadrados não estão conectadas, haveria "buracos" de tamanho zero.  +
-image::image247.png[image,width=530,height=499]image:image248.png[image,width=547,height=479]
-** Faces internas, que não contribuem para a geometria do objeto.
-+ image:image249.png[image,width=247,height=234] ** Uma aresta conectada a várias
-superfícies. Isso impede, entre outras coisas, que o software saiba qual é o lado interno ou externo da casca.
-+ image:image250.png[image,width=246,height=232]
+cada quadrado) e como as arestas do quadrados não estão conectadas, haveria "buracos" de tamanho zero.
 
+[[nonmanifoldopenscad1]]
+image::image247.png[image,width=530,height=499,align="center",title="Operação booleana no software open-source OpenSCAD realizada com a subtração do cubo de baixo (maior) de um logo acima, cujo lado inferior ocupa o mesmo espaço do lado superior do cubo maior. O resultado da operação mostra uma área &quot;riscada&quot; que é erro de lidar com faces coincidentes. As operações booleanas são bastante susceptíveis a problemas de non-manifold, por isso é prática de modeladores 3D nunca fazer operações booleanas com superfícies verdadeiramente coincidentes - deixá-las deslocadas em alguma grandeza imperceptível, como 0,001mm."]
+
+[[nonmanifoldopenscad2]]
+image::image248.png[image,width=547,height=479,align="center",title="Duas arestas ocupando o mesmo espaço: proibido para operações. Ou, alternativamente, se tal aresta está em um objeto único, é uma aresta &quot;4-manifold&quot;, que para o nosso espaço tridimensional é considerada &quot;non-manifold&quot;. No espaço tridimensional, tal aresta exigiria a existência de espaço com volume zero (a parte em que os cubos se tocam), o que é impossível."]
+
+** Faces internas, que não contribuem para a geometria do objeto.
++
+image::image249.png[image,width=247,height=234,align="center"]
+** Uma aresta conectada a várias
+superfícies. Isso impede, entre outras coisas, que o software saiba qual é o lado interno ou externo da casca.
++
+image::image250.png[image,width=246,height=232,align="center"]
++
 Os exemplos simplificados mostrados acima podem parecer bem fáceis de resolver, mas matematicamente falando
 quebram a consistência topológica e atrapalham ou impedem os softwares de lidar corretamente com eles. Muitos
 deles são completamente invisíveis pela forma tridimensional, como o caso do cubo com 6 quadrados disjuntos ao
@@ -9579,9 +9608,10 @@ os open-source: Blender (que tem uma aba repleta de funções para inspecionar e
 meshlab, FreeCAD; o gratuito meshmixer; ou serviços gratuitos de nuvem (automáticos, permitindo pouco controle
 dos parâmetros) como o Azure Mesh Repair e MakePrintable.
 
-image::image251.png[image,width=566,height=443]
+[[freecadnonmanifold]]
+image::image251.png[image,width=566,height=443,align="center",title="Software Open-Source FreeCAD com seu utilitário interno para detectar e corrigir interativamente vários tipos de erro, incluindo non-manifold."]
 
-== Problemas de malha -- não-geométricos
+=== Problemas de malha -- não-geométricos
 
 Nem todos os problemas de malha que se pode ter são relacionados à geometria _lógica_ da peça, e sim à
 geometria __física__. Em outras palavras: embora a forma seja perfeitamente equivalente a um objeto real, a
@@ -9592,7 +9622,7 @@ problemas geralmente pedem não só correção, mas um _redesign_ da peça, o qu
 peça para simplesmente imprimir para cliente. Detectados problemas deste tipo na peça, o melhor é devolver para
 redesign ou ao menos informar o cliente -- com um acordo de isenção de responsabilidade por tais falhas.
 
-=== Paredes finas
+==== Paredes finas
 
 Em um modelo fechado qualquer, a _espessura de parede_ (wall thickness) é a distância mínima entre dois pontos
 de uma superfície fechada. É uma das características geométricas mais importantes de um objeto: o quanto
@@ -9604,13 +9634,15 @@ suficientemente bem aos materiais comuns de impressão 3D. Vários softwares de 
 achar paredes finas: os open-source FreeCAD, Meshlab e Blender são bons exemplos, mas softwares proprietários
 como Meshmixer e Netfabb também têm tais recursos.
 
-image::image252.png[image,width=642,height=402]
+[[freecadparedesfinas]]
+image::image252.png[image,width=642,height=402,align="center",title="Duas caixas cúbicas de 10mm de lado. A da esquerda tem espessura de parede de 0,3mm; é tão fina que mesmo se for impressa -- a espessura é menor que o próprio orifício do bico, portanto o fatiador poderá não imprimir a parede --, não terá nenhuma sustentação estrutural. A da direita tem 1,5mm de espessura, e será impressa corretamente."]
 
 Tenha ainda ciência o leitor que isso é uma simplificação do problema. Mesmo nos documentos da Shapeway, a
 espessura tem suas variações: eles criam o conceito de "cabo" (__wire__) para especificar certas geometrias
 em que a espessura mínima é de 2mm.
 
-image::image253.png[image,width=642,height=523]
+[[blenderanaliseespessura]]
+image::image253.png[image,width=642,height=523,align="center",title="Análise de espessura no software de modelagem open-source Blender. As seções mais para o vermelho são as mais preocupantes, as verdes são &quot;OK&quot;. Nem sempre é desejável apenas robustez; esta mesma análise nos informou que os &quot;picotes&quot; do painel do fundo da peça estão muito frágeis, e como ele deve em teoria ser destacável é exatamente o que queremos. Ele também está acima do mínimo para ser impresso, 0,4mm."]
 
 === Detalhes pequenos
 
@@ -9626,7 +9658,8 @@ que o filete que podem produzir, simplesmente não o incluem no código para imp
 impressão costumam designar um detalhamento mínimo (saliência ou reentrância) em uma superfície, que costuma
 ser entre 1 e 2 vezes o orifício do bico usado.
 
-image::image254.png[image,width=452,height=344]
+[[detalhespequenosslic3r]]
+image::image254.png[image,width=452,height=344,align="ceter",title="Um pequeno bloco de texto com letras finas, e a trajetória de plástico resultante para tentar imprimi-lo. Somente alguns resquícios de letra seriam efetivamente impressos nesse caso, porque a maior parte delas não tem espessura suficiente (0,4mm). O software ilustrado aqui é o fatiador open-source Slic3r, um dos melhores, se não o melhor, para distinguir detalhes pequenos. O mesmo objeto, em outros fatiadores, não teria nem esses resquícios impressos."]
 
 === Overhangs
 
@@ -9636,7 +9669,8 @@ um ângulo tão próximo do horizontal que a deposição de plástico derretido 
 possibilitá-las. Lembre-se que a impressão 3D FDM divide as peças em camadas e _sempre_ ocorre de baixo para cima,
 sem que o bico retorne a camadas mais baixas. Ficará mais fácil visualizar com o caso de um cogumelo a ser impresso:
 
-image::image255.png[image,width=555,height=570]
+[[blenderanaliseoverhangs]]
+image::image255.png[image,width=555,height=570,align="center",title="A análise dos &quot;overhangs&quot; de um cogumelo para impressão. Apesar de o tronco do cogumelo não apresentar nenhum problema para a impressão, o anel mais baixo do chapéu dele (todo em vermelho) não tocará o solo, e o plástico não pode ser simplesmente depositado &quot;no ar&quot;. Adicionalmente, mesmo se considerando que este anel inicial será suportado por alguma estrutura, as faces da parte de dentro do chapéu estão tão próximas do horizontal que o plástico depositado tenderá a &quot;desabar&quot;. As cores são dadas pelo ângulo da face em relação ao eixo Z, vertical: quanto mais próximas da horizontal (90°), mais vermelhas estarão; quanto mais próximas da vertical (0°), mais perto do azul, e mais fácil será a impressão."]
 
 Veremos no fatiamento que temos a oportunidade de pedir ao software de impressão que coloque estruturas automáticas
 ou semi-automáticas, destacáveis no final da impressão, chamadas de *suportes* para lidar com a maioria desses
@@ -9649,9 +9683,10 @@ então nem sempre serão desejáveis; por exemplo, detalhes finos ou internos po
 mas a tarefa de os remover após a impressão poderá quebrar as partes delicadas ou ser impraticável numa parte
 interna difícil de alcançar. Existem mitigações para esses problemas, que veremos na parte de fatiamento.
 
-image::image256.png[image,width=642,height=495]
+[[overhangscura231]]
+image::image256.png[image,width=642,height=495,align="center",title="O cogumelo da análise de overhangs, em um fatiador (Cura 2.3.1). Mesmo com o ângulo mínimo de suporte sendo bem alto, 80°, bastante suporte foi automaticamente incorporado à impressão."]
 
-=== Distribuição de forças
+==== Distribuição de forças
 
 Por fim, muitas dessas _diretivas_ de qualidade de objetos impressos na verdade são apenas "atalhos" para
 termos objetos imprimíveis, robustos e com boa aparência. Se formos ao fundo da questão, no entanto, a maioria
@@ -9663,7 +9698,7 @@ elementos finitos (FEA)__. Ela não serve somente para forças mecânicas, tem o
 termodinâmica dos objetos. Existem pacotes bem completos de FEA (um exemplo é o open-source __Salome Platform__)
 no mercado e muitos dos CADs mais sofisticados e completos como o SolidWorks a incorporam.
 
-*A Anisotropia*
+.A Anisotropia
 
 No entanto, mesmo com a impressão 3D FFF tendo se popularizado tanto, virtualmente nenhum pacote de software
 do mercado está devidamente preparado para lidar com o maior revés de análise da FFF, aquele que já
@@ -9674,13 +9709,16 @@ estão aparecendo procurando resolver esse problema e até um serviço online su
 (http://my3dmatter.com/fea-for-fdm-3d-printing/[_http://my3dmatter.com/fea-for-fdm-3d-printing/_]), mas a solução
 deste problema, qualquer que seja, provavelmente demorará algum tempo para chegar ao cidadão comum.
 
-image::image257.jpeg[image,width=523,height=533]
+[[anisotropiafreecad]]
+image::image257.jpeg[image,width=523,height=533,align="center",title="Uma análise de elementos finitos no FreeCAD e o resultado prático: por causa da anisotropia, muito antes de o plástico deformar como na previsão, as força fracas da aderência de camada fizeram o objeto impresso quebrar de maneira distinta da prevista. O único serviço disponível de análise de elementos finitos contando a anisotropia e configurações de FFF cobra US$ 100 por esta peça simples."]
 
-Notas:
-
-1 -- Leitores _gamers_ que apreciam jogos tridimensionais podem já conhecer a palavra de um dos ajustes de
+[NOTE]
+.Nota:
+====
+. Leitores _gamers_ que apreciam jogos tridimensionais podem já conhecer a palavra de um dos ajustes de
 qualidade mais comuns, o _filtro anisotrópico_ (anisotropic filtering), um pós-processamento de texturas para
 aprimorar a visualização em objetos distantes.
+====
 
 Operação da impressora 3D
 

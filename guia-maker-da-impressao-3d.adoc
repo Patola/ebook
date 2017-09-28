@@ -9720,14 +9720,14 @@ qualidade mais comuns, o _filtro anisotrópico_ (anisotropic filtering), um pós
 aprimorar a visualização em objetos distantes.
 ====
 
-Operação da impressora 3D
+== Operação da impressora 3D
 
 Uma vez que foi dada a necessária teoria para entender uma impressora 3D atual, a próxima etapa é partir para
 a prática. O caso típico de uso a ser tratado em nossos exemplos é o de uma impressora 3D FFF de baixo custo
 no mercado nacional para fins pessoais ou profissionais. Alguns modelos de impressoras 3D com características
 especiais (como as estilo "delta") serão tratadas em apêndices, assim como casos de uso que extrapolam o comum.
 
-== Introdução
+=== Introdução
 
 Uma Impressora 3D "de mercado" tipicamente vem com drivers de dispositivo e um software (fatiador) para você
 usar com a impressora 3D. No fatiador, você pode controlar a impressão enquanto acontece, ligado à impressora 3D,
@@ -9751,20 +9751,28 @@ nos apêndices.
 Antes de começar a entender os fatiadores, no entanto, é importante contextualizá-los apropriadamente. Eles se
 inserem no workflow de impressão atuando como softwares onde você:
 
-* *Importa* formas tridimensionais (formatos mais comuns: STL, OBJ, AMF e 3MF); * *Dispõe* essas formas
+* *Importa* formas tridimensionais (formatos mais comuns: STL, OBJ, AMF e 3MF);
+* *Dispõe* essas formas
 tridimensionais em uma "bandeja virtual" tridimensional que é a mesa de impressão da impressora 3D que
-configurou; * *Faz operações simples* com essas formas tridimensionais, como: mover as formas; aumentar ou diminuir,
+configurou;
+* *Faz operações simples* com essas formas tridimensionais, como: mover as formas; aumentar ou diminuir,
 uniformemente ou nos eixos X, Y e Z; realizar cortes simples; rotacionar / inclinar a peça; combinar com outras
-peças; * Grava / exporta a disposição da bandeja que arrumou; * *Configura* os _parâmetros de fatiamento_
-adequados para a forma. Preenchimento, suportes, estruturas de apoio, resolução, etc.; * *Executa* a operação
-de fatiar (geralmente por um botão ou item no menu); * Tem uma **pré-visualização**, depois do fatiamento
-completado, em como ocorrerá a impressão; * Tem uma *previsão* de tempo e consumo de material da impressão
--- em alguns fatiadores, é até possível colocar o custo por quilo do material para se ter uma **estimativa de
-preço**; * Visualiza ou até edita o *g-code* resultante do fatiamento; * Grava / exporta o g-code resultante; *
-Executa operações de manutenção da impressora 3D pela USB, bluetooth ou rede, como testes de movimentação,
+peças; * Grava / exporta a disposição da bandeja que arrumou;
+* *Configura* os _parâmetros de fatiamento_
+adequados para a forma. Preenchimento, suportes, estruturas de apoio, resolução, etc.;
+* *Executa* a operação
+de fatiar (geralmente por um botão ou item no menu);
+* Tem uma **pré-visualização**, depois do fatiamento
+completado, em como ocorrerá a impressão;
+* Tem uma *previsão* de tempo e consumo de material da impressão
+-- em alguns fatiadores, é até possível colocar o custo por quilo do material para se ter uma **estimativa de preço**;
+* Visualiza ou até edita o *g-code* resultante do fatiamento;
+* Grava / exporta o g-code resultante;
+* Executa operações de manutenção da impressora 3D pela USB, bluetooth ou rede, como testes de movimentação,
 gravação de firmware, nivelamento da mesa, mudança de parâmetros da memória do microcontrolador (EEPROM);
 * Envia a impressão (g-code) pela USB, bluetooth ou rede para a impressora executar, possivelmente visualizando
-a renderização em 3D da trajetória da impressão enquanto ela ocorre; * Monitora a impressão tendo momento a
+a renderização em 3D da trajetória da impressão enquanto ela ocorre;
+* Monitora a impressão tendo momento a
 momento a temperatura de cada componente aquecido, o material gasto, a velocidade atual, a trajetória percorrida
 e até a visualização por câmeras, vendo na tela "ao vivo" enquanto acontece, e podendo até configurar alarmes.
 
@@ -9772,38 +9780,43 @@ Essas são as opções disponíveis em fatiadores modernos, atualmente. Nenhum d
 apenas subconjuntos delas. É possível que no futuro agreguem ainda mais funções, e no passado muitas dessas
 operações eram realizadas por softwares diferentes. Quando o software não executa a operação de "fatiamento"
 mas permite que você controle a impressora, execute operações de manutenção e envie o g-code, ele é chamado de
-_*Print Host*_ ao invés de fatiador. Quando o software só recebe o modelo da bandeja pronta e as configurações
+__**Print Host**__ ao invés de fatiador. Quando o software só recebe o modelo da bandeja pronta e as configurações
 de fatiamento como parâmetro, sem mesmo exibir uma interface gráfica, e devolve apenas o "g-code", ele é
-chamado de __*fatiador puro*__. Há muita utilidade em se usar um fatiador puro, uma delas é poder ser usado com
+chamado de __**fatiador puro**__. Há muita utilidade em se usar um fatiador puro, uma delas é poder ser usado com
 outras interfaces e workflows, ou de forma automática e em lote (__batch__) para várias peças e/ou bandejas
 pré-configuradas. Ainda, esses fatiadores purs não precisam de recursos de display pra serem executados, podendo
 usar o processamento de dispositivos embarcados. Por isso alguns fatiadores, como _Cura,_ _Slic3r_ e _MatterControl_
 (não por acaso justamente os open-source), oferecem a funcionalidade de fatiador puro como um opcional do programa
 (você pode invocá-los em modo _batch_ pela linha de comando ou através de outro programa).
 
-image::image258.png[image,width=626,height=475]
+[[curanofreecad]]
+image::image258.png[image,width=626,height=475,align="center",title="O Cura traz consigo o CuraEngine, um executável para que ele possa ser usado como fatiador puro. Deste modo, outros softwares como Repetier Host e FreeCAD podem invocá-lo. No screenshot vemos a bancada de impressão 3D do FreeCAD pronta pra chamar o CuraEngine."]
 
 === Fluxo de trabalho (workflow) da Impressão 3D
 
-* **Escolha ou obtenção das formas tridimensionais**. Há diversas fontes possíveis para as formas: ** Elas
-podem ser criadas por softwares _*modeladores sólidos*_ -- aplicativos que permitem a modelagem tridimensional e
+* **Escolha ou obtenção das formas tridimensionais**. Há diversas fontes possíveis para as formas:
+** Elas podem ser criadas por softwares __**modeladores sólidos**__ -- aplicativos que permitem a modelagem tridimensional e
 geram arquivos cujos dados descrevem as formas sólidas que compõem o modelo. Alguns exemplos de tais softwares:
-SolidWorks, Inventor, FreeCAD.  ** Elas podem ser criados por software _*modeladores de malha ou superfície*_
+SolidWorks, Inventor, FreeCAD.
+** Elas podem ser criados por software _*modeladores de malha ou superfície*_
 -- aplicativos que permitem a modelagem tridimensional e geram arquivos cujos dados, ao invés de descrever
 as formas sólidas que compõem o modelo, descrevem as superfícies ou "peles" que envolvem as formas do
 modelo. A diferença aparentemente sutil de abordagem é gigante no que concerne aos dados gravados e como são
 processados matematicamente. Em geral os modeladores de superfície geram formas mais orgânicas, como fazem
-os aplicativos ZBrush, Sculptris e Blender mas também o Sketchup.  ** *Modeladores matemáticos* de funções
+os aplicativos ZBrush, Sculptris e Blender mas também o Sketchup.
+** *Modeladores matemáticos* de funções
 algébricas podem gerar formas de gráficos tridimensionais, também em malha, como Mathematica e MathCAD; **
 **Linguagens de programação em 3D**, como CadQuery, OpenSCAD, SolidPython; ** Digitalização 3D de imagens
 (por fotogrametria, por scanner 3D especializado, por ultrassom "4D")
 ** **Procura e download da Internet**,
 em sites de impressão 3D como _thingiverse_ ou __youmagine__, sites genéricos de formas 3D como _grabcad_
-e _cgtrader_ ou até mecanismos de busca 3D como __yobi3d__, _stlfinder_ e __yeggi__.  ** Extração de dados
+e _cgtrader_ ou até mecanismos de busca 3D como __yobi3d__, _stlfinder_ e __yeggi__.
+** Extração de dados
 de aplicativos e jogos, através de "desempacotadores" e conversores automáticos. Um exemplo notável é o
 jogo _minecraft_ que tem muitos modelos extraídos para impressão, mas virtualmente qualquer jogo tridimensional
 tem seus modelos conversíveis para as malhas impressas em 3D (e como as formas não são feitas especificamente
-para impressão 3D, podem precisar de alguns ajustes).  ** Personalização e geração de objetos, em sites como
+para impressão 3D, podem precisar de alguns ajustes).
+** Personalização e geração de objetos, em sites como
 _thingiverse_ (novamente) ou geradores de "lithopanes" (fotografias bidimensionais em relevo).
 * *Conversão*
 da forma para um formato que o fatiador entenda. Para malhas simples de uma só cor, STL e OBJ; para malhas com
@@ -9828,7 +9841,8 @@ ou clorofórmio;
 * Opcional: *revestimento* da peça para conferir a ela alguma propriedade como dureza ou brilho;
 * Opcional: *pintura* da peça para lhe dar cores e "vida".
 
-image::image259.png[image,width=651,height=745]
+[[fluxodeimpressao3d]]
+image::fluxo-impressao.png[image,width=1270,height=1446,align="center",title="Parte do workflow de impressão 3D: 1. Obtenção de uma forma 3D, sólida ou malha; 2. preparação da forma para malha e exportação para STL; 3. Importação e disposição das peças na bandeja virtual para fatiamento; 4. Após o fatiamento, visualização (parcial) de como a estrutura ficará impressa; 5. O início do g-code resultante deste fatiamento, com realce de sintaxe."]
 
 === E o que é fatiar?
 
@@ -9840,7 +9854,8 @@ Quanto mais finas as fatias, menos os detalhes verticais nelas importam (como in
 aproxima de algo perfeitamente bidimensional. Com fatias de paredes simplificadas suficientemente finas e um
 número muito grande delas, seu empilhamento será praticamente igual à figura tridimensional que as originou.
 
-image::image264.png[image,width=608,height=510]
+[[lulafatiado]]
+image::image264.png[image,width=608,height=510,align="center",title="Uma figura cortada em dezenas de fatias para impressão 3D. Cada fatia tem uma seção transversal cuja área interna é transformada em uma trajetória que a cabeça de impressão percorrerá para cobrir toda aquela área, depositando o filete de plástico, e empilhando sucessivas camadas começando da mais baixa, em contato com a superfície, até a mais alta."]
 
 O profissional abre o software fatiador e o alimenta com a peça ou peças tridimensionais (arquivos digitais como
 STL, AMF, 3MF, OBJ) que deseja imprimir, as visualizando na interface e as dispondo em uma "bandeja virtual",
@@ -9853,9 +9868,11 @@ ou ser enviado a ela -- dependendo do modelo, por uma porta USB, bluetooth ou re
 
 Fica mais fácil ver com o resultado da visualização de algumas camadas do fatiamento da Figura 15:
 
-image::image265.png[image,width=642,height=475]
+[[sequenciacamadas]]
+image::image265.png[image,width=642,height=475,align="center",title="Sequência de camadas escolhidas semi-aleatoriamente de baixo para cima da bandeja com três elementos; o preenchimento interno da peça aparece em azul, o perímetro em vermelho. À direita de cada quadro, temos uma régua com a altura em que é impressa."]
 
-image::image266.png[image,width=662,height=269]
+[[curaprinthost]]
+image::image266.png[image,width=662,height=269,align="center",title="Cura (versão antiga) controlando uma impressão enquanto acontece. O gráfico mostra as temperaturas do extrusor e da mesa aquecida de acordo com o tempo."]
 
 == Principais fatiadores do mercado
 
@@ -9918,7 +9935,10 @@ renderização tridimensional que não necessita de aceleração (sendo interess
 de depuração detalhadas para achar erros e equivalências em G-Code (este último recurso o torna o melhor fatiador
 para usuários avançadíssimos e desenvolvedores que precisam depurar novos recursos de firmware). Plataformas: Mac OS
 X, Linux, Windows. Código em https://github.com/timschmidt/repsnapper[_https://github.com/timschmidt/repsnapper_].
-+ image:image267.png[image,width=506,height=348] * *IceSL* -- fatiador _experimental_
++
+image:image267.png[image,width=506,height=348]
++
+* *IceSL* -- fatiador _experimental_
 que é uma espécie de mistura de "OpenSCAD" com Slic3r, feito inicialmente pra fins
 acadêmicos. Multiplataforma, mas infelizmente não é open-source, o que é especialmente lamentável
 pois se fosse teria muito apelo pra crescer, conseguindo fazer formas complexas sem perder detalhes
@@ -9939,7 +9959,8 @@ _Repetier Server,_ com visualização e edição de g-code, e poderosa interface
 * **Atelier**: controlador de impressão open-source com grande participação brasileira no desenvolvimento,
 escrito em C++ com a biblioteca gráfica Qt.
 
-image::image268.png[image,width=589,height=546]
+[[variosfatiadores]]
+image::image268.png[image,width=589,height=546,align="center",title="Populares fatiadores e print hosts. Na sequência: Slic3r, Cura, MatterControl, Simplify3D, Kisslicer, Voxelizer, Craftware, Pronterface, Repetier Host"]
 
 Trabalharemos com 3 fatiadores e um Print Host para comparação: os open-source *Slic3r* e **Cura**, o proprietário
 gratuito *Repetier Host* e o proprietário pago **Simplify3D**. Esses softwares foram escolhidos tanto por sua
@@ -9953,16 +9974,17 @@ proprietárias, restritivas e controladoras, para estender o poder sobre os prof
 -- pode se tornar impossível exercer aquela profissão sem o aval da fabricante, um poder inadmissível que
 muitos entregam sem hesitação (condenando junto os colegas de profissão, pelo efeito de rebanho).
 
-== Aprendendo a fatiar
+=== Aprendendo a fatiar: configuração inicial
 
 Comecemos por ver os primeiros parâmetros, os mais básicos que precisaremos, para configurar a nossa impressão
 em um fatiador de mercado. O assistente de configuração do fatiador __Slic3r__, especificamente, pede justamente
 as configurações iniciais que nos interessam, e usaremos como ilustração passando em seguida em como esses
 ajustes aparecem nos outros fatiadores.
 
-image::image269.png[image,width=628,height=328]
+[[slic3rwelcome]]
+image::image269.png[image,width=628,height=328,align="center",title="Assistente de configuração de primeira execução do Slic3r."]
 
-=== Ajuste I: Tipo de código de máquina
+==== Ajuste I: Tipo de código de máquina
 
 Existem muitas impressoras 3D no mercado, e embora a maioria delas use uma variação do *G-Code* consagrado
 de décadas de uso em máquinas CNC, pequenas variações podem gerar grandes diferenças, como um código de
@@ -9976,9 +9998,10 @@ nativo próprio (de nome S3G, Sanguino3 G-code, e extensão .s3g ou .x3g) que al
 (em nosso exemplo, somente o Simplify3D), tendo os outros que recorrer a um software conversor posterior (gpx)
 que transforma o arquivo .gcode em .x3g.
 
-image::image270.png[image,width=637,height=436]
+[[ajuste1codigomaquina]]
+image::image270.png[image,width=637,height=436,align="center",title="Escolhas de sabores de firmware do Slic3r. A última, &quot;no extrusion&quot;, significa que ele só vai criar um arquivo de movimentos, sem deposição de plástico. É uma opção interessante para testes de funcionamento."]
 
-=== Ajuste II: tamanho e formato da mesa
+==== Ajuste II: tamanho e formato da mesa
 
 Este ajuste varia um pouco entre os fatiadores: em alguns deles você entra apenas os lados da mesa, em outros
 você entra as três dimensões X, Y e Z do seu volume de impressão. No Slic3r, você entra apenas os lados e
@@ -9995,16 +10018,18 @@ no centro da mesa.
 
 O Slic3r oferece ainda uma terceira possibilidade de você usar um arquivo STL para definir a forma da mesa.
 
-image::image271.png[image,width=636,height=331]
+[[ajuste2bedsizerectangular]]
+image::image271.png[image,width=636,height=331,align="center",title="Configuração de mesa retangular no Slic3r, com a possibilidade de definir a origem."]
 
-image::image272.png[image,width=636,height=331]
+[[ajuste2bedsizecircular]]
+image::image272.png[image,width=636,height=331,align="center",title="Mesa circular (comumente usada em deltas)"]
 
 Vale notar, finalmente, que especialmente quem usa a impressão 3D para serviços de impressão sob demanda pode
 se beneficiar de um "truque" que é criar configurações especiais de impressoras com "mesas virtuais"
 gigantes -- digamos, 2000 mm x 2000 mm de área -- somente para poder dispor todos os modelos de uma só vez e
 ter uma estimativa do tempo total e volume de plástico gasto de uma quantidade grande de peças .
 
-=== Ajuste III: diâmetro do (orifício do) bico
+==== Ajuste III: diâmetro do (orifício do) bico
 
 Lembre-se: o _bico_ é o __nozzle__, a pecinha pequena de onde o plástico sai derretido, não é o
 __hotend__. Portanto deve ficar bem evidente que sempre que falarmos em diâmetro do _bico_ estamos falando do
@@ -10014,15 +10039,17 @@ impressoras também oferece o bico como uma peça trocável, encaixável no bloc
 (6mm de diâmetro) comum, permitindo com essa padronização que o usuário use suas impressoras com diferentes
 diâmetros de bico.
 
-image::image273.png[image,width=356,height=282]
+[[ajuste3ondemedir]]
+image::image273.png[image,width=356,height=282,align="center",title="É isto que buscamos."]
 
 O fatiador usará este número para saber qual é a espessura do filete que ele deposita. Se ele for preencher um
 quadrado de 1,2mm x 1,2mm com um bico de 0,4mm, por exemplo, ele fará 3 linhas paralelas (3 x 0,4 = 1,2) de 1,2mm
 de comprimento cada.
 
-image::image274.png[image,width=642,height=304]
+[[ajuste3diametrodobico]]
+image::image274.png[image,width=642,height=304,align="center"]
 
-=== Ajuste IV: diâmetro do filamento
+==== Ajuste IV: diâmetro do filamento
 
 Aqui ocorre uma confusão comum: o _hotend_ da sua impressora 3D tem um tubo interno que ou é preparado para
 filamentos de 1,75mm, ou é preparado para filamentos de 3mm. Este tubo será um pouco maior que o diâmetro nominal
@@ -10040,19 +10067,28 @@ subextrusão. Essas duas situações são problemáticas. Uma recomendação que
 filamento em vários pontos e fazer uma média, e refazer a medida cada vez que se trocar o carretel de filamento
 (os fatiadores permitem vários perfis de configuração de filamento).
 
-image::image275.jpeg[image,width=412,height=383]
+[[paquimetrodiametrofilamento]]
+image::image275.jpeg[image,width=412,height=383,align="center",title="Esse instrumento de medida chama-se paquímetro, &quot;caliper&quot; em inglês. Com ele medimos o diâmetro do filamento que entra no extrusor da foto."]
 
-image::image276.png[image,width=634,height=300]
+[[ajuste4diametrofilamento]]
+image::image276.png[image,width=634,height=300,align="center"]
 
-=== Ajuste V: temperatura do extrusor
+[NOTE]
+.Nota:
+====
+Cabe lembrar que os filamentos de impressão 3D de 3mm hoje em dia estão em desuso. Se o leitor procura comprar uma impressora 3D nova, privilegie modelos compatíveis com filamento de 1,75mm.
+====
+
+==== Ajuste V: temperatura do extrusor
 
 Como no caso do diâmetro do filamento, este é só um ajuste inicial; você irá criar vários perfis diferentes
 posteriormente, por exemplo um para ABS, outro para PLA. No caso ilustrado, consideramos que vamos inicialmente
 usar ABS, então configuramos a temperatura do extrusor em 230°C.
 
-image::image277.png[image,width=635,height=301]
+[[ajuste5temperaturadoextrusor]]
+image::image277.png[image,width=635,height=301,align="center"]
 
-=== Ajuste VI: temperatura da mesa
+==== Ajuste VI: temperatura da mesa
 
 Este parte terá uma leve variação entre fatiadores pois alguns oferecem um "checkbox" para você dizer
 se a impressora tem ou não mesa aquecida, e somente se estiver ligado permitem configurar uma temperatura. No
@@ -10062,25 +10098,28 @@ a temperatura-padrão de 120°C pra que a primeira camada fique acima da tempera
 recomendação do Slic3r de 110° é adequada para mesas sem vidro. Note que algumas impressoras 3D podem não ter
 potência suficiente para chegar a 120°C na mesa, caso em que a única saída é colocar um valor menor neste campo.
 
-image::image278.png[image,width=634,height=300]
+[[ajuste6temperaturadamesa]]
+image::image278.png[image,width=634,height=300,align="center"]
 
 Terminamos a configuração inicial, e agora estamos prontos para usar o software!
 
-image::image279.png[image,width=634,height=300]
+image::image279.png[image,width=634,height=300,align="center"]
 
-== Revendo a configuração
+=== Revendo a configuração
 
 Mas não acabou -- após a primeira execução, o assistente pode ser chamado novamente pelo item "Help" →
 "Configuration Assistant"; mas é útil saber onde estão as configurações. A interface que aparece logo
 após o assistente é essa:
 
-image::image280.png[image,width=616,height=453]
+[[interfaceinicialslic3r]]
+image::image280.png[image,width=616,height=453,align="center",align="Interface inicial do Slic3r"]
 
 Faremos uma modificação nas configurações gerais. O Slic3r inicia em "modo novato" (novice mode), em
 que apenas as configurações mais simples são exibidas. Como queremos saber todas, vamos mudar para o modo
 "Expert". Vá em "File" → "Preferences":
 
-image::image281.png[image,width=248,height=278]
+[[opcoesdefaultslic3r]]
+image::image281.png[image,width=248,height=278,align="center",title="Opções iniciais (default) das preferências gerais do Slic3r"]
 
 Vamos mudar "Simple" para "Expert". Para facilitar nossa operação, vamos também marcar a opção
 "Remember output directory" para que ele lembre onde estamos gravando nossos arquivos ".gcode", que
@@ -10134,20 +10173,23 @@ alguma pane ou o fatiador fechar, a impressão terminará. E você não poderá 
 até a impressão 3D terminar, o que tipicamente leva várias horas para uma peça média.
 
 Aprenderemos os dois modos aqui. Vamos deixar o fatiador configurado para poder controlar a impressora pela USB,
-que é o modo mais geral. Vamos desabilitar o __disable__. Nossa configuração final das preferências ficará assim:
+que é o modo mais geral. Vamos desselecionar o __disable__. Nossa configuração final das preferências ficará assim:
 
-image::image282.png[image,width=284,height=377]
+[[slic3rdefaultpraexpert]]
+image::image282.png[image,width=284,height=377,align="center",title="Como deverão ficar nossas preferências: modo Expert, lembrar diretório de saída, auto-centralizar, desabilitamos processamento de fundo e também permitimos conexão serial."]
 
 Confimando a seleção, o Slic3r nos pede que reiniciemos:
 
-image::image283.png[image,width=336,height=117]
+[[slic3rwarningreinicio]]
+image::image283.png[image,width=336,height=117,align="center"]
 
 Saia do software e o chame novamente. Você perceberá uma nova aba, "Controller". Se clicar nas outras abas,
 verá que em relação ao modo simples agora aparecem bem mais opções, divididas por seções laterais.
 
 Vamos aproveitar e já configurar a impressora 3D para ser reconhecida pela USB. Clique na aba "Printer settings".
 
-image::image284.png[image,width=589,height=568]
+[[slic3rserialprinthost]]
+image::image284.png[image,width=589,height=568,align="center",title="Agora temos a aba &quot;controller&quot; por termos permitido conexão serial e como estamos no modo expert o painel com categorias à esquerda aparece. Não se assuste com a quantidade de opções: a grande maioria delas pode ser deixada no default e com o tempo e prática você irá aprendendo quando houver necessidade de mudar as mais complexas. Podemos reconhecer duas opções da impressora que já configuramos na execução inicial nessa aba, a &quot;forma da mesa&quot; e o &quot;sabor de G-code&quot;, ressaltados na figura."]
 
 O ajuste de "Extruders" permite que o slic3r lide com mais de um extrusor, para impressões com dois ou mais
 materiais simultâneos. E o "octoprint" é um software open-source que roda um servidor de impressão, ou seja,
@@ -10165,34 +10207,40 @@ http://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx[_http://
 No Windows, para verificar qual porta foi criada, entre no gerenciador de dispositivos e procure por UART to
 USB bridge:
 
-image::image285.png[image,width=339,height=315]
+[[windowsconfserial]]
+image::image285.png[image,width=339,height=315,align="center",title="O dispositivo de comunicação com a impressora no Windows após a instalação do driver. Pela localização, sabemos que neste caso o driver está na porta &quot;COM4&quot;."]
 
 Se tudo der certo, uma vez que o driver esteja instalado, a autodetecção do Slic3r vai funcionar nas opções,
 quando você apertar a setinha que desenrola as portas disponíveis:
 
-image::image286.png[image,width=493,height=286]
+[[slic3rseriallinux]]
+image::image286.png[image,width=493,height=286,align="center",title="Apertando a setinha para ver as opções, o Slic3r automaticamente lista as portas que achou. No Linux, elas serão `/dev/ttyUSB<número>` ou `/dev/ttyACM<número>`; no Windows, `COM<número>`; no Mac OS X, `/dev/tty.usbserial*` ou `/dev/cu.usbserial*`"]
 
 Selecionada a porta, a configuração "Speed" se torna automaticamente ativa. A grande maioria das impressoras
 3D aceita a velocidade de 115200 bps, que é a configuração segura que usaremos. Algumas impressoras 3D aceitam
 velocidade maiores como 225000 e 250000 (confirma o manual da sua impressora). Após entrarmos com a velocidade,
 clicamos no botão "Test" para ver se a conexão funcionou com sucesso.
 
-image::image287.png[image,width=447,height=282]
+[[slic3rserialtest]]
+image::image287.png[image,width=447,height=282,align="center",title="Se esta mensagem não aparecer após o botão &quot;test&quot; ser clicado, verifique sua conexão e se for Windows veja se a instalação do driver aconteceu corretamente. Lembre-se que Windows usa a denominação `COM<número>` para a porta."]
 
 Na aba "Controller" agora já é possível inclusive se conectar à impressora para enviar alguns comandos
 básicos. Como é um recurso recente do slic3r, o que se pode fazer por essa interface ainda é pouco -- mas o
 importante é que a configuração habilita o comando "Print" da aba __Plater__, possibilitando que imprimamos
 a partir da bandeja virtual.
 
-image::image288.png[image,width=596,height=350]
+[[slic3rprinthost2]]
+image::image288.png[image,width=596,height=350,align="center",title="Conexão da impressora pela USB com a interface de comando (Manual Control) para executar alguns movimento básicos. Imediatamente após conectar o Slic3r já começa a monitorar as temperaturas da mesa e extrusor."]
 
-image::image289.png[image,width=616,height=528]
+[[repetierhostprinthost]]
+image::image289.png[image,width=616,height=528,align="center",title="A interface de um software controlador de impressão por USB dedicado - o Repetier Host, um software gratuito fechado. Nele os controles e a visualização são bem mais sofisticados, com a informação das temperaturas da impressora 3D de acordo com o tempo no painel da esquerda (a linha vermelha é a temperatura do extrusor subindo para 230°C, a linha azul a da mesa que aumenta mais lentamente. Os controles da direita permitem entrar comandos G-Code individuais, ajustar coordenadas, mover cada um dos eixos, definir velocidade de extrusão e do eixos, ligar e desligar a ventoinha e até mudar a taxa de extrusão."]
 
 O outro ajuste que da impressora 3D que configuramos mas ainda não apareceu é o diâmetro do bico. Basta clicarmos
 no item _Extruder 1_ que o encontramos. Nada mais lógico; o bico é parte do hotend que é parte do extrusor,
 logo a configuração fica aí.
 
-image::image290.png[image,width=623,height=160]
+[[slic3rconfiguracaoextrusoresbico]]
+image::image290.png[image,width=623,height=160,align="center"]
 
 Se tivéssemos mais de um extrusor, cada um deles teria um item de configuração para si, e eles poderiam ter
 diâmetros de bicos diferentes. O item seguinte, __extruder offset__, só tem sentido para configurações com
@@ -10202,7 +10250,7 @@ extrusor já é dada pelo firmware, liberando o fatiador deste ajuste.
 Esta aba ainda tem configurações de retração por extrusor, mas trataremos dela mais à frente pois tem maior
 relação com outras configurações de fatiamento.
 
-=== O G-Code nosso de cada dia
+==== O G-Code nosso de cada dia
 
 Sorrateiramente, trouxemos o leitor até a aba de impressoras do Slic3r, porque na verdade a configuração
 inicial de uma impressora tem um passo importante que é por vezes negligenciado: o __G-Code inicial e final__. Na
@@ -10226,9 +10274,10 @@ diferentes firmwares de impressoras 3D: http://reprap.org/wiki/G-code[_http://re
 Tratamos g-codes em mais detalhes no capítulo "Diversão com G-Code", em que descrevemos o formato e passamos
 dicas e truques para ele tornar a sua impressão melhor.
 
-image::image291.png[image,width=622,height=639]
+[[exemplogcodeslic3r]]
+image::image291.png[image,width=622,height=639,align="center",title="G-Code para a inicialização de uma impressão da Sethi3D AiP A3. Os comandos são &quot;comentados&quot; para dizer o que fazem após o ponto-e-vírgula. A inicialização faz o &quot;home&quot; dos eixos, isto é, leva cada eixo ao final de curso até sentir o endstop ativar. Com isso, ele sabe a posição da coordenada (0,0,0), nossa origem. Após este comando, ele configura o firmware para usar o sistema métrico (milímetros, e não polegadas) e posicionamento absoluto ao invés de relativo (quando ele receber &quot;X 10&quot;, executará “ir para a coordenada 10 em X”, não “ir para 10 a mais de onde está em X”), executa os dois comandos de autonivelamento de mesa, desliga a ventoinha do bico, levanta um pouco o bico e começa a impressão. No final, ele desliga as temperaturas, leva o extrusor todo à esquerda (X=0), desliga os motores e toca som de término. Outros campos de G-Code configuráveis que não aparecem: G-Code para executar antes de troca de camada; G-Code para executar depois de troca de camada; e G-Code para executar na troca de extrusor. Este último só concerne a configurações com múltiplos extrusores."]
 
-=== Diâmetro e temperatura
+==== Diâmetro e temperatura
 
 Faltam esses ajustes, e basta pensar que eles são específicos em relação ao __carretel de filamento
 usado__. Enquanto para aquele seu carretel de PLA vermelho (cuja espessura medida é de 1,69mm) usa 220°C no
@@ -10239,9 +10288,10 @@ estão na aba de filamento do Slic3r e em outros fatiadores seguem o padrão de 
 diferentes para que possa ter muitas dessas combinações armazenadas. Essa configuração pode se tornar bastante
 complicada, caso o leitor tenha curiosidade tratamos mais a frente em detalhes.
 
-image::image292.png[image,width=607,height=307]
+[[slic3rperfisdefilamento]]
+image::image292.png[image,width=607,height=307,align="center"]
 
-=== O Multiplicador de Extrusão
+==== O Multiplicador de Extrusão
 
 Você sabe o que é o diâmetro e as temperaturas, portanto que _Extrusion Multiplier_ é esse? No Slic3r ele é
 um número pelo qual ele modificará o seu cálculo de plástico a ser extrudado. Digamos que para determinada
@@ -10262,7 +10312,8 @@ muito mais facilmente aos fios do pinhão, tendo eles enterrados profundamente, 
 como PLA, oferecerão maior resistência. Esse contato diferenciado entre filamentos faz com que para a mesma
 _velocidade angular_ (taxa com que o pinhão roda) se traduza em diferentes __velocidades escalares__.
 
-image::image293.png[image,width=642,height=439]
+[[diferencasabsplaextrusao]]
+image::image293.png[image,width=642,height=439,align="center",title="**Mesmo ângulo, diferentes deslocamentos** - a diferença entre os contatos do pinhão no filamento fazem com que filamentos mais rígidos extrudem mais que os mais flexíveis, conforme mostra a figura. Para o mesmo ângulo, o ABS se desloca menos que o PLA. A escala foi exagerada para ilustrar o efeito."]
 
 Sempre é interessante ver a história da reprap, e o blogueiro _nophead_ tem um artigo
 mais profundo sobre este problema da ‘mordida’ do pinhão que virou referência:
@@ -10271,7 +10322,7 @@ http://hydraraptor.blogspot.com.br/2011/03/spot-on-flow-rate.html[_http://hydrar
 Apesar deste fator, e apesar de o uso de um fator de extrusão para "compensar" esse movimento maior do ABS
 (o vloqueiro Maker __Thomas Sanladerer__, em seus testes, recomenda usar um fator de extrusão de 90% / 0,9 para o
 PLA com pinhões "MK8" padrão, considerando a impressora tendo sido calibrada com ABS), esta configuração é
-abusada no meio da impressão doméstica, pois acaba sendo um "bandaid" que conserta temporariamente vários
+abusada no meio da impressão doméstica, pois acaba sendo um "band-aid" que conserta temporariamente vários
 problemas (como um filamento emborrachado que esteja escorregando). Em geral, no entanto, tanto superextrusão
 quanto subextrusão são efeitos indesejados e que apontam contra a qualidade de uma impressão.
 
@@ -10310,7 +10361,8 @@ porcentagem. O efeito é o mesmo, é o fator multiplicado por 100. Um multiplica
 é correspondente a um multiplicador de extrusão do Cura de 120% (e a nomenclatura no Cura para a configuração
 deste item é __flow__, fluxo).
 
-image::image294.png[image,width=553,height=390]
+[[coracaoantiextrusao]]
+image::image294.png[image,width=553,height=390,align="center",title="O uso irresponsável do multiplicador de extrusão é de quebrar o coração, como ilustra esta fotografia de um caso fatal de subextrusão."]
 
 === Os mesmos ajustes de sempre
 
@@ -10326,7 +10378,7 @@ estar fazendo uma aposta que quem paga é o leitor.
 O Slic3r foi escolhido para ilustrar este livro porque ele é ao mesmo tempo rico em recursos, organizado
 racionalmente e suficientemente genérico que sirva para intuir e ilustrar os ajustes de outros fatiadores.
 
-=== Simplify3D
+==== Simplify3D
 
 Este competente fatiador proprietário tem usabilidade boa e variados recursos únicos que mesmo com sua forma de
 venda sem _trials_ ou versões limitadas lhe renderam uma boa parcela do mercado. Uma boa qualidade de fatiamento,
@@ -10346,16 +10398,19 @@ No Simplify3D, a primeira aba se refere ao extrusor e nela já temos a configura
 do multiplicador de extrusão. Curiosamente, temos também aí ajustes de retração associados ao extrusor,
 algo que trataremos mais à frente.
 
-image::image295.png[image,width=631,height=504]
+[[simplify3dbico]]
+image::image295.png[image,width=631,height=504,align="center",title="O diâmetro do bico nas configurações do Simplify3D"]
 
 Já as configurações de ajuste de temperatura do filamento o Simplify3D organiza numa aba à parte, em que
 todos os elementos com temperatura controlável ficam organizados. Assim, você pode ter um elemento extrusor,
 um segundo elemento extrusor (para quando tem extrusor duplo), a mesa aquecida e até ter elementos para câmara
 aquecida e outras mesas aquecidas (algumas impressoras 3D de maior volume usam isso).
 
-image::image296.png[image,width=529,height=450]
+[[simplify3dajustetempextrusor]]
+image::image296.png[image,width=529,height=450,align="center",title="Ajuste de temperatura do extrusor, com possibilidade de diferentes temperaturas para diferentes camadas (&quot;setpoints&quot;)"]
 
-image::image297.png[image,width=531,height=429]
+[[simplify3dajustetempbed]]
+image::image297.png[image,width=531,height=429,align="center",title="Ajuste de temperatura da mesa aquecida"]
 
 Anti-intuitivamente, os ajustes de forma e tamanho de mesa do Simplify3D ficam na aba G-Code, e os G-Codes de início
 e fim não ficam nessa aba -- ficam na aba scripts. Veja no entanto que a forma de mesa é um "override" em
@@ -10369,7 +10424,8 @@ As configurações de máquina do Simplify3D permitem alguns ajustes que não vi
 a direção em que o fim de curso ocorre e na visualização, inverter algum dos eixos. Ele também tem os
 "offsets" de extrusor que a configuração do Slic3r oferece e que quase nunca são usados.
 
-image::image298.png[image,width=611,height=459]
+[[simplify3dbuildvolumeefirmware]]
+image::image298.png[image,width=611,height=459,align="center"]
 
 O diâmetro do filamento aparece na categoria "Other" (outros), outra organização não muito intuitiva de
 configurações. Apesar de sua ululante excelência técnica, parece ter faltado aos arquitetos do Simplify3D um
@@ -10383,15 +10439,17 @@ o peso, pode calcular também o custo financeiro do uso do material. Se o operad
 pode colocar diretamente seu preço neste campo que quando realizar o fatiamento o Simplify3D já dirá quanto
 ele deve cobrar.
 
-image::image299.png[image,width=582,height=437]
+[[simplify3dfilamentproperties1]]
+image::image299.png[image,width=582,height=437,align="center"]
 
-=== Cura
+==== Cura
 
 É preciso esclarecer que para fins práticos, é sensato dizer que existem *dois* fatiadores de nome Cura: O que
 tem a numeração até a série 15.04 (sendo a versão 15.04.6 a de manutenção mais recente) e o que foi quase
 totalmente reescrito, cuja numeração na época da redação deste texto estava em 2.7.
 
-image::image300.png[image,width=642,height=235]
+[[doiscurasdiferentes]]
+image::image300.png[image,width=642,height=235,align="center",title="Dois Curas: o da esquerda, o 15.04; o da direita, 2.3.1, com muito mais recursos e configurações."]
 
 O redesenho do Cura tem seus motivos. Muitos recursos a mais foram adicionados ao fatiador, mas a "poeira"
 de tanta mudança ainda está se assentando. Quando um software sofre mudanças tais que perde recursos que antes
@@ -10403,7 +10461,8 @@ Por outro lado, a diferença de recursos (novos) que o Cura novo tem em relaçã
 valeria a pena listar aqui. Basta dizer que ele tem tantos recursos e tão granulares que permite que você ajuste
 a _visibilidade_ deles.
 
-image::image301.png[image,width=542,height=474]
+[[curamuitosajustes]]
+image::image301.png[image,width=542,height=474,align="center",title="Repare no tamanho da barrinha de scroll, ela reflete a quantidade de itens mostrados em relação aos disponíveis."]
 
 Esse é, portanto, um grande diferencial dessa nova versão do Cura. Ele permite sintonia milimétrica de cada
 pequeno detalhe do fatiamento, de forma que quem precisa de ajustes finos terá no fatiador, hors concours,
@@ -10420,15 +10479,17 @@ ajustes de impressão e impressoras; e permite a você definir "profiles" e "mat
 de impressão. Vários dos nossos itens iniciais, incluindo até mesmo o G-Code de início e fim de impressão,
 estão diretamente no diálogo de configuração de impressora.
 
-image::image302.png[image,width=615,height=531]
+[[curaeorganizadoviu]]
+image::image302.png[image,width=615,height=531,align="center",title="Em termos de organização, o Cura dispõe de forma muito intuitiva as configurações, como dá pra ver na tela de configuração da impressora."]
 
 E os outros itens de nosso interesse -- temperaturas e diâmetro do filamento? Não é preciso procurar muito. Estão
 logo no início, nas configurações de ajuste de material, seguidos pelo "flow" que é o multiplicador de
 extrusão.
 
-image::image303.png[image,width=614,height=563]
+[[curaretracaomaterial]]
+image::image303.png[image,width=614,height=563,align="center",title="Uma diferença do Cura é que ele faz uma associação da retração com o material, ao invés do extrusor, como dá para ver na screenshot. Isso é positivo e, de fato, preferível, pois ajustes de retração variam bem mais por filamento (por exemplo, rígido vs. flexível) do que por extrusor."]
 
-== Importação e disposição de peças na mesa
+=== Importação e disposição de peças na mesa
 
 Uma vez tenhamos configurado esse mínimo no fatiador, já podemos -- antes mesmo de qualquer elaboração nas
 configurações -- usar o software para montar nossa "mesa de impressão virtual", isto é, o que queremos
@@ -10457,9 +10518,11 @@ serviços de nuvem que fazem o mesmo, incluindo o próprio thingiverse, e o inte
 *JP* fez um software proprietário gratuito de lithopanes para Windows, com interface gráfica bem intuitiva:
 http://www.imprimindo3d.com.br/software-para-impressao-de-lithophanes/[_http://www.imprimindo3d.com.br/software-para-impressao-de-lithophanes/_]
 
-image::image304.png[image,width=642,height=678]
+[[curasimplify3dimportacaopng]]
+image::image304.png[image,width=642,height=678,align="center",title="A mesma figura PNG de duas cores, ressaltada em vermelho no centro, importada pelo Cura e Simplify3D com os parâmetros para transformá-la em 3D. No Cura basta abrir tais figuras que o diálogo para a transformação (ressaltado em azul) aparece automaticamente. No Simplify3D, o díalogo aparece selecionando o menu &quot;Add-Ins&quot; e &quot;Convert Image to 3D&quot;."]
 
-image::image305.png[image,width=623,height=416]
+[[openscadconvertendo2dpra3d]]
+image::image305.png[image,width=623,height=416,align="center",title="O OpenSCAD pode também fazer os lithopanes, caso seu fatiador não tenha essa função. No exemplo, usamos uma fotografia ao invés de um ícone simples pra fazer uma peça em relevos suaves – o mesmo resultado será obtido no Cura ou Simplify3D."]
 
 Uma vez importada a figura tridimensional, ela aparecerá por _default_ no centro da mesa. Se forem importadas várias
 figuras, o software pode preguiçosamente dispô-las no centro sobrepondo as anteriores, ou pode rearranjá-las na
@@ -10475,7 +10538,8 @@ arquivo STL carregado como um único objeto. Isso pode ser inconveniente para po
 pois ele só permitirá a você operar em todos de uma vez. Para evitar isso, tanto Slic3r quanto Simplify3D
 permitem a você separar os vários objetos:
 
-image::image306.png[image,width=642,height=373]
+[[slic3rdivisaoobjeto]]
+image::image306.png[image,width=642,height=373,align="center",title="No Slic3r, você clica em cima do objeto composto a ser dividido (o `varios.stl` que aparece na listagem à direita) e seleciona &quot;Split&quot;. A partir daí cada objeto poderá ser manipulado de forma separada. No Simplify3D, o caminho é menu &quot;Mesh&quot; → &quot;Separate Connected Surfaces&quot;."]
 
 Você vê que no menu do Slic3r ainda aparecem opções para manipulações dos objetos como rotacionar, "scale"
 (redimensionar) e espelhar. Mas primeiro vamos ao mais básico: o melhor é primeiro você aumentar o seu campo
@@ -10490,18 +10554,19 @@ _rotação_ do ponto de vista. A idéia aqui é evitar que se arraste as peças 
 somente _deslocar_ lateralmente e para cima/para baixo o ponto de vista (movimento que em inglês é referido como
 __*pan*__). De uma forma mais organizada:
 
-* Slic3r: Botão esquerdo na peça para arrastá-la; botão esquerdo fora das peças para rotacionar o ponto de
+* **Slic3r**: Botão esquerdo na peça para arrastá-la; botão esquerdo fora das peças para rotacionar o ponto de
 vista; botão direito ou do meio para __pan__.
-* Simplify3D: Ctrl + botão esquerdo na peça para arrastá-la;
+* **Simplify3D**: Ctrl + botão esquerdo na peça para arrastá-la;
 botão esquerdo em qualquer lugar para rotacionar o ponto de vista; botão direito para __pan__; o botão do
 meio "reseta" a visualização. Esses atalhos podem ser mudados em Options → Preferences → Mouse/Keyboard
 shortcuts e em especial se aconselha desmarcar o "[ ] Middle mouse button resets view" se você mexe com os
 vários fatiadores, visto que será comum confundir as teclas.
-* Cura: Com o modo "translação" selecionado,
+* **Cura**: Com o modo "translação" selecionado,
 botão esquerdo na peça para arrastá-la; botão direito em qualquer lugar para rotacionar o ponto de vista;
 botão do meio para __pan__.
 
-image::image307.png[image,width=642,height=401]
+[[curamodosmanipulacao]]
+image::image307.png[image,width=642,height=401,align="center",title="Modos de manipulação de objetos do Cura. Quando um deles é selecionado (quadro à direita) aparecem mais opções sobre a manipulação. No caso ilustrado a translação pode ser feita arrastando o objeto na mesa ou entrando manualmente as coordenadas nos campos que aparecem."]
 
 === Configurações adicionais de posicionamento
 

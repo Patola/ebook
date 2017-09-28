@@ -10568,7 +10568,7 @@ botão do meio para __pan__.
 [[curamodosmanipulacao]]
 image::image307.png[image,width=642,height=401,align="center",title="Modos de manipulação de objetos do Cura. Quando um deles é selecionado (quadro à direita) aparecem mais opções sobre a manipulação. No caso ilustrado a translação pode ser feita arrastando o objeto na mesa ou entrando manualmente as coordenadas nos campos que aparecem."]
 
-=== Configurações adicionais de posicionamento
+==== Configurações adicionais de posicionamento
 
 Cada fatiador costuma vir com suas próprias facilidades e recursos extras de posicionamento e disposição,
 e vale a pena explicitar como funciona em cada um deles.
@@ -10580,23 +10580,35 @@ ajuste para auto-centralizar peças, na interface da mesa um botão para "arranj
 botão direito para uma série de operações, ajustes e configurações por objeto. Um ajuste de posicionamento que
 merece menção especial, no entanto, é a de rotação das peças. Como ela é feita somente pela especificação
 de um número (os graus de rotação em relação ao eixo), pode ser muito difícil visualizar como tal rotação
-acontece.  + Nesse sentido, é útil resgatar um pouco de teoria da modelagem tridimensional. Os softwares de
+acontece.  +
+Nesse sentido, é útil resgatar um pouco de teoria da modelagem tridimensional. Os softwares de
 tratamento de forma 3D seguem a *regra da mão direita* para rotação.
 
-image::image308.png[image,width=642,height=499]
+[[regramaodireita]]
+image::image308.png[image,width=642,height=499,align="center",title="A regra da mão direita mostra o sentido de rotação em relação ao eixo. Se o desejado for rotacionar no sentido inverso, basta usar um valor negativo (ex.: 90°)."]
 
-1.  [[section-11]] === image:image309.png[image,width=642,height=319] + O Cura faz as rotações
+[[regramaodireitanoslic3r]]
+image::image309.png[image,width=642,height=319,align="center",title="Aplicação da regra da mão direita para um objeto no Slic3r. Escolhemos o eixo X, indicado em vermelho, e pedimos pra rotacionar 90° positivo. Os quatro dedos apontariam para a rotação no sentido destacado."]
+
+O Cura faz as rotações
 com o mesmo referencial (pois ele permite entrar valores), mas o Simplify3D pode confundir quem não quiser usar o
 modo interativo e colocar os valores diretamente, pois a representação _default_ dos eixos dele inverte o Y pois
 assim a visualização da impressão em impressoras 3D cartesianas fica mais fácil. Para a rotação funcionar
 segundo a regra da mão direita, é preciso desmarcar a inversão do Y, ou simplesmente decorar que os sentidos
 de rotação numérica, no default dele, são invertidos.
 
-image::image310.png[image,width=507,height=364]
+[[simplify3dnaomaodireita]]
+image::image310.png[image,width=507,height=364,align="center",title="O Simplify3D não obedece à regra da mão direita por causa desta configuração default. Pode-se desmarcá-la ou memorizar o Simplify3D como tendo &quot;regra da mão esquerda&quot;."]
 
 * **Simplify3D**: As configurações de visualização, posicionamento e disposição estão espalhadas pelo menu
-*Tools* → *Options* do fatiador: + image:image311.png[image,width=463,height=605] + As importantes
-para nosso caso serão: ** *Swap mouse scroll wheel zoom direction* -- faz com que o sentido da rodinha do mouse
+*Tools* → *Options* do fatiador:
++
+[[simplify3dtoolsoptions]]
+image::image311.png[image,width=463,height=605,align="center"]
++
+As importantes para nosso caso serão:
++
+** *Swap mouse scroll wheel zoom direction* -- faz com que o sentido da rodinha do mouse
 se inverta: para trás diminuirá e para frente aumentará o zoom.
 ** **Middle mouse button resets view**: caso
 o ângulo de visualização esteja muito ruim, você pode resetá-lo para o _default_ simplesmente pressionando o
@@ -10607,51 +10619,53 @@ no fatiador e perdendo a visualização em que estava.
 as transformações visualmente o Simplify3D apresenta "gizmos" (controles) em que se clica com o mouse para
 realizá-las. Com essa configuração selecionada, o fatiador sempre mostrará os 3 eixos para transformação ao
 invés de somente um.
-
-image::image312.png[image,width=642,height=263]
-
-* Na aba *Machine* temos novamente de interesse a possibilidade de ligar ou desligar na configuração default o
++
+[[simplify3dgizmos]]
+image::image312.png[image,width=642,height=263,align="center",title="Controle de rotação sem &quot;full gizmo&quot; (na figura com a rotação para o eixo Z) e com &quot;full gizmo&quot; (todos os eixos) no Simplify3D."]
++
+** Na aba *Machine* temos novamente de interesse a possibilidade de ligar ou desligar na configuração default o
 "flip Y" visto na regra da mão direita.
-* Na aba *Models* temos o "**Automatically scale to correct unit system
-without prompting**". Como vimos, o formato STL não inclui unidades, embora seja assumido o milímetro. Quando
+** Na aba *Models* temos o "**Automatically scale to correct unit system without prompting**". Como vimos, o formato STL não inclui unidades, embora seja assumido o milímetro. Quando
 o Simplify3D importa um objeto e ele é pequeno demais, ele assume que foi gravado em _polegadas_ (inches), que
 são maiores. Normalmente ele mostra uma janela de diálogo ao importar tais peças, mas com essa configuração
 ligada ele transforma a figura automaticamente para polegadas (uma polegada é igual a 25,4 milímetros, ou seja,
 ele aumenta a figura em 2540%).
-* Ainda na aba *Models* há a opção para ele dispôr as peças automaticamente
+** Ainda na aba *Models* há a opção para ele dispôr as peças automaticamente
 conforme os modelos são importados, **Automatically center and arrange imported models**. Como ele já possui
 o botão *Center and Arrange* na interface principal, desligar essa configuração pode ser útil quando se quer
 "fundir" peças ou posicioná-las livremente.
-* Interativamente, o Simplify3D tem dois ótimos atalhos para
+** Interativamente, o Simplify3D tem dois ótimos atalhos para
 manipular posição e rotação; são eles o *Ctrl-T* (drop / largar peça) e *Ctrl-L* (align / alinhar com a mesa).
-** O *Ctrl-T* analisa a peça e vê onde é a posição mais baixa dela no eixo Z, e alinha essa posição para ter Z=0
+*** O *Ctrl-T* analisa a peça e vê onde é a posição mais baixa dela no eixo Z, e alinha essa posição para ter Z=0
 (ou seja, encosta na mesa). Na prática esse modificador serve para "largar" peças de modo que encostem na mesa
-(não fiquem flutuando) ou, se a peça estiver com partes __para baixo da mesa__, colocá-la acima.  ** O *Ctrl-L*
-é uma função mais útil: uma vez apertada a combinação de teclas, permite ao usuário selecionar uma _face_
+(não fiquem flutuando) ou, se a peça estiver com partes __para baixo da mesa__, colocá-la acima.
+*** O *Ctrl-L* é uma função mais útil: uma vez apertada a combinação de teclas, permite ao usuário selecionar uma _face_
 da peça. Quando clicada com o botão do mouse, o fatiador rotaciona a peça de modo com que essa face se alinhe
 com a mesa, e aí realiza a função de "largar" a peça nessa rotação de modo que encoste na mesa. Veja
-que se a face selecionada não for a mais baixa na peça, ela não encostará na mesa, apenas ficará alinhada.
-+ Tanto no Ctrl-T quanto no Ctrl-L as modificações de posicionamento e rotação ficam armazenadas nos campos
+que se a face selecionada não for a mais baixa na peça, ela não encostará na mesa, apenas ficará alinhada. +
+Tanto no Ctrl-T quanto no Ctrl-L as modificações de posicionamento e rotação ficam armazenadas nos campos
 numéricos do objeto, e podem ser zeradas restaurando o objeto a coordenadas "default".
-
-image::image313.png[image,width=642,height=366]
++
+[[simplify3dcontroll]]
+image::image313.png[image,width=642,height=366,align="center",title="O modificador Ctrl-L no Simplify3D. A face selecionada, à esquerda, está ressaltada em vermelho brilhante. Ao se clicar nela a peça é rotacionada e largada na plataforma, mas a face selecionada não necessariamente estará encostada nela, apenas alinhada. No resultado, à direita, a face alinhada (não visível) tem sua distância mostrada em vermelho escuro e o ponto de contato da peça com a mesa é ressaltado em verde claro."]
 
 * **Cura**: as opções gerais do Cura, que afetam visualização e posicionamento, podem ser um pouco difíceis
 de compreender. A tela de configuração pode ser acessada no Menu __Preferences → Configure Cura → General__:
-
-image::image314.png[image,width=642,height=530]
-
++
+[[curapreferencesgeneral1]]
+image::image314.png[image,width=642,height=530,align="center",title="Tela de configuração geral do Cura 2.4"]
++
 As opções pertinentes são:
-
-* **Viewport Behaviour -- Display overhang**: na visualização default, com essa opção ligada mostra em
++
+** **Viewport Behaviour -- Display overhang**: na visualização default, com essa opção ligada mostra em
 vermelho brilhante os overhangs/seções pendentes da forma.
-* **Center camera when item is selected**: desliza
+** **Center camera when item is selected**: desliza
 a visualização da câmara para focalizar em um objeto quando se o seleciona (sem mudar o nível de __zoom__).
-* **Ensure models are kept apart**: já mencionada, com ela ligada os modelos são espaçados de forma a não
+** **Ensure models are kept apart**: já mencionada, com ela ligada os modelos são espaçados de forma a não
 colidirem ou se penetrarem.
-* **Automatically drop models to the build plate**: automaticamente deixa os objetos
+** **Automatically drop models to the build plate**: automaticamente deixa os objetos
 importados ao nível da mesa (sem rotacioná-los).
-* As três opções seguintes são relacionadas e merecem uma
+** As três opções seguintes são relacionadas e merecem uma
 explicação: sendo uma aplicação __OpenGL__, isto é, que se vale de aceleração de hardware para desenhar as
 formas tridimensionais na tela, o Cura em sua inicialização tenta ativar a renderização, mas se não consegue
 (o que pode acontecer por a máquina não ter hardware para isso ou não ter o driver instalado), cai em __modo
@@ -10662,44 +10676,46 @@ a camada superior ou camadas superiores do intervalo, e a *Display five top laye
 diz que o número dessas camadas superiores mostradas é cinco. A opção *Force layer view compatibility mode
 (restart required)* força que o Cura já inicie em modo de compatibilidade sem tentar ativar a aceleração de
 hardware, e só começa a valer quando a aplicação é reiniciada.
-* **Scale large models**: com essa opção
+** **Scale large models**: com essa opção
 ativada, verifica se a peça cabe no volume de impressão configurado, e se não couber a reduz até que caiba.
-* **Scale extremely small models**: como no simplify3d, se detecta se a peça é pequena demais (mais de 100 vezes
+** **Scale extremely small models**: como no simplify3d, se detecta se a peça é pequena demais (mais de 100 vezes
 menor que o volume de impressão) e calcula um multiplicador de potência 10 para ela que a coloque em um tamanho
 mínimo dentro deste volume.
-
-* **Rotação, posicionamento e modificação interativa**: como mostrado na figura 135, o Cura dispõe de várias
+** **Rotação, posicionamento e modificação interativa**: como mostrado na figura 135, o Cura dispõe de várias
 opções para posicionamento, rotação, modificação, etc., e para cada uma delas um controle (gizmo) diferente. Por
 __default__, os controles têm uma "grade" de valores em que ficam, mas se você deixar a tecla *Shift*
 apertada pode fazer ajuste fino. O mesmo efeito pode ser dado desselecionando o "snap" do controle específico.
 
 image::image315.png[image,width=577,height=432]
 
-* **Rotacionar a peça na mesa para obter orientação ótima**: esta opção do Cura aparece
+** **Rotacionar a peça na mesa para obter orientação ótima**: esta opção do Cura aparece
 em _Extensions → OrientationPlugin → Calculate optimal printing orientation_ caso o
 _OrientationPlugin_ esteja habilitado nas preferências. O que este plugin faz é analisar a
 geometria da peça de forma e rotacioná-la de forma a maximizar o espaço de contato com a mesa
 e diminuir o suporte necessário. Uma explicação do algoritmo pode ser lida (em inglês) em
 http://www.salzburgresearch.at/blog/3d-print-positioning/[_http://www.salzburgresearch.at/blog/3d-print-positioning/_].
 
-Notas:
-
-1 -- O Slic3r é software livre e open-source, e qualquer um com conhecimento de
+[NOTE]
+.Notas:
+====
+. O Slic3r é software livre e open-source, e qualquer um com conhecimento de
 programação pode ajudar a resolver estes problemas. No momento da redação deste
-livro, um relato de bug está aberto para a implementação do recurso de desfazer em
-https://github.com/alexrj/Slic3r/issues/3265[_https://github.com/alexrj/Slic3r/issues/3265_] e um patch já foi
-escrito para resolvê-lo: https://github.com/alexrj/Slic3r/pull/4100[_https://github.com/alexrj/Slic3r/pull/4100_].
+livro, o relato de bug aberto para a implementação do recurso de desfazer em
+https://github.com/alexrj/Slic3r/issues/3265[_https://github.com/alexrj/Slic3r/issues/3265_] acaba de ser fechado. É possível que ao ler este parágrafo, o recurso já esteja na versão estável do software e o leitor já possa usá-lo.
+====
 
-=== Corte / divisão de peças
+==== Corte / divisão de peças
 
 Exclusividade do Slic3r, essa função não existe nos outros fatiadores e serve para dividi-la em duas metades
 usando de um plano de corte. Para ativá-la, você pode selecionar o objeto e apertar o botão de menu "Cut",
 ou clicar com o botão direito e selecionar a opção "Cut".
 
-image::image316.png[image,width=642,height=818]
+[[slic3rpartcut1]]
+image::image316.png[image,width=642,height=818,align="center",title="Corte de peças do Slic3r. Se escolhe um eixo (na figura, o Z) e a altura do plano de corte é ajustada mexendo na régua ou entrando o valor. As opções permitem Manter (&quot;keep&quot;) a parte superior (upper part), a parte inferior (lower part) ou as duas. A &quot;Rotate lower part afterwards&quot; gira a parte de baixo em 180° para nivelar na mesa, já que se supõe que o plano de corte criará uma superfície plana nesta."]
 
-1.  [[section-12]] === + [[section-13]] === image:image317.png[image,width=642,height=441] +
-=== Simulando o corte no Cura e Simplify3D
+image::image317.png[image,width=642,height=441,align="center",title="A opção de corte &quot;cut by grid&quot; pedirá dois valores numéricos, que são as arestas dos vários retângulos em que a peça será dividida na mesa. Na figura ilustrada, colocamos 20 x 20 mm, o que daria 100 peças se a mesa de 200x200 estivesse toda preenchida, e no nosso caso resultou em 25 peças."]
+
+.Simulando o corte no Cura e Simplify3D
 
 Apesar de esses fatiadores não terem uma função de corte específica como o Slic3r, é possível usar um editor
 de objetos tridimensionais externos como Blender, Meshlab e Meshixer para cortar a peça. Mas também é possível
@@ -10710,15 +10726,19 @@ relação ao "plano de corte") e também de ter que saber a dimensão e posicion
 corte. Demonstraremos no *Cura* pois é trivial saber como fazer as mesmas transformações no Simplify3D, dado
 o que já ensinamos.
 
-=== image:image318.png[image,width=578,height=377]
+[[curacutpart1]]
+image::image318.png[image,width=578,height=377,align="center",title="**Passo 1**. Carregue a peça e veja suas dimensões, dadas pelo fatiador. No nosso caso pretendemos cortar pelo plano XY, então vamos anotar a altura da peça em Z, **32,5415**."]
 
-image::image319.png[image,width=579,height=422]
+[[curacutpart2]]
+image::image319.png[image,width=579,height=422,align="center",title="**Passo 2**: Afunde a peça na mesa, colocando um valor negativo em Z. Veja que no Cura para isso funcionar você precisa ter desligado o "Automatically drop models" nas preferências. Anote o valor de Z que escolheu."]
 
-image::image320.png[image,width=623,height=379]
+[[curacutpart3]]
+image::image320.png[image,width=623,height=379,align="center",title="**Passo 3**: Duplique a peça ou a importe novamente. Rotacione em 180° em X. Lembre-se dos dois valores anotados: 32,5415 e 20,6. Subtraia um do outro e coloque um Z negativo com esse valor, 11,4915."]
 
-image::image321.png[image,width=613,height=346]
+[[curacutpart4]]
+image::image321.png[image,width=613,height=346,align="center",title="**Pronto**. A peça está dividida e será impressa em duas metades."]
 
-== Impressão contínua vs. sequencial
+==== Impressão contínua vs. sequencial
 
 Um recurso que todos os fatiadores oferecem, mas de formas diferentes, é a possibilidade de o usuário escolher
 como quer que as peças da mesa sejam impressas, quando há várias: todas ao mesmo tempo (a primeira camada de
@@ -10741,21 +10761,24 @@ e provavelmente muitos outros a serem inventados. Portanto, você não informa d
 sistema de eixos que usa e suas limitações específicas, você informa dados mais simples. E aí temos a diferença:
 cada fatiador pede dados ligeiramente diferentes para saber se a impressão atual baterá nessas limitações.
 
-[[FEITO continuavssequencial]]image:image322.png[image,width=621,height=450]
+[[impressaokapow]]
+image::image322.png[image,width=621,height=450,align="center",title="KAPOW! Dependendo da geometria da sua impressora 3D, pode ser mais ou menos limitante imprimir peças em sequência."]
 
 O modo default dos fatiadores é o contínuo. Como os diferentes fatiadores tratam o problema:
 
-* Slic3r: A seção _Output options_ (opções de saída) dos _Print Settings_ é onde se trata o modo sequencial. Para
+* **Slic3r**: A seção _Output options_ (opções de saída) dos _Print Settings_ é onde se trata o modo sequencial. Para
 ativá-lo, ligue o "Complete individual objects". Para saber como tratar colisões, o Slic3r trata o problema de
 maneira bem simples: exige o "raio" do extrusor e a altura em relação ao extrusor em que o sistema de eixos
 está. Se houver mais de um extrusor e o deslocamento estiver configurado no Slic3r ele usará esses ajustes,
 mas como geralmente o deslocamento está no firmware, o que se usa nesses casos é somar a distância entre os
 extrusores e os raios deles para o controle de colisão.
-
-image::image323.png[image,width=529,height=212]
-
-image::image324.png[image,width=601,height=396]
-
++
+[[slic3rsequentialprinting1]]
+image::image323.png[image,width=529,height=212,align="center"]
++
+[[slic3rsequentialprinting2]]
+image::image324.png[image,width=601,height=396,align="center",title="Como o Slic3r trata as colisões: a altura h (de &quot;height&quot;) e o raio R são entrados. Qualquer peça com partes acima da altura &quot;h&quot; (linha pontilhada) não será possível imprimir."]
++
 O Slic3r usa esses dados para avisar sobre colisões já enquanto se arrumam os objetos na mesa. Deixá-los próximos
 demais de tal modo que o cilindro colida com algum objeto fará a barra de status mostrar o aviso "Some objects
 are too close; your extruder will collide with them" ("Alguns objetos estão muito próximos; seu extrusor
@@ -10763,9 +10786,10 @@ colidirá com eles"). Se os objetos estiverem separados, mas ainda forem maiores
 ele avisará "Some objects are too tall and cannot be printer without extruder collisions" ("Alguns objetos
 são altos demais e não podem ser impressos sem colisões do extrusor".
 
-image::image325.png[image,width=578,height=461]
+[[slic3rerrosequentialprinting]]
+image::image325.png[image,width=578,height=461,align="center",title="Mensagem de erro do Slic3r avisando que as peças são altas demais para serem impressas sequencialmente."]
 
-* Cura: como o Slic3r, tem a *altura dos eixos* configurável nas definições de impressora: Preferences →
+* **Cura**: como o Slic3r, tem a *altura dos eixos* configurável nas definições de impressora: Preferences →
 Printers → Machine Settings → Gantry height. No entanto ele não tem a opção de "raio" ou volume do
 extrusor/hotend porque na verdade esses dados estão precisamente especificados internamente para cada modelo de
 impressora; ao invés de ser somente um círculo, o arquivo __json__^1^ que define características mecânicas da
@@ -10774,9 +10798,11 @@ exige conhecimento avançado e muita consulta, na prática esse dado está indis
 outro lado, ele tem os dados simplificados "printhead settings" que permitem dizer o mesmo, sendo apenas
 distâncias horizontais do bico aos extremos do extrusor.
 
-image::image326.png[image,width=642,height=508]
+[[curasequentialmachinesettings]]
+image::image326.png[image,width=642,height=508,align="center"]
 
-image::image327.png[image,width=642,height=294]
+[[curasequentialprinting]]
+image::image327.png[image,width=642,height=294,align="center"]
 
 Se você tem uma impressora corretamente cadastrada entre as impressoras do Cura, o dado da forma do extrusor já
 estará configurado como devia. Se estiver usando um perfil genérico, para o extrusor sem ventoinha ele usa as
@@ -10784,14 +10810,16 @@ medidas de um quadrado de 2mm de lado, e com ventoinha um retângulo de 30mm no 
 eixo (gantry height) está em 20mm também, e se quiséssemos que o Cura não a levasse em consideração bastaria
 colocar um valor bem alto, como 99999999.
 
-image::image328.png[image,width=619,height=468]
+[[curasequentialerror]]
+image::image328.png[image,width=619,height=468,align="center",title="Cura se recusando a fatiar com a altura do eixo configurada como 20mm. Ele mostra as peças &quot;impossíveis de imprimir&quot; com listras e o &quot;volume efetivo de impressão&quot; no modo sequencial (&quot;One at a time&quot;) por linhas azuis-claras."]
 
-* Simplify3D: O Simplify3D começa com a abordagem de simplesmente _não ter_ o raio, medida ou formato do extrusor,
+* **Simplify3D**: O Simplify3D começa com a abordagem de simplesmente _não ter_ o raio, medida ou formato do extrusor,
 tendo especificável (mas não configurável) somente a altura de colisão do eixo. Dessa forma, ele deixa a tarefa
 de espaçar corretamente as formas na mesa inteiramente para o operador. O modo sequencial é dado na hora em que
 o Simplify3D vai executar o fatiamento, e nesse momento você deve especificar a altura dos eixos.
 
-image::image329.png[image,width=598,height=379]
+[[sequentialsimplify3d]]
+image::image329.png[image,width=598,height=379,align="center",title="O fatiamento sequencial no Simplify3D, com um processo diferente selecionado para cada objeto (a sequência é entre processos e não objetos). A altura dos eixos é dada em 20mm no exemplo."]
 
 E mais uma diferença do Simplify3D é que a sequência não é dada entre cada _peça_ na mesa e sim entre
 cada __processo__. Isto significa que se você tem 30 peças, se quiser imprimi-las em sequência precisará de
@@ -10801,31 +10829,31 @@ ele divide em seções: como a altura máxima que ele consegue obter é, digamos
 ele imprime os processos em sequência até chegar a 20mm em cada um deles; então, na altura 20mm + uma camada,
 ele reinicia a sequência até completar 40mm; e daí em diante, até completar todos os objetos.^3^
 
-image::image330.png[image,width=591,height=449]
+[[sequentialsimplify3d2]]
+image::image330.png[image,width=591,height=449,align="center",title="Um recurso valioso do Simplify3D: se as peças forem mais altas que o eixo, ele faz a sequência até chegar a altura máxima, para então recomeçar desta altura. As linhas vermelhas representam movimento de &quot;travel&quot; e o vaivém de uma peça a outra é economizado, tornando a impressão sequencial bem mais rápida. Na figura, vemos apenas duas linhas de travel entre as peças, ao invés de uma para cada camada."]
 
 Neste caso a vantagem do Simplify3D sobre Cura e Slic3r é aparente, mesmo não tendo a análise mais completa
 levando em conta o formato do hotend ou extrusor. Resta esperar que tais recursos sejam também implementados
 nesses fatiadores!^4^
 
-Notas:
-
+[NOTE]
+.Notas:
+====
 . Ainda assim, é possível editá-lo com um editor de textos comum. Ele se situa em
 __cura/resources/definitions__, tem o nome terminado em _.def.json_ e a lista de variáveis com explicação pode
 ser encontrada em https://github.com/Ultimaker/Cura/issues/798[_https://github.com/Ultimaker/Cura/issues/798_]. O
 formato do extrusor é dado pelas variáveis _machine_head_polygon_ e __machine_head_with_fans_polygon__.
-
-2 -- Ainda assim, você pode tentar pressionar os desenvolvedores do
+. Ainda assim, você pode tentar pressionar os desenvolvedores do
 Simplify3D para que implementem impressão sequencial em processo único:
 https://forum.simplify3d.com/viewtopic.php?f=23&t=1763[_https://forum.simplify3d.com/viewtopic.php?f=23&t=1763_].
-
-3 -- Referência em
+. Referência em
 https://www.simplify3d.com/support/articles/multi-part-printing/[_https://www.simplify3d.com/support/articles/multi-part-printing/_]
-
-4 -- Por conveniência, o autor abriu relatos de bugs tanto para Slic3r quanto para Cura pedindo este recurso
+. Por conveniência, o autor abriu relatos de bugs tanto para Slic3r quanto para Cura pedindo este recurso
 neles, a seguir: https://github.com/alexrj/Slic3r/issues/3739[_https://github.com/alexrj/Slic3r/issues/3739_]
 e https://github.com/Ultimaker/Cura/issues/1493[_https://github.com/Ultimaker/Cura/issues/1493_].
+====
 
-== Outra camada de configurações...
+=== Outra camada de configurações...
 
 ...ou configurações de camada? Pois agora que terminamos a __base__, o mínimo que uma impressora precisa para
 começar a funcionar, precisamos saber como fazer uma impressão viável (isto é, que chegue à peça final sem
@@ -10836,7 +10864,8 @@ E se queremos detalhes, precisamos evitar ao máximo o efeito "degrau" que pode 
 impressão muito grossas, análogo à pixelização que se vê em gráficos de computadores antigos. A _altura de
 camada_ (__layer height__, em inglês) é, na prática, a "resolução" da impressora 3D.
 
-image::image331.png[image,width=528,height=423]
+[[simplify3dyodabudas0301]]
+image::image331.png[image,width=528,height=423,align="center",title="A previsão da trajetória de impressão no Simplify3D de um &quot;yodabuda&quot; em duas resoluções diferentes: 0,1mm de altura de camada (esquerda) e 0,3mm (direita). Percebe-se claramente a perda de detalhes do segundo caso."]
 
 A altura de camada será limitada fisicamente pelo diâmetro do bico, já que é ele que determina a altura máxima
 que o filete de plástico consegue atingir. Via de regra, não é recomendável usar uma altura de camada maior que
@@ -10846,7 +10875,8 @@ de menos de 20% pois o plástico terá uma subextrusão tão acentuada que acaba
 ainda com outros problemas. Portanto, para um bico padrão de 0,4mm se recomenda uma altura de camada entre 0,08mm
 e 0,32mm -- tendo sempre em vista que essa "regra" é apenas uma orientação, com muitos casos em que não vale.
 
-image::image332.png[image,width=642,height=573]
+[[variosyodabudasabs0301]]
+image::image332.png[image,width=642,height=573,align="center",title="Algumas impressões com filamentos de ABS com 0,3mm e 0,1mm de altura de camada. Apesar de a impressão de 0,1mm ser mais definida, ela também gera mais artefatos. No caso do filamento cinza, os artefatos foram tantos que o filamento foi considerado inviável para impressão fina (é um filamento de testes a que o autor teve acesso). Opções de qualidade do fatiador podem minimizar tais defeitos, mas nada supera o uso de um filamento melhor. Foto do autor."]
 
 Uma camada mais fina torna em geral a superfície mais suave e portanto pode parecer sempre desejável, mas tem
 desvantagens. Como o extrusor se movimenta na mesma velocidade quer esteja fazendo uma camada de 0,3mm, quer uma de
@@ -10867,9 +10897,10 @@ plástico pode trazer deslocamentos micrométricos mas relevantes, e a empresa P
 um mecanismo de cálculo de vários índices para sua impressora 3D, entre eles a de "altura de camada ideal"
 considerando o mecanismo.
 
-image::image333.png[image,width=596,height=631]
+[[calculadoraprusacamadaotima]]
+image::image333.png[image,width=596,height=631,align="center",title="A calculadora Prusa para camada ótima. O usuários entra os dados físicos de sua impressora - neste caso, bem comuns: motor de 1,8° de rotação, barra roscada M5 de 0,8mm de espaçamento, sem redução no motor - e diz qual altura de camada gostaria de usar: neste caso, 0,15mm. A calculadora prusa informa que a camada de 0,15mm não seria ideal (em vermelho), pois teria um erro estimado de 1,3mm em 10cm, mas as camadas de 0,148 mm e 0,152 mm funcionariam bem. Pode-se ainda ver que a distância de um “passo” do motor em Z é muito pequena (0,004mm) e com os drivers modernos pode ainda ser dividida em até 32 partes. Isso mostra que a resolução possível de nossa altura de camada é muito alta e poderíamos ter camadas micrométricas se não fosse o altíssimo tempo necessário e a alta chance de a subextrusão não funcionar."]
 
-== Controle de altura de camada e fatiamento adaptativo
+==== Controle de altura de camada e fatiamento adaptativo
 
 [[FEITO adaptive_slicing]]Por bastante tempo, o Slic3r tem tido um recurso que é tanto bastante útil como pouco
 usado, que é o ajuste fino de controle de camadas por altura. Embora outros fatiadores também permitam isso de
@@ -10878,12 +10909,14 @@ facilidade com que isso é feito: selecionando o objeto, clicando com o botão d
 para configurações _por objeto_ e usando a aba "layers" pra definir os intervalos de altura e as alturas de
 camada que terão (valores fora desses intervalos terão a altura de camada da configuração geral).
 
-image::image334.png[image,width=549,height=460]
+[[slic3rconfiguracaoalturascamadas]]
+image::image334.png[image,width=549,height=460,align="center",title="Configuração fácil de alturas de camada no Slic3r."]
 
 O _fork_ do Slic3r da Prusa Research, o Prusa Slic3r, levou este conceito mais adiante e permite uma configuração
 suave e visual das alturas de camada:
 
-image::image335.png[image,width=521,height=455]
+[[prusaslic3ralturacamada]]
+image::image335.png[image,width=521,height=455,align="center",title="Prusa Slic3r: controle visual de altura de camada. Clicar em diversos pontos do retângulo da curva de alturas de camada à direita ajusta a região para a altura de camada desejada. O fatiador grava a meta-informação dessas alturas de camadas se a mesa for gravada em formato AMF."]
 
 E como se usa esta facilidade? Ora, se você já enxergou uma peça impressa e o efeito de "escada" ou
 "serrilhado" na vertical especialmente nas partes que deveriam ser curvas suaves, sabe o problema de se dividir
@@ -10903,9 +10936,13 @@ da implementação independente da idéia feita pelo usuário __platsch__no Slic
 de manual e automático: o algoritmo inicialmente faz a análise e ajustes das alturas de camadas automaticamente,
 com o usuário podendo alterá-las.
 
-image::image336.png[image,width=642,height=581]
+[[slic3rprintsettingsminmax]]
+image::slic3rprintsettingsminmax.png[image,width=957,height=438,align="center",title="O recurso (recentemente integrado) de fatiamento adaptativo do Slic3r, com configurações associadas de extrusor de altura máxima e mínima permitidas e a __tooltip__ explicando o valor máximo."]
 
-=== Valor da cúspide
+[[slic3rfatiadoadaptativo]]
+image::slic3rfatiadoadaptativo.png[image,width=1229,height=715,align="center",title="A curva de tamanho de camadas à direita da janela menor é modificável de modo bem parecido com o ajuste do Prusa Slic3r (que tem em comum também os mesmos ajustes de máximo e mínimo)."]
+
+.Valor da cúspide
 
 Se a configuração de altura de camada mínima e máxima é fácil de entender, nem tudo é simples no fatiamento
 adaptativo. Um valor mais complexo que também pode ser entrado é o _cusp value_ (valor da cúspide). Cúspide
@@ -10915,27 +10952,37 @@ configurável para o fatiamento. Um valor de cúspide igual a zero fará com que
 média das curvas, e as deixará sempre no valor mínimo. Um valor de cúspide igual ou maior que a altura de
 camada máxima deixará as camadas sempre no valor máximo.
 
-image::image337.png[image,width=535,height=241]
+[[diagramacuspide]]
+image::image337.png[image,width=535,height=241,align="center",title="O valor da cúspide é igual ao módulo (comprimento) do vetor ilustrado em vermelho, com a base na interseção entre as camadas. "]
 
-image::image338.png[image,width=579,height=508]
+Durante o desenvolvimento desse recurso no Slic3r, o valor da cúspide era colocado diretamente, mas se percebeu que os usuários que testam tinham dificuldade de entendê-lo. Por isso, o valor foi trocado para uma _porcentagem_ que se considera mais intuitiva: 0% é correspondente ao valor máximo da cúspide (igual à altura de camada máxima, ou seja, impressão rápida mas grosseira), 100% é correspondente ao valor mínimo (impressão lenta, mas com as camadas igual ao valor mínimo). Entendendo a porcentagem como um equilíbrio entre _tempo_ e __qualidade__, quanto mais alta essa porcentagem, maior a qualidade e menor o tempo. O valor __default__ com que o slic3r vem para ela é **75%**, que é imo para a maioria dos casos.
 
-=== Em outros fatiadores
+[[slic3radapqualityhorizontal]]
+image::slic3radapqualityhorizontal.png[image,width=741,height=257,align="center",title="Como ligar o fatiamento adaptativo (não se esqueça de definir o mínimo e máximo na aba `printer settings`). O ajuste `Match horizontal surfaces` tenta aumentar ou diminuir as alturas de camada perto de superfícies horizontais para que elas tenham exatamente a altura do modelo."]
+
+[[slic3radaptslicingqualities]]
+image::slic3radaptslicingqualities.png[image,width=1530,height=712,align="center",title="Diferentes ajustes de qualidade e seus efeitos nas alturas de camada em cada camada (utilizado o 3DBenchy da primeira ilustração)"]
+
+==== Fatiamento adaptativo em outros fatiadores
 
 O Slic3r não é o único fatiador a ter fatiamento adaptativo, mas parece ser o que a implementa de forma mais
 consistente, configurável e modificável. Outros fatiadores que a implementam com parâmetros mais automáticos
 são o open-source _repsnapper_ e o proprietário __voxelizer__. No caso do repsnapper é apenas uma opção a
 ser ligada ou desligada e no caso do voxelier só o tamanho de camada mínimo e máximo são configuráveis.
 
-image::image339.png[image,width=518,height=432]
+[[fatadaptativonorepsnapper]]
+image::image339.png[image,width=518,height=432,align="center"]
 
-image::image340.png[image,width=567,height=352]
+[[fatadaptativonovoxelizer]]
+image::image340.png[image,width=567,height=352,align="center"]
 
-1 -
-http://www.instructables.com/id/Variable-Slicing-for-3D-Printing-on-Autodesk-Ember/[_http://www.instructables.com/id/Variable-Slicing-for-3D-Printing-on-Autodesk-Ember/_]
-
-2 - http://kalanka.de/blog/adaptive-slicing/[_http://kalanka.de/blog/adaptive-slicing/_]
-
-3 - https://github.com/platsch/Slic3r/tree/adaptive-slicing[_https://github.com/platsch/Slic3r/tree/adaptive-slicing_]
+[NOTE]
+.Notas:
+====
+. http://www.instructables.com/id/Variable-Slicing-for-3D-Printing-on-Autodesk-Ember/[_http://www.instructables.com/id/Variable-Slicing-for-3D-Printing-on-Autodesk-Ember/_]
+. http://kalanka.de/blog/adaptive-slicing/[_http://kalanka.de/blog/adaptive-slicing/_]
+. https://github.com/platsch/Slic3r/tree/adaptive-slicing[_https://github.com/platsch/Slic3r/tree/adaptive-slicing_]
+====
 
 === A Importância da Primeira Camada
 

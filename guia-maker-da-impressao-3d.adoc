@@ -1922,7 +1922,8 @@ mais caro.
 permanecem bastante retilíneos, é mais raramente encontrado em cortes de repraps e, quando encontrado, adaptado para
 espessura mais fina (como 3mm) para economia em material. É mais usado em elementos usinados como perfis e blocos
 aquecedores. Tem alto coeficiente de condução de calor, o que pode ser indesejável se tiver contato com altas
-temperaturas.  ** Aço: Usado em impressoras 3D de cunho mais industrial, geralmente de frame fechado e que precisam
+temperaturas.
+** Aço: Usado em impressoras 3D de cunho mais industrial, geralmente de frame fechado e que precisam
 aguentar altíssimas temperaturas, é encontrado na variedade inoxidável e escovado para resistir também a oxidação
 e agentes do ambiente. Tem baixo coeficiente de condução de calor.
 * *ACM* (Aluminium Composite Material): também
@@ -2162,7 +2163,8 @@ diferentes. Isso é importante por dois motivos:
 
 * Diminui o "efeito escada" visto na vertical devido à resolução limitada (altura de camada) da impressora 3D,
 permitindo a fabricação de estruturas tridimensionais suaves seguindo o contorno da forma, ao invés de aproximando
-por camadas; * Minimiza a necessidade de **suportes**, que como veremos adiante, são estruturas de sustentação
+por camadas;
+* Minimiza a necessidade de **suportes**, que como veremos adiante, são estruturas de sustentação
 necessárias pelo fato de a construção sempre se dar "de baixo para cima" na peça. Se estiver construindo uma
 miniatura de Cristo Redentor, você pode primeiro construir todo o corpo, girar a peça e então construir os braços.
 
@@ -5164,7 +5166,8 @@ como _hotend_ ou __bed__.
 apresenta uma série de artigos interessantes e profundos, a começar por esse:
 https://www.embarcados.com.br/controle-pid-em-sistemas-embarcados/[_https://www.embarcados.com.br/controle-pid-em-sistemas-embarcados/_]
 * A referência do site _reprap_ sobre afinação de PID é a mais conhecida:
-http://reprap.org/wiki/PID_Tuning[_http://reprap.org/wiki/PID_Tuning_] * O
+http://reprap.org/wiki/PID_Tuning[_http://reprap.org/wiki/PID_Tuning_]
+* O
 wiki do Repetier Firmware explica em profundidade os ajustes de controle de temperatura:
 https://github.com/repetier/Repetier-Firmware/wiki/Temperature-control[_https://github.com/repetier/Repetier-Firmware/wiki/Temperature-control_]
 * O manual do Smoothieware também tem uma explicação ricamente ilustrada
@@ -7158,7 +7161,8 @@ altas, o acabamento também as acaba exigindo.
 -- portanto é preciso também usá-la com cautela, pois pode gerar queimaduras graves se atingir a pele. Alguns
 dos usos que se dão a ela:
 ** **Eliminar fiapos**. Os fios mais finos de filamento plástico derretem bem mais
-rápido que outras partes quando o ar quente os atinge.  ** *Alisar a superfície.* Usada com habilidade, o sopro
+rápido que outras partes quando o ar quente os atinge.
+** *Alisar a superfície.* Usada com habilidade, o sopro
 quente pode reduzir ou até eliminar as linhas de camadas das peças; mas é uma tarefa consideravelmente difícil
 especialmente porque o sopro pode acabar gerando deformação no plástico quente e destruir detalhes mais frágeis.
 ** **Facilitar insertos e encaixes**. Quando se imprime uma peça que deve receber um inserto (como um parafuso)
@@ -7349,7 +7353,8 @@ materiais cuja comercialização e aquisição são controlados e seus respectiv
 http://www.pf.gov.br/servicos-pf/produtos-quimicos/legislacao/anexos-da-portaria-1274-03[_http://www.pf.gov.br/servicos-pf/produtos-quimicos/legislacao/anexos-da-portaria-1274-03_].
 ** **Lei n. 10.357, de 27 de dezembro de 2001** -- Estabelece normas de controle e fiscalização de produtos
 químicos que direta ou indiretamente possam ser destinados à elaboração ilícita de substâncias entorpecentes,
-psicotrópicas ou que determinem dependência física ou psíquica, e dá outras providências.  ** Adicionalmente,
+psicotrópicas ou que determinem dependência física ou psíquica, e dá outras providências.
+** Adicionalmente,
 um guia online que facilita o acesso à informação da portaria 1274/03 encontra-se neste endereço:
 http://www.dinamicadespachante.com.br/materias.php?cd_secao=56[_http://www.dinamicadespachante.com.br/materias.php?cd_secao=56_].
 
@@ -9025,7 +9030,7 @@ host predileto e enviamos o comando de _homing_ e então o comando para ir no pr
 G28
 G1 X-64.95 Y-37.5 Z20
 ----------
- ** Repetimos para os outros dois:
+** Repetimos para os outros dois:
 [source,gcode]
 ----------
 G28
@@ -9757,7 +9762,8 @@ tridimensionais em uma "bandeja virtual" tridimensional que é a mesa de impress
 configurou;
 * *Faz operações simples* com essas formas tridimensionais, como: mover as formas; aumentar ou diminuir,
 uniformemente ou nos eixos X, Y e Z; realizar cortes simples; rotacionar / inclinar a peça; combinar com outras
-peças; * Grava / exporta a disposição da bandeja que arrumou;
+peças;
+* Grava / exporta a disposição da bandeja que arrumou;
 * *Configura* os _parâmetros de fatiamento_
 adequados para a forma. Preenchimento, suportes, estruturas de apoio, resolução, etc.;
 * *Executa* a operação
@@ -9805,8 +9811,9 @@ modelo. A diferença aparentemente sutil de abordagem é gigante no que concerne
 processados matematicamente. Em geral os modeladores de superfície geram formas mais orgânicas, como fazem
 os aplicativos ZBrush, Sculptris e Blender mas também o Sketchup.
 ** *Modeladores matemáticos* de funções
-algébricas podem gerar formas de gráficos tridimensionais, também em malha, como Mathematica e MathCAD; **
-**Linguagens de programação em 3D**, como CadQuery, OpenSCAD, SolidPython; ** Digitalização 3D de imagens
+algébricas podem gerar formas de gráficos tridimensionais, também em malha, como Mathematica e MathCAD;
+** **Linguagens de programação em 3D**, como CadQuery, OpenSCAD, SolidPython;
+** Digitalização 3D de imagens
 (por fotogrametria, por scanner 3D especializado, por ultrassom "4D")
 ** **Procura e download da Internet**,
 em sites de impressão 3D como _thingiverse_ ou __youmagine__, sites genéricos de formas 3D como _grabcad_
@@ -9822,7 +9829,8 @@ _thingiverse_ (novamente) ou geradores de "lithopanes" (fotografias bidimensiona
 da forma para um formato que o fatiador entenda. Para malhas simples de uma só cor, STL e OBJ; para malhas com
 cores ou materiais diferentes, AMF ou 3MF;
 * *Importação* da forma 3D no fatiador, de onde se procede com o
-**workflow do fatiamento**; * Preparação física da impressora para a operação: inserção do filamento no
+**workflow do fatiamento**;
+* Preparação física da impressora para a operação: inserção do filamento no
 extrusor, colocação do vidro na mesa aquecida, revestimento do vidro com fita ou cola;
 * *Envio da impressão*
 para a Impressora 3D, seja por um dispositivo intermediário de armazenamento (cartão SD, pendrive -- de onde
@@ -10158,7 +10166,8 @@ O workflow de impressão irá variar bastante se você a gerencia pelo fatiador 
 controlador de impressão:
 
 * Você não precisa estar com a impressora 3D nem mesmo próxima; basta estar ligada pela USB ao computador. Não
-precisa gravar e transportar pen drive ou SD Card até ela; * O andamento da impressão é claramente mostrado no
+precisa gravar e transportar pen drive ou SD Card até ela;
+* O andamento da impressão é claramente mostrado no
 fatiador, com a seção sendo impressa aparecendo na tela em tempo real, de forma que fica muito intuitivo entender
 o que está acontecendo.
 
@@ -10295,7 +10304,7 @@ image::image292.png[image,width=607,height=307,align="center"]
 
 Você sabe o que é o diâmetro e as temperaturas, portanto que _Extrusion Multiplier_ é esse? No Slic3r ele é
 um número pelo qual ele modificará o seu cálculo de plástico a ser extrudado. Digamos que para determinada
-camada ele calcula que gastará 15 mm^3^ de plástico e você põe o multiplicador de extrusão em 1.1; 15 * 1.1 =
+camada ele calcula que gastará 15 mm^3^ de plástico e você põe o multiplicador de extrusão em 1.1; 15 × 1.1 =
 16.5 mm^3^, que é o quanto ele realmente gastará de plástico, causando o que se chama de __superextrusão__. Em
 alguns casos, a superextrusão pode ser útil para fazer camadas mais grossas, mais resistentes. O mesmo pode ser
 dito da subextrusão, extrudar menos do que deveria (com o multiplicador em 0,9, por exemplo): tem uma utilidade
@@ -11318,14 +11327,14 @@ image::image360.jpeg[image,width=642,height=257,align="center",title="Um exemplo
 [[slic3rpontes]]
 image::image361.png[image,width=623,height=527,align="center",title="As configurações de ponte do slic3r se encontram espalhadas pelas categorias. Esse screenshots têm configurações recomendadas: velocidade nas pontes ligeiramente maior que a de impressão, conjugada a menor fator de extrusão (0,92) para &quot;esticar&quot; o filete que ligará dois pontos; e ventoinha do bico ligada a 100% na ponte, para garantir que o plástico seja solidificado o mais rápido possível."]
 
-== Configurações de Qualidade
+=== Configurações de Qualidade
 
 Os conceitos que aprendemos até agora são essenciais para a _viabilidade_ da impressão. Uma vez que aprendemos
 tais requisitos, estamos prontos para aquela parte que torna o fatiamento algo semelhante a uma arte: os ajustes
 que, quando equilibrados de maneira calculada e harmoniosa, contribuem para dar à peça o acabamento, aparência
 ou propriedades desejadas.
 
-=== O Preenchimento
+==== O Preenchimento
 
 Nesta altura do aprendizado, o leitor já tem noção que as peças impressas em 3D não precisam ser totalmente
 sólidas, preenchidas: é desperdício de material, não contribui muito para a resistência e torna a peça
@@ -11339,21 +11348,22 @@ os valores entre 0 e 100, o fatiador empregará o segundo ajuste, que é o __pad
 estrutura repetitiva. Um terceiro ajuste do preenchimento é o ângulo em relação ao eixo X da mesa, e serve
 para que o preenchimento não coincida com a orientação da peça, tendo uma distribuição melhor de forças.
 
-image::image362.png[image,width=626,height=534]
+[[slic3rpreenchimentos1]]
+image::image362.png[image,width=626,height=534,align="center",title="Diferentes padrões e porcentagens de preenchimentos do Slic3r. Os nomes foram mantidos em inglês para que o leitor possa achar as opções. Note que os preenchimentos estão em ângulo de 45° em relação ao eixo X, perceptível pelo Rectilinear."]
 
 O Slic3r e Simplify3D permitem grande variedade de padrões de preenchimento. A maioria dos casos no entanto tem
 mais valor ornamental e não contribui muito para melhorar propriedades desejáveis da peça. O Slic3r permite
 até padrões diferentes na horizontal e vertical. Alguns casos que são notáveis de padrões são:
 
-* Retilinear ou quadrático: é o que oferece melhor retorno resistência a força vs. rapidez de impressão. É o
+* **Retilinear** ou **quadrático**: é o que oferece melhor retorno resistência a força vs. rapidez de impressão. É o
 default em virtualmente todos os fatiadores.
-* Honeycomb (colméia) ou hexagonal: é tido como um preenchimento que
+* **Honeycomb** (colméia) ou **hexagonal**: é tido como um preenchimento que
 oferece uma ótima distribuição de forças, e na natureza aparece em estruturas que precisam disso. Na impressão
 3D, entretanto, os primeiros testes de força feitos com preenchimentos, usando PLA, não encontraram diferenças
 significativas em relação ao retilinear, e ele é impresso consideravelmente mais devagar.
-* Triangular é adequado
+* **Triangular** é adequado
 para uso com filamentos flexíveis; preserva a elasticidade desejada na parte interna do objeto.
-* Concêntrico é
+* **Concêntrico** é
 interessante para uso com filamentos transparentes e translúcidos que precisam preservar a aparência interna suave.
 
 Em uso geral para impressão 3D, o recomendado é usar uma porcentagem de preenchimento entre 10 a 30%, aumentando
@@ -11373,7 +11383,8 @@ o preenchimento, mas analisa o interior da peça oca para colocar suportes, gara
 peça. O Slic3r tem a configuração Print Settings → Infill → Reducing printing time → "Only infill where
 needed", que força preenchimento zero mas coloca suportes nas partes internas com seções pendentes.
 
-image::image363.png[image,width=642,height=487]
+[[curamodooco]]
+image::image363.png[image,width=642,height=487,align="center",title=""Modo oco" do Cura com a peça com preenchimento zero, mas suportes internos para as seções pendentes."]
 
 Alguns fatiadores permitem ainda fazer o preenchimento com altura de camada diferente do resto da impressão. Neste
 caso, a altura de camada do preenchimento precisa ser múltipla da altura de camada da impressão -- digamos,
@@ -11381,12 +11392,17 @@ caso, a altura de camada do preenchimento precisa ser múltipla da altura de cam
 e ainda fique ligeiramente mais robusta. Seguindo o exemplo de 0,1mm e 0,3mm, o jeito de fazer isso em cada fatiador
 é ligeiramente diferente:
 
-* **Slic3r**: ** Print Settings → Layers and perimeters → Layer height: [**0.1**] mm; ** Print Settings →
+* **Slic3r**:
+** Print Settings → Layers and perimeters → Layer height: [**0.1**] mm;
+** Print Settings →
 Infill → Reducing printing time → Combine Infill every: [**3**] layers
-* **Simplify3D**: ** Layer → Primary
-Layer Height: [**0,1000**] mm; ** Infill → General → Print Sparse Infill Every [**3**] Layers
-* **Cura**: **
-Quality → Layer Height [**0.1** mm] ** Infill → Infill Layer Thickness: [**0.3** mm]
+* **Simplify3D**:
+** Layer → Primary
+Layer Height: [**0,1000**] mm;
+** Infill → General → Print Sparse Infill Every [**3**] Layers
+* **Cura**:
+** Quality → Layer Height [**0.1** mm]
+** Infill → Infill Layer Thickness: [**0.3** mm]
 
 É importante notar que esse ajuste pode facilmente levar a situações absurdas, que podem até estragar a
 impressão. Por exemplo, se você tem um bico de 0,4mm, sua altura de camada for 0,3mm e você pedir o preenchimento
@@ -11394,7 +11410,7 @@ esparso a cada 3 camadas, você estará pedindo ao fatiador que faça as camadas
 altura, algo totalmente fora da margem de extrusão razoável de um bico de 0,4mm. O filete para preenchimento
 sairá completamente espirrado e torto e possivelmente nem se assentará em cima da camada anterior.
 
-=== Paredes
+==== Paredes
 
 Este ajuste se refere ao número de filetes ou camadas sólidas que o fatiador vai fazer antes de aplicar o padrão
 de preenchimento. A denominação varia entre os fatiadores e mesmo neles para os que tratam como paredes laterais ou
@@ -11406,15 +11422,18 @@ do topo (__top__) e da parte de baixo (__bottom__). Alguns fatiadores usam para 
 parte de baixo são dadas em camadas e __horizontal shells -- Solid layers Top & Bottom__.
 * **Cura**: paredes
 laterais são _wall thickness_ (espessura de parede). Do topo e da parte de baixo são _Top/Bottom Thickness_
-(espessura superior/inferior). Podem ser dados tanto em número de perímetros/camadas quanto em milímetros, o
-fatiador popula o campo de acordo.  + image:image364.png[image,width=618,height=268]
-* **Simplify3D**:
-paredes laterais são __Outline/Perimeter Shells__. Do topo e da barte de baixo são _Top Solid Layers_ e __Bottom
+(espessura superior/inferior). Podem ser dadas tanto em número de perímetros/camadas quanto em milímetros, o
+fatiador popula o campo de acordo.
++
+image::image364.png[image,width=618,height=268,align="center",title="O Cura permite preencher ou a espessura desejada da parede ou o número de linhas (perímetros). Se você preenche um campo, ele popula o outro automaticamente."]
++
+* **Simplify3D**: paredes laterais são __Outline/Perimeter Shells__. Do topo e da barte de baixo são _Top Solid Layers_ e __Bottom
 Solid Layers__. São sempre dados em números de filetes / camadas.
 * Outros fatiadores terão suas próprias
 nomenclaturas, mas a partir destes exemplos é possível inferir quais sejam.
 
-image::image365.png[image,width=620,height=504]
+[[slic3rdiferentesperimetros]]
+image::image365.png[image,width=620,height=504,align="center",title="Exemplo de diferentes larguras de paredes laterais (perímetros) no Slic3r. Veja que aqui tratamos somente das laterais, pois é mais difícil ilustrar os casos de paredes do topo e da parte de baixo das estruturas."]
 
 Seguindo a indicação para FFF de espessuras mínimas para resistência (entre 1 e 2 mm), podemos inferir que
 para um bico de 0,4mm e altura de camada de 0,2mm uma boa espessura lateral seriam 4 filetes (0,4 x 4 = 1,6mm)
@@ -11424,7 +11443,7 @@ essa espessura de camada é tão adequada que o preenchimento pode nem ser neces
 Vale lembrar que tanto as paredes quanto o preenchimento contribuem para mais material condensado e portanto mais
 pronunciado será o efeito de __warp__.
 
-=== Larguras de camada
+==== Larguras de camada
 
 Um ajuste que vimos para aumentar a aderência na mesa foi a "largura de camada". Apesar de ser possível ajustar
 para a primeira camada especialmente, ele pode ser especificado para todas as camadas do fatiamento. Geralmente
@@ -11532,11 +11551,19 @@ de discussão, facebook e semelhantes relacionados ao produto também podem ter 
 se arriscaram com impressões mais rápidas e preservaram qualidade. Para não deixar o usuário sem uma direção
 ou comparação, entretanto, oferecemos algumas sugestões gerais, que podem ou não funcionar para sua impressora 3D.
 
-* Velocidade de perímetro: 60 mm/s * Velocidade de perímetro pequeno: 20 mm/s * Velocidade de primeira camada:
-20% * Velocidade de travel: 100 mm/s * Velocidade de infill: 70 mm/s * Velocidade de pontes: 80 mm/s * Velocidade
-de _overhangs_ (somente no software repsnapper): 20 mm/s * Aceleração: 1000 mm/s^2^ nos eixos X e Y, 3000 mm/s^2^
+* Velocidade de perímetro: 60 mm/s
+* Velocidade de perímetro pequeno: 20 mm/s
+* Velocidade de primeira camada:
+20%
+* Velocidade de travel: 100 mm/s
+* Velocidade de infill: 70 mm/s
+* Velocidade de pontes: 80 mm/s
+* Velocidade
+de _overhangs_ (somente no software repsnapper): 20 mm/s
+* Aceleração: 1000 mm/s^2^ nos eixos X e Y, 3000 mm/s^2^
 para as impressoras 3D mais robustas, especialmente CoreXY e semelhantes.
-* Jerk X/Y: 20 mm/s * É importantíssimo
+* Jerk X/Y: 20 mm/s
+* É importantíssimo
 lembrar que você deve _decidir_ quem cuida de sua aceleração, ou o fatiador ou o firmware! Se as acelerações
 forem configuradas no fatiador, o ideal é aumentar ao máximo no firmware (digamos, 10000 mm/s^2^) para minimizar
 as interferências. O mesmo vale em relação ao _jerk_ e velocidades máximas.
@@ -11637,7 +11664,8 @@ mesmo de realizar a retração.
 da Makerbot, o Sailfish, têm um algoritmo de controle de pressão chamando de Pressure Advance, Linear Advance
 ou Quadratic Advance. Esse recurso configurável ajuda no controle de pressão reduzindo problemas nos cantos e
 pontas da peça e são semelhantes ao pressure advance do slic3r. São especialmente importantes para impressoras
-3D que usam filamento guiado (bowden), que sofrem mais de escorrimento.  ** Documentação do Advance do Marlin:
+3D que usam filamento guiado (bowden), que sofrem mais de escorrimento.
+** Documentação do Advance do Marlin:
 http://marlinfw.org/docs/features/lin_advance.html[_http://marlinfw.org/docs/features/lin_advance.html_]
 ** Documentação do Advance do Repetier Firmware:
 https://github.com/repetier/Repetier-Firmware/wiki/Hardware-settings-and-print-quality[_https://github.com/repetier/Repetier-Firmware/wiki/Hardware-settings-and-print-quality_]
@@ -11662,8 +11690,10 @@ quando for retrair e avançar da retração, ele usa comandos específicos para 
 e "G11" (avançar/recuperar da retração). Deixar o firmware cuidar da retração, ao invés do fatiador,
 tem algumas vantagens:
 
-* Permite configurar velocidades diferentes para a retração e recuperação; * Permite mudar estes ajustes
-em tempo real, enquanto estiver acontecendo a impressão, refletindo na qualidade dela; * Se o firmware estiver
+* Permite configurar velocidades diferentes para a retração e recuperação;
+* Permite mudar estes ajustes
+em tempo real, enquanto estiver acontecendo a impressão, refletindo na qualidade dela;
+* Se o firmware estiver
 configurado para algoritmos avançados de controle de pressão como o Advance, ele pode agir especificamente na
 retração já que os comandos são outros, e assim controlar melhor a qualidade da impressão. Note também que
 se você habilitar advance __do fatiador__, a retração de firmware pode ter o efeito contrário, fazer ela sair
@@ -11834,17 +11864,21 @@ você deve ir na aba "Infill" e aumentar o valor do "Outline overlap" (default e
 image:image388.png[image,width=425,height=177]
 +
 Este ajuste trata de modificadores
-para o movimento de retração do final de uma extrusão.  ** O primeiro ajuste, ☑ __*Only retract when crossing
+para o movimento de retração do final de uma extrusão.
+** O primeiro ajuste, ☑ __*Only retract when crossing
 open spaces*__, faz com que ele só execute a retração se não for passar em alguma parte já impressa do objeto;
-senão, ele conta para essa parte remover qualquer resíduo do bico.  ** O segundo, ☑ __*Force retraction
-between layers*__, faz com que sempre haja retração quando o fatiador mudar de camada.  ** _*Minimum travel
+senão, ele conta para essa parte remover qualquer resíduo do bico.
+** O segundo, ☑ __*Force retraction
+between layers*__, faz com que sempre haja retração quando o fatiador mudar de camada.
+** _*Minimum travel
 for retraction*_ é um ajuste útil para evitar que o tracionador "coma" o filamento fazendo com que avance e
 retroceda várias vezes; estabelece uma distância mínima que tenha que percorrer sem extrudar para que a retração
 possa ser acionada. Aconselha-se colocar um valor entre 3 a 10mm aqui se suas impressões têm falhado em figuras
 rebuscadas como as peças "voronoi". A contrapartida é que mais "verrugas" ou fiapos devem aparecer.
 ** ☑ _*Perform retraction during wipe movement*_ faz com que, quando for executar um movimento de "wipe"
 (passar o bico em áreas impressas para limpá-lo), ao invés de executar primeiro uma retração com o bico parado
-e então percorrer o espaço impresso, ele faça os dois movimentos ao mesmo tempo.  ** ☑ _*Only wipe extruder
+e então percorrer o espaço impresso, ele faça os dois movimentos ao mesmo tempo.
+** ☑ _*Only wipe extruder
 for outer-most perimeters*_ faz com que o fatiador não tente fazer o "wipe" para os perímetros mais internos,
 visto que não estarão à mostra e suas imperfeições não interferem muito. É interessante deixar esse ajuste
 ligado, a exceção seria para filamentos translúcidos e transparentes, em que essas imperfeições podem importar.
@@ -11862,26 +11896,32 @@ são as configurações principais de retração: + image:image390.png[image,wid
 ** __*Retraction vertical lift*__, também chamado Z-hopping, é levantar brevemente o extrusor quando houver
 retração para diminuir a formação de verrugas. Envolve movimento Z do extrusor que costuma ser lento em
 cartesianas, sendo mais recomendado para deltas ou no mínimo cartesianas mais rápidas. A velocidade é configurada
-no próximo ajuste, __*Retraction Speed*__.  ** __*Coasting*__: como já mencionamos, coasting ou _desengrenagem_
+no próximo ajuste, __*Retraction Speed*__.
+** __*Coasting*__: como já mencionamos, coasting ou _desengrenagem_
 é o tracionador deixar de tracionar alguns décimos de milímetros antes do fim da extrusão, para que o filamento
 escorrido de excesso seja totalmente consumido. 0,20mm, o default do Simplify3D, é uma quantidade boa para o caso
-geral.  ** *Wipe* é o movimento de limpeza do bico passando em cima de áreas impressas, ou seja, uma espécie de
+geral.
+** *Wipe* é o movimento de limpeza do bico passando em cima de áreas impressas, ou seja, uma espécie de
 __combing__. Ligando-se esse ajuste o fatiador passa a procurar realizar o wipe depois de completar o perímetro
 de uma ilha impressa, e o wipe distance é a distância que ele deve percorrer realizado o movimento. Se _*perform
 retraction during wipe movement*_ estiver ligado, a distância aqui não é usada, sendo usada a duração da
 retração no lugar. O _wipe_ só é executado se a mínima distância para retração tiver sido percorrida.  *
 _*Bridging*_ + image:image391.png[image,width=424,height=211] + Antigamente bastante deficiente tanto
 na detecção quanto na configurabilidade de suas pontes, a versão 4.0 do Simplify3D trouxe boas melhorias nessa
-parte. Os ajustes são: ** __*Unsupported area threshold*__: quanto de área mínima sem suporte é necessária
+parte. Os ajustes são:
+** __*Unsupported area threshold*__: quanto de área mínima sem suporte é necessária
 para que o algoritmo decida que vai usar a estratégia de "ponte" para ligar uma seção à outra. Dada em
-milímetros quadrados (mm^2^).  ** __*Extra inflation distance*__: este ajuste leva em conta que a região de
+milímetros quadrados (mm^2^).
+** __*Extra inflation distance*__: este ajuste leva em conta que a região de
 suporte da ponte se apóia em determinadas camadas inferiores (mais interna que as paredes), e permite expandir
 a região usada como apoio pra permitir uma fundação mais sólida. Pode ser difícil visualizar, então aqui
-está um exemplo de uma ponte expandida em 2mm + image:image392.png[image,width=594,height=282] **
-_*Bridging extrusion multiplier*_ e __*bridging speed multiplier*__: assim como no Slic3r, estes multiplicadores
+está um exemplo de uma ponte expandida em 2mm + image:image392.png[image,width=594,height=282]
+** _*Bridging extrusion multiplier*_ e __*bridging speed multiplier*__: assim como no Slic3r, estes multiplicadores
 de extrusão e velocidade permite que durante a ponte o fatiador extrudem menos plástico e mais rapidamente,
-para que ele fique mais esticado.  ** _*Use fixed bridging infill angle [0] deg*_ -- faz com que os filetes que
-percorrem a ponte tenham um ângulo diferente de 0 graus (paralelo à direção da ponte).  ** _*Apply bridging
+para que ele fique mais esticado.
+** _*Use fixed bridging infill angle [0] deg*_ -- faz com que os filetes que
+percorrem a ponte tenham um ângulo diferente de 0 graus (paralelo à direção da ponte).
+** _*Apply bridging
 settings to perimeters*_ -- ao invés de considerar a ponte como somente a parte interna da estrutura que liga
 duas ilhas, considera seus perímetros como parte dela.
 
@@ -12169,9 +12209,11 @@ sem marcas. Nessa classificação entram filamentos quase rígidos de poliuretan
 elastômeros suaves e molengas, entram filamentos de suporte que aderem facilmente à mesa como PVA e filamentos
 de alta temperatura que sofrem warp e resistem à aderência como nylons. Tendo como única característica comum a
 elasticidade, é fácil perceber que certa estratégias para uns pode falhar para outros. Em especial, os seguintes
-problemas são derivados desta variabilidade: ** A maioria dos filamentos flexíveis **adere bem à mesa**, sem
+problemas são derivados desta variabilidade:
+** A maioria dos filamentos flexíveis **adere bem à mesa**, sem
 precisar nem mesmo de cola ou mesa aquecida, e não sofre warp. Para filamentos que usam nylon, geralmente é o
-contrário -- cola e mesa aquecida são fundamentais, não só o arranjo no extrusor.  ** O bom tracionamento
+contrário -- cola e mesa aquecida são fundamentais, não só o arranjo no extrusor.
+** O bom tracionamento
 de um filamento flexível específico depende de um *equilíbrio delicado de pressão no tracionador* que se for
 baixa, não consegue penetração dos dentes no filamento para tracioná-lo, e se for alta, leva ao ovalamento
 do filamento que gera entupimentos e aumenta a chance de o filamento embolar. O equilíbrio será diferente para
@@ -12471,17 +12513,22 @@ argumentos. O G-Code não aceita mais de um comando por linha. Nas impressoras 3
 **G**, *M* e **T**.
 * **Parâmetros**: Assim como os comandos, os _parâmetros_ são dados por uma letra seguida por
 um número (positivo ou negativo; os negativos, obviamente, começam com o sinal de "-"). Os tipos de parâmetro
-mais comuns passados para comandos são: ** *S* era usado originalmente em CNCs para designar a velocidade (speed)
+mais comuns passados para comandos são:
+** *S* era usado originalmente em CNCs para designar a velocidade (speed)
 de rotação, mas em impressoras 3D este parâmetro __não tem esta função__. Ele é usado como um parâmetro
-genérico para _distância_ ou __temperatura__, sendo usado em comandos de retração e ajuste de hotend e mesa.  **
-*R* de retract, velocidade adicional ligada à retração, usada em poucos firmwares.  ** *F* de taxa de alimentação
+genérico para _distância_ ou __temperatura__, sendo usado em comandos de retração e ajuste de hotend e mesa.
+** *R* de retract, velocidade adicional ligada à retração, usada em poucos firmwares.
+** *F* de taxa de alimentação
 (feedrate), sendo usado nas impressoras 3D para designar velocidade. A unidade utilizada dependerá do comando e da
-configuração do firmware.  ** *T* é em poucos firmwares usado para feedrate de recuperação da retração. Note
-que aqui T é parâmetro, não comando.  ** *X, Y* e **Z**: coordenadas/distâncias. **X10 Y5 Z30**, por exemplo,
+configuração do firmware.
+** *T* é em poucos firmwares usado para feedrate de recuperação da retração. Note
+que aqui T é parâmetro, não comando.
+** *X, Y* e **Z**: coordenadas/distâncias. **X10 Y5 Z30**, por exemplo,
 significa 10 unidades em X, 5 em Y, 30 em Z. O significado dessas coordenadas dependerá da configuração e do
 comando -- por exemplo, podem ser coordenadas absolutas ou relativas à posição atual da ferramenta.
 ** **E**:
-quantidade de filamento do extrusor.  ** *A, B* e **C**: coordenadas/distâncias angulares ou rotacionais. Não
+quantidade de filamento do extrusor.
+** *A, B* e **C**: coordenadas/distâncias angulares ou rotacionais. Não
 usadas em impressoras 3D.
 ** **P**: parâmetro de uso geral, sem significado predefinido, para comandos variados.
 * **Checksum**: É um campo que contém um asterisco seguindo de um número de 0 a 255. Este número é calculado
@@ -12517,10 +12564,15 @@ controlado. Em quase todos os firmwares de impressoras 3D de mercado, no entanto
 mesmo comando, implementados como sinônimos e tendo, obviamente, os mesmos parâmetros (curiosamente, fatiadores
 como Cura e MatterControl ainda geram g-code que para alguns movimentos usa G0, para outros G1). O comando tem 6
 parâmetros possíveis; nem todos precisam ser colocados, mas é preciso providenciar pelo menos um. São eles,
-onde _n_ é o valor numérico (inteiro ou racional) que segue: ** X__n__: A posição para a qual mover o eixo X.
-** Y__n__: A posição para a qual mover o eixo Y.  ** Z__n__: A posição para a qual mover o eixo Z.  ** E__n__: A
+onde _n_ é o valor numérico (inteiro ou racional) que segue:
+** X__n__: A posição para a qual mover o eixo X.
+** Y__n__: A posição para a qual mover o eixo Y.
+** Z__n__: A posição para a qual mover o eixo Z.
+** E__n__: A
 quantidade de plástico a extrudar entre o ponto inicial e final do movimento, por default em unidade de comprimento
-de filamento que entra (mm, por exemplo).  ** F__n__: A velocidade (por minuto) deste movimento.  ** S__n__: _flag_
+de filamento que entra (mm, por exemplo).
+** F__n__: A velocidade (por minuto) deste movimento.
+** S__n__: _flag_
 para ativar a verificação do endstop. Com S0 (default), o endstop é ignorado, isto é, o firmware não vai
 parar se o fim de curso for ativado. Com S1, o movimento pára quando o fim de curso de qualquer eixo for detectado.
 
@@ -12573,8 +12625,10 @@ sobre o problema dos círculos.
 * O *G4* é um comando de pausa por tempo. Para uso interativo de G-Code não
 tem realmente utilidade, mas inserido em um arquivo .gcode de impressão pode servir para permitir que um elemento
 esfrie ou aqueça, ou até dar tempo para haver intervenção do operador (apesar que, neste caso, se a máquina
-tiver um painel interativo, serão preferíveis os comandos _M226_ ou __M600__). Parâmetros do G4: ** P__n__
--- tempo em milissegundos para a pausa.  ** S__n__ -- tempo em segundos para a pausa.
+tiver um painel interativo, serão preferíveis os comandos _M226_ ou __M600__). Parâmetros do G4:
+** P__n__
+-- tempo em milissegundos para a pausa.
+** S__n__ -- tempo em segundos para a pausa.
 
 *G4 P10000* é equivalente a **G4 S10**.
 
@@ -12602,9 +12656,11 @@ o comportamento do G28 não é muito padronizado e existem firmwares que podem f
 quando se especificam os eixos -- o que torna um risco colocar esse código na configuração de G-Code de fim
 de impressão. Alguns firmwares usam "flags" de compilação para alterar o comportamento do _homing_ -- por
 exemplo, o Marlin tem uma flag Z_SAFE_HOMING que faz com que o comando primeiro faça homing em X e Y, então vá
-ao centro da mesa, baixe a sonda de autonivelamento e a use para o homing em __Z__. Reiterando os parâmetros: **
-X__n__ -- vai até o fim de curso do eixo X. _n_ é ignorado.  ** Y__n__ -- vai até o fim de curso do eixo Y. _n_
-é ignorado.  ** Z__n__ -- vai até o fim de curso do eixo Z. _n_ é ignorado.
+ao centro da mesa, baixe a sonda de autonivelamento e a use para o homing em __Z__. Reiterando os parâmetros:
+** X__n__ -- vai até o fim de curso do eixo X. _n_ é ignorado.
+** Y__n__ -- vai até o fim de curso do eixo Y. _n_
+é ignorado.
+** Z__n__ -- vai até o fim de curso do eixo Z. _n_ é ignorado.
 
 image::image430.png[image,width=642,height=468]
 
@@ -12617,9 +12673,12 @@ Firmware deixou nele só a funcionalidade mais básica, reservando o comando G32
 utilizar o G33 (utilizado no Marlin para calibração automática de deltas) para sua "distortion correction",
 equivalente à mesh leveling do Marlin. Já o Smoothieware usa G32 para autocalibração de parâmetros de delta,
 e G31 e G30 para o autonivelamento, nem mesmo tendo o G29.  + Confuso? Você não é o único! Mas, colocando de
-maneira tabulada: ** O *Smoothieware* não tem o comando G29.  ** O *Repetier Firmware* tem o comando G29, mas ele
+maneira tabulada:
+** O *Smoothieware* não tem o comando G29.
+** O *Repetier Firmware* tem o comando G29, mas ele
 não faz autonivelamento verdadeiro -- ele apenas mede Z em 3 pontos e tira um valor médio, não inclinando a
-impressão subsequente.  ** O *Marlin Firmware* tem o comando G29 mais sofisticado e configurável de todos. E na
+impressão subsequente.
+** O *Marlin Firmware* tem o comando G29 mais sofisticado e configurável de todos. E na
 versão 1.1.0 ele tem ainda um novo modo chamado de "Nivelamento de Mesa Unificado" que, se ligado, redefine
 o G29 e adiciona _*muito*_ mais parâmetros e configurabilidade ao comando.  + *Sonda de autonivelamento* - o
 autonivelamento é associado a uma _sonda_ (chave) no extrusor. Essa sonda é que vai sentir a distância a que

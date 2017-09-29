@@ -11835,7 +11835,8 @@ O modo vaso é especialmente útil para quem usa bicos largos (digamos, maiores 
 
 Cada fatiador tem suas peculiaridades, analisamos aqui alguns dos recursos específicos de cada um:
 
-*Slic3r* -- Em _Print Settings_ → _Layers and perimeters_ há o quadro "__quality__" com 4 opções
+.Slic3r
+Em _Print Settings_ → _Layers and perimeters_ há o quadro "__quality__" com 4 opções
 liga/desliga:
 
 [[slic3rconfqualidade]]
@@ -11870,167 +11871,198 @@ ser um jeito de o acelerar. Também ajuda a evitar que durante a impressão o ex
 "excesso de esmero" em algumas seções pequenas, extrudando pouco e dando "pulinhos"; isso é sintoma de
 peça excessivamente detalhada.
 
-*Simplify3D* -- Os ajustes específicos de qualidade do Simplify3D ficam espalhados por sua configuração,
+.Simplify3D
+Os ajustes específicos de qualidade do Simplify3D ficam espalhados por sua configuração,
 mas a maioria deles é na aba __Advanced__.
 
-* Comecemos por eles, então, na seção de _thin walls_ (paredes finas): +
-image::image387.png[image,width=441,height=136] + O ajuste é bastante semelhante ao _detect thin_ walls
+* Comecemos por eles, então, na seção de _thin walls_ (paredes finas):
++
+[[simplify3dthinwallbehavior]]
+image::image387.png[image,width=441,height=136,align="center"]
++
+O ajuste é bastante semelhante ao _detect thin_ walls
 do Slic3r: desligado ("Only use perimeters for thin walls") ou ligado, com a tolerância de sobreposição de
 um perímetro em cima do outro definida. Assim como no Slic3r, se mesmo com esse valor algumas brechas aparecerem,
 você deve ir na aba "Infill" e aumentar o valor do "Outline overlap" (default em 20%).
 * *Controle de escorrimento*
 +
-image:image388.png[image,width=425,height=177]
+[[simplify3doozecontrol]]
+image::image388.png[image,width=425,height=177,align="center"]
 +
-Este ajuste trata de modificadores
-para o movimento de retração do final de uma extrusão.
-** O primeiro ajuste, ☑ __*Only retract when crossing
-open spaces*__, faz com que ele só execute a retração se não for passar em alguma parte já impressa do objeto;
+Este ajuste trata de modificadores para o movimento de retração do final de uma extrusão.
++
+** O primeiro ajuste, ☑ __**Only retract when crossing open spaces**__, faz com que ele só execute a retração se não for passar em alguma parte já impressa do objeto;
 senão, ele conta para essa parte remover qualquer resíduo do bico.
-** O segundo, ☑ __*Force retraction
-between layers*__, faz com que sempre haja retração quando o fatiador mudar de camada.
-** _*Minimum travel
-for retraction*_ é um ajuste útil para evitar que o tracionador "coma" o filamento fazendo com que avance e
+** O segundo, ☑ __**Force retraction between layers**__, faz com que sempre haja retração quando o fatiador mudar de camada.
+** __**Minimum travel for retraction**__ é um ajuste útil para evitar que o tracionador "coma" o filamento fazendo com que avance e
 retroceda várias vezes; estabelece uma distância mínima que tenha que percorrer sem extrudar para que a retração
 possa ser acionada. Aconselha-se colocar um valor entre 3 a 10mm aqui se suas impressões têm falhado em figuras
 rebuscadas como as peças "voronoi". A contrapartida é que mais "verrugas" ou fiapos devem aparecer.
-** ☑ _*Perform retraction during wipe movement*_ faz com que, quando for executar um movimento de "wipe"
+** ☑ __**Perform retraction during wipe movement**__ faz com que, quando for executar um movimento de "wipe"
 (passar o bico em áreas impressas para limpá-lo), ao invés de executar primeiro uma retração com o bico parado
 e então percorrer o espaço impresso, ele faça os dois movimentos ao mesmo tempo.
-** ☑ _*Only wipe extruder
-for outer-most perimeters*_ faz com que o fatiador não tente fazer o "wipe" para os perímetros mais internos,
+** ☑ __**Only wipe extruder for outer-most perimeters**__ faz com que o fatiador não tente fazer o "wipe" para os perímetros mais internos,
 visto que não estarão à mostra e suas imperfeições não interferem muito. É interessante deixar esse ajuste
 ligado, a exceção seria para filamentos translúcidos e transparentes, em que essas imperfeições podem importar.
-* Note que estes ajustes usam bastante o movimento de "wipe" e por isso o próximo ajuste, "☐ __*Avoid
-crossing outline for travel movements*__", não deve ser ligado, pois faria o fatiador priorizar percursos sem
+* Note que estes ajustes usam bastante o movimento de "wipe" e por isso o próximo ajuste,
+"☐ __**Avoid crossing outline for travel movements**__", não deve ser ligado, pois faria o fatiador priorizar percursos sem
 passar por partes impressas.
 * O Simplify3D tem as configurações bastante desorganizadas, e as de retração não
-se resumem a essa. Na aba "others", há mais ajustes, pertinentes ao caso de vários extrusores (tools): +
-image::image389.png[image,width=429,height=157] + São eles a quantidade de filamento a retrair,
+se resumem a essa. Na aba "others", há mais ajustes, pertinentes ao caso de vários extrusores (tools):
++
+[[simplify3dtoolchangeretraction2]]
+image::image389.png[image,width=429,height=157,align="center"]
++
+São eles a quantidade de filamento a retrair,
 a quantidade adicional a extrudar quando recomeçar (que aconselhamos deixar sempre em zero) e a velocidade da
 retração.
 * Por fim, o último lugar onde se configura retração no Simplify3D é na aba "Extruder". Essas
-são as configurações principais de retração: + image:image390.png[image,width=618,height=200]
-** _*Retraction distance*_ e _*extra restart distance*_ são os mesmos do tool change, mas para o caso geral.
-** __*Retraction vertical lift*__, também chamado Z-hopping, é levantar brevemente o extrusor quando houver
+são as configurações principais de retração:
++
+[[simplify3doozecontrol2]]
+image::image390.png[image,width=618,height=200,align="center"]
++
+** __**Retraction distance**__ e __**extra restart distance**__ são os mesmos do tool change, mas para o caso geral.
+** __**Retraction vertical lift**__, também chamado Z-hopping, é levantar brevemente o extrusor quando houver
 retração para diminuir a formação de verrugas. Envolve movimento Z do extrusor que costuma ser lento em
 cartesianas, sendo mais recomendado para deltas ou no mínimo cartesianas mais rápidas. A velocidade é configurada
-no próximo ajuste, __*Retraction Speed*__.
-** __*Coasting*__: como já mencionamos, coasting ou _desengrenagem_
+no próximo ajuste, __**Retraction Speed**__.
+** __**Coasting**__: como já mencionamos, coasting ou _desengrenagem_
 é o tracionador deixar de tracionar alguns décimos de milímetros antes do fim da extrusão, para que o filamento
 escorrido de excesso seja totalmente consumido. 0,20mm, o default do Simplify3D, é uma quantidade boa para o caso
 geral.
-** *Wipe* é o movimento de limpeza do bico passando em cima de áreas impressas, ou seja, uma espécie de
+** __**Wipe**__ é o movimento de limpeza do bico passando em cima de áreas impressas, ou seja, uma espécie de
 __combing__. Ligando-se esse ajuste o fatiador passa a procurar realizar o wipe depois de completar o perímetro
-de uma ilha impressa, e o wipe distance é a distância que ele deve percorrer realizado o movimento. Se _*perform
-retraction during wipe movement*_ estiver ligado, a distância aqui não é usada, sendo usada a duração da
-retração no lugar. O _wipe_ só é executado se a mínima distância para retração tiver sido percorrida.  *
-_*Bridging*_ + image:image391.png[image,width=424,height=211] + Antigamente bastante deficiente tanto
+de uma ilha impressa, e o wipe distance é a distância que ele deve percorrer realizado o movimento. Se
+__**perform retraction during wipe movement**__ estiver ligado, a distância aqui não é usada, sendo usada a duração da
+retração no lugar. O _wipe_ só é executado se a mínima distância para retração tiver sido percorrida.
+* __**Bridging**__
++
+[[simplify3dbridging2]]
+image::image391.png[image,width=424,height=211,align="center"]
++
+Antigamente bastante deficiente tanto
 na detecção quanto na configurabilidade de suas pontes, a versão 4.0 do Simplify3D trouxe boas melhorias nessa
 parte. Os ajustes são:
-** __*Unsupported area threshold*__: quanto de área mínima sem suporte é necessária
++
+** __**Unsupported area threshold**__: quanto de área mínima sem suporte é necessária
 para que o algoritmo decida que vai usar a estratégia de "ponte" para ligar uma seção à outra. Dada em
 milímetros quadrados (mm^2^).
-** __*Extra inflation distance*__: este ajuste leva em conta que a região de
+** __**Extra inflation distance**__: este ajuste leva em conta que a região de
 suporte da ponte se apóia em determinadas camadas inferiores (mais interna que as paredes), e permite expandir
 a região usada como apoio pra permitir uma fundação mais sólida. Pode ser difícil visualizar, então aqui
-está um exemplo de uma ponte expandida em 2mm + image:image392.png[image,width=594,height=282]
-** _*Bridging extrusion multiplier*_ e __*bridging speed multiplier*__: assim como no Slic3r, estes multiplicadores
+está um exemplo de uma ponte expandida em 2mm
++
+[[simplify3ddistinflacao2]]
+image::image392.png[image,width=594,height=282,align="center"]
++
+** __**Bridging extrusion multiplier**__ e __**bridging speed multiplier**__: assim como no Slic3r, estes multiplicadores
 de extrusão e velocidade permite que durante a ponte o fatiador extrudem menos plástico e mais rapidamente,
 para que ele fique mais esticado.
-** _*Use fixed bridging infill angle [0] deg*_ -- faz com que os filetes que
+** __**Use fixed bridging infill angle [0] deg**__ -- faz com que os filetes que
 percorrem a ponte tenham um ângulo diferente de 0 graus (paralelo à direção da ponte).
-** _*Apply bridging
-settings to perimeters*_ -- ao invés de considerar a ponte como somente a parte interna da estrutura que liga
+** __**Apply bridging settings to perimeters**__ -- ao invés de considerar a ponte como somente a parte interna da estrutura que liga
 duas ilhas, considera seus perímetros como parte dela.
++
+[[simplify3dapplybridgingper2]]
+image::image393.png[image,width=642,height=473,align="center",title="Ponte com &quot;apply bridging settings to perimeters&quot; selecionado - as camadas externas passam a ser consideradas parte dela. E com 20 graus de ângulo no &quot;fixed bridging infill angle&quot;."]
 
-image::image393.png[image,width=642,height=473]
-
-*Cura* -- Os ajustes relacionados a qualidade de impressão no Cura são tantos que fica difícil selecioná-los. Por
+.Cura
+Os ajustes relacionados a qualidade de impressão no Cura são tantos que fica difícil selecioná-los. Por
 isso, selecionamos os mais semelhantes ao slic3r e simplify3d, referentes a perímetros, parede finas e
 retração. Como arremate, vamos mostrar a mesma seção em inglês e português, para que a equivalência seja
 conhecida. O Cura já apresenta "dicas" em azul com a descrição do que a configuração faz -- traduzidas
 para português em sua versão oficial do programa pelo autor deste livro -, portanto a explicação aqui envolverá
 mais do que isso.
 
-image::image394.png[image,width=642,height=232]
+[[curashell2]]
+image::image394.png[image,width=642,height=232,align="center",title="Seção &quot;Shell&quot; ou, em português, &quot;Perímetro&quot; do Cura, alguns ajustes especiais. Se não aparecem no seu Cura, vá nas configurações e veja visibilidade dos ajustes. Os ajustes em inglês à esquerda equivalem aos em português da direita."]
 
-* _*Outer Wall Inset*_ é um ajuste que juntamente com a compensação horizontal, tratada na próxima seção,
+* __**Outer Wall Inset**__ é um ajuste que juntamente com a compensação horizontal, tratada na próxima seção,
 ajuda uma peça a ter dimensões mais de acordo com o modelo. No momento do fatiamento ou tradução da peça 3D
 para uma trajetória de filetes, as áreas mais externas da peça podem ser "arredondadas para cima", tornando
 o objeto um ou dois décimos de milímetro mais largo. Se isso estiver acontecendo, vale a pena ligar esta opção,
 que recua o filete mais externo mesmo com ele se sobrepondo ao segundo filete mais externo. Esta opção tem o
 risco de deixar a aparência da peça mais rugosa pelo excesso de filamento na superfície.
-* _*Outer Before Inner Walls*_ pode ser um jeito de diminuir a rugosidade do ajuste anterior se ela acontece. Basicamente, inverte a ordem
+* __**Outer Before Inner Walls**__ pode ser um jeito de diminuir a rugosidade do ajuste anterior se ela acontece. Basicamente, inverte a ordem
 de construção das paredes de um objeto, que é por default de dentro pra fora, para que seja de fora pra dentro,
 logo o segundo filete, se sobreposto ao mais externo, será depositado em cima da camada externa já solidificada. Por
 outro lado, em seções pendentes, por o filete mais externo ser depositado sem o suporte lateral do filete mais
 interior, ele pode acabar tendo menor qualidade.
-* _*Alternate Extra Wall*_ faz em camadas alternadas a parede
+* __**Alternate Extra Wall**__ faz em camadas alternadas a parede
 ter um filete a mais pra dentro. Este filete ajuda a sustentar o suporte interno, reforçando a peça como um todo.
-
-image::image395.png[image,width=642,height=240]
-
-* __*Compensate Wall Overlaps*__: em algumas geometrias, o processo de fatiamento calcula uma trajetória de
++
+[[curaalternarparedeadicional2]]
+image::image395.png[image,width=642,height=240,align="center",title="&quot;Alternar Parede Adicional&quot; - Alternate Extra Wall - faz um perímetro interno intermitente que ajuda a &quot;segurar&quot; os filetes do preenchimento interno. As 4 figuras representam camadas sucessivas do fatiamento de um cubo."]
++
+* __**Compensate Wall Overlaps**__: em algumas geometrias, o processo de fatiamento calcula uma trajetória de
 filete que por vezes tem que passar no mesmo lugar duas vezes -- sobrepondo um filete sobre outro. Embora
 na maioria das vezes esse plástico em excesso se acomode bem na geometria, umas poucas vezes ele pode gerar
 imperfeições visíveis. O Cura permite diminuir a extrusão ao passar sobre tais áreas de modo que não haja
 plástico em excesso nas sobreposições, e você pode até definir se somente nas paredes internas ou externas.
-* __*Fill Gaps Between Walls*__: assim como a trajetória do fatiador pode ter sobreposições de filetes, devido
+* __**Fill Gaps Between Walls**__: assim como a trajetória do fatiador pode ter sobreposições de filetes, devido
 à espessura não desprezível dele o contrário também pode acontecer -- determinadas áreas serem tão pequenas
 que as áreas em volta são preenchidas, mas uma "falha" permanece. Ativar este ajuste faz com que no final
 da impressão da camada o extrusor volte a esta falha e a preencha com uma "gota" de filamento. O maior revés
 desta configuração é o tempo maior de impressão.
-
-image::image396.png[image,width=642,height=276]
-
-* __*Print Thin Walls*__: Se já entendemos que o algoritmo de fatiamento "arredonda" a trajetória para a forma
++
+[[curafillgaps]]
+image::image396.png[image,width=642,height=276,align="center",title="Lacuna preenchida com o ajuste &quot;Fill Gaps&quot;. Adaptado para português do material educativo da Ultimaker em https://ultimaker.com/en/resources/20415-shell"]
++
+* __**Print Thin Walls**__: Se já entendemos que o algoritmo de fatiamento "arredonda" a trajetória para a forma
 desejada visto que a espessura do filete não é desprezível, o ajuste de imprimir paredes finas nada mais faz que
 dizer se ele deve arredondar a forma para cima (ligado) ou para baixo (desligado). Se você tem uma superfície
 impressa com letras de 0,2mm de espessura mas a largura de extrusão do bico é 0,4mm de espessura, com o ajuste
 desligado as letras não vão aparecer. Com o ajuste ligado elas vão aparecer com 0,4mm de espessura. Na seção
 seguinte, compensação horizontal, tratamos um caso semelhante resolvido de outro modo.
 
-Vale ainda mencionar mais um ajuste específico no final da seção "perímetro": __*Ignore Small Z Gaps*__,
-ou __*Ignore Pequenas Lacunas em Z*__. Esse ajuste vem ligado por default e faz com que se o modelo tem pequenas
+Vale ainda mencionar mais um ajuste específico no final da seção "perímetro": __**Ignore Small Z Gaps**__,
+ou __**Ignore Pequenas Lacunas em Z**__. Esse ajuste vem ligado por default e faz com que se o modelo tem pequenas
 reentrâncias na geometria -- como por exemplo uma fenda horizontal de 0,2mm de altura (eixo Z) -- o fatiador
 a ignore e a preencha com paredes e preenchimento como se fosse uma parede contínua. Se seu modelo tem detalhes
 que necessitam dessas lacunas e o fatiamento não as revela, é por causa disso.
 
 **Retração**: os ajustes principais de retração do Cura ficam na seção "**Material**":
 
-image::image397.png[image,width=642,height=265]
+[[curamaterialretracao2]]
+image::image397.png[image,width=642,height=265,align="center"]
 
-Mas não todos. Os restantes ficam na seção _*Travel*_ (__*Percurso*__):
+Mas não todos. Os restantes ficam na seção __**Travel**__ (__**Percurso**__):
 
-image::image398.png[image,width=642,height=154]
+[[curatravelretracao2]]
+image::image398.png[image,width=642,height=154,align="center"]
 
 Ao invés de discutir cada ajuste da retração ou reiterar expressões óbvias com "Retrai em Mudança de
 Camada", mais vale entendermos as diferenças e semelhanças da retração do Cura com os outros fatiadores. O
 que o Simplify3D chama de *wipe* é o que o Cura chamada de *combing* ("penteamento"), ou seja, passar o bico em
 área já impressa para depositar filamento escorrido ou resíduos dentro da peça. A "distância extra" que o
-Simplify3D extruda depois da retração é equivalente à "__*Quantidade Adicional de Avanço da Retração*__"
-(__*Retraction Extra Prime Amount*__), só que dada em _volume_ (mm^3^) ao invés de distância de entrada do
+Simplify3D extruda depois da retração é equivalente à "__**Quantidade Adicional de Avanço da Retração**__"
+(__**Retraction Extra Prime Amount**__), só que dada em _volume_ (mm^3^) ao invés de distância de entrada do
 filamento. Se quiser achar o volume _v_ em função do diâmetro _d_ do bico e da distância _L_ do filamento,
 a fórmula é:
 
+latexmath:[v=\frac{\pi d^2L} 4]
+
 Por exemplo, para extrudar 0,2mm a mais de um filamento de 1,7mm de diâmetro, o volume equivalente é
+
+latexmath:[v=\frac{3,1416\times 1,7^2\times 0,2} 4=0,454\mathit{mm}^3]
 
 Um ajuste útil para peças detalhadas é a contagem máxima de retrações: para evitar que o filamento soja
 desgastado pelo vaivém do tracionador quando muitas retrações estão sendo feitas num baixo período de tempo,
-pode-se especificar um número máximo (__*Maximum Retraction Count*__) em determinada distância (__*Minimum
-Extrusion Distance Window*__) para que ele volte a retrair.
+pode-se especificar um número máximo (__**Maximum Retraction Count**__) em determinada distância
+(__**Minimum Extrusion Distance Window**__) para que ele volte a retrair.
 
-__*Coasting*__: já introduzimos o conceito desta operação e mostramos os ajustes para o Simplify3D, mas o Cura
+__**Coasting**__: já introduzimos o conceito desta operação e mostramos os ajustes para o Simplify3D, mas o Cura
 permite uma configuração mais detalhada da mesma operação:
 
-image::image399.png[image,width=642,height=78]
+[[curacoastingfabulous]]
+image::image399.png[image,width=642,height=78,align="center"]
 
 Novamente, o Cura privilegia o _volume_ de filamento extrudado ao invés de comprimento, o que é na verdade
 tecnicamente mais adequado já que se espera que as impressoras passem a usar extrusão volumétrica. Para
 impressoras 3D com aferição dinâmica de espessura de filamento, a diferença de qualidade pode ser grande.
 
-=== Compensação horizontal
+==== Compensação horizontal
 
 Se você já modelava em 3D antes de ter contato com a impressão 3D, pode ter topado com a seguinte situação:
 você modela duas peças, uma principal e outra que deve ser encaixar perfeitamente nela. Para obter esta paridade
@@ -12043,7 +12075,8 @@ em conta as dimensões ideais das camadas, o fato de cada filete abaixo ser "esp
 bordas da peça se _espalharem_ um pouco mais do que o ideal, e traçarem um contorno no plano XY mais largo que
 o modelado. Exagerando o espalhamento para ilustração, o que aconteceu com os encaixes foi análogo a isto:
 
-image::image400.png[image,width=528,height=442]
+[[compensacaohorizontal1]]
+image::image400.png[image,width=528,height=442,align="center",title="Representação exagerada do que acontece com as impressões. As peças verdes são os modelos originais, a área amarela corresponde ao que é efetivamente impresso. As camadas nas bordas, sendo achatadas pela de cima, se tornam um pouco mais &quot;grossas&quot; do que deviam. O fator com que isso acontece é grosso modo próximo ao diâmetro do bico -- por exemplo, em um bico de 0,4mm, costuma ser entre 0,1 e 0,2mm. Os encaixes não casam mais em relação aos modelos (verdes) porque ambas as partes estão “expandidas”."]
 
 Uma solução pra isso foi criada primeiro no fatiador slic3r, logo em seguida copiada pelo Simplify3D e um pouco
 depois, pelo Cura. Ocorre que as operações-padrão de "inset" e "outset" (termos de computação gráfica)
@@ -12053,22 +12086,24 @@ expansão em todas as direções dela, o modelo é, ele mesmo, uma expansão de 
 calcular esta forma mais interna e fatiá-la no lugar do modelo, pois a expansão dela equivalerá às dimensões
 reais dele. Desse modo:
 
-image::image401.png[image,width=507,height=469]
+[[compensacaohorizontal2]]
+image::image401.png[image,width=507,height=469,align="center",title="Agora a forma verde é a forma recalculada pela compensação horizontal. Se nossas formas impressas &quot;engordavam&quot; 0,1mm, por exemplo, precisamos colocar uma compensação horizontal &quot;para dentro&quot;, com sinal negativo: **-0,1mm**. Impressas, essas peças ficam 0,1mm mais grossas, que é o que precisavam para corresponder às formas originais, e se encaixam perfeitamente. É importante notar que isso não ocorreria caso apenas diminuíssemos as peças ao invés de &quot;emagrecê-las&quot;, pois os buracos também diminuiriam, tornando-se mais apertados, e o problema de encaixe e precisão permaneceria."]
 
 O valor de compensação horizontal é obtido pragmaticamente para o bico e filamento estimando-se a diferença
 entre encaixes. A compensação horizontal negativa funciona bem para o caso dos encaixes, mas a positiva também
 é útil para, por exemplo, letras finas que não aparecem...
 
-image::image402.png[image,width=619,height=518]
+[[compensacaohorizontal3simplify3d]]
+image::image402.png[image,width=619,height=518,align="center",title="Um jeito simples de corrigir letras finas não aparecendo: mudando-se a compensação horizontal para 0,10mm. Isso também passa uma lição importantíssima que é boa prática para impressão 3D: *sempre* verifique o resultado do fatiamento na pré-visualização antes de mandar imprimir, você pode evitar a decepção no final."]
 
 Como última nota sobre este recurso utilíssimo, cabe notar que os nomes são diferentes em fatiadores diferentes:
 
 * **Slic3r**: Print settings → Advanced → Other → XY Size Compensation
-* **Cura**: Shell → Horizontal
-Expansion
+* **Cura**: Shell → Horizontal Expansion
 * **Simplify3D**: Other → Horizontal Size Compensation
-* **repsnapper**: Preferences → Optimization
-→ Offset Outer Shells By (mm) 1.  [[o-problema-dos-arcos-e-círculos]] == O problema dos arcos e círculos
+* **repsnapper**: Preferences → Optimization → Offset Outer Shells By (mm)
+
+==== O problema dos arcos e círculos
 
 Além do "espalhamento" indesejado das impressões 3D que a compensação horizontal ataca, temos também um
 outro problema que não raramente é confundido com este espalhamento, pois tende a deixar seções circulares
@@ -12079,34 +12114,35 @@ as estruturas em arco e circulares, especialmente os orifícios circulares. Na i
 de _papers não-acadêmicos_ e citamos o célebre post de blog do reprapper _nophead_ que expõe esse problema:
 http://hydraraptor.blogspot.com.br/2011/02/polyholes.html[_http://hydraraptor.blogspot.com.br/2011/02/polyholes.html_].
 
-Basicamente, são _*4*_ os problemas que encontramos quando importamos um STL no fatiador, fatiamos e o colocamos
+Basicamente, são __**4**__ os problemas que encontramos quando importamos um STL no fatiador, fatiamos e o colocamos
 para imprimir:
 
-1.  **Erros de facetamento**: quando os sistemas de modelagem 3D convertem cilindros em malhas de triângulos
+. **Erros de facetamento**: quando os sistemas de modelagem 3D convertem cilindros em malhas de triângulos
 usadas para a impressão, eles produzem um prisma poligonal, ou seja, o círculo é transformado em um polígono
 equilátero de muitos lados.
-
-image::image403.png[image,width=642,height=500]
-
-1.  **Pausas de segmento**: ok, converter um círculo para um polígono com 10 facetas não é boa idéia. Na hora
++
+image::image403.png[image,width=642,height=500,align="center",title="Um círculo vermelho transformado em um polígono circunscrito (interno) de 10 lados, em azul. Esse processo diminui a área do círculo em cos(π/número de lados). Essa é só uma das técnicas de &quot;tesselamento&quot; de círculos: ele poderia ainda ser circunscrito (externo) ou até intermediário entre um e outro. Com lados infinitos, todos esses polígonos se aproximariam do círculo."]
++
+. **Pausas de segmento**: ok, converter um círculo para um polígono com 10 facetas não é boa idéia. Na hora
 de imprimir, então, vamos usar o máximo número de segmentos de reta possível -- digamos, 1000 segmentos. E
 tentando resolver o primeiro problema, topamos no segundo: as __pausas de segmento__. A impressora vai receber
 _centenas_ de segmentos minúsculos pra percorrer, cada segmento extrudando uma quantidade insignificante de
 filamento. Além dos erros de arredondamento pelo uso de quantidades tão pequenas, a impressora acaba ganhando
 um número enorme de instruções a executar em pouco tempo, e ainda contando acelerações e desacelerações,
-acaba fazendo pausas entre elas.  2.  **Encolhimento de arco**: esse problema acontece quando o seu círculo tem
+acaba fazendo pausas entre elas.
+. **Encolhimento de arco**: esse problema acontece quando o seu círculo tem
 espessura diferente de zero, ou seja, um círculo de "mundo real". O seguinte diagrama explica o problema:
-
-image::image404.png[image,width=642,height=599]
-
-1.  **Corte / repuxo de cantos**: enquanto que os problemas anteriores eram mais geométricos, este tem mais a ver
++
+image::image404.png[image,width=642,height=599,align="center",title="Um jeito intuitivo de entender o problema de “encolhimento de arco” dos círculos pequenos nas impressoras 3D. Pegue massinha de modelar e faça um tubo reto com ela, grosso e bem uniforme. Então pegue o tubo e torça pra transformá-lo em um círculo.Você verá que a massa mais para dentro do círculo formará &quot;barrigas&quot; por ser excedente; a parte mais externa do círculo rachará por falta de material. O círculo vermelho pontilhado é o orifício que o arredondamento deveria ter, em teoria. Mas por causa do excesso de material para dentro, ele ficará mais apertado. Se o tubo fosse mais fino esse problema não seria muito perceptível pela menor diferença entre os lados internos e externos, por isso o problema é mais grave em orifícios pequenos, próximos à espessura do filete de impressão."]
++
+. **Corte / repuxo de cantos**: enquanto que os problemas anteriores eram mais geométricos, este tem mais a ver
 com propriedades físicas como viscosidade, aderência, elasticidade e até calor específico. Quando o _hotend_
 deposita filamento em uma trajetória reta, e de repente sofre uma mudança suave de ângulo, o filamento acaba
 sendo "puxado" dos cantos para dentro. Mais um fator que diminui furos!
++
+image::image405.png[image,width=619,height=451,align="center",title="Efeito do &quot;corte de cantos&quot; de filamento extrudado (exagerado para visualização). Mostrada a trajetória do hotend em preto e a deposição do filamento azul na prática. Se estivéssemos extrudando o decágono da divisão do círculo em 10 segmentos retos, estaríamos na verdade imprimindo o círculo inscrito a ele!"]
 
-image::image405.png[image,width=619,height=451]
-
-=== Como corrigir esse problema?
+.Como corrigir esse problema?
 
 Vimos que esse é um problema com causas compostas e bem diversas -- geométricas, físicas, até afetadas por
 outros ajustes como compensação horizontal e arredondamento de paredes externas no fatiamento. É, por natureza, um
@@ -12124,9 +12160,9 @@ de mexer na modelagem de um objeto.
 círculos e arcos (mesmo podendo topar no problema das pausas de segmentos) e alguma compensação manual "de
 olho" usando configurações de compensação horizontal ou mesmo modelando orifícios maiores. Fatiadores
 baseados em manutenção do volume (por __voxels__) como o _Voxelizer_ atacam o problema do ângulo da quantidade
-de material utilizado. Pode-se bem dizer que esse é um _problema não resolvido_ da impressão 3D FFF.
+de material utilizado. Pode-se bem dizer que esse é um __problema não resolvido__ da impressão 3D FFF.
 
-[[uma-proposta-de-mitigação-mais-informada.]]  === Uma proposta de mitigação mais informada.
+.Uma proposta de mitigação mais informada.
 
 Que fique claro que a proposta apresentada aqui é uma incursão espinhosa em uma área controversa. Depende ainda
 de softwares não totalmente adaptados para isso, embora muito já se tenha feito para tal. Os resultados podem
@@ -12138,78 +12174,75 @@ fatiadores de impressão 3D FFF não gozam dessa facilidade. É até possível q
 internas ganhem suporte a curvas matematicamente formuladas e possam passar tal informação ao fatiamento, mas no
 momento nenhum deles tem isso. No entanto, apesar de _fatiadores_ não incorporarem, a surpresa é que a maioria dos
 _firmwares_ de mercado já apresenta suporte a curvas reais -- na forma de _arcos_ -- e já vem com esse suporte
-ativado por default. Isso vale para Marlin, Repetier e Smoothieware: os comandos pertinentes são os G-Codes *G2*
-e **G3**, denotando arco circular na direção horária e anti-horária respectivamente. Outros G-Codes padronizados
-nas CNC, mas ainda não implementados nas impressoras 3D, seriam os *G5* e **G5.x**, para _splines_ e __NURBS__.
+ativado por default. Isso vale para Marlin, Repetier e Smoothieware: os comandos pertinentes são os G-Codes `G2`
+e `G3`, denotando arco circular na direção horária e anti-horária respectivamente. Outros G-Codes padronizados
+nas CNC, mas ainda não implementados nas impressoras 3D, seriam os `G5` e `G5.x`, para _splines_ e __NURBS__.
 
-Em teoria, um firmware que implementa *G2* e *G3* pode, se valendo de tal descrição matemática infinitamente
+Em teoria, um firmware que implementa `G2` e `G3` pode, se valendo de tal descrição matemática infinitamente
 precisa da trajetória, e conhecendo das particularidades mecânicas e eletrônicas do dispositivo que controla bem
 melhor que o fatiador, adequar as correntes, tensões, tempos e forças de forma que a deposição do filamento
 seja muito mais suave e precisa, sem pausas ou outros artefatos que causariam os piores efeitos da quadratura de
 curvas. Teríamos uma curva de deposição matematicamente muito mais próxima da real.
 
-Mas de que valem o *G2* e **G3**, se as próprias formas que os fatiadores informam, em formatos STL, AMF ou 3MF,
+Mas de que valem o `G2` e `G3`, se as próprias formas que os fatiadores informam, em formatos STL, AMF ou 3MF,
 não podem ter arcos? Ora, eles _têm_ formas parecidas com arcos mas que foram transformadas em uma sequência
 de pequenos segmentos de ângulos suaves. A questão é: algoritmos matemáticos podem detectar tais sequências
-convertidas e recuperar os arcos da forma, produzindo *G2* e *G3* onde necessário. O fatiador repsnapper, por exemplo,
+convertidas e recuperar os arcos da forma, produzindo `G2` e `G3` onde necessário. O fatiador repsnapper, por exemplo,
 tem esse recurso. Slic3r, Cura e Simplify3D, no entanto, não têm. E ainda que seja interessante conhecer e executar
 o repsnapper como prova de conceito, a carência de recursos desse fatiador não justifica usá-lo só por isso.
 
 Mas não é necessário. Essa inferência de segmentos pra curvas pode ser feita _depois_ do fatiamento. De
 fato, existe um software externo que, alimentado com G-Code de _qualquer_ fatiador de mercado, infere as curvas
-e devolve um G-Code com elas transformadas em arcos *G2* e **G3**. Esse software, livre e multiplataforma,
+e devolve um G-Code com elas transformadas em arcos `G2` e `G3`. Esse software, livre e multiplataforma,
 chama-se **GCode Arc Optimiser**, é escrito em PHP e tem colaboração do autor do livro^2^. Pode ser baixado de
 https://github.com/manticorp/GcodeArcOptimiser[_https://github.com/manticorp/GcodeArcOptimiser_]. O software exige
 uma versão do interpretador PHP instalada e para ser usado, necessita que um pequeno script seja criado em sua
 pasta (pode ser criado por qualquer editor de textos puro e gravado como "cli.php"):
 
-[cols="",] |============================================================== a|
+[source,php]
+----------
 <?php
-
 include "functions.php";
 
-$debug = false;
-
-$lookahead = 5; //
-
-$pos_error = 0.1; // absolute
-
-$alignment_error = 0.01; // absolute
-
-$extrusion_error = 0.15; // percent
-
-$start = microtime(true);
+$debug             = false;
+$lookahead         = 5;   //
+$pos_error         = 0.1; // absolute
+$alignment_error   = 0.01; // absolute
+$extrusion_error   = 0.15; // percent
+$start             = microtime(true);
 
 $options = getopt('f:o:');
 
-$gcode = str_replace("\r","",file_get_contents($options['f']));
-
-$gcode = explode("\n", $gcode);
-
-$gcode = SplFixedArray::fromArray($gcode);
+$gcode  = str_replace("\r","",file_get_contents($options['f']));
+$gcode  = explode("\n", $gcode);
+$gcode  = SplFixedArray::fromArray($gcode);
 
 $processed = processGcode($gcode);
 
 file_put_contents($options['o'], $processed);
-
+----------
 
 E então colocar o arquivo G-Code de entrada (digamos, entrada.gcode) na mesma pasta e executar a conversão:
 
+[source,sh]
+----------
 php cli.php -f "entrada.gcode" -o "saida.gcode"
+----------
 
-Verifique a saída no final; deve haver alguma linhas começando com *G2* e **G3**. Os orifícios extrudados com esses
+Verifique a saída no final; deve haver alguma linhas começando com `G2` e `G3`. Os orifícios extrudados com esses
 comandos serão mais exatos que outros, e as curvas da peça feitas pelas curvas inferidas serão também mais suaves.
 
-Notas:
-
-1 -- Tem até artigo na Wikipedia:
+[NOTE]
+.Notas:
+====
+. Tem até artigo na Wikipedia:
 https://pt.wikipedia.org/wiki/Quadratura_do_círculo[_https://pt.wikipedia.org/wiki/Quadratura_do_c%C3%ADrculo_]
-
-2 -- Nada muito envolvido, mas o programa de linha de comando do README, que chama a biblioteca
+. Nada muito envolvido, mas o programa de linha de comando do README, que chama a biblioteca
 do autor, não funcionava e foi corrigido por quem escreve estas linhas, com o patch em
 https://github.com/manticorp/GcodeArcOptimiser/pull/3[_https://github.com/manticorp/GcodeArcOptimiser/pull/3_].
+====
 
-1.  [[section-15]] == + [[filamentos-flexíveis-como-imprimi-los]] == Filamentos flexíveis: como imprimi-los
+==== Filamentos flexíveis: como imprimi-los
 
 Filamentos flexíveis são um assunto contencioso nas comunidades online de impressão 3D. Sendo motivo de orgulho
 para alguns, é alvo de ostentação, subjetividade e amadorismo do mesmo modo que a temperatura da mesa para

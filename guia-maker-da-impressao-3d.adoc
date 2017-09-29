@@ -12250,7 +12250,7 @@ impressão: o "funciona comigo" é um troféu que alguns exibem após conseguir 
 de formas simples, sem no entanto esmiuçar como e por quê o conseguiram, muitas vezes com alegações duvidosas
 sobre os resultados obtidos e contraditórias à engenharia envolvida.
 
-=== Causas da dificuldade
+.Causas da dificuldade
 
 Entender o que torna as diversas marcas e tipos de filamento flexível difíceis de imprimir em uma impressora 3D
 convencional é o primeiro passo para resolver o problema.
@@ -12278,9 +12278,10 @@ toda a tração subsequente. Poucos mecanismos tracionadores têm espaçamento a
 que isto aconteça e mesmo o tubo por onde entra o filamento flexível para ir para a área quente tem que ter
 baixo atrito e bem justo (o que se contrapõe ao uso de tubos mais espaçosos para funcionar bem com variações
 de diâmetro de filamento).
-
-image::image406.png[image,width=642,height=466]
-
++
+[[videoadaptacaoextrusorflexivel]]
+image::image406.png[image,width=642,height=466,align="center",title="Um dos melhores vídeos de adaptação de um extrusor para funcionar bem com filamento flexível do youtube mostra como o filamento flexível &quot;embola&quot; na folga mínima que existe entre o tracionador e o tubo de entrada em um clássico extrusor Greg's Wade. https://www.youtube.com/watch?v=BZSo7CT914Y"]
++
 * *Velocidades altas* compõem a chance de embolamento, pois tracionam maior quantidade de filamento com tendência a
 dobrar numa unidade de tempo, com a mesma resistência mecânica.
 * *Mudanças de velocidade, ou seja, acelerações*
@@ -12296,10 +12297,11 @@ estratégias que melhor mantêm extrusão se contraporem aos mecanismos de contr
 sem folgas__, podendo ocorrer tanto por ajustes de fatiamento quanto por perdas de pressão de tracionamento,
 especialmente em impressões longas. Parte disso acontece por causa de pequenos fragmentos do filamento que se
 acumulam nos dentes e passam a funcionar como se fossem um lubrificante sólido.
++
+[[exemplodesubextrusaoflexivel]]
+image::image407.png[image,width=642,height=467,align="center",title="Subextrusão que ocorreu em uma peça já perto do final da impressão, numa impressora 3D com extrusor adaptado para filamento flexível. A perda da tração progressiva acabou impedindo a impressão de terminar; eventualmente, o filamento entupiu no tubo."]
 
-image::image407.png[image,width=642,height=467]
-
-=== Soluções e mitigações
+.Soluções e mitigações
 
 Entendido e caracterizado o problema, essas são as mitigações que se pode fazer para imprimir melhor com
 filamento flexível:
@@ -12310,27 +12312,28 @@ dos casos, isso envolve trocar todo o extrusor por um outro modelo ou ter que mo
 vídeo citado. Existem extrusores de mercado específicos para lidar com filamentos flexíveis e acopláveis à
 vários modelos de impressora, como o __Flexion Extruder__, que tem até mecanismo de autolimpeza para impedir
 que a engrenagem acumule fragmentos de filamento que prejudicariam a tração.
-
-image::image408.png[image,width=642,height=332]
-
++
+[[flexionextruder1]]
+image::image408.png[image,width=642,height=332,align="center",title="Flexion extruder, feito especificamente para filamentos flexíveis. https://flexionextruder.com/ Thomas Sanladerer fez uma análise do extrusor em seu canal do youtube: https://www.youtube.com/watch?v=I0kFA9OIJL0"]
++
 Pode não ser necessário comprar um extrusor novo: existem vários modelos imprimíveis,
 com uma busca no site _thingiverse_ retornando mais de 500 modelos diferentes:
 https://www.thingiverse.com/search?q=flexible+filament+extruder[_https://www.thingiverse.com/search?q=flexible+filament+extruder_]
-
 * *Dependendo do extrusor, pode ser suficiente uma pequena modificação* para eliminar a folga. Tal modificação
 será uma peça impressa que se encaixa na folga do extrusor e permite que o filamento escape.
-
-image::image409.png[image,width=530,height=394]
-
-* **Uma das modificações mais efetivas, que pode geralmente ser utilizada em conjunto com uma peça antigap, é
-a inserção de um tubo de PTFE até o hotend**. O tubo de PTFE é uma peça comum e fácil de ser encontrada na
++
+[[antigapsethi3d]]
+image::image409.png[image,width=530,height=394,align="center",title="Eliminador de folga do extrusor da impressora brasileira Sethi3D AiP A3, disponível em https://www.thingiverse.com/thing:1017277"]
++
+* **Uma das modificações mais efetivas, que pode geralmente ser utilizada em conjunto com uma peça antigap, é a inserção de um tubo de PTFE até o hotend**. O tubo de PTFE é uma peça comum e fácil de ser encontrada na
 impressão 3D, visto que é usada em bowdens e no tubo de hotends. É bem justa para o filamento, tem baixíssimo
 atrito e pode ser facilmente cortada com uma navalha para ficar bem rente às engrenagens tracionadoras. Muitos
 modelos de extrusores para filamentos flexíveis já exigem o uso do tubo de PTFE, mas ele pode ser facilmente
 adaptado alargando-se o tubo de saída do tracionador para seu encaixe.
-
-image::image410.png[image,width=642,height=311]
-
++
+[[tubodeptfeextrusor1]]
+image::image410.png[image,width=642,height=311,align="center"]
++
 * **A distância do tracionador ao hotend deve ser mínima**. Quanto maior a distância, maior a histerese elástica
 que impede o tracionamento e favorece o comportamento de "mola". Por isso mesmo, bons extrusores de filamento
 flexível são compactos. Pela mesma razão, _bowdens_ costumam ser impraticáveis para uso com filamento flexível,
@@ -12341,15 +12344,17 @@ mas com menor histerese elástica.
 varia de acordo com o filamento flexível usado, com alguns ovalando mais facilmente que outros com o aperto alto,
 é desejável que o operador possa experimentar e encontrar o ponto ótimo de aperto. Uma das melhores formas de
 se implementar isso é com parafusos reguláveis:
-
-image::image411.png[image,width=594,height=342]
-
++
+[[flexivelparafusosregulaveis]]
+image::image411.png[image,width=594,height=342,alig="center",title="Parafusos reguláveis que permitem ajuste fino do aperto do filamento."]
++
 * Um *tensor de filamento* também ajuda a domar a histerese do filamento flexível, mantendo-o esticado até
 a altura do tracionador. É útil porque filamento flácido tende a entrar nas engrenagens mais "de lado" e
 portanto a embolar na saída.
-
-image::image412.png[image,width=571,height=417]
-
++
+[[tensordefilamentohisterese]]
+image::image412.png[image,width=571,height=417,align="center",title="Exemplo de um tensor de filamento entre muitos modelos do site thingiverse. https://www.thingiverse.com/thing:692327"]
++
 * **Se puder escolher o parafuso tracionador ou pinhão do extrusor, prefira os canaletados ao invés dos retos**. Eles
 guiam e aderem melhor a filamentos flexíveis. Por outro lado, isso exige também que a canaleta seja precisamente
 alinhada com a saída do tracionador, caso contrário o filamento sofre dobras.
@@ -12360,8 +12365,9 @@ e também porque a maioria dos filamentos flexíveis tem excelente adesão à me
 nylons, que sofrem warp e podem não aderir bem à mesa. A impressão mais alta pode ser feita de diversas formas,
 desde colocar o endstop do eixo Z ligeiramente mais alto até mexendo em parâmetros de fatiamento, como o offset
 vertical ou altura da primeira camada.  + E em termos de configurações de fatiamento, existem várias estratégias
-que podem ser tomada para melhor imprimir com filamento flexível e com menos possibilidades de falhas.  1.
-=== Ajustes de fatiamento
+que podem ser tomada para melhor imprimir com filamento flexível e com menos possibilidades de falhas.
+
+.Nos ajustes de fatiamento:
 
 * *Velocidade de extrusão* é a configuração mais importante para a impressão com flexível funcionar. Uma
 velocidade convencional de 60 mm/s geralmente não vai funcionar a não ser com extrusores muito bem preparados
@@ -12396,23 +12402,21 @@ impressos em extrusão dupla. Primeiro, vamos revisitar os quatro formatos princ
 tem informação de material por polígonos e não objetos, e de uma forma mais orientada a visualização. Os
 fatiadores não associam essa informação a extrusores diferentes.
 * **AMF**: tem informação de material
-adequada à impressão 3D, pode funcionar para associação automáticas a extrusores no Slic3r dependendo de
-como o arquivo foi criado; não funciona no Cura novo e no Simplify3D.
-* **3MF**: um formato novo ainda sem muito
-suporte nos fatiadores populares.
+adequada à impressão 3D, mas só é suportado no Slic3r, sem associação automática de materiais a extrusores diferentes; não funciona no Cura novo e no Simplify3D.
+* **3MF**: um formato novo com suporte razoável nos fatiadores. As versões novas de Slic3r, Cura e Simplify3D já abrem esse formato. Ele permite diferentes materiais, mas a atribuição de materiais diferentes a extrusores diferentes não é automática.
 
-Portanto, com exceção do AMF que _pode_ funcionar adequadamente no Slic3r -- exceto quando ele associa o extrusor
-errado ao material! -, não parece muito jeito de lidar com a dupla extrusão, há?
+Portanto, não há muito jeito de lidar com a dupla extrusão __automaticamente__: sempre é necessário informar ao fatiador que extrusor deve trabalhar com cada parte da peça.
 
-image::image413.png[image,width=624,height=526]
+[[freecadamf1]]
+image::image413.png[image,width=624,height=526,align="center",title="O FreeCAD como um software de modelagem sólida que já grava em formato AMF - e ao abrir o arquivo, fatiadores como o slic3r oferecem opção para associar materiais diferentes a objetos diferentes, caso estejam em um perfil de dupla extrusão."]
 
 A resposta é que há sim, é perfeitamente possível e até fácil modelar e associar partes de um modelo a extrusor
 se você conhece o fluxo de trabalho recomendado para isso. A razão de não ser tão intuitivo com um arquivo
 único que resolva todos os problemas é que se a impressão 3D de baixo custo ainda é nova, mais novo ainda é
 seu uso com dois ou mais extrusores. O mercado aponta para fluxos mais fáceis e complexos, inclusive com mistura
-de materiais, mas por enquanto devemos conhecer a forma "original" de lidar com isso, que envolve arquivos STL.
+de materiais, mas por enquanto devemos conhecer a forma "original" de lidar com isso, que envolve arquivos STL -- e essa forma tem a conveniente vantagem de poder ser aplicada de maneira similar aos formatos mais complexos. O procedimento é extensível ainda a mais extrusores (tripla, quádrupla extrusão, etc.).
 
-Como envolve arquivo STL, se ele não tem informação de material?
+Mas como se envolve arquivo STL na dupla extrusão, se ele não tem informação de material?
 
 Essa é na verdade quase uma vantagem do arquivo: ele não tem informação de material, então você é quem
 deve atribuir essa informação no fatiador. E ele tem informação de coordenadas: se você modela um corpo em
@@ -12420,80 +12424,91 @@ um arquivo, e em outro arquivo você modela uma cabeça cujas coordenadas se enc
 onde aquele corpo acaba, no fatiador eles aparecerão encaixados.
 
 Você precisa informar ao fatiador, no entanto, que ele não deve mudar as coordenadas dos objetos, como por
-exemplo os rearranjando automaticamente. No Slic3r, você faz isso pelo menu File → Preferences:
-
-image::image414.png[image,width=487,height=358]
+exemplo os rearranjando automaticamente. No Slic3r, por exemplo, você faz isso pelo menu File → Preferences:
+[[slic3rnaoautocentralizar]]
+image::image414.png[image,width=487,height=358,align="center",title="Deixe desligado o &quot;auto-center parts&quot;, como aparece no diálogo. Ao lado aparecem os dois STLs que temos que se encaixam no mesmo sistema de coordenadas: um cone de tráfego, com as faixas de cores diferentes."]
 
 Abrimos ambos os STLs no Slic3r. Podem ser ambos ao mesmo tempo, um em sequência ao outro, ou arrastando os
 arquivos para a janela: eles aparecerão sobrepostos, formando um cone contínuo:
 
-image::image415.png[image,width=603,height=516]
+[[osdoisstlsdoconeduplaextrusao]]
+image::image415.png[image,width=603,height=516,align="center",title="Os dois STLs do cone, sobrepostos. Note que eles aparecem à direita como objetos diferentes, e as coordenadas casaram. Agora só falta informarmos ao Slic3r que material cada objeto usará."]
 
 Damos dois cliques em qualquer lugar do objeto. O Slic3r tem algo que são os "ajustes individuais por objeto", que
 permitem fazer ajustes diferentes para vários objetos na mesa de impressão, como por exemplo infills diferentes. No
 nosso caso, estamos querendo associar cada objeto a um material, ou cor nesse caso. Acabamos selecionando a parte
 laranja do cone, como a janela mostra:
 
-image::image416.png[image,width=439,height=331]
+[slic3rpropriedadesdocone1]
+image::image416.png[image,width=439,height=331,align="center"]
 
 Clicamos no sinal de "+" verde abaixo da palavra "Extruder". Aparecerá uma lista desenrolável imensa para
 selecionarmos o ajuste específico. Vamos para cima e achamos o "Extruders > Extruder". Ele vem preenchido
-com o valor "default". Vejo o painel de materiais do lado e o filamento branco aparece primeiro, o que quer
-dizer que está no extrusor 1. Como o material que quero é o filamento vermelho, seleciono o extrusor 2.
+com o valor "default". Vemos o painel de materiais do lado e o filamento branco aparece primeiro, o que quer
+dizer que está no extrusor 1. Como o material que queremos é o filamento vermelho, selecionamos o extrusor 2.
+[[slic3rpropriedadesdocone2]]
+image::image417.png[image,width=572,height=419,align="center"]
 
-image::image417.png[image,width=572,height=419]
+Repetimos a operação para o segundo objeto:
 
-Repito a operação para o segundo objeto:
+[[slic3rpropriedadesdocone3]]
+image::image418.png[image,width=578,height=423,align="center"]
 
-image::image418.png[image,width=578,height=423]
-
-Dou "OK" e pronto, está terminado. O cone será impresso.
+Selecionamos "OK" e pronto, está terminado. O cone será impresso.
 
 No Cura, o fluxo é um pouco diferente. Você importa as duas peças, e ele as dispõe automaticamente; uma vez
 importadas, selecionamos a ferramenta "per objects settings", que já mostra de cara a configuração do
 extrusor para modificarmos:
 
-image::image419.png[image,width=583,height=410]
+[[curaimportamososdoisstls]]
+image::image419.png[image,width=583,height=410,align="center"]
 
-Deixo a parte selecionada com o primeiro extrusor, seleciono a segunda parte e mudo o ajuste para o segundo
+Deixamos a parte selecionada com o primeiro extrusor, selecionamos a segunda parte e mudamos o ajuste para o segundo
 extrusor. Agora só falta informar ao Cura que aquelas duas peças estão no mesmo sistema de coordenadas. A
-palavra-chave para isso é "merge", misturar. Seleciono os dois modelos deixando a tecla _shift_ apertada e
-clicando em cada um. Então clico com o botão direito em cima e escolho o "Merge Models":
+palavra-chave para isso é "merge", misturar. Selecionamos os dois modelos deixando a tecla _shift_ apertada e
+clicando em cada um. Então clico com o botão direito em cima e escolho o "Merge Models" (Combinar Modelos, na versão em português):
 
-image::image420.png[image,width=580,height=410]
+[[curamergemodels]]
+image::image420.png[image,width=580,height=410,align="center"]
 
 Pronto! A visualização já mostra que os modelos estão com cores (extrusores) diferentes:
 
-image::image421.png[image,width=581,height=408]
+[[curamodelosemdoisextrusores]]
+image::image421.png[image,width=581,height=408,align="center"]
 
-Eu posso ainda pedir uma "confirmação adicional" fazendo a _boa prática_ de sempre verificar o fatiamento. No
+Podemos ainda pedir uma "confirmação adicional" fazendo a _boa prática_ de sempre verificar o fatiamento. No
 caso do Cura, é clicando no olho e selecionando "Layers":
 
-image::image422.png[image,width=597,height=419]
+[[curavisaodecamadasduplaextrusao]]
+image::image422.png[image,width=597,height=419,align="center"]
 
 Pronto! Fatiamento de dupla extrusão pronto pra ser impresso.
 
-No Simplify3D, o processo é facilitado com o "Wizard de Extrusão Dupla", que te guia nos passos. Simplesmente
-deixe ativo o perfil da sua impressora de dupla extrusão e importe os dois STLs. Em seguida, selecione Tools →
-Dual Extrusion Wizard (Assistente de Extrusão Dupla):
+No Simplify3D, o processo é facilitado com o "Assistente de Extrusão Dupla" (Dual Extrusion Wizard), que te guia nos passos. Simplesmente
+deixamos ativo o perfil da sua impressora de dupla extrusão e importe os dois STLs. Em seguida, selecionamos **Tools** →
+**Dual Extrusion Wizard**:
 
-image::image423.png[image,width=601,height=429]
+[[simplify3ddualextrusionwizard1]]
+image::image423.png[image,width=601,height=429,align="center"]
 
-No diálogo a seguir, simplesmente escolha que objeto vai em qual extrusor e selecione a opção "group and
+No diálogo a seguir, simplesmente escolhemos que objetos serão atribuídos a quais extrusores e selecionamos a opção "group and
 align models" para informar que eles estão no mesmo sistema de coordenadas:
 
-image::image424.png[image,width=431,height=295]
+[[simplify3ddualextrusionwizard2]]
+image::image424.png[image,width=431,height=295,align="center"]
 
-Você verá uma peça que parece de uma cor só, porque a visualização do Simplify3D mostra assim. Mas veja que
-o cone aparece inteiro, o que quer dizer que as duas partes foram colocadas no mesmo sistema de coordenadas.
+Veremos uma peça que parece de uma cor só, porque a visualização do Simplify3D mostra assim. Mas veja que
+o cone aparece inteiriço, o que quer dizer que as duas partes foram colocadas no mesmo sistema de coordenadas.
 
-image::image425.png[image,width=558,height=399]
+[[simplify3dposdualextrusionwizard]]
+image::image425.png[image,width=558,height=399,align="center"]
 
-Clique em "prepare to print" para fatiar, selecione as duas cores e verá o fatiamento. Ainda não aparecem as
-duas cores diferenciadas; para aparecer, você tem que ir no painel à esquerda, "Show in Preview" e selecionar
+Clicamos em "prepare to print" para fatiar, selecionamos as duas cores e veremos o resultado do fatiamento. Ainda não aparecem as
+duas cores diferenciadas; para aparecer, teremos que ir no painel à esquerda, "Show in Preview" e selecionar
 "Active Toolhead", para que o fatiador diferencie os extrusores ("toolheads") por cores.
 
-image::image426.png[image,width=556,height=481]
+[[simplify3ddualdiferenciarmaterial]]
+image::image426.png[image,width=556,height=481,align="center"]
 
 Voilà! Dupla extrusão, exatamente como queríamos.
 

@@ -10983,10 +10983,15 @@ image::image340.png[image,width=567,height=352,align="center"]
 . http://kalanka.de/blog/adaptive-slicing/[_http://kalanka.de/blog/adaptive-slicing/_]
 . https://github.com/platsch/Slic3r/tree/adaptive-slicing[_https://github.com/platsch/Slic3r/tree/adaptive-slicing_]
 ====
+[TIP]
+====
+__Platsch__, o indivíduo primariamente responsável pelo fatiamento adaptativo no slic3r, é um pesquisador de primeira. Ler o bug report que levou ao fatiamento adaptativo, seu blog e seus relatos em geral são altamente instrutivos, mas um documento mais abrangente e ao mesmo tempo condensado tendo toda a teoria do fatiamento adaptativo assim como uma citação formal das referências você encontra no artigo mais recente dele: Wasserfall, F., Hendrich, N., & Zhang, J. (2017). Adaptive Slicing for the FDM Process–Revisited. 2017 13th IEEE Conference on Automation Science and Engineering (CASE). Pode ser baixado de https://tams.informatik.uni-hamburg.de/publications/2017/Adaptive%20Slicing%20for%20the%20FDM%20Process%20Revisited.pdf
+====
 
-=== A Importância da Primeira Camada
+==== A Importância da Primeira Camada
 
-image::image341.png[image,width=636,height=357]
+[[primeiracamadasethi]]
+image::image341.png[image,width=636,height=357,align="center",title="O filete de plástico da mesa mal nivelada (esquerda) é depositado flácido e sem aderência nenhuma com a mesa. Mesmo se essa impressão durar mais do que algumas camadas, em algum momento ela falhará. A mesa bem calibrada, à direita, permite uma primeira camada contínua e bem aderida. Note que a impressão é com ABS, no caso do PLA suas características o fariam ser mais &quot;tolerante&quot; a esse tipo de desnivelamento."]
 
 A altura de camada __da primeira camada__, diferente das camadas da peça inteira, costuma levar diferentes
 considerações e tem seu tamanho ajustável de forma independente das outras camadas. Isso acontece porque a
@@ -11012,11 +11017,12 @@ isso seria extrudar plástico completamente encostado na mesa, o que gera press�
 o bico. O fatiador inicia suas impressões da altura de camada inicial mais um "offset geral" configurável
 para a máquina. Não confunda o _offset_ (deslocamento inicial) com a altura da primeira camada, tratada mais adiante.
 
-image::image342.png[image,width=626,height=287]
+[[configuracaoslic3rprimeiracamada]]
+image::image342.png[image,width=626,height=287,align="center",title="A configuração de primeira camada do Slic3r, o offset de Z e o G-Code inicial de um objeto com esses ajustes, com a coordenada 0,4mm em Z ressaltada.  Note que esta configuração foi ilustrativa, na verdade recomendamos deixar o Z offset em zero."]
 
-=== Babystepping
+==== Babystepping
 
-[[FEITO babystepping]]Um recurso muito útil dos firmwares mais populares (mas não ativado por __default__) é o
+]Um recurso muito útil dos firmwares mais populares (mas não ativado por __default__) é o
 __babystepping__, ou __passos de bebê__. É um recurso usado somente em modo interativo, e disponível apenas em
 impressoras 3D com LCD e controles, e apesar de disponível para os 3 eixos X, Y e Z, a sua principal utilidade
 é para o eixo Z, especialmente por esse ser o eixo com a maior granularidade de posicionamento da maioria das
@@ -11041,15 +11047,15 @@ __Repetier Firmware__: Menu, Quick Settings, Z babystepping, usar o botão rotat
 
 __Marlin Firmware__: Menu, Tune, dar scroll até Babystep Z, usar o botão rotativo para ajustar.
 
-O Smoothieware não tem _babystepping_ no LCD e não implementa o G-Code M306 usado para isto, visto
+O Smoothieware não tem _babystepping_ no LCD e não implementa o G-Code `M306` usado para isto, visto
 que foge dos padrões de código deles. Ao invés disto, usa um esquema de diferentes sistemas de
-coordenadas através do comando "G10 L2". Mais detalhes podem ser vistos no fórum do smoothieware:
+coordenadas através do comando `G10 L2`. Mais detalhes podem ser vistos no fórum do smoothieware:
 http://forum.smoothieware.org/forum/t-1765243/in-print-z-height-adjustment-babystepping[_http://forum.smoothieware.org/forum/t-1765243/in-print-z-height-adjustment-babystepping_]
 
 Para aparecer nos menus e poder ser usado, o babystepping tem que ser configurado no firmware como ativo e regravado
 no microcontrolador da impressora 3D.
 
-=== A altura da primeira camada
+==== A altura da primeira camada
 
 Existem duas estratégias diferentes e "quase opostas" para lidar com os ajustes de primeira camada
 nos fatiadores. A primeira estratégia envolve configurar uma primeira camada _mais grossa_ que o resto da sua
@@ -11064,7 +11070,8 @@ dessa primeira camada (referida como extrusion width) a mesma. Assim a mesma qua
 0,2mm que é a sua altura de camada principal passa a ocupar 0,1mm, deixando essa camada bem "apertada" na
 mesa e portanto com bastante aderência.
 
-image::image343.png[image,width=599,height=327]
+[[primeiracamadaslic3rvssimplify3d]]
+image::image343.png[image,width=599,height=327,align="center",title="O funcionamento interno do Simplify3D difere do do Cura e Slic3r e o próprio manual dele sugere deixar a primeira camada mais baixa, sem modificar a extrusão, para que ela fique bem apertada."]
 
 Outras técnicas que ajudam uma primeira camada boa:
 
@@ -11092,7 +11099,7 @@ adesivo considerado com o material que deseja trabalhar.
 auxiliares que você define no fatiamento e, junto com as outras que apresentaremos, são o tema do próximo
 capítulo.
 
-== *Estruturas* *auxiliares*
+=== Estruturas auxiliares
 
 Partindo do pressuposto (nem sempre verdadeiro) que a matéria-prima da impressão 3D é barata, nem sempre a peça
 que retiramos da mesa de impressão estará em sua forma final. Dificuldades pragmáticas como aderência à mesa,
@@ -11100,15 +11107,18 @@ estruturas pendentes, geometrias difíceis, fragilidade ao calor acabam tendo so
 que são fabricadas em conjunto com a peça, para serem posteriormente destacadas e descartadas (ou, melhor ainda,
 recicladas como novos carretéis de filamento).
 
-=== Prime
-
+[TIP]
+.Prime
+====
 O __Prime__, também chamado de __Priming__, é o nome dado às variadas estratégias de início de impressão para
 ter o bico da impressora "limpo" dos fragmentos de plásticos ou sujeira e também para começar a extrudar
 plástico uniformemente.
+====
 
-=== *Skirt (saia)*
+==== *Skirt (saia)*
 
-image::image344.png[image,width=642,height=196]
+[[exemploskirt1]]
+image::image344.png[image,width=642,height=196,align="center"]
 
 A idéia desta estrutura -- uma das desempenhar a função de "prime" -- é literalmente desperdiçar filamento
 antes de iniciar a impressão: o _skirt_ nada mais é que um contorno da primeira camada da peça, separado desta
@@ -11120,9 +11130,10 @@ iniciado. O skirt é útil para outras finalidades: ajuda a visualizar se há al
 realiza __priming__, que é purgar o plástico derretido que pode estar presente no bico de extrusões passadas. Como
 a quantidade de filamento que desperdiça é realmente muito pequena, é altamente recomendado que se o utilize sempre.
 
-=== Brim (bainha)
+==== Brim (bainha)
 
-image::image345.png[image,width=642,height=196]
+[[exemplobrim1]]
+image::image345.png[image,width=642,height=196,align="center"]
 
 Já vimos que a aderência à mesa é um problema atacado por várias estratégias, e o brim vem se somar a
 elas. Consiste em fazer um contorno chato ligado à peça que aumenta a _superfície de aderência_ da peça em
@@ -11138,24 +11149,31 @@ ou rebarbadeira manual.
 Alguns fatiadores tornam o _skirt_ e o _brim_ uma configuração só, bastando para ter o brim configurar a
 distância da estrutura para a peça igual a zero.
 
-**Nota**: diferente de outros fatiadores, o Simplify3D não usa a velocidade de primeira camada para o brim, usando a
+[NOTE]
+.Nota:
+====
+diferente de outros fatiadores, o Simplify3D não usa a velocidade de primeira camada para o brim, usando a
 velocidade "normal" e podendo não aderir bem na mesa. Enquanto não se conserta essa idiossincrasia do fatiador,
 um jeito de mitigá-la é usar _processos separados_ para a primeira camada e o resto da impressão. Falaremos
 sobre isso mais à frente.
+====
 
+[TIP]
+====
 *Orelhas do Mickey* ou *Abas* -- o usuário pode olhar para o modo como o brim funciona e se perguntar: se o warp
 tende a se concentrar nos cantos e regiões pontiagudas, por que não existe uma opção no fatiador para fazer
 bainha somente nelas, economizando plástico e tempo de impressão? A razão é que essa análise de geometria é
 complexa e sujeita a casos de falha. Isso não evitou que algumas pessoas modelassem elas mesmas essas estruturas
 -- batizadas carinhosamente de __mouse ears__, orelhas de camundongo, e colocassem no seu modelo.
+[[mouseears1]]
+image::image346.png[image,width=633,height=451,align="center",title="Um design to thingiverse que incorpora &quot;mouse ears&quot; automaticamente no modelo, não sendo necessário ligar o brim. Referência: http://www.thingiverse.com/thing:66030"]
+[[mouseearsopenscad]]
+image::image347.png[image,width=612,height=442,align="center",title="É facílimo criar você mesmo um modelo de &quot;mouse ears&quot;, aqui um exemplo no software open-source openscad da estrutura com 20 mm de raio e 0,3mm de altura. Coloque na bandeja do fatiador, sobreponha aos cantos e imprima (em fatiadores como o Cura, a prevenção de colisão precisa estar desligada)."]
+====
+==== Raft (balsa)
 
-image::image346.png[image,width=633,height=451]
-
-image::image347.png[image,width=612,height=442]
-
-=== Raft (balsa)
-
-image::image348.png[image,width=642,height=299]
+[[raftbalsaiogurtedebacalhau]]
+image::image348.png[image,width=642,height=299,align="center",title="Configurações de raft no Slic3r. Exageramos um pouco a altura para o raft ficar visível na pré-visualização: geralmente se usam entre 2 a 4 camadas apenas, usamos 10. No Slic3r, as camadas de raft obedecem à configuração geral de camada; outros fatiadores, como o Simplify3D, usam camadas de valores diferentes para tentar dar maior estabilidade à estrutura."]
 
 Este nome um tanto cômico na verdade reflete a aparência da estrutura: é como se houvesse uma estrutura de troncos
 e galhos elevando um pouco a peça e funcionando como uma "bóia" em relação à plataforma de impressão. E
@@ -11168,7 +11186,7 @@ lateral e não levanta a peça, o _raft_ fica por baixo dela. O _brim_ é contí
 portanto não tem uma superfície de contato tão grande com a mesa. A característica de ser "esparso" advém
 de o _raft_ compartilhar configurações com as estruturas de suporte, que é a que explicaremos a seguir.
 
-=== *Tornando as coisas suportáveis*
+==== Deixando de ser insuportável
 
 Já tratamos do problema da _estruturas pendentes_ quanto falamos sobre as malhas. Reiterando o que dissemos,
 partes do lado de baixo da peça que têm inclinação próxima da horizontal ou que aparecem "soltas" no
@@ -11180,7 +11198,8 @@ Tradicionalmente, as estruturas de suporte automático, nos fatiadores, usam dua
 o _ângulo mínimo_ em relação à vertical para o suporte ser colocado e o __padrão__, isto é, que forma
 esparsa os pilares terão, já que não serão totalmente preenchidos.
 
-image::image349.png[image,width=632,height=633]
+[[suportenaotemespinhas]]
+image::image349.png[image,width=632,height=633,align="center",title="Diferentes ângulos de suporte e seus efeitos no Slic3r. Tratar todos os itens de configuração automática dos fatiadores é um trabalho inglório, pois essa é uma das configurações que mais variam entre eles. Por exemplo, no Slic3r a quantidade de suporte aumenta com o ângulo mínimo, mas com zero no campo ele não se fia mais no ângulo e usa análise da geometria para decidir com certa inteligência onde colocar. Pode-se ver no diálogo de configuração dele ainda que existem diversos campos tratando da distância de contato e camadas de interface - configurações não presentes em outros fatiadores e que anos após sua introdução, se mostraram ineficazes e difíceis de entender (a próxima versão do fatiador surgirá com essa parte refatorada)."]
 
 Suportes são estruturas "detestadas mas necessárias" no mundo da impressão 3D. Muitas vezes colocadas
 pelo fatiador em uma área de difícil alcance, ou mesmo desnecessária, são um estorvo que leva muita gente a
@@ -11190,7 +11209,8 @@ dedicada a geometrias que evitem colocação de suportes e que na impressão 3D 
 utilizando filamentos dissolvíveis, embora encareça consideravelmente o processo, torna-se algo tão favorecido
 especialmente para as formas mais rebuscadas.
 
-image::image350.png[image,width=616,height=371]
+[[suporteexageradoesemsuporte]]
+image::image350.png[image,width=616,height=371,align="center",title="À esquerda: &quot;puxa, não precisava exagerar...&quot; Muitas vezes a colocação de suportes é desnecessária. Deve ser usada com parcimônia, o mínimo possível para ter qualidade, visto que o trabalho de remoção posterior pode ser enorme. À direita: o dragão cantor “Aria”, uma peça modelada especificamente para a impressão 3D, sem nenhum &quot;overhang&quot; acentuado, podendo ser impressa sem suporte. As duas peças impressas com raft, que acabou permanecendo como uma espécie de &quot;pedestal&quot;."]
 
 Um destaque especial para um "macete" de qualidade: até a versão 1.2.9, os suportes do Slic3r
 são lentos e rebuscados, não funcionando tão bem quanto os de outros fatiadores. Como muitos
@@ -11206,9 +11226,10 @@ que essas diferenças e novidades da versão "prusa", no momento de criação de
 incorporadas ao Slic3r "oficial", e possivelmente estarão disponíveis no momento em que você, leitor,
 o estiver lendo.
 
-image::image351.png[image,width=642,height=764]
+[[slic3rprusasuportes]]
+image::image351.png[image,width=642,height=764,align="center",title="Slic3r da Prusa Research com suas opções extras de suporte, e as recomendadas para um suporte facilmente removível."]
 
-=== Um toque pessoal: os suportes de colocação manual
+===== Um toque pessoal: os suportes de colocação manual
 
 Dados os reveses dos suportes, e que suas configurações nem sempre são suficientes para assegurar uma colocação
 automática boa ou mesmo passável, os programadores do fatiador Simplify3D implementaram uma _excelente_ solução
@@ -11222,7 +11243,8 @@ arrematar, fisicamente o próprio suporte do Simplify3D é um dos mais fáceis d
 padrão de sanfona que preserva melhor a qualidade das superfícies que apóia e que faz com que todo o suporte
 saia de uma vez só quando puxado.
 
-image::image352.png[image,width=603,height=437]
+[[simplify3dsuportesmanuais]]
+image::image352.png[image,width=603,height=437,align="center",title="O painel de colocação de suportes manuais do Simplify3D, com a visualização de uma peça especialmente difícil de suportar."]
 
 De fato, haja visto essa solução muito boa para o problema, o leitor pode se perguntar: por que nem todos os
 fatiadores a adotaram? A melhor resposta é que este recurso necessita de algoritmos complexos e uma sintonia fina
@@ -11231,45 +11253,51 @@ outros fatiadores para impressoras FFF do mercado que permitem a colocação man
 Craftware e o Raise3D Ideamaker. Ambos são proprietários, mas pelo menos também são multiplataforma (Mac OS X,
 Linux e Windows).
 
-image::image353.png[image,width=517,height=480]image:image354.png[image,width=566,height=407]
+[[craftwaresuportesmanuais]]
+image::image353.png[image,width=517,height=480,align="center",title="Uma alternativa gratuita ao Simplify3D (ainda que não open-source), também oferecendo o recurso de suportes manuais."]
+
+[[ideamakersuportesmanuais]]
+image::image354.png[image,width=566,height=407,align="center",title="Outro fatiador gratuito e proprietário que oferece colocação manual de suportes, o Raise3D Ideamaker."]
 
 Uma outra opção gratuita e proprietária é o software _Meshmixer_ da Autodesk. Diferente dos citados, ele não é
 um fatiador; ele é um __editor de malhas__, um software feito para auxiliar no tratamento de malhas para impressão
 e também com capacidades limitadas de modelagem. Similar ao Meshmixer a Autodesk oferece também o _Print Studio_
 com a mesma capacidade de fazer suportes automáticos, apesar de menor configurabilidade.
 
-image::image355.png[image,width=603,height=582]
+[[meshmixersuportesmanuais]]
+image::image355.png[image,width=603,height=582,align="center",title="O Meshmixer permite variados padrões de suporte, incluindo suportes &quot;em árvore&quot; e diagonais, que potencialmente economizam mais filamento mas podem ser mais difíceis de dominar. Depois de gravar como STL, os suportes não se tornam mais editáveis: passam a fazer parte do modelo. É preciso ainda se lembrar de desativar o suporte no fatiador, já que ele estará incorporado à forma."]
 
 Outro modo de colocar suportes personalizados -- ou removê-los -- é o usado pelo fatiador *Cura* em sua versão
 2.4.0: ele permite que se definam certas malhas como __malhas de modificação de suporte__, tanto para forçar
 suporte naquele volume ("Support Mesh") como para forçar que ele não apareça ("Anti Overhang Mesh").
 
-image::image356.png[image,width=642,height=558]
+[[curasuportesmanuais]]
+image::image356.png[image,width=642,height=558,align="center",title="Personalização de suporte no Cura. Toda a parte direita da peça está suportada, mas à esquerda foi carregado um cubo e definido como &quot;anti overhang mesh&quot; (malha de modificação) em que suportes não serão impressos. Na Ilustração, O Anti Overhang Mesh está desmarcado porque é um ajuste de objeto individual dado ao cubo, não ao cogumelo. Nota: esse truque só é viável com a opção “Ensure Models Are Kept Apart” desligada nas opções gerais, senão o fatiador não deixa as peças sofrerem interseção."]
 
-=== A cobertura de escorrimento (draft shield ou
-ooze shield)
+==== A cobertura de escorrimento
 
-Essa estrutura tem vários nomes diferentes, todos difíceis de traduzir: "cobertura de trabalho", "campo
-de escorrimento" seriam algumas traduções livres dos termos. É implementada com ligeiras variações entre os
+Essa estrutura tem vários nomes diferentes em inglês como __draft shield__ e __ooze shield__, todos difíceis de traduzir: "cobertura de trabalho" e "escudo de escorrimento" seriam algumas possibilidades. É implementada com ligeiras variações entre os
 fatiadores, o conceito geral sendo um "campo", "cobertura" ou "paredes" em torno do objeto e com pelo
 menos duas finalidades diferentes: capturar o escorrimento (__ooze__) excessivo do bico quando se usa dupla extrusão
 ou filamentos menos viscosos, _ou_ formar um "domo" em volta da peça para aprisionar o ar quente e ajudar a
-prevenir o warp. Quando o objetivo é este último, geralmente a estrutura acompanha o contorno da peça verticalmente.
+prevenir o warp. Quando o objetivo é este último, geralmente a estrutura acompanha ou se molda ao contorno vertical da peça, quando é o primeiro a estrutura é completamente vertical.
 
 Alguns fatiadores não têm esta estrutura, mas ela pode ser aproximada configurando um _skirt_ com a altura da peça.
 
-image::image357.jpeg[image,width=618,height=516]
+[[draftshieldazullindao]]
+image::image357.jpeg[image,width=618,height=516,align="center",title="Um draft shield sendo impresso junto com uma peça. A foto também apresenta em sua parte inferior o brim com levantamento de quina pelo warp."]
 
-=== Pilares de escorrimento / prime / purga
+==== Pilares de escorrimento / prime / purga
 
-Assim como o __ooze shield__, o pilar de escorrimento, torre de purga ou torre de _prime_ serve para descartar
+Assim como o __ooze shield__, o pilar de escorrimento, torre de purga ou torre de _prime_ serve como alternativa para descartar
 filamento escorrido e limpar o bico a cada camada impressa. É bastante usado em extrusão dupla porque nesta um
 bico é utilizado por vez, e o bico não ativo tende a deixar escorrer filamento. Se o ooze shield estiver causando
 problemas na peça, o pilar pode ser uma boa alternativa.
 
-image::image358.png[image,width=615,height=484]
+[[curapilardeescorrimento]]
+image::image358.png[image,width=615,height=484,align="center",title="Uma configuração de extrusão dupla no Cura mostrando o pilar de escorrimento ao fundo. Neste fatiador a estrutura tem o nome de &quot;Prime Tower&quot;."]
 
-=== Bridges (pontes)
+==== Bridges (pontes)
 
 Um caso em que se tem estruturas pendentes onde os suportes não seriam tão úteis ou até atrapalhariam são
 as __pontes__. A ponte é uma estrutura cuja parte superior é completamente horizontal (sem material abaixo)
@@ -11281,11 +11309,14 @@ escolhidas. Alguns integrantes do _thingiverse_ e outros websites de compartilha
 "testes de tortura de pontes", para você testar os limites de sua impressora com essas estruturas. Um dos
 mais clássicos é o do usuário __Triffid Hunter__, integrante ativo do projeto reprap.
 
-image::image359.png[image,width=633,height=577]
+[[pontestestedetortura]]
+image::image359.png[image,width=633,height=577,align="center",title="&Teste de tortura& clássico para atestar qualidade de pontes. Fonte: http://www.thingiverse.com/thing:12925"]
 
-image::image360.jpeg[image,width=642,height=257]
+[[ponteseleao]]
+image::image360.jpeg[image,width=642,height=257,align="center",title="Um exemplo criativíssimo do uso de pontes. Uma peça feita com um cilindro externo em que várias pontes terminam, começando da cabeça do leão. No final da impressão o cilindro é cortado fora da peça e os &cabelos& resultantes são então abaixados com uma pistola de ar quente. Fonte em http://www.thingiverse.com/thing:2007221"]
 
-image::image361.png[image,width=623,height=527]
+[[slic3rpontes]]
+image::image361.png[image,width=623,height=527,align="center",title="As configurações de ponte do slic3r se encontram espalhadas pelas categorias. Esse screenshots têm configurações recomendadas: velocidade nas pontes ligeiramente maior que a de impressão, conjugada a menor fator de extrusão (0,92) para &quot;esticar&quot; o filete que ligará dois pontos; e ventoinha do bico ligada a 100% na ponte, para garantir que o plástico seja solidificado o mais rápido possível."]
 
 == Configurações de Qualidade
 

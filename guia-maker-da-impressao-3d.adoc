@@ -10284,7 +10284,7 @@ Tratamos g-codes em mais detalhes no capítulo "Diversão com G-Code", em que de
 dicas e truques para ele tornar a sua impressão melhor.
 
 [[exemplogcodeslic3r]]
-image::image291.png[image,width=622,height=639,align="center",title="G-Code para a inicialização de uma impressão da Sethi3D AiP A3. Os comandos são &quot;comentados&quot; para dizer o que fazem após o ponto-e-vírgula. A inicialização faz o &quot;home&quot; dos eixos, isto é, leva cada eixo ao final de curso até sentir o endstop ativar. Com isso, ele sabe a posição da coordenada (0,0,0), nossa origem. Após este comando, ele configura o firmware para usar o sistema métrico (milímetros, e não polegadas) e posicionamento absoluto ao invés de relativo (quando ele receber &quot;X 10&quot;, executará “ir para a coordenada 10 em X”, não “ir para 10 a mais de onde está em X”), executa os dois comandos de autonivelamento de mesa, desliga a ventoinha do bico, levanta um pouco o bico e começa a impressão. No final, ele desliga as temperaturas, leva o extrusor todo à esquerda (X=0), desliga os motores e toca som de término. Outros campos de G-Code configuráveis que não aparecem: G-Code para executar antes de troca de camada; G-Code para executar depois de troca de camada; e G-Code para executar na troca de extrusor. Este último só concerne a configurações com múltiplos extrusores."]
+image::image291.png[image,width=622,height=639,align="center",title="G-Code para a inicialização de uma impressão da Sethi3D AiP A3. Os comandos são &quot;comentados&quot; para dizer o que fazem após o ponto-e-vírgula. A inicialização faz o &quot;home&quot; dos eixos, isto é, leva cada eixo ao final de curso até sentir o endstop ativar. Com isso, ele sabe a posição da coordenada (0,0,0), nossa origem. Após este comando, ele configura o firmware para usar o sistema métrico (milímetros, e não polegadas) e posicionamento absoluto ao invés de relativo (quando ele receber &quot;X 10&quot;, executará &quot;ir para a coordenada 10 em X&quot;, não &quot;ir para 10 a mais de onde está em X&quot;), executa os dois comandos de autonivelamento de mesa, desliga a ventoinha do bico, levanta um pouco o bico e começa a impressão. No final, ele desliga as temperaturas, leva o extrusor todo à esquerda (X=0), desliga os motores e toca som de término. Outros campos de G-Code configuráveis que não aparecem: G-Code para executar antes de troca de camada; G-Code para executar depois de troca de camada; e G-Code para executar na troca de extrusor. Este último só concerne a configurações com múltiplos extrusores."]
 
 ==== Diâmetro e temperatura
 
@@ -10907,7 +10907,7 @@ um mecanismo de cálculo de vários índices para sua impressora 3D, entre eles 
 considerando o mecanismo.
 
 [[calculadoraprusacamadaotima]]
-image::image333.png[image,width=596,height=631,align="center",title="A calculadora Prusa para camada ótima. O usuários entra os dados físicos de sua impressora - neste caso, bem comuns: motor de 1,8° de rotação, barra roscada M5 de 0,8mm de espaçamento, sem redução no motor - e diz qual altura de camada gostaria de usar: neste caso, 0,15mm. A calculadora prusa informa que a camada de 0,15mm não seria ideal (em vermelho), pois teria um erro estimado de 1,3mm em 10cm, mas as camadas de 0,148 mm e 0,152 mm funcionariam bem. Pode-se ainda ver que a distância de um “passo” do motor em Z é muito pequena (0,004mm) e com os drivers modernos pode ainda ser dividida em até 32 partes. Isso mostra que a resolução possível de nossa altura de camada é muito alta e poderíamos ter camadas micrométricas se não fosse o altíssimo tempo necessário e a alta chance de a subextrusão não funcionar."]
+image::image333.png[image,width=596,height=631,align="center",title="A calculadora Prusa para camada ótima. O usuários entra os dados físicos de sua impressora - neste caso, bem comuns: motor de 1,8° de rotação, barra roscada M5 de 0,8mm de espaçamento, sem redução no motor - e diz qual altura de camada gostaria de usar: neste caso, 0,15mm. A calculadora prusa informa que a camada de 0,15mm não seria ideal (em vermelho), pois teria um erro estimado de 1,3mm em 10cm, mas as camadas de 0,148 mm e 0,152 mm funcionariam bem. Pode-se ainda ver que a distância de um &quot;passo&quot; do motor em Z é muito pequena (0,004mm) e com os drivers modernos pode ainda ser dividida em até 32 partes. Isso mostra que a resolução possível de nossa altura de camada é muito alta e poderíamos ter camadas micrométricas se não fosse o altíssimo tempo necessário e a alta chance de a subextrusão não funcionar."]
 
 ==== Controle de altura de camada e fatiamento adaptativo
 
@@ -11219,7 +11219,7 @@ utilizando filamentos dissolvíveis, embora encareça consideravelmente o proces
 especialmente para as formas mais rebuscadas.
 
 [[suporteexageradoesemsuporte]]
-image::image350.png[image,width=616,height=371,align="center",title="À esquerda: &quot;puxa, não precisava exagerar...&quot; Muitas vezes a colocação de suportes é desnecessária. Deve ser usada com parcimônia, o mínimo possível para ter qualidade, visto que o trabalho de remoção posterior pode ser enorme. À direita: o dragão cantor “Aria”, uma peça modelada especificamente para a impressão 3D, sem nenhum &quot;overhang&quot; acentuado, podendo ser impressa sem suporte. As duas peças impressas com raft, que acabou permanecendo como uma espécie de &quot;pedestal&quot;."]
+image::image350.png[image,width=616,height=371,align="center",title="À esquerda: &quot;puxa, não precisava exagerar...&quot; Muitas vezes a colocação de suportes é desnecessária. Deve ser usada com parcimônia, o mínimo possível para ter qualidade, visto que o trabalho de remoção posterior pode ser enorme. À direita: o dragão cantor &quot;Aria&quot;, uma peça modelada especificamente para a impressão 3D, sem nenhum &quot;overhang&quot; acentuado, podendo ser impressa sem suporte. As duas peças impressas com raft, que acabou permanecendo como uma espécie de &quot;pedestal&quot;."]
 
 Um destaque especial para um "macete" de qualidade: até a versão 1.2.9, os suportes do Slic3r
 são lentos e rebuscados, não funcionando tão bem quanto os de outros fatiadores. Como muitos
@@ -11281,7 +11281,7 @@ Outro modo de colocar suportes personalizados -- ou removê-los -- é o usado pe
 suporte naquele volume ("Support Mesh") como para forçar que ele não apareça ("Anti Overhang Mesh").
 
 [[curasuportesmanuais]]
-image::image356.png[image,width=642,height=558,align="center",title="Personalização de suporte no Cura. Toda a parte direita da peça está suportada, mas à esquerda foi carregado um cubo e definido como &quot;anti overhang mesh&quot; (malha de modificação) em que suportes não serão impressos. Na Ilustração, O Anti Overhang Mesh está desmarcado porque é um ajuste de objeto individual dado ao cubo, não ao cogumelo. Nota: esse truque só é viável com a opção “Ensure Models Are Kept Apart” desligada nas opções gerais, senão o fatiador não deixa as peças sofrerem interseção."]
+image::image356.png[image,width=642,height=558,align="center",title="Personalização de suporte no Cura. Toda a parte direita da peça está suportada, mas à esquerda foi carregado um cubo e definido como &quot;anti overhang mesh&quot; (malha de modificação) em que suportes não serão impressos. Na Ilustração, O Anti Overhang Mesh está desmarcado porque é um ajuste de objeto individual dado ao cubo, não ao cogumelo. Nota: esse truque só é viável com a opção &quot;Ensure Models Are Kept Apart&quot; desligada nas opções gerais, senão o fatiador não deixa as peças sofrerem interseção."]
 
 ==== A cobertura de escorrimento
 
@@ -11384,7 +11384,7 @@ peça. O Slic3r tem a configuração Print Settings → Infill → Reducing prin
 needed", que força preenchimento zero mas coloca suportes nas partes internas com seções pendentes.
 
 [[curamodooco]]
-image::image363.png[image,width=642,height=487,align="center",title=""Modo oco" do Cura com a peça com preenchimento zero, mas suportes internos para as seções pendentes."]
+image::image363.png[image,width=642,height=487,align="center",title="&quot;Modo oco&quot; do Cura com a peça com preenchimento zero, mas suportes internos para as seções pendentes."]
 
 Alguns fatiadores permitem ainda fazer o preenchimento com altura de camada diferente do resto da impressão. Neste
 caso, a altura de camada do preenchimento precisa ser múltipla da altura de camada da impressão -- digamos,
@@ -11397,8 +11397,7 @@ e ainda fique ligeiramente mais robusta. Seguindo o exemplo de 0,1mm e 0,3mm, o 
 ** Print Settings →
 Infill → Reducing printing time → Combine Infill every: [**3**] layers
 * **Simplify3D**:
-** Layer → Primary
-Layer Height: [**0,1000**] mm;
+** Layer → Primary Layer Height: [**0,1000**] mm;
 ** Infill → General → Print Sparse Infill Every [**3**] Layers
 * **Cura**:
 ** Quality → Layer Height [**0.1** mm]
@@ -11459,11 +11458,11 @@ largura de camada, ele extrusa mais plástico e também tece menos segmentos (a 
 Se sua impressão estiver saindo com as linhas "não se tocando", o primeiro suspeito é a taxa de extrusão
 baixa, mas pode ser também uma largura de extrusão menor que a real. Nesse caso:
 
-* **para filetes distantes**, _aumente_ a largura de extrusão.
-* **Para filetes apertados ou encavalados demais**,
-_diminua_ a largura de extrusão.
+* **Para resolver filetes distantes**, _aumente_ a largura de extrusão.
+* **Para resolver filetes apertados ou encavalados demais**, _diminua_ a largura de extrusão.
 
-image::image366.png[image,width=642,height=408]
+[[simplify3dlarguradeextrusao]]
+image::image366.png[image,width=642,height=408,align="center",title="O Simplify3D permite configurar uma única largura de extrusão; o slic3r tem configurações para várias ocasiões e gersalmente faz cálculos sofisticados de acordo com a velocidade, extrusão e temperatura. Isso permite, com alguns ajustes mais elaborados, ter as seções pequenas de peças muito mais detalhadas e colocar o plástico mais interno com maiores camadas, tanto para reforço como para velocidade."]
 
 __*Nota de configuração*__: o Slic3r permite ajustar as larguras de camada tanto em valor absoluto (por exemplo,
 0,4mm) quanto porcentagem (por exemplo, 200%). Mas porcentagem _de quê_ exatamente? Intuir-se-ia ser o diâmetro do
@@ -11474,14 +11473,16 @@ largura de camada, o fatiador passará a assumir o valor 0,6mm. De fato, esta co
 que se aconselha a nunca usar porcentagens, apenas valores absolutos. No _bugtracker_ do slic3r, existe um relato
 de bug para isso: https://github.com/alexrj/Slic3r/issues/3658[_https://github.com/alexrj/Slic3r/issues/3658_]
 
-Notas:
+[NOTE]
+.Nota:
+====
+1 -- A fórmula do Slic3r é, onde __w__ = largura de extrusão calculada, __d__ = diâmetro do bico e __h__ = altura de
+camada: `w = (π.d^2^ + (4-π).h^2^)/(4h)`, com o valor de __w__ limitado ao máximo de __3×d__.
+====
 
-1 -- A fórmula do Slic3r é , onde w = largura de extrusão calculada, d = diâmetro do bico e h = altura de
-camada: w = (π.d^2^ + (4-π).h^2^)/(4h), com o valor de w limitado ao máximo de 3d.
+image::image367.png[image,width=642,height=437,align="center",title="Diferentes larguras de camada no slic3r e Simplify3D. Em sequência: largura default(com nozzle de 0,4mm), largura configurada para 0,4mm e largura configurada para 0,8mm. Na visualização é possível notar que as larguras mais grossas têm menos segmentos e o fato de eles serem mais &quot;grossos&quot; é porque o fatiador calcula o volume de extrusão para aumentar de acordo."]
 
-image::image367.png[image,width=642,height=437]
-
-=== Ventilação
+==== Ventilação
 
 A ventilação no fatiador se refere às ventoinhas que podem ter sua intensidade controlada pela placa da impressora;
 geralmente apenas uma, soprando o bico ou bicos do extrusor, conforme vimos no capítulo sobre extrusores. Portanto,
@@ -11497,9 +11498,10 @@ de simplesmente "deixar a ventoinha ligada o tempo todo".
 "desabando" nas partes mais delicadas como pontes e overhangs. Neste caso, basta deixar os ajustes automáticos
 do fatiador em seus valores __default__.
 
-image::image368.png[image,width=502,height=465]
+[[slic3rventilacao]]
+image::image368.png[image,width=502,height=465,align="center",title="Valores default do resfriamento automático do Slic3r. O Slic3r associa as configurações de resfriamento a um filamento específico, mas em outros fatiadores pode ser mais importante se recordar de desligar a ventoinha ao se trabalhar com ABS ou outros filamentos propensos ao warp."]
 
-=== Velocidades
+==== Velocidades
 
 À primeira vista, a configurabilidade de velocidades da impressora pode parecer estranha ao marinheiro de primeira
 viagem; se é possível colocar valores arbitrários para as velocidades dos movimentos da impressora 3D, por que
@@ -11544,7 +11546,8 @@ recurso chamado de "autospeed" (autovelocidade) que calcula as velocidades ideai
 a pressão interna do hotend a mais constante possível; o Cura simplesmente permite que o usuário decida tudo,
 deixando todas as configurações ao alcance. Pode ser enlouquecedor lidar com tantas configurações.
 
-image::image369.png[image,width=616,height=407]
+[[slic3recuravelocidades]]
+image::image369.png[image,width=616,height=407,align="center",title="À esquerda: painel de velocidades do Slic3r, com todos os ajustes exibidos (e com o controle de aceleração desligado); à direita: alguns dos ajustes relacionados a velocidade do Cura - simplesmente não cabem todos na tela."]
 
 O melhor a fazer para saber velocidades boas para sua impressora 3D é recorrer à fonte -- o fabricante. Grupos
 de discussão, facebook e semelhantes relacionados ao produto também podem ter dicas de usuários aventureiros que
@@ -11553,18 +11556,14 @@ ou comparação, entretanto, oferecemos algumas sugestões gerais, que podem ou 
 
 * Velocidade de perímetro: 60 mm/s
 * Velocidade de perímetro pequeno: 20 mm/s
-* Velocidade de primeira camada:
-20%
+* Velocidade de primeira camada: 20%
 * Velocidade de travel: 100 mm/s
 * Velocidade de infill: 70 mm/s
 * Velocidade de pontes: 80 mm/s
-* Velocidade
-de _overhangs_ (somente no software repsnapper): 20 mm/s
-* Aceleração: 1000 mm/s^2^ nos eixos X e Y, 3000 mm/s^2^
-para as impressoras 3D mais robustas, especialmente CoreXY e semelhantes.
+* Velocidade de _overhangs_ (somente no software repsnapper): 20 mm/s
+* Aceleração: 1000 mm/s^2^ nos eixos X e Y, 3000 mm/s^2^ para as impressoras 3D mais robustas, especialmente CoreXY e semelhantes.
 * Jerk X/Y: 20 mm/s
-* É importantíssimo
-lembrar que você deve _decidir_ quem cuida de sua aceleração, ou o fatiador ou o firmware! Se as acelerações
+* É importantíssimo lembrar que você deve _decidir_ quem cuida de sua aceleração, ou o fatiador ou o firmware! Se as acelerações
 forem configuradas no fatiador, o ideal é aumentar ao máximo no firmware (digamos, 10000 mm/s^2^) para minimizar
 as interferências. O mesmo vale em relação ao _jerk_ e velocidades máximas.
 
@@ -11579,7 +11578,8 @@ só, visto que frequentemente os dois eixos têm as mesmas velocidades e caracte
 Como a _direção_ conta, isso quer dizer que até mantendo a velocidade escalar constante, mas mudando a direção,
 o ajuste de _jerk_ pode entrar em ação.
 
-image::image370.png[image,width=642,height=648]
+[[comofuncionaojerk]]
+image::image370.png[image,width=642,height=648,align="center",title="Caso de mudança de direção em que um jerk configurado como 20 mm/s é excedido. A velocidade escalar se mantém constante, mas as duas velocidades em X e Y têm mudanças diferentes. A mudança de velocidade no eixo X foi de apenas 8mm/s (60 para 52 mm/s), mas no eixo Y foi de 30mm/s, maior em valor absoluto que 20mm/s de jerk (esse valores de velocidade podem ser calculados usando seno e cosseno do ângulo). Como a velocidade final excede o jerk, as configurações de aceleração serão aplicadas e o extrusor demorará mais para percorrer essa trajetória. Se o jerk fosse de 31mm/s nesse caso, o firmware consideraria que o hardware da impressora consegue fazer este movimento instantaneamente, e não aplica acelerações."]
 
 Colocando um jerk *alto* (digamos, 30 ou 40mm/s), você está dizendo para o seu fatiador ou firmware que o hardware
 da sua impressora é de qualidade industrial e muito próximo do ideal, não gerando artefatos com esse valor. Com
@@ -11592,13 +11592,20 @@ Algumas traduções da palavra jerk seriam "impulso", "arranque", "empurrão" ou
 é um caso em que se pesou que tais palavras mais confundiriam que esclareceriam o termo e se optou por usá-lo
 no original em inglês, como jargão técnico.
 
-**Nota**: existe um conceito de _jerk_ da física que não é o mesmo jerk que conceituamos. Traduzido como
+[NOTE]
+.Nota
+====
+Existe um conceito de _jerk_ da física que não é o mesmo jerk que conceituamos. Traduzido como
 "arrancada", o jerk da física designa a taxa de variação da aceleração, assim como a aceleração designa
 a taxa de variação da velocidade e a velocidade é a taxa de variação de posição. A unidade deste _jerk_ é
 distância por tempo ao cubo (e.g. 1000 mm/s^3^), enquanto que a do ajuste do fatiador ou firmware é em distância
 por tempo (e.g. 20 mm/s).
+====
 
-*Autospeed do Slic3r* -- há um ajuste especial do Slic3r que, tendo em vista as equações de Bernoulli para
+[TIP]
+.Autospeed do Slic3r
+====
+há um ajuste especial do Slic3r que, tendo em vista as equações de Bernoulli para
 fluidos, tenta reajustar as velocidades e extrusão enquanto imprime de forma a manter a pressão dentro do hotend a
 mais constante possível, garantindo uma qualidade e consistência maiores e também largamente diminuindo a chance
 de falhas por mudanças bruscas durante a impressão (especialmente por retração). É especialmente importante
@@ -11607,9 +11614,11 @@ extrusão em Print Settings → _Speed_ → _Autospeed (advanced)_ → _Max prin
 velocidades da mesma seção que se deseja que o algoritmo trate (velocidades de suportes, pontes e preenchimentos
 de vãos não são tratados pelo algoritmo).
 
-image::image371.png[image,width=490,height=699]
+[[autospeedslic3rtip]]
+image::image371.png[image,width=490,height=699,title="Autospeed do slic3r, recurso para deixar a extrusão mais suave e consistente e indispensável para o uso com filamentos flexíveis. Com os 6 primeiros ajustes de velocidades em zero, a autospeed decidirá a velocidade ideal para todas essas ocasiões. Para ser ainda mais exato, é possível limitar também a velocidade volumétrica máxima de filamento extrudado mas não estritamente necessário."]
+====
 
-=== Retração
+==== Retração
 
 Já mencionamos retração antes, agora vamos explicar o conceito: quando o hotend está extrudando filamento na
 peça e precisa fazer um movimento de "travel", isto é, se mover no plano XY sem realizar nenhuma impressão,
@@ -11633,9 +11642,10 @@ ele não consegue passar pela seção do tubo que leva à zona aquecida, pois es
 resultado é entupimento e desgaste do filamento na engrenagem do tracionador. Estima-se que 2 segundos fora da
 zona aquecida são o suficiente para o filamento expandir o suficiente para entupir, antes de ser tracionado novamente.
 
-image::image372.png[image,width=539,height=342]
+[[efeitoderetracao]]
+image::image372.png[image,width=539,height=342,align="center",title="Uma ponta de filamento ABS azul de 3mm e filamento ABS rosa de 1,75mm que foram simplesmente retirados do extrusor. Veja como estão expandidos nas pontas; essa é a região que estava na zona aquecida."]
 
-Algumas estratégias são usadas para diminuir este efeito.
+Algumas estratégias são usadas para diminuir este efeito:
 
 * Deixar o filamento retraído o mínimo possível de tempo é uma delas, e isso se consegue com altas
 velocidade de __travel__.
@@ -11643,13 +11653,12 @@ velocidade de __travel__.
 novamente quando for para outra ilha de impressão) é bastante usado nas impressoras que têm o eixo Z rápido,
 como as deltas.
 * Também é útil conhecer bem as medidas do hotend para colocar somente o mínimo possível
-dehttp://www.thingiverse.com/search?q=urination&sa= retração que não saia da zona crítica de expansão do
+de retração que não saia da zona crítica de expansão do
 tubo interno. Um hotend convencional costuma medir entre 50 a 70mm, com a zona aquecida tendo de 10 a 15mm (20mm
 em hotends especializados como o __Volcano__) e o heatbreak cerca de 5mm.
-* A _desengrenagem_ ("coasting",
-presente no Cura e no Simplify3D) é um recurso que pára o filamento décimos de milímetros antes do término da
+* A _desengrenagem_ ("coasting", presente no Cura e no Simplify3D) é um recurso que pára o filamento décimos de milímetros antes do término da
 extrusão, deixando o escorrimento completar o filete para então realizar uma retração menor e menos arriscada.
-* O pressure advance (avanço de pressão) do Slic3r é um algoritmo mais avançado e mais difícil de entender e
+* O __pressure advance__ (avanço de pressão) do Slic3r é um algoritmo mais avançado e mais difícil de entender e
 calibrar mas que também pode contribuir, prevendo a diminuição súbita de pressão e permitindo o escorrimento para
 extrusão.
 * O _autospeed_ já citado, mantendo a pressão constante, minimiza os escorrimentos e a necessidade
@@ -11683,7 +11692,8 @@ usada. É importante ao operador da impressora 3D, entretanto, saber que a inter
 pode ocorrer até numa impressora muito bem calibrada. Neste caso, ele deve perseguir as estratégias de impedir
 que ocorra novamente do seu fatiador predileto.
 
-**Retração "de hardware" ou "de firmware"**: se você vir este termo, a acepção é a seguinte: a
+.Retração "de hardware" ou "de firmware"
+se você vir este termo, a acepção é a seguinte: a
 retração na maioria dos fatiadores é implementada com os comandos de movimentação convencional do extrusor -
 "G0" e "G1". Quando o fatiador suporta retração __de firmware__, ao invés de usar estes comandos comuns
 quando for retrair e avançar da retração, ele usa comandos específicos para a retração, "G10" (retrair)
@@ -11704,7 +11714,7 @@ atualmente o implementam (o Repetier ainda possibilita ativar um recurso de "aut
 comandos G1 com extrusão pura para G10 e G11), mas os fatiadores Cura e Simplify3D não suportam esse recurso,
 com o Slic3r sendo atualmente o único que o implementa, nas configurações Printer Settings → General → Advanced.
 
-=== Ajuste da costura
+==== Ajuste da costura
 
 A "costura" ou "selo", "seam" em inglês, é a parte da superfície em que o filete de plástico se
 junta consigo mesmo, tendo percorrido uma volta. Geralmente, esta junção é "presenteada" com uma pequena
@@ -11722,28 +11732,36 @@ patente foi aceita mesmo com vários casos documentados de "arte prévia" desta 
 a invalidaria.^1^ Nas discussões de fatiadores como o slic3r, se optou por não implementar a técnica para evitar
 qualquer imbróglio legal.^2^ É o "espaço de idéias" sendo fechado a olhos vistos.
 
-image::image373.png[image,width=642,height=695]
+[[seamhidingkisllicer]]
+image::image373.png[image,width=642,height=695,align="center",title="Mesmo patenteado pela Stratasys, o seam hiding é implementado no fatiador KISSlicer (possivelmente por ter sido implementado antes, ou nunca terem sido acionados pela empresa). Em destaque, a parte da camada em que há um leve retrocesso do filete para impedir bolhas, e os ajustes para configurar este retrocesso."]
 
-image::image374.png[image,width=625,height=260]
+[[costuraalinhadaedesalinhada]]
+image::image374.png[image,width=625,height=260,align="center",title="À esquerda: a costura está alinhada, bem aparente mas fácil de remover com um estilete. À direita: a costura é aleatória, com cada bolha sendo menos aparente que o total."]
 
 No Slic3r, o ajuste da costura está em Print Settings → Layers and Perimeters → Advanced → Seam Position. Você
 pode escolher entre alinhado, aleatório e "mais perto" (tentará achar uma face com ângulo agudo para esconder
 a costura). O Prusa Slic3r oferece ainda a opção "Rear", que é o Y máximo, e por default já implementa
 uma forma modesta de __seam hiding__^3^.
 
-image::image375.png[image,width=344,height=180]
+[[costuraslic3r]]
+image::image375.png[image,width=344,height=180,align="center"]
 
 No Simplify3D, o ajuste da costura está em Layers → Start Points. Você pode escolher entre aleatório, otimizar
 para velocidade, e mais perto (alinhado) de um ponto definido pelo usuário no plano XY.
 
-image::image376.png[image,width=428,height=157]
+[[costurasimplify3d]]
+image::image376.png[image,width=428,height=157,align="center"]
 
 No Cura, o ajuste da costura está em Shell → Z Seam Alignment, e você pode escolher entre aleatório, menor
 caminho e mais perto (alinhado) de um ponto definido pelo usuário no plano XY.
 
-image::image377.png[image,width=642,height=242]
+[[costuracura]]
+image::image377.png[image,width=642,height=242,align="center"]
 
-1 - Este artigo explica o problema do método patenteado pela Stratasys:
+[NOTE]
+.Notas:
+====
+. Este artigo explica o problema do método patenteado pela Stratasys:
 http://patents.stackexchange.com/questions/4667/3d-printing-seam-concealment-for-3d-models-patent-application-prior-art-re[_http://patents.stackexchange.com/questions/4667/3d-printing-seam-concealment-for-3d-models-patent-application-prior-art-re_].
 Há razões muito fortes para nos preocuparmos com este frenesi por patentes por corporações, num futuro em que
 ninguém mais poderá explorar o espaço de idéias -- todo patenteado. Neste contexto, como que querendo nos
@@ -11751,12 +11769,11 @@ remeter de volta às cavernas, representantes da Stratasys declaram que gostaria
 mesmo de concorrentes. Paulo Farias, diretor-geral da Stratasys no Brasil, chega a declarar que o Brasil ter
 poucas patentes é motivo para "se sentir envergonhado" em uma entrevista para o "canaltech" do youtube
 em https://www.youtube.com/watch?v=Vk3weOHcHDw[_https://www.youtube.com/watch?v=Vk3weOHcHDw_].
+. https://github.com/alexrj/Slic3r/issues/3299[_https://github.com/alexrj/Slic3r/issues/3299_]
+. https://github.com/prusa3d/Slic3r/issues/153[_https://github.com/prusa3d/Slic3r/issues/153_]
+====
 
-2 - https://github.com/alexrj/Slic3r/issues/3299[_https://github.com/alexrj/Slic3r/issues/3299_]
-
-3 - https://github.com/prusa3d/Slic3r/issues/153[_https://github.com/prusa3d/Slic3r/issues/153_]
-
-=== Modo Espiral
+==== Modo Espiral
 
 Quando mencionamos a _prusa calculator_ ao explicar altura de camada, notamos que tipicamente a impressora 3D tem
 uma _resolução_ no eixo Z _muito maior_ que a necessária para qualquer impressão que façamos; no exemplo
@@ -11772,55 +11789,57 @@ objetos bojudos com apenas uma "ilha" por camada, cujo interior não deve ser pr
 faz é a impressão contínua do contorno da peça, subindo suavemente numa espiral (daí o nome) progressivamente
 mais alta, até chegar ao topo. Fica mais fácil entender através da ilustração do fatiamento de um objeto.
 
-image::image378.png[image,width=630,height=360]
+[[espiralaplicado]]
+image::image378.png[image,width=630,height=360,align="center",title="Modo espiral aplicado a um objeto. Toda a impressão do objeto é realizada por um único filete ininterrupto."]
 
 O tipo de objeto que mais se beneficia desse tipo de impressão são __vasos__, por isso este modo também é
 conhecido como "modo vaso". O objeto único de geometria simples é um requisito para ele funcionar corretamente;
 caso vários objetos ou um objeto complexo estiverem carregados, os fatiadores não avisam que não vão imprimir
 numa espiral ininterrupta -- ao invés disso, eles simplesmente imprimem em camadas, sem espiralizar.
 
-image::image379.png[image,width=619,height=451]
+[[espiraldoisobjetos]]
+image::image379.png[image,width=619,height=451,align="center",title="2 cilindros carregados para fatiar em modo espiral no Simplify3D. Pode-se ver claramente que não há mais espiral, pois o fatiador é obrigado a alternar entre duas "ilhas" de impressão, e já não pode imprimir tudo em um filete só."]
 
 Uma exceção à regra é o Slic3r, que não fatia com o modo espiral ligado se houver mais de um objeto na mesa
 -- e deixa a seguinte mensagem na barra de status, até que o problema seja resolvido:
 
-image::image380.png[image,width=499,height=26]
+[[espiralavisoslic3r]]
+image::image380.png[image,width=499,height=26,align="center"]
 
 "Spiral Vase" é o nome da opção nesse fatiador e está nas configurações de camada. Quando você ativa
 o modo, ele avisa que vai mudar várias outras configurações e pede confirmação que deseja prosseguir:
 
-image::image381.png[image,width=570,height=544]
+[[espiralslic3rconf]]
+image::image381.png[image,width=570,height=544,align="center",title="O Slic3r te dá a chance de voltar atrás caso você ative o modo espiral ("Spiral Vase") por engano. Ele também diz os ajustes que vai mudar: colocar parede de um perímetro, remover a camada de topo, mudar o preenchimento para zero, desativar estruturas de suporte e desativar o ajuste de "preenchimento quando necessário"."]
 
-image::image382.png[image,width=559,height=422]
+[[espiralsimplify3dconf]]
+image::image382.png[image,width=559,height=422,align="center",title="O Simplify3D também coloca a opção nas configurações de camadas, mas a chama de &quot;modo de impressão de rosca de contorno único ou modo vaso&quot;. De início ela não muda os outros ajustes até que você peça para ocorrer o fatiamento."]
 
-image::image383.png[image,width=449,height=178]
+[[espiralsimplify3daviso]]
+image::image383.png[image,width=449,height=178,align="center",title="Quando se chama o fatiamento, o Simplify3D avisa que como o modo espiral está ligado, ele vai mudar automaticamente os outros ajustes."]
 
-image::image384.png[image,width=642,height=570]
+[[espiralcuraconf]]
+image::image384.png[image,width=642,height=570,align="center",title="O Cura chama a opção de &quot;espiralizar contorno externo&quot; e a tem na seção &quot;modos especiais&quot;, ao invés de configurações de camada. Se a opção for selecionada ele simplesmente muda os ajustes necessários, assumindo que o usuário tenha lido a dica de ajuda (balão azul) que apresenta e não pedindo confirmação."]
 
 Por causa da maneira como o modo espiral funciona, com a camada superior sendo automaticamente removida, muitos
 objetos em sites de compartilhamento de designs como o thingiverse deixam para download o contorno sólido do
 "vaso", assumindo que o modo espiral automaticamente o deixará aberto em cima. Um exemplo é a série de
 vasos "Julia" do thingiverse (Julia é o nome dado a um conjunto de fórmulas matemáticas fractais):
 
-image::image385.png[image,width=642,height=428]
+[[vasojulia]]
+image::image385.png[image,width=642,height=428,align="center",title="Vaso Julia. Disponível em http://www.thingiverse.com/thing:126567"]
 
 O modo vaso é especialmente útil para quem usa bicos largos (digamos, maiores que 0,8mm).
 
-=== Impressão objeto a objeto
-
-São os fatiadores que fazem as impressoras 3D FFF funcionarem como as vemos: camada por camada, de baixo pra
-cima. Mas os comandos que a impressora interpreta permitem posicionamento arbitário do extrusor em qualquer posição
-tridimensional que se queira, e seria teoricamente possível que um fatiador a fizesse extrusar um detalhe do topo
-primeiro antes de um detalhe da base -- desde que essa trajetória não levasse o mecanismo a bater nas peças, claro.
-
-=== Ajustes especiais de qualidade
+==== Ajustes especiais de qualidade
 
 Cada fatiador tem suas peculiaridades, analisamos aqui alguns dos recursos específicos de cada um:
 
 *Slic3r* -- Em _Print Settings_ → _Layers and perimeters_ há o quadro "__quality__" com 4 opções
 liga/desliga:
 
-image::image386.png[image,width=577,height=139]
+[[slic3rconfqualidade]]
+image::image386.png[image,width=577,height=139,align="center"]
 
 * *Extra perimeters if needed* (perímetros extras se necessário) -- em superfícies inclinadas, uma configuração
 baixa de perímetros (paredes) pode, através do arredondamento, acabar expondo a parte interna da peça. Com

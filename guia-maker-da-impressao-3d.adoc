@@ -2256,7 +2256,7 @@ usam a mesma denominação deles -- como "M5" ou "M8" pra designar seu diâmetro
 Diferentemente das barras roscadas, _fusos_ são elementos industriais especificamente criados para um elemento
 deslizante em seu comprimento, transformando movimento rotativo do pinhão do motor em linear. Alguns motores
 já vêm mesmo com o fuso fisicamente integrado a eles, como se fosse um pinhão, para evitar qualquer folga no
-mecanismo (Figura XX). O fuso pode ser conectado por um acoplador de alumínio como no caso da barra roscada também. +
+mecanismo (Figura 55). O fuso pode ser conectado por um acoplador de alumínio como no caso da barra roscada também. +
 Fusos são definidos pelo elemento móvel que usam, a __castanha__. Quando usam uma peça deslizante simples,
 geralmente de cobre ou poliacetal, são chamados simplesmente de fusos trapezoidais. Quando usam um elemento que
 contêm esferas de aço interiores que concedem muito baixo grau de atrito ao movimento, são chamados de __fusos
@@ -2362,7 +2362,7 @@ correção -- se a roupa não está suficientemente seca, inicia-se novamente a 
 Conhecer o conceito de elementos de controle é essencial para entender a sua impressora 3D: não queremos um
 motor que só gire pra um lado ou pra outro, queremos saber as coordenadas! Não queremos um componente que só
 aqueça o máximo, queremos algo que aqueça e que, ao chegar na temperatura desejada, estabilize. Se a medição
-falha e o componente aquece sem controle, temos resultados como o da Figura XX.
+falha e o componente aquece sem controle, teremos grande risco de incêndio e faíscas.
 
 E é como elemento de medição que vamos entender o __endstop__. Em português o termo é "detector" ou
 "sensor" de fim de curso, o que dá uma idéia para que serve. Para isso, devemos entender que os motores
@@ -2741,7 +2741,7 @@ falharia se seu hotend entupisse, agora a impressão falha se o hotend 1 entupir
 chances de problema aumentam enormemente, ainda mais pela interferência de um extrusor no outro -- você tem
 por exemplo que configurar a distância exata de um bico ao outro, com precisão de centésimos de milímetros,
 para que a impressão fique boa.
-* *Você perde área de impressão* -- olhe para a Figura XXX ou Figura YYY:
+* *Você perde área de impressão* -- olhe para a Figura 66:
 o que você percebe na peça do extrusor múltiplo? Ela é grande, até desajeitada, ocupando muito espaço e,
 para a mesma carcaça, deixando de permitir que o bico alcance certas coordenadas, diminuindo a área útil.
 * *Você perde velocidade do extrusor* -- ser uma impressora 3D FFF não significa que os extrusores têm que se
@@ -2925,7 +2925,7 @@ que saem do escopo do tratado aqui por virtualmente não serem usadas em impress
 uma ventoinha de bico virada na ‘direção geral’ da impressão pode não ser a estratégia mais eficaz, visto
 que o ponto a ser refrigerado, o plástico saindo do bico, é bem circunscrito; um jeito muito mais eficiente seria
 concentrar o fluxo de ar neste ponto, papel que alguns elementos conhecidos como _funis_ ou _dutos de ventoinhas_
-tentam fazer (como o da figura XX). No entanto, a dinâmica de fluidos não é algo tão direto assim
+tentam fazer (como o da figura 65). No entanto, a dinâmica de fluidos não é algo tão direto assim
 e a turbulência interna ao duto é tão grande que efetivamente reduz e muito a eficiência de resfriamento de
 uma ventoinha afunilada, pois o vento chega extremamente amortecido ao bico. Para ventoinha de bico, existe um
 elemento com eficiência muito maior, que é a ventoinha _radial_ ou __centrífuga__, tratadas em inglês como
@@ -3482,8 +3482,8 @@ e **4**. Isto é na verdade um princípio de construção dos motores: bobinas a
 que liguem ou desliguem ao mesmo tempo, constituindo uma **fase**. No nosso motor temos duas fases diferentes:
 1 + 3, e 2 + 4. A estratégia que usamos de deixar as bobinas sempre energizadas para cada passo se chama _*modo
 de excitação de duas fases*_ e é caracterizada por torque melhorado. Em motores com mais bobinas, as fases se
-intercalam: 6 bobinas, e temos 1 + 3 + 5 formando uma fase, 2 + 4 + 6 formando outra (figura XXa). Do mesmo modo,
-com 8 bobinas teremos 1+3+5+7 e 2+4+6+8 (figura XXb)
+intercalam: 6 bobinas, e temos 1 + 3 + 5 formando uma fase, 2 + 4 + 6 formando outra (figura 78a). Do mesmo modo,
+com 8 bobinas teremos 1+3+5+7 e 2+4+6+8 (figura 78b)
 
 [[bobinasmaisbobinas]]
 image::bobinasmaisbobinas.png[bobinasmaisbobinas,width=642,height=342,align="center",title="Motores com mais bobinas, sempre intercaladas e com duas fases - aqui mostradas em cores diferentes para melhor entendimento. O rotor central tem sua construção magnética omitida neste momento para simplicidade, pois nesses casos não são usados dois semicírculos."]
@@ -5900,7 +5900,7 @@ substância -- ABS se dissolve em várias cetonas e poliestireno dissolve em um 
 são compostos orgânicos comuns em alimentos. Por outro lado, os tipos de plástico "seguros" para itens
 alimentícios, além de resistência química, também têm décadas de produção sem incidentes; mais produtivo
 do que listar os plásticos perigoso é providenciarmos uma lista dos propícios ao uso. Na classificação de
-plásticos descartáveis são eles, conforme a figura XX: tipo 2 (PEAD -- polietlieno de alta densidade), tipo 4
+plásticos descartáveis são eles, conforme a figura 133: tipo 2 (PEAD -- polietileno de alta densidade), tipo 4
 (PEBD -- polietileno de baixa densidade) e tipo 5 (polipropileno). E embora sejam todos termoplásticos e possam
 ser usados como filamento de impressão 3D, são notoriamente difíceis para esse fim, com baixa aderência de
 camada e bastante deformação.

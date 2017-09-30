@@ -1,5 +1,6 @@
 [#guia-maker-da-impressao-3d-manutencao]
 = Manutenção e Cuidados com a Impressora 3D
+:imagesdir: imagens
 
 Sendo um aparelho que em sua operação normal lida com tantas forças mecânicas, térmicas e até químicas, é
 esperado que a impressora 3D sofra considerável desgaste com o uso, comprometendo seu funcionamento e precisão e

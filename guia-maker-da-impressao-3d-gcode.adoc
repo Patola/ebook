@@ -1,5 +1,6 @@
 [#guia-maker-da-impressao-3d-gcode]
 = Diversão com G-Code
+:imagesdir: imagens
 
 Passamos brevemente pelo que é o G-Code em capítulos anteriores, mas não há como negar que o
 conhecimento desta ‘linguagem de máquina’ é essencial ao profissional de impressão 3D em todos os níveis,

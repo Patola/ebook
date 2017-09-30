@@ -1,5 +1,6 @@
 [#guia-maker-da-impressao-3d-tecnologiafff]
 = A Tecnologia FFF
+:imagesdir: imagens
 
 A tecnologia que chegou à popularização em nossos dias foi a patenteada por S. Scott Crump. Há vários motivos
 para isso: é razoavelmente fácil construir uma máquina (hoje em dia, ainda mais com as receitas do projeto reprap);

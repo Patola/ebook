@@ -1,5 +1,6 @@
 [#guia-maker-da-impressao-3d-materiaisfff]
 = Os Materiais de Impressão 3D FFF
+:imagesdir: imagens
 
 == Introdução: polímeros e plásticos
 

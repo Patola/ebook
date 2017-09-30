@@ -1,5 +1,6 @@
 [#guia-maker-da-impressao-3d-sobre]
 = Sobre o Autor
+:imagesdir: imagens
 
 image:image435.jpeg[image,width=285,height=213,align="left",float="right"] Cláudio Luís Marques Sampaio, de apelido de internet
 __Patola__, é graduado em engenharia de computação e tem mestrado em biologia molecular e genética, ambos pela

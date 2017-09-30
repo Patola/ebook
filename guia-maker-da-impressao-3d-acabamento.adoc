@@ -1,5 +1,6 @@
 [#guia-maker-da-impressao-3d-acabamento]
 = Acabamento
+:imagesdir: imagens
 
 Se as impressoras 3D fossem construtores perfeitos como os replicadores de __Jornada nas Estrelas__, não haveria nem
 sentido em mencionar __acabamento__: afinal, as peças teriam saído prontas, __acabadas__, da máquina. Praticamente

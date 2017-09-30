@@ -1,5 +1,6 @@
 [#guia-maker-da-impressao-3d-universomaker]
 = O Universo Maker
+:imagesdir: imagens
 
 == A Exaptação
 

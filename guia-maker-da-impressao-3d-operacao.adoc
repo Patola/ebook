@@ -1,5 +1,6 @@
 [#guia-maker-da-impressao-3d-operacao]
 = Operação da Impressora 3D
+:imagesdir: imagens
 
 Uma vez que foi dada a necessária teoria para entender uma impressora 3D atual, a próxima etapa é partir para
 a prática. O caso típico de uso a ser tratado em nossos exemplos é o de uma impressora 3D FFF de baixo custo

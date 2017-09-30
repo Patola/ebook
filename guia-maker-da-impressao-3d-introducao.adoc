@@ -23,7 +23,7 @@ com um desenho em uma folha de papel, por exemplo, que só tem duas dimensões (
 contraste com as impressoras 3D.
 
 [[impressora2de3d]]
-image::impressora2de3d.png[impressora2de3d,width=687,height=280,role="related thumb center",title="Impressora \"2D\" (à esquerda) e 3D (à direita) (créditos: reprap.org)"]
+image::impressora2de3d.png[impressora2de3d,width=687,height=280,align="center",title="Impressora &quot;2D&quot; (à esquerda) e 3D (à direita) (créditos: reprap.org)"]
 
 E quanto a "processos aditivos"? Pode-se inferir o significado pelo nome: processos que envolvem a _adição_
 de material durante a fabricação da peça. Outro nome com que a impressão 3D é conhecida usa este conceito:
@@ -39,7 +39,7 @@ história das CNCs está tão ligada à fabricação subtrativa que causa certa 
 a uma impressora 3D como uma "CNC", embora usem, essencialmente, a mesma técnica, apenas de formas diferentes
 -- subtração versus adição.
 [[amsterdamcnc]]
-image::amsterdamcnc.jpg[amsterdamcnc,width=600,height=376,role="related thumb center",title="CNC fresa de MDF no FabLab de Amsterdam. Créditos: wikimedia foundation"]
+image::amsterdamcnc.jpg[amsterdamcnc,width=600,height=376,align="center",title="CNC fresa de MDF no FabLab de Amsterdam. Créditos: wikimedia foundation"]
 
 Impressoras 3D e CNCs, incluindo as máquinas conhecidas como "pick and place" e gravadoras de circuitos,
 são os equipamentos comumente usados para aquilo que é chamado de __prototipagem rápida__. Este termo designa o

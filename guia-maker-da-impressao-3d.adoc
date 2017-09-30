@@ -283,7 +283,7 @@ um pantógrafo ligado a um cortador que reproduzia cada um desses perfis, totali
 batizou o processo de __fotoescultura__.
 
 [[fotoescultura]]
-image::image5.gif[image,width=388,height=423]
+image::image5.gif[image,width=388,height=423,align="center",title="Fotoescultura em 1870, créditos: George Eastman House"]
 
 Isso significa que já no século XIX tínhamos não só um rudimento da impressão 3D, como também de um processo de
 digitalização em 3D hoje chamado de fotogrametria. Faltavam, claro, os computadores para automatizar este processo.
@@ -334,7 +334,7 @@ feixe desta luz, sucessivas camadas representando as seções transversais de um
 até a mais alta, são atingidas seletivamente pelo feixe solidificando-o.
 
 [[slaantiga]]
-image::image6.jpeg[image,width=600,height=488]
+image::image6.jpeg[image,width=600,height=488,align="center",title="Máquina SLA com peças feitas a partir de resina fotossensível endurecida"]
 
 Em 1986, Chuck fundou a primeira companhia de Impressão 3D do mundo, a **3D Systems Inc**. A companhia criou
 o hoje famoso formato de arquivo "STL", uma forma simples de representação de uma malha tridimensional
@@ -349,7 +349,7 @@ os grânulos do mesmo material ao redor. A patente foi concedida em 1989 e licen
 que foi mais tarde adquirida pela 3D Systems.
 
 [[brilhosls]]
-image::image7.jpeg[image,width=642,height=458]
+image::image7.jpeg[image,width=642,height=458,align="center",title="Uma máquina SLS no processo de sinterização de uma camada de pó"]
 
 Foi o ano de 1989 que viu o surgimento da técnica de impressão 3D que, por suas características de robustez e
 economia, se tornou a dominante no mercado de massa de hoje: a FDM, ou modelagem por deposição de material fundido
@@ -358,7 +358,7 @@ a filha e maquetes para engenheiros (ou assim diz a lenda), fez o pedido de pate
 financiamento para criar a empresa **Stratasys**.
 
 [[fotosstratasys]]
-image::image8.jpeg[image,width=615,height=383]
+image::image8.jpeg[image,width=615,height=383,align="center",title="S Scott Crump, fundador da Stratasys e inventor da técnica FDM^TM^, em palestra (esquerda) e ao lado do protótipo de sua impressora 3D (direita). Créditos: Stratasys.com"]
 
 === Os anos 90 e primeira metade dos anos 2000
 
@@ -379,12 +379,12 @@ ao invés de somente sinterizados. A **EBM**, ou Electron Bean Melting, utiliza 
 SLM mas usando um feixe de elétrons e consegue trabalhar com materiais com altíssimo ponto de fusão como titânio.
 
 [[lomartefinal]]
-image::image9.png[image,width=642,height=535]
+image::image9.png[image,width=642,height=535,align="center",title="Processo de acabamento (retirada da peça impressa do bloco de papel, uma vez terminada) de uma impressão feita pela técnica Laminated Object Manufacturing (LOM). Créditos: National University of Singapore, http://blog.nus.sg.edu"]
 
 === O rompimento: o projeto RepRap
 
 [[fotoreprap]]
-image::image10.jpeg[image,width=642,height=379]
+image::image10.jpeg[image,width=642,height=379,align="center",title="Adrian Bowyer (esquerda) e Vik Olliver (direita) com sua reprap &quot;mãe&quot; feita em uma FDM tradicional e a primeira RepRap &quot;filha&quot; de sucesso ao lado, feita pela da esquerda. Créditos: http://reprap.org/wiki/About"]
 
 Infelizmente, com todo esse aparecimento de novas tecnologias prometendo revolucionar a indústria e os modos de
 criação, vieram também as chagas da propriedade intelectual. Tradicionalmente, ao criar uma nova tecnologia,
@@ -448,7 +448,7 @@ indivíduos "geniais" que construíam suas próprias impressoras 3D mas que na v
 receitas do site do projeto.
 
 [[impressaocobreebronze]]
-image::image11.jpeg[image,width=443,height=372]
+image::image11.jpeg[image,width=443,height=372,align="center",title="Copperfill (esq.) e bronzefill (dir.), filamentos de imitação de metal da empresa Colorfabb (créditos: colorfabb.com)"]
 
 Livre das amarras das patentes, o mercado de massa de impressão 3D irradiou-se para uma série de áreas antes
 inexploradas, desde simples reparos domésticos (quem usaria uma impressora de um milhão de dólares pra isso?) até
@@ -475,7 +475,7 @@ uma contabilidade de quantos materiais diferentes já estão disponíveis para i
 mas esse número com certeza já ultrapassa uma centena.
 
 [[hotendcyclop1]]
-image::image12.png[hotendcyclop,width=193,height=289,float="right"]
+image::image12.png[hotendcyclop,width=693,height=377,align="center",title="hotends compactos chimera e cyclops para dois filamentos da empresa e3d (http://e3d-online.com)"]
 
 Esse gigantesco desabrochar e democratização de uma tecnologia avançada está tendo impacto profundo em nossa
 sociedade. Outras tecnologias não sofreram o mesmo processo. Você não teve as pessoas construindo televisões em
@@ -492,23 +492,20 @@ uma empresa que já mencionamos.
 [NOTE]
 .Notas:
 ====
-1 -- Alguns detentores de registros de patentes utilizam-se de uma estratégia chamada "__Patent fencing__",
+. Alguns detentores de registros de patentes utilizam-se de uma estratégia chamada "__Patent fencing__",
 que se traduz em registrar uma extensão óbvia do processo da patente original quando a data de expiração desta
 patente estiver próxima, estendendo assim na prática a duração da patente.
-
-2 - http://reprap.org/wiki/BackgroundPage[_http://reprap.org/wiki/BackgroundPage_]
-
-3 -- Para uma história do projeto reprap contada pelos próprios integrantes, uma boa referência é
+. http://reprap.org/wiki/BackgroundPage[_http://reprap.org/wiki/BackgroundPage_]
+. Para uma história do projeto reprap contada pelos próprios integrantes, uma boa referência é
 https://all3dp.com/history-of-the-reprap-project/[_https://all3dp.com/history-of-the-reprap-project/_]
-
-4 -- A história da impressora de açúcar pode ser vista em inglês aqui:
+. A história da impressora de açúcar pode ser vista em inglês aqui:
 http://www.3dprinterworld.com/article/aleph-objects-enjoys-809-percent-two-year-revenue-growth[_http://www.3dprinterworld.com/article/aleph-objects-enjoys-809-percent-two-year-revenue-growth_]
 ====
 
 === Makerbot (2009)
 
 [[fotomakerbot]]
-image::image13.jpeg[image,width=642,height=434]
+image::image13.jpeg[image,width=642,height=434,align="center",title="Fundadores da Makerbot - esquerda para a direita: Adam Mayer, Zach Smith e Bre Pettis. Crédito: wikipedia"]
 
 Empresa que começou junto ao movimento RepRap, com um de seus fundadores, Zach Smith, sendo também um dos
 fundadores do projeto. Ganhou fundos de investimento do próprio Adrian Bowyer e sua esposa. Reconhecida também
@@ -549,8 +546,7 @@ uma companhia diminuta perto do que era.
 [NOTE]
 .Notas:
 ====
-1 -
-http://www.openbeamusa.com/blog/2014/5/22/stay-classy-makerbot[_http://www.openbeamusa.com/blog/2014/5/22/stay-classy-makerbot_]
+. http://www.openbeamusa.com/blog/2014/5/22/stay-classy-makerbot[_http://www.openbeamusa.com/blog/2014/5/22/stay-classy-makerbot_]
 ====
 
 === A Alvorada da SLA -- Formlabs e B9 Tech
@@ -573,7 +569,7 @@ sua SLA e foi processada pela 3D Systems, mas acertaram os termos fora das corte
 sendo comercializada, hoje em dia sem precisar pagar royalties.
 
 [[fotodonoformlabs]]
-image::image14.jpeg[image,width=642,height=480]
+image::image14.jpeg[image,width=642,height=480,align="center",title="Maxim Lobovsky, um dos 3 fundadores da Formlabs, com a impressora 3D ao fundo. Créditos: kickstarter.com"]
 
 Já a B9 Creator sofreu menos este revés, pois ao invés de utilizar a tecnologia SLA "pura", usou uma variante
 dela que ao invés de um feixe de laser, usa um retroprojetor modificado. Essa tecnologia é chamada de SLA/DLP
@@ -581,7 +577,7 @@ ou simplesmente DLP, por causa do projetor. Adicionalmente, a impressora deles f
 diferença e inicialmente o projeto era open-source, com um fatiador multiplataforma e aberto. Não foram processados.
 
 [[fotob9creatoreform1]]
-image::image15.png[image,width=596,height=368]
+image::image15.png[image,width=1246,height=747,align="center",title="B9 Creator e Form1 e uma comparação de acabamento entre uma peça de SLA da Form1+ (esquerda) e e uma impressora FFF (direita) com a mesma resolução de 0,1mm de camada, com a de SLA se mostrando nitidamente melhor. Créditos: respectivos sites b9creator.com e formlabs.com"]
 
 Essas duas impressoras "iguais mas diferentes", assim como as repraps, criaram o padrão de compatibilidade que
 todas as novas impressoras 3D SLA / SLA/DLP estão adotando. Comprimento de onda do raio ultravioleta, resolução,
@@ -609,7 +605,7 @@ de impressão em lote automatizada (__Form Cell__) e agora uma impressora 3D SLS
 1**. Será um indício que antes mesmo de a SLA se estabelecer completamente, SLS chegará ao mercado de baixo custo?
 
 [[fotoformfuse1sls]]
-image::image19.png[image,width=642,height=409]
+image::image19.png[image,width=642,height=409,align="center",title="Fuse 1, primeira impressora 3D SLS da Formlabs. https://www.youtube.com/watch?v=VdFGdUSbaEg"]
 
 === A Academia e a Impressão 3D
 
@@ -652,23 +648,17 @@ the means of production__"^5^ e novamente em 2011 com "RepRap -- the replicating
 [NOTE]
 .Referências:
 ====
-1 - Ahn, S. H., Montero, M., Odell, D., Roundy, S., & Wright, P. K. (2002). Anisotropic material properties of
+. Ahn, S. H., Montero, M., Odell, D., Roundy, S., & Wright, P. K. (2002). Anisotropic material properties of
 fused deposition modeling ABS. __Rapid prototyping journal__, __8__(4), 248-257.
-
-2 - Zein, I., Hutmacher, D. W., Tan, K. C., & Teoh, S. H. (2002). Fused deposition modeling of novel scaffold
+. Zein, I., Hutmacher, D. W., Tan, K. C., & Teoh, S. H. (2002). Fused deposition modeling of novel scaffold
 architectures for tissue engineering applications. __Biomaterials__, __23__(4), 1169-1185.
-
-3 - Cooke, M. N., Fisher, J. P., Dean, D., Rimnac, C., & Mikos, A. G. (2003). Use of stereolithography to manufacture
+. Cooke, M. N., Fisher, J. P., Dean, D., Rimnac, C., & Mikos, A. G. (2003). Use of stereolithography to manufacture
 critical‐sized 3D biodegradable scaffolds for bone ingrowth. __Journal of Biomedical Materials Research Part B:
 Applied Biomaterials__, __64__(2), 65-69.
-
-4 -
-http://self.gutenberg.org/wplbn0002096545-the-replicating-rapid-prototyper-by-adrian-bowyer.aspx?&words=technology[_http://self.gutenberg.org/wplbn0002096545-the-replicating-rapid-prototyper-by-adrian-bowyer.aspx_]
-
-5 - Sells, E., Smith, Z., Bailard, S., Bowyer, A., & Olliver, V. (2009). RepRap: the replicating rapid prototyper:
+. http://self.gutenberg.org/wplbn0002096545-the-replicating-rapid-prototyper-by-adrian-bowyer.aspx?&words=technology[_http://self.gutenberg.org/wplbn0002096545-the-replicating-rapid-prototyper-by-adrian-bowyer.aspx_]
+. Sells, E., Smith, Z., Bailard, S., Bowyer, A., & Olliver, V. (2009). RepRap: the replicating rapid prototyper:
 maximizing customizability by breeding the means of production.
-
-6 - Jones, R., Haufe, P., Sells, E., Iravani, P., Olliver, V., Palmer, C., & Bowyer, A. (2011). RepRap--the
+. Jones, R., Haufe, P., Sells, E., Iravani, P., Olliver, V., Palmer, C., & Bowyer, A. (2011). RepRap--the
 replicating rapid prototyper. __Robotica__, __29__(01), 177-191.
 ====
 
@@ -707,20 +697,19 @@ do que deixar os artigos publicamente acessíveis na __academia.edu__, detalhar 
 sustentável http://appropedia.org/[_http://appropedia.org_], onde tem uma página detalhando suas informações.^2^
 
 [[opensourcelab]]
-image::image20.png[image,width=471,height=705]
+image::image20.png[image,width=471,height=705,align="center",title="Livro seminal sobre impressão 3D open-source e o uso dela para a construção barata de itens de laboratório, do pesquisador Joshua Pearce. Ele também é uma obra livre sob a mesma licença que este livro que você está lendo, sendo sua principal inspiração. http://www.thingiverse.com/thing:182640"]
 
 [NOTE]
 ====
 .Referências:
-
-1 -- Você pode ver todos os artigos do Dr. Pearce que estão no _academia.edu_ neste endereço:
+. Você pode ver todos os artigos do Dr. Pearce que estão no _academia.edu_ neste endereço:
 https://mtu.academia.edu/JoshuaPearce[_https://mtu.academia.edu/JoshuaPearce_]
-
-2 - http://www.appropedia.org/User:J.M.Pearce[_http://www.appropedia.org/User:J.M.Pearce_]
+. http://www.appropedia.org/User:J.M.Pearce[_http://www.appropedia.org/User:J.M.Pearce_]
 ====
 
-==== Ainda sobre os "papers não-acadêmicos"
-
+[IMPORTANT]
+.Ainda sobre os "papers não-acadêmicos"
+====
 Já no início desta obra fomos claros quanto às referências informais. Estamos num período
 de mudança de papéis sociais, não há dúvidas disso. E embora tenhamos ressaltado o papel da academia como uma
 fonte de conhecimento científico da humanidade, é importante que ela não é a única, e um fenômeno que surgiu
@@ -733,18 +722,12 @@ associado, citações contabilizadas (exceto por dados privados como os coletado
 têm sua localização e importância relativa enormemente dificultadas em relação aos acadêmicos. São artigos
 que merecem ser retirados da obscuridade até para embasar o escrutínio acadêmico de que necessitam e este livro
 procura cumprir este papel. Alguns deles são referenciados no decorrer deste livro, um exemplo notável sendo o
-artigo "Polyholes"^1^ do usuário experimentalista _nophead_ (Chris Palmer).
-
-[NOTE]
-====
-.Referência:
-1 -
-http://hydraraptor.blogspot.com.br/2011/02/polyholes.html[_http://hydraraptor.blogspot.com.br/2011/02/polyholes.html_]
+artigo "Polyholes" do usuário experimentalista _nophead_ (Chris Palmer), em http://hydraraptor.blogspot.com.br/2011/02/polyholes.html[_http://hydraraptor.blogspot.com.br/2011/02/polyholes.html_]
 ====
 
 === E no Brasil?
 ==== O Fork Comunitário:
-Do GuiaCNC para a RepRapBR
+.Do GuiaCNC para a RepRapBR
 
 O projeto RepRap foi -- e continua sendo -- o catalisador de oportunidades para que pessoas criativas, engenhosas
 e curiosas fizessem, ao redor do mundo, suas pequenas revoluções, seus trabalhos em grupo. Nosso país sempre foi
@@ -757,23 +740,18 @@ dada a "partida", começaram a realizar encontros de confraternização e troca 
 empreitada. Este foi o primeiro e-mail do grupo que se intitulou "Grupo de Estudo RepRapBR" (o remetente foi
 __Alain Mouette__, que já acompanhava há anos o projeto RepRap):
 
-[IMPORTANT,icon=None]
-====
-[small]`Este é o convite oficial para participação do Grupo de Estudo para RepRap. +
- +
-* O objetivo é comprar um kit derivado do RepRap <http://store.makerbot.com/featured-products/cupcake-cnc-basic.html>
-cujo custo é de US$750, se conseguirmos trazer sem impostos. Não é o RepRap original, mas usa as mesmas
-placas. Infelizmente o dinheiro vai ter que vir na frente, nenhum de nós tem como bancar... +
- +
-* vamos nos reunir regularmente uma vez por mês na masmorra (Sir. Jorge já deu sua benção). +
- +
-* Vamos estudar esse protótipo para estudar como fazer nossas cópias e estudar também como fazer usando CNCs
-que já existem. Estudo preliminar já mostrou que deve ser possível, mas parte do Hardware tem que ser o deles
-para ser compatível com o software. +
- +
-* Este grupo é só para quem estiver presente, tudo que levantarmos será conhecimento aberto, mas não pretendemos
-ficar documentando de progresso do nosso estudo. Salvo é claro que alguém seja voluntário para esse fim específico.`
-====
+[small][source]
+----------
+Este é o convite oficial para participação do Grupo de Estudo para RepRap.
+
+* O objetivo é comprar um kit derivado do RepRap <http://store.makerbot.com/featured-products/cupcake-cnc-basic.html> cujo custo é de US$750, se conseguirmos trazer sem impostos. Não é o RepRap original, mas usa as mesmas placas. Infelizmente o dinheiro vai ter que vir na frente, nenhum de nós tem como bancar...
+
+* vamos nos reunir regularmente uma vez por mês na masmorra (Sir. Jorge já deu sua benção).
+
+* Vamos estudar esse protótipo para estudar como fazer nossas cópias e estudar também como fazer usando CNCs que já existem. Estudo preliminar já mostrou que deve ser possível, mas parte do Hardware tem que ser o deles para ser compatível com o software.
+
+* Este grupo é só para quem estiver presente, tudo que levantarmos será conhecimento aberto, mas não pretendemos ficar documentando de progresso do nosso estudo. Salvo é claro que alguém seja voluntário para esse fim específico.
+----------
 
 Isto está documentado no primeiro post do blog do grupo de estudo,
 http://reprapbr-ge.blogspot.com.br/2010/08/historico-do-grupo-de-estudo.html[_http://reprapbr-ge.blogspot.com.br/2010/08/historico-do-grupo-de-estudo.html_].
@@ -827,13 +805,13 @@ com público registrado de _1240_ pessoas! Foi realizado em um ginásio de Horto
 de feira e demonstrações de fabricantes e profissionais de Impressão 3D.
 
 [[expo3dbr2016_1]]
-image::image21.jpeg[image,width=610,height=475]
+image::image21.jpeg[image,width=610,height=475,align="center",title="Algumas fotos do encontro do grupo ReprapBR em 2014, em Campinas. Praticamente um churrasco entre amigos. A galeria você pode conferir no álbum do Google Photos: http://goo.gl/KoRkpN"]
 
 [[expo3dbr2016_2]]
-image::image22.jpeg[image,width=610,height=524]
+image::image22.jpeg[image,width=610,height=524,align="center",title="Apenas 2 anos mais tarde, aquele encontro entre amigos transformou-se em um evento aberto ao público em um ginásio de Hortolândia com milhares de frequentadores, e muitos dos expositores e palestrantes sendo os inscritos dos encontros anteriores. O hobbyismo se profissionalizou, a garagem virou indústria. Não deixe de conferir o sítio web do evento para conferir mais fotos e os expositores: http://www.expo3dbr.com.br"]
 
 [[expo3dbr2016_3]]
-image::image23.jpeg[image,width=642,height=377]
+image::image23.jpeg[image,width=642,height=377,align="center",title="Edição de 2017 da Expo3DBR, feita em São Bernardo. Roupas impressas em 3D (à esquerda e acima), ciclo de palestras (à esquerda e abaixo) e o pavilhão de expositores."]
 
 Além do movimento _diretamente_ relacionado à impressão 3D, tivemos em solo nacional -- sempre com ligações
 internacionais pois o desenvolvimento aberto é por natureza inclusivo -- vários grupos de pesquisa, fabricação e
@@ -858,7 +836,7 @@ em sua página com explicações aprofundadas e estratégicas do Movimento Maker
 http://www.makers.net.br/[_http://www.makers.net.br_].
 
 [[fotomakersnet]]
-image::image24.png[image,width=642,height=571]
+image::image24.png[image,width=642,height=571,align="center",title="A Makers no evento Youpix em 2014, para demonstrar a impressão 3D para o público jovem. O evento recebeu mais de 18 mil pessoas em três dias!"]
 
 ==== LAPAC -- Universidade Estadual de Campinas
 
@@ -876,14 +854,12 @@ pode-se esperar delas um rigor e conformidade muito maior do que comumente se en
 o LAPAC presta um importante papel de embasamento científico e formal para o tão disperso conhecimento nessa área.
 
 [[fotolapac]]
-image::image25.jpeg[image,width=613,height=505]
+image::image25.jpeg[image,width=613,height=505,align="center",title="Uma foto do interior do LAPAC, publicada com permissão. À esquerda, a máquina amarela é uma fresadora CNC Vitor Ciola, modelo Scriba, com mesa de vácuo e área de fresagem 1000x2000mm. Presentes na foto estão o Prof. Dr. André Araújo (de vermelho) e Prof. visitante Affonso Orciuoli."]
 
 .Referências:
-Site do LAPAC: http://lapac.fec.unicamp.br/[_http://lapac.fec.unicamp.br_]
-
-Canal de youtube: https://www.youtube.com/user/lapacfec[_https://www.youtube.com/user/lapacfec_]
-
-Algumas publicações:
+* Site do LAPAC: http://lapac.fec.unicamp.br/[_http://lapac.fec.unicamp.br_]
+* Canal de youtube: https://www.youtube.com/user/lapacfec[_https://www.youtube.com/user/lapacfec_]
+* Algumas publicações:
 http://www.fec.unicamp.br/\~lapac/publicacoes.htm[_http://www.fec.unicamp.br/~lapac/publicacoes.htm_]. Artigos
 adicionais podem ser encontrados no currículo _lattes_ da chefe do Laboratório, Gabriela Celani:
 http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4792067H6[_http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4792067H6_]
@@ -902,7 +878,7 @@ têm crescimento rápido levando à necessidade de substituição constante das 
 necessidade de serem baratas).
 
 [[colagemmao3d]]
-image::image26.png[image,width=619,height=116]
+image::image26.png[image,width=619,height=116,align="center",title="Algumas fotos de conquistas e fabricações do grupo Mão3D, com seu logotipo no centro."]
 
 O grupo da Dra. Elizete além de trabalhar com os modelos open-source do projeto e-NABLE busca desenvolver um
 protocolo de reabilitação adequado. Com seu caráter acadêmico como projeto de extensão universitária no
@@ -934,7 +910,7 @@ muitas vezes revindicam créditos sobre algo que não criaram, com os designs op
 sendo um alvo frequente.
 
 [[fotoeventomao3d]]
-image::image27.jpeg[image,width=642,height=534]
+image::image27.jpeg[image,width=642,height=534,align="center",title="O stand do Projeto Mão3D em uma de suas inúmeras demonstrações, no Evento TOM-SP em 2015 para tecnologias assistivas."]
 
 Das colaborações do projeto Mão3D, uma que se destaca é a colaboração com outro grupo acadêmico, o Grupo de
 Pesquisa em Manufatura Aditiva do Instituto Tecnológico da Aeronáutica, GPMA/ITA. O desafio é tão grande que,
@@ -990,7 +966,7 @@ como seus artigos de blog e até participação em artigos científicos, com seu
 em português em co-autoria com Miamoto, que ensina Reconstrução Facial Forense usando softwares livres e gratuitos.
 
 [[fotociceroepaulo]]
-image::image28.jpeg[image,width=642,height=435]
+image::image28.jpeg[image,width=642,height=435,align="center",title="Dr. Paulo Miamoto e Cícero Moraes na mensuração de um crânio impresso em 3D. Os créditos dados ao autor deste livro aparecem pela sua colaboração em imprimir o crânio. Fonte: http://www.ciceromoraes.com.br"]
 
 Esta parceria iniciou-se com as ciências forenses como pano de fundo, e embora novas metodologias estivessem em
 franco desenvolvimento (como o protocolo para reconstruções faciais totalmente realizado com software livre),
@@ -1021,7 +997,7 @@ segue em projetos de divulgação de ciência e tecnologia junto à mídia, Miam
 como docente de cursos de graduação e pós-graduação em odontologia e medicina e pesquisador.
 
 [[colagemciceropaulo]]
-image::image29.png[image,width=632,height=544]
+image::image29.png[image,width=632,height=544,align="center",title="Alguns dos casos de sucesso do prolífico trabalho de Cícero e Paulo, em sentido horário: o papagaio Verdin com sua prótese de bico, a reconstituição de Maria Madalena, o Jabuti Fred, o tucano Bicolino e a reconstituição de Santo Antônio. Muitas dessas histórias podem ser encontradas em http://www.ciceromoraes.com.br. Note que alguns dos trabalhos foram fabricados em impressoras 3D industriais, não FFF."]
 
 É sempre saudável notar que muitas das conquistas de Paulo, Cícero e seus associados foram possíveis por causa
 de uma instituição governamental que é central ao desenvolvimento da impressão 3D industrial e comunitária
@@ -1045,16 +1021,16 @@ a _Andreas Vesalius_ (1514-1564, considerado o "pai da anatomia moderna") e ele 
 sob a GPL versão 2, disponível para Mac OS X, Linux e Windows.
 
 [[screenshotinvesalius]]
-image::image30.jpeg[image,width=593,height=438]
+image::image30.jpeg[image,width=593,height=438,align="center",title="Screenshot do Invesalius rodando em um Mac OS X. Código-fonte em https://github.com/invesalius/invesalius3/ - fonte: http://www.cti.gov.br"]
 
 [[colagemcti]]
-image::image31.png[image,width=586,height=520]
+image::image31.png[image,width=586,height=520,align="center",title="Jorge Vicente, chefe da equipe do Núcleo de Tecnologias Tridimensionais do CTI. Fonte: http://www.cti.gov.br"]
 
 Faz-se mister dar crédito especial ao Dr. Jorge pelo envolvimento com a impressão 3D bem antes da sua explosão
 com a queda da patente, já em 2007 tendo colaborado com um livro organizado pelo pesquisador Neri Volpato:
 
 [[livromariovolpato]]
-image::image32.jpeg[image,width=352,height=570]
+image::image32.jpeg[image,width=352,height=570,align="center",title="&quot;Já mexiam com Impressão 3D antes de ser cool&quot; - créditos: editora Blücher. ISBN 9788521203889"]
 
 ==== Outros pioneiros e divulgadores
 
@@ -1092,14 +1068,17 @@ mais a pena comprar um pacote deles e jogar a parte plástica fora do que ter qu
 que ainda são difíceis de achar.
 
 [[fotomolaspregador]]
-image::image33.png[image,width=642,height=591]
+image::image33.png[image,width=642,height=591,align="center",title="À esquerda e à direita, duas molas de compressão para mesa aquecida. Entre elas, uma mola de pregador comum de cozinha, com praticamente as mesmas medidas e propriedades mecânicas e elásticas (o pregador de onde foi retirada aparece acima).  O conjunto de quatro molas de compressão, encontrável no exterior, custa 3 euros (medidas: diâmetro interno 4.5, externo 7.55, comprimento 15mm, 6 voltas) mais frete. O conjunto de 24 pregadores de plástico, cada um com uma mola, é encontrado em qualquer supermercado nacional por preço equivalente a 5 euros."]
 
-Citações:
-
-1.  Gould, S. J. (1991). Exaptation: A crucial tool for evolutionary psychology. __Journal of Social
-Issues, 47__, 43-65.  2.  Jester JV (2008). _https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2275913["Corneal crystallins
-and the development of cellular transparency"]._ Seminars in Cell & Developmental Biology. *19* (2): 82--93.  3.
-Innovation Through Exaptation - http://timkastelle.org/blog/2010/05/innovation-through-exaptation/
+[NOTE]
+.Referências:
+====
+. Gould, S. J. (1991). Exaptation: A crucial tool for evolutionary psychology. __Journal of Social
+Issues, 47__, 43-65.
+. Jester JV (2008). _https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2275913["Corneal crystallins
+and the development of cellular transparency"]._ Seminars in Cell & Developmental Biology. *19* (2): 82--93.
+. Innovation Through Exaptation - http://timkastelle.org/blog/2010/05/innovation-through-exaptation/
+====
 
 === O Complicado Mercado Maker: o Bom, o Mau e o Feio
 
@@ -1245,7 +1224,7 @@ a faz ficar em tensão constante com as barras roscadas. Isso aumenta o desgaste
 projetistas da "solução".
 
 [[reinvencaodarodaquadrada]]
-image::image34.png[image,width=642,height=483]
+image::image34.png[image,width=642,height=483,align="center",title="A reinvenção da roda quadrada - algumas das (inúmeras) modificações desinformadas para a Prusa i3 no Thingiverse pra solucionar o problema (inexistente) da barra roscada solta. Nota: algumas variações da prusa ainda igualam os diâmetros da barra, usando barra roscada de 8mm."]
 
 Embora raramente, o teste desinformado pode suprir resultados e resultar em algo genuinamente inovador. É possível
 fazer uma analogia com o processo evolutivo: mutações são erros de cópias de genes, e quase sempre são
@@ -1264,9 +1243,7 @@ acontecendo em paralelo massivamente às vezes compensa estatisticamente as baix
 .Notas:
 ====
 . https://pt.wikipedia.org/wiki/Cauda_longa[_https://pt.wikipedia.org/wiki/Cauda_longa_]
-
 . http://www.stratasys.com/recycle[_http://www.stratasys.com/recycle_]
-
 . https://hackaday.com/category/hackaday-columns/fail-of-the-week-hackaday-columns/[_https://hackaday.com/category/hackaday-columns/fail-of-the-week-hackaday-columns/_]
 ====
 
@@ -1291,7 +1268,7 @@ Um pouco como era de se esperar, o design é relativamente simples, cantos retos
 início do projeto reprap.
 
 [[extrusorwade]]
-image::image35.png[image,width=642,height=466]
+image::image35.png[image,width=642,height=466,align="center",title="Wade’s Geared Nema 17 Extruder: http://www.thingiverse.com/thing:1794. Note a data: 2010. Já de início, a licença usada era a open-source GPL (mesma do kernel Linux). Sendo tão primordial, teve 22 variantes no thingiverse (&quot;22 remixes&quot;)."]
 
 É um design funcional e o fato de ter _redução_ no tracionamento (ou seja, engrenagens adicionais ligadas à
 rotação do motor até os dentes que empurram o filamento) era essencial para a época, em que se usavam motores
@@ -1306,7 +1283,7 @@ Wade’s Extruder", pra não deixar de dar crédito ao Wade, mas o extrusor, que
 sendo conhecido como "Greg’s Wade Extruder" (‘extrusor do Wade do Greg’).
 
 [[extrusorgreg]]
-image::image36.png[image,width=619,height=540]
+image::image36.png[image,width=619,height=540,align="center",title="O Greg's Wade Extruder, até hoje muito usado, na forma de variações, em Grabers vendidas em kit no mercado brasileiro. Ele resolveu uma série de problemas e encaixes para a época, sendo um pouco mais compacto e mais propício à manutenção e ainda tem &quot;curvas sensuais&quot; (palavras do autor). Note que os furos da engrenagem são o logotipo do projeto reprap!"]
 
 Apesar de o extrusor do Greg aparecer com menos derivações que o Wade (19 contra 22) no site thingiverse, ele
 teve _muito_ mais sucesso. Muitas delas foras do site, ou ainda no próprio thingiverse mas não contabilizada,
@@ -1335,13 +1312,13 @@ e fez o dele incorporando modificações pontuais de outros, e também se tornan
 origem a nada menos de 88 derivações contabilizadas! E se tornando o __extrusor do Wade do Greg do Jonas__.
 
 [[extrusorjonas]]
-image::image37.png[image,width=642,height=526]
+image::image37.png[image,width=642,height=526,align="O extrusor do Wade do Greg do Jonas, com contribuições do Stoffel, http://www.thingiverse.com/thing:18379. Quando o design é open-source, o autor nunca permanece no anonimato!",title="O extrusor do Wade do Greg do Jonas, com contribuições do Stoffel, http://www.thingiverse.com/thing:18379. Quando o design é open-source, o autor nunca permanece no anonimato!"]
 
 Lembra-se que falamos da trajetória do grupo ReprapBR? Aqui os caminhos se cruzam. O mesmo Alain Mouette que
 enviou o primeiro e-mail para o grupo aparece agregando mais um vagão ao agilíssimo trem da frictionless innovation:
 
 [[extrusorajgw]]
-image::image38.png[image,width=642,height=419]
+image::image38.png[image,width=642,height=419,align="center",title="O extrusor do Wade do Greg do Jonas do Alain com contribuições do Stoffel, http://www.thingiverse.com/thing:40642. Chega, né? Extrusor AJGW está de bom tamanho! Nessa figura as &quot;origens&quot; do modelo aparecem no quadrinho à direita."]
 
 === Quando vem a fricção
 
@@ -1371,7 +1348,7 @@ difícil tratar "e se", mas podemos ter uma evidência notável, ainda em 2014 ,
 técnica que foi muito aclamado em fóruns e é usado em impressoras open-source brasileiras, o __Alex Extruder__.
 
 [[extrusoralex]]
-image::image39.png[image,width=642,height=491]
+image::image39.png[image,width=642,height=491,align="center",title="Alex Extruder, http://www.thingiverse.com/thing:220493"]
 
 Sob todos os pontos de vista, a excelência técnica do extrusor é inegável. Tem mais plástico nos pontos
 de stress mecânico do extrusor. Tem encaixes finos permitindo a movimentação desimpedida da dobradiça e o
@@ -1383,7 +1360,7 @@ Solidworks, ferramenta de modelagem sólida, a licença livre de pouco adiantou.
 derivações, ambas sendo a reconstrução e extensão em ferramentas diferentes.
 
 [[extrusorlucaseka]]
-image::image40.png[image,width=642,height=361]
+image::image40.png[image,width=642,height=361,align="center",title="Lucas Extruder - http://www.thingiverse.com/thing:378330 - e KA extruder - http://www.thingiverse.com/thing:252556 - as duas únicas derivações do Alex Extruder, ambas consistindo em reconstrução e extensão do Alex Extruder em ferramentas distintas."]
 
 O *KA Extruder* foi uma tentativa de transposição do Alex Extruder para o OpenSCAD. Mas, como se pode notar pelos
 comentários na página do design, ele tinha várias "pontas soltas", era feito para um padrão de filamento que
@@ -1406,7 +1383,7 @@ versão seguinte do próprio autor e duas outras sendo leve modificações de ma
 do arquivo-fonte de Sketchup disponibilizado na página.
 
 [[extrusorlucasv2ederivacoes]]
-image::image41.png[image,width=642,height=225]
+image::image41.png[image,width=642,height=225,align="center",title="As derivações do Lucas Extruder, versão 1 (a versão 2 não teve derivações)."]
 
 O fluxo e evolução dos designs do thingiverse e outros sítios web de compartilhamento serve como uma fábula com
 moral para os interessados no compartilhamento de projetos e participação do mercado Maker: acessibilidade é
@@ -1420,10 +1397,8 @@ em SolidWorks.
 ====
 . 2003 Lawrence R. Klein Lecture, The Case Against Intellectual Monopoly -- M Boldrin, DK Levine -- International
 Economic Review, 2004 -- Wiley Online Library.
-
 . Leiva, Fernando, "Innovations as a Network of Ideas: Assessing Patent Values through Citations", Working Paper
 (2007).
-
 . http://www.popsci.com/diy/article/2013-08/get-3-d-printer-designs-expired-patents[_http://www.popsci.com/diy/article/2013-08/get-3-d-printer-designs-expired-patents_]
 ====
 
@@ -1480,7 +1455,7 @@ quando o consumidor procura produtores em sua área e já tem o modelo da peça,
 preços já explicitados na busca do sistema.
 
 [[screenshot3dhubs1]]
-image::image42.png[image,width=601,height=573]
+image::image42.png[image,width=601,height=573,align="center",title="Exemplo de busca no serviço 3DHubs, após o upload de modelos tridimensionais em formato STL pela interface web. As estrelinhas indicam a reputação de cada loja encontrada perto de Campinas, SP, e à direita o cálculo automático do preço cobrado."]
 
 Quem entende da técnica já notará algo "fora da ordem" aí: o preço ser calculado _automaticamente_
 não parece certo. Uma peça pode ter muitas geometrias possíveis, das mais fáceis às mais difíceis. Veremos
@@ -1496,7 +1471,7 @@ O 3DHubs não é o único. Em franco crescimento e popularização existe o serv
 que tem uma interface mais amistosa. A busca equivalente no Cammada permite até cálculo automático de frete:
 
 [[screenshotcammada1]]
-image::image43.png[image,width=636,height=473]
+image::image43.png[image,width=636,height=473,align="center",title="Busca no Cammada de serviços de impressão 3D perto de Campinas-SP após o envio de modelos 3D em formato STL."]
 
 O cammada permite ao produtor uma certa flexibilidade no cálculo automático como descontos conforme o volume
 aumenta. Ainda assim, não há nada que avalie estruturas adicionais, dificuldade do modelo e demais atributos,
@@ -1515,7 +1490,7 @@ difundidas ao público é a __calculadora Cammada__, uma aplicação web elegant
 preço de cobranças de acordo com uma série de variáveis.
 
 [[calculadoracammada1]]
-image::image44.png[image,width=630,height=438]
+image::image44.png[image,width=630,height=438,align="center",title="Calculadora Cammada, um ótimo ponto de partida para saber como cobrar por sua impressão."]
 
 A calculadora do Cammada tem ainda a (óbvia?) vantagem de ser perfeitamente integrada ao serviço que fazem,
 com detalhes como os descontos progressivos para volumes maiores. No entanto, isso não faz dele o único meio de
@@ -1736,14 +1711,13 @@ novo de impressora 3D nos sítios web de crowdfunding, assim como a contrastante
 "nunca compre impressora 3D de financiamento coletivo!".
 
 [[fotometamaquinacatarse]]
-image::image45.png[image,width=619,height=510]
+image::image45.png[image,width=619,height=510,align="center",title="O financiamento (completado com sucesso) da brasileira Metamáquina no website de financiamento coletivo Catarse já em 2012."]
 
 Mas como qualquer fenômeno de inovação econômica e social, o crowdsourcing em geral e o crowdfunding em
 particular não estão isentos de percalços, tanto para quem está do lado dos contribuidores quanto para quem
 oferece seus projetos em uma plataforma dessas.
 
-*Para o lado dos clientes,*
-
+.Para o lado dos clientes,
 * ..., ou, melhor dizendo, __financiadores do projeto__. Esse é o primeiro problema e, apesar de abstrato, até
 filosófico, tem consequências práticas bem pungentes. Os usuários pagantes de um projeto de financiamento
 coletivo dificilmente se enxergam como _investidores_ ou __financiadores__ e os próprios portais envolvidos
@@ -1753,12 +1727,10 @@ linguagem publicitária é tida como necessária para envolver e convencer o usu
 seduz sem informar o necessário. Isso se reflete nos próprios termos dos usuários, pois raramente quem investe
 em tais projetos diz que financiou algo - a palavra usada é "comprar", como se fosse só mais um brinquedo de
 aliexpress que demorasse alguns meses para chegar.
-
 * Muitos projetos -- a maioria, aliás -- atrasam a data de
 entrega dos prêmios. Em 2012 um levantamento do portal _kickstarter_ pela CNNMoney verificou que 84% dos projetos
 atrasaram^1^. Atraso não é a mesma coisa que falha, certamente, com os projetos que realmente falham sendo menos de
 5%, mas se é algo com que se conta para produção, o despreparo para isso pode acarretar prejuízos.
-
 * Como se
 fosse uma nova Corrida ao Ouro, muitos projetos se aproveitam da ingenuidade ou pouco conhecimento científico dos
 usuários e prometem façanhas irrealizáveis e tecnologias inexistentes, um novo __ouro de tolos__. Alguns exemplos
@@ -1767,7 +1739,6 @@ Waterseer é ainda mais complexo pois o investidor não ganha um prêmio, o resu
 a "lugares na África" não especificados, isto é, ainda espolia ardilosamente sentimentos humanitários
 de quem dá o dinheiro! Tais projetos invariavelmente mostram renderizações computadorizadas da situação
 que dizem almejar ao invés de um protótipo funcional.
-
 * No caso brasileiro, há a dificuldade adicional de
 frete e impostos. Na hora do financiamento o frete é apenas estimado, e pode ser diferente quando do envio para o
 Brasil. Algumas vezes o produtor não conhece bem as regras alfandegárias para o país e envia o produto por exemplo
@@ -1779,12 +1750,12 @@ financiamento coletivo, no mínimo por uma questão de viabilidade do projeto e 
 colaborando em conjunto para o projeto chegar à sua resolução, o que ainda evidencia que harmonia de interesses
 e comunicação são essenciais.
 
-*Para o lado dos produtores,*
-
-* ...a primeira observação a notar, e de novo abordando o aspecto psicológico da questão, é que **não existe
-prêmio por merecimento**. Devido à sua associação quase mística com o movimento Maker, à sua aura de inovação e
-de dinheiro relativamente fácil para mentes brilhantes realizarem seu potencial, **é muito fácil cair na armadilha
-da autoconfiança excessiva**. E a primeira razão dessa armadilha é que o campo das idéias, dos projetos, da
+.Para o lado dos produtores,
+* ...a primeira observação a notar, e de novo abordando o aspecto psicológico da questão, é que **não existe prêmio por merecimento**.
+Devido à sua associação quase mística com o movimento Maker, à sua aura de inovação e
+de dinheiro relativamente fácil para mentes brilhantes realizarem seu potencial,
+**é muito fácil cair na armadilha da autoconfiança excessiva**.
+E a primeira razão dessa armadilha é que o campo das idéias, dos projetos, da
 excelência intelectual é _muito_ diferente do campo da logística, do comércio, da indústria, da burocracia
 estatal e impostos, da publicidade e viabilidade de colocar alguma coisa no mercado e ela ser competitiva. Nesse
 sentido se pode dizer que há pouca diferença do financiamento coletivo e de uma _startup_ comum: é preciso ter
@@ -1792,13 +1763,13 @@ um plano de negócios sólido, fornecedores confiáveis e que cumpram seus prazo
 os custos de muitos intermediários e peças e procedimentos adicionais (eletrônicos e novos compostos podem ter
 que passar por um bocado de certificações industriais e testes de regulações, por exemplo), e não é surpresa
 que empreendedores de mercado mais falhem que sucedam. Alguns projetos podem ainda ter sucesso, mas a falta de
-planejamento para _depois dele_ pode levar uma campanhia à falência. *Mesmo uma idéia genuinamente brilhante e
-inovadora pode falhar, e falha* -- muito facilmente. Exemplos não faltam, um deles sendo a impressora 3D estilo
+planejamento para _depois dele_ pode levar uma campanhia à falência.
+**Mesmo uma idéia genuinamente brilhante e inovadora pode falhar, e falha** -- muito facilmente.
+Exemplos não faltam, um deles sendo a impressora 3D estilo
 delta Tiko^4^, e um exemplo nacional sendo a controladora de impressão 3D de escopo industrial "3DRoot"^5^. Em
 comum entre esses dois projetos, aliás, é confiar demais na parte do hardware e esquecer que o _software_ (ou no
 caso o firmware da controladora) é complexo e precisa de muito uso em campo pra ser devidamente depurado e afinado,
 ainda mais quando não são usados como base softwares maduros e testados como os do projeto reprap.
-
 * Reforçando
 uma obviedade, o investidor ou cliente __**busca gratificação**__. Isso não pode ser perdido de vista e se temos
 também os projetos de financiamento coletivo que buscam o máximo possível ter seus prêmios parecendo produtos
@@ -1812,7 +1783,6 @@ ele financia. O segundo caso terá muito mais sucesso pela gratificação que pr
 aberto, muitas soluções criativas podem ser inventadas para se ter sucesso na campanha. No caso específico de
 campanhas de cunho __político__, ideologias pesam bastante e o maior projeto de financiamento coletivo de cunho
 não-lucrativo foi do advogado Lawrence Lessig para reformar as regras de financiamento de campanhas políticas.^6^
-
 * Uma vantagem do financiamento coletivo é que um dos modos de o realizar -- o mais frequente -- é "tudo ou
 nada": o financiado estipula uma quantia mínima a ser atingida para que o processo possa ter sucesso, um prazo é
 criado (digamos, dois meses) e durante este prazo, a campanha está aberta aos investidores. Passado o prazo, caso a
@@ -1820,17 +1790,16 @@ quantia mínima não seja alcançada, todo o dinheiro é devolvido. Ninguém sai
 tentar obter o financiamento outras vezes, e isso realmente acontece -- certas campanhas só pegam "tração" na
 segunda ou terceira vez que são tentadas, e daí migram para o sucesso, como o bico de tungstênio de impressora 3D
 da dddmaterial^7^.
-
 * É educativo ao interessado no financiamento estudar os casos de falha de entrega, mais que
 os casos de sucesso. Fiascos milionários com quebra de contrato e intrigas pessoais como a impressora de resina
 __Peachy Printer__^8^ podem acontecer com qualquer um, e mostram bem a tensão e pressão pública que acometem
 um projeto desses. É interessante ainda ver que mesmo com a fragorosa falha deste projeto, o fato de a terem
 criado em regime open-source, com repositório no github^9^, permitiu que o projeto fosse continuado na forma
 da YXE3D^1^⁰, o que nos leva ao próximo ponto.
-
++
 [[yxe3dexpeachyprinter]]
-image::image46.png[image,width=580,height=563]
-
+image::image46.png[image,width=580,height=563,align="center",title="A YXE3D, continuação da famosa - e infame - &quot;Peachy Printer&quot; se utilizando do material de projeto open-source que já havia sido disponibilizado. Foto de bigtreeworld em https://imgur.com/a/ViaAu."]
++
 * Se parte do objetivo do projeto é disseminar uma tecnologia, não só vendê-la, vale muito a pena considerar
 anunciá-la como open-source (e existem diversas licenças para escolher que permitem diferentes tipos de controle),
 pois assim, mesmo com o projeto falhando, os usuários pagantes terão uma "consolação" (que pode, no limite,
@@ -1874,18 +1843,18 @@ forma de filamento enrolado em um carretel é questão apenas de o passar por um
 de filamentadora ou extrusora. O processo de derretimento do plástico pode ser entendido com o seguinte diagrama:
 
 [[explicacaofff]]
-image::image47.png[image,width=506,height=454]
+image::image47.png[image,width=506,height=454,align="center"]
 
 Este é o núcleo comum da tecnologia; no entanto, após a queda da patente da Stratasys em 2009, o mercado
 mudou. As impressoras passaram disso:
 
 [[fdmindustrialprereprap]]
-image::image48.png[image,width=316,height=292]
+image::image48.png[image,width=316,height=292,align="center",title="Impressora FDM Fortus 900 da Stratasys (créditos: Stratasys.com)"]
 
 para isso:
 
-[[ultimakerreprap]]
-image::image49.jpeg[image,width=662,height=358]
+[[diversasimpressoras3d]]
+image::image49.png[image,width=1384,height=727,align="center",title="Diversas impressoras 3D nacionais e estrangeiras, de variados design, desde as cartesianas abertas e fechadas até deltas (ou deltabots), SCARA e polar"]
 
 O que mudou, neste caso? E se mudou tanto, o que as impressoras da segunda ilustração têm em comum? Para
 responder isso, vamos separar as impressoras 3D em suas partes componentes:
@@ -2016,7 +1985,7 @@ interação com o usuário. Isso é um problema que vem sendo resolvido naturalm
 Arduino Mega por controladores mais potentes.
 
 [[deltasesimpson]]
-image::image63.png[image,width=594,height=291]
+image::image63.png[image,width=594,height=291,align="center",title="Algumas delta robots do projeto reprap. 1: Kossel. 2: Rostock. 3: GUS Simpson. Créditos: reprap.org"]
 
 *XY (Dualwire Gantry)* + O jeito mais intuitivo de pensar em um mecanismo que, em um plano, possa posicionar um
 elemento em uma coordenada (X,Y) determinada é haver, assim com os dois eixos, dois mecanismos (motores) fixos,
@@ -2026,7 +1995,7 @@ acima da outra com o suporte do elemento ocupando onde se cruzem. O nome signifi
 dois cabos".
 
 [[dualwiregantry]]
-image::image64.png[image,width=594,height=351]
+image::image64.png[image,width=594,height=351,align="center",title=""Dualwire Gantry" da Ulticampy V2 (créditos: ulticampy.com)"]
 
 * *CoreXY*
 O sistema batizado
@@ -2037,7 +2006,7 @@ com cinemática paralela e motores fixos na estrutura, controle fácil e permiti
 movimentação, tendo sido adotado em várias reprap e impressoras 3D comerciais de estrutura fechada.
 
 [[desenhocorexy]]
-image::image65.jpeg[image,width=531,height=406]
+image::image65.jpeg[image,width=531,height=406,align="center",title="Uma placa de alumínio com sistema CoreXY construído em guias para suportar grandes cargas. Créditos: corexy.com"]
 
 Como no caso das deltas, as impressoras 3D com
 CoreXY exigem que o firmware tenha conhecimento do sistema de eixos pois transformações de deslocamentos são
@@ -2046,10 +2015,10 @@ André Ruiz colaborou com esta obra com um diagrama elucidativo e bastante útil
 uma impressora deste tipo, a seguir:
 
 [[corexyandreruiz]]
-image::image66.png[image,width=594,height=404]
+image::image66.png[image,width=594,height=404,align="center",title="Regras para o arranjo de eixos de CoreXY, ilustração e texto criados por André Ruiz - andre.ruiz@gmail.com. A observação dele sobre inverter direções é que embora inverter o motor exija a rotação física deste em 180°, inverter a direção em que seu pinhão gira consiste de um expediente muito fácil de executar, que pode tanto ser feito conectando o motor ao contrário nos 4 pinos da placa quanto por um “flag” no firmware."]
 
-* *Outras XY e
-variantes* + Mais do que popularizar a cinemática do CoreXY, o sítio web de mesmo nome levantou a consciência que
+* *Outras XY e variantes* +
+Mais do que popularizar a cinemática do CoreXY, o sítio web de mesmo nome levantou a consciência que
 sistemas de eixos e cinemáticas podem ser aperfeiçoados e otimizados para vários tipos de construções. Muitos
 outros surgiram ou vieram à tona, alguns sendo variações do próprio CoreXY (__H.Bot__, __cantilevered CoreXY__,
 __CoreXZ__, etc.). ^4^
@@ -2061,41 +2030,38 @@ tornando montagem e manutenção caras. A diretiva de economia do projeto reprap
 bem distinto; embora inicialmente usassem dualwire gantry no primeiro modelo (darwin / rapman), modelos distintos
 de voluntários como a Prusa Mendel facilitaram enormemente o processo de peças e montagem com seu arranjo de
 eixos, que se traduz em:
-* Uma mesa móvel (eixo Y);
-* Duas guias lineares paralelas na horizontal para o eixo X
+** Uma mesa móvel (eixo Y);
+** Duas guias lineares paralelas na horizontal para o eixo X
 (o chamado carro X);
-* Eixo Z (vertical) representado por barras roscadas subindo e descendo o carro X, com guias
+** Eixo Z (vertical) representado por barras roscadas subindo e descendo o carro X, com guias
 lineares paralelas às barras roscadas garantindo movimento retilíneo. Isso faz o eixo Z ser mais lento que X e Y,
 o que é desprezível visto que é o eixo que menos se movimenta durante uma impressão;
-* Dois motores para o eixo
+** Dois motores para o eixo
 Z, para evitar desnível e distribuir a força.
-
++
 [[prusamendelcomcarrox]]
-image::image67.jpeg[image,width=570,height=660]
-
+image::image67.jpeg[image,width=570,height=660,align="center",title="Prusa Mendel, com carro X horizontal, dois motores no eixo Z e mesa móvel em Y (reprap.org)"]
++
 * *Carro X estilo Prusa i3* +
 Com a iteração 3 do design de Josef Prusa, duas alterações foram feitas no arranjo
 mecânico e ficaram tão populares que muitas repraps copiaram:
-
 ** Os dois motores do eixo Z passaram da parte de
 cima do quadro para a parte de baixo. Isso abaixou o ponto de massa da impressora 3D (visto que motores são pesados)
 e a deixou mais estável. O ponto negativo disso é que barras roscadas desgastam menos com forças de tração
 do que compressão, então no eixo Z perdeu-se um pouco na vida útil dessas vitaminas.
-
 ** O carro X teve suas
 guias lineares (barras lisas) trocadas de paralelas no plano horizontal para paralelas no plano vertical. Isso
 foi uma melhoria na estabilidade da impressora 3D porque o carro X se prende ao eixo Z, que é muito curto na
 dimensão Y e portanto não dá tanta estabilidade ao carro; fazendo o carro ser mais longo no eixo Z se aproveita
 da linearidade e estabilidade do arranjo de X com Z.
-
++
 [[prusai3motoresbaixo]]
-image::image68.jpeg[image,width=531,height=630]
+image::image68.jpeg[image,width=531,height=630,align="center",title="Prusa i3, com motores abaixo e carro X vertical"]
 
 Muitos outros arranjos mecânicos existem, é claro. Os citados aqui, entretanto, acomodam a grande maioria dos
 casos das impressoras 3D FFF de mercado e dão uma boa noção da cinemática das impressoras.
 
 .Movimentação da Mesa
-
 A movimentação da mesa de impressão -- aquecida ou sem aquecimento -- é o complemento à movimentação
 dos eixos. Alguns dos sistemas vistos resolvem parte do problema da localização do componente extrusor em um
 espaço tridimensional; os arranjos CoreXY e Dualwire Gantry o situam em um plano horizontal; o carro X das prusas
@@ -2109,20 +2075,21 @@ traz complicações, a maior delas é poder precisar de motores e um mecanismo q
 fabricação. Um conjunto desses é inevitavelmente pesado, e precisará não só de peças robustas como encaixes
 precisos para subir em perfeito equilíbrio. Com o peso ascendente, outro problema que surge é o centro de massa
 da impressora 3D sofrer deslocamento, e isso ser fonte de vibrações e imprecisões estruturais que afetam a
-qualidade da peça e a sobrevida do mecanismo.  + A construção em delta consegue evitar dois desses problemas:
+qualidade da peça e a sobrevida do mecanismo. +
+A construção em delta consegue evitar dois desses problemas:
 fixa os motores na base e permite que o centro de massa da impressora 3D se desloque relativamente menos, visto
 que o conjunto de braços e _effector_ é, por construção, mais leve. No entanto, a altura extra exigida para
 essa construção é uma nova fonte de vibrações. Pequenas folgas de encaixe são ampliadas pelo comprimento,
 o torque das forças laterais torna-se significativo e fonte de vibrações e a estrutura passa a ter necessidade
 de mais e mais reforços. Via de regra, se uma impressora 3D delta passa de 40cm de altura, suas estruturas --
-que veremos em seguida -- devem ser trocadas de extrusões 1515 pra 2020 ou maiores.  + As estruturas com mesa
+que veremos em seguida -- devem ser trocadas de extrusões 1515 pra 2020 ou maiores. +
+As estruturas com mesa
 fixa, no entanto, apesar dessas dificuldades, estão entre as melhores para escalas grandes de impressão. Isso
 porque os extrusores ou effectors serão ampliados em função da área, enquanto que o peso sustentado pela mesa
 cresce mais rápido - de acordo com o volume. Se uma impressora 3D com volume de impressão 10 cm x 10 cm x 10
 cm precisa sustentar um peso máximo de 1,04 kg de ABS, uma de volume de impressão 10 vezes maior de cada lado,
 ou seja, 1m x 1m x 1m teria um extrusor 100 vezes mais pesado -- para um peso sobre a mesa _mil vezes_ maior
 (1.040 kg).
-
 * *Mesa com movimento linear horizontal* +
 Usada nas _Prusa_ como eixo Y, o movimento horizontal,
 como no eixo Z, é sustentado por guias lineares (barras lisas com rolamentos) mas movido por correias de um motor
@@ -2131,7 +2098,6 @@ de volume de construção, e 60 mm/s de velocidade máxima nos eixos horizontais
 mesa não chega a apresentar artefatos notáveis no processo de impressão 3D. Mas em se aumentando a escala,
 e principalmente a velocidade, a estabilidade da peça impressa gradualmente diminuirá. Aceleração e jerk, a
 serem explicados na seção sobre firmware, terão grande influência na qualidade da peça neste caso.
-
 * *Mesa com movimento linear vertical (cantilevered)* +
 No caso em que a mesa tem movimento vertical (eixo Z), topamos
 com um problema de engenharia e arquitetura chamado de _cantilever_ ou __estrutura em consola__. O problema,
@@ -2174,7 +2140,7 @@ de engenharia, é a parte mais simples. A parte mais complexa é o algoritmo de 
 destes 5 eixos para ter a forma mais suave e harmônica possível.
 
 [[reprap5eixos]]
-image::image69.jpeg[image,width=508,height=627]
+image::image69.jpeg[image,width=508,height=627,align="center",title="mpressora 3D Open-Source de 5 eixos; os dois eixos adicionais são os eixos de rotação da mesa. Créditos: Universidade de Oslo. Artigo original em http://www.3ders.org/articles/20150704-an-amazing-open-source-5-axis-3d-printer-built-by-university-of-oslo-master-student.html"]
 
 === "Vitaminas" comuns da estrutura de uma impressora 3D
 
@@ -2191,20 +2157,21 @@ seguido do diâmetro do corpo em milímetros) são menos numerosos no mercado. A
 (ou seja, com a ponta cega) também são mais raros, especialmente das medidas mais frequentes nas impressoras 3D
 domésticas ("M3" a "M5", ou de 3mm de diâmetro a 5mm de diâmetro), agravado por a maioria das receitas
 de construção e impressoras comercializadas precisarem de tamanhos bem específicos de parafusos (variando de
-6 a 60mm de comprimento).  +
+6 a 60mm de comprimento). +
 As especificações dos parafusos são geralmente dadas pelo modelo -- e às vezes
 o material -- seguido da cabeça (formato e encaixe), o diâmetro e o comprimento, não necessariamente nessa
 ordem. Assim, um "parafuso de máquina inox allen com cabeça chata M3x16" ou "parafuso auto-atarraxante de
-fenda philips de cabeça panela M4x40 de bronze" são denominações comuns. Arruelas e porcas + Apesar de não ser
+fenda philips de cabeça panela M4x40 de bronze" são denominações comuns. Arruelas e porcas +
+Apesar de não ser
 do escopo deste livro entrar detalhadamente na logística e tipos dos parafusos, algumas colocações gerais são
 úteis para o leitor saber como os escolher para construir sua impressora ou consertar ou aprimorar a sua atual:
 ** *Existem muitos tipos de sulcos.* Nas impressoras 3D, os três tipos mais usados são __fenda__, _philips_
 e _allen_ (hexagonal). Existem ainda os parafusos sem sulco, os usados com chave de boca (cabeça hexagonal),
 mas muito pouco usados nas impressoras 3D.
-
++
 [[sulcosparafusos]]
-image::image70.png[image,width=642,height=346]
-
+image::image70.png[image,width=642,height=346,align="center",title="À esquerda: parafuso-mosca sendo apertado em um acoplador de alumínio flexível que junta o pino do motor a uma barra roscada em uma impressora Graber i3. No meio: o canto de uma mesa de impressão com porca-borboleta, entre os clipes metálicos para fixação do vidro.. Outra porca se encontra em um parafuso em cima da mesa. À direita: padrões de sulcos comumente encontrados no mercado. (a) Fenda, (b) Chave Phillips ou Chave Estrela, (c) Pozidriv, (d) Torx, (e) Allen, (f) Robertson, (g) Tri-Wing, (h) Torq-Set, (i) Spanner. Fonte: wikipedia"]
++
 ** **O sulco não necessariamente define a cabeça**. Por exemplo, embora seja comum parafusos allen virem em cabeças
 cilíndricas, isso não é sempre verdade. Cabeças cônicas em especial podem vir a trincar ou danificar certos
 materiais que são feitas algumas impressoras, como acrílico ou MDF. Na dúvida, compre somente os de cabeças
@@ -2233,10 +2200,10 @@ no próprio corpo, são comumente usados em pinhões de motores e acopladores de
 um chanfro do pino e impedir o movimento de rotação relativa. A ausência da cabeça é justamente para que não
 reste uma "saliência" na peça. Como são parafusos geralmente bem pequenos, quase sempre são feitos em aço
 reforçado preto.
-
++
 [[tiposparafusos]]
-image::image71.png[image,width=618,height=622]
-
+image::image71.png[image,width=618,height=622,align="center",title="Alguns parafusos e porcas de mercado, em sentido horário: 1 - parafuso M3x16 de fenda de máquina com cabeça cônica; 2- M3x12 allen de máquina; 3 - M3x20 de máquina de fenda; 4 - porca M3; 5 - porca M3 quadrada, modelo 1, usada nos cortes da graber; 6 - porca M3 quadrada, modelo 2; 7 - porca M3 auto-travante/nyloc; 8 - parafuso allen de máquina M5x50; 9 - arruela M5; 10 - porca M5; 11 - parafuso sextavado M5x12; 12 - porca M8 auto-travante; 13 - porca M8; 14 - parafuso &quot;auto-atarraxante&quot;/de madeira  M2 com cabeça phillips; 15 - parafuso auto-atarraxante de madeira com cabeça phillips cônica; 16 - rebite de rosca M8; 17 - rebite de rosca M3; 18 - rebite de rosca M5. Nesta fotografia não há nenhum componente de unidades imperiais, somente métricas."]
++
 * *Barras lisas* +
 São elementos estruturais em que se assentam os eixos (X, Y e/ou Z) da impressora 3D. Geralmente
 são conjugadas com _rolamentos lineares_ ou mesmo buchas cujo diâmetro interno concide com o diâmetro da barra;
@@ -2262,10 +2229,10 @@ perpendicular a ele e os lados têm encaixe V-Slot (que é na verdade uma forma 
 caso esteja usando este livro para decidir qual T-Slot usar, é usar o perfil *2020* pois é robusto, muito popular
 e existem modificações das deltas que usam outros perfis para usá-lo no lugar. Além disso, é mais fácil
 achar parafusos especializados em seus encaixes.
-
++
 [[perfilaluminio]]
-image::image72.jpeg[image,width=604,height=353]
-
+image::image72.jpeg[image,width=604,height=353,align="center",title="Perfil de alumínio com "T-Slot". Créditos: grabcad.com"]
++
 * *Barras roscadas (parafusos infinitos)* +
 São elementos estruturais por vezes usados como elementos imóveis
 (como na estrutura da Prusa Mendel), por outras vezes usados como componentes giratórios que, através da
@@ -2332,30 +2299,30 @@ lineares e radiais, mas existem inúmeras outras configurações de rolamentos -
 para rotação esférica e as dobradiças para articulações. Também existem muitos outros tipos de rolamentos em
 relação a outros aspectos da construção -- por exemplo, rolamentos que usam cilindros ao invés de esferas,
 ou mesmo fluidos ou campos magnéticos.
-
-[[barraserolamentos]]
-image::image73.jpeg[image,width=642,height=380]
-
-[[barraefusocomparados]]
-image::image75.png[image,width=642,height=362]
-
 * *Buchas* +
 Buchas são peças de material deslizante -- geralmente
 bronze ou cobre, mas com -- que cumprem o mesmo papel dos rolamentos lineares, deslizando um elemento ao longo do
 comprimento de uma barra. Diferentemente do rolamento que usa corpos rolantes, a bucha depende tão-somente do baixo
 atrito entre ele e o elemento deslizante, que deve ser cromado e bem lubrificado. A bucha tem um custo menor que o
 rolamento, mas sua maior vantagem em relação a ele é a operação silenciosa. Por outro lado, buchas cujo encaixe
-não seja perfeito emperram e não permitirão ao mecanismo funcionar, enquanto que o rolamento absorve as folgas. +
+não seja perfeito emperram e não permitirão ao mecanismo funcionar, enquanto que o rolamento absorve as folgas.
++
+[[barraserolamentos]]
+image::image73.jpeg[image,width=642,height=380,align="center",title="1 - Bucha de bronze; 2 - rolamentos lineares; 3 - barra lisa M8 (8mm); 4 - barra roscada M8; 5 - rolamentos radiais"]
++
 As buchas de plástico no entanto costumam ser auto-lubrificantes, isto é, o próprio material, ao sofrer abrasão,
 deposita um lubrificante sólido que a faz ter baixo atrito com o material em contato. A óbvia desvantagem é
 que a abrasão acaba desgastando a peça, que acaba ganhando folga com o tempo. Buchas impressas em plásticos
 de impressoras 3D também são usadas em algumas impressoras, mas geralmente têm pouca eficiência. A própria
 IGUS, fabricante de buchas de plástico, vende filamentos de impressão 3D para tais propósitos (Iglidur I170 e
 Iglidur I180).
-
++
 [[buchasdrylin]]
-image::image74.png[image,width=642,height=365]
-
+image::image74.png[image,width=642,height=365,align="center",title="Alguns tipos de buchas de plástico autolubrificante (Drylin/Poliacetal) da IGUS. Fonte: http://www.igus.com/wpck/3542/DryLin_R_Lineargleitlager?C=US"]
++
+[[barraefusocomparados]]
+image::image75.png[image,width=642,height=362,title="Comparação entre fuso e barra roscada (créditos: forum.reprap.org)"]
++
 * *Patins e trilhos* +
 Patins e trilhos são outro modo de se ter _guias lineares_ que não usam as barras lisas
 com rolamentos. *Patim* ou *carro* é o nome que se dá à peça que desliza, equivalente ao *rolamento linear*
@@ -2379,7 +2346,7 @@ A _Teoria de Controle_ dada a alunos de Engenharia Mecânica nos ensina que há 
 *malha aberta* e **malha fechada**.
 
 [[malhaabertamalhafechada]]
-image::image76.png[image,width=642,height=348]
+image::image76.png[image,width=642,height=348,align="center"]
 
 * *Malha aberta* - é um sistema em que a saída (resultado) não exerce qualquer ação sobre o sinal de
 controle, não sendo comparada com uma saída de referência esperada. Em outras palavras, é um sistema em que
@@ -2412,7 +2379,7 @@ e ligar a chave -- e o controlador imediatamente pára o motor, pois ele não po
 o motor girando para o sentido positivo distancia o elemento da chave.
 
 [[motorchaveendstop]]
-image::image78.png[image,width=642,height=307]
+image::image78.png[image,width=642,height=307,align="center"]
 
 Obviamente, algumas variáveis são importantes aqui. A primeira observação a se notar é que se o motor está
 se movendo na direção do endstop, há contato e ele precisa parar, esse tempo de reação entre o contato e
@@ -2476,7 +2443,7 @@ distância ultrassônicos ou detectores de pressão poderiam em tese ser utiliza
 a cada dia, como o sensor motorizado de pressão BLTouch, submetido a financiamento coletivo.
 
 [[sensorbltouch]]
-image::image79.png[image,width=642,height=321]
+image::image79.png[image,width=642,height=321,align="center",title="Sensor BLTouch para autonivelamento de mesa em sua página do indiegogo. Fonte: https://www.indiegogo.com/projects/bltouch-auto-bed-leveling-sensor-for-3d-printers#/"]
 
 É importante perceber que embora teoricamente você pudesse se beneficiar de endstops sendo colocados nos dois
 extremos de um eixo -- um representando a coordenada zero (mínimo) e outro representando a coordenada máxima
@@ -2518,7 +2485,7 @@ derrete. Essas duas funções são realizadas por partes diferentes do extrusor:
 filamento ser alimentado na segunda parte, que é chamada de hot end ou hotend ("extremidade quente").^1^
 
 [[estruturaextrusorfreecad]]
-image::image80.png[image,width=618,height=395]
+image::image80.png[image,width=618,height=395,align="center",title="Estrutura de um cold end / tracionador engrenado típico. Neste o filamento (em vermelho) entra por cima e sai para o hotend por baixo. Algums modelos bem mais caros têm, ao invés da polia de tensão, outro pinhão de filamento com dentes, como o tracionador do extrusor flexion, de https://flexionextruder.com/."]
 
 O tracionador e o hotend não necessariamente estarão
 juntos ou mesmo próximos. A primeira distinção é justamente essa:
@@ -2533,7 +2500,7 @@ juntos ou mesmo próximos. A primeira distinção é justamente essa:
 Em impressoras 3d estilo __delta__, no hotend, você tem ainda a estrutura que une os braços chamada de effector:
 
 [[fotoeffector]]
-image::image83.png[image,width=642,height=498]
+image::image83.png[image,width=642,height=498,align="center",title="Effector da Impressora 3D delta &quot;Kossel&quot; (peça azul)"]
 
 O bowden, também chamado de configuração com filamento guiado, tem o tracionador geramente fixado na carcaça e
 vai usar um tubo de baixo grau de atrito para unir as duas peças e preservar a tração do filamento sendo empurrado
@@ -2618,12 +2585,12 @@ repraps) trabalha bem até uns 300°C, propício para filamentos de maior ponto 
 poliacetal e alguns nylons.
 
 [[partesdeumhotend]]
-image::image90.jpeg[image,width=642,height=526]
+image::image90.jpeg[image,width=642,height=526,align="center",title="Componentes de hotend. Dois hotends all-metal; o de baixo é um chinês genérico, o de cima uma réplica nacional do hotend open-source Volcano da e3d, com o tubo de PTFE do bowden (que não é o PTFE interno/liner). Foto: do autor"]
 
 .Revestimento do bloco aquecedor
 
 [[hotendsocks]]
-image::image91.jpeg[image,width=642,height=363]
+image::image91.jpeg[image,width=642,height=363,align="center",title="&quot;Meia&quot; de silicone da e3d para o hotend. Créditos: e3d-online.com"]
 
 O revestimento de bloco aquecedor (termo em inglês: "hotend silicone socks", ou meias de silicone
 para hotend) é uma invenção da empresa E3D que ajuda consideravelmente na eficiência do aquecimento
@@ -2634,7 +2601,7 @@ seu hotend; o primeiro molde desses foi disponibilizado pelo usuário _thefrog_ 
 http://www.thingiverse.com/thing:1432346[_http://www.thingiverse.com/thing:1432346_].
 
 [[colaparasocks]]
-image::image92.png[image,width=642,height=367]
+image::image92.png[image,width=642,height=367,align="center",title="Existem vários outros designs de molde pra "silicone socks" no thingiverse. E cola de silicone de alta temperatura, encontrável em lojas de construção, pode ser usada neles. Foto do molde e meia por André Ruiz, design em http://thingiverse.com/thing:1655134"]
 
 .Dissipação
 
@@ -2644,7 +2611,7 @@ passiva é o calor ser dissipado naturalmente pela geometria do hotend, sem nece
 para auxiliar a expulsão de calor do pescoço dissipador e impedir que a zona de aquecimento suba muito.
 
 [[hotende3dcomventoinha]]
-image::image93.png[image,width=559,height=660]
+image::image93.png[image,width=559,height=660,align="center",title="Hotend E3D all-metal v6 com ventoinha acoplada por acrílico azul no pescoço dissipador, para refrigeração ativa. Embora o acrílico comece a amolecer em 105°C, é esperado que ele nunca chegue a essa temperatura por causa da própria refrigeração ativa."]
 
 A refrigeração ativa é especialmente importante para materiais com alto calor específico (como o PLA, que
 tem 2060 J/Kg°C a 190°C), pois eles demoram mais para dissipar o calor e este tende portanto a subir mais pelo
@@ -2665,7 +2632,7 @@ diferença deste comportamento para as peças impressas: as de PLA tenderão a a
 mais "derretido", por acomodação do filamento ainda não totalmente solidificado.
 
 [[comventoinhaesemventoinha]]
-image::image94.png[image,width=642,height=454]
+image::image94.png[image,width=642,height=454,align="center",title="Esq.: impressão em PLA feita sem ventoinha. Dir.: Impressão feita com ventoinha. Créditos: Tech2C - https://www.youtube.com/watch?v=7LVu3Ir10UQ"]
 
 Por outro lado, como veremos mais à frente com o ABS, há materiais que você não quer que esfriem mais rápido
 pois sofrem efeitos de empenamento ("warp") e rachaduras. Como lidar com isso? A solução mais frequente
@@ -2676,7 +2643,7 @@ rege o processo de impressão. Esta ventoinha é chamada de _ventoinha do bico_ 
 ventoinha do pescoço dissipador.
 
 [[hotendcomduasventoinhas]]
-image::image95.jpeg[image,width=642,height=553]
+image::image95.jpeg[image,width=642,height=553,align="center",title="Hotend com ventoinha do pescoço dissipador e ventoinha do bico. Créditos: delta steel 3d printer blog - http://deltasteel3dprinter.blogspot.com.br/"]
 
 [NOTE]
 .Notas:
@@ -2804,7 +2771,7 @@ possa "fundi-los" imprimindo um sobre o outro. Este último problema, aliás, ac
 extrusores misturados e combinadores.
 
 [[extrusorduploetriplo]]
-image::extrusor-duplo-e-triplo.png[image,width=994,height=384]
+image::extrusor-duplo-e-triplo.png[image,width=994,height=384,align="center",title="Esquerda: Extrusor duplo direct para prusa i3. Direita: Extrusor triplo de bowden para prusa mendel. Ambos de aliexpress.com"]
 
 É interessante ainda notar que existem alguns designs de extrusores
 múltiplos que tentam resolver esses problemas de variadas formas, uma delas sendo extrusores independentes

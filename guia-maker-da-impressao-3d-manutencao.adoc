@@ -1,0 +1,869 @@
+[#guia-maker-da-impressao-3d-manutencao]
+= Manutenção e Cuidados com a Impressora 3D
+
+Sendo um aparelho que em sua operação normal lida com tantas forças mecânicas, térmicas e até químicas, é
+esperado que a impressora 3D sofra considerável desgaste com o uso, comprometendo seu funcionamento e precisão e
+aumentando riscos de acidente. Portanto, ativamente buscar fazer verificações, correções, limpeza, lubrificação
+e manutenção geral da impressora é essencial para continuar tendo impressões de boa qualidade e também mitigar
+eventuais problemas que surjam.
+
+Para esse fim, é preciso entender que existem vários modelos de impressora 3D FFF tanto no mercado brasileiro
+quanto no internacional, e embora as técnicas que aqui apresentamos sejam o mais universais possíveis, dadas
+as particularidades de certos modelos, pode ser que não se apliquem ou precisem ser modificadas. Por exemplo,
+a lubrificação de um componente pode exigir um tipo de óleo diferente, ou partes como o _hotend_ podem não ser
+facilmente desmontáveis para limpeza, sofrendo mais desgaste com a tentativa de manutenção que com o uso cotidiano.
+
+== Componentes mecânicos
+
+* **Parafusos e porcas**: Em impressoras 3D reprap como _graber_ e __prusa__, os parafusos podem afrouxar
+um pouco quando submetidos a muita pressão estrutural ou vibrações, especialmente em peças móveis como
+extrusor ou suportes do carro X. Recomenda-se apertar tais parafusos com periodicidade anual. Caso a carcaça
+seja de acrílico é preciso especial cuidado no aperto pois este material tem tendência a rachar.
+* **Motor e correia**: Ainda em relação aos parafusos em _graber_ e __prusa__, os mais propensos a folga são os que esticam
+a correia dos carros X e Y. Em ambos os casos, antes de se apertar os parafusos deve-se afrouxá-los o máximo sem
+removê-los; então, deslizar o motor para deixar a correia o mais esticada possível, para só então apertá-los.
+* **Rolamentos e barras lisas**: Uma das partes mais delicadas e propensas a desgaste estrutural da impressora são
+os rolamentos. Recomenda-se desligar a impressora (para não haver torque de retenção nos motores) e com a mão,
+deslizar o carro da impressora para ver se há movimento livre, ou se existe irregularidade da resistência. É
+razoavelmente comum que surjam irregularidades nos eixos como um ligeiro abaulamento das barras lisas ou ainda
+desgaste prematuro ou perda das esferas dos rolamentos. Falta de paralelismo entre as barras lisas também pode
+causar isso. Se tais irregularidades forem percebidas, recomenda-se desmontar o conjunto para a localização
+do problema. Se as barras tiverem entortado levemente, recomenda-se trocá-las, visto que a correção nunca
+fica perfeita. Caso o problema seja nos rolamentos, é mais barato colocar novos. Sendo falta de paralelismo,
+geralmente remontar o conjunto tomando cuidado de acertar os encaixes já resolve o problema.
+* **Buchas**: No caso de buchas de bronze ou __drylin__, o desgaste é esperado dado o contato constante com a barra lisa, e a
+vida útil de tais componentes é necessariamente limitada. O carro deve ser deslizado no eixo procurando-se fazer
+um pouco de força no sentido transversal, de modo a procurar detectar alguma folga. Se houver folga no carro, é
+sinal que as buchas esgotaram sua vida útil e precisam ser trocadas. Recomenda-se fazer a verificação a cada
+6 meses.
+* **Barra roscada e fuso**: o desgaste de barra roscada é mais comum do que de fusos, visto que seus
+fios são bem mais finos e sua estrutura é feita para sustentação e não movimento. De qualquer maneira, é algo
+que pode acontecer com ambos os componentes. O desgaste pode acontecer tanto na barra quanto na castanha ou porca,
+e pode ser descoberto quando, girando manualmente o eixo com os dedos, se encontra folga ou "emperramento" do
+movimento. Não costuma ser visível onde está o problema -- se na barra ou na porca -- portanto o recomendado
+é removê-lo e testar em uma castanha virgem, para ver se desliza uniformemente e sem folgas. Se deslizar, é a
+castanha que se desgastou e precisa ser trocada. Outro problema que pode acontecer com barras roscadas e fusos,
+facilmente verificável com o desmonte do elemento e comparação com uma régua. Assim como no caso da barra lisa,
+correções caseiras não costumam funcionar, portanto a troca é recomendada, especialmente no caso do fuso.
+* **Nivelamento dos eixos**: em qualquer impressora 3D que tiver dois motores ou mais para controle de um eixo,
+uma assimetria pode acontecer de modo que o carro não fique perfeitamente paralelo. Essa assimetria costuma
+ser sutil, nem mesmo percebida a olho nu, e mesmo assim contribui enormemente para o desgaste e empenamento das
+peças. Em especial, impressoras 3D estilo _graber_ e _prusa_ que tenham nivelamento automático de mesa (BAL)
+costumam mascarar tão bem o problema que ele parece inexistente. É comum que um fator que dificulte a detecção
+do problema é que a mesa de impressão siga a assimetria/inclinação do carro, fazendo parecerem simétricos
+visto que estão paralelos.  + O procedimento recomendado nesse caso deve ser feito sempre que se desconfie que
+há uma assimetria (como depois de transportar a impressora 3D) ou com periodicidade pelo menos bimestral. Como a
+mesa de impressão pode também estar desnivelada, recomenda-se desmontá-la inteira, e usar uma superfície plana
+colocada entre os dois motores para nivelamento. Coloca-se no carro X um _relógio comparador_ com suporte deslizante
+e então se gira um ou outro motor para abaixar ou levantar cada eixo, até que se os deixe paralelos -- isto é,
+em todo lugar que o relógio comparador tocar na superfície pela extensão do carro X, dará a mesma medida.
+
+[[suportepararelogiocomparador]]
+image::suportepararelogiocomparador.png[suportepararelogiocomparador,width=634,height=343,align="center",title="O autor disponibilizou dois modelos de suporte para relógio comparador no thingiverse, um para prusa e outro para Sethi3d AiP: https://www.thingiverse.com/thing:385846 e https://www.thingiverse.com/thing:38569 - podendo ser usados para o nivelamento dos eixos."]
+
+Conformações diferentes de eixos -- por exemplo, que toquem um elemento paralelo, ao invés da mesa de impressão
+-- exigirão estratégias diferentes, mas que podem ser inferidas a partir da mostrada. No caso ilustrado,
+é requerimento que os eixos estejam nivelados a partir do quadro da impressora para que a mesa de impressão,
+que costuma ter inclinações mais frequentes, os use como referência para seu próprio nivelamento.
+
+* **Nivelamento da mesa**: é extremamente importante para todo o processo de impressão que a mesa esteja bem
+nivelada em relação aos eixos da impressora, mesmo se a impressora tiver nivelamento automático, que em tempo
+de impressão compensa o nivelamento com correção matemática das coordenadas. Durante o processo de impressão,
+tipicamente o eixo Z não se move enquanto cada camada está sendo impressa, somente os eixos X e Y. Quando se
+usa o autonivelamento em mesa desnivelada, cada camada é impressa inclinada, e o eixo Z permanece em constante
+movimento, desgastando consideravelmente mais o fuso ou barra roscada (isso não é verdade para alguns modelos
+de impressora, como a brasileira Sethi S3 que ao invés de corrigir por cálculos, inclina mecanicamente a mesa,
+evitando tal desgaste). +
+A técnica de nivelamento mecânico de mesa mais frequente é o ajuste fino de seus
+cantos usando parafusos. As mesas de impressão são quase sempre sustentadas por molas -- que servem como
+dispositivos de segurança para que o hotend não "afunde" na mesa e se quebre -- e essas molas têm um
+parafuso que serve de anteparo, girando sua rosca para aumentar ou diminuir a altura do canto. Esse ajuste é
+feito tendo a ponta inferior do hotend como calibrador: Coloca-se o hotend no ponto mais baixo e ele é movido
+no eixo XY o mais próximo possível do canto a ser ajustado, para então se girar o parafuso. No caso de mesa
+sem autonivelamento, como também se está ajustando o nível zero do eixo Z, se coloca um anteparo de 0,1mm de
+espessura entre a ponta do hotend e a mesa -- geralmente um cartão de visitas. Diversos itens podem ajudar na
+agilidade desse procedimento, como o uso de porcas borboleta ao invés de porcas comuns para poderem ser ajustadas
+com a mão, ou mesmo designs impressos de sites de impressão 3D.
+
+[[bedlevelingkits]]
+image::bedlevelingkits.jpeg[bedlevelingkits,width=642,height=216,align="center",title="Buscando por &quot;bed leveling kit&quot; no thingiverse, encontram-se vários designs úteis de diferentes níveis de sofisticação para auxiliar na tarefa de nivelamento de mesa manual. A maioria deles consiste de botões rotatórios para ajustes rápidos do nível dos cantos."]
+
+* **Empenamento da mesa**: problema especialmente comum em mesas grandes, pode ocorrer de, ao se tentar
+nivelar uma mesa de impressão, perceber que não é a inclinação o problema, e sim a superfície não ser
+satisfatoriamente plana. A possibilidade de corrigir esse empenamento vai depender do tamanho da mesa, material
+e outras características de construção, mas em geral mesas de metal podem ser corrigidas com pressão aquecida
+em superfícies planas, e pra mesas de circuito impresso se aconselha a troca tanto por serem mais baratas quanto
+mais difíceis de corrigir. Enquanto a troca não é feita, o recurso de _mesh leveling_ automático do firmware
+Marlin pode ser usado temporariamente para compensar a geometria irregular, visto que o nivelamento automático
+simples não ajuda neste caso.
+* **Extrusor/tracionador**: ainda que haja enormes variações entre os modelos
+de extrusor do mercado, é mais ou menos universal que a tração pelos dentes do pinhão desprenda lascas e
+pequenos fragmentos do plástico, e que com o tempo essa "poeira" adira a esses dentes, tornando a tração
+mais difícil e escorregadia. Para complicar, é frequente que o acesso a essas partes seja dificultado pela
+geometria. Um elemento que costuma funcionar para a limpeza do pinhão são pincéis comuns de pintura, com os de
+cerda dura penetrando mais entre os dentes para remoção dos resíduos. Ligue a impressora e, sem filamento no
+extrusor, mande um comando de extrusão que dure pelo menos uns 2 minutos, e com o pinhão rodando, use o pincel
+para limpeza. Se fragmentos "teimosos" não saírem, o uso de um pincel com cerdas de metal pode resolver.
+* **Hotend**: os maiores locais de desgaste de um hotend são o bico, o tubo interno e o _heatbreak_ (barreira
+térmica):
+** *O bico pode deformar* quando é vítima de muitas operações desajeitadas que o arremetem contra a
+mesa ou fazem com que colida com objetos. Outra possível causa de deformação do bico, neste caso seu orifício,
+é o uso de filamentos abrasivos para o qual ele não é construído -- o material do bico é latão, um metal
+relativamente mole. Nem sempre tais deformações são visíveis a olho nu, sendo mais facilmente perceptíveis
+quando a qualidade de impressão começa a variar. Como é uma peça relativamente simples, barata e comum na
+maioria das impressoras de mercado, recomenda-se a troca quando se suspeitar de deformação. Para o uso com
+filamentos abrasivos como fibra de carbono, sugere-se um bico de aço inoxidável. Ao trocar o bico, se sua
+impressora usa autonivelamento de mesa, pode ser necessário reconfigurar no firmware o _offset_ (deslocamento)
+vertical da altura do bico em relação à sonda.
+** Outro problema que pode acontecer não só com o bico, mas
+também com o bloco aquecedor, é o *plástico derretido* e carbonizado aderir em suas paredes. Isso por si só
+não costuma causar muito problema se a camada for fina, servindo até como isolante térmico para impedir que
+a temperatura escape, mas pode dificultar a manutenção e manchar impressões. Recomenda-se a limpeza semestral
+do bico e do bloco aquecedor, que pode ser feita desmontando-se o hotend e colocando os elementos mergulhados em
+solvente por algumas horas, com subsequente lixamento do plástico remanescente. O procedimento é semelhante ao
+utilizado para quando há eventual *entupimento do hotend* com plástico derretido, ilustrado no canal de youtube
+do autor: https://www.youtube.com/watch?v=NZ1dRB3ZXNc[_https://www.youtube.com/watch?v=NZ1dRB3ZXNc_]
+** Em hotends com tubinho de **PTFE interno**, é muito comum que o tubo de PTFE degrade, carbonize ou arranhe, os sintomas
+disto sendo uma perceptível diminuição da qualidade de extrusão e entupimentos frequentes. Deve-se desmontar
+o hotend e remover o tubo para verificação. A troca deste tubo é simples e barata, a desmontagem e montagem
+do hotend sendo a parte mais trabalhosa.
+** Em hotends __**all-metal**__, se o tubo interno de metal arranhar,
+é necessário substituí-lo. Soluções caseiras como uso de broca não funcionam, visto que essa parte interna
+precisa de polimento especial para funcionar bem com o plástico derretido.
+** O __**heatbreak**__, apesar de ser
+uma peça feita com duríssimo aço inoxidável, é também bastante fina e, com alguma pressão mecânica,
+pode deformar ou se dobrar, e tentativas de endireitá-la não funcionam. É outra peça que, se estragada, deve-se
+trocar. Para evitar problemas com o heatbreak, evite bater o hotend contra a mesa.
+** Como se pode ver, partes diferentes do hotend exigem trocas, mas as *peças individuais* podem ser difíceis de achar ou até, dependendo do
+modelo, indivisíveis do conjunto. Nesse caso, o único jeito é realmente a substituição do hotend inteiro.
+* **Limpeza (geral)**:
+** Antes, uma precaução: evite umidade perto de circuitos eletrônicos, peças térmicas ou
+metálicas, mesmo com pano úmido. Gotas podem levar a curtos e corrosão.
+** Se a mesa aquecida usar **vidro**,
+remova-o para limpar separadamente. É importante que tanto o vidro quanto a mesa estejam bem polidos; partículas
+de poeira ou plástico podem interromper o contato do vidro com a mesa, criando um pequeno vão com ar que funciona
+como isolante térmico e portanto prejudicando o processo de impressão. É preciso ainda ter especial cuidado
+com mesas aquecidas que têm **contatos expostos**, como as mesas "MK2B" presentes em repraps.
+** Se sua impressora 3D tem **fundo fechado**, a acumulação de sujeira e detritos de impressão nessa parte é perigosa
+para o funcionamento da impressora. Se for muito difícil remover tais detritos com pano, use um mini-aspirador,
+do tipo que se usa em automóveis, para limpá-los.
+** Impressoras que têm a *carcaça de metal* a têm revestida
+por proteção, de modo que passar um pano levemente úmido com sabão é efetivo para limpá-la, com uma escova
+de dentes usada para as frestas que acumulam mais sujeira. Algumas receitas caseiras como fazer uma pasta de
+bicarbonato de sódio e água para passar no metal, neutralizando o pH e deixando-o brilhante, podem funcionar bem.
+** Em impressoras 3D de **MDF ou acrílico**, cuidado com a utilização de álcool isopropílico. Ele mancha,
+penetra no MDF e o amolece, e causa rachaduras no acrílico.
+*** No caso do *acrílico* um pano de microfibra
+úmido com sabão costuma ser suficiente para limpar; um acabamento melhor pode ser obtido utilizando-se cera
+lustra-móveis incolor. A microfibra tem a desejável propriedade de não soltar fiapos.
+*** O *MDF* absorve umidade rapidamente e se não tiver uma camada protetora, tende a inchar e se degradar por causa disso. Para a
+limpeza, um pano seco deve ser utilizado, ou no máximo um pano de microfibra com algumas poucas gotas de água
+com sabão para limpeza mais pesada. Nunca use produtos pesados como querosene ou thinner no material. Recomenda-se
+fortemente que se proteja a carcaça de impressoras de MDF com vernizes ou lacas impermeáveis para estender sua vida
+útil. Recomenda-se o revestimento nas peças antes da montagem, ainda que isso dificulte um pouco os encaixes.
+
+== Componentes eletrônicos
+
+* *Drivers* e **Motores**: é sempre bom fazer uma verificação nos motores, ver se eles não estão perdendo passo
+ou superaquecendo durante as impressões. As perdas de passo são visíveis pelo desalinhamento da peça quando nos
+motores X ou Y, na compressão da peça quando no eixo Z e como um dos motivos possíveis para subextrusão pelo
+motor do extrusor. Já o superaquecimento pode ser constatado colocando-se o dedo sobre o motor, ou em termos mais
+científicos, medindo se a temperatura passa de 50°C. Em quaisquer desses casos, o primeiro item a verificar é se
+os drivers estão com a corrente adequada regulada para o motor, o mesmo procedimento visto na seção sobre drivers
+e motores e feito com multímetro, e girar o potenciômetro para corrigir seus ajustes. É interessante fazer a
+medição semestral ou anual da corrente dos drivers para garantir a vida útil deles e dos motores que controlam.
+* **Microcontrolador**: o cérebro da impressora é certamente um componente importante e dar uma examinada por
+partículas de poeira, cabos com contatos frágeis, chips que estejam esquentando e outros potenciais causadores de
+problemas leva pouco tempo e pode prevenir muitas dores de cabeça. Uma passagem de pincel ou pano de microfibra
+com álcool isopropílico são recomendados para remover sujeira e se houver problemas de dissipação térmica,
+dissipadores de alumínio e ventoinhas de gabinete (ligadas nos 12V da fonte) ajudam bastante.
+* *Fios* e **Cabos**: são um componente especialmente pernicioso nas __repraps__, visto que suas receitas de montagem costumam ser bem
+detalhadas, explicativas e abrangentes... Exceto na parte de cabeamento. Ensinam o que ligar e onde, mas nem mesmo
+tamanho de cabos passam -- e é comum ver impressoras com cabos diversos de tamanho curto ou longo demais, assim
+como desorganizados como se fossem uma "maçaroca" de fios que além de ser perigosa e ineficiente, torna bastante
+trabalhosa a manutenção de um aparelho que devia ser justamente muito fácil de mexer e arrumar.  + Se você "se
+reconheceu" nesta caracterização de impressora, existem alguns utensílios que podem auxiliar na arrumação,
+organização e fixação dos cabos. A seguir:
+** **Tiras enforca-gato**: também conhecidas por _abraçadeiras de
+nylon_ e variados outros nomes, são tiras oferecidas em variados tamanhos e se fecham travando inserindo uma ponta
+em um pequeno orifício na outra extremidade, prendendo com firmeza.
+** **Espiral organizadora de cabos**: é um
+dos organizadores mais fáceis de se colocar e remover em fios e cabos, sendo portanto adequada para fiações que
+exigem frequente manutenção: permite ser colocada mesmo com os cabos já ligados em seus respectivos terminais.
+** **Malha náutica**: uma malha flexível e compressiva em que se inserem os fios e cabos antes de os prender nos
+contatos. Oferece o melhor acabamento visual, mas dificulta a manutenção visto que para se remover os cabos sem
+cortar a malha é necessário desconectar pelo menos uma de suas extremidades.
+** **Lagarta/esteira porta-cabos**:
+lembrando em aparência a espiral organizadora, é um aparato de plástico mais sofisticado (e mais caro) que
+limita o movimento dos cabos a um plano de deslizamento. É bastante utilizada para operação guiada de cabos,
+como os de mesa aquecida e extrusor, mas sua colocação precisa ser bem planejada. Existem alguns modelos em que
+cada elo da lagarta tem uma pequena portinhola que permite que a lagarta seja removida e recolocada sem precisar
+desconectar os fios, mas são mais difíceis de achar.
+
+[[organizacaofiosecabos1]]
+image::organizacaofiosecabos1.jpeg[organizacaofiosecabos1,width=642,height=239,align="center",title="Alguns modelos de aparatos que ajudam a organização de fios e cabos. 1: tira enforca-gato. 2: espiral organizadora. 3: malha náutica. 4: lagarta porta-cabos. Essas sugestões não são exaustivas - alguns makers e até fabricantes utilizam tubos termo-retráteis para organizar seus cabos, por exemplo."]
+
+== Lubrificação
+
+Ao desavisado, pode parecer que qualquer lubrificação de peças de máquinas é um problema trivial e basta usar
+um óleo qualquer comprado em lojas de ferramentas para tê-lo resolvido. Esta aparência, no entanto, está muito
+longe da verdade, especialmente para uma máquina que reúne tantas tecnologias diferentes e tem variadas partes
+móveis. Deixar de lubrificar uma impressora 3D, a longo prazo, pode resultar em impressões ruins, acumulação
+de poeira, desgaste de peças e até problemas mecânicos; mas lubrificá-la de maneira incorreta tem o mesmo
+potencial de danos, se não maior, especialmente em um ambiente dominado por receitas desinformadas de internet
+e soluções paliativas; imagine lubrificar uma peça sujeita a grandes temperaturas com óleo inflamável ou que
+gere vapores tóxicos.
+
+**Óleos versus Graxas**: existe um debate recorrente na indústria de máquinas sobre o uso de óleos (líquidos)
+ou graxas^1^. A graxa, ou óleo graxo, é um agente de dispersão de um produto espessante num lubrificante líquido,
+com consistência entre sólida e semifluida, podendo conter outros ingredientes para ter propriedades específicas
+desejadas. Como se pode inferir pela descrição, as graxas geralmente serão mais caras. Existem muitos tipos
+diferentes de óleos e ainda mais tipos diferentes de graxas, mas para nossas finalidades o mais adequado é manter
+o assunto simplificado. Lubrificantes em geral servem para^2^:
+
+* Converter em atrito sólido para atrito líquido, reduzindo a perda de energia;
+* Reduzir o contato entre
+as superfícies e assim o desgaste;
+* Proteger as superfícies contra substâncias corrosivas como ácidos ou
+oxigênio;
+* Evitar a formação de sujeira;
+
+E em especial, as graxas, por serem mais espessas, costumam cumprir as seguintes funções adicionais:
+
+* Absorver e dissipar o calor gerado pelo contato das superfícies;
+* Impedir a saída de lubrificantes e a
+entrada de partículas estranhas;
+* Amortecer o choque de dentes de engrenagens ou outras peças de impacto;
+* Amenizar/amortecer as folgas ou interstícios da geometria do mecanismo.
+
+Existem ainda _lubrificantes sólidos_ como grafite ou PTFE (Teflon), que dão uma lubrificação seca às peças.
+
+Dada essa distinção, segue-se uma lista de sugestões do que usar em cada peça da impressora 3D e sua devida
+explicação^3^:
+
+* **Barras roscadas**: devido às características de barras roscadas de grande propensão a desgaste do metal
+devido aos fios finos, o uso de graxa ou lubrificantes sólidos não é recomendado. Outro problema de usar graxa
+nessas peças é que com a frequente exposição delas a poeira e partículas do plástico, as graxas tendem a se
+entremear com elas e formar um composto abrasivo e grudento, prejudicando todo o mecanismo. Portanto, o recomendado
+para tais componentes é um óleo fino, como o óleo doméstico _Singer_ ou outros óleos da mesma categoria usados
+em bicicletas. Óleos minerais e óleos de silicone costumam também ter bom desempenho nessa peças, com o óleo
+usado em esteiras sendo uma boa indicação para uso geral dado seu baixo preço e resistência a temperatura. Se
+recomenda reaplicação mensal.
+* **Fusos de rosca**: em impressoras 3D fechadas que tenham tais mecanismo isolados
+e protegidos da ação do plástico, ainda mais se tiverem o acesso dificultado, o uso de graxas especiais para
+fusos, geralmente baseadas em lítio e vendidas em casas de ferramentas e artigos para automóveis, pode ser uma
+alternativa melhor por proteger e lubrificar as peças por mais tempo, não topando nos problemas de desgaste
+existente nas barras roscadas, e ainda amortecer folgas microscópicas. Por outro lado, se tais fusos estiverem
+expostos, tanto pela facilidade de manutenção quanto pela menor propensão a acumular poeira, os mesmos óleos
+das barras roscadas são recomendados.
+* **Rolamentos radiais**: são peças quase sempre fechadas e vêm com sua
+própria lubrificação, portanto lubrificação adicional não é necessária. Caso se detecte atrito da peça,
+devido ao seu baixo preço pode ser mais palatável substituí-la que tentar lubrificá-la. Alguns rolamentos
+maiores de vida útil longa têm o que se chama de "pino graxeiro", que é uma entrada específica para se
+aplicar graxa com instrumento especializado.
+* **Rolamentos lineares em barras lisas**: praticamente todos os
+rolamentos lineares encontrados em impressoras 3D são fechados (dão a volta completa em torno da barra) e não
+necessitam de aplicação adicional de lubrificação. No entanto, a barra lisa que abraçam estará sujeita ao
+ambiente, e se recomenda usar o mesmo óleo doméstico ou de silicone das barras roscadas para proteger a peça. Se
+recomenda reaplicação mensal.
+* **Buchas**: as buchas, usadas nos mesmos lugares em que os rolamentos lineares,
+podem ser feitas de materiais diversos como bronze, cobre, plásticos (incluindo auto-lubrificantes) e PTFE, o que
+complica uma receita geral para seus lubrificantes -- por exemplo, as de plástico auto-lubrificante não demanda
+lubrificação adicional, e em certos casos usar um lubrificante incompatível com um dos dois materiais em contato
+pode acabar gerando atrito, corrosão e desgaste no conjunto. A incompatibilidade pode acontecer por o material não
+interagir bem com o lubrificante, seja por reações químicas, seja por polaridade de superfície. Por outro lado,
+a lubrificação é estritamente necessária para o caso de metal com metal (por exemplo, buchas de bronze na barra
+lisa de aço cromado). Para buchas de plástico de impressão como ABS ou PLA, não se deve usar óleo mineral,
+ou de ésteres e poliglicóis; por outro lado, o óleo de silicone é compatível (e óleo de silicone não pode
+ser usado com buchas de silicone). Algumas graxas mais finas de propósito geral também cumprem bem a tarefa de
+proteger as barras lisas e permitir bom deslizamento das buchas.
+* **Articulações e juntas de esfera**: Nestes
+casos graxa de lítio pode ter um bom desempenho. Lubrificante sólido de PTFE pode ter ainda melhor desempenho,
+pois não tende a acumular sujeira, embora precise ser reaplicado frequentemente.
+* **Hotend**: usado para quando
+se quer aprimorar o deslizamento do filamento (especialmente PLA) dentro do tubo, muitas vezes se usa uma gota de
+óleo no tubo de hotend. Para esse fim, os óleos de alta temperatura são os mais adequados, em especial o óleo
+de silicone.
+
+**O que não usar**: como já foi descrito, o ecossistema _maker_ tem uma boa dose de amadorismo e de "maus
+conselhos" sendo passados como verdades, e por isso é salutar ter uma lista de compostos que comumente são
+usados, mesmo sendo totalmente inadequados para a tarefa.
+
+* **Grafite**: o grafite em pó é um lubrificante comum e utilizado em muitos mecanismos e articulações, mas em
+geral não é muito adequado para as peças das impressoras 3D por não aderir bem às superfícies lubrificadas
+e acabar se tornando ele mesmo um resíduo. Além disso, faz com que necessite de constante necessidade de
+reaplicação, e pode, como no caso das barras roscadas, acabar gerando desgaste mecânico adicional nelas. Apesar
+de poder haver impressoras mais robustas com necessidades mais específicas que tolerem melhor o grafite, quando
+for o caso isso certamente será claro e constará no manual de manutenção.
+* *Óleos vegetais* domésticos como
+canola eventualmente aparecem como proposições "maker" devido ao seu baixo preço e alta disponibilidade,
+mas têm incompatibilidades com metais e substâncias orgânicas que são detrimentais ao funcionamento de
+máquinas, com resíduos como a glicerina que são potencialmente perniciosos.
+* *Desengripantes como WD-40* **não são lubrificantes**, ao invés disso sendo compostos feitos para _remover_ resíduos de poeira, ferrugem ou de lubrificantes anteriores. A sigla "WD" significa "Water Displacing", ou "Deslocamento de Água",
+por seu uso principal como solvente ou remover de ferrugem. Uso nas peças de impressora leva a ressecamento de
+sua lubrificação, formação de "pelotas" de sujeira, aumento do atrito e desgaste, e remove a lubrificação
+interna dos rolamentos.
+
+[NOTE]
+.Notas:
+====
+. http://www.machinerylubrication.com/Read/923/grease-oil[_http://www.machinerylubrication.com/Read/923/grease-oil_]
+-- texto bem explicado e curto, em inglês, sobre quando usar graxa e quando usar óleo.
+. Em português:
+http://www.dolphingrupo.com.br/blog/20-08-15/lubrificar-máquinas-é-preciso[_http://www.dolphingrupo.com.br/blog/20-08-15/lubrificar-m%C3%A1quinas-%C3%A9-preciso_]
+http://www.dolphingrupo.com.br/blog/20-08-15/lubrificar-máquinas-é-preciso-mas-é-melhor-usar-graxa-ou-óleo[_-mas-%C3%A9-melhor-usar-graxa-ou-%C3%B3leo_]
+. Como sempre, o wiki do projeto reprap -- em inglês - tem informações úteis sobre o assunto. Tenha
+em mente no entanto que alguns dos compostos sugeridos na página podem ser difíceis de encontrar no Brasil:
+http://reprap.org/wiki/Lubrication[_http://reprap.org/wiki/Lubrication_]
+====
+
+== O Pesadelo: Calibração de uma delta
+
+Quando se procura saber mais sobre as impressoras estilo __delta__, seja para comprar ou para montar, as respostas
+em fóruns podem assustar o interessado. Há um determinado aspecto das deltas que é unanimamente vilificado: sua
+calibração, especialmente a calibração inicial para a impressora começar a funcionar. Mas o que causa consenso
+tão resoluto, e por que seriam as deltas tão mais propensas a complexidade e problemas do que outros tipos de
+impressora 3D? Entender o problema é meio caminho para a solução, então antes de enveredar para a calibração,
+é mister apontar a lente do microscópio para nossa delta para compreender o que contribui para sua fragilidade.
+
+Os motivos principais para as deltas serem consideradas problemáticas são:
+
+* *Medidas despadronizadas* -- a maioria das impressoras cartesianas é projetada com tamanho bem determinado que,
+testado, funcione bem, com peças proporcionais aos pesos que devem sustentar, volumes de impressão bem definidos
+e capacidade tabelada. Até mesmo as cartesianas de fabricantes diferentes apresentam medidas próximas, não
+raramente idênticas. Nas deltas de mercado, a variabilidade é maior, em parte porque a escala não afeta tanto a
+diferença de custo. Os dois modelos mais famosos, Kossel e Rostock, têm muitas derivações diferentes de variados
+tamanhos e compleições, e cada fabricante toma liberdades em suas medidas que as diferenciam ainda mais. Assim,
+não há valores "padrão" em que se basear exceto para alguns poucos modelos comerciais de maior sucesso.
+
+[[delta1impressoratiko1]]
+image::delta1impressoratiko1.jpeg[delta1impressoratiko1,width=568,height=422,align="center",title="Tiko, impressora financiada no Kickstarter cujo maior diferencial é o corpo de uma peça só usinada (&quot;unibody&quot;), evitando os problemas de assimetria e medidas (fonte: kickstarter.com)"]
+
+* *Dificuldade de obtenção das medidas* -- em cima do fator de despadronização, as deltas em sua montagem têm
+"pontos livres" cujo posicionamento durante a montagem não é exato, como a altura de onde se prende o endstop
+no poste. Assim, a maioria das construções de deltas exige uma etapa posterior de mensuração das distâncias
+resultantes, e mesmo essas medidas são difíceis de fazer (pela geometria das peças aliada às limitações dos
+instrumentos), portanto propensas a erros consideráveis.
+* *Indireção das medidas* -- muitas medidas não são
+usadas diretamente e portanto não podem ser verificadas diretamente; entram em um cálculo ou combinação com
+outras e não podem ser aferidas de maneira simples. Isso transforma um problema de uma variável em um sistema
+de múltiplas equações, com variáveis difíceis de isolar. Como exemplos, temos as coordenadas X-Y-Z --
+calculadas pelas posições dos braços nos pilares - e o `DELTA_RADIUS`, a principal medida de uma delta, calculado
+a partir de outras três medidas. **Isso também dificulta bastante o entendimento intuitivo dessas medidas**,
+de modo que fica difícil "abstrair" o que pode estar dando errado.
+* *Falta de ponto de referência* -- Três pontos no espaço tridimensional têm um único plano passando por eles; os três endstops de uma delta,
+no topo da carcaça, definem o plano de inclinação das impressões. Numa construção ideal, a altura deles nos
+postes seria perfeitamente simétrica e definiriam um plano completamente horizontal. Na vida real, os endstops
+estarão em alturas diferentes e a inclinação do plano terá que ser aferida para correção; entretanto, o
+melhor ponto de referência para essas medidas seria a plataforma de impressão, que _também_ terá sua própria
+inclinação em relação à superfície. E para complicar mais ainda o meio de campo, essas duas inclinações têm
+que ser encontradas simultaneamente ao valor da concavidade ou convexidade resultante das imprecisões das medidas
+dos eixos -- que também deve ser corrigido para resultar em um plano. Essa é a maior armadilha das deltas e a
+razão de sua calibração ser demorada: qualquer que seja o método usado, são necessárias várias iterações
+de aproximações sucessivas até se estabelecer um ponto de referência com precisão razoável. As variáveis
+que queremos achar são:
+. *Medidas iniciais* aproximadas dos elementos de interesse. Vamos medir partes da
+delta que permitirão ao firmware fazer as transformações de eixos (A, B, C) para (X, Y, Z) usando cálculos
+trigonométricos. Essas medidas têm diferentes nomenclaturas em diferentes firmwares, vamos listar dos três
+mais conhecidos.
+. *Distância do bico* (na sua posição mais alta) **à mesa**. Vamos chamar de __*h*__. (de
+__height__, _*altura*_ em inglês). No Marlin, ele é o ajuste **DELTA_HEIGHT**, no Repetier *Z_MAX_LENGTH* e no
+Smoothieware **gamma_max**. Por ser relativamente fácil de obter, fácil de corrigir, e portanto fácil de iterar
+em uma delta comum com endstops máximos, será a nossa "âncora" para medidas.
+. *Deslocamento* (offset) *de
+cada endstop de cada torre* (inclinação do plano). Se as torres são A, B e C, vamos chamá-los de D~A~, D~B~ e D~C~.
++
+[[delta1torresabc]]
+image::delta1torresabc.png[delta1torresabc,width=642,height=551,title="Visão de cima de uma delta, sendo ressaltadas as torres A, B e C (perceba que estão em sentido anti-horário) e as coordenadas X e Y, com a origem (0,0) no centro da mesa. A coordenada Z é a altura. A equivalência entre A, B e C e X, Y e Z é importante para as transformações trigonométricas que mapeiam coordenadas das torres em coordenadas cartesianas. Ressalte-se que a sequência ABC começa do canto inferior esquerdo e vai no sentido anti-horário. Dependendo da documentação consultada, tais torres podem aparecer como Alpha, Beta, Gamma ou mesmo X, Y e Z (causando confusão com os eixos cartesianos)."]
++
+[[delta1tresendstops]]
+image::delta1tresendstops.png[delta1tresendstops,width=642,height=424,align="center",title="Em uma delta ideal com simetria total e medias exatas, os três endstops superiores estariam em um plano perfeitamente horizontal, mas na prática terão um desnível/deslocamento, geralmente por volta dos décimos de milímetros."]
++
+. **Concavidade**. Essa pode ser a parte mais difícil de ser compreendida, e se traduz no seguinte: quando as
+medidas dos componentes estão erradas, a transformação trigonométrica de coordenadas nos pilares A, B e C para
+X, Y e Z tem o sintoma de transformar um plano em uma seção convexa ou côncava. Quer dizer, se você mandar o
+extrusor desenhar um quadrado num plano de altura específica, ao invés disso você terá como se fosse um quadrado
+desenhado na superfície de uma esfera.
+. **Distância angular entre as torres**. Na verdade _não usaremos_
+essas variáveis. As deltas têm três torres, e embora idealmente os ângulos delas devessem ser exatamente iguais
+(3 ângulos de 120°), na fabricação ou montagem pode haver alguma irregularidade. Adicionalmente, alguns modelos
+de delta podem adotar ângulos diferentes -- por exemplo, dois ângulos de 130° e um de 100°. Mas esse caso
+é tão raro, e as irregularidades de montagem quando existem são tão diminutas, que não interferem em nada na
+qualidade de impressão nas grandezas em que vamos trabalhar. De qualquer jeito, firmwares como Marlin e Repetier
+têm ajustes especiais para tratar esses casos -- não abordados aqui.
+. **Inclinação da mesa**. Assim como
+o plano dos endstops, a mesa pode ter uma inclinação não visível a olho nu. Essa inclinação complicaria pois
+seria composta com o plano dos endstops. Ao invés de medi-la e tentar corrigi-la, é possível _não usá-la_
+sem perder precisão, de modo explicado a seguir.
++
+[[delta1tresfontesdeerros]]
+image::delta1tresfontesdeerros.png[delta1tresfontesdeerros,width=618,height=512,align="center",title="Três das maiores fontes de erros e assimetria da construção de uma delta."]
+
+* Entendido que vamos tirar as medidas apenas para os itens **1, 2 e 3**, a idéia é __começar com tudo mecanicamente
+acertado e uniforme__, ou pelo menos o mais uniforme praticável: _simetria_ é mais importante que _precisão_
+/ __acurácia__. É essencial que os braços da impressora sejam **exatamente do mesmo tamanho**. Se você está
+montando uma reprap, existem gabaritos para acertar os braços de forma que fiquem idênticos. A plataforma de
+impressão também pode ser nivelada colocando a impressora em uma mesa perfeitamente horizontal (verificada com
+nível) e ajustando os parafusos de fixação para que também fique em um plano perfeitamente horizontal, usando
+o mesmo nível. Deste modo se elimina a preocupação da inclinação da mesa das medidas. O __effector__, se for
+impresso, deve ter sido impresso em uma impressora 3D bem calibrada, para não apresentar assimetria radial. As
+correias devem estar perfeitamente esticadas, sem nenhuma folga. Os motores dos eixos devem ser do mesmo tamanho e
+se possível mesma marca e fabricante. Autonivelamento de mesa deve estar desligado (podendo ser religado depois da
+calibração).
+* O EEPROM do microcontrolador (no caso do Repetier e Marlin, que usam arduino) deve estar ligado,
+para que a correção de deslocamento seja gravada nela. É possível fazer os ajustes com a EEPROM desligada,
+mas os valores serão perdidos quando a impressora for desligada.
+* Dois comandos em G-Code farão a correção:
+o `M666` faz a correção dos endstops. O `M665` faz a correção da concavidade.
+* O número de passos por mm do
+firmware nas torres deve ser colocado a partir das peças usadas na delta, não pela mensuração da distância
+percorrida. Como para o caso das impressoras cartesianas, use a _prusa calculator_ para calcular os números de
+acordo com as peças.
+
+[[delta1prusacalculator]]
+image::delta1prusacalculator.png[delta1prusacalculator,width=642,height=530,align="center",title="Prusa calculator. Exemplo do cálculo dos E-steps por mm com correia GT2 (2mm), polia de 20 dentes e passo do driver em 1/32."]
+
+Um exemplo seria o caso ilustrado na figura. Julgando que o motor do extrusor já foi medido e é de 760 passos
+por mm, a linha do `Configuration.h` no Marlin seria:
+
+[source,cpp]
+----------
+#define DEFAULT_AXIS_STEPS_PER_UNIT \{ 160, 160, 160, 760 } // 160.00 obtido da prusa calculator pros eixos
+----------
+
+Outros requisitos são: os endstops devem estar todos disparando quando tocados (G-Code `M119` para verificar)
+e portanto o comando `G28` deve estar funcionando e os motores devem se mover na direção certa.
+
+* *Medidas para a transformação inicial.* Essa seção pode parecer confusa, pois cada firmware usa uma
+nomenclatura diferente. Erros nessas medidas são os responsáveis pelo abaulamento (convexidade ou concavidade)
+da impressão. As medidas tiradas supõem que as três torres da delta são idênticas e uniformemente espaçadas,
+logo só se mede uma torre. Meça com uma régua e não se preocupe muito com valores exatos -- essas mesmas
+medidas serão corrigidas na frente. Os principais elementos de interesse aparecem na figura. A nomenclatura usada
+é a do Marlin atigo (antes da versão 1.1.0). Essas medidas são também as que o G-Code `M665` usa como parâmetros.
+
+[[delta1partesamedir]]
+image::delta1partesamedir.png[delta1partesamedir,width=642,height=427]
+
+As medidas são quase todas horizontais, _delta_diagonal_rod_ sendo a única na diagonal:
+
+* `DELTA_DIAGONAL_ROD` (o comprimento do braço da delta) está no arquivo Marlin.ino nas versões antigas e
+no Configuration.h nas versões novas do Marlin. Também tem o nome de `DELTA_DIAGONAL_ROD` no Configuration.h
+do Repetier, e no smoothieware se chama `arm_length`. Outro nome com que é referenciado é `diagonal rod length`.
+No comando `M665`, é o parâmetro `L`.
+* `DELTA_RADIUS`, a distância horizontal do parafuso do
+braço no effector até o outro parafuso do braço no carro do trilho, é chamada de arm_radius no smoothieware
+ou ainda tratada como __*horizontal radius when centered*__. O Repetier chama essa medida de `ROD_RADIUS`, mas
+não configura seu valor. No Marlin antigo, ele não necessariamente era medido: podia ser calculado com a seguinte
+expressão: +
+`DELTA_RADIUS = DELTA_SMOOTH_ROD_OFFSET -- DELTA_EFFECTOR_OFFSET -- DELTA_CARRIAGE_OFFSET` +
+No comando `M665`, é o parâmetro `R`.
+* `DELTA_SMOOTH_ROD_OFFSET`, valor não usado mais pelas novas
+versões do Marlin, mede a distância horizontal do centro da mesa até o centro da torre. No Repetier, ele tem
+o nome de `PRINTER_RADIUS`, e não é usado no Smoothieware. Como pode não ser usado -- não prejudicaria as
+transformações? Na verdade, se for ignorado o tamanho do effector e se considerá-lo como um ponto, os cálculos
+da delta são basicamente os mesmos, mudando apenas o tamanho da área de impressão horizontal; então, como esse
+dado é apenas o arm_radius com espaçamentos e o tamanho da mesa já é gerenciado pelo fatiador, o smoothieware
+se isenta de usá-lo. O comando M665 também não mexe neste valor.
+
+Com esses três dados colocados no firmwareou arquivo de configuração, já é desejável aferir a altura do bico.
+
+* A *altura do bico* (parâmetro H do G-Code `M665`) servirá primariamente como referência para evitar que o hotend
+afunde na mesa e __precisará ser refeita e regravada no firmware/EEPROM__ a cada nova iteração de medidas. Após
+todo o procedimento, ela será usada pelo _firmware_ para chegar à coordenada Z zero sem autonivelamento de mesa
+configurado. Um dos jeitos de medir é usar uma régua perpendicular à mesa e deixar os três braços no ponto
+mais alto (depois de um `G28`), e então fazer a medição; outro jeito é configurar uma altura maior no firmware,
+fazer homing, e então, no LCD ou pela USB, fazer a altura baixar até que o hotend toque a mesa, pegar o valor de
+deslocamento / diferença que aparece no LCD (o G-Code `M114` relata a posição se for pela USB) e corrigir o valor
+do firmware de acordo.  +
+Por exemplo, se coloca no firmware (`Configuration.h`, recompilação e regravação do arduino):
++
+[source,cpp]
+----------
+#define DELTA_HEIGHT 250.00
+----------
++
+Sabendo que 250 mm é maior que o valor que se vai medir. Então se
+liga a impressora e se faz __homing__. Navega-se pelos menus do LCD e se vai movendo o eixo Z até que o hotend
+toque na mesa. Tocando na mesa, vê-se uma posição Z de 61.5. Isso quer dizer que a altura dela na verdade é
+250 - 61.5mm, ou seja, 188.5mm. Muda-se então no firmware para [source,cpp]##define DELTA_HEIGHT 188.50#. Alternativamente,
+o valor pode ser ajustado dinamicamente por G-Code com o comando `M665 H188.50`.
+* Agora vem a parte crítica:
+sabemos que temos dois ajustes pra fazer -- o primeiro é a __inclinação dos endstops__, e pra esses por
+enquanto nem medidas temos. O segundo é o __abaulamento__, que estará perto das medidas reais, pois fizemos
+aferição inicial da `DELTA_DIAGONAL_ROD` e demais variáveis. No entanto, essas medidas ainda terão erros e o
+plano deve apresentar uma leve curvatura. Por qual dos dois começar? Os erros de um não vão prejudicar o outro? +
+A resposta para esse dilema é se aproveitar de uma propriedade geométrica dessas estruturas. Mesmo o plano
+abaulado com maior erro ainda será simétrico com as quinas, pois ele se utiliza da propriedade de as medidas das
+três torres serem exatamente iguais. Por outro lado, a inclinação dos endstops vem justamente da diferença
+de altura deles em cada torre, e será assimétrico por torre. Um *triângulo equilátero* com centro na origem
+e com os vértices na *direção das torres* terá cada um de seus vértices exatamente na mesma altura!
+
+[[delta1pontosequidistantes]]
+image::delta1pontosequidistantes.png[delta1pontosequidistantes,width=642,height=408,align="center",title="Os pontos equidistantes 1, 2 e 3 da ilustração, mesmo com erro de abaulamento, por serem simétricos às torres estarão exatamente na mesma altura. Aqui desenhado sem erro de inclinação, para visualização distinta do assunto."]
+
+* E o melhor tamanho para tal triângulo é tal que seus vértices fiquem a meia distância entre a posição (X,Y)
+do endstop e o centro da mesa, porque aí teremos uma proporção simples (metade) para saber o deslocamento /
+erro do endstop:
+
+[[delta1metadedadistancia]]
+image::delta1metadedadistancia.png[delta1metadedadistancia,width=642,height=336,align="center",title="Se &quot;2a&quot; é a distância do centro até o endstop, &quot;a&quot; é metade dessa distância. Uma inclinação &quot;b&quot; detectada no triângulo vermelho será equivalente a uma inclinação &quot;2b&quot; nas coordenadas (X,Y) do endstop."]
+
+* Quanto vale _2a_ neste caso? Oras, é um valor que já medimos: **DELTA RADIUS + DELTA_EFFECTOR_OFFSET**! Basta
+portanto pegar este valor e dividir por 2, para saber o tamanho _a_ da mediana do triângulo vermelho!
+* Poupado o trabalho de calcular os três pontos do triângulo equilátero, eles são, em (X,Y), relativos a um tamanho de
+mediana __a__: (0,__a__), (-0.866×__a__, -0.5×__a__) e (0.866×__a__, -0.5×__a__). Essas medidas são tiradas
+das propriedades do triângulo equilátero.^2^
+
+[[delta1triequilatero]]
+image::delta1triequilatero.png[delta1triequilatero,width=642,height=459,align="center",title="Medidas do triângulo equilátero que iremos usar para medir deslocamentos dos endstops. Por exemplo: se a distância do centro da mesa até a torre é de **150mm**, &quot;a&quot; valerá 75mm, e as coordenadas serão (0, 75), (-64.95, -37.5), (64.95, -37.5). Apesar de o padrão numérico brasileiro usar vírgulas em númers fracionários, pontos foram usados para evitar confusões com as coordenadas."]
+
+* Agora, tendo os pontos do triângulo e entendendo que o que vamos fazer é descobrir a inclinação do plano dos
+endstops, é bom saber que existem jeitos distinto de lidar com as medidas a ser coletadas. Fazer a movimentação
+pelo LCD das impressoras que o têm não é produtivo, e como essas impressas, assim como as que não têm LCD,
+também permitem controle pela USB através de um print host (enviando comandos G-Code), é a solução que será
+mostrada. Como alguns comandos serão repetidos várias vezes, nessa hora vale a pena conhecer bem o print host
+usado pra ver se suporta _macros_ ou _atalhos_ -- scripts simples facilmente acessíveis para operações repetitivas.
+
+[[delta1pronterfacemacros]]
+image::delta1pronterfacemacros.png[delta1pronterfacemacros,width=642,height=340,align="center",title="O Print Host Pronterface permite configurar macros, o que evita ter que teclar o mesmo comando várias vezes. Outros print hosts têm recursos ainda mais avançados, como parâmetros a passar."]
+
+* Eis o que vamos fazer: vamos posicionar o bico do hotend nos três pontos do triângulo na coordenada zero
+(encostados na mesa). Em cada um desses pontos vamos, com uma régua ou paquímetro, medir a diferença. Após
+conseguir esses números, vamos colocá-los como correções das torres no firmware e refazer os testes, vendo
+se ficaram nivelados. Mas há algumas observações a tomar:
+** Se o plano dos endstops está inclinado, é
+quase certo que **um dos pontos estará numa coordenada "abaixo da mesa"**, ou seja, o hotend vai **bater na plataforma de impressão**.
+Isso pode, claro, estragar o bico ou a mesa, e infelizmente a maioria das receitas
+de calibração de delta não avisa desse risco. Para evitar que isso aconteça, use primeiro uma coordenada Z
+(parâmetro "Z__número__" no G-Code) alta, como `Z20` (20mm acima da mesa) só para determinar de olho, nesse
+plano, qual é o ponto do triângulo mais baixo. Uma vez determinado e medido, fica fácil ir diminuindo o Z
+gradativamente de modo que o bico nunca colida na mesa. Assim que tal ponto mínimo for achado, é recomendado
+atualizar a `DELTA_HEIGHT` no firmware para refletir isso. Por exemplo: se o ponto *3* do triângulo é o mais
+baixo, e se quando ele encosta na mesa o firmware acusa a coordenada Z "1.6", isso significa que a altura da
+impressora está especificada 1.6 mm a mais do que alcançável. Se `DELTA_HEIGHT` for 240 (por exemplo), deve-se
+baixá-la para 238.4 (que ainda não será o valor real, só obtido no final de todas as calibrações).  +
+Pode acontecer ainda que a coordenada Z em que o hotend encostaria na mesa seria negativa e o firmware não permite que
+o hotend se desloque em uma coordenada dessas. Se for este o caso, no Marlin e Repetier deve-se mudar a definição
+de *Z_MIN_POS* para um número negativo (e.g. -20) no `Configuration.h`. No Smoothieware, não é necessário.
+** Para evitar maiores riscos, faremos que o hotend tente um ponto, __**volte ao topo da impressora com homing**__
+e só então tente outro ponto. O movimento lateral entre os pontos poderia raspar na mesa, por causa do erro de
+abaulamento ainda presente.
+** Dependendo de como a delta é montada, para a inclinação do plano dos endstops
+o leitor pode optar por **mexer fisicamente nos endstops da impressora**, movendo-os mais para cima ou para
+baixo na torre, ou informar esta correção no firmware, para que ele compense. A solução aqui descrita é a
+última, *realizar a correção nos parâmetros* sem mudar fisicamente nada.
+** G-Codes usados:
+*** *M665* -- ajustar configuração de abaulamento +
+Parâmetros:
+**** `L__número__` -- `DELTA_DIAGONAL_ROD`
+**** `R__número__` -- `DELTA_RADIUS`
+**** `H__número__` -- `DELTA_HEIGHT`
+*** *M666* -- ajustar configuração de desnível (plano dos endstops)^3^ +
+Parâmetros:
+**** `X__número__` -- deslocamento na torre A, negativo para baixo, positivo
+para cima.
+**** `Y__número__` -- deslocamento na torre B.
+**** `Z__número__` -- deslocamento na torre C.
+* Vamos então começar o procedimento.
+** Vamos considerar que tiramos as seguintes medidas para a impressora:
+*** `DELTA_HEIGHT` é 200mm. Na prática, raramente será tão exata.
+*** (`DELTA_RADIUS` + `DELTA_EFFECTOR_OFFSET`), ou seja, a distância horizontal do centro da mesa até o endstop, é **150mm**. As coordenadas do nosso triângulo,
+portanto, serão _**a**_ (-64.95, -37.5), _**b**_ (64.95, -37.5) e _**c**_ (0, 75). Os pontos foram nomeados de acordo
+com a torre perto da qual estão (A, B, C).
+** Primeiramente, ligamos a impressora na USB, disparamos nosso print
+host predileto e enviamos o comando de _homing_ e então o comando para ir no primeiro ponto, na coordenada Z 20
+(20mm acima da mesa) para não termos riscos de bater nela: +
+[source,gcode]
+----------
+G28
+G1 X-64.95 Y-37.5 Z20
+----------
+** Repetimos para os outros dois:
+[source,gcode]
+----------
+G28
+G1 X64.95 Y-37.5 Z20
+G28
+G1 X0 Y75 Z20
+----------
+** Percebemos que de olho o ponto __**a**__ (-64.95, -37.5) é o mais baixo de todos. Lentamente, abaixamos a até que toque na mesa:
+[source,gcode]
+----------
+G28
+G1 X-64.95 Y-37.5 Z15 ; continua acima da mesa
+G1 X-64.95 Y-37.5 Z10 ; continua acima da mesa
+G1 X-64.95 Y-37.5 Z8 ; continua acima da mesa
+G1 X-64.95 Y-37.5 Z4 ; toca na mesa
+----------
+
+** Redefinimos a `DELTA_HEIGHT` então para 4 mm menor, já que é o Z encontrado. 200 - 4 = 196mm. Se o Z encontrado fosse negativo, adicionaríamos o número.
+[source,gcode]
+----------
+M665 H196.00
+M500 ; grava na EEPROM ou config.txt
+----------
+** De novo, mandamos pela USB os comandos para as coordenadas
+do triângulo, mas dessa vez já para o ponto zero (encostado na mesa):
+[source,gcode]
+----------
+G28
+G1 X-64.95 Y-37.5 Z0
+G28
+G1 X64.95 Y-37.5 Z0
+G28
+G1 X0 Y75 Z0
+----------
+** Como o ponto _*a*_ é o nosso ponto mais baixo, ele deve tocar na
+mesa e os outros ficarão acima. Um resultado possível colocando em cada ponto e medindo a distância bico-mesa
+com paquímetro ou régua:
+
+[[delta1planoinclinado]]
+image::delta1planoinclinado.png[delta1planoinclinado,width=642,height=382,align="center",title="Nossas medidas colocaram o ponto *a* encostado na mesa (como esperado) e os pontos *b* e *c* tiveram uma distância de 0,3mm e 0,4mm respectivamente."]
+
+** Medimos uma diferença de Z de 0.3mm pra *b* e 0,4mm pra **c**. Mas precisamos saber a altura em que o centro
+(0,0) está para poder inferir a altura relativa de cada ponto. Para isso, basta tirar a média aritmética das
+alturas (0+0.3+0.4)/3 = 0.233... Isso significa que o centro está em (0,0,0.233...), o ponto __**a**__ está 0.233 mais
+baixo que o centro, o ponto __**b**__ está 0,066... mais alto que o centro e o ponto __**c**__ está 0,166... mais alto
+que o centro. Podemos usar agora a proporção do dobro: o deslocamento da torre *B* será 0,0666...×2 = 0.13 mm
+(arredondado) e o deslocamento da torre *C* será 0.1666...×2, ou seja, 0.33 arredondado. Redefinimos o nosso
+`DELTA_HEIGHT` para refletir o Z do centro da mesa com `M665` e colocamos os modificadores das torres A, B e C pelo
+comando `M666`. O novo `DELTA_HEIGHT` será 0.23 mm acima, ou seja, menor:
+[source,gcode]
+----------
+M665 H195.77 ; redefine DELTA_HEIGHT para o centro ficar com Z=0
+M666 X+0.23 Y-0.13 Z-0.33 ; colocam-se os deslocamentos
+M500 ; grava na EEPROM/config
+----------
+** Uma estratégia alternativa que envolve não redefinir o `DELTA_HEIGHT` seria simplesmente deixar a torre **A**,
+a mais baixa encontrada, como zero, e compensar nos outros deslocamentos. Assim:
+[source,gcode]
+----------
+M666 X0 Y-0.36 Z-0.56 ; deslocamentos compensados com A em 0
+M500 ; grava na EEPROM/config
+----------
+** Mandamos o hotend novamente para as três coordenadas, para ver se a correção saiu como esperado:
+[source,gcode]
+----------
+G28
+G1 X-64.95 Y-37.5 Z0.2 ; continua acima da mesa
+G1 X-64.95 Y-37.5 Z0 ; tocou a mesa
+G28
+G1 X64.95 Y-37.5 Z0.2 ; continua acima da mesa
+G1 X64.95 Y-37.5 Z0 ; tocou a mesa
+G28
+G1 X0 Y75 Z0.2 ; continua acima da mesa
+G1 X0 Y75 Z0 ; tocou a mesa.
+----------
+
+** O hotend deve ter encostado na mesa nos três casos. A inclinação foi corrigida, fica faltando o abaulamento. Caso não tenha dado
+certo, reefetue as medidas e repita o procedimento.
+** Agora vamos consertar o abaulamento. Para isso, o ponto que
+vamos precisar é o ponto central da mesa. Com o abaulamento, ele não estará no mesmo plano de __**a**__, __**b**__
+e __**c**__. Ele estará ou abaixo -- caso tenhamos uma deformação convexa -- ou acima -- caso tenhamos uma
+deformação côncava. No caso de estar abaixo, se mandarmos o hotend para a coordenada (0,0,0) ele vai colidir com
+a mesa, então como no caso anterior vamos colocar a uma altura arbitrária por segurança:
+[source,gcode]
+----------
+G28
+G1 X0 Y0 Z20
+----------
+** Colocamos "Z20" para o hotend ficar a 20mm acima da mesa. Então calculamos essa diferença, medindo a altura a
+que o hotend realmente ficou.
+** Digamos que o hotend parou a 18,4mm acima da mesa. Isso quer dizer que ele parou
+1,6mm (20-18,4) abaixo do plano dos endstops. Se tivesse parado a 21,4 acima da mesa, ele teria parado _-1,4mm_
+(20-21,4) _abaixo_ do plano dos endstops, ou melhor dizendo, 1,4mm _acima_ do plano dos endstops. Conforme a figura:
+
+[[delta1planorecalculado]]
+image::delta1planorecalculado.png[delta1planorecalculado,width=642,height=349]
+
+* Apesar de `DELTA_RADIUS` ser uma grandeza na horizontal e termos medido um deslocamento vertical, a relação
+trigonométrica entre as duas faz com que esse deslocamento possa ser adicionado ou diminuído de `DELTA_RADIUS`, para
+que o ponto centra fique no mesmo plano. Essa conta pode ser feita em etapas, por exemplo, supondo que medimos 1,6mm
+_abaixo_ do plano dos endstops, e que o `DELTA_RADIUS` medido com régua foi cadastrado como __110mm__. Precisamos
+_diminuir_ `DELTA_RADIUS` de 1,6mm e 110-1,6 = 108,4. Vamos diminuir um pouco menos, para 108.6. Lembrando que `M665
+R__número__` ajusta `DELTA_RADIUS`:
+[source,gcode]
+----------
+M666 R108.6 ; ajusta DELTA_RADIUS
+M500 ; grava no firmware / config
+G28 ; homing
+G1 X0 Y0 Z10 ; margem de segurança, para não batermos na mesa.
+G1 X0 Y0 Z5 ; margem de segurança, ainda estamos longe
+G1 X0 Y0 Z1 ; ainda não encostou
+G1 X0 Y0 Z0.1 ; encostou na mesa. Estamos acima do plano.
+M666 R108.5 ; diminuímos DELTA_RADIUS de um décimo de milímetro
+M500 ; gravamos no firmware
+G28 ; homing para zerar às posições
+G1 X0 Y0 Z0.1 ; não encostou na mesa, mas ficou bem próximo.
+G1 X0 Y0 Z0 ; o hotend encostou na mesa. Calibramos DELTA_RADIUS!
+----------
+** Terminou? Não. Ajustamos `DELTA_RADIUS` mas um valor ainda
+pode estar errado, o `DELTA_DIAGONAL_ROD`. O sintoma de um `DELTA_DIAGONAL_ROD` errado (ele é o tamanho do braço,
+lembre-se) são distâncias horizontais erradas na mesma proporção que ele. Se o `DELTA_DIAGONAL_ROD` estiver duas
+vezes menor que o real, por exemplo, e você mandar imprimir um quadrado de uma camada de altura, ele imprimirá o
+quadrado com arestas da metade do tamanho desejado.
+
+[[delta1medidasdobradas]]
+image::delta1medidasdobradas.png[delta1medidasdobradas,width=618,height=602,align="center",title="(a) medidas &quot;ideais&quot;; (b) braço com o dobro do tamanho. Neste caso, um movimento de um pilar se traduz em um movimento no plano XY duas vezes maior (2y), mas o movimento em Z não muda a escala (imagine os três pilares descendo juntos, eles percorrerão a mesma distância de antes). Portanto, se você informa ao firmware um DELTA_DIAGONAL_ROD duas vezes maior do que o real, a distância realmente percorrida será duas vezes menor."]
+
+** Esse fator nos dá a receita para achar o erro do `DELTA_DIAGONAL_ROD`: o meio mais simples é, se a impressora
+estiver com o extrusor funcionando, fazer ela imprimir um quadrado chato de tamanho conhecido -- digamos, _100mm x
+100mm_ de lado e 1mm de altura. Mede-se o lado impresso, suponhamos que tenha dado _96mm_ de lado. Isso quer dizer
+que ele precisa ser 100 / 94 = 1,041666... vezes maior. Digamos, ainda, que o `DELTA_DIAGONAL_ROD` cadastrado seja
+_240mm_ (pode-se usar o comando M666 sem parâmetros para saber). Multiplica-se 240 por 1,041666..., chegando-se
+a 250mm. G-Code: `M666 L250`. Seguindo de um comando `M500` para gravar os ajustes, nossa calibração da delta
+estaria finalizada^4^.
+** Se sua impressora não estiver ainda com o hotend ou tracionador funcionais, você pode
+mandar imprimir sem filamento -- o que se chama de "dry run", ou __execução seca__ -- e ir seguindo a trajetória
+do hotend com um lápis ou caneta. Algumas pessoas vão além e ao invés de colocar um hotend funcionado, deixam
+uma caneta presa no extrusor e mandam imprimir: a primeira camada será desenhada na base (colocando-se um papel
+preso a ela).
+
+[NOTE]
+.Notas:
+====
+. O endereço clássico com instruções sem figuras e bem resumidas, em inglês, de como
+calibrar uma delta: __http://minow.blogspot.com.br/index.html#4918805519571907051__. Outro
+endereço que passa uma receita mais bem explicada, também é inglês, é este:
+http://cdr2.com/delta-calibration.html[_http://cdr2.com/delta-calibration.html_]
+. O venerado site matemático _wolfram alpha_ tem os detalhes para os interessados (em inglês):
+http://mathworld.wolfram.com/EquilateralTriangle.html[_http://mathworld.wolfram.com/EquilateralTriangle.html_]
+. O firmware _Repetier_ tem um comportamento diferente de Marlin e Smoothieware, com deslocamentos positivos
+para baixo, e pelo menos em algumas versões o uso de passos de motor ao invés de mm. Para encontrar o valor
+em passos, multiplique pelo valor encontrado pela calculadora prusa para os passos do motor por mm, por exemplo:
+0,3mm × 160 passos por mm = 48 passos. Caso o comando não funcione adequadamente, pode ser necessário partir
+para o ajuste pelos menus do LCD.
+. A receita que passamos serve para os três principais firmwares: Marlin, Repetier e Smoothieware. No entanto,
+a receita do site do Smoothieware sugere um expediente um pouco diferente, que usa além dos explicados o G-Code M306
+(ausente no Marlin e Repetier), que reseta a posição zero da impressora para a coordenada atual. A calibração
+pelo smoothieware está descrita de forma sucinta na seção "Manual Calibration" de seu tutorial de delta:
+http://smoothieware.org/delta[_http://smoothieware.org/delta_]
+====
+
+== Calibração automática de delta com G33 (Marlin somente)
+
+Depois de toda esta via crúcis que é a calibração de uma delta, o leitor pode se estar perguntando se __não
+existe jeito mais fácil__! Em especial, em diversos momentos da calibração foi necessário tomar medidas da
+ponta do hotend até a mesa, em diversas coordenadas. E se um sensor no effector ou hotend pudesse medir essa
+altura? Ora, é exatamente isso o que a sonda Z ("Z probe") usada no autonivelamento de mesas de impressão faz!
+
+No momento da redação deste livro, os únicos firmwares que parecem ter implementado esta idéia é o _Marlin
+Firmware_ _1.1.0_ e seu fork __MK4duo 4.3.2__^1^. Assim como a calibração de delta, a autocalibração exigirá
+uma série de ajustes já perfeitamente configurados. Os requisitos são esses:
+
+* Como a autocalibração usará a sonda Z do hotend, o _offset_ (deslocamento) da sonda em relação ao bico
+deve estar configurado com exatidão, isto é, o firmware deve saber com perfeição a posição do bico.  *
+A mesa tem que já estar perfeitamente horizontal em relação ao quadro da delta, e sem imperfeições como
+abaulamentos ou saliências. A necessidade é de estrutura e não lógica -- usar autonivelamento de mesa para
+emular esta horizontalidade não funcionará.
+* Os passos por mm, assim como no caso da calibração da delta,
+devem ter sido configurados com exatidão, preferencialmente usando a __prusa calculator__.
+
+E cabem as seguintes observações sobre o método:
+
+* Os valores obtidos são:
+** `DELTA_HEIGHT` (`Height:__número__`)
+** Deslocamento da Torre A (`Ex:__±número__`)
+** Deslocamento da Torre B (`Ey:__±número__`)
+** Deslocamento da Torre C (`Ez:__±número__`)
+** `DELTA_RADIUS` (`Radius:número`)
+** Desvio-padrão da iteração (uma medida que diz a precisão obtida, quanto menor melhor)
+** (opcional) desvios de ângulos das torres **A**, **B** e **C** (`Tx`, `Ty` e `Tz`).
+* Ele calcula quase todas as variáveis restantes, _menos_ o `DELTA_DIAGONAL_ROD`, o tamanho do braço, já que seu erro não é medido verticalmente e
+sim horizontalmente, fora das capacidades da sonda Z. Isso quer dizer que no final da calibração automática
+ainda será necessário imprimir um quadrado de testes para a correção da medida no firmware.
+* Uma benesse é
+que se as torres não estiverem em ângulos perfeitos de 120° uma da outra, ele consegue também detectar esta
+disparidade. Mas como essa é uma imprecisão rara na construção de deltas, aconselhamos a deixar desligada
+tal detecção.
+* O algoritmo tem precisão arbitrária, que pode ser configurada em número de iterações ou
+desvio padrão mínimo.
+* O comando ajusta as correções na memória mas não grava na EEPROM. É preciso se
+lembrar de executar o G-Code `M500` no final do procedimento.
+
+Consideradas todas essas observações, depois de um G28, o comando para a autocalibração de delta é o
+`G33`. Ele calcula automaticamente um quadrado na mesa que ocupa a maioria de sua área. O comando aceita os
+seguintes parâmetros:
+
+* *Pnúmero* -- número de pontos de sondagem da aresta do quadrado.
+** *P1* -- sonda apenas o centro da mesa e
+infere a altura.
+** *P2* -- sonda um quadrado 2x2
+** *P3* a *P7* -- sonda quadrados 3x3, 4x4 etc. É necessário
+no mínimo P3 para ele medir as imprecisões de ângulos das torres.
+* **T0**/**T1**: Com 0, não calibra os
+ângulos das torres. Com 1, calibra tais ângulos. Aconselha-se T0. O default é T1 para P>2.
+* *C__número__* -- calibra para uma dada precisão; por exemplo, C0.03 calcula para que o desvio padrão seja no máximo de 0,03mm,
+levando tantas iterações quanto necessárias.
+* *F__número__* -- força pelo menos _número_ iterações serem
+executadas antes de sair do procedimento.
+* *V__número__* -- modo de execução:
+** *V0* -- Modo _dry-run_ (execução a seco). Apenas relata os ajustes, mas não configura.
+** *V1* -- Relata os ajustes.
+** *V2* -- Relata os ajustes e os resultados que obtém da sonda Z.
+* **E0**/**E1**: Usado no caso de sonda Z retrátil. Com 0
+(default), não recolhe nem estende a sonda. Com 1, recolhe e estende a sonda a cada medição.
+
+Exemplos de execução do comando:
+
+[source,gcode]
+----------
+G33 P4 C0.05 T0 ; sonda 16 pontos (4×4) e pára quando um desvio-padrão
+                ; de 0,05mm é alcançado. Calibra DELTA_HEIGHT, endstops
+                ; e DELTA_RADIUS, não calibra ângulos das torres.
+----------
+Com a saída:
+[source]
+----------
+G33 Auto Calibrate
+Checking... AC
+.Height:297.78    Ex:+0.00  Ey:+0.00  Ez:+0.00    Radius:100.00
+Iteration : 01                                    std dev:0.317
+.Height:297.65    Ex:-0.15  Ey:-0.16  Ez:+0.00    Radius:100.80
+Iteration : 02                                    std dev:0.059
+.Height:297.66    Ex:-0.17  Ey:-0.13  Ez:+0.00    Radius:100.91
+Calibration OK                                    std dev:0.042
+.Height:297.66    Ex:-0.17  Ey:-0.13  Ez:+0.00    Radius:100.91
+Save with M500 and/or copy to Configuration.h
+----------
+
+Ou ainda:
+
+[source,gcode]
+----------
+G33 ; calibra com ajustes default
+----------
+Saída:
+[source]
+----------
+G33 Auto Calibrate
+Checking... AC
+.Height:297.77    Ex:+0.00  Ey:+0.00  Ez:+0.00    Radius:100.00
+.Tower angle :    Tx:+0.00  Ty:+0.00  Tz:+0.00
+Iteration : 01                                    std dev:0.306
+.Height:297.65    Ex:-0.15  Ey:-0.14  Ez:+0.00    Radius:100.77
+.Tower angle :    Tx:-0.02  Ty:+0.11  Tz:+0.00
+Iteration : 02                                    std dev:0.049
+.Height:297.67    Ex:-0.12  Ey:-0.12  Ez:+0.00    Radius:100.87
+.Tower angle :    Tx:-0.03  Ty:+0.20  Tz:+0.00
+Iteration : 03                                    std dev:0.033
+.Height:297.69    Ex:-0.10  Ey:-0.12  Ez:+0.00    Radius:100.91
+.Tower angle :    Tx:-0.03  Ty:+0.25  Tz:+0.00
+Iteration : 04                                    std dev:0.031
+.Height:297.69    Ex:-0.07  Ey:-0.11  Ez:+0.00    Radius:100.92
+.Tower angle :    Tx:-0.03  Ty:+0.30  Tz:+0.00
+Calibration OK                                    rolling back.
+.Height:297.69    Ex:-0.10  Ey:-0.12  Ez:+0.00    Radius:100.91
+.Tower angle :    Tx:-0.03  Ty:+0.25  Tz:+0.00
+Save with M500 and/or copy to Configuration.h
+----------
+
+Salve então com o comando M500 e não se esqueça de depois disso imprimir o quadrado e corrigir o `DELTA_DIAGONAL_ROD`
+de acordo, como na calibração manual!
+
+[NOTE]
+.Nota:
+====
+. O Repetier Firmware implementa um comando "G33" mas tem funcionalidade bem diferente -- serve para
+"distortion correction" de mesa, um autonivelamento mais sofisticado equivalente ao _mesh leveling_ do Marlin.
+====

@@ -1,0 +1,767 @@
+[#guia-maker-da-impressao-3d-historico]
+= Histórico
+
+== Fotoescultura e topografia
+
+Em 1860 o artista francês François Willème criou um processo em que colocava o objeto de interesse em uma
+plataforma rodeado por 24 câmeras; fotografava para obter a silhueta de cada ângulo; e usava um processo usando
+um pantógrafo ligado a um cortador que reproduzia cada um desses perfis, totalizando uma forma tridimensional. Ele
+batizou o processo de __fotoescultura__.
+
+[[fotoescultura]]
+image::fotoescultura.gif[fotoescultura,width=388,height=423,align="center",title="Fotoescultura em 1870, créditos: George Eastman House"]
+
+Isso significa que já no século XIX tínhamos não só um rudimento da impressão 3D, como também de um processo de
+digitalização em 3D hoje chamado de fotogrametria. Faltavam, claro, os computadores para automatizar este processo.
+
+Na topografia, surgiram outras idéias. J. E. Blanther em 1890 sugeriu um método de camadas com suavização de
+placas de cera para criar mapas topográficos de terrenos, idéia aprimorada por Perera (1940) usando folhas de
+cartolina. Zang (1964) usava placas transparentes com inscrições e Gaskin (1974) criou um dispositivo educacional
+com tais técnicas.
+
+Em 1968, Swainson propôs um método que fabricaria peças tridimensionais pela cura seletiva do plástico,
+aplicando dois feixes de laser cruzados em um polímero fotossensível, com um trabalho paralelo sendo conduzido
+nos laboratórios Battelle. A técnica foi cunhada de maquinagem fotoquímica.
+
+Outro foi proposto por Ciraud (1971), usando pó depositado em uma matriz por gravidade, eletrostática, ou por
+um bico, e parcialmente derretido para produzir um objeto.
+
+Em 1972, Matsubara da Mitsubishi Motors propôs um processo topográfico que usaria materiais que endurecem
+com a luz. No processo, uma resina de fotopolímero (líquido monomérico que sofre polimerização, isto é,
+endurecimento) é usada como revestimento em partículas refratárias, como areia ou grafite, que são então
+espalhadas e aquecidas para formar uma folha consistente. A luz de uma lâmpada é seletivamente projetada nesta
+folha para endurecer uma porção definida dela, e o resto dissolvido. Já em 1974, DiMatteo reconheceu que esta
+técnica tinha o potencial de fabricar formas que são particularmente difíceis de obter conforme técnicas de
+usinagem padrão, como propulsores e aerofólios.
+
+Em 1979, Professor Nakagawa da Universidade de Tóquio começou a usar técnicas de laminação para fabricar
+ferramentas, em particular de prensa e injeção de moldes, e menciona a possibilidade de canais de resfriamento
+complexos em moldes de injeção.
+
+Foi em 1981, entretanto, em que o primeiro modelo funcional de uma máquina de impressão 3D funcional foi publicado
+por Hideo Kodama do Instituto de Pesquisas Industriais Municipal de Nagoya, no Japão. Seu sistema descrevia um
+sistema de prototipagem rápida baseada em fotopolímeros com construção de camadas correspondendo a seções
+transversais do modelo por três diferentes aparatos, dois deles sendo reconhecíveis no mercado hoje como as SLA
+"top-down" e "bottom-up" e o terceiro lembrando bastante a técnica conhecida como __polyjet__.^1^
+
+[NOTE]
+====
+1 - _Automatic method for fabricating a three‐dimensional plastic model with photo‐hardening polymer_ -
+H Kodama - Review of Scientific Instruments, 1981 - scitation.aip.org
+====
+
+== 3D Systems, DTM e Stratasys
+
+A primeira patente relacionada a impressão 3D veio em 16 de julho 1984, mas de franceses liderados por Alain Le
+Mehaute. Entretanto, a patente foi abandonada pelas instituições que fundavam a pesquisa e Charlie (Chuck) Hull,
+três meses mais tarde, deu entrada na primeira patente da tecnologia que mudaria o mundo. Chuck cunhou o termo
+"estereolitografia" para descrever a técnica em que, usando um material curável por luz ultravioleta e um
+feixe desta luz, sucessivas camadas representando as seções transversais de um objeto, iniciando da mais baixa
+até a mais alta, são atingidas seletivamente pelo feixe solidificando-o.
+
+[[slaantiga]]
+image::slaantiga.jpeg[slaantiga,width=600,height=488,align="center",title="Máquina SLA com peças feitas a partir de resina fotossensível endurecida"]
+
+Em 1986, Chuck fundou a primeira companhia de Impressão 3D do mundo, a **3D Systems Inc**. A companhia criou
+o hoje famoso formato de arquivo "STL", uma forma simples de representação de uma malha tridimensional
+por coordenadas dos vértices de triângulos orientados. A primeira impressora 3D com a técnica patenteada de
+estereolitografia (ou "SLA") só viria a ser produzida para venda em 1988 pela empresa.
+
+Em 1987, Carl Deckard, que trabalhava para a universidade do Texas, registrou uma patente para o processo que
+chamou de sinterização seletiva por laser ("Selective Laser Sintering" - SLS). A técnica consistia na
+"sinterização" sucessiva de camadas de um substrato em pó por um feixe de laser. A "sinterização" é
+um processo em que um pó, em temperatura menor que a de derretimento, se torna um sólido contínuo ao se unir com
+os grânulos do mesmo material ao redor. A patente foi concedida em 1989 e licenciada para a empresa **DTM Inc**,
+que foi mais tarde adquirida pela 3D Systems.
+
+[[brilhosls]]
+image::brilhosls.jpeg[brilhosls,width=642,height=458,align="center",title="Uma máquina SLS no processo de sinterização de uma camada de pó"]
+
+Foi o ano de 1989 que viu o surgimento da técnica de impressão 3D que, por suas características de robustez e
+economia, se tornou a dominante no mercado de massa de hoje: a FDM, ou modelagem por deposição de material fundido
+("Fused Deposition Modeling"). S. Scott Crump, um cientista de garagem interessado em fabricar brinquedos para
+a filha e maquetes para engenheiros (ou assim diz a lenda), fez o pedido de patente nesse ano e em 1992 conseguiu
+financiamento para criar a empresa **Stratasys**.
+
+[[fotosstratasys]]
+image::fotosstratasys.jpeg[fotosstratasys,width=615,height=383,align="center",title="S Scott Crump, fundador da Stratasys e inventor da técnica FDM^TM^, em palestra (esquerda) e ao lado do protótipo de sua impressora 3D (direita). Créditos: Stratasys.com"]
+
+== Os anos 90 e primeira metade dos anos 2000
+
+Após estes primeiros empreendedores darem a ignição na indústria de impressão 3D, os anos 90 e início dos
+2000 tiveram uma explosão de novas técnicas de manufatura aditiva e esses anos representaram o amadurecimento da
+tecnologia de impressão 3D. Inicialmente usada apenas para peças de amostra ou protótipos, isto é, peças que
+não precisam apresentar acabamento refinado ou propriedades mecânicas robustas, as inovações e aprimoramentos
+dessa era foram gradativamente tornando-a apta para produção industrial e em escala. A primeira técnica a
+perseguir este objetivo foi a *DMLS* da empresa EOS, Direct Metal Laser Sintering, que utiliza uma variação da SLS
+para fabricar peças em metal. A técnica batizada redundante e genericamente de "**3DP**", também chamada de
+_binder jetting_ por ser um nome mais descritivo, utiliza uma idéia parecida com a SLS, no entanto substituindo o
+laser por um jato de líquido de aderência e cor, tendo sido uma das primeiras técnicas a permitir combinações
+de cores na impressão 3D. Outra técnica a usar cores é a chamada **LOM**, Laminated Object Manufacturing, que
+consiste em uma impressora de jato de tinta imprimindo as camadas do objeto 3D em papel, empilhando as folhas de
+papel e as cortando de forma a criar a forma tridimensional. Esta técnica hoje é capitaneada pela empresa MCOR. A
+**SLM**, ou Selective Laser Melting, veio estender a funcionalidade da SLS para funcionar com materiais derretidos
+ao invés de somente sinterizados. A **EBM**, ou Electron Bean Melting, utiliza basicamente o mesmo funcionamento da
+SLM mas usando um feixe de elétrons e consegue trabalhar com materiais com altíssimo ponto de fusão como titânio.
+
+[[lomartefinal]]
+image::lomartefinal.png[lomartefinal,width=642,height=535,align="center",title="Processo de acabamento (retirada da peça impressa do bloco de papel, uma vez terminada) de uma impressão feita pela técnica Laminated Object Manufacturing (LOM). Créditos: National University of Singapore, http://blog.nus.sg.edu"]
+
+== O rompimento: o projeto RepRap
+
+[[fotoreprap]]
+image::fotoreprap.jpeg[fotoreprap,width=642,height=379,align="center",title="Adrian Bowyer (esquerda) e Vik Olliver (direita) com sua reprap &quot;mãe&quot; feita em uma FDM tradicional e a primeira RepRap &quot;filha&quot; de sucesso ao lado, feita pela da esquerda. Créditos: http://reprap.org/wiki/About"]
+
+Infelizmente, com todo esse aparecimento de novas tecnologias prometendo revolucionar a indústria e os modos de
+criação, vieram também as chagas da propriedade intelectual. Tradicionalmente, ao criar uma nova tecnologia,
+indivíduos e empresas registram em seu país uma "patente", que é um dispositivo legal que permite ao seu
+detentor ter o monopólio de comercialização daquela idéia ou processo por um prazo que chega até 20 anos
+a partir da data de aplicação^1^. Ao aplicar a uma patente em um país, por força de tratados internacionais,
+o requerente ganha também a exclusividade internacional para registrar o mesmo processo em outro países pelo
+prazo de um ano.
+
+Patentes podem até facilitar o retorno financeiro, mas têm o efeito colateral de impedir ou limitar o uso daquela
+tecnologia, elevar enormemente o preço e impedir inovações externas pelos 20 anos de vigência da patente. Se
+poucos anos após a patente da Stratasys alguém tivesse pensado em um jeito de aprimorar a técnica tornando-a
+mais eficiente, barata ou acessível, teria que ter uma conversa constrangedora com os advogados da empresa,
+que não se interessava muito por estas melhorias já que visava somente o mercado industrial e não o mercado de
+massa ou de pequenos empresários.
+
+E aconteceu o previsto: A tecnologia ficou basicamente estagnada pelos 20 anos de vigência da patente. Ainda
+hoje, a Stratasys tornou-se proficiente em _patent fencing_ e tem mais de 500 patentes relacionadas e um time
+legal numeroso pra tentar se assegurar que mais ninguém use a tecnologia.
+
+Mas já por volta de 2004, o engenheiro e matemático Adrian Bowyer pensava em aproveitar a vindoura queda da patente
+em 2009. Ele escreveu na página da Universidade Bath sobre o que batizou de __projeto RepRap__, uma máquina de
+manufatura aditiva auto-replicante, isto é, que seria capaz de fazer peças para fabricar outras do mesmo tipo. O
+nome do projeto ilustrava isto: "RepRap" significa __Replicator for Rapid Prototyping__, ou Replicador para
+Prototipagem Rápida. O projeto seria colaborativo e open-source, como o kernel de sistema operacional Linux,
+e documentado em um "wiki" como a wikipedia. Doctor Bowyer conseguiu voluntários para ajudá-lo, entre eles
+Vik Olliver e Joshua Pearce, sem contar uma colaboração mais tarde com Massimo Banzi do projeto Arduino de
+microcontroladores open-source. Em 2005 o site do projeto já estava no ar. Para evitar conflitos com a sigla
+"FDM" que é marca registrada da Stratasys, chamaram o mesmíssimo processo de "FFF" - Fused Filament
+Fabrication (Fabricação por Filamento Fundido). Em janeiro de 2009, com uns poucos projetos de impressora 3D
+já no site, o primeiro kit de impressora 3D open-source estava à venda, da BfB RapMan. Em Abril do mesmo ano a
+empresa *Makerbot Industries* liberou também a sua impressora 3D open-source, a __CupCake__. Outras empresas se
+seguiram, como a *Ultimaker* que além de liberar sua primeira impressora 3D contribui até hoje para o fatiador
+_cura_ e o firmware __Marlin__; outras receitas de impressoras 3D apareceram, e com o sucesso retumbante do projeto
+a pilha completa de software e firmware para operar uma impressora 3D usando qualquer sistema operacional estava
+completa. Segundo a wikipedia, no ano de 2009 o preço de uma impressora 3D diminuiu em duas ordens de grandeza,
+aproximadamente 100 vezes.
+
+O projeto reprap cumpriu perfeitamente muitos de seus objetivos. Conseguiu peças mais acessíveis e baratas para
+os componentes de impressão 3D^2^, usando desde barras roscadas que se encontra em qualquer loja de parafuso para
+eixos ao invés de fusos trapezoidais até plataformas com resistência aquecedora para serem usadas no lugar
+das caríssimas câmaras aquecidas isoladas. Agregou e incentivou desenvolvedores a criarem firmwares open-source
+completos e cheios de recursos para os microcontroladores usados, estes baseados no Arduino Mega e mais tarde em
+microprocessadores sofisticados como o do embarcado Beaglebone Black. Estabeleceu um centro de referência para
+as informações sobre impressoras 3D de baixo custo. E junto com isso estabeleceu uma série de padrões seguidos
+por empresas e indivíduos sem necessidade de agências reguladoras para encarecer o processo.^3^
+
+Hoje o projeto reprap tem meia dúzia de fatiadores open-source multiplataforma e que funcionam em qualquer
+impressora 3D FFF de baixo custo, tem 11 firmwares diferentes que podem ser usados em suas máquinas (o número
+é maior, mas ninguém sai contando os _forks_ de firmwares existentes que surgem), e tem mais de 100 receitas
+completas de construção de impressoras open-source, com os softwares, diagramas, planos de corte, arquivos 3D
+(STL) das peças imprimíveis e lista de compras (BOM - "Bill of Materials"). Um outro uso do projeto reprap
+é para inventores de diversos dispositivos -- geralmente associados à impressão 3D, claro -- registrarem todo
+o projeto de sua invenção e assim impedirem que ela seja patenteada, visto que um wiki mantém o histórico das
+modificações eternamente e que as leis de patentes declaram uma patente nulificada se for descoberto que há
+"arte prévia", ou seja, uso real da idéia ou processo em algum outro produto.
+
+O projeto RepRap também explica o que aconteceu com o mercado de massa após 2009. Foi quando as primeiras manchetes
+sobre "impressão 3D" começaram a aparecer, encantando o público com suas criações, e em como apareciam
+indivíduos "geniais" que construíam suas próprias impressoras 3D mas que na verdade apenas reutilizavam
+receitas do site do projeto.
+
+[[impressaocobreebronze]]
+image::impressaocobreebronze.jpeg[impressaocobreebronze,width=443,height=372,align="center",title="Copperfill (esq.) e bronzefill (dir.), filamentos de imitação de metal da empresa Colorfabb (créditos: colorfabb.com)"]
+
+Livre das amarras das patentes, o mercado de massa de impressão 3D irradiou-se para uma série de áreas antes
+inexploradas, desde simples reparos domésticos (quem usaria uma impressora de um milhão de dólares pra isso?) até
+próteses e utilidades que ninguém imaginaria antes -- um professor de faculdade adquiriu uma Replicator e
+trocou seu extrusor por uma seringa aquecida de água e açúcar, que gera arcabouços de açúcar solidificado
+onde se joga uma cultura de células, que crescem em volta do arcabouço e o consome, formando veias e artérias
+no lugar. Um dos mais problemáticos obstáculos da cultura de órgãos foi resolvido desta forma simples! Se a
+Stratasys não tivesse segurado a patente, imagine quanto sofrimento teria impedido ou até vidas teria salvado;
+se o projeto RepRap não tivesse surgido, imagine quantas vidas estariam miseráveis ou até nem mais vivas.
+
+E melhorias na tecnologia FDM -- ou FFF, como preferir -- surgiram por todos os lados, não só nas máquinas. Os
+firmwares e fatiadores conseguiram recursos admiráveis, os modeladores populares de formas 3D se apressaram em
+garantir compatibilidade com o formato de arquivo usado pelos fatiadores e em oferecer recursos que ajudassem a
+impressão 3D. Pequenas startups de engenheiros químicos e cientistas de materiais começaram a trabalhar com
+filamentos diferentes do plástico convencionalmente usado nas impressoras 3D, o ABS -- e já vieram com o PLA,
+um plástico de origem orgânica da empresa NatureWorks.
+
+E o PLA foi só o começo. Outros materiais começaram a aparecer, como os nylons da empresa Taulman3D; os
+filamentos flexíveis, como o italiano Filaflex ou o estadunidense Ninjaflex; os de imitação de materiais,
+como madeira (serragem misturada com PLA), cobre e bronze (também com pó de metal); os fosforescentes; os
+condutores; os demais plásticos usados em injeção -- PEAD, PETG, policarbonato, poliacetal, polipropileno;
+os filamentos dissolvíveis, como PVA e HiPS; os filamentos para fundição, como Filamet Copper... Ninguém fez
+uma contabilidade de quantos materiais diferentes já estão disponíveis para impressoras FDM de baixo custo,
+mas esse número com certeza já ultrapassa uma centena.
+
+[[hotendcyclop1]]
+image::hotendcyclop1.png[hotendcyclop1,width=693,height=377,align="center",title="hotends compactos chimera e cyclops para dois filamentos da empresa e3d (http://e3d-online.com)"]
+
+Esse gigantesco desabrochar e democratização de uma tecnologia avançada está tendo impacto profundo em nossa
+sociedade. Outras tecnologias não sofreram o mesmo processo. Você não teve as pessoas construindo televisões em
+casa quando a tecnologia ficou popular. Você não teve pessoas criando seus próprios computadores ou smartphones
+em suas garagens ou pequenas empresas quando da massificação dessas tecnologias. Mas isso está acontecendo com a
+impressão 3D, criando uma dinâmica de mercado muito diferente daquilo que se conhecia até então. Por exemplo,
+existem muitas empresas famosas por criarem peças genéricas para impressoras 3D de alta qualidade, como a *e3d*
+e *reprap.me,* e liberarem seus projetos sob licenças open-source para serem fabricados em qualquer lugar do mundo.
+
+Talvez esse mercado incipiente explique o que a Stratasys fez em 2013. Para entender isso, vamos falar mais de
+uma empresa que já mencionamos.
+
+
+[NOTE]
+.Notas:
+====
+. Alguns detentores de registros de patentes utilizam-se de uma estratégia chamada "__Patent fencing__",
+que se traduz em registrar uma extensão óbvia do processo da patente original quando a data de expiração desta
+patente estiver próxima, estendendo assim na prática a duração da patente.
+. http://reprap.org/wiki/BackgroundPage[_http://reprap.org/wiki/BackgroundPage_]
+. Para uma história do projeto reprap contada pelos próprios integrantes, uma boa referência é
+https://all3dp.com/history-of-the-reprap-project/[_https://all3dp.com/history-of-the-reprap-project/_]
+. A história da impressora de açúcar pode ser vista em inglês aqui:
+http://www.3dprinterworld.com/article/aleph-objects-enjoys-809-percent-two-year-revenue-growth[_http://www.3dprinterworld.com/article/aleph-objects-enjoys-809-percent-two-year-revenue-growth_]
+====
+
+== Makerbot (2009)
+
+[[fotomakerbot]]
+image::fotomakerbot.jpeg[fotomakerbot,width=642,height=434,align="center",title="Fundadores da Makerbot - esquerda para a direita: Adam Mayer, Zach Smith e Bre Pettis. Crédito: wikipedia"]
+
+Empresa que começou junto ao movimento RepRap, com um de seus fundadores, Zach Smith, sendo também um dos
+fundadores do projeto. Ganhou fundos de investimento do próprio Adrian Bowyer e sua esposa. Reconhecida também
+por fomentar a criatividade na impressão 3D com o portal __thingiverse.com__, o site de modelos para impressão
+3D mais acessado da internet. Atualmente, o portal tem mais de 600 mil modelos completamente gratuitos para baixar,
+muitos deles com licenças open-source permitindo modificação, redistribuição e uso comercial.
+
+Suas impressoras 3D começaram vindo com um fatiador open-source próprio chamado __ReplicatorG__; como decisão
+de projeto, resolveram abandonar o formato mais usado de instruções de máquina CNC -- o chamado g-code --
+para utilizar um formato próprio chamado S3G (terminação .x3g) para funcionar com seu firmware open-source
+__Sailfish__. Posteriormente, o ReplicatorG foi trocado por outro fatiador com bibliotecas open-source mas interface
+fechada, embora muito mais amigável (e com menos opções).
+
+A empresa teve uma história conturbada. Apesar do seu começo idealista e promissor (as primeiras unidades se
+esgotaram rápido), em 2012 Zachary Smith já foi expulso da empresa por discordar das mudanças em relação
+a liberação de código acontecendo e em 2013 ela foi adquirida pela Stratasys. Logo após a aquisição, sua
+próxima impressora, a Replicator 2, começou a ser vendida sem liberação de código ou receitas, ou seja,
+abandonando toda a filosofia open-source a que a empresa tinha se comprometido no começo.
+
+Em 2014, a operadora de streaming _Netflix_ produz um documentário sobre a empresa intitulado __Print the
+Legend__. Objetivando ser um registro histórico do início das impressoras 3D de baixo custo, ele foca no fundador Bre
+Pettis, no abandono dos princípios open-source e na trajetória conturbada da empresa. Aparecem vários integrantes
+do projeto Reprap e, claro, Zachary Smith, mas em uma hora e meia de documentário não aparece absolutamente nenhuma
+menção ao projeto e nem mesmo há a sugestão que haveria alguma iniciativa open-source fora da Makerbot no início.
+
+No mesmo ano de 2014, um escândalo acomete a Makerbot através de sua companhia-mãe, a Stratasys. Aproveitando-se
+da extrema popularidade do seu site __thingiverse__, a empresa aplicou alguns registros de patentes de design
+open-source feitos por usuários do portal, sem sequer informá-los disso e para usar em seus produtos. A empresa
+OpenBeam, uma das empresas do ecossistema open-source de impressão 3D, descobriu isso e publicou uma carta aberta
+à Makerbot para ela "manter a classe"^1^. Um movimento em massa de saída dos usuários iniciou, sendo que
+muitos deles deixam postados protestos em suas páginas do thingiverse apontando para outros portais do mesmo gênero.
+
+Devido a manchas na reputação como essa, ao elevado preço das impressoras 3D da empresa, à diminuição
+de qualidade após a aquisição pela Stratasys, e à elevada competição de outras impressoras domésticas,
+a Makerbot começou a perder bastante mercado, e já passou por algumas levas de demissão em massa, sendo hoje
+uma companhia diminuta perto do que era.
+
+[NOTE]
+.Notas:
+====
+. http://www.openbeamusa.com/blog/2014/5/22/stay-classy-makerbot[_http://www.openbeamusa.com/blog/2014/5/22/stay-classy-makerbot_]
+====
+
+== A Alvorada da SLA -- Formlabs e B9 Tech
+
+Ainda que este curso tenha maior foco na tecnologia FFF, é importante notar uma outra técnica de impressão 3D
+que está tendo uma trajetória não muito diferente das de material fundido. A tecnologia é a estereolitografia
+de Chuck Hull, mais antiga, cuja patente principal expirou em 2014, o que tem levado mais e mais fabricantes
+a investirem nessa tecnologia. A partir do ano de 2016 os insumos já sofreram uma queda grande de preços,
+inclusive no Brasil, e a tendência continua.
+
+Comecemos pelas diferenças -- enquanto Makerbot e Ultimaker são empresas que começaram por seus próprios meios,
+poucos anos mais tarde as iniciativas de __crowdfunding__, ou financiamento coletivo, já estavam mais populares e
+empreendedores confiavam mais nelas para começar seus negócios. Tanto a Formlabs Form1 (2012) quanto a B9 Tech
+B9 Creator (2013) foram impressoras 3D de resina fotopolimerizável iniciadas no portal de financiamento coletivo
+__kickstarter__.
+
+Pode parecer estranho que uma empresa comece a comercializar um modelo concorrente 2 anos antes de a patente expirar,
+mas a esperança é que a empresa cuja patente esteja sendo violada não se dê ao trabalho. A Formlabs lançou
+sua SLA e foi processada pela 3D Systems, mas acertaram os termos fora das cortes e a impressora 3D continuou
+sendo comercializada, hoje em dia sem precisar pagar royalties.
+
+[[fotodonoformlabs]]
+image::fotodonoformlabs.jpeg[fotodonoformlabs,width=642,height=480,align="center",title="Maxim Lobovsky, um dos 3 fundadores da Formlabs, com a impressora 3D ao fundo. Créditos: kickstarter.com"]
+
+Já a B9 Creator sofreu menos este revés, pois ao invés de utilizar a tecnologia SLA "pura", usou uma variante
+dela que ao invés de um feixe de laser, usa um retroprojetor modificado. Essa tecnologia é chamada de SLA/DLP
+ou simplesmente DLP, por causa do projetor. Adicionalmente, a impressora deles foi financiada com apenas um ano de
+diferença e inicialmente o projeto era open-source, com um fatiador multiplataforma e aberto. Não foram processados.
+
+[[fotob9creatoreform1]]
+image::fotob9creatoreform1.png[fotob9creatoreform1,width=1246,height=747,align="center",title="B9 Creator e Form1 e uma comparação de acabamento entre uma peça de SLA da Form1+ (esquerda) e e uma impressora FFF (direita) com a mesma resolução de 0,1mm de camada, com a de SLA se mostrando nitidamente melhor. Créditos: respectivos sites b9creator.com e formlabs.com"]
+
+Essas duas impressoras "iguais mas diferentes", assim como as repraps, criaram o padrão de compatibilidade que
+todas as novas impressoras 3D SLA / SLA/DLP estão adotando. Comprimento de onda do raio ultravioleta, resolução,
+volume e até interface do fatiador são imitados por outras empresas entrando na área.
+
+Esta tecnologia usa um material que consegue ter maior resolução que FFF (tipicamente, 25 mícrons de camada
+mínima, comparada com 100 mícrons de uma FFF) e até na mesma resolução, maior qualidade de acabamento.
+
+O uso, os insumos, os acabamentos no entanto diferem bastante. Embora isso já fuja ao
+escopo deste curso, você pode ver uma comparação entre o uso de FFF e SLA neste vídeo:
+https://www.youtube.com/watch?v=UksOU1J0AIM[_https://www.youtube.com/watch?v=UksOU1J0AIM_]
+
+Por último, já existem muitas impressoras SLA e SLA/DLP sendo inventadas e construídas sob licença open-source,
+até mesmo por grandes empresas. A conhecida software-house Autodesk criou uma SLA/DLP completa com eletrônica,
+firmware e até resina licenciados sob CC-BY-SA (a mesma licença deste documento!) de nome Ember. Outras
+empresas e indivíduos foram pelo mesmo caminho e você encontra comunidades fervilhantes de idéias como a do
+site "Build Your Own SLA" (http://buildyourownsla.com/[_http://buildyourownsla.com_]) ou do projeto OpenSLA
+(https://plus.google.com/communities/109609533907401814291[_https://plus.google.com/communities/109609533907401814291_]).
+
+=== A Alvorada da SLS?
+
+A Formlabs não descansou em cima dos méritos. Além de continuar aprimorando e colocando sensores e controladores
+nos novos modelos e de liberar certos códigos de forma aberta e multiplataforma, recentemente lançou uma solução
+de impressão em lote automatizada (__Form Cell__) e agora uma impressora 3D SLS (Selective Laser Sintering), a **Fuse
+1**. Será um indício que antes mesmo de a SLA se estabelecer completamente, SLS chegará ao mercado de baixo custo?
+
+[[fotoformfuse1sls]]
+image::fotoformfuse1sls.png[fotoformfuse1sls,width=642,height=409,align="center",title="Fuse 1, primeira impressora 3D SLS da Formlabs. https://www.youtube.com/watch?v=VdFGdUSbaEg"]
+
+== A Academia e a Impressão 3D
+
+Internacionalmente, a impressão 3D e suas várias tecnologias não eram muito conhecidas ou popularizadas (por
+causa das patentes) até começar a tomar proporções industriais, no final da década de 90. Como consequência
+desse baixo __mindshare__, a academia -- isto é, as universidades, instituições de pesquisa, laboratórios de
+testes e outras instituições que se ocupam em criar o conhecimento de nível superior -- praticamente ignorava
+o assunto, com algumas poucas incursões de pesquisadores mais entusiasmados pelo conceito (e que inevitavelmente
+tinham que gastar um espaço de seus artigos para explicar a tecnologia e para o que ela servia). Com a virada do
+milênio, e com as então corporações do ramo necessitando de resultados científicos e confiáveis para clientes
+cada vez mais exigentes, e fabricações cada vez mais sendo usadas como produto final ao invés de protótipos,
+a aproximação à academia era inevitável.
+
+Isso não era tão fácil: O ambiente de cabala, os designs patenteados, os segredos industriais e o acesso
+dificultado às máquinas e instalações das impressoras 3D estava nitidamente em contradição com a necessidade
+acadêmica de divulgação de informação, exposição às claras e acesso livre para experimentação. Ainda
+assim, com dinheiro envolvido e iniciativas de colaboração com universidades destacadas - principalmente em
+seus departamentos de engenharia -, os artigos de relevância começaram a crescer em número. É de 2002 que por
+exemplo temos o artigo seminal __Anisotropic material properties of fused deposition modeling ABS__^1^, que analisa o
+problema das resistências não-uniformes numa peça impressa em 3D; também em 2002 que temos o __Fused deposition
+modeling of novel scaffold arthictectures for tissue engineering applications__^2^, analisando padrões de suporte
+e raft. Do lado da estereolitografia, que já tinha relações mais estreitas com a academia, temos o __Use of
+stereolithography to manufacture critizal-sized 3D biodegradable scaffolds for bone ingrowth__^3^, um artigo sobre
+padrões de estrutura para auxílio de crescimento de ossos, e já sinalizando para a entrada da impressão 3D no
+campo biomédico. Muitos outros artigos com técnicas, números e variáveis usados até em impressoras 3D de baixo
+custo são dessa época -- mostrando uma explosão tanto da relevância da tecnologia quanto do interesse acadêmico.
+
+Foi desse interesse acadêmico, aliás, e nesse ambiente favorável que Adrian Bowyer, Vik Olliver e outros
+tiveram em 2004 a idéia para o projeto 2004 e em 2006 Boywer já publicava a apresentação __The Replicating
+Rapid-prototyper - moving hardware through the wires__^4^ pela Universidade de Illinois.
+
+Em meados dos anos 2000, o próprio _Journal of Rapid Prototyping_ já estava consolidado como uma publicação de
+Alto Impacto e as variadas tecnologias de impressão 3D já tinham razoável _mindshare_ acadêmico, que depois seria
+ampliado para fora da academia devido ao projeto reprap. A segunda metade da primeira década do milênio experimentou
+uma escalada extraordinária de artigos úteis para fabricação, muitos deles já tratando a incipiente idéia da
+impressão 3D de baixo custo. Entre eles temos o paper de Bowyer e seus colaboradores avaliando os resultados do
+projeto reprap em 2009, "__RepRap: The Replicating Rapid Prototyper -- maximizing customizability by breeding
+the means of production__"^5^ e novamente em 2011 com "RepRap -- the replicating rapid prototyper"^6^.
+
+[NOTE]
+.Referências:
+====
+. Ahn, S. H., Montero, M., Odell, D., Roundy, S., & Wright, P. K. (2002). Anisotropic material properties of
+fused deposition modeling ABS. __Rapid prototyping journal__, __8__(4), 248-257.
+. Zein, I., Hutmacher, D. W., Tan, K. C., & Teoh, S. H. (2002). Fused deposition modeling of novel scaffold
+architectures for tissue engineering applications. __Biomaterials__, __23__(4), 1169-1185.
+. Cooke, M. N., Fisher, J. P., Dean, D., Rimnac, C., & Mikos, A. G. (2003). Use of stereolithography to manufacture
+critical‐sized 3D biodegradable scaffolds for bone ingrowth. __Journal of Biomedical Materials Research Part B:
+Applied Biomaterials__, __64__(2), 65-69.
+. http://self.gutenberg.org/wplbn0002096545-the-replicating-rapid-prototyper-by-adrian-bowyer.aspx?&words=technology[_http://self.gutenberg.org/wplbn0002096545-the-replicating-rapid-prototyper-by-adrian-bowyer.aspx_]
+. Sells, E., Smith, Z., Bailard, S., Bowyer, A., & Olliver, V. (2009). RepRap: the replicating rapid prototyper:
+maximizing customizability by breeding the means of production.
+. Jones, R., Haufe, P., Sells, E., Iravani, P., Olliver, V., Palmer, C., & Bowyer, A. (2011). RepRap--the
+replicating rapid prototyper. __Robotica__, __29__(01), 177-191.
+====
+
+=== academia.edu e Joshua M. Pearce
+
+No mundo de _facebook_ de hoje, é notório que as redes sociais de internet são um poder à parte, uma forma de
+organização com grande impacto sócio-econômico global, e com a capacidade efetiva de dirigir a mudança de
+papéis de antigas e novas instituições. Redes sociais especializadas existem para tudo, de uso e manufatura
+de mapas para viagem até para contatos e mobilidade profissional, e o campo acadêmico não é exceção, com
+portais como _researchgate_ e __academia.edu__. Fundada em 2008 como rede de publicações de artigos científicos,
+a rede social _academia.edu_ serviu como plataforma ideal para os entusiastas do movimento _Open Access_ (ou seja,
+artigos científicos que não sejam cobrados ao público leitor) e por isso costuma ter uma porcentagem muito
+maior deste tipo de artigo. Como uma grande parte dos gastos das publicações científicas se relaciona com
+o processo de revisão por pares, o portal tem experimentado novas maneiras de o realizar diminuindo os custos,
+como os comentários de outros pesquisadores. Os artigos colocados lá são "pré-print", ou seja, antes mesmo
+de passarem pelo processo formal de revisão de pares (externo) e publicados.
+
+Um pesquisador que esteve presente em todos esses momentos e teve participação pesada no movimento RepRap é o
+Prof. Dr. Joshua Pearce, estando entre os 0.1% maiores contribuidores, e sempre com artigos de enorme utilidade
+para a fabricação digital de baixo custo, com tantos exemplos úteis que a citação de artigos desta parte
+__transbordaria__. Para citar apenas alguns artigos^1^ recentes, em "Emergence of Home Manufacturing in the
+Developed World: Return on Investment for Open-Source 3-D Printers", ele examina o retorno econômico da venda
+e peças de impressoras 3D open-source; em "Free and Open Source Automated 3-D Microscope" ele ensina como
+construir um microscópio eletrônico usando impressão 3D; em "Open Source Laser Polymer Welding System:
+Design and Characterization of Linear Low-Density Polyethylene Multilayer Welds", ele ensina técnicas e
+caracterização de construção de impressoras 3D SLS open-source, e em "Environmental Life Cycle Analysis
+of Distributed Three-Dimensional Printing and Conventional Manufacturing of Polymer Products" ele analisa
+modos de reciclar e reutilizar plástico de impressão 3D de baixo custo. Seus artigos se concentram na área
+de tecnologia sustentável, impressão 3D open-source, economia e ciclos econômicos de hardware open-source,
+e diferentes tecnologias de impressão 3D. Sua obra mais famosa é um livro cuja influência na cultura _Maker_
+tem sido basal, o "Open-Source Lab", que poderia ser uma enorme ajuda nos muitos laboratórios de física,
+química e biologia do Brasil se fosse mais conhecido por aqui.
+
+Dr. Pearce continua ativo e produzindo muita informação. Em especial, ele e seu grupo têm o costume de, mais
+do que deixar os artigos publicamente acessíveis na __academia.edu__, detalhar os projetos no wiki de tecnologia
+sustentável http://appropedia.org/[_http://appropedia.org_], onde tem uma página detalhando suas informações.^2^
+
+[[opensourcelab]]
+image::opensourcelab.png[opensourcelab,width=471,height=705,align="center",title="Livro seminal sobre impressão 3D open-source e o uso dela para a construção barata de itens de laboratório, do pesquisador Joshua Pearce. Ele também é uma obra livre sob a mesma licença que este livro que você está lendo, sendo sua principal inspiração. http://www.thingiverse.com/thing:182640"]
+
+[NOTE]
+====
+.Referências:
+. Você pode ver todos os artigos do Dr. Pearce que estão no _academia.edu_ neste endereço:
+https://mtu.academia.edu/JoshuaPearce[_https://mtu.academia.edu/JoshuaPearce_]
+. http://www.appropedia.org/User:J.M.Pearce[_http://www.appropedia.org/User:J.M.Pearce_]
+====
+
+[IMPORTANT]
+.Ainda sobre os "papers não-acadêmicos"
+====
+Já no início desta obra fomos claros quanto às referências informais. Estamos num período
+de mudança de papéis sociais, não há dúvidas disso. E embora tenhamos ressaltado o papel da academia como uma
+fonte de conhecimento científico da humanidade, é importante que ela não é a única, e um fenômeno que surgiu
+com a internet foram os artigos escritos com metodologia científica ou próxima da científica por indivíduos
+considerados __amadores__, _hobbyistas_ ou de alguma forma sem vínculos profissionais ou acadêmicos profundos com
+o campo do conhecimento em questão, e que ainda assim foram seminais e influentes em sua concepção, informando
+algum problema e explorando soluções para ele. Tais artigos, geralmente pertencentes a _wikis_ ou _blogs_ pessoais,
+não estão submetidos ao formalismo acadêmico e por isso não têm publicações em periódicos, fator de impacto
+associado, citações contabilizadas (exceto por dados privados como os coletados pelos _spiders_ do Google) e
+têm sua localização e importância relativa enormemente dificultadas em relação aos acadêmicos. São artigos
+que merecem ser retirados da obscuridade até para embasar o escrutínio acadêmico de que necessitam e este livro
+procura cumprir este papel. Alguns deles são referenciados no decorrer deste livro, um exemplo notável sendo o
+artigo "Polyholes" do usuário experimentalista _nophead_ (Chris Palmer), em http://hydraraptor.blogspot.com.br/2011/02/polyholes.html[_http://hydraraptor.blogspot.com.br/2011/02/polyholes.html_]
+====
+
+== E no Brasil?
+=== O Fork Comunitário:
+.Do GuiaCNC para a RepRapBR
+
+O projeto RepRap foi -- e continua sendo -- o catalisador de oportunidades para que pessoas criativas, engenhosas
+e curiosas fizessem, ao redor do mundo, suas pequenas revoluções, seus trabalhos em grupo. Nosso país sempre foi
+um berço de mentes brilhantes que, com escassos recursos, conseguiam fazer bastante. O objetivo de barateamento e
+peças comuns das "reprap", então, caiu como uma luva! Em 2010, integrantes do fórum _GuiaCNC_ com conhecimentos
+de eletrônica resolveram encomendar juntos kits da impressora 3D CupCake, a impressora 3D Open-Source da Makerbot,
+para estudar e aprimorar. Criaram uma lista de discussão, reservaram na casa de um deles um local espaçoso e
+com equipamentos para se reunir -- que chamaram de "Masmorra" -- convidaram outros interessados e uma vez
+dada a "partida", começaram a realizar encontros de confraternização e troca de idéias e progressos na
+empreitada. Este foi o primeiro e-mail do grupo que se intitulou "Grupo de Estudo RepRapBR" (o remetente foi
+__Alain Mouette__, que já acompanhava há anos o projeto RepRap):
+
+[source]
+----------
+Este é o convite oficial para participação do Grupo de Estudo para RepRap.
+
+* O objetivo é comprar um kit derivado do RepRap <http://store.makerbot.com/featured-products/cupcake-cnc-basic.html> cujo custo é de US$750, se conseguirmos trazer sem impostos. Não é o RepRap original, mas usa as mesmas placas. Infelizmente o dinheiro vai ter que vir na frente, nenhum de nós tem como bancar...
+
+* vamos nos reunir regularmente uma vez por mês na masmorra (Sir. Jorge já deu sua benção).
+
+* Vamos estudar esse protótipo para estudar como fazer nossas cópias e estudar também como fazer usando CNCs que já existem. Estudo preliminar já mostrou que deve ser possível, mas parte do Hardware tem que ser o deles para ser compatível com o software.
+
+* Este grupo é só para quem estiver presente, tudo que levantarmos será conhecimento aberto, mas não pretendemos ficar documentando de progresso do nosso estudo. Salvo é claro que alguém seja voluntário para esse fim específico.
+----------
+
+Isto está documentado no primeiro post do blog do grupo de estudo,
+http://reprapbr-ge.blogspot.com.br/2010/08/historico-do-grupo-de-estudo.html[_http://reprapbr-ge.blogspot.com.br/2010/08/historico-do-grupo-de-estudo.html_].
+Os posts subsequentes trazem um verdadeiro e fidedigno registro histórico do progresso do pensamento de comunidade
+e interação de indivíduos brilhantes levando a sucessivas melhorias no design usado -- acompanhando e muitas
+vezes superando o que também acontecia lá fora.
+
+Lá se acompanham as tentativas e desventuras no desenvolvimento da placa controladora de impressão baseada na
+"Gen7" - a "Gen7BR", a mesa aquecida com resistências de bloco, as instruções de montagem de cada parte
+das diversas iterações da impressora, o extrusor do Alain, a Prusa Air e os vários aplicativos gratuitos do JP,
+tudo com detalhadas descrições técnicas. A leitura é altamente recomendada como complemento a este livro.
+
+O blog do grupo de estudo, entretanto, não conta toda a história, além de só ir até 2013. Com o começo do
+projeto e a criação da _lista de discussão_ ReprapBR no Google Groups, muitos outros indivíduos começaram a
+participar -- e, embora não tão fortemente integrados ao grupo inicial e aos seus desenvolvimentos específicos,
+também trouxeram suas colaborações com projetos paralelos, idéias independentes e principalmente um período
+de muito debate construtivo e ajuda a iniciantes na lista. Muitos criando seus próprios blogs de ajuda que
+são até hoje referência, como o _Reprap Paraná_ (de Valter F.C.) que tem ainda os melhores textos de ajuda a
+montagem da impressora Graber i3; outros com lojas de peças, como a _ReprapBR_ (Brian Conçalves), _Impressora
+3D_ (Bruno Cabral) e _GTMax3D_ (Luciano Moda); outros com iniciativas que de blogs no início e documentação
+de peças particulares se tornaram empresas de produção de impressora 3D, como a _3DMachine_ em São Paulo
+(Paulo Fernandes), a _Movtech_ em São Bernardo do Campos (Ígor Jocionis), a _Reprap3D_ em Jundiaí (Bruno
+Pontes) e a _Sethi3D_ em Campinas (Marcelo Ribeiro e Sérgio Carminitti), os filamentos da _Filamentos3DBrasil_
+(Anderson Godoy), da _3DX_ (Cléber Rampazo), _PrintGreen3D_ (Willian Lima), _Faz3D_ (Roberto Polisel Samartin)
+e _3DLab_ (Brian Filipe e Sérgio Portela) e os produtos _CoreAB_ e _A.Bond_ (Alex Borro) e o hotend _R6P_ (Renato
+Parisotto). Felipe ("Juca") Sanches da _Metamáquina_ também teve participação na lista, ainda que breve. Usos intensos e
+criativos da Impressão 3D e tecnologias relacionadas também fizeram história: _Solution 3D_ com seus brindes
+e vasos (Roberto Varela), _3DToy_ com seus brinquedos, utensílios e quebra-cabeças (Rubens Medino). Muitos
+outros passaram por este fórum de
+discussão, que ainda hoje é ponto nevrálgico do desenvolvimento de impressão 3D no Brasil. Não é o único,
+claro, e outros lugares de comunidades e fóruns também constam com suas estrelas, como a _Faerkrag Props_
+com seus itens de cosplay (Eduardo Pimentel) ou Guilherme "Razgriz" com seus cursos e designs. Indivíduos
+criativos como Cícero Moraes e Paulo Miamoto Dias (e seus vários colaboradores), com suas reconstruções faciais
+forenses e próteses para animais como tartarugas e tucanos, também contribuíram muito para o ecossistema, tanto
+pelo seu trabalho artístico quanto pela divulgação na mídia. E desenvolvedores talentosos como Lays Rodrigues
+com seu projeto de controlador de impressão __Atelier__.
+
+Ainda merecem menção especial a empresa __Cliever__, que junto à Metamáquina foram as primeiras empresas
+de impressão 3D do Brasil; a __e-tech__, vendedores da linha de impressoras 3D 3DCloner; a Tato Indústria e
+Comércio, pioneira de impressão 3D no país; e a CNCBrasil, com suas iniciativas ousadas de propelir a impressão
+FFF a dimensões industriais.
+
+Durante a trajetória do Grupo de Estudos e a lista de discussão, no entanto, certos _eventos_ chamam especial
+atenção pela regularidade com que ocorreram. Dada a interseção de conhecimentos exigido, muitos integrantes
+eram do Fórum GuiaCNC, e encontros regulares aconteciam na Chácara de Rubens Medino. Em 2014, dia primeiro de
+maio, o primeiro encontro "oficial" RepRapBR aconteceu, com 89 participantes, se configurando como o começo de
+uma saga -- no ano seguinte o sucesso se repetiu no mesmo dia, com 101 inscritos (e 45 que perderam a lotação).
+Em 2016, já prevendo não haver espaço para o público, Rubens e outros inscritos no grupo se associaram para profissionalizar
+este encontro e criaram a Primeira Expo3DBR -- Encontro Nacional de Impressoras 3D, também em primeiro de maio,
+com público registrado de _1240_ pessoas! Foi realizado em um ginásio de Hortolândia, com palestras e a presença
+de feira e demonstrações de fabricantes e profissionais de Impressão 3D.
+
+[[expo3dbr2016_1]]
+image::expo3dbr2016_1.jpeg[expo3dbr2016_1,width=610,height=475,align="center",title="Algumas fotos do encontro do grupo ReprapBR em 2014, em Campinas. Praticamente um churrasco entre amigos. A galeria você pode conferir no álbum do Google Photos: http://goo.gl/KoRkpN"]
+
+[[expo3dbr2016_2]]
+image::expo3dbr2016_2.jpeg[expo3dbr2016_2,width=610,height=524,align="center",title="Apenas 2 anos mais tarde, aquele encontro entre amigos transformou-se em um evento aberto ao público em um ginásio de Hortolândia com milhares de frequentadores, e muitos dos expositores e palestrantes sendo os inscritos dos encontros anteriores. O hobbyismo se profissionalizou, a garagem virou indústria. Não deixe de conferir o sítio web do evento para conferir mais fotos e os expositores: http://www.expo3dbr.com.br"]
+
+[[expo3dbr2016_3]]
+image::expo3dbr2016_3.jpeg[expo3dbr2016_3,width=642,height=377,align="center",title="Edição de 2017 da Expo3DBR, feita em São Bernardo. Roupas impressas em 3D (à esquerda e acima), ciclo de palestras (à esquerda e abaixo) e o pavilhão de expositores."]
+
+Além do movimento _diretamente_ relacionado à impressão 3D, tivemos em solo nacional -- sempre com ligações
+internacionais pois o desenvolvimento aberto é por natureza inclusivo -- vários grupos de pesquisa, fabricação e
+estudo que é indispensável citar, tanto pela aplicação prática da tecnologia com muitos beneficiados diretamente
+por ela quanto pelo incentivo educacional, social e moral que deram aos entusiastas da tecnologia.
+
+São eles o projeto __Mão3D__, de próteses impressas baratas; as várias iniciativas do time encabeçado por
+_Cícero Moraes_ e __Paulo Miamoto Dias__; o instituto de pesquisa CTI Renato Archer; a empresa brasileira __Makers
+Brasil__, intimamente ligada à explosão do movimento Maker; e os grupos de pesquisa LAPAC da Unicamp e GPMA do ITA.
+
+=== Makers Brasil
+
+Empresa inovadora no mercado __Maker__, começou seu primeiro curso e workshop de impressão 3D já em 2013 (já
+tendo educado mais de mil alunos só em impressão 3D em 2016). Fundada em 2012 por Ricardo Cavallini, criador do
+kit educacional eletrônico acessível "RUTE", consiste de uma plataforma de educação e inovação focada na
+prototipagem e desenvolvimento de produtos para a "Nova Revolução Industrial", alcunha para o que os vários
+desdobramentos e mudanças do movimento Maker vêm trazendo. Hoje tem mais de duas dezenas de cursos, dos mais
+técnicos aos mais conceituais, e a maioria para leigos, visto que seu objetivo é trazer mais gente para esse
+universo tecnológico. O perfil de seus alunos vai de meninas de 6 anos de idade a gestores de empresas. Além
+de todo o papel educacional de seus cursos, disponibiliza também editoriais, palestras, artigos e _papers_
+em sua página com explicações aprofundadas e estratégicas do Movimento Maker. O endereço da página é
+http://www.makers.net.br/[_http://www.makers.net.br_].
+
+[[fotomakersnet]]
+image::fotomakersnet.png[fotomakersnet,width=642,height=571,align="center",title="A Makers no evento Youpix em 2014, para demonstrar a impressão 3D para o público jovem. O evento recebeu mais de 18 mil pessoas em três dias!"]
+
+=== LAPAC -- Universidade Estadual de Campinas
+
+A Universidade Estadual de Campinas, uma das mais proeminentes do país em pesquisa e extensão, não poderia
+deixar de participar desta tendência. Desde sua criação em 2006, o _Laboratório de Automação e Prototipagem
+para Arquitetura e_ Construção (LAPAC) teve por objetivo estudar sistemas generativos de projetos, tecnologias
+tridimensionais (prototipagem rápida, fabricação digital e digitalização 3D), programação de computadores
+e técnicas de automação e suas aplicações na arquitetura, desde o processo de projeto até a construção de
+edifícios. Seu laboratório (com fresadoras CNC, cortadoras laser, impressoras 3D, etc.) é restrito a alunos da
+universidade, mas trabalham em conjunto com o Museu Exploratório de Ciências da Unicamp e estão prestes a criar
+um _fablab_ em um edifício antigo no centro de Campinas, deste modo ampliando seu alcance comunitário. Mas de
+longe, seu maior valor para o _maker_ que não é aluno da universidade está em seus artigos claros e educativos
+sobre o processo de fabricação aditiva, assim como o seu canal do youtube. Como são fontes __da academia__,
+pode-se esperar delas um rigor e conformidade muito maior do que comumente se encontra no meio __Maker__. Assim,
+o LAPAC presta um importante papel de embasamento científico e formal para o tão disperso conhecimento nessa área.
+
+[[fotolapac]]
+image::fotolapac.jpeg[fotolapac,width=613,height=505,align="center",title="Uma foto do interior do LAPAC, publicada com permissão. À esquerda, a máquina amarela é uma fresadora CNC Vitor Ciola, modelo Scriba, com mesa de vácuo e área de fresagem 1000x2000mm. Presentes na foto estão o Prof. Dr. André Araújo (de vermelho) e Prof. visitante Affonso Orciuoli."]
+
+.Referências:
+* Site do LAPAC: http://lapac.fec.unicamp.br/[_http://lapac.fec.unicamp.br_]
+* Canal de youtube: https://www.youtube.com/user/lapacfec[_https://www.youtube.com/user/lapacfec_]
+* Algumas publicações:
+http://www.fec.unicamp.br/\~lapac/publicacoes.htm[_http://www.fec.unicamp.br/~lapac/publicacoes.htm_]. Artigos
+adicionais podem ser encontrados no currículo _lattes_ da chefe do Laboratório, Gabriela Celani:
+http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4792067H6[_http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4792067H6_]
+
+=== O Projeto Mão3D
+
+Gerido e criado pela Professora Doutora Maria Elizete Kunkel em janeiro de 2015, o projeto Mão3D, inspirado
+pelo iniciativa internacional de auxílio a desabilitados "Enabling the Future" e seu projeto comunitário de
+designs voluntários "e-NABLE", procura auxiliar os milhares de brasileiros amputados a levar uma vida menos
+estigmatizada e mais confortável com o uso de próteses acessíveis feitas através de impressão 3D doméstica,
+com o acompanhamento apropriado de psicólogos e fisioterapeutas.
+
+A reabilitação de amputados é uma tarefa árdua pois lida com aspectos emocionais e de saúde, e é especialmente
+delicada em relação a crianças, que além do problema de poderem não entender ou lidar bem com os procedimentos,
+têm crescimento rápido levando à necessidade de substituição constante das próteses (e isso agrava a
+necessidade de serem baratas).
+
+[[colagemmao3d]]
+image::colagemmao3d.png[colagemmao3d,width=619,height=116,align="center",title="Algumas fotos de conquistas e fabricações do grupo Mão3D, com seu logotipo no centro."]
+
+O grupo da Dra. Elizete além de trabalhar com os modelos open-source do projeto e-NABLE busca desenvolver um
+protocolo de reabilitação adequado. Com seu caráter acadêmico como projeto de extensão universitária no
+Instituto de Ciência e Tecnologia da Universidade Federal de São Paulo (ICT-UNIFESP), tem também como parte de
+sua missão a publicação de artigos científicos, disseminação do conhecimento pela participação em eventos
+e seminários e treinamento para reabilitação e produção de próteses. Diferente de iniciativas acadêmicas
+que se comportam como "cabalas" fechadas com acesso somente pelos graduados, o programa Mão3D desde o
+início procurou a interação com a sociedade, desde por parcerias e recepção de doações de empresas privadas
+(geralmente __startups__), até participação nos fóruns, _hackerspaces_ e demais lugares onde a comunidade _Maker_
+se encontra. Assim, se por um lado o programa tem projetos universitários avançados de pesquisa envolvendo até
+próteses mioelétricas, por outro comparece na _Campus Party_ e _The Developer Conference_ e até faz seu próprio
+_blog_ e tem página de facebook para comunicação com o público.
+
+.Recursos do grupo Mão3D:
+
+* página do projeto: https://www.biomecanicaeforense.com/mao3d[_https://www.biomecanicaeforense.com/mao3d_]
+* blog: https://mao3d.wordpress.com/[_https://mao3d.wordpress.com/_]
+* facebook:
+https://www.facebook.com/Mao3D/[_https://www.facebook.com/Mao3D/_]
+* Canal do youtube:
+https://www.youtube.com/channel/UCfMU_lReiz3F3mBMnONvYbg[_https://www.youtube.com/channel/UCfMU_lReiz3F3mBMnONvYbg_]
+* projeto e-NABLE: http://e-nable.org/[_http://e-nable.org/_]
+
+Mais do que uma instituição, o Mão3D é importante como referência para a seriedade de trabalho e formalidades
+necessárias para o trabalho com deficientes (com os alunos tendo inclusive que passar pela complexa burocracia de um
+comitê de ética), pois infelizmente este é um campo em que os picaretas, trambiqueiros e oportunistas abundam,
+com "iniciativas" geralmente comerciais que não dão assistência devida, não cumprem padrões éticos e
+muitas vezes revindicam créditos sobre algo que não criaram, com os designs open-source do projeto _e-nable_
+sendo um alvo frequente.
+
+[[fotoeventomao3d]]
+image::fotoeventomao3d.jpeg[fotoeventomao3d,width=642,height=534,align="center",title="O stand do Projeto Mão3D em uma de suas inúmeras demonstrações, no Evento TOM-SP em 2015 para tecnologias assistivas."]
+
+Das colaborações do projeto Mão3D, uma que se destaca é a colaboração com outro grupo acadêmico, o Grupo de
+Pesquisa em Manufatura Aditiva do Instituto Tecnológico da Aeronáutica, GPMA/ITA. O desafio é tão grande que,
+como se diria no dialeto popular, os universitários tiveram que chamar os _outros_ universitários!
+
+=== O GPMA/ITA
+
+O plástico das impressoras 3D de fabricação de filamento fundido é razoavelmente resistente e serve para
+próteses de mão que não passam por muitos estresses mecânicos. Mas a coisa muda de figura quando consideramos
+os amputados que perderam seus membros inferiores ou nasceram sem eles. Estas são as partes de nosso corpo que
+mais estão sujeitas a grandes forças e movimentos e embora os plásticos impressos possam conseguir sustentar
+uma pessoa estática, não têm condições de suportar as variadas agressões do meio como grandes tensões,
+compressões, cisalhamentos e até desgaste químico e biológico. Para este fim, as próteses inferiores ainda
+são restritas às grandes impressoras 3D industriais que trabalham com polímeros contínuos maciços e metais
+e que tipicamente custam na casa de centenas de milhares de reais, com o insumo igualmente caro. E isso não é
+somente um problema para próteses: o uso em estruturas aeroespaciais também é uma necessidade.
+
+É nesse contexto que entra o GPMA. O grupo, criado no início de 2016 pelo Professor Rafael Ferreira e os doutorandos
+Thiago Dutra e Rafael Quelho, que explora a tecnologia de Fused Filament Fabrication com o objetivo de estabelecer
+uma linha de trabalho em impressão 3D que possa contribuir na área de fabricação de componentes impressos
+que possuam responsabilidade mecânica em sistemas de engenharia, não sendo apenas protótipos de forma. Ao
+presenciar aumento considerável no número de bons artigos publicados nessa área em nível internacional,
+seus integrantes acreditaram que o momento era propício para a pesquisa mais aprofundada, devido à crescente
+complexidade dos processos envolvidos e à rápida expansão técnica dos processos mais utilizados como os das
+impressoras RepRap. São estudados conformações e reforços dos termoplásticos com fibra de carbono, vidro e
+kevlar, tanto curtas quanto contínuas. A caracterização dos materiais impressos também é essencial e o grupo
+tem desenvolvido artigos quantificando rigidez e resistência dos mesmos para que possam ser usados adequadamente
+em projetos de engenharia. E por fim, as estruturas compósitas com esses materiais são analisadas, otimizadas e
+modeladas por elementos finitos, já tendo sido defendidos no momento da redação deste livro três trabalhos de
+graduação e um de iniciação científica, com dois doutorados no caminho. Os artigos científicos decorrentes serão
+publicados ainda em 2017 e estão sendo compartilhados também pelo _academia.edu_ e __researchgate.net__. Tomara
+que outros grupos sigam o mesmo caminho e quando possível coloquem os artigos como _open access_ (acesso aberto),
+para que qualquer usuário -- maker, profissional, industrial ou doméstico -- possa usar os resultados sem ter
+que pagar fortunas pela informação. O grupo centraliza sua interação com a comunidade e os links dos artigos
+em sua fanpage no facebook: https://www.facebook.com/GPMA.ITA/[_https://www.facebook.com/GPMA.ITA/_]
+
+=== A Fotogrametria de Cícero Moraes e Paulo Miamoto Dias
+
+Como desdobramento dos trabalhos de Cícero e Paulo em colaboração com o médico veterinário Roberto Fecchio,
+as técnicas foram aplicadas para a digitalização de lesões em animais para sua reabilitação protética. Algum
+tempo depois, protótipos de próteses foram impressos, até que o primeiro caso bem-sucedido foi o do jabuti
+Freddy. Outros animais também foram reabilitados com a integração de modelagem e impressão 3D, materiais dentários
+e cirurgia veterinária. O grupo voluntário que formou-se a partir desta parceria, terminou por atender mais 12
+animais, e segue em atividade, ganhando a alcunha de ‘Animal Avengers’, após uma brincadeira que comparava as
+diferentes habilidades dos integrantes, ligados à área de medicina veterinária, odontologia e design gráfico
+às habilidades do notório grupo de heróis de histórias em quadrinhos. Atualmente, Cícero não faz mais parte
+da equipe, e dedica-se a projetos pessoais, enquanto Miamoto conduz os processos ligados à modelagem e impressão 3D.
+
+Nos trabalhos da dupla (muitas vezes com outros colaboradores), Cícero geralmente era o porta-voz, aparecendo
+em vários veículos de mídia nacionais e internacionais, incluindo o programa Fantástico da Rede Globo de
+Televisão. Seus vídeos educativos no youtube baseados nos trabalhos que faz contribuíram para sua fama, assim
+como seus artigos de blog e até participação em artigos científicos, com seu maior trabalho sendo o seu e-book
+em português em co-autoria com Miamoto, que ensina Reconstrução Facial Forense usando softwares livres e gratuitos.
+
+[[fotociceroepaulo]]
+image::fotociceroepaulo.jpeg[fotociceroepaulo,width=642,height=435,align="center",title="Dr. Paulo Miamoto e Cícero Moraes na mensuração de um crânio impresso em 3D. Os créditos dados ao autor deste livro aparecem pela sua colaboração em imprimir o crânio. Fonte: http://www.ciceromoraes.com.br"]
+
+Esta parceria iniciou-se com as ciências forenses como pano de fundo, e embora novas metodologias estivessem em
+franco desenvolvimento (como o protocolo para reconstruções faciais totalmente realizado com software livre),
+o diálogo técnico-científico com instituições era dificultado pelo fato de serem dois indivíduos a propor
+projetos em parceria. Sem vínculo com instituições de ensino superior à época, mas ávidos por explorarem os
+progressos em prol das ciências forenses no Brasil, Miamoto viu na fundação de uma organização não governamental
+sem fins lucrativos uma alternativa para institucionalizar as ações. Em 2014 foi fundada a Equipe Brasileira de
+Antropologia Forense e Odontologia Legal (Ebrafol), em conjunto com profissionais de direito e odontologia. Com
+o intuito de promover os direitos humanos por meio do aprimoramento dos métodos de produção da prova pericial,
+a Ebrafol passou a atuar em três eixos:
+
+. prestando serviços periciais em perícias de análises antropológicas de cadáveres desconhecidos, sendo
+a Faculdade de Odontologia de Ribeirão Preto sua maior parceira;
+. capacitando recursos humanos, em diversos
+cursos e palestras que deram autonomia para peritos oficiais dominarem técnicas de digitalização aplicadas às
+suas respectivas áreas; e
+. promovendo cultura em projetos que utilizam das mesmas técnicas, porém fora do
+âmbito forense, como no caso da reconstrução facial dos santos peruanos São Martinho de Porres, São João
+Macias e Santa Rosa de Lima.
+
+Em 2016, Cícero também deixou o cargo de Vice-Coordenador da Ebrafol para dedicar-se a seus projetos pessoais,
+todavia sua atuação prossegue.
+
+Interessante notar que desta inusitada parceria, uma pequena revolução com smartphones e notebooks prosperou,
+e atualmente os conteúdos de digitalização, modelagem e impressão 3D agora passam a integrar o temário de
+cursos de pós-graduação em odontologia legal, além de embasar diversos trabalhos científicos. Enquanto Moraes
+segue em projetos de divulgação de ciência e tecnologia junto à mídia, Miamoto dedica-se à carreira acadêmica
+como docente de cursos de graduação e pós-graduação em odontologia e medicina e pesquisador.
+
+[[colagemciceropaulo]]
+image::colagemciceropaulo.png[colagemciceropaulo,width=632,height=544,align="center",title="Alguns dos casos de sucesso do prolífico trabalho de Cícero e Paulo, em sentido horário: o papagaio Verdin com sua prótese de bico, a reconstituição de Maria Madalena, o Jabuti Fred, o tucano Bicolino e a reconstituição de Santo Antônio. Muitas dessas histórias podem ser encontradas em http://www.ciceromoraes.com.br. Note que alguns dos trabalhos foram fabricados em impressoras 3D industriais, não FFF."]
+
+É sempre saudável notar que muitas das conquistas de Paulo, Cícero e seus associados foram possíveis por causa
+de uma instituição governamental que é central ao desenvolvimento da impressão 3D industrial e comunitária
+no Brasil: muitos de seus trabalhos foram fabricados por impressoras 3D do CTI Renato Archer.
+
+=== CTI -- Centro de Tecnologia da Informação Renato Archer
+
+É impossível falar de impressão 3D no Brasil sem mencionar o trabalho do Centro de Tecnologia da
+Informação Renato Archer, popularmente conhecido como "CTI", em especial o seu Departamento de Tecnologias
+Tridimensionais (DT3D), hoje _Núcleo_ de Tecnologias Tridimensionais. O CTI é uma unidade de pesquisa do Ministério
+da Ciência, Tecnologia e Inovação. Foi inaugurado em 1982 e o DT3D em 1997, desde então contribuindo para
+o avanço tecnológico brasileiro incluindo bastante interação com indivíduos e empresas privadas. Cícero e
+Paulo, por exemplo, utilizaram das impressoras 3D industriais do CTI para algumas de suas próteses (como as de
+titânio para bico) e para a impressão em cores da face de Santo Antônio.
+
+Mas não se resumem à impressão 3D industrial. O CTI tem iniciativas comunitárias e "Maker" como o Fab@Home
+(uma impressora 3D / fabricador pessoal estilo __reprap__) e o software especializado __Invesalius__, um software
+que pega imagens médicas em formato "DICOM" de tomografias computadorizadas ou ressonância magnética
+("fatias") e reconstrói a imagem tridimensional a partir destas fatias. O nome do software é uma homenagem
+a _Andreas Vesalius_ (1514-1564, considerado o "pai da anatomia moderna") e ele é open-source, licenciado
+sob a GPL versão 2, disponível para Mac OS X, Linux e Windows.
+
+[[screenshotinvesalius]]
+image::screenshotinvesalius.jpeg[screenshotinvesalius,width=593,height=438,align="center",title="Screenshot do Invesalius rodando em um Mac OS X. Código-fonte em https://github.com/invesalius/invesalius3/ - fonte: http://www.cti.gov.br"]
+
+[[colagemcti]]
+image::colagemcti.png[colagemcti,width=586,height=520,align="center",title="Jorge Vicente, chefe da equipe do Núcleo de Tecnologias Tridimensionais do CTI. Fonte: http://www.cti.gov.br"]
+
+Faz-se mister dar crédito especial ao Dr. Jorge pelo envolvimento com a impressão 3D bem antes da sua explosão
+com a queda da patente, já em 2007 tendo colaborado com um livro organizado pelo pesquisador Neri Volpato:
+
+[[livromariovolpato]]
+image::livromariovolpato.jpeg[livromariovolpato,width=352,height=570,align="center",title="&quot;Já mexiam com Impressão 3D antes de ser cool&quot; - créditos: editora Blücher. ISBN 9788521203889"]
+
+=== Outros pioneiros e divulgadores
+
+A tarefa de reconstrução histórica nunca é completa, ainda mais no Brasil onde a informação é desencontrada e
+esparsa. Certamente não citamos todas as pessoas que contribuíram para a divulgação e enriquecimento do espaço
+_Maker_ no Brasil -- que, aliás, é uma história que ainda está sendo escrita -, e agradeceremos imensamente
+contribuições para edições posteriores deste livro. Se você, caro leitor, julga que uma pessoa, grupo ou instituição
+proeminente foi esquecida, receberemos de braços abertos esta informação.

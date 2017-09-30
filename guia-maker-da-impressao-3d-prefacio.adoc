@@ -1,0 +1,170 @@
+[#guia-maker-da-impressao-3d-prefacio]
+= Prefácio
+
+O conhecimento necessário para escrever este livro não surgiu somente da mente do autor. Surgiu, antes, das mentes agregadas
+de vários indivíduos brilhantes e laboriosos que, por vezes camuflados sob pseudônimos irônicos de internet,
+trabalharam duro e com paixão para o desenvolvimento e democratização de uma tecnologia que, por décadas,
+ficou aprisionada em redutos industriais de acesso controlado e vigiado. A esses indivíduos, no entanto, poucas
+vezes foi dado o devido crédito; ao contrário, pode-se enxergar uma tendência a apagá-los da história, ou a
+reduzir suas contribuições a meras curiosidades. E o dano desta falta de reconhecimento não é só histórico ou
+moral; tem consequências práticas profundas na medida em que evita que o aprendiz entenda a tecnologia, conheça
+seus limites e possibilidades, e consiga usar a criatividade para aproveitá-la ao máximo. Se um documentário
+famoso omite completamente o nome do projeto comunitário de impressão 3D que deu origem a virtualmente todas as
+impressoras domésticas, ele impede que o telespectador tenha contato com as motivações, receitas e ensinamentos
+do projeto; se um livro promete "a verdade" sobre impressoras 3D, e reduz esta "verdade" a uma trivialidade
+sobre limitações contemporâneas de uma das formas domésticas desta tecnologia, ele desinforma e oculta de seu
+leitor o _significado_ do aprendizado; se um curso de impressão 3D faz pouco mais que listar modelos de _grife_
+e seus procedimentos pré-programados como uma lista de compras, trai o estudante tanto por priorizar _forma_
+sobre _essência_ quanto por tentar confiná-lo ao papel de _consumidor_ numa tecnologia que o transforma em
+__produtor__. Imagine um curso de culinária que ao invés de ensinar a cozinhar, diz apenas o que comprar para comer!
+
+Colocar o consumidor como criador e produtor: essa é a razão pela qual a Impressão 3D é literalmente e sem
+exageros __revolucionária__. O que significa revolução? Alude a giro de uma roda, mudança de papéis. Se o
+consumidor deixa de ser um mero espectador e passa a fazer parte do processo, a _relação de poder_ muda. Em
+inglês já se popularizou o termo "Prosumer" ("Prossumidor") e ele representa perfeitamente a mudança
+paradigmática que está acontecendo; se você desejava adquirir outras tecnologias inovadoras de sua época,
+como uma tevê ou celular, você procurava conhecer os fabricantes e comprar um modelo. E apesar de você poder
+perfeitamente seguir esta forma ao orçar uma impressora 3D doméstica, com excelentes marcas nacionais além
+das estrangeiras, você não está confinado a elas; o site _reprap.org_ lista literalmente dezenas de receitas
+completas, incluindo listas de materiais e sugestões de como fazer ou comprar as peças, para você construir em
+casa, peça por peça, sua própria impressora 3D, incluindo todo o software que precisa usar com ela com licença
+"open-source" / "livre", isto é, permitindo livre cópia, modificações e melhorias.
+
+Isso não é mera curiosidade sobre a tecnologia; antes, é seu __mote__, seu __nexo__. O projeto RepRap procura
+fazer impressoras ("replicadores", daí o "Rep") que imprimam suas próprias peças; crianças de 12 anos de
+idade, sem assistência dos pais, estão usando das receitas de internet para construir suas próprias impressoras
+e até _aprimorar a tecnologia_ com sua criatividade típica, num processo de acumulação coletiva de melhorias
+já batizado de __frictionless innovation__; notícias do meio já vêm _horizontalizadas_ com material para
+estudo disponível e busca de voluntários ao invés de simples apresentação passiva, vertical, da tecnologia;
+pesquisadores de áreas bem diversas dos mecanismos computadorizados das impressoras 3D estão as modificando e
+criando novos meios para culturas de células, para próteses e órteses, para música e design, química e enfermagem,
+numa verdadeira celebração do conhecimento humano, livre das grades de seus antigos carcereiros auto-nomeados.
+
+É sob essa perspectiva, portanto, que este livro é escrito: de libertação, de exploração do potencial de
+cada indivíduo curioso e criativo com que tiver contato. Para isso ser possível, o livro procura ser o mais
+abrangente possível, explicando cada teoria necessária para se entender a impressão 3D. Para o técnico que
+decide embelezar sua peça mecânica, existe o capítulo sobre acabamento e pintura. Para o artista gráfico que
+deseja fazer um design eletrônico, a seção do livro sobre eletrônica e motores será uma boa referência,
+explicando desde o início com vocabulário simplificado. Para o engenheiro eletricista que deseja saber como ABS
+e acetona interagem, temos a parte sobre comportamento químico dos materiais. Para o programador de computador
+que deseja saber sobre usar impressoras 3D para reciclagem, explicamos o caminho das pedras. E para todas essas
+pessoas, trabalhando ao redor do mundo e trocando entre si os arquivos de suas realizações, o livro apresenta
+em seu corpo vários casos de extrapolações criativas da impressão 3D -- arriscando inclusive ilustrar becos
+sem saída, idéias sem continuação futura - de modo a que tenham a melhor utilização possível de seu equipamento.
+
+Por fim, seria contraditório um livro se pretender libertador e ser, ele mesmo, aprisionado, confinado. As leis
+de direitos autorais (copyright) são uma realidade atual inescapável, permitindo ao autor decidir por _120 anos_
+o que as pessoas podem ou não fazer com seu trabalho intelectual. Em contraponto a isso, existe o _Copyleft (All
+Rights Reversed)_ que, usando a própria lei de copyright, vira seus conceitos de ponta-cabeça, concedendo direitos
+aos recipientes ao invés de limitações. A licença de uso de todo o conteúdo^1^ deste livro está nos apêndices,
+mas de modo simplificado: você pode copiar este conteúdo quanto quiser, pode modificá-lo e fazer e redistribuir
+sua própria versão, pode inclusive vendê-lo e fazer uso comercial dele; mas deve manter e citar a licença, ou
+seja, dar aos outros o mesmo direito incondicionalmente, e deve preservar o crédito da autoria original do documento.
+
+O cientista Isaac Newton já disse, ele mesmo referenciando a frase de outros: "se eu vi além, foi por me apoiar
+nos ombros de gigantes". São os ombros acumulados de inúmeras gerações passadas que nos permitiram subir
+tão alto, e estou oferecendo o meu ombro desimpedido para que as informações aqui contidas apoiem o máximo
+possível de novos _makers_ e curiosos. Vamos imprimir o futuro em 3D!
+
+
+[NOTE]
+====
+.Notas:
+- As ilustrações coletadas de diversos sites da internet estão referenciadas nas descrições e são
+copyright de seus próprios autores. Quando a ilustração aparece sem crédito, significa que foi criada pelo
+autor deste livro e se encontra igualmente sob a licença CC-BY-SA.
+- **Este livro tem erros**. Assim como acima de um limite, todo código de computador tem __bugs__, esta obra
+faz todo tipo de afirmação sobre diversos assuntos... e algumas estarão erradas. É virtualmente impossível
+coletar dados de tantas disciplinas diferentes, se embrenhar em tantas cabalas e indústrias e clubes e comunidades,
+buscar os fatos escondidos atrás de opiniões, pesar os fatos conflitantes de perspectivas diferentes, e não cometer
+nenhum equívoco. Equívocos que, com feedback adequado, são corrigidos em versões posteriores do documento. Uma
+correção é também uma informação preciosa, uma lição aprendida, e para que isto não se perca, todas as
+correções feitas no documento serão anotadas em seu __Changelog__, no mesmo repositório em que ele se encontra.
+====
+<<<
+
+.Agradecimentos
+Este livro teve muitos colaboradores indiretos, que auxiliaram o autor na resolução de dúvidas, sugestão de
+temas, correção de erros e demais contribuições que permitiram que o conteúdo saísse... __amaciado__. Ricardo
+Cavalini do __Makers__, com sua didática pró-ativa e avaliação metódica, exterminou muitos erros pontuais
+em todo o texto. Rubens Medino, outro professor de impressão 3D, aumentou as perspectivas com suas sugestões
+astutas, como a persistência em aprofundar sobre polímeros e G-Code. Alex Borro, com seu canal do youtube e suas
+observações cirúrgicas sobre a engenharia e princípios por trás da impressão 3D, produziu muito conteúdo que
+serviu para embasar os capítulos; sua persistência para evitar o uso de termos incorretos como "voltagem"
+foi um bem-vindo norte ao conteúdo. "Boby Burn", com seu conhecimento de indústria e logística, ajudou na
+terminologia e contextualização dos temas. Carlos Roberto, com seus conhecimentos profundos e pragmáticos sobre
+Simplify3D e incansável pontuação de suas vantagens e desvantagens. Rafael Estevam, com seu pensamento "fora
+da caixa", contribuiu com suas idéias originais e sua grande vontade de retribuir conhecimento e código. André
+Ruiz, com suas tabelas e gráficos que simplificam enormemente o entendimento de tópicos complicados de impressão
+3D. Roberto Reis, com suas preciosas informações sobre deltas, mecânica e ARM.
+
+O Serviço Social do Comércio (SESC) de Campinas, especialmente pela figura de Fernando Mekaru, ajudou enormemente
+no patrocínio indireto com suas oficinas e cursos encomendados; tal material foi essencial na confecção deste
+livro e o retorno financeiro deles ajudou a "segurar as pontas" durante os longos meses da redação do conteúdo.
+
+Na área acadêmica, tive o aconselhamento e guia de Dra. Maria Elizete, Luciano Paulino Silva, Marcelo Sperandio,
+Elizabeth Ferreira Martinez e Luvas Novaes Teixeira, indispensáveis para poder encontrar e selecionar informação
+especializada que pudesse ser oferecida de forma amigável para o público leitor desta obra.
+
+O Dr. Joshua Pearce, com quem troquei vários e-mails no curso da escrita desse livro, é um grande entusiasta do
+open-source e de sustentabilidade e atuou não só como fonte, guia e professor mas como inspiração, por todos
+os seus trabalhos, livros, artigos e dedicação à causa do conhecimento. Não é coincidência que a licença
+adotada neste livro seja a mesma de sua obra "Open Source Laboratory".
+
+Contribuíram com a correção e revisão do texto: André Ruiz, Ricardo Cavallini, André Stavraskas,
+Roberto Reis, Carlos Roberto Varela, Rafael Estevam, William Lima e Paulo Miamoto Dias.
+
+Costuma-se dizer que sem conflito não há progresso, sem o contraditório não há resolução de problemas. Nesse
+espírito, o ceticismo ajuda, até mesmo o ceticismo ácido e pirronista. E ainda que muitos acreditassem no
+empreendimento e sustentabilidade de uma obra totalmente livre, houve os que duvidassem e contestassem o que não
+pertence às perspectivas de seu microcosmos, o que não raramente tem o efeito de minar o espírito pioneiro e
+enfraquecer a vontade. Alguns amigos -- pois amizade não depende de opinião - permaneceram firmes em desafiar
+meu projeto, e agradeço a eles porque isso ao invés de enfraquecer me deu ainda mais energia para realizar
+minhas pretensões, provar meu ponto, fazer frente ao escárnio, retornar números e resultados sólidos contra
+suas contestações. Menção honrosa para Hélio Loureiro, o mais resiliente e provocador oponente intelectual,
+sem o qual eu não teria feito tantos preparativos para a abordagem livre e inovadora da obra.
+
+Mas acima de tudo, eu não teria conseguido sem o apoio, participação e companhia inseparável de minha esposa,
+Kimberly Sampaio, essa pessoa extraordinária que me conheceu em um momento de amargura e me fez subir do poço
+para as alturas.
+
+[NOTE]
+====
+.Nota sobre as referências
+Esta obra não tem um estilo único de referências -- em alguns trechos usa referências numeradas para não
+interromper o fluxo de raciocínio do texto, em outros trechos expõe a referência em parênteses ou explicitamente,
+de modo a conectar esta referência ao raciocínio. Isto é proposital e embora represente um leve rompimento de
+paradigmas de boa escrita, compensa pelo valor pedagógico.
+
+Embora tradicionalmente para o campo da tecnologia e ciência as referências adotadas sejam de artigos científicos
+publicados em periódicos ou livros anteriores publicados, nesta obra existem muitas referências que advém de
+__blogs__, _wikis_ e vídeos de internet. Ainda que sejam frequentemente mais informais e com menor escrutínio
+acadêmico, não entenda o leitor que isso significa baixo rigor na escolha de fontes para as informações;
+significa, antes, que está havendo uma mudança paradigmática e organizacional do saber na sociedade, e que muitas
+das informações que antes só se encontravam em guardiões nomeados do conhecimento agora se obtém de indivíduos
+e iniciativas de todos os tipos de formação, origem e associação, fazendo parte da própria cultura _Maker_
+que explicitamos. Muitas vezes a informação simplesmente ainda não teve tempo de chegar à academia ou aos
+livros. Outras vezes, o _blog_ ou _wiki_ simplesmente apresenta o conteúdo de forma mais didática e independente
+de leituras anteriores. Essas fontes, quando citadas, são escolhidas criteriosamente de acordo com seu conteúdo e
+impacto percebido nos círculos _Maker_ para inclusão no livro, mas também citamos referências mais convencionais
+como patentes, artigos científicos, _white papers_ e outras publicações formais quando relevante e útil.
+====
+<<<
+.Quer contribuir? Você pode!
+Este livro é o resultado de anos de prática, leituras, experimentos, debates, vídeos, palestras, aulas, oficinas,
+parcerias e fabricações do autor. O foco desde o início foi trazer o máximo possível de compreensão com o
+mínimo possível de pré-requisitos, o que é uma tarefa hercúlea considerando um campo que agrega e se utiliza
+de tantas disciplinas do conhecimento humano. Algumas partes foram reescritas três, quatro vezes, para garantir
+a melhor didática. Alguns trechos de duas páginas do livro (como as das impressoras 3D delta) demoraram semanas
+para serem compostos não por falta de teoria, mas pelo esforço de garantir uma apresentação explicando os
+_princípios_ para que houvesse a "compreensão profunda" do tema, "a ficha caindo". Ainda assim, embora
+o leitor possa comprar este livro em sua forma impressa, pode também baixá-lo gratuitamente pela internet e sua
+distribuição é livre. O entendimento é que o _valor_ do livro é tão maior quanto maior audiência ele tenha,
+quanto mais o conhecimento se dissemine, e não é razoável sacrificar este valor em detrimento do __preço__,
+ainda mais se este preço estiver condicionado à limitação artificial de cópia que as leis de copyright por
+default impõem.
+
+Nesta perspectiva, é compreensível que o leitor se sinta grato por esta atitude diferenciada e em alguns casos
+se sinta impelido a retribuir. Até pequenas correções de informação serão úteis, são os _patches_ para
+os _bugs_ do texto. E assim como Eric Raymond demonstra em __A Catedral e o Bazar__, "com olhos suficientes,
+todos os bugs são rasos".

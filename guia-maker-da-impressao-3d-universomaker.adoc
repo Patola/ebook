@@ -1,0 +1,794 @@
+[#guia-maker-da-impressao-3d-universomaker]
+= O Universo Maker
+
+== A Exaptação
+
+Um conceito da biologia evolucionista que pode ser útil para entender a mentalidade "Maker" tão integral à
+impressão 3D atual é o de __exaptação__^1^, um fenômeno que ocorre quando um determinado traço biológico que
+desempenha determinada função é cooptado para uma função diferente, tendendo a evoluir naquela direção. Assim
+como as penas primitivas, usadas para regulação térmica, acabaram sendo cooptadas para facilitar planagem e voo,
+se cooptaram os grudentos _laquês de cabelo_ para facilitar a aderência da peça impressa na mesa. Assim como a
+proteína alfa-cristalina, usada no metabolismo do sistema regulatório dos primeiros seres, acabou cooptada para
+preencher o tecido transparente da córnea ocular^2^, o espaguete de _nylon_ usado em roçadeiras para cortar grama
+foi derretido nas impressoras 3D para fabricar peças e utensílios. De fato, até na arqueologia e história
+por vezes se cita "exaptação" para ilustrar inovações tecnológicas da humanidade a partir de objetos
+que desempenhavam outras funções, e mesmo para tempos modernos há artigos e publicações que resgatam este
+termo^3^. Isso ocorre porque a exaptação é um exemplo ilustre de uso criativo e livre de algo já existente,
+ou pelo menos até que mecanismos de controle que impedem reuso e inovação como Digital Rights Management,
+copyright e patentes metam o pé na frente -- algo que os cientistas que começaram a usar o videogame Playstation
+3 da Sony como supercomputador para seus clusters de processamento descobriram da pior maneira, quando a empresa
+bloqueou este uso por uma atualização.
+
+Muitos desses mecanismos de aderência à mesa são "exaptados" de soluções de mercado de massa que têm as
+propriedades necessárias para funcionar bem, e por serem produzidos em série em processos industriais, acabam
+sendo uma opção bem mais barata; as molas usadas em extrusores e mesas aquecidas, por exemplo, são praticamente
+idênticas às que vêm nos pregadores comuns de plástico -- mas tais pregadores são tão mais baratos que vale
+mais a pena comprar um pacote deles e jogar a parte plástica fora do que ter que encomendar as molas específicas,
+que ainda são difíceis de achar.
+
+[[fotomolaspregador]]
+image::fotomolaspregador.png[fotomolaspregador,width=642,height=591,align="center",title="À esquerda e à direita, duas molas de compressão para mesa aquecida. Entre elas, uma mola de pregador comum de cozinha, com praticamente as mesmas medidas e propriedades mecânicas e elásticas (o pregador de onde foi retirada aparece acima).  O conjunto de quatro molas de compressão, encontrável no exterior, custa 3 euros (medidas: diâmetro interno 4.5, externo 7.55, comprimento 15mm, 6 voltas) mais frete. O conjunto de 24 pregadores de plástico, cada um com uma mola, é encontrado em qualquer supermercado nacional por preço equivalente a 5 euros."]
+
+[NOTE]
+.Referências:
+====
+. Gould, S. J. (1991). Exaptation: A crucial tool for evolutionary psychology. __Journal of Social
+Issues, 47__, 43-65.
+. Jester JV (2008). _https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2275913["Corneal crystallins
+and the development of cellular transparency"]._ Seminars in Cell & Developmental Biology. *19* (2): 82--93.
+. Innovation Through Exaptation - http://timkastelle.org/blog/2010/05/innovation-through-exaptation/
+====
+
+== O Complicado Mercado Maker: o Bom, o Mau e o Feio
+
+Se há algo que pode ser dito sem equívocos sobre a época atual, é que a indústria obtusa e conservadora não
+entende o mercado Maker. Uma sugestão gritante disso é a dificuldade de achar peças de máquinas no varejo,
+disponíveis apenas no atacado, dificultando a vida dos entusiastas de impressão 3D (nada de _long tail_ no ramo
+industrial, aparentemente^1^). Outra evidência independente é a mentalidade "sucesso do iPhone": virtualmente
+todas as empresas do ramo de fabricação agem como se achassem que o que falta é um "jeito genial" de
+tornar as impressoras 3D tão fáceis quanto um eletrodoméstico, como aconteceu com o iPhone e em parte com o
+computador. Existem dois problemas com essa visão -- uma é ela contextualizar a relação entre fabricante,
+vendedor e cliente como uma relação necessariamente vertical e hierárquica, que tem as "decisões" feitas pelo
+fabricante e a "escolha" feita pelo cliente. Quando você tem 100 designs de extrusores alternativos para sua
+impressora 3D popular compartilhados no site __thingiverse__, a maioria deles superior ao original, você perceberia
+que essa suposta verticalidade, ou hierarquia, não existe. A segunda é não entender a função de uma "fábrica
+pessoal" e a relação psicossocial dela com o consumidor deste tipo de dispositivo. O "consumidor" de uma
+ferramenta como um martelo não é só um consumidor, é um __maker__. Ele quer usá-la da maneira que precisar
+e construir coisas com ela e isso pode envolver até "exaptações" da ferramenta. Quanto mais versátil o
+martelo for, melhor, mesmo que possa haver acidentes com essa versatilidade. Os riscos de martelar um dedo, cair
+em cima do pé ou ainda ser usado como uma arma são aceitáveis ou até, pasmem, _desejáveis_ (sob ameaça,
+um martelo pode ser um jeito efetivo de se defender). Se você faz um martelo à prova de acidentes, bem leve,
+de plástico, atóxico, acolchoado e com trava de segurança, será apenas um brinquedo e apenas crianças irão
+consumir. E não só isso: um instrumento _maker_ transforma o consumidor em produtor, ou na nossa analogia, a
+criança em adulto. Portanto, mesmo as crianças que compram seu martelo de brinquedo crescerão e precisarão de
+martelos "de verdade". Esse efeito é tanto maior quanto maior for o ecossistema de suporte, e as empresas que
+conseguem ver isso, como as de insumos e peças para impressoras 3D, estão crescendo explosivamente. Tudo incentiva
+a abertura -- se você vende peças pra impressoras 3D, é interessante elas serem compatíveis com o máximo de
+modelos do mercado, e se você vende impressoras 3D, é interessante elas terem peças de substituição baratas
+e facilmente encontráveis no mercado. A fabricante de hotends e3d deixa todos os seus designs __open-source__,
+e não é coincidência que tenham se tornado o padrão efetivo de mercado. Isso não é só uma semelhança com
+o "mercado aberto de PCs" versus o antigo "mercado fechado da Apple", é uma gigantesca extrapolação da
+antiga abertura dos PCs -- afinal, ninguém fabricava seus próprios PCs em casa.
+
+Dito isto tudo, o mercado Maker no qual a impressão 3D se insere está longe de ser harmonioso e sem falhas. Quando
+se tem uma única instituição ou um pequeno número de instituições controlando um espaço tecnológico, se
+tem também a imposição de uma visão única -- uniformidade. Além disso, todo o conhecimento -- geralmente
+restrito e reservado aos "favorecidos" - é internamente consistente e completo. Mas no mercado maker em
+que a experimentação, variedade e desvio da norma são encorajados, as mesmas forças de mercado que tornaram
+o padrão da e3d inescapável fazem com que carretéis de filamento de impressoras 3D de diferentes fabricantes
+tenham diâmetros diferentes, furos diferentes, características diferentes e forçam fabricantes de impressoras
+a adotarem encaixes para esses carretéis o mais genérico possíveis, ao invés de otimizados para qualidade e
+eficiência espacial. Até mesmo quando as medidas parecem "padronizadas" ocorrem desvios da interpretação
+do padrão (ou mesmo de qualidade pura e simples) que dificultam o uso harmonioso de fontes diferentes -- como
+no caso da impressora 3d open-source __Graber i3__, largamente vendida no Brasil por diversos fabricantes mas em
+muitas variedades distintas, não especificadas, no corte do MDF ou acrílico. No caso dos materiais de filamentos,
+a grande maioria dos produtores brasileiros não coloca a composição por medo de concorrência, sem se dar
+conta que há muitas aplicações para as quais esta informação é essencial -- apesar de esse não ser um
+exemplo representativo do mercado "Maker" porque ele pressupõe abertura e transparência. Além disso, por
+sua própria natureza controladora, as empresas mais industriais costumam ter contratos prolongados e relação
+estreita com o cliente, facilitando expedientes como reciclagem de carretéis (um dos raros pontos positivos da
+Stratasys^2^). Existe uma iniciativa entre os próprios fabricantes e comerciantes ligados à impressão 3D (em
+sua maior parte, empresas pequenas e médias) para resolver este problema, envolvendo padronizações de medidas,
+regras para informação ao cliente, expedientes de reciclagem e proteção do consumidor, mas ainda tímida e
+sem site próprio, consistindo no momento de fórum e grupo de __whatsapp__. Torçamos para que uma iniciativa
+como essa cresça o suficiente para trazer soluções ao ecossistema!
+
+== A Teoria, a Prática, o Ruído e o Sinal
+
+Um outro aspecto negativo do movimento Maker é em relação à não-conformidade do conhecimento: o mesmo
+espírito de rebeldia, a mesma informalidade, o mesmo experimentalismo e a mesma abertura a pessoas de todos os
+tipos de formações diferentes traz também um "caos" de teorias com muito menor uso de conhecimento formal
+e organizado, mais erros, equívocos, desentendimentos e opiniões disfarçadas de afirmações de fatos. Essa é
+uma característica que talvez seja __irredutível__, inerente ao próprio processo. Isso não quer dizer que não
+possa ser mitigada, esta obra sendo exatamente uma tentativa de criar um roteiro científico com sentido para os
+iniciantes e até veteranos em impressão 3D.
+
+O pragmatismo sem embasamento e a teoria capenga, faltante ou equivocada resulta em tentativas e experimentos
+perdulários; se você não entende que numa FFF o que faz o filamento ser extrudável é estar em estado de
+transição vítrea e funcionar como êmbolo de si mesmo em uma seringa imaginária, limitando os materiais que
+funcionam com a tecnologia, você pode acabar perdendo seu tempo testando usar estanho de solda na impressora 3D,
+um material que passa imediatamente do estado sólido para o líquido.
+
+Outros casos são típicos do ecossistema. Se você já se perguntou por que óleos vegetais, daqueles vendidos em
+mercadinhos, não são usados em maquinário já que costumam ser mais baratos e parecem também cumprir a função
+de "lubrificar" algo, geralmente a substância culpada por isso é a glicerina, ou glicerol. É um líquido sem
+cor, sem odor e de gosto doce solúvel em água e higroscópico. Aqui se situa o principal problema (embora não o
+único); uma das funções de lubrificantes finos em peças de máquinas é evitar que água e oxigênio ataquem
+o material. Existem outros problemas como a possível formação de impurezas em altas temperaturas (a glicerina
+se transforma em acroleína), mas é suficiente dizer que usar óleos comestíveis nas peças delicadas de um
+equipamento de controle fino não é uma boa idéia, e mesmo assim se alastrou na comunidade _Maker_ a idéia de
+usar _óleo de canola_ no interior do tubo do hotend ou no filamento PLA com a finalidade de lubrificar a passagem
+do filamento, visto que o PLA tem uma tendência maior que outros materiais a aderir às paredes. O óleo de canola
+tem certa vantagem legítima aqui que é um "ponto de fumaça" alto, mas é facilmente substituível por óleos
+lubrificantes finos para máquinas de mesma característica, como "óleo Singer" ou silicone lubrificante
+de esteira.
+
+Outro caso sintomático de falta de informação é a recorrente busca, especialmente em grupos de discussão
+e fóruns de impressão 3D, de reutilização do plástico das garrafas de refrigerante, o PET (polietileno
+tereftalato), para fabricação de filamento de impressão 3D. O raciocínio é saudável: tais garrafas -- e
+outros utensílios feitos do mesmo material -- representam um enorme desperdício da civilização moderna e
+um problema ambiental, pois simplesmente são usadas, descartadas e terminam em lixões, só nos últimos anos
+começando a serem recolhidas para reciclagem. As impressoras 3D de baixo custo estão aí fazendo uso útil e
+eficiente de vários termoplásticos, por que não reusar o plástico das garrafas nessas máquinas? O diabo,
+já diria o provérbio, mora nos detalhes. O plástico de tais utensílios, para começar, é repleto de dopantes
+e impurezas que precisam ser filtrados e lavados no processo. Plantas imensas de processamento, com sua própria
+_pegada de carbono_ e impacto ambiental, são necessárias para tal reciclagem, em que depois da lavagem e prensagem,
+ainda é necessário uma etapa de trituração em flocos, extrusão em grãos e finalmente extrusão dos grãos
+para uma forma utilizável, como um utensílio ou candidato a filamento de impressão 3D. Mas aí mora outro
+problema, pertinente às propriedades do material: apesar de ser um termoplástico com vários ciclos possíveis
+de derretimento e solidificação, o PET tende à cristalização, isto é, formação de padrões atômicos
+regulares que deixam a substância rígida e quebradiça. No processo industrial este fenômeno indesejado é
+evitado com o resfriamento rápido do plástico, o que evita que as moléculas se organizem em cristais, mas este
+resfriamento rápido seria caro e difícil de implementar em uma impressora 3D. Em resumo, a reciclagem de garrafas
+PET para impressão 3D parece não ser viável, ou no mínimo um desafio para um profissional experiente do ramo de
+plásticos e não para discussões desinformadas do próprio processo de reciclagem em fóruns. Para informação,
+existe uma variedade do PET, o PETG ou PET glicol, utilizada como filamento para impressão 3D que não cristaliza,
+mas seu processo de fabricação, mais caro que o do PET, já o cria como PETG e não a partir de PET comum.
+
+Por último, um dos casos mais curiosos de desinformação no meio Maker é a desinformação __em relação
+ao próprio meio__. O exemplo mais notável se expressa no design da impressora 3D _Prusa i3_ do projeto
+reprap. Olhando-se a impressora ativa de perto e vendo a movimentação do carro no sentido vertical, se percebem
+características dignas de estranheza:
+
+* A movimentação do carro se assenta em _dois_ pares independentes de suportes, presos em paralelo. Um de barras
+roscadas, que se movimenta, e um de barras lisas, por onde o carro escorrega. Por que a redundância? Não seria mais
+palatável simplesmente apoiar em _um_ par de barras roscadas?
+* A barra roscada __não é totalmente reta__. De
+fato, o processo de fabricação desses componentes, ou até mesmo o transporte e distribuição, não raramente
+gera uma ligeira curvatura, visível a olho nu sob inspeção cuidadosa.
+* Para piorar, a barra roscada _só é
+presa por baixo_ e pela rosca ao quadro da impressora. O extremo superior da barra gira em falso, solto na parte
+de cima.
+* As barras lisas, cuja retidão é maior, são consideravelmente mais grossas que as barras roscadas - 8mm contra 5mm de diâmetro.
+
+Esse quebra-cabeça leva muitos a concluir, sem pesquisar, que tais características são simplesmente erros de
+projeto, erros que precisam ser consertados, claro. As "soluções" para o problema são variadas, mas devido
+à trivialidade de modelar tal peça e da facilidade geométrica de encaixar algo no topo do quadro, os modelos
+mais frequentes implementam um orifício para manter a rotação da barra roscada sempre no mesmo lugar, às vezes
+com encaixe para rolamento para sugerir maior reflexão.
+
+O problema desta "solução", claro, é que trata um problema __que não existe__. As impressoras 3D
+são projetadas desde o início pra tirar vantagens dos componentes baratos e inclusive tratar seus pontos
+negativos. Barras roscadas, sejam elas de 5mm ou 8mm, são, como já foi dito, susceptíveis a curvaturas e
+projetadas mais para forças de tração, não de compressão. Por outro lado, barras lisas são por natureza
+extremamente retilíneas e resistentes a curvaturas. Essa é a razão da aparente redundância, que na verdade é
+uma separação de tarefas: cumpre às barras roscadas movimentar o carro verticalmente, enquanto que as barras
+lisas servem para _guiar_ o carro numa trajetória perfeitamente retilínea. Para assegurar que a curvatura das
+barras roscadas não interfira muito, elas têm diâmetro menor, e não têm ponto de fixação superior pois isso
+daria maior força de contraposição à curvatura.
+
+Que é exatamente o que a "solução" desinformada faz, cria um ponto de apoio extra para a barra roscada que
+a faz ficar em tensão constante com as barras roscadas. Isso aumenta o desgaste das peças, aumenta o chamado
+"Z wobbling" (variações do Z) e, claro, leva a impressões piores. O contrário do efeito advogado pelos
+projetistas da "solução".
+
+[[reinvencaodarodaquadrada]]
+image::reinvencaodarodaquadrada.png[reinvencaodarodaquadrada,width=642,height=483,align="center",title="A reinvenção da roda quadrada - algumas das (inúmeras) modificações desinformadas para a Prusa i3 no Thingiverse pra solucionar o problema (inexistente) da barra roscada solta. Nota: algumas variações da prusa ainda igualam os diâmetros da barra, usando barra roscada de 8mm."]
+
+Embora raramente, o teste desinformado pode suprir resultados e resultar em algo genuinamente inovador. É possível
+fazer uma analogia com o processo evolutivo: mutações são erros de cópias de genes, e quase sempre são
+prejudiciais ao organismo visto que seu DNA já está adaptado ao ambiente por muitas gerações. Mas algumas raras
+vezes esse erro de cópia resulta em um gene que funciona melhor que o anterior, e com essa vantagem de funcionamento
+ele contribui para a sobrevivência e reprodução do indivíduo, se alastrando pela população. Na reprodução,
+em parte, essa analogia quebra: estamos tratando de experiências domésticas, ou em ambientes "de garagem"
+ou pequena empresa. Aquela inovação legítima na maioria dos casos não tem o incentivo para ser documentada
+cientificamente, nem submetida a escrutínio formal, e raras vezes chega a se traduzir em produto. Em especial as
+_falhas_ pois são tidas como motivos de vergonha e não são muito comentadas -- uma notável exceção sendo a
+coluna "Fail of the Week" do sítio web __Hackaday^3^__. Algumas vezes, com sorte, será descrita ou implementada
+de modo a que outros possam repeti-la e a idéia se espalhe. A chance é baixa, mas a "reinvenção da roda"
+acontecendo em paralelo massivamente às vezes compensa estatisticamente as baixas chances e oferece algo de novo.
+
+[NOTE]
+.Notas:
+====
+. https://pt.wikipedia.org/wiki/Cauda_longa[_https://pt.wikipedia.org/wiki/Cauda_longa_]
+. http://www.stratasys.com/recycle[_http://www.stratasys.com/recycle_]
+. https://hackaday.com/category/hackaday-columns/fail-of-the-week-hackaday-columns/[_https://hackaday.com/category/hackaday-columns/fail-of-the-week-hackaday-columns/_]
+====
+
+== Por outro lado...
+
+Há outros contextos do processo _maker_ mais propícios às inovações e descobertas. Um deles é a __frictionless
+innovation__, já mencionada na introdução. Nesse caso temos um produto (software, modelo tridimensional,
+hardware, etc.) já existente ao qual o _maker_ faz uma pequena melhoria. O produto não tem restrições de uso
+ou modificação e tipicamente tem novas versões com o tempo; torna-se do interesse daquele maker ter a melhoria
+incorporada nas novas versões, no mínimo para não ter o trabalho de reaplicá-la. Ele se torna compelido a
+incluir sua modificação no ciclo de vida daquele produto, e junto com outros colaboram com pequenas melhorias que,
+em número, o tornam muito melhor.
+
+Um exemplo ajuda a clarear o conceito. Vamos explicar mais pra frente as peças, mas um dos primeiros extrusores
+de impressoras 3D _reprap_ a aparecer, com as partes que fazem o mecanismo de aprisionamento do filamento,
+sustentação do motor e do hotend sendo impressas em plástico, foi o "Wade’s Geared Nema17 Extruder",
+pelo usuário Wade. Ele o criou para ser usado nas impressoras 3D Darwin (a primeira do projeto reprap, criada
+por Adrian Bowyer) ou Mendel (a primeira criada por Josef Prusa). Ele usava um motor NEMA17 como os dos eixos,
+diferente do extrusor da Darwin em que foi baseado que usava um NEMA14.
+
+Um pouco como era de se esperar, o design é relativamente simples, cantos retos, poucas curvas. Estamos ainda no
+início do projeto reprap.
+
+[[extrusorwade]]
+image::extrusorwade.png[extrusorwade,width=642,height=466,align="center",title="Wade’s Geared Nema 17 Extruder: http://www.thingiverse.com/thing:1794. Note a data: 2010. Já de início, a licença usada era a open-source GPL (mesma do kernel Linux). Sendo tão primordial, teve 22 variantes no thingiverse (&quot;22 remixes&quot;)."]
+
+É um design funcional e o fato de ter _redução_ no tracionamento (ou seja, engrenagens adicionais ligadas à
+rotação do motor até os dentes que empurram o filamento) era essencial para a época, em que se usavam motores
+relativamente fracos (por volta de 1 a 3 kgf.cm de torque de retenção, quando hoje em dia é usado pelo menos
+4 kgf.cm) e reduzir a velocidade com engrenagens aumenta o torque aplicado.
+
+Um usuário ativo nos fóruns do projeto _reprap_ e no site thingiverse na época, GregFrost, achou que o design
+poderia ser melhorado, e botou as mãos na massa. Usando o software open-source OpenSCAD, redesenhou todo o
+extrusor com 9 melhorias numeradas, a nona sendo "adicionadas curvas sensuais" - algo que reflete tanto o
+acesso a ferramentas melhores, quanto a caprichos maiores de projeto. Nomeou o extrusor dele de "Accessible
+Wade’s Extruder", pra não deixar de dar crédito ao Wade, mas o extrusor, que teve enorme adoção, acabou
+sendo conhecido como "Greg’s Wade Extruder" (‘extrusor do Wade do Greg’).
+
+[[extrusorgreg]]
+image::extrusorgreg.png[extrusorgreg,width=619,height=540,align="center",title="O Greg's Wade Extruder, até hoje muito usado, na forma de variações, em Grabers vendidas em kit no mercado brasileiro. Ele resolveu uma série de problemas e encaixes para a época, sendo um pouco mais compacto e mais propício à manutenção e ainda tem &quot;curvas sensuais&quot; (palavras do autor). Note que os furos da engrenagem são o logotipo do projeto reprap!"]
+
+Apesar de o extrusor do Greg aparecer com menos derivações que o Wade (19 contra 22) no site thingiverse, ele
+teve _muito_ mais sucesso. Muitas delas foras do site, ou ainda no próprio thingiverse mas não contabilizada,
+e todas mais usadas nos modelos comerciais. Uma razão desse sucesso foi a ferramenta escolhida por greg: o
+OpenSCAD, open-source e multiplataforma, podia ser baixado de graça ao invés de custar milhares de dólares
+como os modeladores 3D da época. Fácil de usar e simplificado ao extremo, permitia fazer não só peças de
+máquina de medidas exatas com facilidade como ganhou até o privilégio de ser a base para os hoje famosos designs
+"customizáveis" no thingiverse.
+
+Esta pequena diferença funcionou praticamente como uma medida de acessibilidade, visto que permitiu a usuários
+de diversos sistemas operacionais, e sem envolvimento prévio com a indústria de modelagem ou investimento de
+muito dinheiro, tivesse acesso a fazer modificações em modelos 3D. A facilidade de modificações pesa porque o
+formato 3D cru utilizado, o STL, pode sim ser modificado diretamente, mexendo em arestas, vértices e superfícies;
+mas quanto mais complexo e elaborado o design, quantas mais etapas para construí-lo, mais difícil se torna essa
+modificação direta, tornando necessário que o interessado em modificar tenha acesso aos passos "fonte"
+do modelo, às operações que o criaram, essas geralmente gravadas em um formato próprio do modelador, como
+"SLDPRT" do SolidWorks ou "DWG" do AutoCAD. O OpenSCAD usa um formato-fonte próprio, .scad, que é um
+simples e legível arquivo-texto com comandos, como um código-fonte de programação. A "compilação" desse
+arquivo pelo programa é que gera a forma 3D; se você quer modificar algo na forma, é muito mais fácil mexer
+nesse código. Isso desatou um nó enorme no processo, pois muitos interessados em modificações e aprimoramentos
+nos designs existentes tinham acesso ao fonte por causa de licença open-source mas não a modificá-lo visto que
+o formato de arquivo era proprietário e necessitava de uma ferramenta restrita e geralmente cara.
+
+Uma dessas modificações veio em 2012, de Jonas Kuehling. Utilizando os mesmos fontes .scad ele melhorou o design
+e fez o dele incorporando modificações pontuais de outros, e também se tornando enormemente popular e dando
+origem a nada menos de 88 derivações contabilizadas! E se tornando o __extrusor do Wade do Greg do Jonas__.
+
+[[extrusorjonas]]
+image::extrusorjonas.png[extrusorjonas,width=642,height=526,align="O extrusor do Wade do Greg do Jonas, com contribuições do Stoffel, http://www.thingiverse.com/thing:18379. Quando o design é open-source, o autor nunca permanece no anonimato!",title="O extrusor do Wade do Greg do Jonas, com contribuições do Stoffel, http://www.thingiverse.com/thing:18379. Quando o design é open-source, o autor nunca permanece no anonimato!"]
+
+Lembra-se que falamos da trajetória do grupo ReprapBR? Aqui os caminhos se cruzam. O mesmo Alain Mouette que
+enviou o primeiro e-mail para o grupo aparece agregando mais um vagão ao agilíssimo trem da frictionless innovation:
+
+[[extrusorajgw]]
+image::extrusorajgw.png[extrusorajgw,width=642,height=419,align="center",title="O extrusor do Wade do Greg do Jonas do Alain com contribuições do Stoffel, http://www.thingiverse.com/thing:40642. Chega, né? Extrusor AJGW está de bom tamanho! Nessa figura as &quot;origens&quot; do modelo aparecem no quadrinho à direita."]
+
+== Quando vem a fricção
+
+Patentes, especialmente as consideradas "bem escritas", são um estorvo incomensurável, um golpe de prejuízo
+incalculável contra o progresso da tecnologia, pois bloqueiam um design / projeto / invenção e às vezes todo um
+campo da tecnologia de progredir por sua duração que é, grosso modo, de vinte anos. Foi o caso da impressão
+3D FFF com a Stratasys, e outros casos históricos em que a tecnologia "emperrou" por décadas por causa
+delas são conhecidos, como o barco a vapor.^1^ Este progresso incremental que ocorreu com os extrusores _também_
+ocorre com as patentes, mas com atrasos de anos para a chegada no mercado e quantias imensas de dinheiro jogadas
+fora com os registros na "guerra de pequenos incrementos", contribuindo com os altos preços das tecnologias
+e do custo de pesquisa e desenvolvimento.^2^
+
+Uma vantagem, por assim dizer, das patentes é que elas obrigam o inventor a detalhar com pormenores e ilustrações
+a sua idéia, de modo que quem constrói algo semelhante possa ser processado -- e quem quiser construir algo
+semelhante, uma vez expirada a patente (que não pode ser renovada), conseguiria. Um exemplo notável disso é a
+iniciativa do advogado de patentes novaiorquinho Martin Galese, que resgata patentes expiradas para transformar
+em modelo digital e compartilhar no site __thingiverse^3^__.
+
+Mas patentes não são a única _fricção_ que atrapalham a agilidade da __frictionless innovation__. Nem mesmo
+licenças de uso livres são o fator principal para a modificação e reuso. Como foi ressaltado no caso do extrusor
+do __Greg__, um grande salto de "modificabilidade" que aconteceu foi a mudança do design para a ferramenta
+__OpenSCAD__, ela mesma livre / open-source, e com um formato tão simples e compreensível que são possíveis
+modificações sem usar a ferramenta e hoje em dia existem até interfaces web para ela.
+
+O que aconteceria caso Greg não tivesse usado uma ferramenta acessível como o OpenSCAD? Historicamente, é muito
+difícil tratar "e se", mas podemos ter uma evidência notável, ainda em 2014 , com um extrusor de excelência
+técnica que foi muito aclamado em fóruns e é usado em impressoras open-source brasileiras, o __Alex Extruder__.
+
+[[extrusoralex]]
+image::extrusoralex.png[extrusoralex,width=642,height=491,align="center",title="Alex Extruder, http://www.thingiverse.com/thing:220493"]
+
+Sob todos os pontos de vista, a excelência técnica do extrusor é inegável. Tem mais plástico nos pontos
+de stress mecânico do extrusor. Tem encaixes finos permitindo a movimentação desimpedida da dobradiça e o
+encaixe dos rolamentos e parafusos. E sendo um design feito por um brasileiro, vem com variações com encaixes
+para diversos hotend do mercado nacional.
+
+No entanto, tendo sido feito por um engenheiro mecânico com a poderosa ferramenta a que está habituado, o
+Solidworks, ferramenta de modelagem sólida, a licença livre de pouco adiantou. O projeto tem apenas _duas_
+derivações, ambas sendo a reconstrução e extensão em ferramentas diferentes.
+
+[[extrusorlucaseka]]
+image::extrusorlucaseka.png[extrusorlucaseka,width=642,height=361,align="center",title="Lucas Extruder - http://www.thingiverse.com/thing:378330 - e KA extruder - http://www.thingiverse.com/thing:252556 - as duas únicas derivações do Alex Extruder, ambas consistindo em reconstrução e extensão do Alex Extruder em ferramentas distintas."]
+
+O *KA Extruder* foi uma tentativa de transposição do Alex Extruder para o OpenSCAD. Mas, como se pode notar pelos
+comentários na página do design, ele tinha várias "pontas soltas", era feito para um padrão de filamento que
+começava a apresentar sua obsolescência (3mm de espessura) e não tinha encaixes para as peças mais populares do
+mercado. Por isso, mesmo com sua licença e ferramentas livres, e por ser apenas a reimplementação de um design
+já existente com menos variedades, não teve derivações.
+
+Por outro lado, o *Lucas Extruder* foi muito mais do que apenas um derivativo. Além das obrigatórias melhorias
+pontuais no projeto, Lucas Corato, um arquiteto brasileiro, criou um projeto que misturava várias boas idéias de
+diversos extrusores do mercado, incluindo os "bits" (pedacinhos) intercambiáveis e a desmontagem rápida dos
+componentes para manutenção. O extrusor pode ser usado com ou sem sensor de nivelamento, com filamentos de 3mm ou
+1,75mm, com praticamente qualquer hotend do mercado, e resolveu _muitos_ problemas, enumerados em sua entrada. Não
+à toa, sua popularidade, expressa nos "curtir" (158) e "adicionar à coleção" (208), foi enorme.
+
+No entanto, novamente, o profissional acostumado a mexer em modelagem 3D usou a ferramenta a que está acostumado. No
+caso essa foi a ferramenta __Sketchup__, um modelador de malha (como o Blender) que, apesar de ser disponível em
+Windows e Mac OS X e ter versões gratuitas (com limitações de elementos), ainda assim é software proprietário
+e, portanto, restritivo. Novamente, é revelador que um design assim tivesse apenas 3 derivações, 1 delas sendo a
+versão seguinte do próprio autor e duas outras sendo leve modificações de malha a partir do STL final, e não
+do arquivo-fonte de Sketchup disponibilizado na página.
+
+[[extrusorlucasv2ederivacoes]]
+image::extrusorlucasv2ederivacoes.png[extrusorlucasv2ederivacoes,width=642,height=225,align="center",title="As derivações do Lucas Extruder, versão 1 (a versão 2 não teve derivações)."]
+
+O fluxo e evolução dos designs do thingiverse e outros sítios web de compartilhamento serve como uma fábula com
+moral para os interessados no compartilhamento de projetos e participação do mercado Maker: acessibilidade é
+o óleo das engrenagens da inovação. E até mesmo a escolha de ferramentas em que é feito pode ser um entrave
+inesperado contra o sucesso do seu empreendimento. Isto é algo a se observar pois este equívoco é feito até
+pelo mais bem-intencionados; o famoso chaveiro Marvin, peça usada para testar impressoras 3D, foi também feito
+em SolidWorks.
+
+[NOTE]
+.Referências:
+====
+. 2003 Lawrence R. Klein Lecture, The Case Against Intellectual Monopoly -- M Boldrin, DK Levine -- International
+Economic Review, 2004 -- Wiley Online Library.
+. Leiva, Fernando, "Innovations as a Network of Ideas: Assessing Patent Values through Citations", Working Paper
+(2007).
+. http://www.popsci.com/diy/article/2013-08/get-3-d-printer-designs-expired-patents[_http://www.popsci.com/diy/article/2013-08/get-3-d-printer-designs-expired-patents_]
+====
+
+== Usando sua impressora 3D pra ganhar dinheiro
+
+Vimos na história da reprap e da impressão 3D no Brasil que a impressão de baixo custo vem acontecendo desde 2009
+e, no Brasil, os hobbyistas começaram por volta de 2012/2013. Quem começou a aprender impressão 3D e a cobrar por
+peças já teve uma vantagem na largada, e se soube aproveitar a oportunidade de ser um _early adopter_ (pioneiro)
+e acumular este tempo de lucro, já transformou seu negócio em aquilo que chamamos de "birô de impressão",
+um serviço de impressão 3D que tipicamente trabalha com várias tecnologias e materiais diferentes. Em 2013, o
+difícil era achar os primeiros clientes pois a mentalidade de procurar a impressão 3D "de baixo custo" para
+projetos ainda era incipiente. Hoje, já é muito mais fácil, mas por outro lado a impressão 3D de baixo custo,
+especialmente a de FFF, já se popularizou tanto que é _muito_ difícil oferecer um diferencial. O mercado está
+saturado e a saturação continua crescendo. Num mercado desses acaba somente "sobrevivendo" quem consegue
+trabalhar com uma margem de lucro baixa ao mesmo tempo em que oferece vantagens, consistência, rapidez e qualidade
+acima da média para seus clientes.
+
+Dizer isto é necessário para contextualizar o leitor sobre as dificuldades que pode enfrentar, não
+desencorajá-lo. Afinal, uma impressora 3D é uma pequena fábrica pessoal, algo que produz objetos reais úteis,
+funcionais ou esteticamente desejáveis; transformar esta fábrica em uma fonte de sustento é uma inferência
+lógica óbvia.
+
+=== Como anunciar e onde
+
+O primeiro dilema ao candidato à impressão sob demanda é __como encontrar e atrair os clientes__. O primeiro
+pensamento é, claro, montar uma _loja_ para vender suas impressões. Como um serviço ainda não estabelecido
+no mercado de massa, normalmente é dispendioso demais comprar ou alugar um escritório em local físico de
+comércio para a administração das vendas, além de desnecessariamente limitar a clientela. A escolha, então,
+penderia para o lado de uma __loja virtual__, o que exigiria um esforço de hospedagem, escolha de um software
+adequado para gerenciar a loja, publicidade adequada para ela, cadastro dos serviços, fotografia do portfolio
+e redação por advogado de um contrato de serviço prevendo todas as condições, preços, prazos e reveses da
+transação. Existem serviços que se dispõem a gerenciar a maioria desses detalhes para o comerciante, geralmente
+através de um pagamento mensal ou de uma parte do lucro -- exemplos brasileiros são _loja integrada_ e __loja
+virtual do pagseguro__, entre outras. Mas existe algo que vai além -- serviços web específicos para impressão
+3D, e que cumprem o papel de aproximar o produtor local do consumidor das impressões.
+
+Nesses serviços, cada proprietário de impressora 3D cadastrado é um "hub", uma loja ou birô de impressão. A
+interface web facilita ao máximo que o produtor cadastrado exponha seu portfolio, detalhe as tecnologias e materiais
+de que dispõe, e aceite pedidos. Ao mesmo tempo, ela facilita também ao consumidor que ache serviços dentro da
+faixa de preço que procura e principalmente, produtores locais, numa busca por proximidade -- já que estamos
+falando de objetos físicos e frete pode ser considerável.
+
+Um sistema de placar/reputação completa o funcionamento desses sistemas. Produtores que ganham altas notas dos
+consumidores vão aparecendo primeiros nas buscas e em todo momento a reputação do produtor estará visível.
+
+O portal de impressão 3D mais popular no mundo, e com funcionamento no Brasil, o 3DHubs é o melhor exemplo
+disso. Fica com 15% da venda, fazendo seu serviço ser apreciado pela mediação rápida e competente, pela
+facilidade em se realizarem tais negócios e até pelos ajudantes de serviço de frete. Uma vantagem enorme desse
+tipo de serviço é que os termos de contrato estão pré-estabelecidos, afastando dores legais do caminho.
+
+Para assegurar um sistema com bastante concorrência, o 3D Hubs pede ao produtor que entre com dados na interface
+para que haja o cálculo automático do preço de qualquer peça, de acordo com o volume em mm^3^ dela. Assim,
+quando o consumidor procura produtores em sua área e já tem o modelo da peça, pode simplesmente ver os diferentes
+preços já explicitados na busca do sistema.
+
+[[screenshot3dhubs1]]
+image::screenshot3dhubs1.png[screenshot3dhubs1,width=601,height=573,align="center",title="Exemplo de busca no serviço 3DHubs, após o upload de modelos tridimensionais em formato STL pela interface web. As estrelinhas indicam a reputação de cada loja encontrada perto de Campinas, SP, e à direita o cálculo automático do preço cobrado."]
+
+Quem entende da técnica já notará algo "fora da ordem" aí: o preço ser calculado _automaticamente_
+não parece certo. Uma peça pode ter muitas geometrias possíveis, das mais fáceis às mais difíceis. Veremos
+na parte sobre fatiamento desta obra que existem muita maneiras diferentes de imprimir uma mesma peça, com
+quantidades maiores e menores de material. Você pode precisar de suportes, _muitos_ suportes. O software (de
+desktop) utilizado para isto se chama fatiador e dá estimativas do plástico gasto, tempo e custo da impressão,
+algumas vezes bem distantes da estimativa do serviço web. Algumas formas serão impossíveis em certas tecnologias
+de impressão 3D, e outras exigirão bastante acabamento ou retoques. Isso não entra automaticamente no preço,
+em nome da facilitação das compras. Algumas vezes o que acaba acontecendo é que o cliente faz o pedido e o _hub_
+não aceita por não compensar, ou aceita e faz um trabalho ruim, tendo sua nota diminuída.
+
+O 3DHubs não é o único. Em franco crescimento e popularização existe o serviço brasileiro __Cammada__,
+que tem uma interface mais amistosa. A busca equivalente no Cammada permite até cálculo automático de frete:
+
+[[screenshotcammada1]]
+image::screenshotcammada1.png[screenshotcammada1,width=636,height=473,align="center",title="Busca no Cammada de serviços de impressão 3D perto de Campinas-SP após o envio de modelos 3D em formato STL."]
+
+O cammada permite ao produtor uma certa flexibilidade no cálculo automático como descontos conforme o volume
+aumenta. Ainda assim, não há nada que avalie estruturas adicionais, dificuldade do modelo e demais atributos,
+dependendo de negociação posterior.
+
+Isso nos leva ao próximo ponto: já que estamos tratando de um serviço feito a partir de geometrias arbitrárias
+de modelos de computador, qual é a melhor maneira de cobrar por este serviço, de modo a que haja um balanço
+ótimo entre consumo e produção?
+
+=== Como cobrar por impressões
+
+A citação do serviço brasileiro Cammada é providencial: além de fornecer o cômodo serviço de intermediador
+de fabricação digital, seus fundadores procuram também gerar informação e _mindshare_ para a tecnologia --
+um cenário aliás ideal para a produção de conteúdo open-source -, e uma de suas contribuições já bastante
+difundidas ao público é a __calculadora Cammada__, uma aplicação web elegante que sugere e calcula o modo e
+preço de cobranças de acordo com uma série de variáveis.
+
+[[calculadoracammada1]]
+image::calculadoracammada1.png[calculadoracammada1,width=630,height=438,align="center",title="Calculadora Cammada, um ótimo ponto de partida para saber como cobrar por sua impressão."]
+
+A calculadora do Cammada tem ainda a (óbvia?) vantagem de ser perfeitamente integrada ao serviço que fazem,
+com detalhes como os descontos progressivos para volumes maiores. No entanto, isso não faz dele o único meio de
+cobrar, nem o universalmente aceito. Antes de explicar por quê, é necessária uma breve digressão: precisamos
+falar sobre economia!
+
+=== Economia: Valor-Trabalho versus Valor Subjetivo
+
+Podemos chamar a esse antagonismo de _A_ __Guerra dos Carlos__, devido aos seus principais expoentes serem
+variações deste nome (Karl Marx e Carl Menger). Tratam de como atribuir _valor econômico_ a algo resultante
+da atividade econômica. _Valor_ é definido como a medida de um benefício provido por um bem ou serviço a um
+agente econômico (e infelizmente o uso cotidiano em português não ajuda nesta delimitação conceitual, pois
+comumente usam a palavra como sinônimo de "preço" ou ainda "custo").
+
+A mais antiga teoria de valor, a teoria do **Valor-Trabalho**, que vem de Adam Smith, David Ricardo e Karl Marx,
+postula que o valor de uma mercadoria é determinado pela _quantidade total de trabalho_ _socialmente necessário_
+requerido para sua produção. Por socialmente necessário, entenda-se todo o trabalho anterior para produzir
+matérias-primas, máquinas e outras mercadorias associadas. Na transposição para a situação que analisamos,
+o _valor_ do produtor de impressão 3D deriva somente da quantidade de filamento utilizado, dos preços das
+impressoras, da energia elétrica e outros custos envolvidos, mais o lucro que é equivalente ao trabalho de
+transformação daqueles custos em um novo produto.
+
+A outra perspectiva, o **Valor Subjetivo**, tendo surgido principalmente no século XIX com William Stanley Jevons,
+Léon Walras e Carl Menger mas tendo sido mencionada também ainda na Idade Média e Renascença europeia, diz que
+o valor de um bem ou serviço é determinado não por alguma propriedade inerente, nem pela quantidade de trabalho
+necessária para produzi-lo, e sim pela importância que um agente individual lhe atribui para a realização
+de seus fins desejados. Uma situação hipotética comumente usada para ilustrar o conceito é o indivíduo que
+cava um enorme buraco em seu quintal, aluga escavadeiras, paga para removerem todo o entulho e terra que tirou,
+e tenta alugar o buraco ou vender a propriedade em que o escavou: não terá sucesso mesmo que cobre preço bem
+abaixo dos custos que teve porque, apesar de todo o trabalho genuíno exercido, ninguém enxerga valor nesse buraco.
+
+Transpondo para a nossa situação, de acordo com esta teoria, o consumidor estaria disposto a pagar mais a um dos
+serviços, entre dois serviços de impressão que se utilizam dos mesmos filamentos, mesmas impressoras 3D e exercem a
+mesma quantidade de trabalho mas diferem em detalhes como a qualidade percebida ou a consistência de preços e prazos.
+
+Em economia, é contencioso dizer que alguma dessas teorias está "provada" ou ainda que "refuta" a outra,
+além de estarem associadas a correntes ideológicas que trazem consigo bagagens fora do escopo desta obra. Desta
+forma, é suficiente dizer que, para a análise que fazemos aqui, adotamos especificamente a perspectiva do *Valor
+Subjetivo do Trabalho* para as conclusões. Seguimos o Carl e não o Karl. Esta informação facilita inclusiva
+para quem discordar do posicionamento usado nesta obra, por tornar as premissas explícitas.
+
+Vale dizer, como uma observação final, que isso de maneira nenhuma significa que o cálculo do trabalho (os
+custos) _não_ deva ser feito. Pelo contrário, nenhum negócio sobrevive de "intuições", e e os custos
+dizem o valor mínimo de renda necessário para sobrevivência, assim como saber quanto se lucra é essencial para
+sustentação do negócio, tanto no pagamento de contas quanto nos investimentos futuros. Mas a consideração do
+valor subjetivo indica que é sensato manipular o botãozinho giratório do lucro esperado -- para baixo ou para
+cima -- de acordo com a expectativa do cliente.
+
+=== Fechando parênteses
+
+Voltando aos problemas da cobrança da calculadora do Cammada, a primeira dificuldade consiste no fato de o serviço
+se basear em cobrança por _volume_ (cm^3^). O principal ingrediente das impressões 3D é o material da impressão
+-- no caso das impressoras FFF, o plástico, e ele é quase universalmente vendido em carretéis __por quilo__, ou
+seja, por peso (ou massa). Não é um obstáculo intransponível porque quando se tem a densidade exata do material,
+a transposição de um para o outro é direta: tendo o volume em cm^3^, basta multiplicar pela densidade para se
+obter o peso gasto. Para facilitar mais ainda, os números de peso e volume são geralmente bem próximos, de modo
+que um dá a idéia do outro: água tem 1 g/cm^3^, ABS tem 1,04 g/cm^3^, e PLA geralmente está entre 1,21 a 1,26 g/cm^3^.
+
+Mas cada etapa adicional, ainda que trivial, contribui negativamente para um fator que é constantemente
+desprezado pelos produtores: a _estimativa independente de custo_ pelo consumidor. Quem vai gozar dos benefícios
+e funcionalidade da peça impressa é ele, e portanto seria ele quem ditaria, __a priori__, seu valor; atrapalhar
+esta previsão constitui um obstáculo, inclusive porque ele precisa colocar na balança o custo antes mesmo de
+escolher a solução ótima entre várias tecnologias e produtores. Numa situação ideal, o cálculo desse custo
+-- o valor para o consumidor - seria ou previamente conhecido ou mais simples e direto possível, a complexidade
+intrínseca e variável sendo tratada pelo produtor sem repassar decisões técnicas ao cliente. Quaisquer
+complexidades refletidas _no preço_ podem até trazer maior economia ao consumidor, mas dificultam que o cliente
+trate os diferentes preços de forma consistente e consiga traçar um plano de longo prazo, com custos facilmente
+calculáveis. Um administrador de empresas pode preferir um serviço mais caro, mas com custo das peças intuitivo
+e de cálculo simples, por simples questão de encaixe fácil no seu plano de orçamento.
+
+No serviço cammada, o dilema entre volume e peso não se torna problema pois a densidade é um dos campos de
+entrada e a conversão é feita automaticamente pela interface. Nem todos os modos de cobrar terão, porém, tais
+facilidades. Ainda considerando as variáveis a entrar na cobrança, o cammada não trata fatores como o plástico
+extra das estruturas de arcabouço (suporte, bainha, etc.), nem a energia elétrica gasta nas impressões, nem
+o tempo e trabalho de acabamento, inclusive por serem custos a princípio parcialmente imprevisíveis ou, como a
+energia, dependentes de fatores externos como localização.
+
+Este problema de custos é realmente difícil de tratar, e leva muitos profissionais a simplesmente serem subjetivos
+em seus serviços, submetendo o cliente uma etapa de orçamento em que o preço final e o tempo a levar é gerado
+de forma a refletir a estimativa de dificuldade e custos que o profissional acha que vai ter (uma perspectiva de
+valor-trabalho). Reiterando o que já dizemos, isto impede que o cliente consiga comparar o serviço com outros
+e coloca incógnitas em sua agenda. Uma maneira de amenizar isso é _amortizar_ estas incógnitas, ou seja, ter
+uma estimativa (mesmo que grosseira) dos custos totais das peças mais refinadas e trabalhosas e das mais simples
+e calculáveis, de suas frequências no serviço cotidiano, do lucro esperado e então traçar um preço médio
+de acordo com um índice único e verificável, como o grama de filamento utilizado ou o volume útil do modelo
+tridimensional. Um profissional pode portanto dizer ao cliente que cobra 10 vezes o preço do filamento utilizado
+para impressão com acabamento, e instrui, se preciso, o cliente a usar o mesmo fatiador pra calcular com exatidão
+o preço. Não é o expediente mais simples do mundo, mas funciona. Num mercado de grande concorrência, pedidos
+muito granulados e pouca fidelidade de cliente como o cammada, no entanto, o produtor perderá encomendas de itens
+mais simples e grosseiros pelo preço amortizado para cima.
+
+=== Tempo é dinheiro
+
+Pegando carona na crítica da subjetividade da cobrança dos serviços, existe outro equívoco feito com bastante
+frequência no ecossistema de impressão sob demanda, que é a classificação do _tempo de serviço_ como _custo
+do produtor_ e não __do cliente__. Em outras palavras, quanto maior o tempo que o serviço leva, mais é cobrado
+ao consumidor. Percebe o problema? O consumidor _não deseja_ que o serviço demore -- atribui *valor negativo*
+a isso - e ainda paga um **preço maior**. O costume parece vir da mais antiga ocupação de produção em CNCs
+subtrativas, em que o cliente pertencia a chão de fábrica com muito mais proximidade e participação do processo
+de fabricação e portanto muito mais envolvimento nas demoras associadas. O mercado mais de massa, concorrido e
+comoditizado dos serviços de impressão 3D no entanto pouco tolera essa literal inversão de valores, e produtores
+com impressoras mais rápidas ou prazos que não passem a impressão subjetiva de penalidade acabam conquistando
+mais os clientes.
+
+=== Agregando valor ao camarote
+
+Outro aspecto do serviço de impressão sob demanda é que ele está inextrincavelmente atrelado a todo um workflow
+de produção. Para imprimir um modelo, é preciso antes que ele seja criado digitalmente, seja por modelagem,
+digitalização 3D ou qualquer outro processo. E é raro que o modelo cru como saiu da impressora seja utilizado,
+acabamento ou ciclos reiterantes de impressões de protótipos antes da versão final são frequentes. Existe um
+campo aberto de opções que o profissional pode utilizar para agregar ao seu serviço, se diferenciar no mercado e
+obter reconhecimento público e confiança, potencializando seu lucro. O exemplo mais simples é agregar o serviço
+de acabamento, mas combinar a impressão com modelagem ou retoques da peça também é um serviço interessante --
+ainda mais contando que as diferentes tecnologias de impressão 3D exigem e oferecem especifidades geométricas
+que devem guiar o processo de modelagem, e esse conhecimento de interface mostra melhor o seu valor, com as duas
+partes estando em harmonia.
+
+Para o cliente, inclusive, agregar etapas necessárias à fabricação é ótimo -- economiza pesquisa de mercado,
+economiza iterar entre diversos fornecedores de serviço, agiliza e uniformiza o trabalho.
+
+O maior revés da diferenciação e expansão e escopo do serviço é o conflito de escopo e interesses em
+participar como um hub de serviços como o Cammada e 3DHubs. Além de não terem precificadores automáticos para
+tais serviços como têm para a impressão, o fato de serem intermediários obrigatórios em cada parte do processo
+pode atrasar e prejudicar a interação e a viabilidade financeira da transação.
+
+=== Aprenda a dizer não
+
+A tecnologia da impressão 3D é formidável -- e o que se pode fazer com ela às vezes parece ilimitado, ainda
+mais comparando com outras tecnologias de fabricação, e o entusiasmo e a paixão pelo trabalho podem levar o
+profissional, especialmente o iniciante, a achar que poderá produzir qualquer forma, qualquer geometria com a
+mesma qualidade e facilidade, mas nada poderia estar mais longe da verdade -- que é a das severas limitações
+de formas de qualquer tecnologia atual de fabricação digital. Birôs de impressão populares que usam interface
+de importação de modelos tridimensionais por esse motivo colocam verificadores automáticos de geometria que já
+podem de imediato recusar um modelo por malha com erros, paredes finas e outros problemas, e ainda dão um prazo
+de análise manual dos modelos importados sem erros para o orçamento, tudo isso porque conhecer os limites da
+tecnologia é importantíssimo -- e, aliás, tais problemas _devem_ necessariamente ser previstos pelo contrato da
+transação, porque acontecerão! Fazemos uma análise dos possíveis problemas e armadilhas nas seções de malhas,
+com grande parte do material vindo de artigos dos próprios birôs educando os clientes sobre o que funciona e o
+que não funciona na impressão 3D.
+
+De qualquer jeito, reter um cliente é essencial, e o "não" sempre pode ser dito de uma maneira a resolver
+seu problema. Se a forma tem erros, é inadequada para impressão, ou é de qualquer outro modo impalatável para
+o serviço, ter um expediente que resolva o problema -- ainda que seja por terceiros -- pode agradar o cliente,
+potencializar o serviço e ainda aumentar o lucro, se o serviço adicional -- como retoque na modelagem 3D, ou uso
+de outra tecnologia de impressão 3D mais consistente com a finalidade da peça - for oferta do próprio profissional.
+
+Resta dizer ainda que, no mercado comoditizado em que estamos, algumas dicas bastante específicas se tornam úteis:
+
+* Clientes com modelos tridimensionais prontos para imprimir muitas vezes o terão em um formato proprietário
+diferente do que os fatiadores aceitam, como SLDPRT (SolidWorks) ou SKP (Sketchup). O ideal é recusá-los _sempre_
+quando a tarefa for de impressão, mesmo tendo o software para manipular o arquivo. A razão é que a conversão
+para o formato de impressão, que é uma malha -- STL, AMF, 3MF -- pode inserir erros que tornam a impressão
+inviável, e isso se origina de uma modelagem de baixa qualidade. Tais erros basais de modelagem devem ser corrigidos
+na fonte, e o melhor jeito de assegurar isso é exigir o modelo já "transformado".
+* Para muitos casos, uma
+malha com erros simples enviada pelo cliente pode ser consertada por softwares de conserto de malha automático ou
+serviços de nuvem gratuitos (azure 3d print service, makeprintable, etc.) que realizam essa tarefa rapidamente e
+permitem que o serviço seja executado. Tenha sempre em mente que isso é acostumar mal o cliente e o tiro pode
+sair pela culatra, quando ele enviar um modelo com erros que não são consertáveis de forma automática e se
+recusar a contratar o conserto. Outro problema, pertinente aos serviços de nuvem, é que há problemas legais em
+disponibilizar modelos sob copyright para terceiros sem permissão expressa e sem contrato de confidencialidade
+com esses terceiros.
+* Quando o produtor tiver o serviço agregado de retoque de uma modelagem já existente,
+é praticamente obrigatório o uso da mesma ferramenta em que ela foi feita. Isso porque, especialmente nas peças
+mais complexas, os metadados do modelo como o histórico de modificações é essencial para que um retoque não
+prejudique ou destoe de outras partes do modelo. Em especial, ferramentas de modelagem sólida -- como Solidworks,
+Inventor, AutoCAD, FreeCAD -- são mais adequadas para retoques e reparos grandes e basais, enquanto ferramentas
+que trabalham diretamente com malhas, como Sketchup, Blender, Maya, ZBrush são eficazes apenas para modificações
+pequenas ou bem localizadas, com grande chance de introduzir erros na malha.
+* Se a forma é muito complexa --
+apesar de ser em um material só - e você tem uma impressora FFF com apenas um extrusor, considere adquirir uma
+outra impressora com dois extrusores para essas ocasiões. A razão é que você poderá usar nela filamentos
+dissolvíveis que permitem imprimir suportes removíveis por imersão no acabamento. Tais filamentos, tanto por
+seu preço quanto por sua especificidade, tornam o serviço consideravelmente mais custoso, mas muitos clientes
+privilegiam a qualidade e complexidade da forma e pagarão o necessário. É um diferencial valioso.
+* Ferramentas: procure não se fiar nunca em apenas uma ferramenta. Existem diversas ferramentas "ajudantes" e analíticas
+que aprimoram bastante o workflow de fabricação e não têm equivalentes, ou têm equivalentes inferiores mesmo
+nos softwares mais complexos e caros. Muitas dessas ferramentas são open-source (meshlab, blender, CloudCompare,
+FreeCAD, etc.) e outras ainda são proprietárias, mas gratuitas (meshmixer, netfabb trial, 3D Builder, etc.),
+representando apenas o custo do tempo de aprendizado. Aprender um pouco de cada pode parecer desperdício de tempo
+mas compensa a longo prazo... E se você deseja trabalhar com a impressão 3D, o longo prazo está implícito.
+* Seja criativo e paciente. Aprenda habilidades extras no seu tempo para complementar o serviço de impressão 3D,
+desde arte de acabamento, pintura, reforço de partes, revestimento, modelagem, embelezamento, ou qualquer outra
+coisa que pode imaginar. Pode ser um passatempo cativante e uma hora se tornar o seu diferencial. As pessoas ainda
+estão se acostumando à tecnologia em suas vidas, e as extrapolações delas, e a busca por contratá-las, ainda
+são incipientes. Esteja também preparado para os avanços da tecnologia: ela tem progredido a passos rápidos,
+e as exigências dos clientes e massificação do mercado progridem do mesmo jeito. Para continuar relevante, você
+tem que progredir no mínimo na mesma velocidade -- como a corrida da Rainha Vermelha no livro _Alice no País
+dos Espelhos_ de Lewis Carrol, em que para permanecer no mesmo lugar era necessário correr o máximo que pudesse,
+e para ir a outros lugares só correndo duas vezes mais rápido.
+
+=== Financiamento coletivo (crowdfunding)
+
+__Crowdfunding__, ou financiamento coletivo, é a prática de conseguir fundos suficientes para iniciar um projeto
+angariando contribuições monetárias de um grande número de pessoas pela internet. Geralmente envolve categorias
+de "prêmios" que são dados às pessoas de acordo com suas contribuições, e que envolvem as primeiras
+levas de produtos provenientes do início do projeto. Crowdfunding é uma categoria particular de _crowdsourcing_
+(colaboração coletiva), que é o processo de obtenção de serviços, idéias ou conteúdo mediante a solicitação
+de contribuições de um grande grupo de pessoas. O crowdsourcing surgiu com o Movimento Maker, com a idéia
+de viabilizar projetos sem cair na armadilha de dependência de indústrias fechadas ou grandes instituições
+financeiras. Alguns sites de crowdfunding de projeto conhecidos são os estrangeiros _kickstarter_ e _indiegogo_
+e os brasileiros _catarse_ e __kickante__, e de crowdfunding recorrente temos o _patreon_ e o __apoia.se__. O
+jeito pelo qual funcionam é exigir aos idealizadores de um projeto, cadastrados em seu site, um vídeo mostrando
+o que pretendem e que produto irão entregar, e os "prêmios" que serão dado aos investidores da idéia de
+acordo com a quantia que investiram em uma data marcada no futuro, um dos prêmios sendo o produto a ser obtido. O
+"produto" pode ser praticamente qualquer coisa, itens científicos e tecnológicos são frequentes mas filmes
+inteiros foram feitos, jogos de computador foram programados, campanhas humanitárias arrecadaram dinheiro, causas
+políticas ganharam tração.
+
+Tanto por sua ligação com o Movimento Maker, quanto por seu caráter feito praticamente sob medida para projetos
+tecnológicos de médio investimento, o crowdfunding parece ideal para a impressão 3D[[FEITO crowdfunding]]
+e também é fonte de muitos projetos __open-source__, visto que a possibilidade de ter algo reusável e
+modificável no final, e ainda independente da trajetória específica da empresa, torna-se um importante ponto
+de publicidade e atratividade para angariar contribuidores. Muitos projetos de impressoras 3D inovadoras em sua
+época, como a impressora SLA __Form1__, a SLA/DLP _B9 Creator_ e a FFF brasileira open-source _Metamáquina_
+surgiram de crowdfunding. Hoje já se tornou cômica a forma com que praticamente todo dia há algum projeto
+novo de impressora 3D nos sítios web de crowdfunding, assim como a contrastante e cada vez mais popular máxima:
+"nunca compre impressora 3D de financiamento coletivo!".
+
+[[fotometamaquinacatarse]]
+image::fotometamaquinacatarse.png[fotometamaquinacatarse,width=619,height=510,align="center",title="O financiamento (completado com sucesso) da brasileira Metamáquina no website de financiamento coletivo Catarse já em 2012."]
+
+Mas como qualquer fenômeno de inovação econômica e social, o crowdsourcing em geral e o crowdfunding em
+particular não estão isentos de percalços, tanto para quem está do lado dos contribuidores quanto para quem
+oferece seus projetos em uma plataforma dessas.
+
+.Para o lado dos clientes,
+* ..., ou, melhor dizendo, __financiadores do projeto__. Esse é o primeiro problema e, apesar de abstrato, até
+filosófico, tem consequências práticas bem pungentes. Os usuários pagantes de um projeto de financiamento
+coletivo dificilmente se enxergam como _investidores_ ou __financiadores__ e os próprios portais envolvidos
+não ajudam nisso. Tudo fica parecendo uma simples compra de produto existente. Não é mencionado o _*risco*_
+inerente a esses negócios exceto bem no final, de forma obscura e em letrinhas miúdas. Se por um certo lado a
+linguagem publicitária é tida como necessária para envolver e convencer o usuário prospectivo, por outro lado
+seduz sem informar o necessário. Isso se reflete nos próprios termos dos usuários, pois raramente quem investe
+em tais projetos diz que financiou algo - a palavra usada é "comprar", como se fosse só mais um brinquedo de
+aliexpress que demorasse alguns meses para chegar.
+* Muitos projetos -- a maioria, aliás -- atrasam a data de
+entrega dos prêmios. Em 2012 um levantamento do portal _kickstarter_ pela CNNMoney verificou que 84% dos projetos
+atrasaram^1^. Atraso não é a mesma coisa que falha, certamente, com os projetos que realmente falham sendo menos de
+5%, mas se é algo com que se conta para produção, o despreparo para isso pode acarretar prejuízos.
+* Como se
+fosse uma nova Corrida ao Ouro, muitos projetos se aproveitam da ingenuidade ou pouco conhecimento científico dos
+usuários e prometem façanhas irrealizáveis e tecnologias inexistentes, um novo __ouro de tolos__. Alguns exemplos
+são o "respirador artificial compacto" __Triton__^2^ e o "extrator de água" __Waterseer__^3^. O logro do
+Waterseer é ainda mais complexo pois o investidor não ganha um prêmio, o resultado do projeto sendo entregue
+a "lugares na África" não especificados, isto é, ainda espolia ardilosamente sentimentos humanitários
+de quem dá o dinheiro! Tais projetos invariavelmente mostram renderizações computadorizadas da situação
+que dizem almejar ao invés de um protótipo funcional.
+* No caso brasileiro, há a dificuldade adicional de
+frete e impostos. Na hora do financiamento o frete é apenas estimado, e pode ser diferente quando do envio para o
+Brasil. Algumas vezes o produtor não conhece bem as regras alfandegárias para o país e envia o produto por exemplo
+sem CPF, se arriscando a tê-lo barrado pela receita. Além disso, os impostos a incidir podem ser bem salgados,
+possivelmente maiores que de itens importados normalmente pois podem ser considerados itens de finalidade industrial.
+
+Claro que conhecer o lado dos clientes também é indispensável para o produtor interessado em utilizar do
+financiamento coletivo, no mínimo por uma questão de viabilidade do projeto e publicidade. Os dois lados estão
+colaborando em conjunto para o projeto chegar à sua resolução, o que ainda evidencia que harmonia de interesses
+e comunicação são essenciais.
+
+.Para o lado dos produtores,
+* ...a primeira observação a notar, e de novo abordando o aspecto psicológico da questão, é que **não existe prêmio por merecimento**.
+Devido à sua associação quase mística com o movimento Maker, à sua aura de inovação e
+de dinheiro relativamente fácil para mentes brilhantes realizarem seu potencial,
+**é muito fácil cair na armadilha da autoconfiança excessiva**.
+E a primeira razão dessa armadilha é que o campo das idéias, dos projetos, da
+excelência intelectual é _muito_ diferente do campo da logística, do comércio, da indústria, da burocracia
+estatal e impostos, da publicidade e viabilidade de colocar alguma coisa no mercado e ela ser competitiva. Nesse
+sentido se pode dizer que há pouca diferença do financiamento coletivo e de uma _startup_ comum: é preciso ter
+um plano de negócios sólido, fornecedores confiáveis e que cumpram seus prazos, é preciso adicionar na conta
+os custos de muitos intermediários e peças e procedimentos adicionais (eletrônicos e novos compostos podem ter
+que passar por um bocado de certificações industriais e testes de regulações, por exemplo), e não é surpresa
+que empreendedores de mercado mais falhem que sucedam. Alguns projetos podem ainda ter sucesso, mas a falta de
+planejamento para _depois dele_ pode levar uma campanhia à falência.
+**Mesmo uma idéia genuinamente brilhante e inovadora pode falhar, e falha** -- muito facilmente.
+Exemplos não faltam, um deles sendo a impressora 3D estilo
+delta Tiko^4^, e um exemplo nacional sendo a controladora de impressão 3D de escopo industrial "3DRoot"^5^. Em
+comum entre esses dois projetos, aliás, é confiar demais na parte do hardware e esquecer que o _software_ (ou no
+caso o firmware da controladora) é complexo e precisa de muito uso em campo pra ser devidamente depurado e afinado,
+ainda mais quando não são usados como base softwares maduros e testados como os do projeto reprap.
+* Reforçando
+uma obviedade, o investidor ou cliente __**busca gratificação**__. Isso não pode ser perdido de vista e se temos
+também os projetos de financiamento coletivo que buscam o máximo possível ter seus prêmios parecendo produtos
+finalizados de prateleira, temos o outro lado, especialmente para projetos de cunho beneficente, comunitário
+ou ecológico, de ser feita uma promessa ao investidor com prêmios pífios, intangíveis ou desmotivadores de
+alguma forma. Por exemplo, um hipotético financiamento coletivo para entregar um item que ajuda na recuperação
+de câncer é uma causa humanitária muito bonita, mas quem recebe tal ajuda? Poder-se-ia criar uma campanha sem
+especificar os auxiliados e com prêmios consistindo de camisas "eu ajudei um doente de câncer", ou pode-se
+dar a sensação de empoderamento ao financiador permitindo que ele especifique o hospital a ganhar os itens que
+ele financia. O segundo caso terá muito mais sucesso pela gratificação que proporciona, e sendo um campo em
+aberto, muitas soluções criativas podem ser inventadas para se ter sucesso na campanha. No caso específico de
+campanhas de cunho __político__, ideologias pesam bastante e o maior projeto de financiamento coletivo de cunho
+não-lucrativo foi do advogado Lawrence Lessig para reformar as regras de financiamento de campanhas políticas.^6^
+* Uma vantagem do financiamento coletivo é que um dos modos de o realizar -- o mais frequente -- é "tudo ou
+nada": o financiado estipula uma quantia mínima a ser atingida para que o processo possa ter sucesso, um prazo é
+criado (digamos, dois meses) e durante este prazo, a campanha está aberta aos investidores. Passado o prazo, caso a
+quantia mínima não seja alcançada, todo o dinheiro é devolvido. Ninguém sai perdendo. Um produtor resoluto pode
+tentar obter o financiamento outras vezes, e isso realmente acontece -- certas campanhas só pegam "tração" na
+segunda ou terceira vez que são tentadas, e daí migram para o sucesso, como o bico de tungstênio de impressora 3D
+da dddmaterial^7^.
+* É educativo ao interessado no financiamento estudar os casos de falha de entrega, mais que
+os casos de sucesso. Fiascos milionários com quebra de contrato e intrigas pessoais como a impressora de resina
+__Peachy Printer__^8^ podem acontecer com qualquer um, e mostram bem a tensão e pressão pública que acometem
+um projeto desses. É interessante ainda ver que mesmo com a fragorosa falha deste projeto, o fato de a terem
+criado em regime open-source, com repositório no github^9^, permitiu que o projeto fosse continuado na forma
+da YXE3D^1^⁰, o que nos leva ao próximo ponto.
++
+[[yxe3dexpeachyprinter]]
+image::yxe3dexpeachyprinter.png[yxe3dexpeachyprinter,width=580,height=563,align="center",title="A YXE3D, continuação da famosa - e infame - &quot;Peachy Printer&quot; se utilizando do material de projeto open-source que já havia sido disponibilizado. Foto de bigtreeworld em https://imgur.com/a/ViaAu."]
++
+* Se parte do objetivo do projeto é disseminar uma tecnologia, não só vendê-la, vale muito a pena considerar
+anunciá-la como open-source (e existem diversas licenças para escolher que permitem diferentes tipos de controle),
+pois assim, mesmo com o projeto falhando, os usuários pagantes terão uma "consolação" (que pode, no limite,
+evitar ou amenizar um processo pesado, por exemplo) e uma chance de continuidade por terceiros. Uma comunidade
+de usuários progressivamente mais informada tem se importado bastante com este detalhe em uma campanha, e ele
+serve como publicidade e inspirador de confiança para investidores. A mentalidade open-source tem sido tão
+influentes que existem portais de financiamento coletivo _somente para projetos desse_ tipo como o BountySource e
+FreedomSponsors^1^^1^, e não surpreendentemente, os portais convencionais também têm toda uma seção dedicada
+a isso. Um portal web onde você pode escolher licenças para seu produto de acordo com sua necessidade é o
+_Creative_ Commons, http://www.creativecommons.org/[_http://www.creativecommons.org_]. Note, entretanto, que o
+conceito de "open-source" não permite nenhum tipo de proibição de uso comercial, e licenças que fazem isso
+como CC-BY-NC não têm apelo.
+
+Por fim, há muito mais o que dizer sobre financiamento coletivo do que caberia em um livro, é uma nova dinâmica
+econômica que ainda tem muito a oferecer, e muito o que amadurecer na sociedade moderna. Esta pequena introdução
+tem a intenção mais de apresentar um conceito do que realmente oferecer caminhos, já que tais caminhos, na
+verdade, ainda estão sendo traçados.
+
+[NOTE]
+.Notas:
+====
+. http://money.cnn.com/2012/12/18/technology/innovation/kickstarter-ship-delay/[_http://money.cnn.com/2012/12/18/technology/innovation/kickstarter-ship-delay/_]
+. http://www.digitaltrends.com/cool-tech/triton-reboots-artificial-gill-campaign/[_http://www.digitaltrends.com/cool-tech/triton-reboots-artificial-gill-campaign/_]
+. _https://www.indiegogo.com/projects/waterseer-water-women#/_
+. http://hackaday.com/2017/02/27/the-tiko-printer-what-happens-when-you-innovate-too-much/[_http://hackaday.com/2017/02/27/the-tiko-printer-what-happens-when-you-innovate-too-much/_]
+. _https://www.indiegogo.com/projects/3droot-high-reliability-3d-print-controller/#/_
+. https://en.wikipedia.org/wiki/Mayday_PAC[_https://en.wikipedia.org/wiki/Mayday_PAC_]
+. https://www.kickstarter.com/projects/dddmaterial/3d-printer-tungsten-premium-nozzle-reloaded[_https://www.kickstarter.com/projects/dddmaterial/3d-printer-tungsten-premium-nozzle-reloaded_]
+. https://motherboard.vice.com/en_us/article/peachy-printer[_https://motherboard.vice.com/en_us/article/peachy-printer_]
+. https://github.com/peachyprinter[_https://github.com/peachyprinter_]
+. http://www.yxe3d.com/[_http://www.yxe3d.com/_]
+. http://www.techdrivein.com/2012/12/top-5-kickstarter-crowdfunding-alternatives-opensource-software.html[_http://www.techdrivein.com/2012/12/top-5-kickstarter-crowdfunding-alternatives-opensource-software.html_]
+====

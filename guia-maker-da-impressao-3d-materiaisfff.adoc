@@ -1,0 +1,1554 @@
+[#guia-maker-da-impressao-3d-materiaisfff]
+= Os Materiais de Impressão 3D FFF
+
+== Introdução: polímeros e plásticos
+
+De todos os materiais que encontramos no dia-a-dia, os _polímeros_ são os que nos interessam. O que é um
+polímero? Muitos dos materiais que conhecemos, como a água (H₂O), o sal (NaCl) e acetona (C₃H₆O) são
+moléculas simples, mantidas coesas por forças moleculares de atração mas sem "ligações" facilmente
+discerníveis. Os **polímeros**, no entanto, são diferentes: ao invés de uma molécula do material permanecer
+sozinha, ela estabelece uma ligação molecular do tipo covalente com uma molécula do mesmo tipo. Com duas
+moléculas compondo uma **macromolécula**, essa composição de dois elementos é chamada de um **dímero**,
+e cada componente do dímero um **monômero**. Mas os polímeros tendem a continuarem a escalada: a molécula de
+um extremo se liga a outro monômero, a do outro também, e por aí se estendem, até formarem filetes moleculares
+extremamente longos e de números variáveis de monômeros.
+
+image::image165.png[image,width=618,height=566,align="center",title="O plástico PVC, um polímero (e plástico) bastante usado para canos, lacres e laminados para embalagens. O polímero da fórmula tem 7 monômeros (heptâmero), o da figura tridimensional 10 monômeros (decâmero), mas são o mesmo material. Tipicamente as cadeias poliméricas têm número de monômeros ordens de grandeza maior. Este polímero se estende linearmente mas existem polímeros que podem se estender em várias direções ao mesmo tempo em 3 dimensões."]
+
+Muitos fenômenos e reações diferentes podem fazer as moléculas se unirem de forma polimérica, desde reações
+químicas "convencionais" usando catalisadores até processos físicos e químicos mais elaborados como
+a incidência de luz -- princípio da estereolitografia, que vimos nas técnicas de impressão 3D; a cura da
+substância nada mais é que a união dos monômeros. Essa reação geralmente confere ao material uma rigidez
+e resistência aumentadas. Quando o arranjo polimérico é formado não apenas de um tipo de polímero, mas um
+número discreto de monômeros básicos, é chamado de um copolímero. O plástico ABS, que veremos mais adiante,
+é um desses arranjos, formadas dos monômeros Acrilonitrila, Butadieno e Estireno (Styrene, em inglês). Note
+ainda que a polimerização pode mudar consideravelmente as propriedades das moléculas individuais -- o estireno,
+em sua forma monomérica, é bastante tóxico ao ser humano, mas na forma polimérica é basicamente inerte.
+
+Embora as características variem de acordo com o material, os polímeros costumam apresentar as seguintes
+propriedades:
+
+* *Resistência a produtos químicos* -- o arranjo em cadeia confere proteção a muitos reagentes comuns.
+* *Isolamento* térmico e elétrico -- a estrutura do polímero favorece espaços vazios e costuma ter indisponibilidade
+de elétrons móveis, o que facilita o isolamento térmico e elétrico.
+* *Leveza* -- os mesmos espaços vazios
+costumam fazer dos polímeros materiais relativamente leves.
+* Facilidade de processamento e *usinagem* -- o fato
+de serem facilmente arranjados em fibras e de as cadeias poliméricas serem bastante manuseáveis por processos
+mecânicos e térmicos confere a eles posição predominante na indústria.
+* **Têm uma variedade muito grande de propriedades e cores**, derivando tanto das propriedades dos monômeros quanto das cadeias poliméricas e suas formas.
+
+De todos os polímeros naturais ou artificiais, os plásticos são os que mais nos interessam. São uma categoria
+de polímeros extremamente numerosa e variada e útil, e são definidos como materiais poliméricos orgânicos
+sintéticos com grande maleabilidade. A maioria dos plásticos vem do petróleo, com a indústria procurando
+descobrir novos bioplásticos para não exaurir totalmente esse recurso finito. O bioplástico mais conhecido
+e utilizado é o **PLA**, ácido polilático. Apesar de não os enxergarmos como "plásticos", muitos dos
+materiais do nosso dia-a-dia o são, como nylon (poliamida), isopor e teflon (PTFE).
+
+Na era do surgimento da Stratasys, a indústria de plásticos já era bem estabelecida, e o ABS já era bastante
+utilizado em todo tipo de item doméstico, comercial e industrial. Ainda hoje ele está entre os mais utilizados
+nas impressoras 3D. Seu baixo preço e facilidade de ser moldado em forma de um carretel de filamento contribuíram
+bastante para a universalidade de sua adoção. Entretanto, com a diversificação de materiais disponíveis para
+impressão 3D, o ABS tem sofrido lenta queda de utilização, especialmente na Europa.
+
+Os filamentos no início eram fabricados com o diâmetro de aproximadamente 3mm (na prática, algo entre 2,75 a
+2,95mm), principalmente por limitações do processo de "extrusão" do início da indústria. Após a abertura
+do mercado em 2009, uma outra variedade apareceu com diâmetro de 1,75mm (na prática, de 1,6mm a 1,75mm). Hoje, os
+filamentos de 1,75mm já são dominantes no mercado, principalmente porque precisam de menor torque no tracionamento
+e têm menos pressão na câmara de derretimento, permitindo grande simplificação das peças de impressoras. Para
+a impressora 3D funcionar com o filamento, precisa somente de um extrusor fabricado para aquele diâmetro; todas
+as outras peças são independentes disso.
+
+Pra entender melhor os materiais, antes precisamos aprender sobre as propriedades que nos interessam. Este
+conhecimento é necessário não só para saber critérios para escolher o material para dada aplicação, como
+também para resolver problemas relacionados a essas propriedades.
+
+== Propriedades Térmicas
+
+Os plásticos podem ser moldados em determinada forma e após a moldagem, permanecerem fixos nesta forma. Se dividem
+em dois tipos principais quanto ao comportamento térmico: termofixos (ou thermosets, em inglês) e termoplásticos.
+
+* Os _*termofixos*_ ou _*termorrígidos*_ são os plásticos que após a solidificação não podem retornar ao
+estado moldável; como um pão que, depois de assado, não pode retornar ao estado flexível de sua massa crua. Isso
+acontece porque com este aquecimento, ligações cruzadas acontecem nas cadeias poliméricas formando novas ligações,
+essas irreversíveis. Tentativas de reaquecimento somente levarão à degradação e desintegração do plástico.
+* Os _*termoplásticos*_ são os plásticos que podem ser novamente derretidos para um estado moldável, pois
+nenhuma nova ligação química acontece na transição de estado, e são eles que utilizamos na impressão
+3D FFF.
+* Alternativamente, algumas vezes se encontram como um terceiro tipo os plásticos _*elastômeros*_ (ou
+borrachas). São plásticos com estruturas similares aos termorrígidos, mas com número bem menor de ligações
+cruzadas e alta elasticidade.
+
+A propriedade térmica mais importante dos termoplásticos para nossos propósitos é a __transição
+vítrea__. Diferentemente de uma substância simples como a água, que tem transições de fase de maneira
+abrupta e instantânea -- abaixo de zero graus está em estado sólido, acima está em estado líquido -, os
+termoplásticos têm uma "pseudo-transição de fase" suave e relacionada à estrutura de suas moléculas
+(amorfa ou semicristalina com regiões amorfas). Este tipo de transição é chamada de __transição vítrea__,
+"glass transition" em inglês (índice "Tg"), e é dada por uma faixa de temperaturas em que a consistência
+do material fica em forma pastosa, "em transição" de sólida para líquida. A temperatura de transição
+vítrea é sempre menor que a temperatura de derretimento.
+
+=== *O "Warp"*
+
+O maior problema de todos na impressão 3D está relacionado à temperatura: __warping__. Como a grande maioria dos
+materiais, os plásticos têm coeficiente de expansão térmica positiva, isto é, à medida que sua temperatura
+aumenta, devido ao aumento de energia cinética, seu volume também aumenta, e igualmente, com a temperatura
+diminuindo, o volume diminui, numa razão de proporcionalidade. Embora a pressão atmosférica também influencie
+nesse volume (quanto maior a pressão, menor o volume), a expansão térmica é um fenômeno determinístico e
+não pode ser impedido.
+
+No processo de impressão 3D FFF, o material é submetido a uma intensa mudança de temperatura em pouco tempo:
+é rapidamente passado da temperatura ambiente para uma temperatura de estado líquido, extrudado e então deixado
+esfriar de maneira mais lenta para haver a aderência entre camadas e endurecimento. Isso quer dizer que ele
+sai de um volume expandido para um volume mais contraído logo após a extrusão. Como a impressão de uma peça
+tipicamente leva horas, isso significa que algumas partes dela terão tido mais tempo pra esfriar do que outras,
+e estando em temperaturas diferentes, terão também volumes diferentes.
+
+Esta diferença de volume, ainda que nas diferenças de temperaturas típicas da impressão 3D do plástico
+mais comum seja da ordem de décimos de milímetros em uma peça de vários centímetros, não acontece sem
+consequências. Embora no final do processo todo o plástico depositado inevitavelmente entra em equilíbrio térmico,
+ficando na temperatura ambiente e portanto no mesmo volume relativo, as diferenças durante o processo podem gerar
+deformações que permanecem na peça (afinal, as coordenadas para a deposição do plástico não mudam), de modo
+que até a peça pode ser inutilizada. Por exemplo: como as quinas de um objeto quadrado estão mais expostas à
+temperatura que as laterais, é comum que em uma impressão essas partes se contraiam mais rápido e levantem,
+deixando a peça empenada. Outro exemplo: como a parte do plástico em contato com a mesa contrai, isso pode levar
+ao descolamento da peça da superfície. Ainda outro exemplo: duas áreas contínuas podem acabar "rasgando"
+espontaneamente por as duas esfriarem de tal modo que a força de contração nelas "puxa" os átomos para
+seus respectivos centros de massa. Esse último fenômeno ganhou o apelido de __delaminação__.
+
+[[warpedelaminacao]]
+image::warpedelaminacao.jpeg[warpedelaminacao,width=572,height=378,align="center",title="Warp e &quot;delaminação&quot; ocorridos em um objeto após impressão"]
+
+Para arrematar, plásticos mais resistentes ao calor (como policarbonato e ABS) terão temperatura de transição
+vítrea maior, o que quer dizer que têm um intervalo maior de temperaturas em que ficam no estado sólido. É o
+encolhimento quando o material está no estado sólido que gera os maiores problemas, pois se estiver no estado
+pastoso da transição vítrea, o material não cria tensões no resto do objeto.
+
+A *umidade* também afeta como o warp se manifesta. Moléculas de água facilitam com que o polímero em alta
+temperatura sofra __hidrólise__, o que faz com que seus filetes poliméricos se rompam e fiquei mais curtos,
+deixando o material mais fraco e com menor aderência. Além disso, bolhas de ar formadas pela rápida expansão
+em alta temperatura também criam poros que enfraquecem a estrutura.
+
+=== A Solução?
+
+Como dito, a mudança de volume com a temperatura é um fenômeno inevitável. E é mais grave com alguns
+materiais do que em outros; índices como o coeficiente de calor específico e a condutividade térmica farão
+grande diferença. Quanto mais calor o material conduzir, mais rapidamente as temperaturas se equilibram, e menor
+a diferença de temperatura que causa os problemas. Por isso um material como o ABS, isolante térmico e com alto
+coeficiente de expansão térmico, apresenta este problema de forma muito mais grave que um como o PLA, que tem
+maior condutividade térmica e baixo coeficiente de expansão térmica.
+
+Nas impressoras 3D da Stratasys, o problema é mitigado com o uso de câmaras aquecidas. A idéia não é manter
+o material em uma temperatura excessivamente alta: é deixá-lo temporariamente exposto a uma temperatura em que
+ainda esteja sólido mas em que o volume não tenha se contraído tanto que prejudique a peça. Para o ABS, que
+tem temperatura de transição vítrea começando em 105°C, por exemplo, 85°C na câmara é suficiente. Assim
+a diferença de temperaturas entre várias da peça fica sempre mínimo, e uma vez a impressão termine, basta
+abaixar a temperatura vagarosamente para a peça estabilizar.
+
+[[caseembarcadowarp]]
+image::caseembarcadowarp.png[caseembarcadowarp,width=642,height=352,align="center",title="À esquerda: objeto (case para embarcado) impresso em uma impressora 3D aberta, tendo sofrido bastante &quot;warp&quot;. À direita: o mesmo objeto impresso em impressora 3D fechada com temperatura controlada."]
+
+Nas impressoras RepRap, em que o baixo custo é um imperativo, a câmara aquecida, um componente que é tipicamente
+dispendioso para construir e consumidor de muita energia, foi substituído pela __mesa aquecida__. Além de gastar
+muito menos energia, o calor se concentra na parte da impressão 3D mais crítica para a qualidade da peça --
+as primeiras camadas. Para peças baixas - digamos, até 5 cm -, ela é tão efetiva quanto a câmara, e pode ser
+usada em impressoras 3D abertas.
+
+A estratégia recomendada para a mesa aquecida é colocá-la em uma temperatura em que o plástico fique pouco
+acima de seu ponto de transição vítrea. No estado pastoso que a caracteriza, a viscosidade do plástico torna
+sua aderência bem alta, o que garante estabilidade na mesa. Assim, para o ABS, por exemplo, coloca-se uma mesa em
+contato direto com o plástico a 110°C, ou 120°C se o vidro for usado pra compensar o decréscimo de temperatura
+que ele causa.
+
+== *Propriedades Químicas*
+
+Uma característica dos plásticos em geral que os faz tão apropriados à civilização moderna é a estabilidade
+química, que ocorre quando um sistema está no seu nível mais baixo de energia. Comparados a outras classes de
+compostos, os plásticos são relativamente resistentes a reações e degradação. Ao mesmo tempo em que isso é
+uma vantagem, também é um revés pois é esta mesma estabilidade dos plásticos que os torna difíceis de serem
+digeridos por bactérias e outros microorganismos e voltarem à natureza; isso os torna um problema ecológico e
+ambiental. Tal resistência não é completa, no entanto, e varia de acordo com o plástico específico. Os assim
+chamados "__plásticos de engenharia__" são um grupo que tem propriedades térmicas, mecânicas e químicas
+consideradas mais desejáveis que os mais baratos "plásticos commodity" (poliestireno, PVC, polipropileno
+e polietileno, princopalmente). Muitos desse grupo serão os termoplásticos usados em impressão 3D (como ABS,
+policarbonato, PETG, nylon).
+
+Não há tanto em comum entre eles; de forma geral, o máximo que se pode dizer é que a maioria, incluindo os
+"de engenharia", é lentamente afetada por radiação ultravioleta, se degradando (perdendo a polimerização
+e portanto a estrutura) após longa exposição. Mais do que isso depende do polímero específico, pois tais
+características variam bastante.
+
+Mais genericamente, no entanto, começa a ficar interessante quando abordamos as propriedades _biológicas_
+dos plásticos. Essas têm especial significado para nós, seres vivos baseados em carbono, pois remetem à nossa
+interação direta com eles. Na verdade, é mesmo difícil de separá-las das propriedades químicas: a estabilidade
+química não é também ambiental?
+
+== Propriedades Biológicas
+
+Para falar destas propriedades, optamos por dividi-las em 3 categorias. Uma de potenciais danos à saúde, de
+forma mais genérica; outra, de reciclagem e biodegradação. E por mim, vamos falar sobre seu uso alimentar e médico.
+
+=== Potenciais danos à saúde
+
+Todos os termoplásticos usados em impressão 3D são já conhecidos da indústria e usados na manufatura
+industrial há décadas -- excetuando talvez o PLA que é mais recente e tem uso mais tímido, mas mesmo assim
+não desprezível. Com todo um setor produtivo dedicado inteiramente aos plásticos por tanto tempo, era de se
+esperar que exista uma vasta literatura sobre o assunto -- e existe, de modo que fica impossível listar realmente
+toda e qualquer consequência biológica nociva. Mas, de modo geral, os maiores problemas diretos dos plásticos
+ocorrem quando são queimados, liberando compostos orgânicos voláteis (**VOCs**), principalmente tóxicos da
+classe conhecida como __dioxinas__^1^_,_ mas também os __ftalatos__, muitos desses dos aditivos que lhes são
+adicionados para conferir determinadas propriedades. Os ftalatos e um aditivo usado para endurecer plástico,
+o Bisfenol A ou BPA, também podem "vazar" dos plásticos que o contém por aquecimento simples ou stress
+mecânico. Dioxinas, alquilfenóis, ftalatos (especialmente o bis (2-etil-hexil) ftalato, ou DEHP) e o BPA são
+_perturbadores_ ou __interferentes endócrinos__, substâncias que se assemelham a hormônios naturais e se ligam
+a receptores destes no corpo humano, causando desequilíbrio do sistema endócrino e tendo efeitos de alteração
+das funções reprodutivas, mentais e de desenvolvimento do corpo. A extensão do efeito desses perturbadores
+endócrinos, especialmente nas doses encontradas em plásticos, ainda é bastante disputada, com o BPA especialmente
+ganhando avisos de advertência de uso pelo Instituto Nacional de Saúde dos EUA^2^, ao mesmo tempo em que o Centro
+de Controle de Doenças diz não ser tão perigoso assim^3^. E mesmo os plásticos explicitamente vendidos como
+"livres de BPA", como o __Tritan__, têm compostos como o BHPF (fluoreno-9-bisfenol) e TPP (trifenil fosfato)
+que também causam perturbação endócrina^4^.
+
+De todos os plásticos, o PLA parece ser o mais inofensivo por ser um bioplástico e queimar liberando componentes
+orgânicos de pouca toxicidade, como o ácido láctico. Ainda assim, até o PLA padece de um problema que complica o
+cenário porque depois que o mercado de impressão 3D FFF se abriu e surgiram os pequenos revendedores e fabricantes
+de filamentos, o que antes era uma cadeia de produção única e estritamente controlada se transformou em um caos
+de diferentes produtores, misturas diversas e principalmente falta de controle e informação dos materiais. Isso
+ainda é reforçado pela velha prática comercial de guardar a formulação e componentes do material como segredo
+para impedir a concorrência; quando foi a última vez que você viu discriminados todos os aditivos, dopantes e
+corantes do seu carretel de filamento? Isso é especialmente preocupante quando muito da matéria-prima comprada
+vem da China, que tem padrões frouxos de controle de material. Quando até corantes podem conter metais pesados
+e venenos para obter sua tonalidade, esse não é um perigo desprezível para um plástico derretido a mais de
+200°C em uma sala pequena. Então, até o seu carretel de "PLA natural" pode ter substâncias que você
+não imaginaria, e não desejaria, que estivessem lá. Isso não seria um problema tão grande se os filamentos
+tivessem a sua própria receita publicada em regime __open-source__, o que soa absurdo a um mercado tão secretivo
+-- ainda assim, há quem tente^5^.
+
+Um estudo recente (2016) montou um aparato para poder medir as emissões de VOCs de vários filamentos^6^ e com
+várias impressoras, com e sem cobertura. Os emitidos em maior quantidade foram caprolactama de filamentos de nylon
+e imitação de madeira (de 2 a 180 µg/min), estireno do ABS e HiPS (de 10 a 110µg/min) e lactida (um derivado
+irritante do ácido lático) do PLA (de 4 a 5 µg/min),
+
+[[graficoemissaovocs]]
+image::graficoemissaovocs.png[graficoemissaovocs,width=611,height=372,align="center",title="Estimativas de taxas de emissão para os VOCs de maior concentração e também a soma dos 10 VOCs mais detectáveis (∑VOC) resultantes da combinação de 16 impressoras e filamentos. A figura está dividida em (a) baixos emissores, com E∑VOC < 40 μg/min, e (b) altos emissores, com E∑VOC > 40 μg/min, para clareza visual. Note que embora não haja barras de erro, a incerteza de cada VOC individual é de ~36% de acordo com a informação de suporte."]
+
+**Poeira do plástico**: plásticos soltam partículas como a maioria dos materiais e um perigo normalmente
+negligenciado por operadores de impressoras 3D é o perigo de partículas sólidas com potencial irritante flutuando
+livremente no ar, ainda mais com procedimentos de dia-a-dia como destaque de suportes e _raft_ e lixamento de
+superfícies. Nesse caso, como o tamanho do particulado dessas operações fica mais ou menos na mesma faixa
+da serragem e pó de madeira da indústria madeireira, entre 10 µm e 1000 µm, precauções dessa indústria
+podem ser tomadas como uso de máscara de poeira, mangas longas e luvas e óculos de proteção e operação em
+um ambiente arejado ou com exaustão de partículas.^7^
+
+**Partículas ultrafinas**: Há uma diferença significativa, no entanto, entre o pó de madeira (ou a poeira em
+geral) e o particulado da impressão 3D: enquanto no caso geral se considera a poeira _muito_ pequena (menor que
+10 µm) inofensiva por ser inalada e exalada igualmente, descobriu-se em estudos sobre a possível toxicidade dos
+termoplásticos de impressão que eles liberam grande quantidade das assim chamadas __partículas ultrafinas__,
+um particulado de menos de 100nm (0,1µm) de diâmetro que, inaladas, podem causar inflamação nos pulmões ou
+entrar na corrente sanguínea e interagir com nossas células, ou serem depositados em áreas sensíveis como a
+medula espinhal, nódulos linfáticos, baço e coração, em alguns casos podendo até chegar ao cérebro. Estudos
+epidemiológicos recentes mostram que há correlação entre essas partículas e relatos de problemas de saúde,
+incluindo mortalidade cardiorrespiratória, AVCs e asma^8^. ABS, em particular, libera uma quantidade de partículas
+ultrafinas 10 vezes maior que PLA, além de ser mais irritante.
+
+Esse problema é tão mais grave por não ser tão fácil resolver este problema: pra começar, a Stratasys tem
+a patente US 6722871 B1^9^, que ainda vai demorar alguns anos para expirar e que efetivamente proíbe fabricantes
+que desejam vender impressoras 3D nos EUA de terem uma impressora completamente vedada. Para tornar o problema mais
+difícil de resolver, os meios de filtragem convencional como filtros de carbono só funcionam com partículas de no
+mínimo 500nm, não servindo para as partículas ultrafinas (a maioria das coberturas anti-emissões de impressoras 3D
+do mercado^1^⁰ e mesmo alguns projetos "faça você mesmo" não levam isso em consideração^1^^1^). É certamente
+uma demanda de mercado que está custando a ser atendida até no exterior, que dizer então do Brasil... No momento,
+as únicas mitigações parecem ser imprimir em local arejado e não permanecer muito tempo perto da impressora 3D,
+e talvez fazer uma cobertura com adaptador para sugar o ar da impressora (e ainda fica a dúvida de como capturar
+as partículas ultrafinas para evitar que voltem ao ambiente).
+
+[NOTE]
+.Notas:
+====
+. http://www.ecycle.com.br/component/content/article/35-atitude/1073-conheca-os-perigos-da-dioxina-e-como-preveni-los.html
+. https://www.niehs.nih.gov/health/topics/agents/sya-bpa/index.cfm
+. http://factsaboutbpa.org/what-does-us-government-research-tell-us-about-bpa[_http://factsaboutbpa.org/what-does-us-government-research-tell-us-about-bpa_] -- a página é na verdade um apanhado de fatos sobre o BPA com links para órgãos do governo estadunidense. Infelizmente, parece que não há equivalente nacionnal em termos de informação.
+. http://www.popsci.com/bpa-free-plastic-bad-for-human-health#page-2 . É interessante também
+ler a reportagem que trata das batalhas jurídicas envoltas nas acusações de danos do Tritan: http://www.npr.org/sections/health-shots/2015/02/16/385747786/beyond-bpa-court-battle-reveals-a-shift-in-debate-over-plastic-safety
+. https://opensource.com/article/17/5/open-source-3d-printing-filament[_https://opensource.com/article/17/5/open-source-3d-printing-filament_] -- tais iniciativas devem sempre ser incentivadas através de escolha de consumo consciente e contínua cobrança dos produtores por transparência.
+. Azimi, P., Zhao, D., Pouzet, C., Crain, N. E., & Stephens, B. (2016). Emissions of ultrafine particles and volatile organic compounds from commercially available desktop three-dimensional printers with multiple filaments. __Environmental science & technology__, __50__(3), 1260-1268. Disponível em http://pubs.acs.org/doi/full/10.1021/acs.est.5b04983,
+A informação de suporte está em http://pubs.acs.org/doi/suppl/10.1021/acs.est.5b04983/suppl_file/es5b04983_si_001.pdf
+. Embora haja referências breves na internet em português sobre perigos da poeira como
+http://www.ehow.com.br/perigos-particulas-madeira-sobre_125562/, as mais completas e informativas estão em inglês, como esta australiana de uma associação madeireira: http://www.fwwa.org.au/Art005_WoodDust_c1.pdf
+. http://built-envi.com/portfolio/ultrafine-particle-emissions-from-3d-printers/[_http://built-envi.com/portfolio/ultrafine-particle-emissions-from-3d-printers/_] --
+há uma apresentação amigável do artigo, que é: Stephens, B., Azimi, P., Orch, Z. E., & Ramos, T. (2013). Ultrafine particle emissions from desktop 3D printers. _Atmospheric Environment,_ __79__, 334-339. doi:10.1016/j.atmosenv.2013.06.050 e uma nova análise com recomendações foi feita recentemente em http://ulchemicalsafety.org/initiative/3d-safety-science-proceedings/ (PDF em inglês, 24 páginas)
+. http://www.google.co.uk/patents/US6722872[_http://www.google.co.uk/patents/US6722872_]
+. No momento da publicação deste livro, a única solução comercial que achamos que leva em consideração as partículas ultrafinas é esta: http://www.bofaamericas.com/3D-printing-fume-extraction.asp
+. Apenas como referência, o site _3d printing industry_ mostra projetos para ligar um exaustor à impressora:
+https://3dprintingindustry.com/news/3d-printer-exhaust-redirect-noxious-fumes-21300/
+====
+
+=== Reciclagem e Biodegradação
+
+As palavras _reciclar_ e _biodegradável_ aparecem tanto na linguagem informal que podem parecer significar a mesma
+coisa, ou pelo menos algo muito próximo. Mas não são, e em um certo sentido podem ser vistas até como opostos, ou
+pelo menos dois lados da mesma moeda -- a moeda de minimizar o nosso impacto ambiental. Grosso modo, _biodegradável_
+é aquilo que naturalmente se desintegra e volta a fazer parte do ambiente, enquanto que _reciclamos_ o material
+não-biodegradável para que volte a fazer parte de objetos úteis e não tenhamos que extrair mais da natureza.
+
+Mas _grosso modo_ não é suficiente para esse assunto. Ele tem definições precisas, padronizadas internacionalmente,
+alguns exemplos são a norma brasileira para ensaio de plásticos biodegradáveis e compostáveis -- NBR 15448-1
+(nomenclatura) e NBR 15448-2 (requisitos e métodos), a norma estadunidense ASTM D6400 e a europeia EN 12432^1^. Saber
+pelo menos algumas dessas definições já nos dá guia para entender o cenário em que navegamos.
+
+* **Reciclável**: todo material que após transformações físicas ou químicas podem ser reutilizados no mercado,
+seja sob a forma original ou como matéria-prima para outros objetos de finalidades diversas.
+* **Retornável**:
+objetos que podem ser reutilizados na mesma função sem passar pela reciclagem do material, como garrafas
+de cerveja.
+* **Reutilizável**: objetos que podem ser reutilizados na mesma função ou em novas funções
+após seu uso inicial, como potes de alimentos que podem ser usados como copos ou como pequenas caixinhas para
+pertences pessoais.
+* **Renovável**: designação usada também para energia, um recurso renovável é aquele
+que pode ser restaurado por processos naturais a uma velocidade superior a seu consumo por humanos. O exemplo
+canônico de recursos __não-__renováveis é o petróleo, um composto fóssil que ainda dá origem à maioria
+dos plásticos de impressão 3D e surgiu a partir de transformação química sob alta pressão e temperatura de
+restos orgânicos de fauna e flora microscópica por milhões de anos.
+* **Degradável**: um material que seja
+_degradável_ submete-se a uma mudança significativa em sua estrutura química sob circunstâncias ambientais
+específicas, tendo por resultado a perda de algumas propriedades químicas e/ou físicas.
+* *Oxidegradável* ou
+**Oxibiodegradável**: o segundo termo é usado informalmente como sinônimo do primeiro, embora não signifique
+estritamente o mesmo. É o material que pode sofrer degradação por ação do oxigênio, geralmente com um aditivo
+para acelerar o processo. Essa degradação não é completa, levando somente à fragmentação do plástico,
+sem facilitar seu retorno a cadeias naturais e deixando mais difícil de tratar, visto que é perdido como poeira.
+* **Hidrodegradável**: material que pode ser degradado por ação da água (hidrólise).
+* **Fotodegradável**: material que pode ser degradado por ação da luz.
+* **Termodegradável**: material que pode ser degradado por ação
+do calor.
+* **Biodegradável**: material que pode sofrer degradação por atividade biológica de ocorrência natural
+através de ação enzimática. Pode ser *aeróbica* quando é em presença de oxigênio, *anaeróbica* na ausência
+deste. A degradação anaeróbica costuma ter como subproduto o metano, e os dois tipos geram também dióxido de
+carbono e matéria orgânica estabilizada.
+* **Compostável**: material que pode sofrer revalorização de seus
+resíduos orgânicos via biodegradação aeróbica controlada. A compostagem é verificável com certificação --
+por exemplo, para ser compostável o material tem que biodegrada obrigatoriamente em até 180 dias. Intuitivamente,
+a compostabilidade significa que o material biodegrada facilmente e pode ser também reutilizado facilmente.  *
+**Repolpável**: adjetivo usado geralmente para fitas e adesivos que são naturalmente absorvidos pela superfície
+de aderência.
+* **Bioplásticos**: a palavra é usada para designar os plásticos de duas categorias distintas^2^:
+** Polímeros feitos ao todo ou em parte de **fontes renováveis**, sejam biodegradáveis ou não; ou
+** Polímeros **biodegradáveis**, seja de fonte renovável ou fonte fóssil.
+
+A riqueza de termos do assunto mostra a diversidade de conceitos com o que lidar. Fica mais fácil citar
+exemplos. O ABS não é de fonte renovável (vem do petróleo) e também não é biodegradável, ou seja, não é um
+bioplástico. Por outro lado, o PLA é um "bioplástico do bem": é de fonte renovável (milho, cana-de-açúcar
+e outros), é biodegradável, compostável e até repolpável. Ambos, porém, são recicláveis, isto é: as
+impressões 3D feitas com eles podem ser moídas e o plástico reutilizado no mercado -- e um desses usos, é
+claro, é ser novamente derretido e virar filamento para impressão. O processo passa pelas seguintes etapas^3^:
+
+* *Coleta* e **separação**: a separação dos resíduos de acordo com o seu material.
+* **Revalorização**: é a fase na qual o material já separado passa por um processo que faz com que ele volte a ser matéria-prima,
+envolvendo também limpeza e eliminação de resíduos.
+* **Transformação**: fase em que o material transformado em matéria-prima volte a ser produto. Pode ser **química**, *energética* ou **mecânica**, no caso dos filamentos de impressão 3D ela é mecânica (trituração do plástico para pequenos flocos), e necessita ainda de mistura com uma porcentagem (geralmente entre 10 a 60%) de plástico não-reciclado do mesmo tipo para assegurar a qualidade
+do filamento resultante.
+
+Nesse processo, empresas com fins lucrativo são essenciais, pois permitem que essas etapas adquiram economia
+de escala e sejam sustentáveis. Além de empresas especializadas em reciclagem de plásticos, estão surgindo
+também empresas especializadas em reaproveitamento para impressão 3D, no Brasil a pioneira sendo a PrintGreen3D,
+que comercializa filamentos reciclados e no futuro pretende expandir suas operações com pontos de arrecadação
+para partes de impressão 3D descartadas.
+
+[[reciclagemprintegreen3d]]
+image::reciclagemprintegreen3d.png[reciclagemprintegreen3d,width=642,height=189,align="center",title="Explicação do processo na página da PrintGreen3D. A página da empresa com mais informações é http://www.printgreen3d.com.br."]
+
+Existe, entretanto, um porém. Em todas essas etapas, existe uma crítica, que é a de separação. Esse processo pode
+ser bem complexo e caro, ainda mais se forem usados muitos tipos diferentes. Em um mundo ideal, esses plásticos
+já viriam separados. De fato, a separação prévia dos plásticos por tipo é tão importante que já existe
+há anos a classificação de reciclagem de plásticos, que você já deve ter reparado em utensílios que tenha usado:
+
+[[tabelasimbolosplastico]]
+image::tabelasimbolosplastico.jpeg[tabelasimbolosplastico,width=642,height=487,align="center",title="Tabela dos símbolos para reciclagem de plásticos, de 1 a 7. São usados para orientar a separação pelos catadores de plástico. A legenda com abreviação corresponde ao tipo de plástico, mas geralmente o logotipo aparece somente com o número. São eles: 1 – PET, polietileno tereftalato, como nas garrafas de refrigerante; 2 – Polietileno de Alta Densidade; 3 – PVC, usado em canos; 4 – Polietileno de Baixa Densidade, usados em sacolas de supermercado; 5 – Polipropileno, itens alimentícios e seringas; 6 – Poliestireno, geralmente em frascos e potes; 7 – outros, incluindo ABS. Fonte: http://www.greenme.com.br."]
+
+A separação de plásticos é uma necessidade no Brasil, essencial para a viabilidade da reciclagem visto que
+o processo de separação automatizado é caríssimo^5^. O problema é que classificação ilustrada é usada em
+utensílios industrializados convencionais, mas embora alguns plásticos até possam ser usados na impressão 3D
+(como PEAD e PP), os principais ficam de fora, agrupados genericamente. Esse é um campo em que órgãos normativos
+privados, que tenham maior agilidade de processo que entidades industriais e ligadas ao governo como a ABNT com
+suas normas cobradas, poderiam criar recomendações que seriam mais do que bem-vindas. Evitariam o desperdício,
+permitiriam baratear os insumos e até a substituir outros processos de fabricação onde a vantagem ecológica
+se faça necessária (ainda mais considerando que o relativamente baixo desperdício de material já faz da FFF
+ecologicamente superior em relação a outros processos de fabricação^6^).
+
+=== Extrusoras / Filamentadoras Maker: são práticas?
+
+Uma das surpresas de quem começa a comprar carretéis de impressão 3D é um preço: um quilo de plástico de
+impressão 3D que custa 120 reais, por exemplo, pode ser encontrado por 15 reais ou até menos em sua forma bruta de
+indústria em _pellets_ (grãos) de plástico. Exploração? Ágio? Ganância? Cartel? Nada disso, a explicação
+é muito mais prosaica: o filamento em carretéis preparado para impressão 3D realmente _custa bastante_ para
+ser industrializado e envolve uma quantidade de passos realmente muito grande.
+
+Mas como isso é possível, se existem no mercado máquinas chamadas de _filamentadoras_ ou __extrusoras de
+filamento__, de preço aproximadamente igual ao de uma impressora 3D, que basicamente fazem o mesmo que as plantas
+de grandes fabricantes, isto é, derretem os grãos de plástico e devolvem um carretel prontinho pra ser usado
+em uma impressora FFF?
+
+Pra visualizar um pouco melhor, vamos ver como é o plano básico de uma extrusora de filamento.
+
+[[planofilamentadora]]
+image::planofilamentadora.png[planofilamentadora,width=642,height=445,align="center",title="O plano mais elementar possível de uma filamentadora doméstica. Por simplicidade, muitos componentes não são mostrados, como o sistema de resfriamento, o controlador de temperatura, fonte de energia, etc."]
+
+A maioria das filamentadoras domésticas comercializadas hoje em dia seguem tal esquema: têm um funil ou cuba em
+que os grãos de plástico são colocados. Os grãos entram no tambor, que tem um parafuso de rosca movimentado
+pelo motor. Quando o motor gira, os grãos são conduzidos até a área de aquecimento, derretem e saem pelo bocal.
+
+Simples, não? Não! Até mesmo o extrusor mais barato precisa de mais elementos do que isso. O aquecedor tem que ser
+controlado para ficar na temperatura correta -- geralmente se consegue isso com um circuito chamado __controlador de
+PID__, não mostrado na figura. Quando sai do bocal, o filamento tende a se deformar e enroscar, e é necessário pelo
+menos um resfriamento básico com ventoinha para ele ficar utilizável. Na verdade, os primeiros metros de filamento
+de uma sessão de extrusão costumam ser inutilizáveis -- a solução sendo jogar fora ou moer para reutilizar.
+
+A ventoinha não costuma ser uma solução boa também, pois é lenta para esfriar. Para ser viável, a filamentadora
+precisa ter um resfriamento a água -- uma cuba com água sendo renovada é ligada ao bocal, para esfriar rapidamente
+o filamento sendo extrudado. Isso adiciona a necessidade de mais tarde submeter o filamento a um período de secagem,
+pois umidade no plástico pode gerar bolhas. Geralmente isso é feito com um dispositivo de secagem mais à frente.
+
+Na figura já dá pra ver que o filamento saindo do bocal simplesmente tende a desabar no chão -- e existe ainda
+o problema que o filamento não tende a ter um diâmetro uniforme, ao invés de seguir o diâmetro do bocal ele
+sai mais grosso ou mais fino conforme a velocidade. Para remediar essa situação, é colocado perto do bocal
+um tracionador do filamento, tanto para assegurar uma velocidade e diâmetro constantes quanto para evitar que
+o filamento desabe. E como não há muito sentido em permitir que o tracionador jogue o filamento no chão, ele
+ainda vai ser ligado -- talvez depois do dispositivo de secagem - a um bobinador, pra enrolar o filamento em carretel.
+
+Mas não é só isso, qualquer uma dessas etapas pode falhar e é preciso interromper o processo pois o carretel não
+pode simplesmente ter uma falha no meio. E a cada carretel completo é preciso trocar -- como uma filamentadora
+doméstica não costuma nem ter velocidade muito grande -- digamos, uns 3m por minuto -- isso não vira um
+problema tão grande e seu operador pode trocá-lo manualmente cada vez que completar um rolo.
+
+E sensores, são desejáveis vários sensores para controlar o processo. Não há garantias mesmo com o tracionador
+que o diâmetro fique uniforme, e existem medidores de diâmetro que podem dizer se está dentro do intervalo
+de tolerância.
+
+[[diagramafilamentadoraopensource]]
+image::diagramafilamentadoraopensource.png[diagramafilamentadoraopensource,width=642,height=384,align="center",title="Diagrama de controle da filamentadora doméstica open-source da open electronics, com vários sensores e controladores. Fonte: https://www.open-electronics.org/an-open-source-filament-extruder-for-3d-printer/"]
+
+E as etapas que dizemos ainda estão no âmbito __Maker__. No industrial, com suas complexas estruturas de controle
+e necessidade de volume e velocidade de extrusão, a situação é proporcionalmente mais cara e complicada^7^.
+
+Além do mais, o ilustrado foi somente o necessário no processo de extrusão padrão com material virgem,
+possivelmente já preparado num misturador com os aditivos necessários (para adicionar cor, melhorar propriedades
+como dureza ou elasticidade, etc.). Para o processo de reciclagem é preciso incorporar etapas de uma planta de
+reciclagem de plástico, que podem ser também bem caras. Lembrando: considerando que o plástico já esteja
+separado por material, é preciso ainda limpá-lo (livrá-lo de resíduos e poeira que poderiam prejudicar a
+extrusão) e fragmentá-lo em pedaços processáveis pela filamentadora. A parte de fragmentação ainda costuma
+envolver dois processos distintos: um para quebrar as peças em partes, e outro para pulverizar as partes em flocos
+pequenos e razoavelmente homogêneos de até 2mm de diâmetro (tamanho que as filamentadoras caseiras suportam;
+as industriais de maior capacidade aguentam até 8mm). Esta última parte é por vezes feita com um triturador de
+papel dedicado para a tarefa.
+
+Por fim, se o leitor deseja fazer a reciclagem de filamentos em casa, existem vários guias passo-a-passo na
+internet em inglês. Um dos mais bem completos e fáceis, feito em etapas com muitas fotos, usa a filamentadora
+open-source _Filabot_ e é parte do material educativo da tradicional loja _Maker_ Adafruit. Existem também
+extrusores modificados de impressoras 3D que aceitam grãos de plástico ao invés do filamento em carretel,
+mas se o uso da filamentadora doméstica já é contingente, imagine uma pesada mini-filamentadora no carro da
+impressora que nem a operação de retração do filamento poderá executar^8^.
+
+[[fotosfilabotefelfil]]
+image::fotosfilabotefelfil.png[fotosfilabotefelfil,width=642,height=320,align="center",title="À esquerda: filamentadora Filabot, apresentada no Guia de Reciclagem de Plásticos de Impressão 3D da Adafruit - https://learn.adafruit.com/diy-3d-printing-filament/ À direita: filamentadora open-source Felfil, https://felfil.com/diy-filament-extruder/"]
+
+Existem outros recursos interessantes online, em especial a __appropedia__, a enciclopédia de ecologia e
+sustentabilidade que faz parte das recomendações do Dr. Joshua Pearce e muitos modelos de filamentadoras,
+a maioria open-source: Recyclebot^9^, Extrusionbot, Felfil, Lyman Extruder e outros. É muito interessante ver
+o trabalho de tais pessoas interessadas não só em preservar o ambiente como em disseminar informação sem
+fronteiras ou controles^1^⁰. No mercado brasileiro, as principais empresas de impressoras 3D não parecem ainda
+estarem interessadas em vender estes equipamentos, mas é questão de tempo; pode-se achá-los em sítios de compra
+como _mercadolivre_ ou classificados como __olx__. Não costuma compensar encomendá-los da China, visto que são
+equipamentos pesados, de frete caro.
+
+[NOTE]
+.Notas:
+====
+.  Um dos cenários mais interessantes onde ocorre conflitos de métodos e tradições entre o meio _maker_ e o
+industrial é o das normas. No meio industrial, devido à economia de escala, muito dinheiro costuma estar envolvido e
+poucos participantes, de modo que as normas são criadas por comitês únicos que não veem problemas em cobrar para
+o acesso a elas mesmo quando é muita pouca informação que oferecem. No meio _maker_ há participantes de todos os
+tamanhos e tipos, do indivíduo hobbyista de garagem à indústria bilionária, e também há massa suficiente para
+a criação de vários padrões concorrentes; uma comissão que redija um padrão que tenha acesso restringido de
+alguma maneira -- seja por preço, seja por publicação fora da internet, seja por burocracia, seja por obscuridade
+-- acaba por passar a mensagem errada: "se você não tem suficiente interesse comercial no nosso padrão para
+pagar esta quantia ou vencer estes obstáculos, você não poderá utilizá-lo". E esta mensagem se transforma
+em uma derrota; por isso mesmo o padrão 3MF que é completamente gratuito e disponível pela web com exemplos
+de implementação está ganhando todo o mercado e mindshare do concorrente de especificação AMF, que depois da
+versão 0.47 passou a ser cobrado (US$ 50). O software livre Cura abandonou o suporte a arquivos AMF e implementou a
+3MF na transição da versão 15.04 para a seguinte, por exemplo. Contraste com a fonte única e _sempre_ cobrada
+dos padrões industriais: €44,00 pela EN 12432 em http://www.en-standard.eu/[_http://www.en-standard.eu_],
+US$ 40,00 pela ASTM D6400-12 em http://www.astm.org/[_http://www.astm.org_] e R$ 24,75 pela NBR
+15448-1 e mais R$ 24,75 pela NBR 15448-2, sendo que a NBR15448-1 é um PDF com apenas duas páginas
+de informação útil -- e essa informação é apenas de __terminologia__, um pequeno dicionário de termos usados:
+https://www.target.com.br/produtos/normas-tecnicas/40321/nbr15448-1-embalagens-plasticas-degradaveis-e-ou-renovaveis-parte-1-terminologia[_https://www.target.com.br/produtos/normas-tecnicas/40321/nbr15448-1-embalagens-plasticas-degradaveis-e-ou-renovaveis-parte-1-terminologia_]. Esperemos que esse mercado sofra uma abertura necessária que permita a indivíduos e organizações trazerem
+padrões concorrentes para diminuir as barreiras ao conhecimento.
+. Apresentação da BASF sobre plásticos biodegradáveis e compostáveis:
+http://www.simpesc.org.br/wp-content/uploads/arquivos/472518185f.pdf[_http://www.simpesc.org.br/wp-content/uploads/arquivos/472518185f.pdf_]
+. http://www.ecycle.com.br/component/content/article/35/711-plasticos-como-se-da-a-reciclagem-e-no-que-se-transformam.html[_http://www.ecycle.com.br/component/content/article/35/711-plasticos-como-se-da-a-reciclagem-e-no-que-se-transformam.html_]
+. https://www.greenme.com.br/consumir/reutilizacao-e-reciclagem/917-entenda-o-que-significam-os-codigos-de-reciclagem[_https://www.greenme.com.br/consumir/reutilizacao-e-reciclagem/917-entenda-o-que-significam-os-codigos-de-reciclagem_]
+. CETEA, I. (2008). Reciclagem de materiais plásticos: a importância da identificação
+correta. __Polímeros: Ciência e Tecnologia__, __18__(2), 119-125. Disponível em
+http://www.scielo.br/pdf/po/v18n2/a08v18n2.pdf[_http://www.scielo.br/pdf/po/v18n2/a08v18n2.pdf_]
+. A questão da superioridade ecológica das variadas tecnologias de impressão 3D é
+controversa, mas pelo menos em determinados pontos e técnicas a vantagem é clara. Um artigo
+bastante abrangente do site _engineering_ explora esse tema, citando inclusive trabalhos do Dr. Joshua
+Pearce, e também falando do problema da classificação "outros" (número 7) para plásticos de impressão 3D:
+http://www.engineering.com/3DPrinting/3DPrintingArticles/ArticleID/13224/How-Green-Is-3D-Printing.aspx[_http://www.engineering.com/3DPrinting/3DPrintingArticles/ArticleID/13224/How-Green-Is-3D-Printing.aspx_]. É de se notar também que a reutilização de plástico para impressão 3D
+é um método _mais_ ecológico que a reciclagem de plástico convencional!
+http://www.3ders.org/articles/20140304-turning-old-plastic-into-3d-printer-filament-is-greener-than-conventional-recycling.html[_http://www.3ders.org/articles/20140304-turning-old-plastic-into-3d-printer-filament-is-greener-than-conventional-recycling.html_]
+. A filamentos3dbrasil fez um "tour" de suas instalações mostrando a planta e os equipamentos que produzem
+os filamentos no Youtube: https://www.youtube.com/watch?v=3vKU-bmJECY[_https://www.youtube.com/watch?v=3vKU-bmJECY_]
+. Fica a cargo do leitor decidir se confia na viabilidade de tal dispositivo. Seu
+uso pode ser ilustrado no vídeo de youtube (que tem as fontes e informações listadas):
+https://www.youtube.com/watch?v=tGnBIMADotA[_https://www.youtube.com/watch?v=tGnBIMADotA_]
+. http://www.appropedia.org/Recyclebot[_http://www.appropedia.org/Recyclebot_]. O leitor é encorajado a buscar
+a receita de outras filamentadoras open-source na internet, pois existem muitas e não é possível fazer justiça
+a todas.
+. Um texto bastante elaborado e reflexivo sobre o assunto da reciclagem de plástico
+de impressão 3D e sua relação com o Open-Source pode ser lido na __TechRepublic__:
+http://www.techrepublic.com/article/how-recycled-plastic-for-3d-printing-will-drive-sustainability-and-raise-the-social-conscious-of-business/[_http://www.techrepublic.com/article/how-recycled-plastic-for-3d-printing-will-drive-sustainability-and-raise-the-social-conscious-of-business/_].
+====
+
+=== Uso alimentício e médico de impressões 3D
+
+A julgar pela quantidade de designs de copos, pratos, talheres, tampas de garrafas, espremedores, raladores,
+moldes de massas, cubas de gelo, dispensadores e funis de líquido, seaparadores de clara de ovos, fatiadores,
+descaroçadores, suportes de facas, copinhos de medida e demais itens alimentícios em sítios web como o thingiverse,
+parece não haver nada mais seguro para ter contato com comida do que impressões 3D domésticas. Essa tendência
+é bastante preocupante e não parece estar diminuindo -- afinal, todo dia vemos manchetes nos jornais de gente
+se intoxicando e morrendo por impressões 3D, não?
+
+Pois é... Não vemos.
+
+Esse é um dos fatores que dificultam o aparentemente prosaico, mas multifacetado conceito de _seguro para fins
+alimentícios_ ou, em inglês, __food-safe__. Toda vez que se levanta o assunto, as preocupações sobre ele agridem
+a intuição, soam alarmistas. Pra que se preocupar e gastar tempo e recursos com um problema que mal parece existir?
+
+Parte da culpa dessa invisibilidade é realmente nossa - ou, mais precisamente, de nossos organismos, moldados
+por eras de evolução biológica pra serem resilientes, principalmente aos microorganismos que mais são causa de
+problemas, como a __Escherichia coli__, _Clostridium difficile_ e a __Salmonella enterica__; nos EUA, por exemplo,
+uma em cada 6 pessoas tem intoxicação alimentar __por ano__! A impressão que não é um problema tão grande vem
+de dois fatores: o primeiro é que embora até aconteçam muitas mortes e hospitalizações graves, a maioria das
+infecções fica no intervalo de severidade de uma dor de estômago aguda ou até apenas um desconforto alimentar,
+não aparecendo nos noticiários e nem mesmo nas estatísticas, e não pesa estatisticamente contra impressão 3D
+pelo despreparo dos hospitais de contabilizar _peças impressas_ como fontes de contaminação, já que a tecnologia
+é tão nova. O segundo é que a proliferação é lenta e os sintomas só se percebem horas ou até dias depois
+da infecção, sendo difícil determinar a causa. Uma peça impressa com potencial de infecção dificilmente o
+fará em seus primeiros usos, e sim quando já é tão comum que mal se a percebe.
+
+Também é muito difícil perceber, sem estudo prévio, como um material complexo como o plástico de impressão pode
+devagar mas cumulativamente levar ao envenenamento por partículas como metais pesados ou toxinas vazando. Não por
+acaso, apresentamos os perigos dos plásticos à saúde, o conceito de biodegradabilidade e as etapas de extrusão
+antes de falar sobre o uso alimentício e médico, pois precisaremos de tudo isso para esclarecer, afinal, até
+que ponto a impressão 3D FFF serve para esse fim.
+
+O assunto tem 9 aspectos a considerar: __Material__, __Composição__, __Temperatura__, __Interstícios__,
+__Maquinário__, __Grau e Tipo__, _Protocolos_ e __Lei__. Vamos analisar cada um desses separadamente.
+
+==== Material
+
+Comecemos pela parte fácil: já tivemos uma noção de que há tipos de plásticos diferentes classificados por
+número de reciclagem (são os mais usados industrialmente) e sabemos ainda que alguns desses tipos têm perigos
+conhecidos, como subprodutos tóxicos de utilização. Muitas vezes não naturalmente, mas por contato com alguma
+substância -- ABS se dissolve em várias cetonas e poliestireno dissolve em um dos óleos do limão, e ambos
+são compostos orgânicos comuns em alimentos. Por outro lado, os tipos de plástico "seguros" para itens
+alimentícios, além de resistência química, também têm décadas de produção sem incidentes; mais produtivo
+do que listar os plásticos perigoso é providenciarmos uma lista dos propícios ao uso. Na classificação de
+plásticos descartáveis são eles, conforme a figura 133: tipo 2 (PEAD -- polietileno de alta densidade), tipo 4
+(PEBD -- polietileno de baixa densidade) e tipo 5 (polipropileno). E embora sejam todos termoplásticos e possam
+ser usados como filamento de impressão 3D, são notoriamente difíceis para esse fim, com baixa aderência de
+camada e bastante deformação.
+
+O plástico de tipo 1 -- PET (polietileno tereftalato), tão usado em garrafas de refrigerante de 2l, pode parecer
+seguro para alimentos, mas existe possibilidade de vazamento de trióxido de antimônio a longo prazo, uma substâcia
+moderadamente tóxica^1^. Sua variedade de impressão 3D, o PET Glicol ou PETG, goza das mesmas propriedades. Não é
+uma escolha tão boa quando os três primeiros e tem o agravante de ser um plástico permeável, com a permeabilidade
+especialmente evidente nos vãos de camadas.
+
+Saindo das categorias de reciclagem e entrando nos plásticos tradicionais de impressão 3D, PLA tem um status
+semelhante ao PET: é "geralmente reconhecido como seguro", liberando no máximo uma pequena quantidade de
+seu monômero (ácido lático) em contato com a comida. Como o ácido lático é um composto alimentar comum,
+não chega a expressar toxicidade. Por outro lado, o PLA é biodegradável e compostável, e sua facilidade em
+perder estrutura com radiação ultravioleta e outros fatores ambientais é um fator que pesa contra seu uso.
+
+Outro plástico candidato é o __Tritan__, um copoliéster concorrente do policarbonato, cristalino e resistente. Como
+é relativamente novo no mercado, poucos testes foram feitos. A Eastman o vende dizendo ser seguro para fins
+alimentícios^2^, mas já vimos nas referências sobre perturbadores endócrinos que isso pode ser tão somente
+por falta de estudos conclusivos sobre o material.
+
+Nylon 6 e 6/6 sem aditivos são inertes e seguros. A fabricante Taulman é famosa por ter entre seus nylons os
+certificados para fim alimentício pela FDA (agência de certificação de drogas e comidas dos EUA), como o
+_T-Glase_ e o __Nylon 680__.
+
+Por fim, dois plásticos raramente usados em impressoras domésticas por serem de alta temperatura, o PEEK
+(poliéter-éter-cetona) e Ultem (polieterimida), também são materiais geralmente considerados seguros.
+
+Essa lista tem virtualmente todas as iterações recentes de materiais de filamentos de impressão 3D tidos como de
+uso alimentício. No entanto, ela conta somente parte da história. Mesmo com a matéria-prima adequada, a venda
+em filamentos pode não ser.
+
+==== Composição
+
+E a razão disso é que, dadas as propriedades do material, para poder ser extrusado em impressora 3D sem falhas
+frequentes, com a consistência necessária e na temperatura correta suas propriedades têm que ser "afinadas"
+com o uso de dopantes e aditivos^3^. Adicionalmente, os filamentos adquirem cor e textura com corantes e compostos
+que lhes conferem brilho ou aparência agradável. Com cada material tendo suas propriedades e dopantes adequados,
+a segurança para fins alimentares pode acabar sendo sacrificada com o compósito resultante. Um bom exemplo é
+o __poliuretano__, substância segura mas que com dopagem para poder ser usada em impressoras 3D deixa de valer
+para este fim. É o material mais usado nos filamentos flexíveis emborrachados.
+
+Se quisermos então um material adequado, temos que pedir um sem aditivos, certo? Mas isso é virtualmente impossível:
+os plásticos não vêm "puros" do processo de fabricação e preparação, e mesmo aquele "PLA natural" que
+você compra pensando em usar pra vasilhas pros seus gatos pode ter substâncias venenosas -- ou nem tão venenosas,
+mas que simplesmente não teve testes suficientes nesse escopo e pode acabar gerando reações adversas em um punhado
+de pessoas. O melhor é comprar de um fabricante que especifique que o filamento comprado é "food-safe". Como
+ele tem controle do processo de fabricação, pode usar somente aditivos, dopantes, corantes e processos que
+deem segurança alimentícia ao material -- se possível listando todos os componentes nas informações sobre
+o material. Nesse sentido é também prestar atenção à reputação do vendedor: uma fonte que providencie
+muitas informações com seu produto, com maior proximidade e mais a perder caso minta, como uma grande empresa
+com sítio web bem informativo ou uma empresa local que te permita visitas pro processo tem mais chance de estar
+vendendo um produto confiável do que, digamos, um vendedor do outro lado do mundo com conta do aliexpress criada
+há dois meses que diga que seu filamento é "food grade" sem quase nenhum dado sobre a composição.
+
+Por fim, os aditivos e dopantes também determinam se o plástico pode ser usado em fornos de
+microondas. Principalmente polipropileno, mas às vezes PEBD e até PET _quando têm formulações específicas
+para esse fim_ são adequados. É preciso que os próprios aditivos não interajam com a radiação ionizante e
+não gerem calor; um exemplo de uso proibido seria filamento com o corante bastante comum "negro-de-fumo",
+usado para tonalidades negras e acinzentadas.^4^
+
+==== Temperatura
+
+À primeira vista, falar sobre a _temperatura_ que o plástico aguenta pode parecer uma restrição que se aplica
+somente àqueles que servirão para acondicionar comida ou bebida quentes, mas essa é uma impressão errada. O
+uso alimentício _contínuo_ exige a limpeza do item, e os meios mais efetivo de realizar tal limpeza envolvem
+alguma forma de aquecimento, tanto para amolecer e soltar partículas aderidas quanto para matar microorganismos,
+como por exemplo colocar em lava-louças.
+
+Nesse quesito plásticos como PLA ou certas variedades de baixa temperatura de PETG falham fragorosamente, com
+sua transição vítrea começando em 65°C. Uma xícara de café impressa nesses plásticos desabaria no primeiro
+uso com café quente, além de causar a liberação de ácido lático do composto.
+
+A resistência a temperatura também é importante para uma margem de segurança em relação a liberação de
+subprodutos, que fica tão mais provável quanto mais se aproxima da temperatura de derretimento. Considerando
+esse e outros fatores como intervalo ótimo de crescimento e reprodução de microorganismos que fica entre 5°C
+e 60°C, a mínima temperatura de transição vítrea recomendada para um plástico de uso alimentício é *80°C*
+e quanto maior melhor.
+
+==== Interstícios
+
+Chegamos ao ponto mais crítica, na verdade o Calcanhar de Aquiles da impressão FFF e o fator mais difícil de
+mitigar. Os vãos entre os filamentos, ou seja, as seções recedidas da superfície do plástico onde os filetes
+depositados se encontram, são basicamente um problema não resolvido no que concerne a impressão 3D FFF. Eles
+são daninhos de três maneiras
+
+* Acumulam e até facilitam aderência dos restos do alimento que a peça acondicionou, que irá apodrecer.
+* São hábitats ideais para microorganismos que se alimentam desses mesmos restos.
+* Tornam mais difícil a
+limpeza ou lavagem do item. O resultado serão fungos, bactérias e outros organismos patológicos que oferecem
+alto risco de contaminação em usos posteriores da peça.
+
+image::image174.png[image,width=642,height=466,align="center",title="Os vãos entre as camadas do processo de FDM são um problema de difícil solução. Nota: os &quot;microorganismos&quot; não estão em forma e escala realistas."]
+
+Os banhos alisadores com vapores solventes -- que funcionam razoavelmente bem para eliminar esses vãos e selar
+a peça quando são controlados -- não são seguros para usar nos plásticos para fins alimentícios pois podem
+deixar resíduos tóxicos (embora se possa imaginar que tendo um método com exames laboratoriais para medição
+destes resíduos, se chegue a um patamar aceitável). Lixamento da peça para eliminar vãos requer trabalho manual
+e só funciona com geometria mais grossas e menos rebuscadas de peças.
+
+[[vaosentrecamadasdesenho]]
+image::vaosentrecamadasdesenho.png[vaosentrecamadasdesenho,width=642,height=609,align="center",title="Os sulcos entre as camadas de plástico de impressão 3D FFF são alojamentos ótimos para bactérias, especialmente se tiverem restos de comida ou materiais orgânicos. Alguns tratamentos com vapores de solventes de pouca toxicidade como acetona conseguem nivelar e selar esses vãos, mas via de regra não funcionam para os plásticos de nível alimentício, pois esses são por função resistentes quimicamente. Vale lembrar ainda que mesmo o plástico &quot;selado&quot; tem rugosidades, e outros tipos de análises, que irão medir inclusive as diferenças topológicas, são necessários pra determinar se a superfície lisa acumularia ou não microorganismos. A foto é de uma peça em ABS preto, que não é segura para fins alimentícios."]
+
+==== Maquinário
+
+E outro problema que pesa -- embora tenha solução bem mais fácil -- é que as impressoras e suas peças e
+insumos não são _projetadas_ para ter segurança alimentícia. Adesivos para mesa com substâncias tóxicas,
+peças sem assepsia ou geometria adequada para limpeza, possibilidade de contaminação por microorganismos em
+vãos e reentrâncias e até materiais que em contato com o plástico podem contaminá-lo. O exemplo mais repetido
+é o hotend, feito de metais não seguros para contato com alimento, em especial o bico do hotend que quase sempre
+é feito de latão, uma liga que é composta de cobre e zinco mas chega a ter até 2% de chumbo, um metal pesado
+altamente tóxico, em sua composição^5^. Claro que o _filamento_ não é alimento, mas a preocupação consiste
+em o metal contaminar o plástico que por sua vez contaminará o alimento. Algumas empresas, como a _e3d-online,_
+vendem bicos especiais de aço inoxidável que além de funcionarem melhor com filamentos abrasivos, são feitos
+de um material considerado seguro para fins alimentícios.
+
+Note que mesmo que o modelo de impressora 3D seja projetado com peças que permitam a impressão com a devida
+assepsia e sem contaminantes, o uso de outros filamentos no dia-a-dia além dos propícios a uso alimentício
+certamente deixará contaminantes nas seções de derretimento e stress mecânico. Então é importante que a
+impressora seja dedicada somente ao uso com os plásticos adequados.
+
+==== Grau e Tipo
+
+Nem todo contato com alimento é igual. Algumas peças impressas são feitas para ter contato com líquidos,
+outras com sólidos e outras com pastas. Algumas terão contato breve, outras mais longo e outras servirão para
+acondicionamento por dias ou semanas. Cortadores de biscoito, por exemplo, podem ser feitos até em ABS colorido
+sem muito risco de problemas, mas não seria sensato imprimir uma garrafa para leite feito deste plástico.
+
+Ou o grau pode ser em relação ao aditivo usado. O bórax (borato de sódio / tetraborato de sódio), por exemplo,
+é usado como fluxo e detergente na polimerização de alguns filamentos. A presença dele invalida o uso do
+plástico para comida? A resposta não é simplesmente "sim" ou "não", é __depende__. A toxicidade dele
+é muito baixa^6^, e se você não ficar esfregando incessantemente o alimento no plástico, provavelmente não
+sentirá nenhum efeito.
+
+A questão pode ser ainda de __tipo__. Você pode ter um molde de doces que desinfeta depois de cada uso, então
+o crescimento de microorganismos é improvável, mas a contaminação por aditivos é importante, ou o contrário,
+pode ter um pote de bolo que sempre terá guardanapos e pouco contato com o material pra ser afetado pelos aditivos,
+mas fungos e bactérias são preocupantes.
+
+Na ciência da segurança alimentícia, os tipos de contaminação que pode haver são três:
+
+* **Contaminação química**. Produtos químicos prejudiciais à saúde que acabam no alimento, como aditivos
+do plástico.
+* **Contaminação mecânica**. Pêlos, unhas, sujeira, tecidos, farpas de madeira, plástico ou
+metal que acabam no alimento. Não há diferença nesse sentido da impressão 3D para outros meios, e o máximo
+com que devemos preocupar é a geometria do objeto não facilitar este tipo de ocorrência.
+* **Contaminação biológica**. Microorganismos daninhos passados para a comida, como protozoários, vírus, parasitas nematóides
+e fungos.
+
+O uso específico determina muito quanto de investimento, e que tipo de investimento, você deve fazer em assegurar
+a segurança do plástico. O que nos leva ao próximo tópico, os _protocolos clínicos_ para os testes que você
+pode querer executar nas peças.
+
+==== Protocolos
+
+Dependendo do investimento que se queira fazer na impressão 3D de peças para uso alimentício, até mesmo para
+conseguir garantias e por boa vontade para com os clientes, pode ser importante conhecer os _protocolos clínicos_
+que serão necessários para auferir e comprovar a segurança do produto -- e isso vale até mais do que para a
+questão alimentícia. Mas o que são eles?
+
+_Protocolo_ é um conjunto formal de normas ou procedimentos. Protocolos clínicos são condutas e procedimentos
+formais, acompanhados de quantidades, dosagens, etapas e durações precisas e inequívocas, desenvolvidos com
+suporte em evidências atualizadas e consistente que objetivam encontrar um diagnóstico que possa ser generalizado
+para determinado caso de uso. São geralmente documentos breves -- digamos, com 10 ou 20 páginas -- com estrutura
+tabular e termos técnicos.
+
+Protocolos não precisam ser clínicos, podem até mesmo ser de outras áreas. Como exemplo, suponhamos que queiramos
+comercializar um modelo de copo impresso -- apenas um copo, um dos objetos mais simples. Escolhemos imprimir em
+PLA natural por sua disponibilidade. Como temos o problema dos vãos entre camadas que tanto pode fazer o líquido
+vazar pelos interstícios quanto acumular microorganismos e sujeira, vamos testar um tipo de alisamento químico
+para o PLA: o tetraidrofurano^7^ tem a toxicidade tão baixa quanto a acetona e é um solvente que funciona nesse
+plástico. Dar um banho de PLA no copo deixa sua superfície lisa! No entanto:
+
+* Por razões comerciais e de funcionalidade, teremos que testar se o copo não vaza. Para isso, terá que ser
+feito um protocolo de testes simples com líquidos e condições diversas. Primeiros, decidimos exatamente em que
+temperatura o vapor de tetraidrofurano deve ser colocado e por quanto tempo de exposição e de secagem e em que
+condições a peça fica, podendo adicionar uma etapa de verificação com microscópio da superfície. Depois disso,
+podemos testar 10 peças impressas com refrigerante até o topo em temperatura ambiente por até 8h, com leite quente
+até 40°C no mesmo período, com água gelada, com sumo de limão pelo seu pH baixo (ácido) e com uma solução
+de bicarbonato de sódio pelo seu pH alto (básico). Se nenhum líquido escapar de nenhuma das peças testadas
+na execução do protocolo, podemos ter boa segurança que não acontecerá no uso comum.
+* Mas ainda precisamos
+testar a *contaminação química* através de um protocolo clínico. Pode ser que o tetraidrofurano deixe resíduos
+tóxicos que não previmos. Isso é um problema, pois protocolos são altamente específicos; é bem difícil achar
+um que sirva para muitas situações. Precisaremos de acompanhamento de um profissional da área química para fazer
+protocolos distintos para tais testes, como verificação de mudança do pH e detecção de resíduos de reação
+do tetraidrofurano como hidratos de clatratos e compostos organometálicos.
+* E a *contaminação biológica*
+também precisará ser verificada. Protocolos com meios de cultura coletados do copo depois do uso, com limpeza
+e sem limpeza, com líquidos específicos e deixados em tempos variáveis em repouso e exposição mostrarão
+o potencial de crescimento e reprodução de microorganismos e a chance de que sejam focos de patologias. Tais
+protocolos envolvem ambientes controlados com temperaturas exatas e tempos distintos de incubação. Esta etapa
+precisará de um profissional de engenharia de alimentos ou biologia clínica para redação e execução.
+
+Os resultados desses protocolos são igualmente tabelados e guardados para consulta posterior. Pode ser difícil
+visualizar como é um protocolo clínico apenas pela descrição, mas é algo a que profissionais dos ramos citados
+são treinados para fazer. De qualquer jeito, mesmo não sendo da área, o leitor pode ter referências sobre meios
+de cultura^8^ ou até baixar exemplos de protocolos utilizados por universidades e empresas^9^. Não é uma tarefa
+simples; não é raro vermos curiosos _Makers_ tentando executá-los e falhando, sem entender a causa.^1^⁰
+
+É interessante notar que esta lista não é exaustiva. Existem mais procedimentos para garantir o uso saudável
+do objeto, e pra complicar a questão o plástico escolhido (PLA) não pode ser lavado em lava-louças (pois
+sua temperatura de transição vítrea é baixa demais) nem em microondas, e essas são complicações a
+lidar. Complicações que mostram a principal função desse protocolos: cumprir as regulações para comércio
+de produtos plásticos. Vamos falar da _lei_ envolvendo esses objetos agora.
+
+==== Lei
+
+Para se poder comercializar qualquer produto que tenha uso alimentício, é necessário seguir as regras da ANVISA
+-- e portanto fazer os protocolos clínicos do produto de acordo com elas. E é aqui que o inchaço da legislação
+brasileira se faz sentir mais: para fazer embalagens plásticas de acondicionamento de alimentos -- um dos mais
+exigentes usos alimentício dos plásticos -, aplicam-se:
+
+* Um *guia geral* de 31 páginas pode ser encontrado no portal da ANVISA,
+com perguntas e respostas sobre materiais em contato com alimentos. Disponível em PDF em
+http://portal.anvisa.gov.br/duvidas-frequentes-materiais-em-contato-com-alimentos[_http://portal.anvisa.gov.br/duvidas-frequentes-materiais-em-contato-com-alimentos_].
+* Outro documento com *perguntas e respostas* frequentes para embalagens encontra-se em
+http://portal.anvisa.gov.br/registros-e-autorizacoes/alimentos/produtos/embalagem[_http://portal.anvisa.gov.br/registros-e-autorizacoes/alimentos/produtos/embalagem_].
+A resposta à pergunta 8 parece indicar que toda nova embalagem impressa em 3D precisaria ser
+registrada na ANVISA: "P: As embalagens de alimento precisam ser registradas na ANVISA? R: (...)
+Já as embalagens obtidas por *novas tecnologias* (...) têm *obrigatoriedade de registro* previamente
+à sua comercialização.".
+* As **disposições gerais**, Resolução 105/99, uma série de regras
+tratando das composições dos plásticos, da porcentagem máxima dos vários tipos de impurezas e dos
+índices de migração, viscosidade, etc. permitidos. O documento está inteiramente disponível em PDF em
+http://www.camara.gov.br/sileg/integras/713686.pdf[_http://www.camara.gov.br/sileg/integras/713686.pdf_] (9
+páginas). Perceba que esse documento ainda se refere a *27 outros documentos* com maior detalhamento das regras,
+resoluções GMC números 30/92, 36/92, 56/92, 16/93, 28/93, 47/93, 86/93, 87/93, 95/94, 05/95, 10/95, 11/95, 13/97,
+14/97, 15/97, 32/97, 33/97,34/97, 36/97, 52/97 e 53/97, 9/99, 10/99, 11/99, 12/99, 13/99 e 14/99. Essas resoluções
+podem ser encontradas a partir do portal MercoSul, http://www.mercosur.int/[_http://www.mercosur.int_].
+* A **lista positiva de monômeros**, resolução RDC 56/12, lista os materiais permitidos para os polímeros plásticos a partir
+de suas unidades constituintes. Assim, deve-se procurar por "etileno" na parte I do documento se se deseja utilizar
+"polietileno", por exemplo. Polímeros específicos também são indicados na parte II. A resolução foi publicada
+no Diário Oficial da União em 21 de novembro de 2012, páginas 66 a 77 e está disponível em PDF por página:
+http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&pagina=66&data=21/11/2012[_http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&pagina=66&data=21/11/2012_].
+Como exemplo, o ácido lático, monômero do PLA, aparece na página 70 como "ácido láctico" e "sem
+restrições".
+* De particular interesse ainda são:
+** A resolução RDC 17/08 - *aditivos* para materiais
+plásticos, uma lista positiva como a da RDC 56/12 mas para aditivos com seus limites, disponível como HTML e PDF em:
+https://www.diariodasleis.com.br/busca/exibelink.php?numlink=1-9-34-2008-03-17-17[_https://www.diariodasleis.com.br/busca/exibelink.php?numlink=1-9-34-2008-03-17-17_]
+** A resolução RDC 52/10 dá as
+regras para as substâncias usadas nos *corantes* dos plásticos. Disponível em formato PDF no portal da ANVISA,
+http://portal.anvisa.gov.br/documents/33916/390501/ALIMENTOS%2BRESOLU%25C3%2587%25C3%2583O%2BRDC%2BN%25C2%25BA%2B52%252C%2BDE%2B26%2BDE%2BNOVEMBRO%2BDE%2B2010%2B-%2BCorantes.pdf/41737873-d73e-4bc9-b018-90ba2e628246[_http://portal.anvisa.gov.br/documents/33916/390501/ALIMENTOS%2BRESOLU%25C3%2587%25C3%2583O%2BRDC%2BN%25C2%25BA%2B52%252C%2BDE%2B26%2BDE%2BNOVEMBRO%2BDE%2B2010%2B-%2BCorantes.pdf/41737873-d73e-4bc9-b018-90ba2e628246_]
+** A resolução RDC 51/10 dá as regras de *migração* de substâncias, com detalhamento
+dos ensaios e protocolos necessários para sua verificação. Disponível em formato PDF em
+https://www.diariodasleis.com.br/busca/exibelink.php?numlink=215704[_https://www.diariodasleis.com.br/busca/exibelink.php?numlink=215704_].
+
+Existem ainda padrões internacionais que podem ajudar a navegar nessas águas complexas da legislação
+para alimentos. Uma delas é a **ISO 22000**, um sistema de gerenciamento de segurança alimentícia
+que cobre toda a operação de companhias -- com o manual e gabaritos sendo vendidos a 549 dólares e
+também com treinamentos disponíveis em português do Brasil por firmas especializadas. Outro é o **Codex
+Alimentarius**, padrões alimentícios de segurança da WHO (Organização Mundial de Saúde) abrangendo
+praticamente todos os campos industriais e com documentos baixáveis gratuitamente em formato PDF em
+http://www.fao.org/fao-who-codexalimentarius/standards/list-standards/en/[_http://www.fao.org/fao-who-codexalimentarius/standards/list-standards/en/_].
+
+É importante ressaltar que esta obra pretende oferece apenas um guia geral para o interessado nesta área sem o
+suficiente para ser aconselhamento legal. O leitor deve utilizar essas informações por sua conta e risco.
+
+==== A incompatibilidade com o Mundo Maker
+
+Ser brasileiro envolve muitos quinhões, um deles é ter que lidar com uma legislação inchada que decide até
+mesmo quanto de sal pode ser servido em bares -- e isso vale para as nossas versões de legislação internacional,
+como as de "propriedade" intelectual e segurança alimentícia. Leis que demoram também muito tempo para
+terem mudanças, principalmente quando são corpos de legislação destinados a indústrias específicas. Quando
+há uma mudança de paradigma de produção -- e a impressão 3D de baixo custo é exatamente isto -- e você
+coloca pequenos artesãos em competição direta com indústrias milionárias de escala, se a lei não acompanha
+ela cria um abismo de problemas sociais e econômicos. O profissional de impressão 3D vai querer produzir, mas
+a legislação feita pra plantas de fábricas não permite. A situação cria pontos de stress como os pedidos
+de itens de contato alimentício em sites de impressão sob demanda como 3dhubs ou cammada, com profissonais e
+clientes que acabam ignorando a legislação por ser impraticável, fora da realidade. Teremos então produtos
+completamente inseguros sendo consumidos, uma solução sendo os serviços sob demanda implementarem proibições
+e limitações impopulares para os produtores, ameaçando assim seu próprio negócio e introduzindo controle e
+censura em um meio que deveria oferecer liberdade de formas.
+
+Qual é a solução pra isso? Por um lado, ninguém deseja produzir itens que possam fazer mal à saúde de quem
+os adquire. Isso abre espaço para litigações e, como acabamos de ver, não faltam leis para condenar quem se
+aventure por esse caminho. Por outro, a legislação excessiva e redundante _tem_ que ser simplificada. No meio
+industrial, isso é resolvido se fazendo contratos de longa duração com empresas especializadas em cumprir essas
+legislações, que inclusivem têm seu próprio _portfolio_ de protocolos prontos para os testes e fazem novos à
+medida que surge a necessidade. Tais empresas não têm, geralmente, provisões para itens singulares de pequenos
+produtores, e mesmo quando têm, são com preços estratosféricos.
+
+Algumas possibilidades de compensações ao problema podem ser contempladas.
+
+==== Soluções e Mitigações
+
+É importante reiterar que o apresentado aqui são sugestões sem compromisso. Sendo um campo ainda em movimento,
+é possível até que algumas delas já tenham tido sucesso ou falhado.
+
+* *Empresa de microcertificações alimentícias* -- as empresas atuais que já atuam no treinamento e certificação
+industriais para plásticos no ramo alimentício poderiam explorar o mercado de massa com certificações pontuais
+para produtos, até talvez uma parceria com os _sites_ de impressão sob demanda. Com preços populares, poderiam
+intermediar a impressão 3D de itens alimentícios e ganhar pelo volume, ao invés da margem de um serviço de
+longa duração. Poderiam ter protocolos padronizados e até um catálogo de formas prontas para o cliente que
+desejasse um preço menor de um design e material já certificados.
+* *Base de dados pública de protocolos* -- pessoas, entidades e empresas que já precisaram fazer testes relacionados ao uso alimentício poderiam deixar
+disponíveis seus protocolos e documentação das situações em que foram usados, para evitar retrabalho de outros.
+* *Revestimentos no item* -- embora em objetos que necessitem de encaixe ou dimensões precisas a espessura de um
+revestimento típico possa ter que ser compensada, existem no mercado diversas soluções que podem ser usadas com
+objetos comum e que funcionam para impressões 3D. Revestimento de poliuretano é uma dessas soluções, e existem
+resinas específicas para contato alimentício para impressão 3D. Óleo mineral é um revestimento comum usado
+com tábuas de corte que se entranha no material, e pode ser que tenha compatibilidade com alguns dos plásticos
+de impressão 3D mais porosos que o possam absorver. Um problema dos revestimentos é a resistência mecânica e
+aderência ao material, se seu uso compreender fricção ou outros tipos de stress mecânico o revestimento pode
+se soltar e deixar exposto o material original.
+
+[[revestimentoalimenticioredelease]]
+image::revestimentoalimenticioredelease.jpeg[revestimentoalimenticioredelease,width=612,height=508,align="center",title="Platina Semi-Cristal Para Moldes Alimentícios e Artefatos Atóxicos da Redelease, uma das opções nacionais para revestimento dos plásticos. Fonte: http://www.redelease.com.br/lojavirtual/produtos/borrachas-de-silicone/para-moldes-e-formas/borracha-de-silicone-para-moldes-alimenticios-1-100-kg-c-catalisador-1163.html"]
+
+* *Materiais especiais* -- embora somente o material de impressão 3D ser compatível com o contato alimentício
+não seja suficiente para garantir o uso alimentício do objeto impresso, existe uma estratégia que é promissora
+como solução neste campo, que é um plástico alimentício com antimicrobianos. Essa é, por exemplo, a abordagem
+usada por um grupo de estudos da Universidade de Waterloo, que foi testada com sucesso usando PEAD extrudado com
+nanopartículas de prata, processo que inclusive não prejudica a reciclabilidade do PEAD.
+
+[[peadcomnanoparticulas]]
+image::peadcomnanoparticulas.png[peadcomnanoparticulas,width=642,height=443,align="center",title="Apresentação do filamento de PEAD com nanopartículas de prata para uso alimentício da Universidade de Waterloo, em Ontario, Canadá. O vídeo inteiro pode ser visto em https://www.youtube.com/watch?v=9A-XwD9qWZE"]
+
+[NOTE]
+.Referências:
+====
+. Efeitos do Trióxido de Antimônio: Cooper, R. G., & Harrison, A. P. (2009). The exposure to and
+health effects of antimony. __Indian Journal of Occupational and Environmental Medicine__, __13__(1),
+3--10. http://doi.org/10.4103/0019-5278.50716 Disponível para leitura online (texto completo) em
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2822166/[_https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2822166/_].
+. Eastman/Tritan:
+http://www.innovationlab.eastman.com/stories/home-is-where-your-housewares-are[_http://www.innovationlab.eastman.com/stories/home-is-where-your-housewares-are_]
+. Ao leitor curioso, existe uma referência muito boa sobre
+os aditivos usados em plásticos no portal "Tudo Sobre Plásticos":
+http://www.tudosobreplasticos.com/aditivos/aditivos.asp[_http://www.tudosobreplasticos.com/aditivos/aditivos.asp_]
+A complexidade e variedade do assunto são amplas demais para tratarmos nessa obra.
+. O negro-de-fumo é um aditivo/corante interessante para ter uma noção do que é adicionado aos
+plásticos, visto que é basicamente carbono / fuligem. Um bom texto sobre esse composto pode ser lido em
+http://www.tudosobreplasticos.com/pigmentos/negrodefumo.asp[_http://www.tudosobreplasticos.com/pigmentos/negrodefumo.asp_].
+. Muitas vezes a preocupação com os metais da impressora 3D é tida como excessiva. Existem máquinas usadas
+na indústria e comércio que usam alumínio como o hotend e até latão e têm contato direto com alimentos,
+como dispensadores de pastas, sem efeitos nocivos.
+. Bórax:
+https://crunchybetty.com/getting-to-the-bottom-of-borax-is-it-safe-or-not/[_https://crunchybetty.com/getting-to-the-bottom-of-borax-is-it-safe-or-not/_]
+. Falaremos do tetraidrofurano mais à frente, mas é um composto de laboratório que, como a acetona, deve
+ser lidado da maneira correta, com equipamento de proteção e em condições adequadas. Um dos perigos deste
+composto é ser altamente explosivo. Não entenda o leitor como sugestão para que faça o teste sem preparações.
+. http://www.splabor.com.br/blog/meio-de-cultura-2/meio-de-cultura-identificacao-e-cultivo-de-microorganismos/[_http://www.splabor.com.br/blog/meio-de-cultura-2/meio-de-cultura-identificacao-e-cultivo-de-microorganismos/_]
+. O exemplo é da Universidade de Cornell, nos EUA; não serve para a legislação brasileira -
+https://confluence.cornell.edu/display/FOODSAFETY/Cornell+Food+Safety+and+MQIP+Lab+Protocols[_https://confluence.cornell.edu/display/FOODSAFETY/Cornell+Food+Safety+and+MQIP+Lab+Protocols_]
+. Um exemplo pode ser visto no canal __3D Printing Professor__, em inglês. O apresentador tenta executar
+um procedimento bem simples com quatro culturas de bactérias em ágar usando uma impressão em ABS, uma outra
+em ABS suavizado com acetona e duas de controle, mas tem resultados totalmente inconsistentes. Pode ser visto em
+https://www.youtube.com/watch?v=kuyys1YpAVw[_https://www.youtube.com/watch?v=kuyys1YpAVw_].
+====
+
+==== Uso médico e veterinário
+
+A primeira observação pertinente a dizer da impressão 3D _de baixo custo_ é que seu uso em medicina é limitado
+-- e isso não deveria ser uma surpresa, já que até para confecção de objetos para uso alimentício existe
+tanta dificuldade. A medicina é uma área que comumente exige objetos com tecnologia de ponta, com superfícies
+antibacterianas, resistências extraordinárias e durabilidade extrema. Os materiais usados em impressão 3D FFF são
+limitados e frágeis; não se imprime uma prótese de titânio para o joelho numa reprap, não se cria uma máscara
+realista para vítima de queimadura no rosto com plástico extrudado, não se consegue precisão e transparência
+para uma lente para os olhos, não se faz uma prótese de membro inferior com anisotropia de camadas (propriedade
+explicada na seção sobre problemas de malhas). Para esses fins a impressão 3D é usada, mas do tipo industrial,
+com tecnologias sob patentes e estritamente controladas. Torna-se até um dos pontos mais difíceis de explicar
+ao leigo, que enxergar "impressão 3D" como uma coisa só, em vez de dezenas de tecnologias bem diferentes.
+
+Tornado isto bem claro, portanto, é também necessário falar de uma das propriedades mais importantes para objetos
+no campo de medicina e veterinária, a __biocompatibilidade__. Com pelo menos 5 definições formais distintas^1^, o
+entendimento intuitivo do conceito diz respeito a um material não ter efeitos deletérios aos materiais ou sistemas
+biológicos com que interage. Na maior parte das utilizações que nos interessam, o plástico ser _biocompatível_
+significa que não causará irritações na pele, e existe uma boa sobreposição entre os materiais que são
+biocompatíveis e os que são seguros para fins alimentícios, como PLA e polipropileno. Existe uma escala de
+biocompatibilidade: limitada (menos de 24h de exposição), prolongada (de 24h a 30 dias) e permanente (mais de
+30 dias), padronizada pela ISO 10993^2^ com testes parametrizados.
+
+Com todos esses poréns em mente, podemos explorar o uso dos objetos de plástico impressos na medicina. Além do
+óbvio uso genérico como em suportes de itens médicos, invólucros de aparelhos, caixas, decorações e objetos
+educacionais, um dos casos que se vale do baixo custo e disponibilidade da impressão 3D FFF, quando a complexidade
+não é microscópica, é usar escaneamentos de tomografia ou ressonância de um paciente para criar modelos 3D
+de seus órgãos e imprimi-los, para que os médicos que vão fazer uma cirurgia possam avaliar a forma e definir
+suas estratégias de operação com eles em mãos.^3^ Ou em operações que necessitam de modelos impressos em 3D
+como implantes ou órteses, pode-se utilizar a FFF para prototipagem em impressões candidatas, com a tecnologia
+mais cara sendo usada com a versão final.^4^ Tais aplicações ocorrem em ambientes de hospitais e clínicas e
+seu uso tem crescido.^5^
+
+No entanto, o uso _criativo_ fora do ambiente, feito por indivíduos fora do ambiente especializado de um hospital,
+também tem rendido frutos. Exemplos já foram mencionados, mas vale lembrá-los: Mão3D e sua inspiração
+internacional "Enable the Future" com suas próteses open-source; as diversas próteses (veterinárias e
+odontológicas) e trabalhos de Cícero Moraes, Paulo Miamoto Dias e seus associados. É claro que a disponibilidade
+de softwares para ajudar nessas tarefas também é importante, e além do brasileiro _Invesalius_ já mencionado,
+existe ainda o também open-source e multiplataforma _Slicer_ de reconstrução digital.
+
+[[slic3rnaoslic3ropensurce]]
+image::slic3rnaoslic3ropensurce.png[slic3rnaoslic3ropensurce,width=615,height=419,align="center",title="Slicer, software de processamento e visualização de imagens médicas (não é o fatiador slic3r). Baixável de https://www.slicer.org/."]
+
+E tais fronteiras se expandem a cada dia, em garagens e universidades, procurando aprimorar a saúde e qualidade
+de vida das pessoas através da tecnologia e pensamento "fora da caixa". Por exemplo, por que não aproveitar
+a propriedade do PLA de baixo ponto de transição vítrea, aquela mesmo que o torna inapropriado para contato com
+alimentos devido a deformar no lava-louças? Mas desta vez para fazer com que o plástico mole possa ser adaptado
+em forma de tala no braço de um paciente. Esta foi a idéia de Ana Paula Cano, integrante do grupo Mão3D em seu
+Trabalho de Conclusão de Curso^6^.
+
+Lembre-se ainda que cada uso especializado de impressão 3D tem sua legislação específica, que pode ser tão
+complexa quanto a que já vimos relacionada a alimentos. Em especial, o grupo de estudos de que Ana faz parte,
+__Biomecânica e Forense UNIFESP__, procura dialogar com os setores da sociedade que regulam tais dispositivos,
+colocando tal material público em seu canal de youtube^7^.
+
+[[taladaanacano]]
+image::taladaanacano.png[taladaanacano,width=642,height=637,align="center",title="Tala modelada como uma peça chata, colocada em água quente para amolecer e moldada em torno da mão do paciente, ficando com a forma definitiva. Como a temperatura de transição vítrea do PLA é baixa, o paciente não se queima, e sendo o PLA biocompatível, não terá irritações com o uso desde que aditivos e corantes também não o sejam. Foto de Ana Cano, publicada com permissão."]
+
+==== Outros usos biológicos
+
+Como máquina de uso genérico, é difícil descrever todos os usos de uma impressora 3D, mesmo de uma técnica
+com limitações como a FFF. Itens para laboratório como tubos de ensaio e centrífugas, para cultivo de plantas,
+hidropônica e jardinagem, moldes e suportes odontológicos, modelos educativos de órgãos e corpo humano, sapinhos
+de plástico para "dissecação" simulada, armadilhas para mosquito da dengue, modelos de vírus, bactérias,
+DNA e proteínas, alimentadores automáticos de espécimes... Uma passeada nos sítios web de compartilhamento de
+design mostram centenas de milhares de idéias brilhantes, a grande maioria não só gratuita mas também livre
+para modificar. Qualquer delimitação que puséssemos aqui seria uma injustiça com o campo abordado. O mais
+importante é ter em mente as propriedades dos plásticos, sua biocompatibilidade com a função em questão e a
+legislação que pode ser necessária para sua produção comercial.
+
+[NOTE]
+.Notas:
+====
+. Ainda que a _wikipedia_ seja às vezes contestada como fonte oficial de referências, ela se mostra excelente
+para reunir definições distintas de áreas diferentes de forma harmoniosa. Em nosso caso, a wikipedia em inglês
+serviu de fonte: https://en.wikipedia.org/wiki/Biocompatibility[_https://en.wikipedia.org/wiki/Biocompatibility_]
+. https://www.fda.gov/downloads/medicaldevices/deviceregulationandguidance/guidancedocuments/ucm348890.pdf[_https://www.fda.gov/downloads/medicaldevices/deviceregulationandguidance/­guidancedocuments/ucm348890.pdf_]
+. http://3dprintingindustry.com/news/widespread-use-3d-printed-models-keeps-lowering-barriers-complex-surgeries-31987/[_http://3dprintingindustry.com/news/widespread-use-3d-printed-models-keeps-lowering-barriers-complex-surgeries-31987/_]
+. Bogu, V. P., Ravi Kumar, Y., & Asit Kumar, K. (2016). 3D Printed, Customized Cranial
+Implant for Surgical Planning. __Journal of The Institution of Engineers (India): Series C__. -
+https://www.researchgate.net/publication/303975801_3D_Printed_Customized_Cranial_Implant_for_Surgical_Planning[_https://www.researchgate.net/publication/303975801_3D_Printed_Customized_Cranial_­Implant_for_Surgical_Planning_]
+. Ventola, C. L. (2014). Medical applications for 3D printing: current
+and projected uses. __Pharmacy and Therapeutics__, __39__(10), 704. -
+_https://www.ncbi.nlm.nih.gov/pmc/articles/https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4189697/[­PMC4189697/]_
+. Cano, A. P. D. __Parametrização e Produção de Órtese Termomoldável para Imobilização de Punho Produzida
+por Manufatura Aditiva__. São José dos Campos: Universidade Federal de São Paulo, 2017. 94 p.
+. Um dos vídeos mais representativo dessa busca é o que fala explicitamente sobre desafios de
+regulação: "ANVISA -- Regulação de dispositivos médicos produzidos por manufatura aditiva no Brasil",
+https://www.youtube.com/watch?v=B6N_A1VEqy8[_https://www.youtube.com/watch?v=B6N_A1VEqy8_]
+====
+
+== Propriedades Físicas
+
+A FDM/FFF esteve restrita ao ABS no início e embora a Stratasys, antes do fim de sua patente, oferecesse certa
+gama e "grades" (graduações de propriedades) de materiais, foi com a abertura do mercado de Impressão 3D
+que o mercado realmente explodiu em alternativas. As propriedades mecânicas do ABS não são ruins: é um material
+rígido com alguma flexibilidade e moderada resistência à tração. Mas há aplicações para muitos outros tipos
+de propriedades, e felizmente, os termoplásticos permitem uma variada gama de propriedades mecânicas: plásticos
+com maior resistência à tração (PLA), maior resistência à compressão (policarbonato), maior flexibilidade
+(termoplásticos elastômeros), mais derretíveis para processos de molde (MoldLay e outras imitações de cera) e
+muitas outras. Quando se adiciona a possibilidade de fazer misturas/compósitos com diferentes materiais, a variedade
+aumenta ainda mais: superfícies rugosas (filamento de imitação de madeira -- com serragem misturada), metálicas
+(imitação de metal, com pó metálico), extra-rígidas (com fibra de carbono), até mesmo condutoras ou moldáveis.
+
+Há no entanto um enorme "porém" a notar: o processo de fused filament fabrication não tem perfeita
+aderência/mistura entre camadas. Quando se deposita o filete derretido em cima da camada anterior, a idéia é que
+a temperatura deste filete derreta e amoleça o de baixo, fundindo-se o melhor possível com ele. Por isso mesmo,
+a temperatura do filamento na impressão é colocada bem acima da temperatura de derretimento, para maior aderência
+entre camadas (quanto maior a temperatura do filete, e em quanto menos tempo o plástico logo abaixo foi depositado,
+maior a força de aderência). Mas esse processo nunca é completo, e não somente vãos consideráveis permanecem
+entre as camadas, como o processo de fusão deixa falhas. Deste modo, as forças verticais em um objeto impresso
+por FFF, por não trabalharem com um _continuum_ sólido do material, e sim por camadas com aderência imperfeita,
+enfrentarão muito menos resistência.
+
+Na física, um objeto que tem as mesmas propriedades independente da direção em que se o considera é chamado de
+__isotrópico__. Quando essas propriedades são distintas de acordo com a direção, ele é __anisotrópico__. A
+_anisotropia_ da impressão 3D FFF é possivelmente o maior problema da tecnologia: a orientação da peça
+impressa vai influenciar enormemente em sua eficiência mecânica, e praticamente impossibilitar seu uso, mesmo
+com os materiais mais fortes, para aplicações sérias com muita carga necessária, especialmente as que exploram
+a resistência à tração. Outras técnicas de impressão 3D, como a estereolitografia, não padecem do mesmo
+problema de fundição imperfeita de camadas, e são isotrópicas.
+
+=== Higroscopia e Hidrofilia
+
+A _água_ é bastante relevante na ciências dos plásticos visto que pode ajudar ou atrapalhar no processo, pode
+proibir ou autorizar o contato com outros compostos, pode adentrar e degradar o plástico, e determinar aderência ou
+descolamento de tintas e vernizes. Há propriedades associadas a ela que costumam confundir, que são os conceitos
+de __hidrofobia__, _hidrofilia_ e __higroscopia__. Para explicá-los, vamos tentar primeiro entender a polaridade
+da molécula de água (H₂O).
+
+=== A natureza polar da água
+
+[[h2opolaridade]]
+image::h2opolaridade.png[h2opolaridade,width=642,height=529,align="center",title="Dois hidrogênios e um oxigênio unidos por ligação covalente; cada hidrogênio compartilha seu elétron com o oxigênio e todos completam suas camadas de valência deste modo. Mas o oxigênio exerce maior atração neste elétron compartilhado e, por conseguinte, o lado em que ele está fica ligeiramente negativo (vermelho), e os dos hidrogênios ficam levemente positivos (azul). Como a molécula de oxigênio faz um &quot;V&quot; com os hidrogênios, isso significa que temos extremidades da molécula com polaridades diferentes - a molécula é &quot;polar&quot;. A polaridade é expressível por diversos índices, um dos mais frequentes sendo o momento de dipolo -1,8456 D (debyes)."]
+
+Essa aparente inócua propriedade da água, associada com sua geometria peculiar de polaridade em forma de V, gera
+toda uma variedade de propriedades macroscópicas interessantes. A primeira é a disposição que as moléculas
+de água tendem a adquirir juntas: com um pólo negativo amplo e dois pólos positivos, uma ligação fraca de
+_ponte de hidrogênio_ tende a ser formada entre os hidrogênios das moléculas com os oxigênios. Em especial,
+cada molécula de água tende a atrair e orientar em posições específicas quatro outras moléculas de água
+em torno de si (duas com o hidrogênio virado para seu oxigênio, e mais uma para cada um dos dois hidrogênios,
+com o oxigênio orientado na direção deles). O arranjo resultante pode ser visto na figura seguinte.
+
+[[arranjoidealagua]]
+image::arranjoidealagua.png[arranjoidealagua,width=642,height=353,align="center",title="O arranjo &quot;ideal&quot; de moléculas de água no espaço, com cada esfera vermelha simbolizando uma molécula e os tubos cinza sendo pontes de hidrogênio. Veja que cada esfera se liga a quatro outras, exceto as da borda da estrutura que se ligam a três."]
+
+A polaridade peculiar da água e o fato de suas moléculas se atraírem e estruturarem dessa maneira colabora
+em uma série de propriedades interessantes, desde ser líquida em temperaturas mais altas até sua tensão
+superficial. Mas a mais interessante é em como ela faz com que a água interaja com outros materiais.
+
+Quando a água atrai *mais a si mesma* que ao material em questão, ela tende a ficar separada deste. Quando a
+água atrai **mais o material**, ela tende a se unir ou espalhar por ele. No primeiro caso, se diz que o material
+é _*hidrofóbico*_ (tem "medo de água"). No segundo caso o material é _*hidrofílico*_ (tem "afinidade
+com água").
+
+[[hidrofobiahidrofilia]]
+image::hidrofobiahidrofilia.png[hidrofobiahidrofilia,width=642,height=331,align="center",title="Instâncias diferentes de materiais hidrofóbicos (esquerda) e materiais hidrofílicos (direita). O óleo é hidrofóbico por ser composto *apolar* e não ter afinidade química com a água."]
+
+Os detergentes usados em sua cozinha utilizam uma propriedade chamada _anfipatia_ ou _anfifilia_ que consiste
+em ter uma extremidade polar (como a água) e uma extremidade apolar (como o óleo) e portanto conseguir mediar
+atração com ambos os tipos, permitindo à àgua deslocar os óleos.
+
+=== Higroscopia
+
+Muitas vezes um material _hidrofílico_ é também __higroscópico__, por isso os dois termos costumam ser confundidos,
+mas não são a mesma coisa. A higroscopia (também conhecida como __higroscopicidade__), que acontece somente
+com materiais hidrofílicos e nunca com hidrofóbicos, é a capacidade do material de puxar vapor d’água do
+ar (não somente por causa da composição; porosidade também ajuda) para sua __superfície__. Esse fenômeno
+de fazer moléculas (de água, no caso) aderirem na superfície é chamado de _*adsorção*_ (com "d"), e
+costuma ser confundindo com a __absorção__, um fenômeno distinto em que o fluido é dissolvido "dentro" do
+material. Reiterando: tanto a higroscopia quanto a adsorção tratam somente da __superfície__.
+
+[[explicandohigroscopia]]
+image::explicandohigroscopia.png[explicandohigroscopia,width=642,height=345,align="center",title="A higroscopia acontece quando o material atrai moléculas de água do ar para aderência em sua superfície."]
+
+Muitos materiais de impressão 3D como PLA e Nylon são bastante higroscópicos, e como o contato com água acaba
+contribuindo para a degradação do polímero, torna-se necessário acondicionamento adequado do carretel em lugar
+seco (baixa umidade) e de temperatura não muito baixa (a baixa temperatura favorece a adsorção). Ajuda também
+posicionar perto dos carretéis materiais ainda mais higroscópicos, como saquinhos de sílica gel, para que a
+umidade seja adsorvida por estes e não pelos plásticos. Quando o material não somente adsorve, mas também
+absorve (dilui) a água que atrai, como no caso do sal de cozinha, essa propriedade é chamada deliquescência.
+
+Alguns materiais de impressão 3D como _nylon_ e _PETG_ podem não aparentar, mas além de serem higroscópicos
+são porosos. A porosidade potencializa a higroscopia, por isso especial cuidado deve ser tomado com eles.
+
+[NOTE]
+.Referências:
+====
+* Vídeos educativos com materiais hidrofóbicos, hidrofílicos e higroscópicos:
+http://www.energyvanguard.com/blog/cool-videos-hydrophilic-hydrophobic-hygroscopic-materials[_http://www.energyvanguard.com/blog/cool-videos-hydrophilic-hydrophobic-hygroscopic-materials_]
+* Introdução à física da água em materiais porosos, em
+inglês. Fala sobre hidrofilia, hidrofobia e hidroscopia também:
+http://www.energyvanguard.com/blog/78016/Introduction-to-the-Physics-of-Water-in-Porous-Materials[_http://www.energyvanguard.com/blog/78016/Introduction-to-the-Physics-of-Water-in-Porous-Materials_]
+====
+
+== Filamentos de impressão 3D
+
+Apresenta-se aqui uma lista não-extensiva de materiais diferentes usados como filamentos de impressão 3D com
+suas principais características, procurando destacar vantagens e desvantagens no uso prático.
+
+Uma nota é necessária sobre os filamentos de "alta temperatura": Impressoras 3D domésticas trabalham com
+segurança na faixa de temperaturas até cerca de 250-260°C. Muitas delas são limitadas no firmware para não
+passar dessa faixa. No entanto, a potência do cartucho aquecedor é mais que suficiente para ultrapassá-la,
+e isso não é feito em parte porque muitas têm PTFE interno ao hotend para que o filamento deslize com o mínimo
+de atrito; e com sua proximidade ao bloco aquecedor e a temperatura inicial em que começa a sofrer deformação em
+torno de 242°C, há risco de obstrução com o calor. Para os hotends "all-metal" não há esse risco. Além
+desse problema, materiais de alta temperatura comumente têm warp suficiente para que uma câmara fechada e com
+aquecimento ativo seja não somente recomendável, mas em alguns casos exigida. Aquecimento na câmara dispensa
+o aquecimento na mesa, mas exige muito maior potência.
+
+Todos os dados que colocamos aqui são uma simplificação de toda a ciência que há por trás. Já tratamos da
+temperatura de transição vítrea, mas alguns materiais têm outras temperaturas notáveis como a temperatura de
+degradação (temperatura além do derretimento onde a estrutura básica do material é destruída, alterando suas
+propriedades) ou temperatura de ignição (quando o elemento entra em combustão sem faísca externa, puramente
+pelo calor).
+
+Há ainda a lembrança que as temperaturas e sugestões que damos aqui podem não valer para todos os casos,
+devendo ser encaradas apenas como um guia genérico. As construções e características das impressoras 3D variam
+bastante e mesmo os dopantes e maneiras de se fabricar um material podem levar a características bem distintas. Ao
+se adquirir qualquer material para impressão 3D devem-se consultar as informações do fabricante, que incluem
+as temperaturas de extrusão e mesa adequadas.
+
+=== ABS
+
+ABS é o primeiro e principal material usado em impressão 3D, e embora historicamente seu uso apresente uma tendência
+à diminuição pelo aumento da oferta de outros materiais com propriedades mais desejáveis, ele continua forte
+no mercado pelo seu baixo preço de obtenção (em forma crua e em grandes quantidades, podendo chegar a US$ 5 por
+quilo), leveza (1,04 g/cm^3^, ligeiramente mais pesado que a água), boa resistência mecânica (alta resistência
+a compressão) e flexibilidade. A aparência de superfície do ABS costuma ser fosca ou "mate", sem muito brilho.
+
+Quimicamente, é um derivado do petróleo, sendo o entrelaçamento de três copolímeros: Acrilonitrila, Butadieno
+e Estireno ("Styrene"). As variações nas porcentagens dos copolímeros, junto com alguns dopantes, permitem
+que os fabricantes façam vários "grades" de ABS com propriedades diferentes, como maior elasticidade ou
+maior temperatura de derretimento.
+
+Uma propriedade bastante explorada do ABS é sua grande solubilidade em acetona pura, um solvente químico
+relativamente fácil de conseguir. Tratar a superfície de uma peça de ABS com pinceladas de acetona ou a expor
+a vapor de acetona faz com que o plástico ceda à ação da gravidade e "combine" as camadas, deixando a
+superfície lisa e lustrosa. Do mesmo jeito, é comum se dissolver restos do ABS de impressão em acetona de modo
+que se tenha um líquido que funciona como uma "cola" - a acetona é extremamente volátil e evapora rapidamente,
+e minutos ou até segundos depois de se aplicar este líquido em uma superfície, ele solidifica inteiramente. Isso
+é uma prática tão frequente que a solução ganhou o nome de "suco de ABS".
+
+[[absacetonado1]]
+image::absacetonado1.jpeg[absacetonado1,width=528,height=319,align="center",title="A mesma peça de ABS (chaveiro Marvin), antes e depois de um banho de vapor de acetona."]
+
+Na impressão cotidiana, as temperaturas mais comuns para o ABS ficam entre 230 a 240°C no extrusor com alguns
+_grades_ industriais como MG94 sendo impressos a 270°C (o que lhe confere maior força de aderência entre
+camadas). Na mesa, o recomendado é 120°C mas algumas receitas na net passam (incorretamente) temperaturas que não
+levam à viscosidade aderente da transição vítrea, dizendo que se deve usar 110°C ou menor. O encolhimento por
+resfriamento do ABS variará bastante de acordo com ajustes de fatiamento usados na peça (paredes, preenchimento,
+sobreposições), a geometria dela e o _grade_ de ABS utilizado. O índice "oficial" dado para esses casos,
+a contração de molde (molding shrinkage) varia entre 0,4% a 0,7%, ou 0,004 a 0,007 polegada/polegada. Na
+prática, de acordo com dados do website de impressão 3D __Fabballoo__, entre a temperatura de deposição e a
+temperatura ambiente, o ABS (variando bastante de acordo com o fabricante) pode encolher em até 2% de seu volume
+- uma seção transversal inicialmente de 100x100mm poderia chegar a 98x98mm, em seus testes. Na necessidade de
+se fabricar peças e encaixes precisos, pode ser interessante fazer uma impressão de calibração para levar em
+conta o encolhimento do material e "corrigir" a peça aumentando os eixos X e Y de acordo com esse índice
+(o Z sofrerá muito menos distorção, então não precisa ser corrigido).
+
+O ABS "natural", sem pigmentos, tem uma cor bege clara, quase branca, e é opaco. Apresenta toxicidade se
+queimado, liberando monóxido de carbono, cianeto de hidrogênio e em altas temperaturas (acima de 400°C) pode
+liberar butadieno e acrilonitrila (carcinogênicos) e estireno (tóxico).
+
+=== PLA
+
+Ácido Polilático, PLA. Mais que uma alternativa ao ABS, o PLA é bastante comparado a ele por quatro razões:
+ele foi o primeiro plástico de mercado a aparecer como alternativa; tem o preço no varejo quais igual ao do
+ABS (geralmente 10 a 20% maior); ele é praticamente um contraponto perfeito ao ABS, com seus pontos fracos e
+fortes sendo inversos; e PLA e ABS são ambos representativos das duas "categorias" principais de materiais
+de impressão 3D, os de baixa e alta temperatura/warp.
+
+Esmiuçando: o PLA tem menor resistência à compressão que o ABS, mas tem maior resistência à tração e também
+maior aderência entre camadas; é mais rígido (menos flexível) que o ABS, mas por isso também mais quebradiço;
+tem maior resistência química que o ABS e não dissolve em acetona, e sua superfície impressa oferece um aspecto
+de melhor acabamento que o ABS, mais brilhante; é um bioplástico, compostável, reciclável e "ecológico",
+produzido a partir do bagaço de cana-de-açúcar ou do milho, enquanto o ABS vem de combustíveis fósseis. Tem
+baixa resistência ao calor, com temperatura de transição vítrea iniciando em 65°C, enquanto o ABS só aos
+105°C; tem muito menor propensão ao warp, com contração de molde indo de 0,0037 a 0,0041* e peças grandes e
+largas sendo impressas com boa precisão dimensional até mesmo sem o uso de mesa aquecida -- em parte porque por
+sua baixa temperatura de transição vítrea, a contração do PLA se dá no estado pastoso, não gerando tensões
+na forma final.
+
+O PLA "natural" é translúcido. Note que na questão do acabamento, existem pigmentos que podem deixar tanto ABS
+quanto PLA mais brilhantes ou foscos, portanto nem sempre a superfície do PLA sairá visivelmente melhor que a do
+ABS. O PLA tem mais variações de "grades" do que o ABS disponíveis no mercado, inclusive as que incrementam
+suas propriedades físicas como "HiPLA" (PLA de alta resistência) e PLA com maior resistência ao calor. Um
+filamento raro no Brasil, mas "primo" químico do PLA com propriedades próximas é o PHA, poliidroxialcanoato.
+
+O PLA é geralmente impresso com temperaturas que vão de 190°C a 220°C dependendo do _grade_ e quando se tem
+mesa aquecida, se usa 60°C para aderência. Não é necessário ficar acima da temperatura de transição vítrea
+porque o PLA tem naturalmente uma aderência muito grande à plataforma e também porque ele se torna pouco viscoso
+muito rapidamente, podendo sofrer deformações se em contato com temperaturas altas.
+
+Apesar de sua alta resistência química, o PLA pode ser tratado de maneira semelhante ao ABS com compostos bem
+mais tóxicos que a acetona: tetraidrofurano, diclorometano e clorofórmio.
+
+O PLA não tem boa compatibilidade com colas de cianoacrilato (como "Super Bonder"), perdendo a aderência
+posteriormente. Para colar peças com o material colas baseadas em silicone, xileno e poliuretano funcionam melhor,
+como o "Adesivo Flexível Multiuso 3M Scotch® Flex".
+
+[[plakosselmini]]
+image::plakosselmini.jpeg[plakosselmini,width=494,height=422,align="center",title="Uma peça em PLA sendo impressa em uma impressora delta Kossel Mini com mesa aquecida em 60°C"]
+
+O sítio web _ecycle_ tem uma bela caracterização do PLA do
+ponto de vista de plásticos de engenharia, mercado e ecologia:
+http://www.ecycle.com.br/component/content/article/37/738-pla-o-plastico-compostavel.html[_http://www.ecycle.com.br/component/content/article/37/738-pla-o-plastico-compostavel.html_]
+
+=== PETG
+
+Era de se esperar que um dos plásticos mais presentes na nossa civilização, o conhecido e barato plástico
+"PET" (polietileno tereftalato) das garrafas de refrigerantes, constasse imediatamente na lista de materiais
+disponíveis pra impressão 3D, mas há um problema logístico: o material derretido, quando começa a solidificar,
+cristaliza muito facilmente, tornando-se quebradiço a ponto de desmanchar. Nos processos de produção industrial
+dele, a cristalização é evitada através de uma refrigeração muito rápida na fase de solidificação, mantendo a
+característica amorfa do material e suas propriedades desejáveis. Na impressão 3D, tal refrigeração seria muito
+difícil e cara de implementar, mas há um outro expediente que preserva a maioria das propriedades do plástico:
+adicionar um radical "glicol" extra durante o processo de polimerização faz com que o material continue
+amorfo ao solidificar, evitando a cristalização. Essa formulação alterada do PET é chamada de PET-Glicol ou
+simplesmente PETG. É um plástico flexível, translúcido, com excelente resistência química, semipermeável, e
+curiosamente tem no mercado duas variedades, uma com transição vítrea em 60°C que usa temperaturas semelhantes
+ao PLA (60°C de mesa, 220°C no extrusor) e tem baixíssimo warp, e uma com certo grau de warp e temperaturas
+próximas do ABS (100-110°C de mesa, 240°C no extrusor).
+
+[[copopetgtranslucido]]
+image::copopetgtranslucido.jpeg[copopetgtranslucido,width=495,height=457,align="center",title="Copo de PETG impresso, ao lado de uma garrafa PET de refrigerante. Note-se que a peça é apenas decorativa, não se recomenda imprimir itens com fins alimentícios em impressoras 3D comuns."]
+
+=== Tritan
+
+_Tritan_ é um copoliéster de engenharia com alta clareza e transparência, resistência química e a impacto
+e com estabilidade hidrolítica que concorre nos mesmos mercados do PET e policarbonato, inicialmente extrudado
+em formato de impressão 3D pela empresa _Taulman3D_ mas logo em seguida por outros fabricantes de filamento. Tem
+contração de molde entre 0,5 a 0,7% e moderada resistência térmica, com o ponto de transição vítrea estando
+em 100°C e pode, em princípio, ser utilizado para contato com alimentos e bebidas, consideradas as reservas já
+ditas sobre esse tema. É extrudado em temperaturas altas, a recomendada pela Taulman sendo de 275°C no extrusor
+e 90°C na mesa, mas temperaturas maiores dão melhor acabamento e aderência entre camadas. Assim como o PLA,
+dissolve em tetraidrofurano. Costuma estar disponível na maior parte das vezes na forma natural sem corantes.
+
+=== ASA
+
+Abreviação de Acrilonitrila Estireno Acrilato (__**A**crilonitrile **S**tyrene **A**crylate__), é um plástico
+de composição e mercado semelhante ao ABS, tendo como principais diferenciais menor contração de molde (0,4
+a 0,7%) que o ABS, alta resistência a raios ultravioleta, sendo ideal para impressões expostas ao ambiente,
+maior resistência mecânica e até menos tendência a amarelar com o tempo. Assim como o ABS, é dissolvível
+em acetona. É levemente higroscópico, sendo recomendável secá-lo antes de extrudar. É também um pouco mais
+denso -- 1,07 g/cm^3^ ao invés de 1,04 do ABS.
+
+Geralmente extrudado em temperaturas próximas ao ABS, com um mínimo de 240°C no extrusor e 120°C na mesa. Antes
+usado somente em impressoras industriais, já existem vendedores de filamentos do mercado de massa que o fabricam.
+
+=== Nylon
+
+Nylons, ou poliamidas alifáticas ou semi-aromáticas, são um conjunto de termoplásticos tão presentes na vida
+moderna que seria inevitável sua utilização em impressora 3D. De fato, a utilização é tão universal que
+por felicidade do acaso existem carretéis baratos vendidos com "filamentos" de nylon nos tamanhos ideais
+para impressoras 3D... Mas com finalidade inteiramente diferentes, serem colocada nas hélices de roçadeiras
+(cortadora de grama) para funcionarem como lâminas. _Hobbyistas_ interessados usaram -- em uma exaptação de
+sucesso! - estes carretéis em suas impressoras 3D e em alguns casos tiveram bons resultados, ainda que com uma
+superfície um tanto rugosa. Apesar de curioso, este uso do material é desaconselhado, pois como a finalidade
+não é a impressão 3D e os carretéis não são projetados para derretimento, é relevante a possibilidade de
+dopantes e resíduos que liberem gases tóxicos durante a impressão.
+
+Dito isto, e à parte da curiosidade, Nylons são materiais com propriedades tão desejáveis -- especialmente
+de resistência -- que uma hora os fabricantes começaram a fazer seus filamentos imprimíveis seguros com
+eles. Veja que nos referimos a _nylons_ no plural; a variedade de propriedades deste tipo de filamento é tão
+grande que fica difícil elaborar suas propriedades. A comum a todos eles é a grande resistência, mas há
+desde os mais flexíveis e elásticos até os bem rígidos apropriados para peças de máquinas (especialmente
+engrenagens). Três variedades são especialmente frequentes: Nylon 6, Nylon 6/6 e Nylon 6/12 (geralmente referido
+como Nylon 12). A fabricante dos EUA Taulman 3D é uma empresa que se especializou em nylons para impressão 3D,
+fazendo desde filamentos "fáceis de usar" até os mais resistentes a temperatura e propensos a _warp_ e tendo
+diferentes versões do Grade 6, como 618 e 645, com contrações de molde por volta de 0,6 (próximas à do ABS),
+mas não oferecendo ainda o 6/12 (sendo este comercializado, por exemplo, pela rigid-ink). O 6/12 mantém sua
+forma mais consistentemente por uma grande faixa de temperaturas e ainda é menos sensível a absorção de água
+que outros nylons (5% de sua densidade em água em 24h, metade dos outros).
+
+[[npecasnylonrocadeira]]
+image::npecasnylonrocadeira.jpeg[npecasnylonrocadeira,width=471,height=427,align="center",title="Copo de PETG impresso, ao lado de uma garrafa PET de refrigerante. Note-se que a peça é apenas decorativa, não se recomenda imprimir itens com fins alimentícios em impressoras 3D comuns."]
+
+Uma vantagem da alta higroscopia do Nylon é ser bastante compatível com tintas e pigmentos, mas por outro
+lado é muito comum impressões com nylon serem arruinadas por causa disso. Uma receita para secar nylons (e que
+funciona também para saquinhos de sílica) é deixar no forno a 85°C por 5 a 6h (sem deixar de vigiar e seguir
+procedimentos de segurança). Nylon é bem compatível com cola PVA, fita azul de pintor e revestimento de PEI na
+mesa. Recentemente compósitos com nylon (por exemplo, com fibra de carbono) começaram a se tornar populares pela
+reunião das propriedades desejáveis que adquirem, especialmente em resistência mecânica.
+
+=== PMMA (acrílico)
+
+Em termos de propriedades mecânicas o PMMA -- polymethyl metacrylate / polimetil-metacrilato - lembra o PLA por sua
+rigidez, mas é mais resistente a temperatura, sofre mais warp e apresenta geralmente transparência ou translucidez
+(cujo efeito é dificultado pela deposição em camadas da impressão). Tem resistência à tração quase duas vezes
+maior que a do ABS e resistência à compressão quase 3 vezes maior, com densidade próxima à do PLA (1,20 g/cm^3^
+contra ~1,24 deste último). Como o ABS, é solúvel em acetona. É extrudado em temperaturas entre 240 a 260°C
+e por sofrer warp, necessita de mesa aquecida a pelo menos 100°C. É bastante difícil de encontrar no Brasil e
+tem a importação bem cara, o que é lamentável pois é um dos poucos filamentos realmente rígidos disponíveis.
+
+=== ABS MG94
+
+Ainda que o ABS "comum", de mercado, seja extrudável em temperaturas compatíveis com os elementos aquecedores
+de impressoras 3D comuns, a variedade _MG94_ do polímero, sendo considerada de maior qualidade, é uma exceção
+notável. Ao mesmo tempo que sofre um warp quase na mesma faixa (0.5 a 0.8 do MG94 contra 0.4 a 0.7 do comum),
+as altas temperaturas desse _grade_ de ABS permitem uma aderência entre camadas muito maior, e a qualidade de
+superfície com a preservação de detalhes também é notável. É impresso com extrusor em 270°C e temperaturas
+de mesa a 110-120°C.
+
+=== Policarbonato
+
+É um plástico translúcido rígido bastante usado em objetos industriais e até em vidros à prova de bala. É
+extremamente resistente mecanicamente -- principalmente a impacto - e tem também moderada resistência química. Tem
+boa resistência ao calor com transição vítrea em 147°C e é impresso com o extrusor a 260-300°C e a mesa a
+120-130°C. Não tem boa aderência entre camadas especialmente se a temperatura de impressão estiver na faixa mais
+baixa, por isso a orientação com que a peça é impressa interfere bastante nas suas propriedades mecânicas. É
+um filamento geralmente vendido na forma natural ou translúcida, embora o mercado esteja começando a oferecer
+variantes mais coloridas e opacas. O policarbonato industrial tem grande variedade de contrações de molde de
+0,1 a 1,5% dependendo da formulação, com o policarbonato usando na impressão 3D girando por volta de 1,0%.
+
+É conhecido como um dos plásticos que mais libera BPA, como descrito na seção sobre potenciais danos à saúde
+dos plásticos.
+
+=== HDPE / PEAD
+
+Polietileno de alta densidade, HDPE, é um plástico frequentemente usado para itens alimentícios como garrafas de
+leite e outros potes de líquido e é conhecido por ser bastante reciclável, podendo ser derretido e solidificável
+muitas vezes. É bastante raro seu uso como filamento de impressão 3D, por ser um material difícil para imprimir:
+tem coeficiente de expansão térmica alto e sofre warp excessivo, e além disso não tem boa aderência ao vidro,
+precisando de superfícies "diferentes" com celulose como papelão ou cortiça. É extrudado a 250°C, com
+mesa a no mínimo 100°C.
+
+=== POM (Poliacetal)
+
+O **P**oli**O**xi**M**etileno, também conhecido como poliacetal ou pela marca __Delrin__, é um plástico rígido,
+resistente ao desgaste e de baixo coeficiente de atrito, sendo bastante usado em peças de máquinas. Tem ótima
+aderência entre camadas, mas baixa afinidade ao vidro, e para ser impresso com aderência geralmente se usam
+de materiais com celulose como cortiça, MDF ou papelão na mesa. Em forma cru tem coloração branca. Devido
+à forma como é produzido, à alta cristalinidade e ao comportamento atípico durante a transição vítrea,
+os filamentos de mercado têm alta variação de temperaturas de extrusão, e as variedades de baixa temperatura
+(menos de 230°C, assim formuladas para sofrer menos warp) não devem ser extrudadas acima de 250°C pois degradam
+com resíduos de formaldeído (formol). Por outro lado, a mesa deve ter a temperatura mais alta possível, acima
+de 120°C se a impressora chegar a isso, e com câmara fechada.
+
+=== Ultem 9085 e 1010
+
+A marca _Ultem_ da Sabic, usada para designar filamentos de polieterimida (PEI) de altíssima temperatura de
+extrusão -- entre 330° e 350°C -- e câmara aquecida a 195°C -, e que têm temperatura de transição vítrea
+igualmente alta (por volta de 186°C) e propriedades de retardamento de chamas. Formam superfícies bem lisas,
+têm maior resistência ao impacto e química que o ABS, são bastante resistentes a fadiga e atrito, e constante
+dielétrica e fator de dissipação estáveis numa grande faixa de temperaturas e frequências. O Ultem 1010 se
+diferencia do 9085 principalmente por a propriedade de descarga de eletricidade estática ("ESD-Safe"). Ultem
+1000 é a polieterimida pura.
+
+Uma impressora 3D doméstica não alcança tais temperaturas, nem mesmo os termistores comuns são feitos para
+lidar com elas (embora os termorresistores e termopares sim). Somente recentemente têm aparecido componentes _de
+mercado_ que chegam a 500°C, como termistores _Shibaura*_ ou __Dyze Design__.
+
+O mais interessante dos filamentos _Ultem_ de impressão 3D é eles serem vistos como um "super-material" com
+resistência próxima à de metais, e permanecerem como uma meta e _benchmark_ (teste de bancada) popular para as
+impressoras de baixo custo que pretendem adquirir desempenho industrial.
+
+Outros _grades_ de Ultem existem, e outros materiais de altíssima temperatura (PEEK e PPSF/PPSU são alguns
+deles) também, mas são materiais cujo preço em formato de carretel se situa muito além dos filamentos comuns
+e constam mais como materiais experimentais para o pequeno empreendedor do que realmente algo de mercado para suas
+fabricações. Isso é complicado pelo fato que por causa da alta temperatura, eles podem requerer uma etapa extra
+de "recozimento" da peça para diminuir os interstícios e tensões remanescentes entre camadas e chegar à
+sua resistência final.
+
+=== Flexíveis
+
+Um tipo especialmente "infame" de filamento que surgiu com o mercado de massa foram os filamentos
+__flexíveis__. _Infame_ porque são provavelmente o tipo mais difícil de filamento para se usar em uma impressora. O
+que os torna problemáticos é exatamente sua flexibilidade: o mecanismo de tracionamento tem que lidar com o que
+se chama de _histerese elástica_ (entenda como a resistência à compressão de uma ponta do filamento chegar
+na outra), e com a tendência de o filamento sair das "guias" do mecanismo e embolar, podendo até causar
+danos físicos à estrutura da impressora. A maioria dos mecanismos extrusores têm folgas e vãos que os tornam
+inapropriados para material flexível e geralmente são necessárias pesadas modificações e baixas velocidades
+de impressão para que funcione a contento. Por exemplo, um extrusor que use filamento guiado terá uma histerese
+elástica gigantesca por causa da maior distância entre o tracionador e a área de derretimento, quase sempre a
+ponto de inviabilizar o uso do flexível.
+
+==== TPE
+
+TPE, ou TermoPlástico Elastômero, é o nome dado para a classe de copolímeros ou mistura de polímeros
+(como um plástico e uma borracha) que consistem de materiais com propriedades tanto termoplásticas quanto
+elastoméricas. Marcas como Ninjaflex (EUA) e Flex3DBR (brasileira) são exemplos. São substâncias geralmente
+não-tóxicas, com excelente aderência entre camadas e não necessitando nem mesmo de mesa aquecida para a impressão
+(ou temperaturas entre 40 a 60°C), com temperaturas de extrusor entre 210 a 230°C em geral. Geralmente têm
+composição bem suave e elástica, lembrando um balão de soprar de criança. Costumam ter densidade parecida
+com a do PLA, entre 1,20 a 1,25 g/cm^3^.
+
+Existem variedades de PLA que são fabricadas como termoplásticos elastômeros, costumando ter uma pouco menos
+de elasticidade e flexibilidade que outros TPEs.
+
+A impressão de todos os TPEs, dados os efeitos de histerese elástica, como apresentar "fiapos" - o efeito
+denominado de "stringing" - durante a impressão, que são removidos no final.
+
+==== TPU
+
+[[tensordefilamento]]
+image::tensordefilamento.png[tensordefilamento,width=642,height=607,align="center",title="Uma impressora 3D "reprap" doméstica com algumas adaptações para funcionar com filamentos flexíveis. A peça branca é um &quot;esticador de filamento&quot;, pois se o filamento chega ao extrusor sem tensão de resistência, a chance de &quot;embolar&quot; nos mecanismos aumenta bastante. O tensor de filamento está em https://www.thingiverse.com/thing:692327."]
+
+A sigla significa **T**ermoPlástico **P**oli**u**retano, e embora tecnicamente se enquadrem na categoria de "TPE",
+têm propriedades distintas que os fazem ser tratados de maneira diferente. Semelhantes à borracha -- a própria
+borracha não poderia ser utilizada, pois é termofixa -, com constituição visivelmente menos flexível que os
+outros TPEs incluindo os PLAs flexíveis, apresentam grande resistência de quebra e enorme resistência química a
+solventes e a abrasão. Servem para peças como pneus de carro de controle remoto e peças de articulação. Outra
+diferença que torna os TPUs distinguíveis de outros TPEs é a aparência geralmente mais fosca e menos lisa.
+
+=== Imitações de materiais
+
+Certamente é muito importante ter controle sobre a aparência dos objetos impressos especialmente quando têm
+finalidade decorativa. Fabricantes criativos, geralmente se utilizando da receita da mistura de um pó muito fino
+da substância imitada em um termoplástico convencional como PLA ou ABS, têm brindado o mercado com imitações
+diversas de materiais. Os três tipos mais famosos são imitação de madeira, imitação de metal e um terceiro
+tipo que não tem função estética, mas funcional: mistura de fibra de carbono.
+
+Geralmente essas imitações, por conter partículas que não derretem, são abrasivas e podem necessitar, se não
+um bico (nozzle) de material mais resistente que o latão, pelo menos um com orifício mais largo que o convencional
+para minimizar a abrasão. Se recomenda um bico de 0,6 a 0,8mm para o uso desses materiais.
+
+Note-se também que costumam ser ao mesmo tempo mais densas (ou seja, menos rendimento pelo mesmo peso) e mais
+caras que materiais convencionais.
+
+==== Imitação de Metal
+
+Marca mais conhecida: Colorfabb (Copperfill, Bronzefill e outros). Além de pioneiros, estabeleceram o "padrão"
+para outros fabricantes que fazem os desse tipo. O filamento é PLA com partículas de metal (~30%), tornando-se assim
+3 vezes mais denso que o PLA puro, e sendo impresso nas mesmas temperaturas que o PLA. Ao imprimir, a peça sai fosca
+e para adquirir o tom metálico característico deve ser bastante polida, preferencialmente com uma tamboreadeira.
+
+[[bronzefillecopperfill]]
+image::bronzefillecopperfill.jpeg[bronzefillecopperfill,width=516,height=397,align="center",title="Copperfill (esquerda) e bronzefill (direita). As pelotas abaixo são o plástico do filamento em sua cor natural."]
+
+==== De metal para fundição / sinterização
+
+São uma extrapolação dos filamentos de metal. Ao invés de ter uma porcentagem menor de metal, o filamento é
+quase todo metal (88%), com uma minoria de plástico. A empresa _Virtual Foundry_ tem os filamentos Filamet Copper™
+e Filamet Bronze™, que além de poderem ser utilizados como Copperfill e Bronzefill podem também, pelo seu alto
+conteúdo de metal, serem colocados em fornos de mufla microcontrolados para se transformarem em peças 99,9% de metal.
+
+O processo é complexo e caro, não só por necessitar de equipamentos de fundição e cutelaria profissionais, mas
+também pelo próprio preço do filamento de 85 dólares por 500g, sem contar impostos e frete na importação para
+o Brasil. E para arrematar, são 500g de um material 5 vezes mais pesado que o plástico ABS, isto é, equivalentes
+em volume a 100g de plástico. E o filamento, por ter tanto metal, precisa de bico reforçado e tem a impressão
+difícil, gerando muitas peças falhas.
+
+O resultado final, no entanto, impressiona. Afinal, vê-se uma impressora 3D caseira gerando peças que depois de
+processadas, equivalem a uma peça de impressão 3D industrial SLM, caríssima. Mas como muita coisa na impressão
+3D, essa ainda é uma das tecnologias que precisa provar seu valor para proliferar em massa.
+
+[[filametcopperpatola]]
+image::filametcopperpatola.jpeg[filametcopperpatola,width=642,height=426,align="center",title="Filamet Copper(tm) em sua forma crua depois de impresso, à esquerda; e depois de passar em processos temporizados para sinterização no forno de mufla, à direita. A forma resultante é metal sólido e conduz eletricidade. Foto do autor."]
+
+==== Imitação de madeira
+
+Também uma mistura de serragem (40%) bem fina em PLA com agentes ligantes, a imitação de madeira com sua mais
+famosa encarnação sendo a "Laywoo-D3" tem a curiosa propriedade de ter sua cor final variando de acordo
+com a temperatura de impressão, que pode ir de 180°C até 240°C. Truques no fatiamento se aproveitando disso
+(iterando temperaturas) podem dar um aspecto bem verossímil de madeira no produto final.
+
+[[pecalaywood3]]
+image::pecalaywood3.jpeg[pecalaywood3,width=385,height=296,align="center",title="Peça fabricada com Laywoo-D3"]
+
+==== Fibra de Carbono
+
+A Fibra de Carbono é uma estrutura super-resistente usada em carros e aviões. Pó de fibra de carbono é
+misturado a ABS (~20%, existem variedades com PLA) pra lhe conferir maior estabilidade dimensional e resistência
+a compressão, embora com o possível efeito de prejudicar levemente a resistência a tração por interferir na
+aderência entre camadas. Impressa com a mesa entre 60 a 70°C e o extrusor entre 240 e 260°C, não deve ser usada
+com bicos de latão comum pois os destrói rapidamente, devendo ser usados bicos especiais de aço inoxidável ou
+até titânio. Devido à própria fibra de carbono, esse filamento é encontrado somente na cor preta e depois de
+impresso tem uma superfície fosca e ligeiramente rugosa.
+
+[[colorfabbfibradecarbono]]
+image::colorfabbfibradecarbono.png[colorfabbfibradecarbono,width=336,height=347,align="center",title="Colorfabb XT-CF20, um filamento com fibra de carbono."]
+
+=== Condutivos
+
+Os filamentos que por projeto conduzem eletricidade pertencem a duas categorias principais: filamentos que
+apresentam uma condutividade mínima para poder servirem para peças "anti-estáticas" que descarregam a carga
+de um componente de potência e os filamentos que apresentam condutividade realmente alta (baixa resistência ou
+impedância) para servirem como substitutos das trilhas condutoras de circuitos impressos. Ambos são feitos de
+compósitos de plástico e partículas condutoras, com os filamentos anti-estáticos se situando na faixa de preço
+de ABS e PLA e os de circuitos custando 2 a 4 vezes o preço. Os de circuitos costumam ser, além de mais caros,
+mais pesados pelo maior grau de partículas condutoras (metais, grafeno e equivalentes) e também mais difíceis
+de imprimir por serem flexíveis e abrasivos, podendo exigir um bico de aço para suportar a abrasividade das
+partículas condutoras e modificações no extrusor para serem tracionados sem falhas..
+
+Um jeito de diferenciar um tipo de filamento do outro é averiguar nas especificações a resistência linear ou
+volumétrica do filamento. Se as especificações não informam tal resistência, o filamento é certamente apenas
+anti-estático. Via de regra, um filamento cuja resistência linear seja maior que 50Ω/cm não é adequado para
+circuitos -- e mesmo assim se sugere fazer consultas de testemunhos na internet se a resistência anunciada
+do fabricante coresponde à informada. Mesmo esse filamento de baixa resistência somente é adequado para
+condução de baixa potência, altas correntes passando por ele o derreterão quase imediatamente. Na impressão
+deste tipo de filamento as partes de conexão com componentes são tipicamente as de maior resistência e para
+esses casos se aconselham fortemente conectores condutivos como parafusos, arruelas e porcas de fixação. Outra
+dificuldade desses filamentos é que eles não são usados __sozinhos__, não se imprime a trilha diretamente na
+mesa de impressão. Geralmente são usados ou com dupla extrusão, conjugados a um plástico pra servir como a
+parte isolante, ou impressos em cima de uma "placa" grudada na mesa de impressão, com a configuração de
+uma altura adicional para o bico não raspar na placa.
+
+Como essa categoria de filamentos não é definida por uma formulação comum, cada fabricante terá suas
+temperaturas recomendadas.
+
+[[filamentocondutivoblackmagic3d]]
+image::filamentocondutivoblackmagic3d.png[filamentocondutivoblackmagic3d,width=564,height=445,align="center",title="Filamento condutivo com grafeno da Graphene 3D Lab, com resistividade volumétrica anunciada de 0,6Ω/cm³ – fonte: http://filament2print.com/pt/grafeno/653-filamento-conductivo-de-grafeno-175mm.html"]
+
+=== Solúveis
+
+Filamentos de material _solúvel_ têm a finalidade específica de serem usados em extrusores duplos ou triplos. A
+idéia é o filamento servir para as estruturas de suporte que permitem formas complexas, e uma vez impresso,
+ao invés da remoção mecânica desses suportes, o simples banho no solvente adequado permite que ele saia de
+peça de modo limpo e sem stress mecânico.
+
+==== HiPS
+
+A sigla significa "poliestireno de alto impacto" e é um filamento relativamente barato que funciona medianamente
+bem com ABS e muito bem com PLA. Imprime em temperaturas de 230 a 250°C. O solvente que remove o HiPS da peça,
+no entanto, é um pouco difícil de achar no Brasil: D-Limoneno, ou Limoneno R+. É um produto da casca de laranjas
+limas e encontrado em produtos de limpeza. Para funcionar bem, a concentração precisa ser de 90% ou mais. O
+Limoneno L- vem de limões e não funciona tão bem.
+
+==== PVA
+
+A sigla "PVA" é dúbia e na verdade usada para duas substâncias diferentes, a base da cola branca ("acetato
+de polivinila", às vezes colocada como "PVAc" para evitar a ambiguidade) e o usado no filamento solúvel
+em água (álcool de polivinila). Impresso a 190°C, tem boa afinidade química com o PLA, mas não adere bem ao
+ABS. Devido à sua enorme higroscopia e deliquescência, o filamento PVA precisa de acondicionamento bem controlado
+e sem umidade para não inchar e degradar depois de aberto.
+
+Outra dificuldade de uso do PVA é que é um filamento extremamente flexível, sofrendo das mesmas limitações
+e propensão à histerese elástica que os TPEs.
+
+[[filamentopvatranslucido]]
+image::filamentopvatranslucido.png[filamentopvatranslucido,width=642,height=435,align="center",title="Devido à sua grande capacidade de absorção de água, o PVA é sempre vendido embalado à vácuo para não deteriorar. A coloração bege translúcida lhe é característica."]
+
+==== Infinity Rinse-Away
+
+É um filamento usado exclusivamente em cartuchos proprietários das impressoras da série Cube da 3D Systems. Como o
+PVA, é solúvel em água, mas diferente dele, é feito a partir de polímeros de milho e "compatível" apenas
+com PLA e Nylon.
+
+[NOTE]
+.Referências:
+====
+. (PLA) -
+https://plastics.ulprospector.com/generics/34/c/t/polylactic-acid-pla-properties-processing[_https://plastics.ulprospector.com/generics/34/c/t/polylactic-acid-pla-properties-processing_]
+. https://pt.aliexpress.com/item/shibaura-U1-382-Y1-NTC-thermistor-temperature-sensor-up-to-500-Centigrade-made-in-Japan/32770571400.html?spm=2114.16010208.99999999.262.KOPnDJ[_https://pt.aliexpress.com/item/shibaura-U1-382-Y1-NTC-thermistor-temperature-sensor-up-to-500-Centigrade-made-in-Japan/32770571400.html?spm=2114.16010208.99999999.262.KOPnDJ_]
+====

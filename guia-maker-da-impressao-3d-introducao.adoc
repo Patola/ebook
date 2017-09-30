@@ -1,0 +1,61 @@
+[#guia-maker-da-impressao-3d-introducao]
+= Introdução
+
+Quando se fala em Impressão 3D, a maior surpresa para quem é apresentado à tecnologia é saber que ela é bastante
+antiga. As primeiras tentativas de fabricar peças computadorizadas de forma aditiva surgiram ainda na década
+de 1970 e finalmente na década de 80 foram formalizadas e tiveram suas primeiras patentes. Mas o que aconteceu,
+então, para que somente nos últimos anos a tevê começasse a mencioná-la, ela pipocasse em fóruns técnicos
+e as máquinas que já vemos em pequenas empresas e pequenos negócios começassem a ser vendidas?
+
+A resposta a essa questão não é mera curiosidade. Ao contrário, este contexto é essencial para entender esta
+tecnologia -- ou, melhor falando, conjunto de tecnologias, visto que são várias técnicas com às vezes poucos
+pontos em comum -- e principalmente trabalhar com ela.
+
+O melhor jeito de começar uma explicação, entretanto, é com definições:
+
+== O que é, afinal, Impressão 3D?
+
+Formalmente, a Impressão 3D é definida pela _criação de um objeto de três dimensões usando processos
+aditivos._ Três dimensões significa que o objeto tem volume -- altura, largura e comprimento -, em comparação
+com um desenho em uma folha de papel, por exemplo, que só tem duas dimensões (altura e largura). As impressoras
+"convencionais" que desenham em folhas de papel muitas vezes são chamadas de "impressoras 2D" quando em
+contraste com as impressoras 3D.
+
+[[impressora2de3d]]
+image::impressora2de3d.png[impressora2de3d,width=687,height=280,role="related thumb center",title="Impressora \"2D\" (à esquerda) e 3D (à direita) (créditos: reprap.org)"]
+
+E quanto a "processos aditivos"? Pode-se inferir o significado pelo nome: processos que envolvem a _adição_
+de material durante a fabricação da peça. Outro nome com que a impressão 3D é conhecida usa este conceito:
+"fabricação aditiva". Pressupõe-se também que há um controle do processo por algum circuito, microcontrolador
+ou computador, no que é chamado de "Controle Numérico por Computador", ou "CNC".
+
+Tradicionalmente, antes dos processos aditivos formalizados na década de 80, toda fabricação controlada por
+computador era __subtrativa__. As assim chamadas "máquinas CNC" começaram a surgir nas décadas de 40 e 50,
+com motores que seguiam pontos descritos em cartões perfurados para depois serem substituídas por computadores
+analógicos e digitais. Inicialmente usadas para tarefas de cortes ou gravações simples, as máquinas CNC se
+diversificaram e se sofisticaram, gerando de cortadoras laser a tornos computadorizados a fresas automáticas. A
+história das CNCs está tão ligada à fabricação subtrativa que causa certa estranheza hoje em dia se referir
+a uma impressora 3D como uma "CNC", embora usem, essencialmente, a mesma técnica, apenas de formas diferentes
+-- subtração versus adição.
+[[amsterdamcnc]]
+image::amsterdamcnc.jpg[amsterdamcnc,width=600,height=376,role="related thumb center",title="CNC fresa de MDF no FabLab de Amsterdam. Créditos: wikimedia foundation"]
+
+Impressoras 3D e CNCs, incluindo as máquinas conhecidas como "pick and place" e gravadoras de circuitos,
+são os equipamentos comumente usados para aquilo que é chamado de __prototipagem rápida__. Este termo designa o
+conjunto de tecnologias usadas para a fabricação de objetos físicos diretamente a partir de dados de computador,
+dados estes gerados a partir de um software de "CAD" (Computer-Aided Design, ou seja, qualquer programa que
+faça a modelagem), e guiados por um "CAM" (o software que cuida da parte efetiva da fabricação, como um
+controlador de impressão 3D ou fatiador).^1^ Nessas horas, a criatividade da internet também pesa nos termos
+técnicos: o conhecido grupo do servidor de torrents _The Pirate Bay_ batizou os dados de computador que, ao serem
+alimentados em uma máquina específica, geram objetos físicos de "physibles"^2^, o que em português daria
+algo como "fisíveis" (não confundir com "fusíveis"!).
+
+[NOTE]
+====
+.Notas:
+1 -- Existem outros termos envolvendo a prototipagem rápida como "computer-aided industrial design" e
+"computer-integrated manufacturaing", mas têm uso mais de nicho -- podendo ser ignorados sem prejudicar a
+compreensão geral do assunto.
+
+2 - https://thepiratebay.org/blog/203[_https://thepiratebay.org/blog/203_]
+====

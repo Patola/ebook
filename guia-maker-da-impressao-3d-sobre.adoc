@@ -1,0 +1,25 @@
+[#guia-maker-da-impressao-3d-sobre]
+= Sobre o Autor
+
+image:image435.jpeg[image,width=285,height=213,align="left",float="right"] Cláudio Luís Marques Sampaio, de apelido de internet
+__Patola__, é graduado em engenharia de computação e tem mestrado em biologia molecular e genética, ambos pela
+Universidade Estadual de Campinas. Desenvolvedor de Software, Administrador de Sistemas, Educador e Palestrante, é
+apaixonado por embarcados, pelo movimento Maker, por impressoras 3D e, claro, pela sua esposa Kimberly. Considera que
+a humanidade já sofre demais com escassez e não há razão para a continuarmos forçando em bens intrinsecamente
+não-escassos, como idéias, implementações, designs e obras culturais. Considera também que a Impressora 3D
+diminui a escassez característica do processo de manufatura, ao reduzir as etapas e trabalho do insumo até a
+obra final. Como entusiasta da não-escassez na forma do __open-source__, procura colocar tudo o que produz,
+de vídeos a obras escritas, passando por software e designs de coisas imprimíveis em 3D ("fisíveis"),
+livremente disponível para modificação, distribuição e reuso. Seus principais endereços de compartilhamento são:
+
+* http://www.makerlinux.com.br/[_http://www.makerlinux.com.br_] -- o portal da empresa _Makerlinux_ que
+gerencia com sua esposa, onde procura agregar todas as suas contribuições de forma que sejam facilmente
+encontráveis.
+* http://www.thingiverse.com/Patola/designs[_http://www.thingiverse.com/Patola/designs_]
+e https://www.youmagine.com/patola/designs[_https://www.youmagine.com/patola/designs_],
+suas páginas de fisíveis em portais dedicados inteiramente a isso.
+* https://github.com/Patola?tab=repositories[_https://github.com/Patola?tab=repositories_] -- página do portal de desenvolvimento coletivo e controle de versão __github__, por onde
+gerencia as mudanças da maioria de suas criações digitais, de softwares a fisíveis e
+textos escritos.
+* https://www.youtube.com/makerlinux[_https://www.youtube.com/makerlinux_] -- canal de youtube, com vídeos também disponibilizados sob licenças livres
+* https://www.youtube.com/channel/UC65ISAck97KwTJRlFHEvTOg[_https://www.youtube.com/channel/UC65ISAck97KwTJRlFHEvTOg_] -- canal de youtube em inglês

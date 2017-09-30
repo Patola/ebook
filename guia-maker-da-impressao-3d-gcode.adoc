@@ -1,0 +1,322 @@
+[#guia-maker-da-impressao-3d-gcode]
+= Diversão com G-Code
+
+Passamos brevemente pelo que é o G-Code em capítulos anteriores, mas não há como negar que o
+conhecimento desta ‘linguagem de máquina’ é essencial ao profissional de impressão 3D em todos os níveis,
+desde identificar e resolver problemas até aumentar a qualidade de suas impressões.
+
+Em todos os momentos, será útil que o leitor possa avaliar o arquivo gerado pelo fatiador (geralmente com
+extensão .gco ou .gcode). Recomendamos que a cada receita aplicada o leitor grave o arquivo e o abra em algum
+editor ou visualizador de texto puro (gedit no Linux, wordpad no Windows, TextEdit no Mac OS X). Se o fatiador
+usado for o **Slic3r**, a seguinte configuração deve ser ligada:
+
+[[slic3rverbosegcode]]
+image::slic3rverbosegcode.png[slic3rverbosegcode,width=553,height=478,align="center",title="No Slic3r, esse ajuste liga os &quot;comentários&quot; no g-code, isto é, dá informação de contexto (onde começam camadas, onde começa brim ou raft, onde é retração, etc.). Isso torna a leitura do g-code muito mais fácil. Ele vem desligado pro default, para o g-code ficar compacto; outros fatiadores colocam comentários sem oferecer a opção. Ter comentários no g-code também auxilia no pós-processamento."]
+
+Para os propósitos deste capítulo, é desejável que o leitor use um controlador de impressão (print host)
+para testar os comandos e ver sua saída. É importante também ter em mente que são comandos que vão mexer
+diretamente com o hardware, e um comando errado pode muito bem afundar o bico na mesa, subir um componente para
+temperaturas excessivas ou provocar acidentes de outros tipos, portanto se aconselha que o leitor fique sempre
+pronto pra desligar a impressora caso perceba que algo do gênero está prestes a acontecer.
+
+O controlador de impressão usado para ilustrar os exemplos aqui será o pronterface da suite printrun, que pode
+ser baixado de _http://www.pronterface.com/#download_ -- este controlador de impressão é simples, autocontido
+e tem "macros" associáveis a botões.
+
+[[pronterfacegcode3]]
+image::pronterfacegcode3.png[pronterfacegcode3,width=630,height=437,align="center",title="Aspecto do pronterface com um arquivo de g-code carregado (representado no painel central) e ligado à impressora 3D. O painel mais à direita são os comandos de G-Code interativos, o painel mais à esquerda são as temperaturas e controles manuais de eixo. A interface e velocidade de conexão são as mesmas usadas no capítulo da configuração do Slic3r, no caso /dev/ttyUSB0 (Linux) e 115200 bps. O comando dado, M117, exibe uma mensagem no painel LCD da impressora."]
+
+== Uma introdução aos comandos G-Code
+
+Até agora mostramos muitos exemplos de código e mesmo falamos alguns __comandos__, mas não dissemos o sentido deles.
+
+O G-Code foi criado no MIT na década de 1950, com as primeiras CNCs. Nasceu para ser usado principalmente por
+cartões perfurados -- somente mais tarde sendo feita em texto comum - que passavam instruções pontuais para as
+máquinas executarem: __vá para a posição X "tal", a posição Y "tal", com velocidade "tal", e baixe
+o instrumento; percorra mais 20 unidades positivas no eixo X na mesma velocidade; suba o instrumento e o desligue__.
+
+Não era essencial que humanos entendessem a "linguagem" e portanto, diferente das linguagens de programação
+que usamos hoje em dia que usam _mnemônicos_ em inglês para nos lembrarmos das palavras-chave ("print",
+"echo", "for", "while", "read", etc.), os comandos são compactos e representados por uma letra
+seguida de um número: "G"; por exemplo, `G28`.
+
+Os comandos "G", aliás, foram os primeiros comandos do G-Code. São chamados de "comandos
+preparatórios". Diferentemente de outras linguagens com padronização oficial e comitês de decisão, o G-Code
+é uma linguagem extraordinariamente variada, com comandos e até a sintaxe dependendo muito de implementação
+específica. Nas impressoras 3D de mercado, por exemplo, os comandos "G" são usados para operações herdadas
+das CNCs, e as outras operações são implementadas por comandos "M", como "`M117`". Os comandos
+"M" também são chamados de "funções miscelâneas". Nosso extrusor ou bico não tem esse nome no G-Code;
+nas CNCs, era uma ferramenta como broca ou serra, e ferramenta em inglês é "Tool"; o comando de G-Code que
+seleciona ferramentas é "T" seguido da numeração da ferramenta, começando por 0 (o primeiro extrusor é
+selecionado com `T0`, o seguindo com `T1`, etc.).
+
+A sintaxe do G-Code é uma única linha de qualquer tamanho, no seguinte formato:
+
+**[purple]##<número de linha opcional>## [blue]##<comando>## [green]##<parâmetros do comando>## [teal]##<checksum>## [red]##<comentário>##**
+
+**Os espaços são opcionais e ignorados, inclusive no meio de comandos**. Uma linha como `G1_X100.500_Y109.500_E0.9516_F369` (com "_" no lugar de espaço para melhor visualização) será interpretada
+exatamente como `G1X100.500Y109.500E0.9516F369` ou ainda `G_1X10_0._500Y109.5_00E0.9516_F36_9`.
+
+* **[purple]##Número de linha##**: normalmente nos códigos de impressoras 3D não são usados, mas são suportados pela maioria
+dos softwares apesar de desencorajados. O número tem que ser o primeiro campo da linha e precedido de "N", além
+de sequencial: se a primeira linha começa com "N1", a segunda deve ser "N2". A utilidade desses números é
+primariamente para estruturas de _loops_ e __condicionais__, que os firmwares de impressora 3D atualmente nem mesmo
+suportam. Por isso não trataremos os comandos **IF**, **GOTO**, **WHILE**, os *registradores* e as *expressões
+condicionais* de G-Code.
+* **[blue]##Comando##**: É a palavra-chave que vai declarar a ação a ser tomada, com ou sem
+argumentos. O G-Code não aceita mais de um comando por linha. Nas impressoras 3D, estamos limitados a três comandos:
+`G`, `M` e `T`.
+* **[green]##Parâmetros##**: Assim como os comandos, os _parâmetros_ são dados por uma letra seguida por
+um número (positivo ou negativo; os negativos, obviamente, começam com o sinal de "-"). Os tipos de parâmetro
+mais comuns passados para comandos são:
+** `S` era usado originalmente em CNCs para designar a velocidade (speed)
+de rotação, mas em impressoras 3D este parâmetro __não tem esta função__. Ele é usado como um parâmetro
+genérico para _distância_ ou __temperatura__, sendo usado em comandos de retração e ajuste de hotend e mesa.
+** `R` de retract, velocidade adicional ligada à retração, usada em poucos firmwares.
+** `F` de taxa de alimentação
+(feedrate), sendo usado nas impressoras 3D para designar velocidade. A unidade utilizada dependerá do comando e da
+configuração do firmware.
+** `T` é em poucos firmwares usado para feedrate de recuperação da retração. Note
+que aqui T é parâmetro, não comando.
+** `X`, `Y` e `Z`: coordenadas/distâncias. `X10 Y5 Z30*`, por exemplo,
+significa 10 unidades em X, 5 em Y, 30 em Z. O significado dessas coordenadas dependerá da configuração e do
+comando -- por exemplo, podem ser coordenadas absolutas ou relativas à posição atual da ferramenta.
+** `E`:
+quantidade de filamento do extrusor.
+** `A`, `B` e `C`: coordenadas/distâncias angulares ou rotacionais. Não
+usadas em impressoras 3D.
+** `P`: parâmetro de uso geral, sem significado predefinido, para comandos variados.
+* **[teal]##Checksum##**: É um campo que contém um asterisco seguindo de um número de 0 a 255. Este número é calculado
+a partir de todos os caracteres da linha atual até antes do asterisco, e serve para em conexões com ruído fazer
+uma verificação simples se todos os caracteres chegaram corretamente. Não é usado em impressoras 3D modernas.
+* **[red]##Comentário##**: Um campo que começa com ponto-e-vírgula (;) e é totalmente ignorado pelo interpretador de
+G-Code. Serve simplesmente para humanos entenderem o código. Uma linha de G-Code pode ser composta somente de
+comentário, sem comandos.
+
+Note que alguns comandos podem retornar uma mensagem que pode consistir de uma ou mais linhas no mesmo "terminal
+controlador", como um comando que peça a versão do firmware ou o estado atual do extrusor.
+
+Considerando que na prática não usaremos números de linhas e checksums e que usaremos espaços para ficarem
+mais legíveis, os comandos de g-code são assim:
+
+**[blue]##Comando## [green]##parâmetros## [red]##; comentário##**
+
+Exemplo:
+
+`[blue]##G1## [green]##E-0.5 F1200## [red]##; ooze retract##`
+
+O `G1` é um comando de __movimentação__. _O que_ ele vai movimentar, neste caso, será determinado pelos
+parâmetros. Neste caso, o parâmetro "`E`" nos diz que é 0,5mm do filamento, mas com o sinal de menos,
+significando que ele está retornando e não avançando com o filamento; e com a velocidade dada por F1200, que
+é 1200 mm/min (20 mm/s). O comentário nos esclarece que isto é um "ooze retract", ou seja, uma retração
+para evitar escorrimento.
+
+Agora que entendemos a sintaxe, portanto, vamos aos comandos. Comecemos pelos comandos G mais básicos.
+
+* `G0` e `G1` -- são os comandos de movimento. Em seu passado de CNC, o G0 era movimento "rápido" (na
+velocidade máxima suportada pela máquina, equivalente ao __travel__) enquanto o G1 era o movimento linear
+controlado. Em quase todos os firmwares de impressoras 3D de mercado, no entanto, o G0 e o G1 são exatamente o
+mesmo comando, implementados como sinônimos e tendo, obviamente, os mesmos parâmetros (curiosamente, fatiadores
+como Cura e MatterControl ainda geram g-code que para alguns movimentos usa G0, para outros G1). O comando tem 6
+parâmetros possíveis; nem todos precisam ser colocados, mas é preciso providenciar pelo menos um. São eles,
+onde _n_ é o valor numérico (inteiro ou racional) que segue:
+** `X__n__:` A posição para a qual mover o eixo X.
+** `Y__n__`: A posição para a qual mover o eixo Y.
+** `Z__n__`: A posição para a qual mover o eixo Z.
+** `E__n__`: A
+quantidade de plástico a extrudar entre o ponto inicial e final do movimento, por default em unidade de comprimento
+de filamento que entra (mm, por exemplo).
+** `F__n__`: A velocidade (por minuto) deste movimento.
+** `S__n__`: _flag_
+para ativar a verificação do endstop. Com `S0` (default), o endstop é ignorado, isto é, o firmware não vai
+parar se o fim de curso for ativado. Com `S1`, o movimento pára quando o fim de curso de qualquer eixo for detectado.
+
+Se você já se perguntou sobre a denominação de "5D firmware" nas opções de G-Code do Simplify3D, ela se
+refere a este comando -- os 5 parâmetros ou "dimensões" `X`, `Y`, `Z`, `E` e `F`. Implementações velhas dos comandos
+usavam menos parâmetros e o movimento era quebrado em duas partes. Quase todo firmware existente hoje em dia é 5D.
+
+O movimento do `G0`/`G1` é "interpolado" entre os pontos. O que isso quer dizer é que ele calcula uma linha reta
+no espaço entre a origem e o destino (a menor distância entre dois pontos). Devido ao modo como a impressão
+3D funciona, no entanto, com camadas horizontais, comandos `G0`/`G1` que envolvem o eixo Z são raros, a maioria
+funcionando em um plano -- nesse caso o Z é simplesmente omitido.
+
+Exemplos:
+
+[source,gcode]
+----------
+G1 X20 Y20 F180 ; vai para X 20, Y 20 na velocidade de 180 unidades
+                ; por minuto sem extrudar.
+----------
+
+[source,gcode]
+----------
+G0 X30 Y30 Z30 F180 E0.8 ; vai para X 30, Y 30, Z 30 na velocidade
+                         ; de 180 unidades por minuto extrudando
+                         ; 0,8 unidades de comprimento de filamento
+                         ; nesta trajetória.
+----------
+
+Parece um comando simples o suficiente, não? Mas existem algumas peculiaridades a se notar, que valem também
+para outros comandos:
+
+. Pra começar, preste atenção que o parâmetro de velocidade toma como entrada a unidade _por minuto_ de
+movimento. Isto está em contraste com a configuração da maioria dos fatiadores, que coloca tais velocidades em
+comprimento por segundo. É comum o usuário que começa a usar g-code manualmente se esquecer de converter e não
+entender o resultado.
+. Qual comprimento, afinal, ele usa? A maioria dos firmwares usa como default o *sistema
+métrico* para comprimento (milímetros), que pode ser mudado para o *sistema imperial* (polegadas) com o comando
+`G20`, e mudado de volta para milímetros com `G21`. Essa mudança fica somente na _RAM_ da impressora, e volta
+ao default quando desligada.
+. Se você não colocar a velocidade, qual valor o firmware adota? A maioria dos
+softwares adota a política "pegajosa" (__sticky__), isto é, retém o último valor usado para o comando. Se
+você especificar, sem mais nenhum parâmetro, `G0 F600` e logo depois `G1 X40 Y10` (lembre-se, `G0` e `G1` são o
+mesmo comando), ele vai para a posição X 40, Y 10 a 600 milímetros por segundo.
+. As coordenadas dadas são
+_em relação à posição que o extrusor está_ ou __em relação ao ponto (0,0,0) da impressora__, que definimos
+em seção anterior? Assim que é ligada, o _default_ dos firmwares é usar a coordenada **absoluta**, isto é, se
+você manda `G1 X40 Y10 Z20`, o extrusor sairá de qualquer coordenada em que estiver para ir à coordenada (40,
+10, 20) __em relação à origem__. Para mudar este comportamento, você usa o comando `G91`, que interpretará
+as próximas coordenadas como __relativas__, isto é, __em relação ao ponto atual__; se seu extrusor estiver na
+coordenada (10,10,10) e você enviar `G91` e depois `G1 X40 Y10 Z20`, ele vai ser dirigir a (10+40, 10+10, 10+20) = (50,
+20, 30). No entanto, isto só funciona se a origem tiver sido determinada, pelo procedimento chamado de _homing_
+(dado pelo comando `G28`); se você mandar o comando de coordenada absoluta antes do __homing__, o comportamento
+é indeterminado e dependente de configuração e firmware. Em deltas com Marlin, por exemplo, por segurança o
+extrusor não se move nessas condições. Para voltar ao modo absoluto, se usa `G90`. Veja que tais modos não
+valem para as coordenadas do extrusor -- ele tem seu próprio status, ajustado para absoluto com o G-Code `M82`
+(default) e para relativo com o `M83`.
+
+[[g0g1movimentorelativoblender]]
+image::g0g1movimentorelativoblender.png[g0g1movimentorelativoblender,width=642,height=459,align="center",title="O movimento relativo no comando `G1`. Estando na coordenada espacial X=2, Y=7, Z=5, o comando `G1 X7.0 Y-2.0 Z-2.0` se desloca para a coordenada X=9, Y=5, Z=3. Os pontos decimais não são necessários mas é considerado boa prática. Para se chegar ao mesmo destino usando coordenadas absolutas (`G90`), bastaria usar `G1 X9.0 Y5.0 Z3.0`."]
+
+* `G2` e `G3` são comandos de movimentação como G0/G1 mas para arcos, como descritos na seção
+sobre o problema dos círculos.
+* O `G4` é um comando de pausa por tempo. Para uso interativo de G-Code não
+tem realmente utilidade, mas inserido em um arquivo .gcode de impressão pode servir para permitir que um elemento
+esfrie ou aqueça, ou até dar tempo para haver intervenção do operador (apesar que, neste caso, se a máquina
+tiver um painel interativo, serão preferíveis os comandos _M226_ ou __M600__). Parâmetros do G4:
+** `P__n__` -- tempo em milissegundos para a pausa.
+** `S__n__` -- tempo em segundos para a pausa.
+
+`G4 P10000` é equivalente a `G4 S10`.
+
+* `G10`: comando para retração de firmware, por default não usado pelos fatiadores (que implementam a retração
+usando G1). Usa os ajustes colocados pelo comando __M207__.
+* `G11`: "unretract" (volta da retração) por firmware,
+por default não usado pelos fatiadores (que implementam o unretract usando G1). Usa os ajustes colocados pelo
+comando __M208__.
+* `G20`: passa a interpretar as unidades usadas nos parâmetros como polegadas. A configuração
+é perdida quando a impressora é desligada.
+* `G21`: passa a interpretar as unidades usadas nos parâmetros como
+milímetros. A configuração é perdida quando a impressora é desligada.
+* `G28`: Implementa o __homing__. Quando
+a impressora 3D é ligada, ela não "sabe" em que coordenadas o extrusor está posicionado. Quando o comando
+`G28` é enviado para a impressora 3D cartesiana, ela vai até o _fim de curso_ de cada eixo, deixando no final
+do procedimento o extrusor na coordenada X=0, Y=0, Z=0 -- a "origem". No caso das impressoras 3D delta,
+o `G28` leva os braços até o topo de cada torre, terminando com o _effector_ no centro da mesa no plano XY e
+na maior altura alcançável da impressora (Z máximo) -- (0,0,Zmax). De ambos os modos, a impressora passa a
+"saber" em que coordenada está, e se os próximos movimentos do extrusor ou effector forem dados por ela,
+ela continuará tendo esta referência.  +
+O `G28` não necessariamente vai até o fim de curso de _todos_ os
+eixos. Se forem passados parâmetros de eixos, ele vai até o fim de curso dos parâmetros (o valor numérico do
+parâmetro é ignorado). Por exemplo, `G28 X0 Y0` vai até o fim de curso do eixo X e Y. É importante notar que
+o comportamento do `G28` não é muito padronizado e existem firmwares que podem fazer o _homing_ completo mesmo
+quando se especificam os eixos -- o que torna um risco colocar esse código na configuração de G-Code de fim
+de impressão. Alguns firmwares usam "flags" de compilação para alterar o comportamento do _homing_ -- por
+exemplo, o Marlin tem uma flag `Z_SAFE_HOMING` que faz com que o comando primeiro faça homing em X e Y, então vá
+ao centro da mesa, baixe a sonda de autonivelamento e a use para o homing em __Z__. Reiterando os parâmetros:
+** `X__n__` -- vai até o fim de curso do eixo X. _n_ é ignorado.
+** `Y__n__` -- vai até o fim de curso do eixo Y. _n_
+é ignorado.
+** `Z__n__` -- vai até o fim de curso do eixo Z. _n_ é ignorado.
+
+[[homingdecartesianavsdelta]]
+image::homingdecartesianavsdelta.png[homingdecartesianavsdelta,width=642,height=468,align="center",title="Homing de uma impressora 3D cartesiana (Prusa Mendel, à esquerda) e uma delta (Kossel Mini, à direita). Enquanto na cartesiana o homing referencia o ponto mínimo de todos os eixos, na delta o Z achado é a altura máxima, pois o fim de curso é no topo. Se a delta não tiver autocalibração de mesa, a configuração de um &quot;Zmax&quot; com valor errado a fará ficar com posicionamento vertical igualmente errado. A delta sempre faz homing em todos os postes, não faz homing “por eixo” como uma cartesiana."]
+
+* `G29`, `G32`, `G33` e os vários modos de *autonivelamento de mesa* -- Neste ponto o leitor já deve estar razoavelmente
+confortável com a noção de autonivelamento de mesa: uma chave ligada ao extrusor detecta a distância dele
+à mesa em vários pontos, calcula a inclinação da mesa e compensa, via software, no cálculo das coordenadas
+passadas ao G-Code. Certo? A princípio sim, e este procedimento surgiu nos firmwares através do comando G29. No
+entanto, enquanto o Marlin continuou a estender esse comando para suas extensões de autonivelamento, o Repetier
+Firmware deixou nele só a funcionalidade mais básica, reservando o comando `G32` para a avançada, e ainda passou a
+utilizar o `G33` (utilizado no Marlin para calibração automática de deltas) para sua "distortion correction",
+equivalente à mesh leveling do Marlin. Já o Smoothieware usa `G32` para autocalibração de parâmetros de delta,
+e `G31` e `G30` para o autonivelamento, nem mesmo tendo o `G29`.  +
+Confuso? Você não é o único! Mas, colocando de maneira tabulada:
+** O *Smoothieware* não tem o comando `G29`.
+** O *Repetier Firmware* tem o comando `G29`, mas ele
+não faz autonivelamento verdadeiro -- ele apenas mede Z em 3 pontos e tira um valor médio, não inclinando a
+impressão subsequente.
+** O *Marlin Firmware* tem o comando `G29` mais sofisticado e configurável de todos. E na
+versão 1.1.0 ele tem ainda um novo modo chamado de "Nivelamento de Mesa Unificado" que, se ligado, redefine
+o `G29` e adiciona _*muito*_ mais parâmetros e configurabilidade ao comando.
+
+[NOTE]
+.Sonda de autonivelamento
+====
+O autonivelamento é associado a uma _sonda_ (chave) no extrusor. Essa sonda é que vai sentir a distância a que
+estará da mesa em cada um dos pontos. Se a sonda fica abaixo do nível do bico, ela precisará ser abaixada somente
+durante a sondagem e recolhida no final, para não bater na mesa quando a impressão começar. Ela pode também
+estar acima do nível do bico e não precisar ser recolhida, como os sensores indutivos. Mas em praticamente todos
+os casos ela não fica no nível do bico, e a diferença de altura entre ela e o bico precisa ser informada na
+configuração, assim como outros detalhes técnicos -- qual o pino do microcontrolador que usa, o tipo de sinal
+(positivo ou negativo), que coordenadas sondar, etc. Essas configurações todas são definidas na compilação do
+firmware e geralmente também se tornam acessíveis pela EEPROM. Esses detalhes variam enormemente com o hardware
+e o firmware usado.
+====
+
+Nas impressoras que têm o autonivelamento, o `G29` é colocado no "Start G-Code" do
+fatiador. Para funcionar ele exige que a impressora já saiba as coordenadas do extrusor, ou seja, todo comando de
+autonivelamento vai exigir que o _homing_ (`G28`) já tenha sido feito, então no Start G-Code haverá o `G28` e depois
+o `G29` (ou `G32` no caso do Repetier). Algumas configurações colocam o `G29`/`G32` apenas depois de a mesa ter atingido a
+temperatura-alvo, pois ela se expande ligeiramente com o aquecimento e sondá-la já expandida evita distorções.
+
+O autonivelamento feito desse jeito é sempre necessário em toda impressão, pois a inclinação da mesa fica
+na RAM -- memória volátil - do microcontrolador e não é gravada. Adicionalmente, ela é resetada cada vez que
+se faz homing (`G28`), precisando ser refeita.
+
+** **Modos de detecção de desnível**: O autonivelamento funciona
+de uma entre três formas:
+. Mede-se o Z em 3 pontos e calcula-se a média (`G29` do Repetier);
+. Mede-se o Z em 3 a 8 pontos e calcula-se um plano inclinado que passa naqueles pontos (autonivelamento padrão);
+. Mede-se o Z em vários pontos da mesa e calcula-se uma malha de planos inclinados interligados que mapeia as
+"imperfeições" da mesa. Este método se usa quando há deformação da mesa.
+
+** **Modos de correção do desnível**:
+. Usa-se uma média dos níveis de Z para a primeira camada. Se a diferença for grande entre os
+desníveis, poderá fazer o bico raspar na mesa. Ou ainda fazer com que o filamento não adira o suficiente. É
+usado apenas no G29 do Repetier Firmware.
+. Com o plano de desnível detectado no método 2, toma-se uma de
+duas ações:
++
+a. Calcula-se por software uma transformação de inclinação (rotação) a ser adotada para
+cada coordenada, para compensar a inclinação;
+b.  Usam-se motores na impressora 3D para corrigir/rotacionar a mesa para que fique paralela à direção de impressão.
++
+. Com o mapa de desnivelamento do método 3,
+a. faz-se uma transformação diagonal em cada paralelepípedo do mapa; ou
+b. faz-se uma transformação diagonal regressiva em cada paralelepípedo do mapa, tornando-se mais paralela à medida que se aproxima de uma altura H.
+
+[[metodosdecorrecaodemesa]]
+image::metodosdecorrecaodemesa.png[metodosdecorrecaodemesa,width=642,height=820,align="center",title="Ilustração dos métodos de correção da mesa. (1) é a mesa reta, sem imperfeições, com a peça impressa. (2) é a mesa inclinada, seja por transformações de software para compensar as coordenadas, seja por ajuste da mesa por motores. (3) é transformação por distorção, para a impressão acompanhar o relevo da mesa; e (4) é a transformação por distorção compensada até uma altura H, a partir da qual a peça segue em dimensões normais."]
+
+**Comandos M de interesse**: Os comandos `M` são extensões do G-Code inicialmente usadas para elementos
+particulares das impressoras 3D em relação às suas parentes CNC, mas logo se tomaram mais que isso, controlando
+até motores. Aqui uma lista dos mais úteis:
+
+* `M0` -- parada incondicional, esvaziando o buffer e desligando motores e elementos de aquecimento.
+* `M18`:
+desabilita todos os motores de passo, que em caso contrário permanecem ligados e prendendo o movimento. Pode
+ser útil, por exemplo, caso você precise mexer no carro X manulmente e ver se está deslizando suavemente no
+trilho. Para a impressora voltar a energizá-los, use `M17`.
+* `M104 S__nn__`: ajusta a temperatura-alvo do
+extrusor atual para __nn__, sem bloquear o prompt.
+* `M106 P__m__ S__nn__`: ajusta a ventoinha de número _m_
+para a intensidade _nn_ de 0 a 255. `M107` a desliga.
+* `M109 S__nn__`: ajusta a temperatura-alvo do extrusor atual
+para _nn_ e bloqueia o prompt, esperando que ele chegue à temperatura para liberar.
+* `M114`: mostra posição atual (X, Y, Z e E)
+* `M115`: mostra versão e capacidades do firmware.
+* `M119`: mostra status dos endstop
+(acionados ou não).
+* `M140 S__nn__`: ajusta a temperatura-alvo da mesa para __nn__, sem bloquear o prompt.
+* `M190 S__nn__`: ajusta a temperatura-alvo da mesa para __nn__, bloqueando o prompt até que seja atingida.

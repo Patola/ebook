@@ -126,7 +126,8 @@ correção é também uma informação preciosa, uma lição aprendida, e para q
 correções feitas no documento serão anotadas em seu __Changelog__, no mesmo repositório em que ele se encontra.
 ====
 <<<
-== Agradecimentos
+
+.Agradecimentos
 Este livro teve muitos colaboradores indiretos, que auxiliaram o autor na resolução de dúvidas, sugestão de
 temas, correção de erros e demais contribuições que permitiram que o conteúdo saísse... __amaciado__. Ricardo
 Cavalini do __Makers__, com sua didática pró-ativa e avaliação metódica, exterminou muitos erros pontuais
@@ -193,7 +194,7 @@ impacto percebido nos círculos _Maker_ para inclusão no livro, mas também cit
 como patentes, artigos científicos, _white papers_ e outras publicações formais quando relevante e útil.
 ====
 <<<
-= Quer contribuir? Você pode!
+.Quer contribuir? Você pode!
 Este livro é o resultado de anos de prática, leituras, experimentos, debates, vídeos, palestras, aulas, oficinas,
 parcerias e fabricações do autor. O foco desde o início foi trazer o máximo possível de compreensão com o
 mínimo possível de pré-requisitos, o que é uma tarefa hercúlea considerando um campo que agrega e se utiliza
@@ -6447,7 +6448,7 @@ inglês. Fala sobre hidrofilia, hidrofobia e hidroscopia também:
 http://www.energyvanguard.com/blog/78016/Introduction-to-the-Physics-of-Water-in-Porous-Materials[_http://www.energyvanguard.com/blog/78016/Introduction-to-the-Physics-of-Water-in-Porous-Materials_]
 ====
 
-== Filamentos de impressão 3D
+=== Filamentos de impressão 3D
 
 Apresenta-se aqui uma lista não-extensiva de materiais diferentes usados como filamentos de impressão 3D com
 suas principais características, procurando destacar vantagens e desvantagens no uso prático.
@@ -6474,7 +6475,7 @@ bastante e mesmo os dopantes e maneiras de se fabricar um material podem levar a
 se adquirir qualquer material para impressão 3D devem-se consultar as informações do fabricante, que incluem
 as temperaturas de extrusão e mesa adequadas.
 
-=== ABS
+==== ABS
 
 ABS é o primeiro e principal material usado em impressão 3D, e embora historicamente seu uso apresente uma tendência
 à diminuição pelo aumento da oferta de outros materiais com propriedades mais desejáveis, ele continua forte
@@ -6516,7 +6517,7 @@ O ABS "natural", sem pigmentos, tem uma cor bege clara, quase branca, e é opaco
 queimado, liberando monóxido de carbono, cianeto de hidrogênio e em altas temperaturas (acima de 400°C) pode
 liberar butadieno e acrilonitrila (carcinogênicos) e estireno (tóxico).
 
-=== PLA
+==== PLA
 
 Ácido Polilático, PLA. Mais que uma alternativa ao ABS, o PLA é bastante comparado a ele por quatro razões:
 ele foi o primeiro plástico de mercado a aparecer como alternativa; tem o preço no varejo quais igual ao do
@@ -6560,7 +6561,7 @@ O sítio web _ecycle_ tem uma bela caracterização do PLA do
 ponto de vista de plásticos de engenharia, mercado e ecologia:
 http://www.ecycle.com.br/component/content/article/37/738-pla-o-plastico-compostavel.html[_http://www.ecycle.com.br/component/content/article/37/738-pla-o-plastico-compostavel.html_]
 
-=== PETG
+==== PETG
 
 Era de se esperar que um dos plásticos mais presentes na nossa civilização, o conhecido e barato plástico
 "PET" (polietileno tereftalato) das garrafas de refrigerantes, constasse imediatamente na lista de materiais
@@ -6579,7 +6580,7 @@ próximas do ABS (100-110°C de mesa, 240°C no extrusor).
 [[copopetgtranslucido]]
 image::copopetgtranslucido.jpeg[copopetgtranslucido,width=495,height=457,align="center",title="Copo de PETG impresso, ao lado de uma garrafa PET de refrigerante. Note-se que a peça é apenas decorativa, não se recomenda imprimir itens com fins alimentícios em impressoras 3D comuns."]
 
-=== Tritan
+==== Tritan
 
 _Tritan_ é um copoliéster de engenharia com alta clareza e transparência, resistência química e a impacto
 e com estabilidade hidrolítica que concorre nos mesmos mercados do PET e policarbonato, inicialmente extrudado
@@ -6590,7 +6591,7 @@ ditas sobre esse tema. É extrudado em temperaturas altas, a recomendada pela Ta
 e 90°C na mesa, mas temperaturas maiores dão melhor acabamento e aderência entre camadas. Assim como o PLA,
 dissolve em tetraidrofurano. Costuma estar disponível na maior parte das vezes na forma natural sem corantes.
 
-=== ASA
+==== ASA
 
 Abreviação de Acrilonitrila Estireno Acrilato (__**A**crilonitrile **S**tyrene **A**crylate__), é um plástico
 de composição e mercado semelhante ao ABS, tendo como principais diferenciais menor contração de molde (0,4
@@ -6602,7 +6603,7 @@ denso -- 1,07 g/cm^3^ ao invés de 1,04 do ABS.
 Geralmente extrudado em temperaturas próximas ao ABS, com um mínimo de 240°C no extrusor e 120°C na mesa. Antes
 usado somente em impressoras industriais, já existem vendedores de filamentos do mercado de massa que o fabricam.
 
-=== Nylon
+==== Nylon
 
 Nylons, ou poliamidas alifáticas ou semi-aromáticas, são um conjunto de termoplásticos tão presentes na vida
 moderna que seria inevitável sua utilização em impressora 3D. De fato, a utilização é tão universal que
@@ -6637,7 +6638,7 @@ procedimentos de segurança). Nylon é bem compatível com cola PVA, fita azul d
 mesa. Recentemente compósitos com nylon (por exemplo, com fibra de carbono) começaram a se tornar populares pela
 reunião das propriedades desejáveis que adquirem, especialmente em resistência mecânica.
 
-=== PMMA (acrílico)
+==== PMMA (acrílico)
 
 Em termos de propriedades mecânicas o PMMA -- polymethyl metacrylate / polimetil-metacrilato - lembra o PLA por sua
 rigidez, mas é mais resistente a temperatura, sofre mais warp e apresenta geralmente transparência ou translucidez
@@ -6647,7 +6648,7 @@ contra ~1,24 deste último). Como o ABS, é solúvel em acetona. É extrudado em
 e por sofrer warp, necessita de mesa aquecida a pelo menos 100°C. É bastante difícil de encontrar no Brasil e
 tem a importação bem cara, o que é lamentável pois é um dos poucos filamentos realmente rígidos disponíveis.
 
-=== ABS MG94
+==== ABS MG94
 
 Ainda que o ABS "comum", de mercado, seja extrudável em temperaturas compatíveis com os elementos aquecedores
 de impressoras 3D comuns, a variedade _MG94_ do polímero, sendo considerada de maior qualidade, é uma exceção
@@ -6656,7 +6657,7 @@ as altas temperaturas desse _grade_ de ABS permitem uma aderência entre camadas
 superfície com a preservação de detalhes também é notável. É impresso com extrusor em 270°C e temperaturas
 de mesa a 110-120°C.
 
-=== Policarbonato
+==== Policarbonato
 
 É um plástico translúcido rígido bastante usado em objetos industriais e até em vidros à prova de bala. É
 extremamente resistente mecanicamente -- principalmente a impacto - e tem também moderada resistência química. Tem
@@ -6670,7 +6671,7 @@ variantes mais coloridas e opacas. O policarbonato industrial tem grande varieda
 É conhecido como um dos plásticos que mais libera BPA, como descrito na seção sobre potenciais danos à saúde
 dos plásticos.
 
-=== HDPE / PEAD
+==== HDPE / PEAD
 
 Polietileno de alta densidade, HDPE, é um plástico frequentemente usado para itens alimentícios como garrafas de
 leite e outros potes de líquido e é conhecido por ser bastante reciclável, podendo ser derretido e solidificável
@@ -6679,7 +6680,7 @@ tem coeficiente de expansão térmica alto e sofre warp excessivo, e além disso
 precisando de superfícies "diferentes" com celulose como papelão ou cortiça. É extrudado a 250°C, com
 mesa a no mínimo 100°C.
 
-=== POM (Poliacetal)
+==== POM (Poliacetal)
 
 O **P**oli**O**xi**M**etileno, também conhecido como poliacetal ou pela marca __Delrin__, é um plástico rígido,
 resistente ao desgaste e de baixo coeficiente de atrito, sendo bastante usado em peças de máquinas. Tem ótima
@@ -6691,7 +6692,7 @@ os filamentos de mercado têm alta variação de temperaturas de extrusão, e as
 com resíduos de formaldeído (formol). Por outro lado, a mesa deve ter a temperatura mais alta possível, acima
 de 120°C se a impressora chegar a isso, e com câmara fechada.
 
-=== Ultem 9085 e 1010
+==== Ultem 9085 e 1010
 
 A marca _Ultem_ da Sabic, usada para designar filamentos de polieterimida (PEI) de altíssima temperatura de
 extrusão -- entre 330° e 350°C -- e câmara aquecida a 195°C -, e que têm temperatura de transição vítrea
@@ -6716,7 +6717,7 @@ fabricações. Isso é complicado pelo fato que por causa da alta temperatura, e
 de "recozimento" da peça para diminuir os interstícios e tensões remanescentes entre camadas e chegar à
 sua resistência final.
 
-=== Flexíveis
+==== Flexíveis
 
 Um tipo especialmente "infame" de filamento que surgiu com o mercado de massa foram os filamentos
 __flexíveis__. _Infame_ porque são provavelmente o tipo mais difícil de filamento para se usar em uma impressora. O
@@ -6729,7 +6730,7 @@ de impressão para que funcione a contento. Por exemplo, um extrusor que use fil
 elástica gigantesca por causa da maior distância entre o tracionador e a área de derretimento, quase sempre a
 ponto de inviabilizar o uso do flexível.
 
-==== TPE
+===== TPE
 
 TPE, ou TermoPlástico Elastômero, é o nome dado para a classe de copolímeros ou mistura de polímeros
 (como um plástico e uma borracha) que consistem de materiais com propriedades tanto termoplásticas quanto
@@ -6745,7 +6746,7 @@ de elasticidade e flexibilidade que outros TPEs.
 A impressão de todos os TPEs, dados os efeitos de histerese elástica, como apresentar "fiapos" - o efeito
 denominado de "stringing" - durante a impressão, que são removidos no final.
 
-==== TPU
+===== TPU
 
 [[tensordefilamento]]
 image::tensordefilamento.png[tensordefilamento,width=642,height=607,align="center",title="Uma impressora 3D "reprap" doméstica com algumas adaptações para funcionar com filamentos flexíveis. A peça branca é um &quot;esticador de filamento&quot;, pois se o filamento chega ao extrusor sem tensão de resistência, a chance de &quot;embolar&quot; nos mecanismos aumenta bastante. O tensor de filamento está em https://www.thingiverse.com/thing:692327."]
@@ -6757,7 +6758,7 @@ outros TPEs incluindo os PLAs flexíveis, apresentam grande resistência de queb
 solventes e a abrasão. Servem para peças como pneus de carro de controle remoto e peças de articulação. Outra
 diferença que torna os TPUs distinguíveis de outros TPEs é a aparência geralmente mais fosca e menos lisa.
 
-=== Imitações de materiais
+==== Imitações de materiais
 
 Certamente é muito importante ter controle sobre a aparência dos objetos impressos especialmente quando têm
 finalidade decorativa. Fabricantes criativos, geralmente se utilizando da receita da mistura de um pó muito fino
@@ -6772,7 +6773,7 @@ para minimizar a abrasão. Se recomenda um bico de 0,6 a 0,8mm para o uso desses
 Note-se também que costumam ser ao mesmo tempo mais densas (ou seja, menos rendimento pelo mesmo peso) e mais
 caras que materiais convencionais.
 
-==== Imitação de Metal
+===== Imitação de Metal
 
 Marca mais conhecida: Colorfabb (Copperfill, Bronzefill e outros). Além de pioneiros, estabeleceram o "padrão"
 para outros fabricantes que fazem os desse tipo. O filamento é PLA com partículas de metal (~30%), tornando-se assim
@@ -6782,7 +6783,7 @@ e para adquirir o tom metálico característico deve ser bastante polida, prefer
 [[bronzefillecopperfill]]
 image::bronzefillecopperfill.jpeg[bronzefillecopperfill,width=516,height=397,align="center",title="Copperfill (esquerda) e bronzefill (direita). As pelotas abaixo são o plástico do filamento em sua cor natural."]
 
-==== De metal para fundição / sinterização
+===== De metal para fundição / sinterização
 
 São uma extrapolação dos filamentos de metal. Ao invés de ter uma porcentagem menor de metal, o filamento é
 quase todo metal (88%), com uma minoria de plástico. A empresa _Virtual Foundry_ tem os filamentos Filamet Copper™
@@ -6802,7 +6803,7 @@ processadas, equivalem a uma peça de impressão 3D industrial SLM, caríssima. 
 [[filametcopperpatola]]
 image::filametcopperpatola.jpeg[filametcopperpatola,width=642,height=426,align="center",title="Filamet Copper(tm) em sua forma crua depois de impresso, à esquerda; e depois de passar em processos temporizados para sinterização no forno de mufla, à direita. A forma resultante é metal sólido e conduz eletricidade. Foto do autor."]
 
-==== Imitação de madeira
+===== Imitação de madeira
 
 Também uma mistura de serragem (40%) bem fina em PLA com agentes ligantes, a imitação de madeira com sua mais
 famosa encarnação sendo a "Laywoo-D3" tem a curiosa propriedade de ter sua cor final variando de acordo
@@ -6812,7 +6813,7 @@ com a temperatura de impressão, que pode ir de 180°C até 240°C. Truques no f
 [[pecalaywood3]]
 image::pecalaywood3.jpeg[pecalaywood3,width=385,height=296,align="center",title="Peça fabricada com Laywoo-D3"]
 
-==== Fibra de Carbono
+===== Fibra de Carbono
 
 A Fibra de Carbono é uma estrutura super-resistente usada em carros e aviões. Pó de fibra de carbono é
 misturado a ABS (~20%, existem variedades com PLA) pra lhe conferir maior estabilidade dimensional e resistência
@@ -6825,7 +6826,7 @@ impresso tem uma superfície fosca e ligeiramente rugosa.
 [[colorfabbfibradecarbono]]
 image::colorfabbfibradecarbono.png[colorfabbfibradecarbono,width=336,height=347,align="center",title="Colorfabb XT-CF20, um filamento com fibra de carbono."]
 
-=== Condutivos
+==== Condutivos
 
 Os filamentos que por projeto conduzem eletricidade pertencem a duas categorias principais: filamentos que
 apresentam uma condutividade mínima para poder servirem para peças "anti-estáticas" que descarregam a carga
@@ -6856,14 +6857,14 @@ temperaturas recomendadas.
 [[filamentocondutivoblackmagic3d]]
 image::filamentocondutivoblackmagic3d.png[filamentocondutivoblackmagic3d,width=564,height=445,align="center",title="Filamento condutivo com grafeno da Graphene 3D Lab, com resistividade volumétrica anunciada de 0,6Ω/cm³ – fonte: http://filament2print.com/pt/grafeno/653-filamento-conductivo-de-grafeno-175mm.html"]
 
-=== Solúveis
+==== Solúveis
 
 Filamentos de material _solúvel_ têm a finalidade específica de serem usados em extrusores duplos ou triplos. A
 idéia é o filamento servir para as estruturas de suporte que permitem formas complexas, e uma vez impresso,
 ao invés da remoção mecânica desses suportes, o simples banho no solvente adequado permite que ele saia de
 peça de modo limpo e sem stress mecânico.
 
-==== HiPS
+===== HiPS
 
 A sigla significa "poliestireno de alto impacto" e é um filamento relativamente barato que funciona medianamente
 bem com ABS e muito bem com PLA. Imprime em temperaturas de 230 a 250°C. O solvente que remove o HiPS da peça,
@@ -6871,7 +6872,7 @@ no entanto, é um pouco difícil de achar no Brasil: D-Limoneno, ou Limoneno R+.
 limas e encontrado em produtos de limpeza. Para funcionar bem, a concentração precisa ser de 90% ou mais. O
 Limoneno L- vem de limões e não funciona tão bem.
 
-==== PVA
+===== PVA
 
 A sigla "PVA" é dúbia e na verdade usada para duas substâncias diferentes, a base da cola branca ("acetato
 de polivinila", às vezes colocada como "PVAc" para evitar a ambiguidade) e o usado no filamento solúvel
@@ -6885,7 +6886,7 @@ e propensão à histerese elástica que os TPEs.
 [[filamentopvatranslucido]]
 image::filamentopvatranslucido.png[filamentopvatranslucido,width=642,height=435,align="center",title="Devido à sua grande capacidade de absorção de água, o PVA é sempre vendido embalado à vácuo para não deteriorar. A coloração bege translúcida lhe é característica."]
 
-==== Infinity Rinse-Away
+===== Infinity Rinse-Away
 
 É um filamento usado exclusivamente em cartuchos proprietários das impressoras da série Cube da 3D Systems. Como o
 PVA, é solúvel em água, mas diferente dele, é feito a partir de polímeros de milho e "compatível" apenas
@@ -9849,7 +9850,7 @@ image::sequenciacamadas.png[sequenciacamadas,width=642,height=475,align="center"
 [[curaprinthost]]
 image::curaprinthost.png[curaprinthost,width=662,height=269,align="center",title="Cura (versão antiga) controlando uma impressão enquanto acontece. O gráfico mostra as temperaturas do extrusor e da mesa aquecida de acordo com o tempo."]
 
-== Principais fatiadores do mercado
+== Fatiadores
 
 A seguir, uma listagem atual dos principais fatiadores de impressão 3D FFF disponíveis para microcomputadores
 (PC/Mac).
@@ -12479,7 +12480,7 @@ image::simplify3ddualdiferenciarmaterial.png[simplify3ddualdiferenciarmaterial,w
 
 Voilà! Dupla extrusão, exatamente como queríamos.
 
-=== Diversão com G-Code
+== Diversão com G-Code
 
 Passamos brevemente pelo que é o G-Code em capítulos anteriores, mas não há como negar que o
 conhecimento desta ‘linguagem de máquina’ é essencial ao profissional de impressão 3D em todos os níveis,
@@ -12506,7 +12507,7 @@ e tem "macros" associáveis a botões.
 [[pronterfacegcode3]]
 image::pronterfacegcode3.png[pronterfacegcode3,width=630,height=437,align="center",title="Aspecto do pronterface com um arquivo de g-code carregado (representado no painel central) e ligado à impressora 3D. O painel mais à direita são os comandos de G-Code interativos, o painel mais à esquerda são as temperaturas e controles manuais de eixo. A interface e velocidade de conexão são as mesmas usadas no capítulo da configuração do Slic3r, no caso /dev/ttyUSB0 (Linux) e 115200 bps. O comando dado, M117, exibe uma mensagem no painel LCD da impressora."]
 
-==== Uma introdução aos comandos G-Code
+=== Uma introdução aos comandos G-Code
 
 Até agora mostramos muitos exemplos de código e mesmo falamos alguns __comandos__, mas não dissemos o sentido deles.
 

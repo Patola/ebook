@@ -1,6 +1,7 @@
 [#guia-maker-da-impressao-3d-introducao]
 = Introdução
 :imagesdir: imagens
+:imagesoutdir: img
 
 Quando se fala em Impressão 3D, a maior surpresa para quem é apresentado à tecnologia é saber que ela é bastante
 antiga. As primeiras tentativas de fabricar peças computadorizadas de forma aditiva surgiram ainda na década

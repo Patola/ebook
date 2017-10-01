@@ -1,6 +1,7 @@
 [#guia-maker-da-impressao-3d-apendices]
 = Apêndices
 :imagesdir: imagens
+:imagesoutdir: img
 
 == Licença de uso e reprodução deste documento
 

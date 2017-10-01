@@ -1,6 +1,7 @@
 [#guia-maker-da-impressao-3d-manutencao]
 = Manutenção e Cuidados com a Impressora 3D
 :imagesdir: imagens
+:imagesoutdir: img
 
 Sendo um aparelho que em sua operação normal lida com tantas forças mecânicas, térmicas e até químicas, é
 esperado que a impressora 3D sofra considerável desgaste com o uso, comprometendo seu funcionamento e precisão e
@@ -183,8 +184,8 @@ dissipadores de alumínio e ventoinhas de gabinete (ligadas nos 12V da fonte) aj
 detalhadas, explicativas e abrangentes... Exceto na parte de cabeamento. Ensinam o que ligar e onde, mas nem mesmo
 tamanho de cabos passam -- e é comum ver impressoras com cabos diversos de tamanho curto ou longo demais, assim
 como desorganizados como se fossem uma "maçaroca" de fios que além de ser perigosa e ineficiente, torna bastante
-trabalhosa a manutenção de um aparelho que devia ser justamente muito fácil de mexer e arrumar.  + Se você "se
-reconheceu" nesta caracterização de impressora, existem alguns utensílios que podem auxiliar na arrumação,
+trabalhosa a manutenção de um aparelho que devia ser justamente muito fácil de mexer e arrumar. +
+Se você "se reconheceu" nesta caracterização de impressora, existem alguns utensílios que podem auxiliar na arrumação,
 organização e fixação dos cabos. A seguir:
 ** **Tiras enforca-gato**: também conhecidas por _abraçadeiras de
 nylon_ e variados outros nomes, são tiras oferecidas em variados tamanhos e se fecham travando inserindo uma ponta

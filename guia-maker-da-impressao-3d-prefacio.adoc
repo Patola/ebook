@@ -1,6 +1,7 @@
 [#guia-maker-da-impressao-3d-prefacio]
 = Prefácio
 :imagesdir: imagens
+:imagesoutdir: img
 
 O conhecimento necessário para escrever este livro não surgiu somente da mente do autor. Surgiu, antes, das mentes agregadas
 de vários indivíduos brilhantes e laboriosos que, por vezes camuflados sob pseudônimos irônicos de internet,

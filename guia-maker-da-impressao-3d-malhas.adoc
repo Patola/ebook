@@ -1,6 +1,7 @@
 [#guia-maker-da-impressao-3d-malhas]
 = Malhas
 :imagesdir: imagens
+:imagesoutdir: img
 
 Na Impressão 3D usamos a representação digital de objetos em 3 dimensões e a submetemos por vários filtros
 até termos aquela série de instruções que a máquina vai executar ao fabricar o objeto. Será necessário

@@ -1,6 +1,7 @@
 [#guia-maker-da-impressao-3d-historico]
 = Histórico
 :imagesdir: imagens
+:imagesoutdir: img
 
 == Fotoescultura e topografia
 

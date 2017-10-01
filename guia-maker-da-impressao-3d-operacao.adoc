@@ -231,7 +231,9 @@ https://members.loria.fr/Sylvain.Lefebvre/icesl/[_https://members.loria.fr/Sylva
 * *Raise3D IdeaMaker* -- fatiador bem novo, tem aparência e recursos muito parecidos com o Simplify3D (incluido os suportes
 manuais) mas é gratuito. Se destaca pela interface limpa e pelo recurso de corte de peças por planos (incluindo
 planos inclinados). Sítio web em https://www.raise3d.com/pages/ideamaker[_https://www.raise3d.com/pages/ideamaker_]
-+ Temos ainda softwares que não são fatiadores completos, mas __print hosts__:
+
+Temos ainda softwares que não são fatiadores completos, mas __print hosts__:
+
 * **pronterface/suite Printrun**:
 um controlador de impressão open-source escrito em python com interface compacta, poderosa e ágil, muito usado para
 diagnósticos e resolução de problemas avançados em impressoras 3D. Permite usar o Slic3r como fatiador puro.  *
@@ -1107,7 +1109,8 @@ image::sequentialsimplify3d.png[sequentialsimplify3d,width=598,height=379,align=
 
 E mais uma diferença do Simplify3D é que a sequência não é dada entre cada _peça_ na mesa e sim entre
 cada __processo__. Isto significa que se você tem 30 peças, se quiser imprimi-las em sequência precisará de
-30 processos, um para cada uma, mesmo que sejam processos idênticos.^2^ + Mas a melhor diferença ficou para o
+30 processos, um para cada uma, mesmo que sejam processos idênticos.^2^ +
+Mas a melhor diferença ficou para o
 final: o Simplify3D não se nega a fatiar se a altura do objeto ultrapassar a altura dos eixos. Ao invés disso,
 ele divide em seções: como a altura máxima que ele consegue obter é, digamos, os 20mm que especificamos,
 ele imprime os processos em sequência até chegar a 20mm em cada um deles; então, na altura 20mm + uma camada,
@@ -2639,7 +2642,8 @@ uma pequena folga na primeira camada. Isso porque a impressão rente deixa a pre
 e também porque a maioria dos filamentos flexíveis tem excelente adesão à mesa. A exceção notável são os
 nylons, que sofrem warp e podem não aderir bem à mesa. A impressão mais alta pode ser feita de diversas formas,
 desde colocar o endstop do eixo Z ligeiramente mais alto até mexendo em parâmetros de fatiamento, como o offset
-vertical ou altura da primeira camada.  + E em termos de configurações de fatiamento, existem várias estratégias
+vertical ou altura da primeira camada. +
+E em termos de configurações de fatiamento, existem várias estratégias
 que podem ser tomada para melhor imprimir com filamento flexível e com menos possibilidades de falhas.
 
 .Nos ajustes de fatiamento:

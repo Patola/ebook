@@ -72,8 +72,8 @@ de sinalização e a utilização em impressoras 3D é bem representada pelas m�
 [width="100%",cols="^1s,^2m,2e",frame="topbot",options="header"]
 |====
 | Tipo		| Exemplo								| Descrição
-| Cartesiana	a| image:image54.jpeg[image,width=138,height=149,align="center"]			| [small]##Eixos X, Y e Z correspondem ao plano cartesiano.##
-| Delta		a| image:image57.png[image,width=122,height=255,align="center"]				| [small]##X, Y e Z são transformadas trigonométricas das posições dos três pilares (colunas verticais).##
+| Cartesiana	a| image:image54.jpeg[image,width=599,height=648,align="center"]			| [small]##Eixos X, Y e Z correspondem ao plano cartesiano.##
+| Delta		a| image:image57.png[image,width=308,height=640,align="center"]				| [small]##X, Y e Z são transformadas trigonométricas das posições dos três pilares (colunas verticais).##
 | CoreXY 	a| image:reprapxy-pequeno.jpg[reprapxypequeno,width=533,height=400,align="center"]	| [small]##X e Y são transformadas lineares de acordo com o padrão "CoreXY" de deslocamento. Por ser uma transformação relativamente simples de coordenadas, informalmente costuma ser tratada como cartesiana.##
 | SCARA		a| image:scara.png[scara,width=601,height=710,align="center"]				| [small]##**S**elective **C**ompliance **A**rticulated **R**obot **A**rm, ou Braço Robótico Articulado de Conformidade Seletiva, é o nome dessa transformação de eixos comumente usada em máquinas industriais "pick and place" e de linha de montagem de veículos.##
 | Polar		a| image:polartheta.png[polartheta,width=466,height=385,align="center"]			| [small]##Coordenadas polares, ou seja, baseadas em ângulos, são populares nos campos matemáticos, mas em impressoras 3D não são muito práticos, servindo mais como prova de conceito. Alguns modelos de impressora têm apenas um ou dois eixos polares, e os restantes cartesianos.##
@@ -104,7 +104,7 @@ extrusor a seguir como em uma impressora cartesiana comum. Esses cálculos são 
 (ou microprocessador) que controla os motores da impressora, no momento da leitura do g-code que é sempre escrito
 em coordenadas X,Y e Z.
 
-Uma diferença notável das coordenadas virtuais X, Y e Z de uma impressora delta é que
+Uma diferença notável das coordenadas virtuais X, Y e Z de uma impressora delta em relação a cartesianas é que
 o ponto (0,0,0) do volume está no centro da impressora, com possibilidade de coordenadas negativas; em contraste,
 nas cartesianas o ponto (0,0,0) situa-se no vértice abaixo, à esquerda e à frente, estando-se de frente para
 a impressora.
@@ -133,8 +133,7 @@ direto. Isso também minimiza a inércia da impressora, no entanto, dando-lhe bo
 através das posições dos braços, o espaçamento entre elas não apresenta a regularidade de coordenadas
 reais, sendo muito menor (e portanto com maior resolução) perto da mediana das distâncias dos postes e maior
 (e portanto com menor resolução) perto das "quinas" onde estão os postes.
-* *Troca de volume horizontal
-por volume vertical* -- o fato de uma impressora delta ter somente os pilares como estruturas laterais dá a essas
+* *Troca de volume horizontal por volume vertical* -- o fato de uma impressora delta ter somente os pilares como estruturas laterais dá a essas
 impressoras a vantagem de ocuparem pequena área horizontal, cabendo facilmente em uma mesa ou móvel; entretanto,
 esta mesma vantagem faz com que haja um espaço vazio não utilizado na parte de cima da impressora, o que faz com
 que seja bastate alta. O espaço não é utilizado porque o volume útil da impressora não se traduz em um cubo,
@@ -153,7 +152,10 @@ Arduino Mega por controladores mais potentes.
 [[deltasesimpson]]
 image::deltasesimpson.png[deltasesimpson,width=594,height=291,align="center",title="Algumas delta robots do projeto reprap. 1: Kossel. 2: Rostock. 3: GUS Simpson. Créditos: reprap.org"]
 
-*XY (Dualwire Gantry)* + O jeito mais intuitivo de pensar em um mecanismo que, em um plano, possa posicionar um
+.Os outros mecanismos
+* *XY (Dualwire Gantry)*
++
+O jeito mais intuitivo de pensar em um mecanismo que, em um plano, possa posicionar um
 elemento em uma coordenada (X,Y) determinada é haver, assim com os dois eixos, dois mecanismos (motores) fixos,
 independentes e perpendiculares. Qualquer um deles, ao girar, move uma correia, que movimenta o elemento em seu
 eixo, guiado em torno de uma barra lisa; as correias e barras não se encontram e podem ser posicionadas uma
@@ -164,6 +166,7 @@ dois cabos".
 image::dualwiregantry.png[dualwiregantry,width=594,height=351,align="center",title=""Dualwire Gantry" da Ulticampy V2 (créditos: ulticampy.com)"]
 
 * *CoreXY*
++
 O sistema batizado
 de _CoreXY_ tornou-se popular por um sítio web^3^ que o explica em pormenores e ensina como construí-lo e
 controlá-lo. Basicamente é um sistema de eixos que permite controle fino dos eixos X e Y mas economizando em
@@ -602,7 +605,9 @@ metal ferrocondutor -- funcionam bem com aço, têm sensibilidade menor para alu
 de efeito hall, têm melhor precisão se usados frios.
 ** **Capacitivos**: são sensores de montagem fácil que
 podem detectar virtualmente qualquer material a pequenas distâncias, mas têm como desvantagem baixa precisão e
-repetibilidade.  + Esta lista não é exaustiva. Existem diversas tecnologias que podem ser usadas para calcular
+repetibilidade.
+
+Esta lista não é exaustiva. Existem diversas tecnologias que podem ser usadas para calcular
 distâncias, como de costume faz parte da _mentalidade reprap_ entender que se trabalha com um espaço aberto
 de possibilidades e que a popularização traz dispositivos antes desconhecidos para os holofotes. Detectores de
 distância ultrassônicos ou detectores de pressão poderiam em tese ser utilizados. Projetos inovadores surgem
@@ -1358,7 +1363,8 @@ colocado sobre o vidro e aquecido até grudar, para então servir de superfície
 * *Colas, sprays e líquidos*: Pode estranhar à primeira vista saber que _colas_ são usadas para fixação
 de peças impressas em uma plataforma já que geralmente a palavra é associada à soldagem permanente de uma
 parte em outra, mas colas temporárias fazem mais parte do dia-a-dia do que geralmente se admite: papeizinhos de
-__post-it__, fita crepe e fita para pintura são alguns dos exemplos.  + Note-se que as colas podem ser usadas em
+__post-it__, fita crepe e fita para pintura são alguns dos exemplos.  +
+Note-se que as colas podem ser usadas em
 combinação com as fitas, gastando-se um pouco mais para unir as vantagens de um método ao outro.
 ** **Cola PVAc (cola branca escolar)^2^**: é usada majoritariamente com PLA, plástico que já tem maior aderência ao vidro por
 natureza. Apesar de ser uma **cola fraca**, sua grande vantagem é a facilidade de remoção, deixando resíduos
@@ -1444,7 +1450,8 @@ quanto lascas desprendidas em muitos casos. Adicione-se o fato que muitas vezes 
 experimental ou rebuscada e extremamente delicada, em que **qualquer pressão mecânica pode despedaçá-la**,
 em materiais que podem ser *10 vezes mais caros* que os comuns de mercado. Portanto, o __espectro de uso__ aqui é
 desproporcionalmente largo, e foi procurada uma solução universal que não necessitasse de muita experimentação
-ou tentativas.  + A solução encontrada tirou vantagem de uma propriedade dos tipo de métodos descritos: as *colas*
+ou tentativas. +
+A solução encontrada tirou vantagem de uma propriedade dos tipo de métodos descritos: as *colas*
 podem ser usadas com **as fitas**. A estratégia-base, portanto, é usar a **fita azul de pintor**, e as *diversas
 colas conforme a necessidade:
 * **Fita azul pura**: para PLA, peças pequenas de ABS e filamentos fáceis e
@@ -2047,12 +2054,12 @@ https://www.pololu.com/blog/24/continuous-rotation-servos-and-multi-turn-servos[
 
 === Servos na impressão 3D
 
-[NOTE]
-.Antes, uma nota sobre os firmwares
+[IMPORTANT]
+.Observação sobre o suporte pelos firmwares
 ====
-alguns firmwares de impressora 3D, como o __Marlin__, têm suporte a
+Alguns firmwares de impressora 3D, como o __Marlin__, têm suporte a
 servos. Mas essa informação pode ser interpretada equivocadamente: o firmware não tem suporte a servos __no
-lugar dos motores de passo__.
+lugar dos motores de passo__, isto é, o papel deles é outro, como por exemplo abaixar a sonda de autonivelamento.
 ====
 
 A utilização de motores de passo nas impressoras 3D FFF é praticamente universal; pouco se ouve falar
@@ -2225,7 +2232,8 @@ permite a interação através do toque) e também dos LCDs comuns disponíveis 
 botão giratório pressionável para interações com menus, um pequeno alto-falante para "bipes" e até
 mesmo uma entrada para cartão SD embutida. Dois modelos especialmente populares são o _Reprapdiscount Smart
 Controller_ (display de caracteres com 20 colunas × 4 linhas) e o _Reprapdiscount Full Graphics Smart Controller_
-(display gráfico monocromático). Como são open-source, têm várias derivações compatíveis.  + Vale notar
+(display gráfico monocromático). Como são open-source, têm várias derivações compatíveis. +
+Vale notar
 que a maioria dos microcontroladores de impressão 3D, até mesmo os ARM de 100-120 MHz, não têm capacidade
 suficiente para controlar uma tela gráfica colorida de alta resolução, por falta de memória para mapeamento
 dos pontos e velocidade para gerenciá-la a contento. Existem no mercado, no entanto, telas "inteligentes"

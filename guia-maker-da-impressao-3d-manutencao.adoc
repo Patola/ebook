@@ -52,7 +52,8 @@ ser sutil, nem mesmo percebida a olho nu, e mesmo assim contribui enormemente pa
 peças. Em especial, impressoras 3D estilo _graber_ e _prusa_ que tenham nivelamento automático de mesa (BAL)
 costumam mascarar tão bem o problema que ele parece inexistente. É comum que um fator que dificulte a detecção
 do problema é que a mesa de impressão siga a assimetria/inclinação do carro, fazendo parecerem simétricos
-visto que estão paralelos.  + O procedimento recomendado nesse caso deve ser feito sempre que se desconfie que
+visto que estão paralelos. +
+O procedimento recomendado nesse caso deve ser feito sempre que se desconfie que
 há uma assimetria (como depois de transportar a impressora 3D) ou com periodicidade pelo menos bimestral. Como a
 mesa de impressão pode também estar desnivelada, recomenda-se desmontá-la inteira, e usar uma superfície plana
 colocada entre os dois motores para nivelamento. Coloca-se no carro X um _relógio comparador_ com suporte deslizante

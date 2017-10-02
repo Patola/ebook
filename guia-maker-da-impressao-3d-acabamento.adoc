@@ -10,7 +10,7 @@ diferentes técnicas de impressão 3D também seguem essa regra. O problema se e
 consiste de tarefas manuais, laboriosas e não automatizáveis -- o que acaba acontecendo, visto que o que é
 automatizável acaba entrando para o fluxo de trabalho da impressão 3D.
 
-== Acabamento é arte -- no pior sentido possível da palavra "arte".
+== Acabamento é arte -- no pior sentido possível da palavra "arte"
 
 Em suma, quando mencionamos _acabamento_ neste contexto, tratamos desta parte avessa à automatização. Seu
 caráter manual e dependente de talento individual tira o caráter tecnológico da tarefa e o coloca mais próximo

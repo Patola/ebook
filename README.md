@@ -7,3 +7,9 @@ Nota para compilação:
 Para a conversão do .adoc para qualquer formato, devem-se usar os flags `-a stem` (para permitir extensão STEM) e `-r asciidoctor-mathematical` (para permitir a transformação das fórmulas latex em figuras embutidas). A minha instalação do asciidoctor está um pouco diferente pois eu criei um lexer pro realçador de sintaxe "rouge" para o G-Code usado no documento (e mandei um pull request pro software), e no caso do asciidoctor-mathematical fiz uma pequena mudança no código pra figura aparecer duas vezes maior (a fórmula aparecia em letras miúdas, quase ilegíveis). Em tempo, meu PR será aceito e vou ver se envio um patch para o `asciidoctor-mathematical` também.
 
 O projeto tem um `Makefile` simples que executa o asciidoctor e o asciidoctor-pdf para gerar o html e o PDF. O html gerado pode ser convertido pelo calibre para os formatos de ebook, só que no caso do epub e azw3 o TOC (Table of Contents, ou Índice) terá que ser gerado manualmente.
+
+Durante o desenvolvimento desta obra, eu acabei colaborando com outros softwares livres, pela interação deles com o documento. Foram eles:
+
+* Cura - fiz a tradução para português, e faço sempre que é atualizado: https://github.com/Ultimaker/Cura
+* GCodeArcOptimiser - serve para transformar linhas retas em arco no G-Code, ensino no livro a usar: https://github.com/manticorp/GCodeArcOptimiser
+* Rouge - faz a realce de sintaxe no asciidoc, como não havia para G-Code, eu mesmo fiz o lexer no código e enviei o patch para o time: https://github.com/jneen/rouge

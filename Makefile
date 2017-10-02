@@ -2,6 +2,7 @@ PROJECT=guiamaker
 SOURCE=guia-maker-da-impressao-3d.adoc
 TARGETPDF=guia-maker-da-impressao-3d.pdf
 TARGETHTML=guia-maker-da-impressao-3d.html
+IMAGEOUTDIR=img
 REQUIRES=asciidoctor-mathematical
 ATTRIBUTES=stem
 MATHFORMAT=svg
@@ -17,4 +18,4 @@ xhtml5:
 all: pdf
 
 clean:
-	rm $(TARGETPDF) $(TARGETHTML)
+	rm $(TARGETPDF) $(TARGETHTML) $(IMAGEOUTDIR)/*

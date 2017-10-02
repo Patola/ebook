@@ -12,7 +12,7 @@ pdf: xhtml5
 
 html: xhtml5
 
-xhtml5:
+xhtml5: $(SOURCE)
 	asciidoctor -b xhtml5 -a $(ATTRIBUTES) -r $(REQUIRES) $(SOURCE) -o $(TARGETHTML)
 
 all: pdf

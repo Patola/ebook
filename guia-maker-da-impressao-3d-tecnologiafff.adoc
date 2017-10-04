@@ -3084,7 +3084,7 @@ Um meio de mitigar isto é __limitando o PWM__, configurando um _duty cycle_ má
 na prática controlamos a potência que a mesa (ou outro elemento) recebe.
 
 No Repetier firmware, isso é obtido com os defines __PID_MAX__, um para cada elemento aquecedor. No entanto,
-para funcionar, o *modo PID* precisa estar ligado. São esses ajustes:
+para funcionar, o **modo PID** precisa estar ligado. São esses ajustes:
 
 [source,cpp]
 ----------
@@ -3144,7 +3144,7 @@ e _undershoots_ e nos mantermos perto de uma temperatura estável.
 Esse raciocínio de ir "suavizando" os pulsos prevendo a resposta da curva de temperatura de modo a
 conseguir o menor "erro" possível é o que deu origem ao algoritmo chamado de **PID**, sigla que descreve
 as três operações que usa, cada uma contribuindo e sendo somada às outras: **P**roporcional, **I**ntegral e
-**D**erivada. Um "controlador PID" continuamente calcula um valor de erro _*e*_ que é a diferença entre
+**D**erivada. Um "controlador PID" continuamente calcula um valor de erro __**e**__ que é a diferença entre
 uma medida-alvo (a temperatura desejada) e um valor medido (a temperatura atual) e a partir delas aplica uma
 correção baseada no histórico recente desta curva, levando em conta, com pesos específicos, a proporcional,
 a integral e a derivada deste erro.

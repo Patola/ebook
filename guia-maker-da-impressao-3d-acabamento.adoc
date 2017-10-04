@@ -36,7 +36,7 @@ muitos dos quais, em seus campos especializados, exigem cursos de proteção e c
 (os vapores solventes são um exemplo). Fique portanto explícita a advertência que, por mais que esta obra dê
 direções gerais de precauções, o leitor deve consultar as referências externas para melhor segurança.
 
-== Ferramentas básicas
+== Ferramentas básicas:
 
 Cada técnica diferente de acabamento pode exigir ferramentas diferentes, mas existe um conjunto básico e comum
 a muitas delas que vale ser sugerido. É importante perceber que não é necessário ter todas as ferramentas

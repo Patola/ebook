@@ -5,3 +5,5 @@
 * Antenor F. Petrilli Filho - São Carlos/SP
 * Rafael Estevam - Campinas/SP
 * Alan Carvalho de Assis - desenvolvedor NuttX (usado na Smoothie V2), Belo Horizonte/MG.
+* Samuel Júnior, Brasília/DF
+* Nícolas Wildner

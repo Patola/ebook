@@ -75,7 +75,7 @@ de impressão compensa o nivelamento com correção matemática das coordenadas.
 tipicamente o eixo Z não se move enquanto cada camada está sendo impressa, somente os eixos X e Y. Quando se
 usa o autonivelamento em mesa desnivelada, cada camada é impressa inclinada, e o eixo Z permanece em constante
 movimento, desgastando consideravelmente mais o fuso ou barra roscada (isso não é verdade para alguns modelos
-de impressora, como a brasileira Sethi S3 que ao invés de corrigir por cálculos, inclina mecanicamente a mesa,
+de impressora, como a brasileira Sethi S3 que ao invés de rotacionar, inclina por deslocamentos fixos nas barras o plano de impressão no início do processo,
 evitando tal desgaste). +
 A técnica de nivelamento mecânico de mesa mais frequente é o ajuste fino de seus
 cantos usando parafusos. As mesas de impressão são quase sempre sustentadas por molas -- que servem como

@@ -10,12 +10,15 @@ MATHFORMAT=svg
 pdf: xhtml5
 	asciidoctor-pdf -a $(ATTRIBUTES) -r $(REQUIRES) -a $(MATHFORMAT) $(SOURCE) -o $(TARGETPDF)
 
+pdf-toc: xhtml5
+	asciidoctor-pdf -a $(ATTRIBUTES) -a toc -r $(REQUIRES) -a $(MATHFORMAT) $(SOURCE) -o $(TARGETPDF)
+
 html: xhtml5
 
 xhtml5: $(SOURCE)
 	asciidoctor -b xhtml5 -a $(ATTRIBUTES) -r $(REQUIRES) $(SOURCE) -o $(TARGETHTML)
 
-all: pdf
+all: pdf pdf-toc
 
 clean:
 	rm $(TARGETPDF) $(TARGETHTML) $(IMAGEOUTDIR)/*

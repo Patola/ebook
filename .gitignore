@@ -1,10 +1,6 @@
-x.pdf
-x.html
-x.epub
-x.mobi
-guia-maker-da-impressao-3d.html
-guia-maker-da-impressao-3d.pdf
-guia-maker-da-impressao-3d.epub
-guia-maker-da-impressao-3d.mobi
-img
-img/*
+*.pdf
+*.html
+*.epub
+*.mobi
+*.log
+img/

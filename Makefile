@@ -1,21 +1,28 @@
-PROJECT=guiamaker
-SOURCE=guia-maker-da-impressao-3d.adoc
-TARGETPDF=guia-maker-da-impressao-3d.pdf
-TARGETHTML=guia-maker-da-impressao-3d.html
+PROJECT=guia-maker-da-impressao-3d
+SOURCE=$(PROJECT).adoc
+TARGETPDF=$(PROJECT).pdf
+TARGETHTML=$(PROJECT).html
 IMAGEOUTDIR=img
 REQUIRES=asciidoctor-mathematical
 ATTRIBUTES=stem
 MATHFORMAT=svg
+LOG=guia-maker-da-impressao-3d.log
 
 pdf: xhtml5
-	asciidoctor-pdf -a $(ATTRIBUTES) -r $(REQUIRES) -a $(MATHFORMAT) $(SOURCE) -o $(TARGETPDF)
+	@echo -n "Formatando o livro em PDF... "
+	@asciidoctor-pdf -a $(ATTRIBUTES) -r $(REQUIRES) -a $(MATHFORMAT) $(SOURCE) -o $(TARGETPDF) > $(LOG) 2>&1
+	@echo "pronto."
 
 html: xhtml5
 
 xhtml5: $(SOURCE)
-	asciidoctor -b xhtml5 -a $(ATTRIBUTES) -r $(REQUIRES) $(SOURCE) -o $(TARGETHTML)
+	@echo -n "Formatando o livro em HTML... "
+	@asciidoctor -b xhtml5 -a $(ATTRIBUTES) -r $(REQUIRES) $(SOURCE) -o $(TARGETHTML) > $(LOG) 2>&1
+	@echo "pronto."
 
 all: pdf
 
 clean:
-	rm $(TARGETPDF) $(TARGETHTML) $(IMAGEOUTDIR)/*
+	@echo -n "Apagando os arquivos criados... "
+	@rm -rf $(TARGETPDF) $(TARGETHTML) $(IMAGEOUTDIR) $(LOG)
+	@echo "pronto."

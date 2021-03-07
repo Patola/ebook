@@ -1730,7 +1730,7 @@ o motor com vários pulsos para uma posição, o gráfico da corrente relativa a
 quadriculada de uma senóide.
 
 [[graficocorrenteabmicrostep]]
-image::graficocorrenteabmicrostep.gif[graficocorrenteabmicrostep,width=517,height=323,align="center",title="Gráfico da corrente de saída nos dois pares de fios (A e B) para micropassos do 'datasheet' de um DRV8825, que consegue até 32 subdivisões de passo."]
+image::graficocorrenteabmicrostep.png[graficocorrenteabmicrostep,width=517,height=323,align="center",title="Gráfico da corrente de saída nos dois pares de fios (A e B) para micropassos do 'datasheet' de um DRV8825, que consegue até 32 subdivisões de passo."]
 
 Outras proporções de correntes podem nos levar a divisões ainda menores: 1/8, 1/16, 1/32 e em alguns casos
 é possível chegar a 1/256 de divisão de passo! __Perceba no entanto que o torque quando se usa micropasso é

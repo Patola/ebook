@@ -11,7 +11,7 @@ um pantógrafo ligado a um cortador que reproduzia cada um desses perfis, totali
 batizou o processo de __fotoescultura__.
 
 [[fotoescultura]]
-image::fotoescultura.gif[fotoescultura,width=388,height=423,align="center",title="Fotoescultura em 1870, créditos: George Eastman House"]
+image::fotoescultura.png[fotoescultura,width=388,height=423,align="center",title="Fotoescultura em 1870, créditos: George Eastman House"]
 
 Isso significa que já no século XIX tínhamos não só um rudimento da impressão 3D, como também de um processo de
 digitalização em 3D hoje chamado de fotogrametria. Faltavam, claro, os computadores para automatizar este processo.

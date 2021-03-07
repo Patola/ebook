@@ -953,7 +953,7 @@ image::slic3rnaoslic3ropensurce.png[slic3rnaoslic3ropensurce,width=615,height=41
 
 E tais fronteiras se expandem a cada dia, em garagens e universidades, procurando aprimorar a saúde e qualidade
 de vida das pessoas através da tecnologia e pensamento "fora da caixa". Por exemplo, por que não aproveitar
-a propriedade do PLA de baixo ponto de transição vítrea, aquela mesmo que o torna inapropriado para contato com
+a propriedade do PLA de baixo ponto de transição vítrea, aquela mesma que o torna inapropriado para contato com
 alimentos devido a deformar no lava-louças? Mas desta vez para fazer com que o plástico mole possa ser adaptado
 em forma de tala no braço de um paciente. Esta foi a idéia de Ana Paula Cano, integrante do grupo Mão3D em seu
 Trabalho de Conclusão de Curso^6^.

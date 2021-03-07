@@ -494,7 +494,7 @@ Subjetivo do Trabalho* para as conclusões. Seguimos o Carl e não o Karl. Esta 
 para quem discordar do posicionamento usado nesta obra, por tornar as premissas explícitas.
 
 Vale dizer, como uma observação final, que isso de maneira nenhuma significa que o cálculo do trabalho (os
-custos) _não_ deva ser feito. Pelo contrário, nenhum negócio sobrevive de "intuições", e e os custos
+custos) _não_ deva ser feito. Pelo contrário, nenhum negócio sobrevive de "intuições", e os custos
 dizem o valor mínimo de renda necessário para sobrevivência, assim como saber quanto se lucra é essencial para
 sustentação do negócio, tanto no pagamento de contas quanto nos investimentos futuros. Mas a consideração do
 valor subjetivo indica que é sensato manipular o botãozinho giratório do lucro esperado -- para baixo ou para

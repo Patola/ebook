@@ -1284,7 +1284,7 @@ forma mais consistentemente por uma grande faixa de temperaturas e ainda é meno
 que outros nylons (5% de sua densidade em água em 24h, metade dos outros).
 
 [[npecasnylonrocadeira]]
-image::npecasnylonrocadeira.jpeg[npecasnylonrocadeira,width=471,height=427,align="center",title="Copo de PETG impresso, ao lado de uma garrafa PET de refrigerante. Note-se que a peça é apenas decorativa, não se recomenda imprimir itens com fins alimentícios em impressoras 3D comuns."]
+image::npecasnylonrocadeira.jpeg[npecasnylonrocadeira,width=471,height=427,align="center",title="Peças impressas com nylon de roçadeira (em vermelho)."]
 
 Uma vantagem da alta higroscopia do Nylon é ser bastante compatível com tintas e pigmentos, mas por outro
 lado é muito comum impressões com nylon serem arruinadas por causa disso. Uma receita para secar nylons (e que

@@ -3341,7 +3341,7 @@ de reprap. Outros exemplos criativos são a delta de 5 metros de altura da SeeMe
 usando a placa _RaMBo_ - e a impressora portátil "pendurável" de volume infinito, a HangPrinter.
 
 [[deltagiganteehangprinter]]
-image::deltagiganteehangprinter.png[deltagiganteehangprinter,width=642,height=409,align="center",title="Processo de calibração de uma delta (Rostock) usando uma caneta para achar o problema. https://www.youtube.com/watch?v=zElA76ncTfc"]
+image::deltagiganteehangprinter.png[deltagiganteehangprinter,width=642,height=409,align="center",title="Processo de calibração de uma delta (Rostock) usando uma caneta para achar o problema. https://www.youtube.com/watch?v=gPvIHsF13D4"]
 
 Tais curiosidades são demonstrativas do poder de mentes criativas e nem são realmente excepcionais -- acompanhar
 notícias relacionadas a impressão 3D passa a nítida noção que a cada dia existe uma excentricidade nova ou um

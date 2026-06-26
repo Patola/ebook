@@ -3,21 +3,22 @@ SOURCE=$(PROJECT).adoc
 TARGETPDF=$(PROJECT).pdf
 TARGETHTML=$(PROJECT).html
 IMAGEOUTDIR=img
-REQUIRES=asciidoctor-mathematical
+#REQUIRES=-r asciidoctor-mathematical
+REQUIRES=
 ATTRIBUTES=stem
 MATHFORMAT=svg
 LOG=guia-maker-da-impressao-3d.log
 
 pdf: xhtml5
 	@echo -n "Formatando o livro em PDF... "
-	@asciidoctor-pdf -a $(ATTRIBUTES) -r $(REQUIRES) -a $(MATHFORMAT) $(SOURCE) -o $(TARGETPDF) > $(LOG) 2>&1
+	@asciidoctor-pdf -a $(ATTRIBUTES)  $(REQUIRES) -a $(MATHFORMAT) $(SOURCE) -o $(TARGETPDF) > $(LOG) 2>&1
 	@echo "pronto."
 
 html: xhtml5
 
 xhtml5: $(SOURCE)
 	@echo -n "Formatando o livro em HTML... "
-	@asciidoctor -b xhtml5 -a $(ATTRIBUTES) -r $(REQUIRES) $(SOURCE) -o $(TARGETHTML) > $(LOG) 2>&1
+	@asciidoctor -b xhtml5 -a $(ATTRIBUTES)  $(REQUIRES) $(SOURCE) -o $(TARGETHTML) > $(LOG) 2>&1
 	@echo "pronto."
 
 all: pdf
